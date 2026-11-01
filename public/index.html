@@ -15,12 +15,28 @@
 #cerez .cz-t{flex:1 1 360px}#cerez .cz-t b{display:block;margin-bottom:2px}#cerez details{margin-top:6px;color:var(--muted)}#cerez summary{cursor:pointer;color:var(--accent)}
 #cerez .cz-b{display:flex;gap:8px;margin-left:auto}#cerez .cz-ok{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600}
 #cerezbtn{color:inherit;text-decoration:underline}
-.sigp{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 4px}.sigc{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
-.sigh{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;margin-bottom:6px}.sigh i{width:8px;height:8px;border-radius:50%;background:var(--down)}.sigc.pos .sigh i{background:var(--up)}
-.sigh span{margin-left:auto;font-weight:600;font-size:12px;color:var(--muted)}.sigc ul{list-style:none;margin:0;padding:0}.sigc li{padding:8px 0;border-top:1px solid var(--line);display:grid;gap:2px;font-size:13px;line-height:1.45}
-.sigc li:first-child{border-top:0}.sigc li b{font-weight:600}.sigc li span{color:var(--fg)}.sigc li small{color:var(--muted);font-size:11.5px}.sigc .sigx{border-top:1px solid var(--line)}.sigmore{margin-top:8px}
-.sig0{color:var(--muted);font-size:13px;margin:6px 0}.signote{grid-column:1/-1;margin:0;color:var(--muted);font-size:12px}
-@media(max-width:760px){.sigp{grid-template-columns:1fr}}
+.sigp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 6px}
+.sigc{--sc:var(--down);position:relative;border-radius:18px;padding:16px;border:1px solid color-mix(in srgb,var(--sc) 28%,var(--line));
+  background:linear-gradient(160deg,color-mix(in srgb,var(--sc) 13%,var(--panel)) 0%,var(--panel) 70%);box-shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px -14px color-mix(in srgb,var(--sc) 45%,transparent)}
+.sigc.pos{--sc:var(--up)}
+.sigh{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.sigh .sigi{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:var(--sc);color:#fff;flex:none}
+.sigh .sigi svg{width:16px;height:16px}
+.sigh b{font-size:15px;font-weight:700;letter-spacing:-.01em}
+.sigh .sign{margin-left:auto;min-width:24px;height:24px;padding:0 8px;border-radius:999px;display:grid;place-items:center;font-size:12px;font-weight:700;color:var(--sc);background:color-mix(in srgb,var(--sc) 14%,transparent)}
+.sigl{display:grid;gap:8px}
+.sigb{border-radius:12px;padding:10px 12px 10px 14px;position:relative;background:color-mix(in srgb,var(--sc) 7%,var(--panel));border:1px solid color-mix(in srgb,var(--sc) 16%,transparent);transition:transform .15s ease,box-shadow .15s ease}
+.sigb::before{content:"";position:absolute;left:0;top:10px;bottom:10px;width:3px;border-radius:0 3px 3px 0;background:var(--sc)}
+.sigb:hover{transform:translateY(-1px);box-shadow:0 6px 16px -10px color-mix(in srgb,var(--sc) 60%,transparent)}
+.sigt{font-weight:650;font-size:13.5px;line-height:1.35;color:var(--fg)}
+.sigd{font-size:13px;line-height:1.5;color:var(--fg);opacity:.86;margin-top:3px}
+.sigm{font-size:11.5px;color:var(--muted);margin-top:5px;display:flex;align-items:center;gap:6px}
+.sigx{margin-top:8px}
+.sigmore{margin-top:10px;border:0;cursor:pointer;font:inherit;font-size:12.5px;font-weight:600;color:var(--sc);background:color-mix(in srgb,var(--sc) 12%,transparent);padding:7px 12px;border-radius:999px}
+.sigmore:hover{background:color-mix(in srgb,var(--sc) 20%,transparent)}
+.sig0{color:var(--muted);font-size:13px;margin:4px 0 0}
+.signote{grid-column:1/-1;margin:2px 2px 0;color:var(--muted);font-size:12px}
+@media(max-width:760px){.sigp{grid-template-columns:1fr}.sigc{padding:14px}}
 </style>
 <title>Sonar</title>
 <link rel="icon" href="marka/favicon.svg" type="image/svg+xml">
@@ -878,8 +894,10 @@ function sigs(c){
     if(ys.length===4)G(1,'Her yıl temettü',`${y0-3}–${y0} arasında her yıl nakit temettü dağıttı.`,{})}
   const by=(a,b)=>b.sev-a.sev;return {neg:neg.sort(by),pos:pos.sort(by)}}
 function sigHTML(c){const S=sigs(c);if(!S.neg.length&&!S.pos.length)return '';
-  const li=x=>`<li><b>${esc(x.t)}</b><span>${esc(x.d)}</span><small>${esc(QL(x.p))}${x.es?' · '+esasTag(x.es):''}</small></li>`;
-  const col=(cls,h,a)=>`<div class="sigc ${cls}"><div class="sigh"><i></i>${h}<span>${a.length}</span></div>${a.length?`<ul>${a.slice(0,4).map(li).join('')}</ul>${a.length>4?`<ul class="sigx" hidden>${a.slice(4).map(li).join('')}</ul><button class="chip sigmore" type="button" aria-expanded="false">Devamını gör (${a.length-4})</button>`:''}`:'<p class="sig0">Belirgin bir sinyal yok.</p>'}</div>`;
+  const IC={neg:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><path d="M12 16.5h.01"/><path d="M10.3 3.9 2.6 17.2A2 2 0 0 0 4.3 20h15.4a2 2 0 0 0 1.7-2.8L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>',
+    pos:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>'};
+  const li=x=>`<div class="sigb"><div class="sigt">${esc(x.t)}</div><div class="sigd">${esc(x.d)}</div><div class="sigm">${esc(QL(x.p))}${x.es?' · '+esasTag(x.es):''}</div></div>`;
+  const col=(cls,h,a)=>`<div class="sigc ${cls}"><div class="sigh"><span class="sigi">${IC[cls]}</span><b>${h}</b><span class="sign">${a.length}</span></div>${a.length?`<div class="sigl">${a.slice(0,4).map(li).join('')}</div>${a.length>4?`<div class="sigl sigx" hidden>${a.slice(4).map(li).join('')}</div><button class="sigmore" type="button" aria-expanded="false">Devamını gör (${a.length-4})</button>`:''}`:'<p class="sig0">Belirgin bir sinyal yok.</p>'}</div>`;
   return `<section class="sigp" aria-label="Dikkat edilecekler ve güçlü yönler">${col('neg','Dikkat edilecekler',S.neg)}${col('pos','Güçlü yönler',S.pos)}<p class="signote">Otomatik kurallarla seçilir: son açıklanan dönem, şirketin kendi geçmişi ve Sonar'daki ${esc(c.grp||'sektör')} grubunun medyanı. Yorum ya da yatırım tavsiyesi değildir.</p></section>`}
 function sigBind(){document.querySelectorAll('.sigmore').forEach(b=>b.onclick=()=>{const u=b.previousElementSibling;const open=u.hidden;u.hidden=!open;b.setAttribute('aria-expanded',String(open));b.textContent=open?'Daha az göster':`Devamını gör (${u.children.length})`})}
 /* ---------- company view ---------- */
