@@ -41,6 +41,9 @@ Reel / nominal (1 Kas 2026 kuralı): TMS 29 uygulayan şirketlerde yıllık kıy
 `python3 bekci/araclar/site.py ekle-ozet <HİSSE> ozet.json`.
 X kısmı ikili seri düzeninde: `"social": {"mode": "ikili", "tweets": [...]}`. Her tweet bir serinin ana tweeti (tek not + kendi kartı); yanıt ("Okumak için: <Substack linki>", ilk seride yalnız link) site tarafından substack.published'tan üretilir, JSON'a yazılmaz. 1. seri net kâr kartını anlatır ve "<YYYY>/<ay> bilançosunu Substack'te özetledim. Okumak için👇🏻" ile biter. Sonraki seriler: yıllık kıyas, çeyreklik kıyas, segment, vergi/diğer, rakip. Her ana tweet hisse adını içerir (ayrı paylaşılır). Kapanış/"Yatırım tavsiyesi değildir." tweeti yok; sıra numarası yok. İsteğe bağlı tek ek tweet: tweet nesnesine "ek". Sayısal serileri (c.fin) güncellemek bu sürümde YOK: özetin "note" alanına "Grafik serileri henüz güncellenmedi" yaz.
 
+#### Sayısal seriler güncellenince (c.fin)
+Bir şirketin c.fin serilerine yeni dönem eklendiğinde (sektör hattı `build_fin → build_rat → grup_ekle` ya da elle), `$HOME/fr-site` içinde sırayla: `python3 bekci/araclar/genel/amortisman.py`, `python3 bekci/araclar/genel/netborc.py <HİSSE>`, `python3 bekci/araclar/genel/isletme.py <HİSSE>` (banka/sigorta/aracı kurumu kendisi atlar). isletme.py çalışmazsa şirket kartlarındaki alacak/stok/nakit akışı maddeleri son dönemde sessizce düşer. Ardından `python3 bekci/araclar/genel/denetim.py <grup>`.
+
 #### Kalem açıklamaları (c.kalem)
 Finansal rapor işlenirken şirketin `kalem` alanına son dönemin dipnot kırılımlarını yaz (matristeki (i) açıklamasının şirkete özel kısmı):
 `"kalem": {"cost_of_sales": {"p": "2026-09", "title": "2026 ilk 9 ay, Mn TL", "u": "<KAP bildirim linki>", "pg": <PDF sayfa>, "rows": [["Satılan konut maliyeti", -1626.47], …], "text": "<dipnottaki olgusal açıklama, yorum yok>"}}`
