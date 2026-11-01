@@ -759,7 +759,7 @@ function setMeta(){const v=state.view,c=BY[v],cut=(t,n)=>{t=(t||'').replace(/\s+
 /* ---------- ölçüm: Google Analytics 4 + çerez onayı (yalnız açık site) ----------
    Onay verilmeden gtag yüklenmez, çerez yazılmaz (temel onay modu). Karar localStorage'da 'sonar_cerez' = 'evet' | 'hayir'.
    Sayfa görüntüleme: setMeta() her görünüm değişiminde gaPage() çağırır (History API). ?olcme=0 ile açan tarayıcı (Cagri) hiç ölçülmez. */
-const GA_ID='__GA_ID__';
+const GA_ID='G-TZ4BL1Q5D6';
 const CZ=(()=>{const g=k=>{try{return localStorage.getItem(k)}catch(e){return null}},s=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};return {g,s}})();
 const GA_ON=()=>PUB&&/^G-[A-Z0-9]+$/.test(GA_ID)&&CZ.g('sonar_olcme')!=='0';
 let gaLast='';
