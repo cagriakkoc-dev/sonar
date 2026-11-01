@@ -679,6 +679,29 @@ function renderTickers(){
    `<button class="tk view" role="tab" data-v="OZET" aria-selected="${state.view.startsWith('OZET')||state.view.startsWith('KARS-')}">Dönem özetleri</button><button class="tk view" role="tab" data-v="KARSILASTIR" aria-selected="${state.view==='KARSILASTIR'}">Karşılaştır</button><button class="tk view dev" role="tab" data-v="DENETIM" aria-selected="${state.view==='DENETIM'}">Veri denetimi</button>`;
   nav.querySelectorAll('.tk').forEach(b=>b.onclick=()=>go(b.dataset.v));
 }
+/* ---------- grafik etiketleri: kenardan taşanı içeri al, çakışanı seyrelt ---------- */
+function declutter(svg){try{
+  const vb=svg.viewBox&&svg.viewBox.baseVal;if(!vb||!vb.width||!svg.getBoundingClientRect().width)return;
+  const X0=vb.x+1,X1=vb.x+vb.width-1,T=[...svg.querySelectorAll('text')].filter(t=>t.textContent.trim()&&t.style.display!=='none');
+  const bb=t=>{const b=t.getBBox();return {x0:b.x,x1:b.x+b.width,y0:b.y,y1:b.y+b.height,w:b.width}};
+  T.forEach(t=>{if(t.querySelector('tspan[x]'))return;const b=bb(t);if(!b.w)return;const x=parseFloat(t.getAttribute('x')||'0');
+    if(b.x1>X1)t.setAttribute('x',x-(b.x1-X1));else if(b.x0<X0)t.setAttribute('x',x+(X0-b.x0))});
+  const ov=(a,c,pad)=>Math.min(a.x1,c.x1)-Math.max(a.x0,c.x0)>-pad&&Math.min(a.y1,c.y1)-Math.max(a.y0,c.y0)>1;
+  // eksen satırları (aynı y, ortalanmış etiketler): gerekirse her k'ıncı etiketi bırak, sonuncuyu koru
+  const rows={};T.forEach(t=>{if(!t.closest('g.axis'))return;const k=Math.round(+t.getAttribute('y')||0)+'|'+(t.getAttribute('text-anchor')||'');(rows[k]=rows[k]||[]).push(t)});
+  const kept=[];
+  Object.values(rows).forEach(R=>{if(R.length<3||R[0].getAttribute('text-anchor')==='end'&&new Set(R.map(t=>t.getAttribute('x'))).size===1)return;
+    R.sort((a,c)=>bb(a).x0-bb(c).x0);const B=R.map(bb);
+    for(let k=1;k<=R.length;k++){const keep=B.map((_,i)=>i%k===0||i===B.length-1);
+      // son etiket bir öncekiyle çakışıyorsa öncekini gizle
+      let ok=true,last=-1;for(let i=0;i<B.length;i++){if(!keep[i])continue;if(last>=0&&ov(B[last],B[i],4)){if(i===B.length-1&&last>0){keep[last]=false;let q=last-1;while(q>=0&&!keep[q])q--;last=q;if(q>=0&&ov(B[q],B[i],4)){ok=false;break}}else{ok=false;break}}last=i}
+      if(ok){R.forEach((t,i)=>{t.style.display=keep[i]?'':'none'});break}}});
+  T.forEach(t=>{if(!t.closest('g.axis')||t.style.display==='none')return;const b=bb(t);if(!b.w)return;if(kept.some(k=>ov(k,b,1)))t.style.display='none';else kept.push(b)});
+  // diğer etiketler (değer, nokta adları): çakışanı gizle
+  T.forEach(t=>{if(t.closest('g.axis')||t.style.display==='none')return;const b=bb(t);if(!b.w)return;if(kept.some(k=>ov(k,b,1)))t.style.display='none';else kept.push(b)});
+}catch(e){}}
+{const Q=new Set();let raf=0;const run=()=>{raf=0;Q.forEach(declutter);Q.clear()};
+ new MutationObserver(ms=>{ms.forEach(m=>m.addedNodes.forEach(n=>{if(n.nodeType!==1)return;if(n.tagName==='svg')Q.add(n);else n.querySelectorAll&&n.querySelectorAll('svg').forEach(x=>Q.add(x))}));if(Q.size&&!raf)raf=requestAnimationFrame(run)}).observe(document.body,{childList:true,subtree:true})}
 /* ---------- mobil menü (çekmece) ---------- */
 function menuSet(on){const b=document.body,btn=$('#menubtn'),sc=$('#scrim'),sd=$('#side');if(!b||!sd)return;
   if(on===b.classList.contains('menu-open'))return;
@@ -827,20 +850,40 @@ function renderBridge(c){
   // cumulative positions
   let run=0;const bars=st.map(s=>{let y0,y1;if(s.t==='sub'||s.t==='total'){y0=0;y1=s.v;run=s.v}else{y0=run;y1=run+s.v;run=y1}return {...s,y0,y1}});
   const ext=bars.flatMap(x=>[x.y0,x.y1]);const tk=niceTicks(Math.min(0,...ext),Math.max(0,...ext),5);const t0=tk[0],t1=tk[tk.length-1];
-  const W=Math.max(320,el.clientWidth||900),H=340,ml=62,mr=10,mt=40,mb=58;const y=v=>mt+(t1-v)/(t1-t0)*(H-mt-mb);const bw=(W-ml-mr)/bars.length;
-  const col=x=>x.t==='total'?'var(--co-ui)':x.t==='sub'?'color-mix(in srgb,var(--co-ui) 55%,var(--panel2))':x.v>=0?'var(--up)':'var(--down)';
-  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Net Kâr Köprüsü grafiği">`;
+  const W=Math.max(300,el.clientWidth||900);const col=x=>x.t==='total'?'var(--co-ui)':x.t==='sub'?'color-mix(in srgb,var(--co-ui) 55%,var(--panel2))':x.v>=0?'var(--up)':'var(--down)';
+  const vlab=x=>((x.t==='up'||x.t==='down'||x.t==='calc'||x.t==='flow')&&x.v>0?'+':'')+fmtCell(x.v);
+  const tipAt=(e,x)=>{if(!x){hideTip();return}const rev=st0rev;const cl=x.m?c.fin[x.m]?.[b.p]:null;const pv=x.m?provOf(cl):'calc';
+    showTip(e,`<div class="eyebrow">${esc(QL(b.p))} · ${b.m==='q'?'tek çeyrek':'birikimli'}</div><b>${esc(x.k)}</b><div style="font-family:var(--f-mono);margin-top:2px">${esc(fmtM(x.v))} TL${!INS(c)&&rev>0?` · hasılatın %${nf(x.v/rev*100,1)}'i`:''}</div><div style="margin-top:4px"><span class="sw" style="background:${PROV[pv][1]}"></span> ${x.m?esc(PROV[pv][0]):x.ebitda?'Esas faaliyet kârı + amortisman ve itfa (nakit akış tablosu)':'Raporlanan kalemlerin farkı'}</div>`)};
+  let s,svg;
+  if(W<600){ // dar ekran: yatay köprü (kalem adları solda, tam metin)
+    const lw=Math.min(150,Math.round(W*.4)),rw=8,rh=34,mt=24,H=mt+bars.length*rh+4;const X=v=>lw+(v-t0)/(t1-t0)*(W-lw-rw);
+    const wrap=(k,n)=>{const ws=k.split(' ');let l1='',l2='';ws.forEach(w=>{if((l1+' '+w).trim().length<=n&&!l2)l1=(l1+' '+w).trim();else l2=(l2+' '+w).trim()});if(l2.length>n)l2=l2.slice(0,n-1)+'…';return [l1,l2]};const nch=Math.floor((lw-12)/6.3);
+    s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Net Kâr Köprüsü grafiği">`;
+    tk.forEach((tv,ti)=>{s+=`<line class="gridline" x1="${X(tv)}" x2="${X(tv)}" y1="${mt-4}" y2="${H-2}"/>${ti%2&&tk.length>4?'':`<g class="axis"><text x="${X(tv)}" y="${mt-10}" text-anchor="middle">${esc(fmtC(tv))}</text></g>`}`});
+    s+=`<line x1="${X(0)}" x2="${X(0)}" y1="${mt-4}" y2="${H-2}" stroke="var(--muted)"/>`;
+    bars.forEach((x,j)=>{const y=mt+j*rh,bh=rh-14,a=Math.min(X(x.y0),X(x.y1)),w=Math.max(2,Math.abs(X(x.y1)-X(x.y0)));const tot=x.t==='sub'||x.t==='total';
+      const [l1,l2]=wrap((tot?'= ':'')+x.k,nch);s+=`<text x="${lw-8}" y="${y+(l2?bh/2+3:bh/2+11)}" text-anchor="end" style="font:${tot?700:500} 11px var(--f-body);fill:var(--fg)">${esc(l1)}</text>${l2?`<text x="${lw-8}" y="${y+bh/2+16}" text-anchor="end" style="font:${tot?700:500} 11px var(--f-body);fill:var(--fg)">${esc(l2)}</text>`:''}`;
+      s+=`<rect x="${a}" y="${y+7}" width="${w}" height="${bh}" rx="2" fill="${col(x)}" ${x.t==='calc'?'fill-opacity=".55" stroke="'+col(x)+'" stroke-dasharray="3 2"':''}/>`;
+      if(j<bars.length-1){const xe=X(x.y1);s+=`<line x1="${xe}" x2="${xe}" y1="${y+7+bh}" y2="${y+rh+7}" stroke="var(--muted)" stroke-dasharray="2 2"/>`}
+      const vt=vlab(x),vw=vt.length*6.6+6,right=Math.max(X(x.y0),X(x.y1)),left=Math.min(X(x.y0),X(x.y1));
+      const vx=right+vw<=W-2?right+5:(left-vw>=lw?left-5:right-5),anc=right+vw<=W-2?'start':'end',inside=!(right+vw<=W-2)&&!(left-vw>=lw);
+      s+=`<text x="${vx}" y="${y+bh/2+11}" text-anchor="${anc}" style="font:600 10.5px var(--f-mono);fill:${inside?'#fff':'var(--fg)'}">${esc(vt)}</text>`});
+    el.innerHTML=s+'</svg>';svg=el.querySelector('svg');
+    svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();tipAt(e,bars[Math.floor(((e.clientY-r.top)*H/r.height-mt)/rh)])});
+  }else{
+  const H=340,ml=62,mr=10,mt=40,mb=58;const y=v=>mt+(t1-v)/(t1-t0)*(H-mt-mb);const bw=(W-ml-mr)/bars.length;
+  s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Net Kâr Köprüsü grafiği">`;
   tk.forEach(t=>{s+=`<line class="gridline" x1="${ml}" x2="${W-mr}" y1="${y(t)}" y2="${y(t)}"/><g class="axis"><text x="${ml-8}" y="${y(t)+4}" text-anchor="end">${esc(fmtC(t))}</text></g>`});
   s+=`<line x1="${ml}" x2="${W-mr}" y1="${y(0)}" y2="${y(0)}" stroke="var(--muted)"/>`;
   bars.forEach((x,j)=>{const bx=ml+j*bw+bw*.14,w=bw*.72;const top=Math.min(y(x.y0),y(x.y1)),h=Math.max(1.5,Math.abs(y(x.y1)-y(x.y0)));
     s+=`<rect x="${bx}" y="${top}" width="${w}" height="${h}" rx="2" fill="${col(x)}" ${x.t==='calc'?'fill-opacity=".55" stroke="'+col(x)+'" stroke-dasharray="3 2"':''}/>`;
     if(j<bars.length-1)s+=`<line x1="${bx+w}" x2="${ml+(j+1)*bw+bw*.14}" y1="${y(x.y1)}" y2="${y(x.y1)}" stroke="var(--muted)" stroke-dasharray="2 2"/>`;
-    const lv=x.v>=0||x.t==='sub'||x.t==='total'?Math.max(14,top-7):Math.min(H-mb-4,top+h+13);s+=`<text x="${bx+w/2}" y="${lv}" text-anchor="middle" style="font:600 11px var(--f-mono);fill:var(--fg)">${esc((x.t==='up'||x.t==='down'||x.t==='calc'||x.t==='flow')&&x.v>0?'+':'')}${esc(fmtCell(x.v))}</text>`;
+    const lv=x.v>=0||x.t==='sub'||x.t==='total'?Math.max(14,top-7):Math.min(H-mb-4,top+h+13);s+=`<text x="${bx+w/2}" y="${lv}" text-anchor="middle" style="font:600 11px var(--f-mono);fill:var(--fg)">${esc(vlab(x))}</text>`;
     const words=x.k.split(' ');let l1='',l2='';words.forEach(wd=>{if((l1+' '+wd).trim().length<=Math.max(10,Math.floor(bw/6.4))&&!l2)l1=(l1+' '+wd).trim();else l2=(l2+' '+wd).trim()});if(l2.length>Math.floor(bw/6))l2=l2.slice(0,Math.floor(bw/6)-1)+'…';
     s+=`<g class="axis"><text x="${bx+w/2}" y="${H-mb+18}" text-anchor="middle">${esc(l1)}</text><text x="${bx+w/2}" y="${H-mb+32}" text-anchor="middle">${esc(l2)}</text></g>`});
   el.innerHTML=s+'</svg>';
-  const svg=el.querySelector('svg');svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const j=Math.floor(((e.clientX-r.left)*W/r.width-ml)/bw);const x=bars[j];if(!x){hideTip();return}const rev=st0rev;const cl=x.m?c.fin[x.m]?.[b.p]:null;const pv=x.m?provOf(cl):'calc';
-    showTip(e,`<div class="eyebrow">${esc(QL(b.p))} · ${b.m==='q'?'tek çeyrek':'birikimli'}</div><b>${esc(x.k)}</b><div style="font-family:var(--f-mono);margin-top:2px">${esc(fmtM(x.v))} TL${!INS(c)&&rev>0?` · hasılatın %${nf(x.v/rev*100,1)}'i`:''}</div><div style="margin-top:4px"><span class="sw" style="background:${PROV[pv][1]}"></span> ${x.m?esc(PROV[pv][0]):x.ebitda?'Esas faaliyet kârı + amortisman ve itfa (nakit akış tablosu)':'Raporlanan kalemlerin farkı'}</div>`)});
+  svg=el.querySelector('svg');svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();tipAt(e,bars[Math.floor(((e.clientX-r.left)*W/r.width-ml)/bw)])});
+  }
   svg.addEventListener('mouseleave',hideTip);
   const rev=st0rev;
   const p0=(+b.p.slice(0,4)-1)+b.p.slice(4);const prevM=Object.fromEntries((bridgeSteps(c,p0,b.m)||[]).map(x=>[x.k,x.v]));const yoy=x=>{const pv=prevM[x.k];if(pv==null||x.v==null||Math.abs(pv)<0.005)return '<td style="color:var(--muted)">—</td><td></td>';const d=x.v-pv,pc=d/Math.abs(pv)*100;return `<td style="color:var(--muted)">${esc(fmtM(pv))}</td><td class="${d>=0?'up':'down'}" title="Fark: ${esc(fmtM(d))} TL">${d>=0?'▲':'▼'} %${nf(Math.abs(pc),1)}</td>`};
@@ -1298,7 +1341,7 @@ function renderSecRatios(cs){if(!$('#smpanel'))return;const ML=secMetList(cs),L=
     let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(mx.l)} ve ${esc(my.l)}">`;ty.forEach(t=>s+=`<line class="gridline" x1="${ml}" x2="${W-mr}" y1="${Y(t)}" y2="${Y(t)}"/><g class="axis"><text x="${ml-6}" y="${Y(t)+4}" text-anchor="end">${smFmt(my,t)}</text></g>`);
     tx.forEach(t=>s+=`<g class="axis"><text x="${X(t)}" y="${H-mb+16}" text-anchor="middle">${smFmt(mx,t)}</text></g>`);
     const mxm=median(pts.map(p=>p.x)),mym=median(pts.map(p=>p.y));s+=`<line x1="${X(mxm)}" x2="${X(mxm)}" y1="${mt}" y2="${H-mb}" stroke="var(--muted)" stroke-dasharray="3 3"/><line x1="${ml}" x2="${W-mr}" y1="${Y(mym)}" y2="${Y(mym)}" stroke="var(--muted)" stroke-dasharray="3 3"/>`;
-    pts.forEach(p=>s+=`<g data-go="${p.c.t}" style="cursor:pointer"><circle cx="${X(p.x)}" cy="${Y(p.y)}" r="6" fill="${CMP[p.c.t]||p.c.color}" stroke="var(--panel)" stroke-width="1.5"><title>${p.c.t} · ${mx.l}: ${smFmt(mx,p.x)} · ${my.l}: ${smFmt(my,p.y)}</title></circle><text x="${X(p.x)+8}" y="${Y(p.y)+4}" style="font:600 10.5px var(--f-mono);fill:var(--fg)">${p.c.t}</text></g>`);
+    pts.forEach(p=>s+=`<g data-go="${p.c.t}" style="cursor:pointer"><circle cx="${X(p.x)}" cy="${Y(p.y)}" r="6" fill="${CMP[p.c.t]||p.c.color}" stroke="var(--panel)" stroke-width="1.5"><title>${p.c.t} · ${mx.l}: ${smFmt(mx,p.x)} · ${my.l}: ${smFmt(my,p.y)}</title></circle>${X(p.x)+8+p.c.t.length*6.6>W-2?`<text x="${X(p.x)-8}" y="${Y(p.y)+4}" text-anchor="end" style="font:600 10.5px var(--f-mono);fill:var(--fg)">${p.c.t}</text>`:`<text x="${X(p.x)+8}" y="${Y(p.y)+4}" style="font:600 10.5px var(--f-mono);fill:var(--fg)">${p.c.t}</text>`}</g>`);
     s+=`<text x="${W-mr}" y="${H-4}" text-anchor="end" style="font:500 11px var(--f-body);fill:var(--muted)">${esc(mx.l)} →</text><text x="${ml}" y="${mt-2}" style="font:500 11px var(--f-body);fill:var(--muted)">↑ ${esc(my.l)}</text></svg>`;
     el.innerHTML=s;el.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));$('#smscnote').textContent=`Kesikli çizgiler sektör medyanları. Her şirketin son açıklanan dönemi. ${cs.length-pts.length?`${cs.length-pts.length} şirket bu metriklerde veri olmadığı için yok.`:''}`};
   sx.onchange=drawSc;sy.onchange=drawSc;drawSc();
