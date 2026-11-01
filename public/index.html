@@ -10,6 +10,11 @@
 .tk.spk .ck{width:14px;height:14px;border-radius:4px;border:1.5px solid var(--line);display:inline-grid;place-items:center;font:700 10px/1 var(--f-body);font-style:normal;color:#fff}
 .tk.spk[aria-pressed=true]{border-color:var(--c)}.tk.spk[aria-pressed=true] .ck{background:var(--c);border-color:var(--c)}
 .tk.spk[aria-pressed=false]{opacity:.55;border-style:dashed}.tk.spk[aria-pressed=false] .dot{filter:grayscale(1)}
+#cerez{position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:200;max-width:760px;margin:0 auto;display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;
+  background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 10px 30px rgba(0,0,0,.25);font-size:13px;line-height:1.5}
+#cerez .cz-t{flex:1 1 360px}#cerez .cz-t b{display:block;margin-bottom:2px}#cerez details{margin-top:6px;color:var(--muted)}#cerez summary{cursor:pointer;color:var(--accent)}
+#cerez .cz-b{display:flex;gap:8px;margin-left:auto}#cerez .cz-ok{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600}
+#cerezbtn{color:inherit;text-decoration:underline}
 </style>
 <title>Sonar</title>
 <link rel="icon" href="marka/favicon.svg" type="image/svg+xml">
@@ -750,7 +755,38 @@ function setMeta(){const v=state.view,c=BY[v],cut=(t,n)=>{t=(t||'').replace(/\s+
     else if(v.startsWith('KARS-')||v.startsWith('YAZI-')){const K=(v.startsWith('KARS-')?(DATA.comparisons||[]):(DATA.yazilar||[])).find(x=>x.id.toUpperCase()===v.slice(5));if(K){title=K.substack?.title||K.headline||title;desc=cut(K.headline||desc,158);if(K.slug)canon=SITE_URL+'/yazi/'+K.slug+'/'}}}
   document.title=title+(v==='GIRIS'?'':' · Sonar');
   const M=(sel,attr,val)=>{let e=document.head.querySelector(sel);if(!e){e=document.createElement(sel.startsWith('link')?'link':'meta');const m=sel.match(/\[(\w+)="([^"]+)"\]/);e.setAttribute(m[1],m[2]);document.head.appendChild(e)}e.setAttribute(attr,val)};
-  M('meta[name="description"]','content',desc);M('link[rel="canonical"]','href',canon);M('meta[property="og:url"]','content',canon);M('meta[property="og:title"]','content',title);M('meta[property="og:description"]','content',desc)}
+  M('meta[name="description"]','content',desc);M('link[rel="canonical"]','href',canon);M('meta[property="og:url"]','content',canon);M('meta[property="og:title"]','content',title);M('meta[property="og:description"]','content',desc);gaPage()}
+/* ---------- ölçüm: Google Analytics 4 + çerez onayı (yalnız açık site) ----------
+   Onay verilmeden gtag yüklenmez, çerez yazılmaz (temel onay modu). Karar localStorage'da 'sonar_cerez' = 'evet' | 'hayir'.
+   Sayfa görüntüleme: setMeta() her görünüm değişiminde gaPage() çağırır (History API). ?olcme=0 ile açan tarayıcı (Cagri) hiç ölçülmez. */
+const GA_ID='__GA_ID__';
+const CZ=(()=>{const g=k=>{try{return localStorage.getItem(k)}catch(e){return null}},s=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};return {g,s}})();
+const GA_ON=()=>PUB&&/^G-[A-Z0-9]+$/.test(GA_ID)&&CZ.g('sonar_olcme')!=='0';
+let gaLast='';
+function gaLoad(){if(window.gtag||!GA_ON())return;window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
+  gtag('js',new Date());gtag('config',GA_ID,{send_page_view:false});
+  const sc=document.createElement('script');sc.async=true;sc.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(sc);gaLast='';gaPage()}
+function gaPage(){if(!window.gtag)return;const p=location.pathname+location.search;if(p===gaLast)return;gaLast=p;
+  gtag('event','page_view',{page_location:location.href,page_path:p,page_title:document.title});
+  const v=state.view||'',c=BY[v];
+  if(c)gtag('event','sirket_goruntule',{kod:c.t,sektor:c.grp||''});
+  else if(v.startsWith('SEKTOR-'))gtag('event','sektor_goruntule',{sektor:(GRPS.find(g=>'SEKTOR-'+grpKey(g)===v))||v.slice(7)});
+  else if(v==='KARSILASTIR')gtag('event','karsilastir_ac',{grup:state.cmpg||'tumu'})}
+function gaEvent(n,p){if(window.gtag)gtag('event',n,p||{})}
+function cerezBand(zorla){if(!GA_ON())return;const k=CZ.g('sonar_cerez');if(k&&!zorla)return;let b=document.getElementById('cerez');if(b){b.hidden=false;return}
+  b=document.createElement('div');b.id='cerez';b.setAttribute('role','dialog');b.setAttribute('aria-label','Çerez tercihi');
+  b.innerHTML=`<div class="cz-t"><b>Çerezler</b> Sonar, sitenin nasıl kullanıldığını anlamak için Google Analytics çerezleri kullanır: hangi sayfaların açıldığı, kaba konum ve cihaz türü. Reklam ve kişiselleştirme yok. Onay vermezseniz hiçbir analitik çerez yazılmaz; site aynı şekilde çalışır. <details><summary>Ayrıntı</summary>Ölçüm Google Analytics 4 ile yapılır; veriler Google sunucularında işlenir ve yurt dışına aktarılabilir. IP adresi Google tarafından saklanmaz. Çerezler (_ga, _ga_*) en fazla 2 yıl tutulur. Tercihinizi sayfanın altındaki "Çerez tercihleri" bağlantısından istediğiniz zaman değiştirebilirsiniz.</details></div>
+    <div class="cz-b"><button class="chip" data-cz="hayir">Reddet</button><button class="chip cz-ok" data-cz="evet">Kabul et</button></div>`;
+  document.body.appendChild(b);
+  b.querySelectorAll('[data-cz]').forEach(x=>x.onclick=()=>{const v=x.dataset.cz,once=CZ.g('sonar_cerez');CZ.s('sonar_cerez',v);b.hidden=true;
+    if(v==='evet')gaLoad();else if(once==='evet'){document.cookie.split(';').map(c=>c.split('=')[0].trim()).filter(n=>/^_ga/.test(n)).forEach(n=>{const d=location.hostname.split('.');for(let i=0;i<d.length-1;i++)document.cookie=`${n}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.${d.slice(i).join('.')}`;document.cookie=`${n}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`});location.reload()}})}
+function gaParam(){try{const q=new URLSearchParams(location.search).get('olcme');if(q==='0')CZ.s('sonar_olcme','0');else if(q==='1')CZ.s('sonar_olcme','1')}catch(e){}}
+function gaBoot(){if(!PUB)return;
+  if(!GA_ON())return;if(CZ.g('sonar_cerez')==='evet')gaLoad();else cerezBand();
+  document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href]');if(!a)return;
+    if(a.id==='cerezbtn'){e.preventDefault();cerezBand(true);return}
+    if(/kap\.org\.tr/.test(a.href))gaEvent('kap_tiklama',{kod:(BY[state.view]?.t)||'',hedef:a.href})},true)}
 function linkify(root){if(!PATHMODE||!root||!root.querySelectorAll)return;
   root.querySelectorAll('button[data-go],button[data-v],button[data-hgo],button[data-back],a[data-go]').forEach(b=>{const v=b.dataset.go||b.dataset.v||b.dataset.hgo||b.dataset.back;if(!okView(v))return;
     if(b.tagName==='A'){b.href=pathOf(v);b.onclick=null;return}
@@ -1544,7 +1580,7 @@ function renderAudit(){
 function renderMacro(){
   const M=DATA.macro;const LB={'TÜFE · yıllık':M.cpi.map(x=>x[0]),'TCMB politika faizi':M.policy.map(x=>x[0]),'USD/TRY · ay sonu':M.fx.map(x=>x[0]),'EUR/TRY · ay sonu':M.fx.map(x=>x[0]),'Brent · USD/varil':M.brent.map(x=>x[0])};const blocks=[['TÜFE · yıllık',M.cpi.map(x=>x[1]),M.cpi[M.cpi.length-1],'%',x=>x[0]],['TCMB politika faizi',M.policy.map(x=>x[1]),M.policy[M.policy.length-1],'%',x=>x[0]],['USD/TRY · ay sonu',M.fx.map(x=>x[1]),M.fx[M.fx.length-1],'',x=>x[0]],['EUR/TRY · ay sonu',M.fx.map(x=>x[2]),M.fx[M.fx.length-1],'',x=>x[0]],['Brent · USD/varil',M.brent.map(x=>x[1]),M.brent[M.brent.length-1],'',x=>x[0]]];
   $('#macro').innerHTML=`<div class="ph"><h2>Makro çerçeve</h2><span class="sub">TÜİK (TCMB yayını), TCMB gösterge kurları, Neste/LSEG Brent. Finansal tablolara otomatik enflasyon düzeltmesi uygulanmaz.</span></div><div class="smalls">${blocks.map(([l,vs,last,u,d])=>`<div class="small"><h4>${l}</h4><div class="v">${nf(l.startsWith('USD')||l.startsWith('EUR')?last[1]&&(l.startsWith('USD')?last[1]:last[2]):last[1],2)}${u}</div>${spark(vs,{w:200,h:56,color:'var(--accent)',labels:LB[l],unit:u})}<div class="note" style="margin:0">${esc(d(last))}</div></div>`).join('')}</div>`;
-  $('#foot').innerHTML=`Kaynaklar: KAP finansal rapor bildirimleri, şirket yatırımcı ilişkileri raporları${PUB?'':`, SmartRadar veri seti (${esc(DATA.generated)} itibarıyla)`}. Tutarlar milyon TL ve ilgili raporun kendi fiyat esasındadır. Bu sayfa yatırım tavsiyesi değildir.`;
+  $('#foot').innerHTML=`Kaynaklar: KAP finansal rapor bildirimleri, şirket yatırımcı ilişkileri raporları${PUB?'':`, SmartRadar veri seti (${esc(DATA.generated)} itibarıyla)`}. Tutarlar milyon TL ve ilgili raporun kendi fiyat esasındadır. Bu sayfa yatırım tavsiyesi değildir.${GA_ON()?' <a href="#" id="cerezbtn">Çerez tercihleri</a>':''}`;
 }
 /* sparkline hover: değerleri göster */
 const SPC=new WeakMap();
@@ -2017,10 +2053,11 @@ document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('.br
   btn.onclick=()=>{const next=isDark()?'light':'dark';root.dataset.theme=next;try{localStorage.setItem('fr-theme',next)}catch(e){}sync()};
   try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',sync)}catch(e){}sync()})();
 (function(){const h=$('#srchtop');if(h&&!h.firstChild)h.appendChild(makeSearch())})();
+gaParam();
 (function init(){const h=(location.hash||'').slice(1).toUpperCase();let v='GIRIS';
   if(PATHMODE){v=viewOfPath(location.pathname);if(location.pathname==='/'&&okView(h))v=h;try{const p=pathOf(v);if(location.pathname!==p||location.hash)history.replaceState({v},'',p+(v==='GIRIS'?location.search:''))}catch(e){}}
   else if(okView(h))v=h;
-  state.view=v;renderTickers();render();renderMacro();setMeta()})();
+  state.view=v;renderTickers();render();renderMacro();setMeta();gaBoot()})();
 </script>
 
 </body>
