@@ -434,11 +434,62 @@ table.t th:first-child,table.t td:first-child{text-align:left}
  .bl-katc span{display:none}
  .bl-katc b{font-size:12.5px;line-height:1.2;overflow-wrap:anywhere;hyphens:auto}
 }
+
+/* mobil: üst çubuk + sağdan açılan menü */
+.menubtn{display:none;flex:none;width:40px;height:40px;border:1px solid var(--line);background:var(--panel2);color:var(--fg);border-radius:12px;cursor:pointer;align-items:center;justify-content:center;padding:0}
+.menubtn svg{width:20px;height:20px}
+.mclose{display:none;margin-left:auto;width:36px;height:36px;border:1px solid var(--line);background:var(--panel2);color:var(--fg);border-radius:10px;cursor:pointer;align-items:center;justify-content:center;padding:0}
+.mclose svg{width:18px;height:18px}
+.scrim{position:fixed;inset:0;z-index:59;background:rgba(8,15,30,.45);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)}
+.scrim[hidden]{display:none}
+@media (max-width:1099px){
+ .rail .wrap{flex-wrap:nowrap;gap:10px;padding-block:8px}
+ .rail .tickers,.rail .themebtn{display:none}
+ .srchhost{flex:1 1 auto;min-width:0}
+ .menubtn,.mclose{display:inline-flex}
+ .hfbar{top:var(--railh,0px)}
+ .side{display:flex;flex-direction:column;gap:16px;position:fixed;z-index:60;top:0;right:0;bottom:0;width:min(88vw,360px);overflow-y:auto;overscroll-behavior:contain;background:var(--panel);border-left:1px solid var(--line);box-shadow:-12px 0 32px rgba(0,0,0,.18);
+  padding:calc(14px + env(safe-area-inset-top,0px)) calc(16px + env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) 16px;transform:translateX(105%);visibility:hidden;transition:transform .22s ease,visibility 0s linear .22s}
+ body.menu-open .side{transform:none;visibility:visible;transition:transform .22s ease}
+ body.menu-open{overflow:hidden}
+ .side .brand{position:sticky;top:calc(-14px - env(safe-area-inset-top,0px));z-index:2;background:var(--panel);margin:-14px -16px 0;padding:14px 16px 10px;border-bottom:1px solid var(--line)}
+ .side .sl{min-height:40px}
+ .side .slrow .sl{min-height:36px}
+ .side .themebtn{margin-top:4px;align-self:flex-start}
+ .side .themebtn span{display:inline}
+}
+@media (max-width:640px){
+ .rail .brand b{font-size:17px}
+ .rail .brand svg{width:26px;height:26px}
+ .hfrow{gap:6px}
+ .hfq{min-width:0;flex:1 1 100%}
+ #hsira{flex:1 1 auto;min-width:0}
+ .hfchips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;scroll-padding-inline:16px}
+ .hfchips::-webkit-scrollbar{display:none}
+ .hfchips .chip{flex:none;white-space:nowrap}
+ .spick{padding:10px 12px}
+ .spick .spl{max-height:184px;overflow-y:auto;overscroll-behavior:contain;padding-right:2px}
+ .spick .sph{gap:6px}
+ .spick .sph .chip:first-of-type{margin-left:0}
+ .tw{margin-inline:-4px}
+ .hero{padding-block:20px 12px;gap:16px}
+ .tw{-webkit-overflow-scrolling:touch}
+ .tw table.t td:not(:first-child){white-space:nowrap}
+ .tw table.t td:first-child{min-width:132px;max-width:46vw}
+ .tw table.t th{min-width:92px;vertical-align:bottom;font-size:11.5px;line-height:1.25}
+ .tw table.t th:first-child{min-width:0}
+ .tw table.t tr>:first-child{position:sticky;left:0;z-index:1;background:var(--panel);box-shadow:1px 0 0 var(--line)}
+ .tw table.t td .tk{padding:4px 9px;font-size:12px}
+ .spick>.note{font-size:11.5px}
+ .ph{flex-wrap:wrap;row-gap:4px}
+}
+@media (prefers-reduced-motion:reduce){.side{transition:none!important}}
 </style>
 
 </head>
 <body>
 <aside class="side" id="side" aria-label="Gezinme"></aside>
+<div class="scrim" id="scrim" hidden></div>
 <header class="rail">
   <div class="wrap">
     <div class="brand" aria-label="Sonar">
@@ -447,6 +498,7 @@ table.t th:first-child,table.t td:first-child{text-align:left}
     </div>
     <div id="srchtop" class="srchhost"></div>
     <nav class="tickers" id="tickers" role="tablist" aria-label="Sayfalar"></nav>
+    <button class="menubtn" id="menubtn" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="side"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
     <button class="themebtn" id="themebtn" type="button" aria-label="Açık / koyu tema"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M5.2 18.8l1.6-1.6M17.2 6.8l1.6-1.6"/></g></svg><span id="themelbl">Açık tema</span></button>
   </div>
 </header>
@@ -627,7 +679,17 @@ function renderTickers(){
    `<button class="tk view" role="tab" data-v="OZET" aria-selected="${state.view.startsWith('OZET')||state.view.startsWith('KARS-')}">Dönem özetleri</button><button class="tk view" role="tab" data-v="KARSILASTIR" aria-selected="${state.view==='KARSILASTIR'}">Karşılaştır</button><button class="tk view dev" role="tab" data-v="DENETIM" aria-selected="${state.view==='DENETIM'}">Veri denetimi</button>`;
   nav.querySelectorAll('.tk').forEach(b=>b.onclick=()=>go(b.dataset.v));
 }
-function go(v){state.view=v;state.sel=null;try{history.replaceState(null,'','#'+v.toLowerCase())}catch(e){}renderTickers();render();scrollTo({top:0})}
+/* ---------- mobil menü (çekmece) ---------- */
+function menuSet(on){const b=document.body,btn=$('#menubtn'),sc=$('#scrim'),sd=$('#side');if(!b||!sd)return;
+  if(on===b.classList.contains('menu-open'))return;
+  b.classList.toggle('menu-open',on);if(sc)sc.hidden=!on;if(btn){btn.setAttribute('aria-expanded',on);btn.setAttribute('aria-label',on?'Menüyü kapat':'Menüyü aç')}
+  if(on){sd.setAttribute('role','dialog');sd.setAttribute('aria-modal','true');sd.scrollTop=0;setTimeout(()=>$('#mclose')?.focus(),50)}
+  else{sd.removeAttribute('role');sd.removeAttribute('aria-modal');if(document.activeElement&&sd.contains(document.activeElement))btn?.focus()}}
+document.addEventListener('click',e=>{if(e.target.closest('#menubtn'))menuSet(!document.body.classList.contains('menu-open'));else if(e.target.id==='scrim')menuSet(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('menu-open'))menuSet(false)});
+matchMedia('(min-width:1100px)').addEventListener('change',m=>{if(m.matches)menuSet(false)});
+{const rh=()=>{const r=document.querySelector('.rail');document.documentElement.style.setProperty('--railh',(r&&r.offsetHeight?r.offsetHeight:0)+'px')};addEventListener('resize',rh);addEventListener('load',rh);setTimeout(rh,0)}
+function go(v){menuSet(false);state.view=v;state.sel=null;try{history.replaceState(null,'','#'+v.toLowerCase())}catch(e){}renderTickers();render();scrollTo({top:0})}
 
 /* ---------- company view ---------- */
 function heroHTML(c,k){
@@ -1734,17 +1796,17 @@ function wireSubstack(c){const U=c.summary.substack,T=c.summary.social.tweets;
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('.ozt-go');if(b)go('OZET-'+b.dataset.oz);const k=e.target.closest&&e.target.closest('[data-kgo]');if(k)go(k.dataset.kgo)});
 
 function renderSide(){
-  const el=$('#side');if(!el)return;const v=state.view;{const tb0=$('#themebtn');if(tb0&&el.contains(tb0))$('.rail .wrap').appendChild(tb0)}
+  const el=$('#side');if(!el)return;const v=state.view;
   const secs=[];document.querySelectorAll('#app .hero, #app .panel').forEach((x,i)=>{if(PUB&&x.closest('.dev'))return;let t=x.classList.contains('hero')?'Özet':(x.querySelector('.ph h2')?.textContent||'').split(' · ')[0];if(!t)return;x.id=x.id||('s-'+i);secs.push([x.id,t]);if((v.startsWith('KARS-')||v.startsWith('YAZI-'))&&x.id==='ozsub')x.querySelectorAll('.subart h2').forEach((h,j)=>{h.id='kh-'+j;secs.push([h.id,'· '+h.textContent.split(':')[0]])})});secs.push(['macro','Makro çerçeve']);
-  el.innerHTML=`<div class="brand"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><defs><clipPath id="snc2"><rect x="3" y="3" width="58" height="58" rx="15"/></clipPath></defs><rect x="3" y="3" width="58" height="58" rx="15" fill="#0B2545"/><g clip-path="url(#snc2)" fill="none" stroke="#fff" stroke-width="2.5" opacity=".2"><circle cx="12" cy="52" r="14"/><circle cx="12" cy="52" r="27"/><circle cx="12" cy="52" r="40"/></g><rect x="3" y="3" width="58" height="58" rx="15" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/><path stroke="#fff" fill="none" stroke-width="2.5" stroke-linecap="round" d="M20 33V50M32 26V50"/><rect x="16.5" y="38" width="7" height="8" rx="2" fill="#fff"/><rect x="28.5" y="30" width="7" height="12" rx="2" fill="#fff"/><path stroke="#19C3B1" fill="none" stroke-width="2.5" stroke-linecap="round" d="M44 14V50"/><rect x="40" y="19" width="8" height="20" rx="2" fill="#19C3B1"/></svg><div><b>sonar</b></div></div>
+  el.innerHTML=`<div class="brand"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><defs><clipPath id="snc2"><rect x="3" y="3" width="58" height="58" rx="15"/></clipPath></defs><rect x="3" y="3" width="58" height="58" rx="15" fill="#0B2545"/><g clip-path="url(#snc2)" fill="none" stroke="#fff" stroke-width="2.5" opacity=".2"><circle cx="12" cy="52" r="14"/><circle cx="12" cy="52" r="27"/><circle cx="12" cy="52" r="40"/></g><rect x="3" y="3" width="58" height="58" rx="15" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/><path stroke="#fff" fill="none" stroke-width="2.5" stroke-linecap="round" d="M20 33V50M32 26V50"/><rect x="16.5" y="38" width="7" height="8" rx="2" fill="#fff"/><rect x="28.5" y="30" width="7" height="12" rx="2" fill="#fff"/><path stroke="#19C3B1" fill="none" stroke-width="2.5" stroke-linecap="round" d="M44 14V50"/><rect x="40" y="19" width="8" height="20" rx="2" fill="#19C3B1"/></svg><div><b>sonar</b></div><button class="mclose" id="mclose" type="button" aria-label="Menüyü kapat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
   <nav><button class="sl" data-v="GIRIS" aria-current="${v==='GIRIS'}">Ana sayfa</button><button class="sl" data-v="HABERLER" aria-current="${v.startsWith('HABER')}">Haberler</button></nav>
   ${sideCos(v)}
   <div><h5>Görünümler</h5><nav><button class="sl" data-v="OZET" aria-current="${v.startsWith('OZET')}">Dönem özetleri</button>${KARS.map(K=>`<button class="sl" data-v="KARS-${K.id}" aria-current="${v==='KARS-'+K.id}"><i class="dot" style="background:${BY[K.a].color}"></i>${K.a}–${K.b} ${K.p.slice(0,4)}/${+K.p.slice(5,7)}<small>yazı</small></button>`).join('')}<button class="sl" data-v="KARSILASTIR" aria-current="${v==='KARSILASTIR'}">Karşılaştır</button><button class="sl dev" data-v="DENETIM" aria-current="${v==='DENETIM'}">Veri denetimi</button></nav></div>
   <div><h5>Bu sayfada</h5><nav class="sec">${secs.map(([id,t])=>`<a href="#${id}" data-sec="${id}">${esc(t)}</a>`).join('')}</nav></div>`;
   if(!SRCH_SIDE)SRCH_SIDE=makeSearch();el.querySelector('.brand')?.after(SRCH_SIDE);{const inp=SRCH_SIDE.querySelector('input');if(inp&&!inp.dataset.sf){inp.dataset.sf=1;inp.addEventListener('input',()=>sideFilter(inp.value))}if(inp&&inp.value)sideFilter(inp.value)}
-  const tb=$('#themebtn');if(tb&&matchMedia('(min-width:1100px)').matches)el.appendChild(tb);
+  const tb=$('#themebtn');if(tb)el.appendChild(tb);const mc=$('#mclose');if(mc)mc.onclick=()=>menuSet(false);
   el.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>go(b.dataset.v));
-  el.querySelectorAll('[data-sec]').forEach(a=>a.onclick=e=>{e.preventDefault();document.getElementById(a.dataset.sec)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})});
+  el.querySelectorAll('[data-sec]').forEach(a=>a.onclick=e=>{e.preventDefault();menuSet(false);document.getElementById(a.dataset.sec)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})});
   spy();
 }
 function spy(){const links=[...document.querySelectorAll('#side [data-sec]')];if(!links.length)return;let cur=links[0].dataset.sec;for(const a of links){const t=document.getElementById(a.dataset.sec);if(t&&t.getBoundingClientRect().top<140)cur=a.dataset.sec}links.forEach(a=>a.classList.toggle('on',a.dataset.sec===cur))}
