@@ -201,6 +201,31 @@ def ayrinti(x, P):
     return x
 
 
+DUZ = os.path.join(B, "duyuru_duzelt.json")
+
+
+def duzelt(L, D=None):
+    """Panel düzeltmeleri (bekci/duyuru_duzelt.json): {"<id>": {gizli, t, kod_ekle, kod_cikar}, "ekle": [kayıt, ...]}.
+    duyurular.json'a dokunulmaz; site, kabuk ve Telegram listeyi bu fonksiyondan geçirir."""
+    if D is None:
+        try: D = json.load(open(DUZ, encoding="utf-8"))
+        except Exception: D = {}
+    out = []
+    for x in list(L) + [dict(e, elle=True) for e in (D.get("ekle") or []) if e.get("id") and e.get("t") and e.get("u")]:
+        o = D.get(x["id"]) if not x["id"].startswith("_") else None
+        if isinstance(o, dict):
+            if o.get("gizli"): continue
+            x = dict(x)
+            if o.get("t"): x["t"] = o["t"]
+            k = [t for t in (x.get("kod") or []) if t not in (o.get("kod_cikar") or [])]
+            k += [t for t in (o.get("kod_ekle") or []) if t not in k]
+            x["kod"] = k
+            if x.get("bol"): x["bol"] = {t: v for t, v in x["bol"].items() if t in k}
+        out.append(x)
+    out.sort(key=lambda x: (x.get("d") or "", x["id"]), reverse=True)
+    return out
+
+
 def tara(kuru=False, sessiz=None):
     """Yeni kayıtları duyurular.json'a ekler; Telegram mesajlarını döndürür."""
     y = datetime.date.today().year
@@ -237,6 +262,7 @@ def tara(kuru=False, sessiz=None):
     if ilk:
         return [f"SPK ve Borsa İstanbul duyuru takibi başladı: {len(yeni)} kayıt Sonar'a alındı. Yeni bülten ve duyurular buraya gelecek."], hatalar
     msj = []
+    yeni = [x for x in duzelt(yeni) if not x.get("elle")]
     for x in sorted(yeni, key=lambda x: (x.get("d") or "", x["id"])):
         kod = x.get("kod") or []
         bol = x.get("bol") or {}
