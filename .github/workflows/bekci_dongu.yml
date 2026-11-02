@@ -19,6 +19,7 @@ jobs:
     timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
+      - run: pip install -q pypdf || true
       - name: Döngü
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}

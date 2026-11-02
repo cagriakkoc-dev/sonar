@@ -14,13 +14,18 @@ B = os.path.dirname(os.path.abspath(__file__))
 DUY = os.path.join(B, "duyurular.json")
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36 Sonar-Bekci",
       "Accept-Language": "tr-TR,tr;q=0.9"}
+AYLAR = [a.capitalize() for a in "ocak şubat mart nisan mayıs haziran temmuz ağustos eylül ekim kasım aralık".split()]
+GENEL = re.compile(r"^(Basın (Duyurusu|Açıklaması)|Duyuru|Kamuoyuna Duyuru)$", re.I)
 AY = {a: i + 1 for i, a in enumerate("ocak şubat mart nisan mayıs haziran temmuz ağustos eylül ekim kasım aralık".split())}
 AY.update({a[:3]: i for a, i in list(AY.items())})
 KAYNAK = {"spk-bulten": "SPK bülteni", "spk-basin": "SPK duyurusu", "bist": "Borsa İstanbul"}
 
 
 def get(url, t=40):
-    return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=t).read()
+    b = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=t).read()
+    if b[:2] == b"\x1f\x8b":
+        import gzip; b = gzip.decompress(b)
+    return b
 
 
 def metin(b):
@@ -57,7 +62,7 @@ def spk_basin(y):
         m = re.match(r"(\d{1,2} \w+ \d{4})\s*(?:Yeni\s+)?(.*)$", t)
         if not m: continue
         baslik = m.group(2).strip()
-        bas = re.sub(r"^(Yeni )?Basın (Duyurusu|Açıklaması)\s*", "", baslik).strip()
+        bas = baslik if GENEL.match(baslik) else re.sub(r"^(Yeni )?Basın (Duyurusu|Açıklaması)\s+(?=\S)", "", baslik).strip()
         out.append({"k": "spk-basin", "id": "spk-basin-" + a.group(1).rsplit("/", 1)[1].lower(), "t": bas or baslik or "Basın duyurusu",
                     "d": tarih(m.group(1)), "u": "https://spk.gov.tr" + a.group(1)})
     return out
@@ -138,7 +143,10 @@ def etiketle(txt, P, bolum=False):
         if not x: continue
         if BASLIK.match(x) and not re.search(r"\d{2}\.\d{2}\.\d{4}|TL|%", x):
             seviye = 0 if re.match(r"^([A-ZÇĞİÖŞÜ]|[IVX]+)[.)]", x) else 1
-            son[seviye] = re.sub(r"^\S+\s+", "", x).strip()
+            h = re.sub(r"^\S+\s+", "", x).strip().rstrip(":")
+            if re.search(r"Kurul Karar Organı.*Uyarınca", h): h = "Kurul kararıyla yapılan duyuru"
+            if h == up(h): h = h.replace("I", "ı").replace("İ", "i").lower(); h = h[:1].upper() + h[1:]
+            son[seviye] = h
             if seviye == 0: son[1] = ""
             continue
         ux = up(x)
@@ -152,7 +160,13 @@ def pdf_metin(b):
     try:
         from pypdf import PdfReader
     except Exception:
-        return ""
+        try:
+            import subprocess, site, importlib
+            subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--user", "pypdf"], timeout=120, check=False)
+            importlib.invalidate_caches(); sys.path.append(site.getusersitepackages())
+            from pypdf import PdfReader
+        except Exception as e:
+            print("pypdf yok:", repr(e)[:100]); return ""
     try:
         return "\n".join((p.extract_text() or "") for p in PdfReader(io.BytesIO(b)).pages[:60])
     except Exception as e:
@@ -169,11 +183,15 @@ def ayrinti(x, P):
             e = etiketle(txt, P, bolum=True)
         else:
             s = metin(get(x["u"]))
-            i = s.find(x["t"][:40]) if x.get("t") else -1
-            e = etiketle(s[i:] if i > 0 else s, P)
-            if x["k"] == "spk-basin" and x["t"] in ("Basın duyurusu", ""):
-                m = re.search(r"Basın Duyurusu\s+(.{20,160}?)[.!]", s)
-                if m: x["t"] = m.group(1).strip()
+            if x["k"] == "spk-basin" and x.get("d"):
+                y_, m_, g_ = x["d"].split("-"); uz = f"{g_} {AYLAR[int(m_) - 1]} {y_}"
+                i = s.rfind(uz); govde = s[i + len(uz):] if i >= 0 else ""
+                if govde and GENEL.match(x["t"]):
+                    c = re.split(r"(?<=[.!?])\s", govde.strip(), 1)[0]
+                    x["t"] = x["t"] + ": " + (c[:140].rsplit(" ", 1)[0] + "…" if len(c) > 140 else c)
+            else:
+                i = s.rfind(x["t"][:40]); govde = s[i:] if i >= 0 else s
+            e = etiketle(govde[:20000], P)
         if e:
             x["kod"] = sorted(e)
             bol = {t: v for t, v in e.items() if v}

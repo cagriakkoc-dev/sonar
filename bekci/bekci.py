@@ -307,6 +307,14 @@ def main():
             print("elle kuyruğa eklendi", t, i)
         except Exception as e:
             print("elle ekleme hatası", parca, repr(e)[:150])
+    # SPK bültenleri / SPK basın duyuruları / Borsa İstanbul duyuruları (bekci/duzenleyici.py → bekci/duyurular.json)
+    try:
+        import duzenleyici
+        dm, dh = duzenleyici.tara()
+        mesajlar += dm
+        st["duyuru_hata"] = dh
+    except Exception as e:
+        print("duyuru taraması hatası:", repr(e)[:200]); st["duyuru_hata"] = [repr(e)[:80]]
     mesajlar += bekleyen_bildirim
     try:
         import datetime
