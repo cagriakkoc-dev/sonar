@@ -30,8 +30,14 @@ SITELER = {
 GENEL = re.compile(r"^(pdf|indir|download|tıklayınız|görüntüle|)$", re.I)
 
 
+GEVSEK_SSL = {"www.fordotosan.com.tr"}  # sunucu ara sertifikayı göndermiyor (tarayıcı tamamlıyor, Python tamamlayamıyor); yalnız açık sayfa okunur
+
+
 def get(url, data=None, t=40):
-    r = urllib.request.urlopen(urllib.request.Request(url, data=data, headers=UA), timeout=t)
+    ctx = None
+    if urllib.parse.urlparse(url).hostname in GEVSEK_SSL:
+        import ssl; ctx = ssl.create_default_context(); ctx.check_hostname = False; ctx.verify_mode = ssl.CERT_NONE
+    r = urllib.request.urlopen(urllib.request.Request(url, data=data, headers=UA), timeout=t, context=ctx)
     b = r.read()
     if b[:2] == b"\x1f\x8b":
         import gzip; b = gzip.decompress(b)
@@ -103,7 +109,7 @@ def tara(kuru=False, zorla=False):
         if cfg.get("not"): e["not"] = cfg["not"]
         else: e.pop("not", None)
         son = e.get("kontrol")
-        ara = 1800 if cfg.get("aylik") and tr.day <= 3 else 6 * 3600
+        ara = 1800 if cfg.get("aylik") and tr.day <= 3 else 3600 if e.get("hata") else 6 * 3600
         if not zorla and son and (now - datetime.datetime.fromisoformat(son.replace("Z", "+00:00"))).total_seconds() < ara: continue
         try:
             L = oku(t, cfg)
