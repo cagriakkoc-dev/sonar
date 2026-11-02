@@ -1,6 +1,6 @@
 """Sonar Bekçi: KAP'ta izlenen şirketlerin yeni bildirimlerini izler, Telegram'a yollar.
 Claude kullanmaz; GitHub Actions'ta çalışır. Durum: bekci/state.json"""
-import json, os, re, urllib.request, datetime
+import json, os, re, urllib.request, datetime, time
 
 SIRKETLER = {
     "AGESA": "4028e4a140e95bea0140edeb7a54015d",
@@ -206,9 +206,10 @@ def http(url, data=None, headers=None):
         return json.loads(r.read().decode("utf-8"))
 
 def kap(oid, gun=4):
+    oids = oid if isinstance(oid, list) else [oid]
     bugun = datetime.date.today()
     body = {"fromDate": (bugun - datetime.timedelta(days=gun)).isoformat(), "toDate": bugun.isoformat(),
-            "memberType": "IGS", "mkkMemberOidList": [oid], "inactiveCompanies": "N", "bdkMemberOidList": [],
+            "memberType": "IGS", "mkkMemberOidList": oids, "inactiveCompanies": "N", "bdkMemberOidList": [],
             "subjectList": [], "srcCategory": "", "index": "", "market": "", "isLate": "", "term": "",
             "ruleType": "", "period": "", "year": "", "disclosureClass": ""}
     return http("https://www.kap.org.tr/tr/api/disclosure/members/byCriteria", json.dumps(body).encode(),
@@ -250,16 +251,29 @@ def main():
     # listeye yeni eklenen şirketin geçmiş bildirimleri sessizce görülmüş sayılır (kuyruk/Telegram yok)
     hata = {}
     izlenen = set(st.get("izlenen") or ([] if ilk else ["AGESA", "AKSA", "ANHYT", "AVPGY", "FROTO", "ISMEN", "TUPRS"]))
-    for t, oid in SIRKETLER.items():
-        try:
-            for d in kap(oid):
-                i = d["disclosureIndex"]
-                if i not in seen:
-                    seen.add(i)
-                    if t in izlenen: yeni.append((t, d))
-            izlenen.add(t)
-        except Exception as e:
-            print(t, "KAP hatası:", repr(e)[:200]); hata[t] = repr(e)[:80]
+    # KAP'a şirket başına istek 173 şirkette 429 (Request Limit Exceeded) veriyordu: 25'erli gruplarla sorulur.
+    L = list(SIRKETLER.items())
+    for g0 in range(0, len(L), 25):
+        grup = dict(L[g0:g0 + 25]); oids = list(grup.values())
+        for deneme in range(3):
+            try:
+                R = kap(oids); break
+            except Exception as e:
+                R = None; print("KAP hatası (grup", g0, "):", repr(e)[:150])
+                if deneme < 2: time.sleep(20 * (deneme + 1))
+        if R is None:
+            for t in grup: hata[t] = "grup isteği başarısız"
+            continue
+        for d in R:
+            kods = [k.strip() for k in (d.get("stockCodes") or "").split(",")]
+            t = next((k for k in kods if k in grup), None)
+            if not t: continue
+            i = d["disclosureIndex"]
+            if i not in seen:
+                seen.add(i)
+                if t in izlenen: yeni.append((t, d))
+        izlenen.update(grup)
+        time.sleep(2)
     st["izlenen"] = sorted(izlenen)
     st["kap_hata"] = {"n": len(hata), "ornek": dict(list(hata.items())[:5]), "izlenmeyen": sorted(set(SIRKETLER) - izlenen)}
     if TOKEN and not st.get("chat_id"):
