@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - run: pip install -q pypdf
+      - run: pip install -q pypdf && mkdir -p bekci/deneme
       - name: Erişim
         run: |
           for u in https://spk.gov.tr/spk-bultenleri/2026-yili-spk-bultenleri https://spk.gov.tr/duyurular/basin-duyurulari/2026 https://www.borsaistanbul.com/duyurular; do
