@@ -50,6 +50,9 @@ Deneme listesi: TUPRS, ANHYT, AVPGY, FROTO, ISMEN, AKSA (sunum.py SITELER: url +
 #### Sayısal seriler güncellenince (c.fin)
 Bir şirketin c.fin serilerine yeni dönem eklendiğinde (sektör hattı `build_fin → build_rat → grup_ekle` ya da elle), `$HOME/fr-site` içinde sırayla: `python3 bekci/araclar/genel/amortisman.py`, `python3 bekci/araclar/genel/netborc.py <HİSSE>`, `python3 bekci/araclar/genel/isletme.py <HİSSE>` (banka/sigorta/aracı kurumu kendisi atlar). isletme.py çalışmazsa şirket kartlarındaki alacak/stok/nakit akışı maddeleri son dönemde sessizce düşer. Ardından `python3 bekci/araclar/genel/denetim.py <grup>`.
 
+### "Yatırımcı sunumu" (bekçi sunum.py, şirket sitesi) → sunum özeti
+Dosya: bekci/gelen/<id>/sunum.pdf (id: sunum-<hisse>-<başlık>). Haber özeti şemasıyla, ek alanlar: "id": 9 + YYYYAA + sıra (ör. 92026110 = 2026/11'in 1. sunumu), "tur": "Yatırımcı sunumu", "sunum": "<PDF linki>" (şirket sayfasındaki sunum kutusu bu alanla eşler), "kaynak": "Kaynak: <Şirket> yatırımcı sunumu (<Ay YYYY>)" (kart dipnotu). Sources: PDF + şirketin sunum sayfası. Kartlar "facts" türünde, en çok 3: piyasa/operasyon verisi, şirket beklentileri, gerçekleşmeler; şirket sayfasında "Sunumdan öne çıkanlar" olarak da görünür. Sunumdaki grafik değerlerini sayfa görüntüsüyle (pdftoppm) doğrula; finansal tablolar hangi döneme aitse yaz (aylık sunumlarda çoğu zaman son çeyrek). Yorum yok; "önceki beklenti" gibi kıyaslar sunumda yazıyorsa verilir. Örnek: TUPRS 92026110. `site.py ekle-haber <HİSSE> dosya.json` (gizli eklenir).
+
 #### Kalem açıklamaları (c.kalem)
 Finansal rapor işlenirken şirketin `kalem` alanına son dönemin dipnot kırılımlarını yaz (matristeki (i) açıklamasının şirkete özel kısmı):
 `"kalem": {"cost_of_sales": {"p": "2026-09", "title": "2026 ilk 9 ay, Mn TL", "u": "<KAP bildirim linki>", "pg": <PDF sayfa>, "rows": [["Satılan konut maliyeti", -1626.47], …], "text": "<dipnottaki olgusal açıklama, yorum yok>"}}`
