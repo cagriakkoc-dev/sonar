@@ -329,6 +329,12 @@ def main():
         st["duyuru_hata"] = dh
     except Exception as e:
         print("duyuru taraması hatası:", repr(e)[:200]); st["duyuru_hata"] = [repr(e)[:80]]
+    # şirket sitelerinde yatırımcı sunumu (bekci/sunum.py → bekci/sunumlar.json; deneme: 6 şirket)
+    try:
+        import sunum
+        mesajlar += sunum.tara()
+    except Exception as e:
+        print("sunum taraması hatası:", repr(e)[:200])
     mesajlar += bekleyen_bildirim
     try:
         import datetime
