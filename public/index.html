@@ -419,6 +419,23 @@ table.t th:first-child,table.t td:first-child{text-align:left}
 .bl-katc em{font-style:normal;font:600 12px var(--f-body);color:var(--accent)}
 .bl-katc:hover{border-color:var(--accent)}
 .bl-sec{margin-bottom:30px}
+.dy-l{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;background:var(--panel);overflow:hidden}
+.dy-i{display:grid;grid-template-columns:96px 1fr;gap:4px 16px;padding:13px 16px;border-top:1px solid var(--line)}
+.dy-i:first-child{border-top:0}
+.dy-d{font:500 12px var(--f-mono);color:var(--muted);padding-top:3px}
+.dy-b{min-width:0}
+.dy-k{display:inline-block;font:600 10.5px var(--f-mono);letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:6px;margin-right:8px;vertical-align:1px;background:color-mix(in srgb,var(--dk) 14%,transparent);color:var(--dk)}
+.dy-t{font:600 15px/1.4 var(--f-body);color:var(--fg);text-decoration:none}
+.dy-t:hover{text-decoration:underline}
+.dy-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.dy-tag{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:5px;font:600 11.5px var(--f-mono);padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--fg)}
+.dy-tag small{font:500 11px var(--f-body);color:var(--muted)}
+.dy-tag:hover{border-color:var(--c)}
+.dy-tag .dot{width:7px;height:7px;border-radius:50%;flex:none;display:inline-block;background:var(--c)}
+.dy-more{all:unset;cursor:pointer;font:600 12px var(--f-mono);color:var(--muted);padding:3px 4px}
+.dy-band{margin:0 0 30px}
+.dy-note{font-size:12.5px;color:var(--muted);margin:10px 2px 0}
+@media (max-width:640px){.dy-i{grid-template-columns:1fr;padding:12px 14px}.dy-d{padding:0}}
 .bl-sh{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 12px}
 .bl-sh h2{margin:0;font-family:var(--f-display);font-size:22px;font-weight:800;letter-spacing:-.01em}
 .bl-sh span{color:var(--muted);font-size:13px}
@@ -752,18 +769,18 @@ matchMedia('(min-width:1100px)').addEventListener('change',m=>{if(m.matches)menu
 const SITE_URL='https://sonar.smartcuzdan.io';
 const PATHMODE=/^https?:$/.test(location.protocol)&&!/yonetim/i.test(location.pathname);
 const secSlug=g=>g.toLocaleLowerCase('tr').replace(/ç/g,'c').replace(/ğ/g,'g').replace(/ı/g,'i').replace(/ö/g,'o').replace(/ş/g,'s').replace(/ü/g,'u').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-function okView(h){return !!h&&(!!BY[h]||/^SEKTOR-[A-Z0-9]+$/.test(h)||h==='KARSILASTIR'||h==='DENETIM'||h==='GIRIS'||/^OZET(-[A-Z0-9]+(-\d{4}-\d{2})?)?$/.test(h)||/^HABERLER(-[A-Z0-9]+)?$/.test(h)||/^HABER-[A-Z0-9]+-\d+$/.test(h)||/^KARS-[A-Z0-9]+-[A-Z0-9]+-\d{4}-\d{2}$/.test(h)||/^YAZI-[A-Z0-9-]+$/.test(h))}
+function okView(h){return !!h&&(!!BY[h]||/^SEKTOR-[A-Z0-9]+$/.test(h)||h==='KARSILASTIR'||h==='DENETIM'||h==='GIRIS'||/^OZET(-[A-Z0-9]+(-\d{4}-\d{2})?)?$/.test(h)||/^HABERLER(-[A-Z0-9]+)?$/.test(h)||/^HABER-[A-Z0-9]+-\d+$/.test(h)||/^KARS-[A-Z0-9]+-[A-Z0-9]+-\d{4}-\d{2}$/.test(h)||/^YAZI-[A-Z0-9-]+$/.test(h)||h==='DUYURU')}
 function pathOf(v){const l=v.toLowerCase();
   if(v==='GIRIS')return '/';if(v==='HABERLER')return '/haberler/';if(v.startsWith('HABERLER-'))return '/haberler/'+l.slice(9)+'/';
   if(v.startsWith('HABER-'))return '/haber/'+l.slice(6)+'/';if(v==='OZET')return '/donem-ozetleri/';if(v.startsWith('OZET-'))return '/donem-ozeti/'+l.slice(5)+'/';
   if(v.startsWith('KARS-'))return '/karsilastirma/'+l.slice(5)+'/';if(v.startsWith('YAZI-'))return '/analiz/'+l.slice(5)+'/';
-  if(v==='KARSILASTIR')return '/karsilastir/';if(v==='DENETIM')return '/veri-denetimi/';
+  if(v==='KARSILASTIR')return '/karsilastir/';if(v==='DENETIM')return '/veri-denetimi/';if(v==='DUYURU')return '/duyurular/';
   if(v.startsWith('SEKTOR-')){const g=GRPS.find(g=>grpKey(g)===v.slice(7));return '/sektor/'+(g?secSlug(g):l.slice(7))+'/'}
   return BY[v]?'/sirket/'+l+'/':'/'}
 function viewOfPath(p){const m=decodeURIComponent(p||'/').split('/').filter(Boolean);if(!m.length)return 'GIRIS';const a=m[0],b=(m[1]||''),U=b.toUpperCase();let v='GIRIS';
   if(a==='sirket')v=U;else if(a==='sektor'){const g=GRPS.find(g=>secSlug(g)===b);v=g?'SEKTOR-'+grpKey(g):'GIRIS'}
   else if(a==='haberler')v=b?'HABERLER-'+U:'HABERLER';else if(a==='haber')v='HABER-'+U;else if(a==='donem-ozetleri')v='OZET';else if(a==='donem-ozeti')v='OZET-'+U;
-  else if(a==='karsilastirma')v='KARS-'+U;else if(a==='analiz')v='YAZI-'+U;else if(a==='karsilastir')v='KARSILASTIR';else if(a==='veri-denetimi')v='DENETIM';
+  else if(a==='karsilastirma')v='KARS-'+U;else if(a==='analiz')v='YAZI-'+U;else if(a==='karsilastir')v='KARSILASTIR';else if(a==='veri-denetimi')v='DENETIM';else if(a==='duyurular')v='DUYURU';
   return okView(v)?v:'GIRIS'}
 const navKey=e=>e&&(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||(e.button&&e.button!==0));
 function setMeta(){const v=state.view,c=BY[v],cut=(t,n)=>{t=(t||'').replace(/\s+/g,' ').trim();return t.length>n?t.slice(0,n-1).replace(/\s+\S*$/,'')+'…':t};
@@ -773,6 +790,7 @@ function setMeta(){const v=state.view,c=BY[v],cut=(t,n)=>{t=(t||'').replace(/\s+
   else if(v==='GIRIS'){title='Sonar · Borsa İstanbul şirket analizi, finansallar ve oranlar';desc=cut(`${COS.length} Borsa İstanbul şirketinin KAP finansal tabloları, gelir kırılımları, oranları ve temettüleri. Her değerin kaynağı görünür.`,158)}
   else if(v==='HABERLER'||v.startsWith('HABERLER-')){const t=v.split('-')[1];title=t?`${t} haberleri ve KAP açıklamaları`:'Haberler, bilanço özetleri ve KAP açıklamaları';desc=cut((t?BY[t]?.name+': ':'')+'KAP açıklamalarının özetleri, bilanço özetleri ve karşılaştırmalar. Her rakamın kaynağı var.',158)}
   else if(v==='KARSILASTIR'){title='Şirket karşılaştırma: hasılat, kâr, PD/DD, F/K';desc='Borsa İstanbul şirketlerini sektör içinde yan yana karşılaştırın: son dört çeyrek hasılat ve kâr, marjlar, PD/DD, F/K.'}
+  else if(v==='DUYURU'){title='SPK bültenleri, SPK ve Borsa İstanbul duyuruları';desc='SPK haftalık bültenleri, SPK basın duyuruları ve Borsa İstanbul duyuruları tek listede; adı geçen Borsa İstanbul şirketleri etiketli, kaynağa bağlantılı.'}
   else if(v==='OZET'){title='Dönem özetleri';desc='Borsa İstanbul şirketlerinin çeyreklik bilanço özetleri; her rakamın KAP kaynağı.'}
   else{title=h1||'Sonar';desc=cut($('#app .ozhero h1, #app .hero p, #app .intro, #app p')?.textContent||'',158);
     const t=v.startsWith('HABER-')?v.split('-')[1]:null,n=t?(BY[t]?.news||[]).find(x=>String(x.id)===v.split('-')[2]):null;
@@ -822,7 +840,7 @@ function go(v,o){o=o||{};menuSet(false);state.view=v;state.sel=null;
 if(PATHMODE){addEventListener('popstate',()=>{const v=viewOfPath(location.pathname);if(v===state.view)return;state.view=v;state.sel=null;menuSet(false);renderTickers();render();setMeta()});
   document.addEventListener('click',e=>{if(e.defaultPrevented||navKey(e))return;const a=e.target.closest('a[href]');if(!a||a.target==='_blank')return;
     const v=a.dataset.go||a.dataset.v||a.dataset.hgo||a.dataset.back;if(v&&okView(v)){e.preventDefault();go(v);return}
-    const u=new URL(a.href,location.href);if(u.origin!==location.origin||!/^\/(sirket|sektor|haberler|haber|donem-ozetleri|donem-ozeti|karsilastirma|karsilastir|analiz)\/|^\/$/.test(u.pathname))return;if(u.pathname==='/'&&u.hash)return;e.preventDefault();go(viewOfPath(u.pathname))})}
+    const u=new URL(a.href,location.href);if(u.origin!==location.origin||!/^\/(sirket|sektor|haberler|haber|donem-ozetleri|donem-ozeti|karsilastirma|karsilastir|analiz|duyurular)\/|^\/$/.test(u.pathname))return;if(u.pathname==='/'&&u.hash)return;e.preventDefault();go(viewOfPath(u.pathname))})}
 
 /* ---------- şirket kartları: dikkat edilecekler / güçlü yönler ----------
    Kurala dayalı, rakamlı maddeler. Kaynak: c.fin, c.rat, secMet(c) (reel/nominal kuralıyla), c.wc (genel/isletme.py: alacak, stok,
@@ -1869,19 +1887,49 @@ function renderHaberler(tag){{const r=$('.rail');document.documentElement.style.
   const head=tag?`${esc(BY[tag].name)} <em>yazıları</em>`:`Haberler ve <em>yazılar</em>`;
   app.innerHTML=`<section class="bl-hero"><div><div class="eyebrow">Sonar · ${tag?esc(BY[tag].sector):'Blog'}</div><h1>${head}</h1><p>KAP açıklamalarının özetleri, bilanço özetleri ve karşılaştırmalar. Yorum yok, her rakamın kaynağı var.</p></div>
    <label class="bl-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input type="search" id="blq" placeholder="Yazılarda ara" value="${esc(state.hq||'')}" aria-label="Yazılarda ara"></label></section>
-  <nav class="bl-nav" aria-label="Kategoriler"><div class="bl-tabs">${tabs.map(([k,l,n])=>`<button class="bl-tab" data-tur="${k}" aria-pressed="${tur===k}">${l}<span>${n}</span></button>`).join('')}</div>
+  <nav class="bl-nav" aria-label="Kategoriler"><div class="bl-tabs">${tabs.map(([k,l,n])=>`<button class="bl-tab" data-tur="${k}" aria-pressed="${tur===k}">${l}<span>${n}</span></button>`).join('')}<button class="bl-tab" data-go="DUYURU">SPK ve Borsa İstanbul${DUY?`<span>${DUY.length}</span>`:''}</button></div>
    <div class="bl-cos"><button class="bl-co" data-tag="" aria-pressed="${!tag}">Tüm şirketler</button>${COS.filter(c=>cnt(c.t)).map(c=>`<button class="bl-co" data-tag="${c.t}" aria-pressed="${tag===c.t}" style="--c:${c.color}"><i class="dot"></i>${c.t}<span>${cnt(c.t)}</span></button>`).join('')}</div></nav>
   ${vitrin?`<section class="bl-vitrin" aria-label="Vitrin"><button class="bl-feat" data-hgo="${esc(F.go)}">${coverHTML(F,'big')}<span class="bl-body"><span class="bl-kat">Öne çıkan · ${esc(KAT[F.k].l)}</span><b>${esc(F.title)}</b><span class="bl-ex">${esc(F.head)}</span>${metaHTML(F)}<span class="bl-more">Yazıyı oku →</span></span></button>
     ${side.length?`<div class="bl-side"><h3>Son eklenenler</h3>${side.map(x=>`<button class="bl-mini" data-hgo="${esc(x.go)}">${coverHTML(x,'mini')}<span><span class="bl-kat">${esc(KAT[x.k].l)}</span><b>${esc(x.title)}</b><span class="bl-meta"><span>${esc(x.date)}</span><span>${x.min} dk</span></span></span></button>`).join('')}</div>`:''}</section>
    <section class="bl-kats" aria-label="Kategoriler">${Object.entries(KAT).filter(([k])=>kc(k)).map(([k,K])=>`<button class="bl-katc" data-tur="${k}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="${K.i}"/></svg><b>${K.l}</b><span>${K.d}</span><em>${kc(k)} yazı →</em></button>`).join('')}</section>`:''}
+  ${!tur&&!q?duyBand(tag):''}
   ${rest.length?`<section class="bl-sec"><div class="bl-sh"><h2>${vitrin?'Diğer yazılar':q?'Arama sonuçları':tur?esc(KAT[tur].l):'Yazılar'}</h2><span>${rest.length} yazı</span></div><div class="bl-grid">${rest.map(x=>cardHTML(x)).join('')}</div></section>`:(!vitrin?`<p class="note" style="margin:24px 0">Bu seçimde henüz yazı yok.</p>`:'')}
   <section class="bl-foot"><div class="panel"><h3>Şirketler</h3><div class="bl-colist">${COS.map(c=>`<button class="bl-corow" data-tag="${cnt(c.t)?c.t:''}" data-co="${c.t}" style="--c:${c.color}"><span class="bl-logo sm"><img src="${LOGOS[c.t]}" alt=""></span><span><b>${esc(c.name)}</b><small>${esc(c.sector)}</small></span><em>${cnt(c.t)?cnt(c.t)+' yazı':'şirket sayfası →'}</em></button>`).join('')}</div></div>
    <div class="panel bl-sub"><img src="marka/sonar-ikon.svg" alt="" width="44" height="44"><h3>Yazılar Substack'te de</h3><p>Bilanço özetleri ve karşılaştırmalar smartcuzdan Substack'te yayımlanıyor. Yeni yazılar e-postana gelsin.</p><a class="bl-cta" href="https://smartcuzdan.substack.com" target="_blank" rel="noopener">smartcuzdan.substack.com →</a></div></section>`;
-  app.querySelectorAll('[data-hgo]').forEach(b=>b.onclick=()=>go(b.dataset.hgo));
+  app.querySelectorAll('[data-hgo]').forEach(b=>b.onclick=()=>go(b.dataset.hgo));duyBind(app);app.querySelectorAll('.bl-nav [data-go],.dy-band [data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
   app.querySelectorAll('[data-tag]').forEach(b=>b.onclick=()=>{const t=b.dataset.tag;if(!t&&b.dataset.co)return go(b.dataset.co);go(t?'HABERLER-'+t:'HABERLER')});
   app.querySelectorAll('[data-tur]').forEach(b=>b.onclick=()=>{state.htur=b.dataset.tur;renderHaberler(tag);renderSide();const n=$('.bl-nav');if(n&&n.getBoundingClientRect().top<0)n.scrollIntoView({block:'start'})});
   const qi=$('#blq');if(qi){qi.oninput=()=>{state.hq=qi.value;const p=qi.selectionStart;renderHaberler(tag);const n=$('#blq');n.focus();try{n.setSelectionRange(p,p)}catch(e){}}}
 }
+/* ---------- SPK ve Borsa İstanbul duyuruları (bekçi: bekci/duzenleyici.py → açık depo bekci/duyurular.json) ---------- */
+const DUY_URL='https://raw.githubusercontent.com/cagriakkoc-dev/sonar/main/bekci/duyurular.json';
+const DUYK={'spk-bulten':{l:'SPK bülteni',c:'#c2410c'},'spk-basin':{l:'SPK duyurusu',c:'#b45309'},'bist':{l:'Borsa İstanbul',c:'#1d4ed8'}};
+let DUY=null,duyP=null;
+function duyLoad(){if(duyP)return duyP;duyP=fetch(DUY_URL+'?v='+Math.floor(Date.now()/3e5),{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(L=>{DUY=(Array.isArray(L)?L:[]).filter(x=>x&&x.id&&x.t&&x.u);
+  const v=state.view||'';if(v==='DUYURU'||v==='HABERLER'||v.startsWith('HABERLER-'))render();return DUY});return duyP}
+const duyTarih=d=>{const m=/^(\d{4})-(\d{2})-(\d{2})/.exec(d||'');return m?m[3]+'.'+m[2]+'.'+m[1]:''};
+function duyRow(x,full){const K=DUYK[x.k]||{l:x.k,c:'#64748b'},kod=(x.kod||[]).filter(t=>BY[t]),bol=x.bol||{},N=full?kod.length:6;
+  return `<div class="dy-i"><span class="dy-d">${esc(duyTarih(x.d))}</span><div class="dy-b"><span class="dy-k" style="--dk:${K.c}">${esc(K.l)}</span><a class="dy-t" href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.t)} ↗</a>
+   ${kod.length?`<div class="dy-tags">${kod.slice(0,N).map(t=>`<button class="dy-tag" data-dyco="${t}" style="--c:${BY[t].color}" title="${esc(BY[t].name)}"><i class="dot"></i>${t}${bol[t]?`<small>${esc(bol[t])}</small>`:''}</button>`).join('')}${kod.length>N?`<button class="dy-more" data-dyall="1">+${kod.length-N} şirket</button>`:''}</div>`:''}</div></div>`}
+function duyBind(root){root.querySelectorAll('[data-dyco]').forEach(b=>b.onclick=()=>go(b.dataset.dyco));root.querySelectorAll('[data-dyall]').forEach(b=>b.onclick=()=>go('DUYURU'))}
+function duyBand(tag){if(DUY==null){duyLoad();return ''}const L=DUY.filter(x=>!tag||(x.kod||[]).includes(tag)).slice(0,tag?8:5);if(!L.length)return '';
+  return `<section class="bl-sec dy-band"><div class="bl-sh"><h2>${tag?esc(tag)+' · SPK ve Borsa İstanbul':'SPK ve Borsa İstanbul duyuruları'}</h2><button class="chip" data-go="DUYURU">Tümü →</button></div><div class="dy-l">${L.map(x=>duyRow(x)).join('')}</div></section>`}
+function renderDuyurular(){document.documentElement.style.setProperty('--co','var(--accent)');
+  if(DUY==null){app.innerHTML=`<section class="bl-hero"><div><div class="eyebrow">Sonar · Haberler</div><h1>SPK ve Borsa İstanbul <em>duyuruları</em></h1><p>Yükleniyor…</p></div></section>`;duyLoad();return}
+  const k=state.dyk||'',co=state.dyco||'',q=(state.dyq||'').trim().toLocaleLowerCase('tr');
+  const L=DUY.filter(x=>(!k||x.k===k)&&(!co||(x.kod||[]).includes(co))&&(!q||(x.t+' '+(x.kod||[]).join(' ')+' '+Object.values(x.bol||{}).join(' ')).toLocaleLowerCase('tr').includes(q)));
+  const cnt={};DUY.forEach(x=>(x.kod||[]).forEach(t=>{if(BY[t])cnt[t]=(cnt[t]||0)+1}));const cos=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]||a.localeCompare(b));
+  app.innerHTML=`<div class="ozbar"><button class="chip" data-back="HABERLER">← Haberler</button></div>
+  <section class="bl-hero"><div><div class="eyebrow">Sonar · Haberler</div><h1>SPK ve Borsa İstanbul <em>duyuruları</em></h1><p>SPK haftalık bültenleri, SPK basın duyuruları ve Borsa İstanbul duyuruları. Başlık kaynağa gider; bülten ve duyuruda adı geçen Sonar şirketleri etiketlenir.</p></div>
+   <label class="bl-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input type="search" id="dyq" placeholder="Duyurularda ara" value="${esc(state.dyq||'')}" aria-label="Duyurularda ara"></label></section>
+  <nav class="bl-nav" aria-label="Kaynaklar"><div class="bl-tabs">${[['','Tümü',DUY.length],...Object.entries(DUYK).map(([kk,K])=>[kk,K.l==='SPK bülteni'?'SPK bültenleri':K.l==='SPK duyurusu'?'SPK duyuruları':K.l,DUY.filter(x=>x.k===kk).length])].map(([kk,l,n])=>`<button class="bl-tab" data-dyk="${kk}" aria-pressed="${k===kk}">${l}<span>${n}</span></button>`).join('')}</div>
+   ${cos.length?`<div class="bl-cos"><button class="bl-co" data-dyf="" aria-pressed="${!co}">Tüm şirketler</button>${cos.map(t=>`<button class="bl-co" data-dyf="${t}" aria-pressed="${co===t}" style="--c:${BY[t].color}"><i class="dot"></i>${t}<span>${cnt[t]}</span></button>`).join('')}</div>`:''}</nav>
+  <section class="bl-sec">${L.length?`<div class="dy-l">${L.slice(0,200).map(x=>duyRow(x,true)).join('')}</div>`:`<p class="note" style="margin:24px 0">Bu seçimde duyuru yok.</p>`}
+   <p class="dy-note">Kaynak: spk.gov.tr ve borsaistanbul.com; liste gün içinde otomatik güncellenir. Şirket etiketleri metindeki şirket adlarından otomatik eşleştirilir, eksik veya fazla olabilir; bültendeki bölüm adı yanında yazar. Yatırım tavsiyesi değildir.</p></section>`;
+  app.querySelectorAll('[data-back]').forEach(b=>b.onclick=()=>go(b.dataset.back));duyBind(app);
+  app.querySelectorAll('[data-dyk]').forEach(b=>b.onclick=()=>{state.dyk=b.dataset.dyk;renderDuyurular()});
+  app.querySelectorAll('[data-dyf]').forEach(b=>b.onclick=()=>{state.dyco=b.dataset.dyf;renderDuyurular()});
+  const qi=$('#dyq');if(qi){qi.oninput=()=>{state.dyq=qi.value;const p=qi.selectionStart;renderDuyurular();const n=$('#dyq');n.focus();try{n.setSelectionRange(p,p)}catch(e){}}}}
 function renderOzetIndex(){COS.forEach(c=>setSum(c));
   document.documentElement.style.setProperty('--co','var(--accent)');
   app.innerHTML=`<section class="home-hero" style="padding-bottom:12px"><div class="eyebrow">Dönem özetleri</div><h1 style="font-size:clamp(28px,4vw,40px)">Son bilanço, <em>neden</em> böyle?</h1><p>Her yeni finansal rapor KAP'ta açıklandığında, finansal rapor ve faaliyet raporu okunarak kalem kalem yazılır. Yıllık ve çeyreklik karşılaştırma ayrı gösterilir.</p></section>
@@ -2104,7 +2152,7 @@ function renderSide(){
   const el=$('#side');if(!el)return;const v=state.view;
   const secs=[];document.querySelectorAll('#app .hero, #app .panel').forEach((x,i)=>{if(PUB&&x.closest('.dev'))return;let t=x.classList.contains('hero')?'Özet':(x.querySelector('.ph h2')?.textContent||'').split(' · ')[0];if(!t)return;x.id=x.id||('s-'+i);secs.push([x.id,t]);if((v.startsWith('KARS-')||v.startsWith('YAZI-'))&&x.id==='ozsub')x.querySelectorAll('.subart h2').forEach((h,j)=>{h.id='kh-'+j;secs.push([h.id,'· '+h.textContent.split(':')[0]])})});secs.push(['macro','Makro çerçeve']);
   el.innerHTML=`<div class="brand"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><defs><clipPath id="snc2"><rect x="3" y="3" width="58" height="58" rx="15"/></clipPath></defs><rect x="3" y="3" width="58" height="58" rx="15" fill="#0B2545"/><g clip-path="url(#snc2)" fill="none" stroke="#fff" stroke-width="2.5" opacity=".2"><circle cx="12" cy="52" r="14"/><circle cx="12" cy="52" r="27"/><circle cx="12" cy="52" r="40"/></g><rect x="3" y="3" width="58" height="58" rx="15" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/><path stroke="#fff" fill="none" stroke-width="2.5" stroke-linecap="round" d="M20 33V50M32 26V50"/><rect x="16.5" y="38" width="7" height="8" rx="2" fill="#fff"/><rect x="28.5" y="30" width="7" height="12" rx="2" fill="#fff"/><path stroke="#19C3B1" fill="none" stroke-width="2.5" stroke-linecap="round" d="M44 14V50"/><rect x="40" y="19" width="8" height="20" rx="2" fill="#19C3B1"/></svg><div><b>sonar</b></div><button class="mclose" id="mclose" type="button" aria-label="Menüyü kapat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
-  <nav><button class="sl" data-v="GIRIS" aria-current="${v==='GIRIS'}">Ana sayfa</button><button class="sl" data-v="HABERLER" aria-current="${v.startsWith('HABER')}">Haberler</button></nav>
+  <nav><button class="sl" data-v="GIRIS" aria-current="${v==='GIRIS'}">Ana sayfa</button><button class="sl" data-v="HABERLER" aria-current="${v.startsWith('HABER')}">Haberler</button><button class="sl" data-v="DUYURU" aria-current="${v==='DUYURU'}">SPK ve Borsa İstanbul</button></nav>
   ${sideCos(v)}
   <div><h5>Görünümler</h5><nav><button class="sl" data-v="OZET" aria-current="${v.startsWith('OZET')}">Dönem özetleri</button>${KARS.map(K=>`<button class="sl" data-v="KARS-${K.id}" aria-current="${v==='KARS-'+K.id}"><i class="dot" style="background:${BY[K.a].color}"></i>${K.a}–${K.b} ${K.p.slice(0,4)}/${+K.p.slice(5,7)}<small>yazı</small></button>`).join('')}<button class="sl" data-v="KARSILASTIR" aria-current="${v==='KARSILASTIR'}">Karşılaştır</button><button class="sl dev" data-v="DENETIM" aria-current="${v==='DENETIM'}">Veri denetimi</button></nav></div>
   <div><h5>Bu sayfada</h5><nav class="sec">${secs.map(([id,t])=>`<a href="#${id}" data-sec="${id}">${esc(t)}</a>`).join('')}</nav></div>`;
@@ -2172,7 +2220,7 @@ function renderHome(){
   app.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
   window.__CARD=CARD;homeFilterBind();drawHome();
 }
-function render(){const v=state.view;if(v==='GIRIS')renderHome();else if(v==='HABERLER'||v.startsWith('HABERLER-'))renderHaberler(v.split('-')[1]||'');else if(v.startsWith('HABER-'))renderHaber(v.split('-')[1],v.split('-')[2]);else if(v==='OZET')renderOzetIndex();else if(v.startsWith('KARS-'))renderKars(v.slice(5));else if(v.startsWith('YAZI-'))renderYazi(v.slice(5));else if(v.startsWith('OZET-'))renderOzet(v.slice(5,v.length).split('-')[0],v.slice(5).split('-').slice(1).join('-'));else if(v==='KARSILASTIR')renderCompare();else if(v.startsWith('SEKTOR-'))renderSector(v.slice(7));else if(v==='DENETIM')(PUB?renderHome():renderAudit());else renderCompany(BY[v]);renderSide()}
+function render(){const v=state.view;if(v==='GIRIS')renderHome();else if(v==='HABERLER'||v.startsWith('HABERLER-'))renderHaberler(v.split('-')[1]||'');else if(v.startsWith('HABER-'))renderHaber(v.split('-')[1],v.split('-')[2]);else if(v==='OZET')renderOzetIndex();else if(v.startsWith('KARS-'))renderKars(v.slice(5));else if(v.startsWith('YAZI-'))renderYazi(v.slice(5));else if(v.startsWith('OZET-'))renderOzet(v.slice(5,v.length).split('-')[0],v.slice(5).split('-').slice(1).join('-'));else if(v==='KARSILASTIR')renderCompare();else if(v==='DUYURU')renderDuyurular();else if(v.startsWith('SEKTOR-'))renderSector(v.slice(7));else if(v==='DENETIM')(PUB?renderHome():renderAudit());else renderCompany(BY[v]);renderSide()}
 let rT;addEventListener('resize',()=>{clearTimeout(rT);rT=setTimeout(render,200)});
 document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('.brand'))go('GIRIS')});
 (function themeInit(){const root=document.documentElement,btn=$('#themebtn'),lbl=$('#themelbl');
