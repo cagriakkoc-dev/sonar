@@ -18,6 +18,11 @@ jobs:
           for u in https://spk.gov.tr/spk-bultenleri/2026-yili-spk-bultenleri https://spk.gov.tr/duyurular/basin-duyurulari/2026 https://www.borsaistanbul.com/duyurular; do
             curl -sS -m 30 -A "Mozilla/5.0" -o /dev/null -w "$u %{http_code} %{size_download}\n" "$u" || echo "$u HATA"
           done | tee bekci/deneme/erisim.txt
+      - name: Ham örnekler
+        run: |
+          curl -sS -m 30 -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36" -H "Accept-Language: tr-TR,tr;q=0.9" https://www.borsaistanbul.com/duyurular -o bekci/deneme/bist.html || true
+          curl -sS -m 60 https://spk.gov.tr/data/6ae4bb608f95db1f5c91eb9c/2026-78.pdf -o /tmp/b.pdf && python3 -c "
+          from pypdf import PdfReader;r=PdfReader('/tmp/b.pdf');open('bekci/deneme/bulten78.txt','w').write(chr(10).join((p.extract_text() or '') for p in r.pages))" || true
       - name: Kuru çalışma
         run: |
           rm -f /tmp/d.json
