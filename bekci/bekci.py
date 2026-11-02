@@ -248,6 +248,7 @@ def main():
     seen = set(st["seen"])
     yeni = []
     # listeye yeni eklenen şirketin geçmiş bildirimleri sessizce görülmüş sayılır (kuyruk/Telegram yok)
+    hata = {}
     izlenen = set(st.get("izlenen") or ([] if ilk else ["AGESA", "AKSA", "ANHYT", "AVPGY", "FROTO", "ISMEN", "TUPRS"]))
     for t, oid in SIRKETLER.items():
         try:
@@ -258,8 +259,9 @@ def main():
                     if t in izlenen: yeni.append((t, d))
             izlenen.add(t)
         except Exception as e:
-            print(t, "KAP hatası:", repr(e)[:200])
+            print(t, "KAP hatası:", repr(e)[:200]); hata[t] = repr(e)[:80]
     st["izlenen"] = sorted(izlenen)
+    st["kap_hata"] = {"n": len(hata), "ornek": dict(list(hata.items())[:5]), "izlenmeyen": sorted(set(SIRKETLER) - izlenen)}
     if TOKEN and not st.get("chat_id"):
         try:
             print("bot:", tg("getMe").get("result", {}).get("username"))
