@@ -1905,7 +1905,14 @@ function renderHaberler(tag){{const r=$('.rail');document.documentElement.style.
 const DUY_URL='https://raw.githubusercontent.com/cagriakkoc-dev/sonar/main/bekci/duyurular.json';
 const DUYK={'spk-bulten':{l:'SPK bülteni',c:'#c2410c'},'spk-basin':{l:'SPK duyurusu',c:'#b45309'},'bist':{l:'Borsa İstanbul',c:'#1d4ed8'}};
 let DUY=null,duyP=null;
-function duyLoad(){if(duyP)return duyP;duyP=fetch(DUY_URL+'?v='+Math.floor(Date.now()/3e5),{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(L=>{DUY=(Array.isArray(L)?L:[]).filter(x=>x&&x.id&&x.t&&x.u);
+const DUZ_URL='https://raw.githubusercontent.com/cagriakkoc-dev/sonar/main/bekci/duyuru_duzelt.json';
+/* panel düzeltmeleri (duyuru_duzelt.json): {"<id>":{gizli,t,kod_ekle,kod_cikar},"ekle":[kayıt]}; bekçideki duzelt() ile aynı kural */
+function duyDuzelt(L,D){D=D&&typeof D==='object'?D:{};const E=(Array.isArray(D.ekle)?D.ekle:[]).filter(e=>e&&e.id&&e.t&&e.u).map(e=>({...e,elle:true}));
+  return L.concat(E).flatMap(x=>{const o=x.id[0]!=='_'?D[x.id]:null;if(!o||typeof o!=='object')return [x];if(o.gizli)return [];
+    const y={...x};if(o.t)y.t=o.t;const k=(x.kod||[]).filter(t=>!(o.kod_cikar||[]).includes(t));(o.kod_ekle||[]).forEach(t=>{if(!k.includes(t))k.push(t)});y.kod=k;
+    if(x.bol)y.bol=Object.fromEntries(Object.entries(x.bol).filter(([t])=>k.includes(t)));return [y]}).sort((a,b)=>((b.d||'')+b.id).localeCompare((a.d||'')+a.id))}
+function duyLoad(){if(duyP)return duyP;const v='?v='+Math.floor(Date.now()/3e5),J=u=>fetch(u+v,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null);
+  duyP=Promise.all([J(DUY_URL),J(DUZ_URL)]).then(([L,D])=>{DUY=duyDuzelt((Array.isArray(L)?L:[]).filter(x=>x&&x.id&&x.t&&x.u),D);
   const v=state.view||'';if(v==='DUYURU'||v==='HABERLER'||v.startsWith('HABERLER-'))render();return DUY});return duyP}
 const duyTarih=d=>{const m=/^(\d{4})-(\d{2})-(\d{2})/.exec(d||'');return m?m[3]+'.'+m[2]+'.'+m[1]:''};
 function duyRow(x,full){const K=DUYK[x.k]||{l:x.k,c:'#64748b'},kod=(x.kod||[]).filter(t=>BY[t]),bol=x.bol||{},N=full?kod.length:6;
