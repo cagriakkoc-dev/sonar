@@ -20,7 +20,7 @@ SITELER = {
               "api": "https://www.anadoluhayat.com.tr/InvestorRelations/GetPresentationFiles"},
     "AVPGY": {"url": "https://www.avrupakentgyo.com/tr/yatirimci-iliskileri/raporlar-ve-sunumlar/yatirimci-sunumlari/", "desen": r"/PDF/[^\"'<>]+\.pdf"},
     "FROTO": {"url": "https://www.fordotosan.com.tr/tr/yatirimcilar/sunumlar/yatirimci-sunumlari", "desen": r"/doc/[A-Za-z0-9_\-]{20,}",
-              "aylik": True, "not": "Ford Otosan yatırımcı sunumunu (pazar payı, satış adetleri) her ay günceller."},
+              "aylik": True, "haric": r"Kurumsal Sunumu", "not": "Ford Otosan yatırımcı sunumunu (pazar payı, satış adetleri) her ay günceller."},
     "ISMEN": {"url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Sayfalar/yatirimci-sunumlari.aspx",
               "desen": r"/yatirimci-sunumlari/\d{4}/[^\"'<>]+\.pdf", "on": "Finansal sonuçlar sunumu"},
     "AKSA": {"url": "https://www.aksa.com/yatirimci-iliskileri/finansal-tablolar-ve-raporlar/yatirimci-sunumlari",
@@ -86,6 +86,7 @@ def oku(t, cfg):
     else:
         L = []
         for u in [cfg["url"]] + cfg.get("ek", []): L += html_bul(u, cfg["desen"])
+    if cfg.get("haric"): L = [x for x in L if not re.search(cfg["haric"], x["t"], re.I)]
     for x in L:
         if not re.search(r"20\d\d", x["t"]):
             y = re.findall(r"20\d\d", dosya_adi(x["u"])) or re.findall(r"/(20\d\d)/", x["u"])
