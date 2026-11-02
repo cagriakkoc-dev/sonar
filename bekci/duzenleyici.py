@@ -187,7 +187,7 @@ def ayrinti(x, P):
                 y_, m_, g_ = x["d"].split("-"); uz = f"{g_} {AYLAR[int(m_) - 1]} {y_}"
                 i = s.rfind(uz); govde = s[i + len(uz):] if i >= 0 else ""
                 if govde and GENEL.match(x["t"]):
-                    c = re.split(r"(?<=[.!?])\s", govde.strip(), 1)[0]
+                    c = re.split(r"(?<=[.!?])\s", govde.strip(), maxsplit=1)[0]
                     x["t"] = x["t"] + ": " + (c[:140].rsplit(" ", 1)[0] + "…" if len(c) > 140 else c)
             else:
                 i = s.rfind(x["t"][:40]); govde = s[i:] if i >= 0 else s
