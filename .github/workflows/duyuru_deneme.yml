@@ -1,0 +1,30 @@
+name: Duyuru deneme
+# SPK / Borsa İstanbul kaynaklarına GitHub'dan erişim ve ayrıştırma denemesi (kuru çalışma, Telegram yok).
+on:
+  workflow_dispatch:
+  push:
+    paths: ['bekci/duzenleyici.py', '.github/workflows/duyuru_deneme.yml']
+permissions:
+  contents: write
+jobs:
+  deneme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q pypdf
+      - name: Erişim
+        run: |
+          for u in https://spk.gov.tr/spk-bultenleri/2026-yili-spk-bultenleri https://spk.gov.tr/duyurular/basin-duyurulari/2026 https://www.borsaistanbul.com/duyurular; do
+            curl -sS -m 30 -A "Mozilla/5.0" -o /dev/null -w "$u %{http_code} %{size_download}\n" "$u" || echo "$u HATA"
+          done | tee bekci/deneme/erisim.txt
+      - name: Kuru çalışma
+        run: |
+          rm -f /tmp/d.json
+          python3 bekci/duzenleyici.py --kuru --sessiz > bekci/deneme/duyuru.txt 2>&1 || true
+          tail -c 3000 bekci/deneme/duyuru.txt
+      - name: Kaydet
+        run: |
+          git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
+          git add bekci/deneme; git commit -q -m "Duyuru denemesi [skip render]" || exit 0
+          for n in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
