@@ -1312,11 +1312,17 @@ function driversHTML(c){if(!c.drivers?.length)return '';return `<div class="pane
 function renderCompany(c){setSum(c);
   document.documentElement.style.setProperty('--co',c.color);document.documentElement.style.setProperty('--co-dk',lift(c.color));
   const k=counts(c);
-  app.innerHTML=heroHTML(c,k)+(INS(c)?kpisANHYT(c):kpisCompany(c))+sigHTML(c)+`<div class="grid">${newsPanelHTML(c)}${summaryHTML(c)}${mainPanelHTML(c)}${bridgeHTML(c)}${INS(c)?anhytPanels(c)+((c.div||[])[0]?.y?divHTML(c).replace('panel s5','panel s12'):'')+mixHTML(c).replace('panel s7','panel s12')+sectorHTML(c).replace('panel s5','panel s12'):ratiosHTML(c)+divHTML(c)+mixHTML(c)+sectorHTML(c)+segMarginHTML(c)+ndHTML(c)+peerHTML(c)}${driversHTML(c)}</div>`;
+  app.innerHTML=heroHTML(c,k)+(INS(c)?kpisANHYT(c):kpisCompany(c))+sigHTML(c)+`<div class="grid">${newsPanelHTML(c)}<div id="snm-slot" data-t="${c.t}" style="display:contents"></div>${summaryHTML(c)}${mainPanelHTML(c)}${bridgeHTML(c)}${INS(c)?anhytPanels(c)+((c.div||[])[0]?.y?divHTML(c).replace('panel s5','panel s12'):'')+mixHTML(c).replace('panel s7','panel s12')+sectorHTML(c).replace('panel s5','panel s12'):ratiosHTML(c)+divHTML(c)+mixHTML(c)+sectorHTML(c)+segMarginHTML(c)+ndHTML(c)+peerHTML(c)}${driversHTML(c)}</div>`;
   renderMain(c);renderMatrix(c);renderBridge(c);sigBind();
   if(INS(c)){renderAnhyt(c);renderMix(c);if($('#divchart'))divPriceChart($('#divchart'),c)}else{renderMix(c);renderSegMargin(c);renderND(c);renderPeerInd(c);const D=c.div||[];if($('#divchart'))divPriceChart($('#divchart'),c)}
-  app.querySelectorAll('.nwl [data-go],.panel .note [data-go]').forEach(b=>b.onclick=e=>{e.preventDefault();go(b.dataset.go)});
+  app.querySelectorAll('.nwl [data-go],.panel .note [data-go]').forEach(b=>b.onclick=e=>{e.preventDefault();go(b.dataset.go)});snmFill();
 }
+/* ---------- şirket sitesindeki yatırımcı sunumları (bekçi: bekci/sunum.py → açık depo bekci/sunumlar.json) ---------- */
+const SNM_URL='https://raw.githubusercontent.com/cagriakkoc-dev/sonar/main/bekci/sunumlar.json';let SNM=null,snmP=null;
+function snmLoad(){if(!snmP)snmP=fetch(SNM_URL+'?v='+Math.floor(Date.now()/3e5),{cache:'no-store'}).then(r=>r.ok?r.json():{}).catch(()=>({})).then(j=>SNM=j&&typeof j==='object'?j:{});return snmP}
+function snmFill(){const el=document.getElementById('snm-slot');if(!el)return;const t=el.dataset.t;snmLoad().then(()=>{const e=document.getElementById('snm-slot');if(!e||e.dataset.t!==t)return;const S=SNM[t];
+  if(!S||!(S.liste||[]).length){e.innerHTML='';return}const L=S.liste.slice(0,4);
+  e.innerHTML=`<div class="panel s12 nwl snm"><div class="ph"><h2>Yatırımcı sunumları</h2><a class="chip" href="${esc(S.sayfa)}" target="_blank" rel="noopener" style="text-decoration:none">Şirket sitesi ↗</a></div>${S.not?`<p class="note" style="margin:-4px 0 12px">${esc(S.not)}</p>`:''}<div class="nwl-l">${L.map((x,i)=>`<a class="nwl-i" href="${esc(x.u)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><span class="eyebrow">${i===0?'Son sunum':'Önceki'}${x.g?' · eklendi '+esc(duyTarih(x.g)):''}</span><b>${esc(x.t)} ↗</b><span>Şirketin yatırımcı ilişkileri sayfası</span></a>`).join('')}</div></div>`})}
 function newsPanelHTML(c){const N=(c.news||[]).slice().sort((a,b)=>b.id-a.id).slice(0,4);if(!N.length)return '';
   return `<div class="panel s12 nwl"><div class="ph"><h2>KAP'tan son haberler</h2><button class="chip" data-go="HABERLER-${c.t}">Tüm ${esc(c.t)} yazıları →</button></div><div class="nwl-l">${N.map(n=>`<button class="nwl-i" data-go="HABER-${c.t}-${n.id}"><span class="eyebrow">${esc(n.date)} · ${esc(n.tur||'Haber')}</span><b>${esc(newsTitle(c,n))}</b><span>${esc(n.headline)}</span></button>`).join('')}</div></div>`}
 /* ---------- ANHYT ---------- */
