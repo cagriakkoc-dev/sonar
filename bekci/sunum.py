@@ -100,6 +100,37 @@ def zaman():
     return datetime.datetime.now(datetime.timezone.utc)
 
 
+GELEN = os.path.join(B, "gelen")
+KUYRUK = os.path.join(B, "kuyruk.json")
+ISTEK = os.path.join(B, "istek", "sunum_indir.txt")
+
+
+def slug(s):
+    s = s.lower().translate(str.maketrans("çğıöşüâî", "cgiosuai"))
+    return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:60]
+
+
+def kuyruga(t, x):
+    """Yeni sunumu bekci/gelen/sunum-<hisse>-<başlık>/ altına indirir ve özet kuyruğuna ekler (tur: Yatırımcı sunumu)."""
+    i = f"sunum-{t.lower()}-{slug(x['t'])}"
+    K = json.load(open(KUYRUK, encoding="utf-8")) if os.path.exists(KUYRUK) else []
+    if any(str(k.get("id")) == i for k in K): return
+    d = os.path.join(GELEN, i); os.makedirs(d, exist_ok=True); dosyalar = []
+    try:
+        r = urllib.request.urlopen(urllib.request.Request(x["u"], headers=UA), timeout=120,
+                                   context=(__import__("ssl")._create_unverified_context() if urllib.parse.urlparse(x["u"]).hostname in GEVSEK_SSL else None))
+        b = r.read()
+        if len(b) < 40_000_000:
+            ad = "sunum.pdf" if b[:4] == b"%PDF" else "sunum.bin"
+            open(os.path.join(d, ad), "wb").write(b); dosyalar.append(ad)
+    except Exception as ex:
+        print("sunum indirilemedi", t, repr(ex)[:150])
+    tr = zaman() + datetime.timedelta(hours=3)
+    K.append({"id": i, "hisse": t, "tur": "Yatırımcı sunumu", "ozet": x["t"], "u": x["u"], "tarih": tr.strftime("%d.%m.%Y %H:%M:%S"),
+              "durum": "bekliyor", "dosyalar": dosyalar})
+    json.dump(K, open(KUYRUK, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+
 def tara(kuru=False, zorla=False):
     D = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
     now = zaman(); tr = now + datetime.timedelta(hours=3)
@@ -135,6 +166,15 @@ def tara(kuru=False, zorla=False):
         if not ilk:
             for x in yeni:
                 msj.append(f"{t} · Yeni yatırımcı sunumu (şirket sitesi)\n{x['t']}\n{x['u']}")
+                try: kuyruga(t, x)
+                except Exception as ex: print("sunum kuyruğa eklenemedi", t, repr(ex)[:150])
+    # elle istek: bekci/istek/sunum_indir.txt satırları "HİSSE|url|başlık" → indir + kuyruk, sonra dosya boşaltılır
+    if not kuru and os.path.exists(ISTEK):
+        satir = [l.strip() for l in open(ISTEK, encoding="utf-8") if l.strip() and not l.startswith("#")]
+        for l in satir:
+            p_ = l.split("|")
+            if len(p_) >= 3: kuyruga(p_[0], {"u": p_[1], "t": p_[2]})
+        if satir: open(ISTEK, "w").write("# HİSSE|url|başlık (bekçi indirip kuyruğa ekler, satırı siler)\n")
     if kuru:
         print(json.dumps(D, ensure_ascii=False, indent=1)[:6000]); return []
     json.dump(D, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
