@@ -17,6 +17,7 @@ MOD = os.environ.get("SONARBIST_MOD", "golge").strip().lower()
 XK = {k: os.environ.get(v, "").strip() for k, v in (("ck", "X_API_KEY"), ("cs", "X_API_SECRET"), ("tk", "X_ACCESS_TOKEN"), ("ts", "X_ACCESS_SECRET"))}
 HESAP = "SonarBIST"
 UA = {"User-Agent": "Mozilla/5.0 SonarBIST"}
+SON = None
 
 # ---- kural tabanlı ön eleme (bölüm 3) ----
 ARACI = {"ISMEN", "A1CAP", "GEDIK", "GLBMD", "INFO", "OSMEN", "OYYAT", "TERA"}
@@ -45,6 +46,7 @@ def http(url, data=None, headers=None, timeout=90):
         raise RuntimeError(f"HTTP {e.code}: {e.read()[:300].decode('utf-8', 'replace')}")
 
 def claude(model, system, user, maxtok=700):
+    global SON
     b = {"model": model, "max_tokens": maxtok, "system": [{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
          "messages": [{"role": "user", "content": user}]}
     try:
@@ -52,7 +54,8 @@ def claude(model, system, user, maxtok=700):
                  {"x-api-key": KEY, "anthropic-version": "2023-06-01", "content-type": "application/json"})
     except urllib.error.HTTPError as e:
         raise RuntimeError(f"Claude API {e.code}: {e.read().decode('utf-8', 'ignore')[:300]}")
-    return "".join(c.get("text", "") for c in json.loads(r)["content"] if c.get("type") == "text")
+    j = json.loads(r); SON = j.get("stop_reason")
+    return "".join(c.get("text", "") for c in j["content"] if c.get("type") == "text")
 
 def jparse(s):
     m = re.search(r"\{.*\}", s, re.S)
@@ -100,7 +103,10 @@ def puanla(hisse, baslik, metin, buy, kayit=()):
     neg = olumsuz(kayit)
     if neg: u += "\n\nEditör şu bildirimler için atılan tweetleri GEREKSİZ bulup sildi; benzerlerini belirgin düşük puanla (örnekler):\n" + "\n".join(f"- {x.get('hisse')} | {x.get('tur')} | {x.get('baslik','')[:100]} (önceki puan {x.get('puan')})" for x in neg)
     raw = claude(HAIKU, PUAN_SYS, u, 500); p = jparse(raw)
-    if p.get("puan") is None: raise RuntimeError("puanlama yanıtı çözülemedi: " + raw[:250])
+    if p.get("puan") is None:
+        m = re.search(r'"puan"\s*:\s*(\d+)', raw)
+        if not m: raise RuntimeError(f"puanlama yanıtı çözülemedi (stop={SON}, uzunluk={len(raw)}): " + raw[:150] + " … " + raw[-100:])
+        p = {"puan": int(m.group(1)), "tur": (re.search(r'"tur"\s*:\s*"([^"]*)"', raw) or [None, None])[1], "gerekce": (re.search(r'"gerekce"\s*:\s*"([^"]*)', raw) or [None, ""])[1]}
     return p
 
 # ---- yazım (Sonnet) ----
@@ -117,7 +123,7 @@ def yaz(hisse, baslik, metin, buy, gecmis, hata=None, kayit=()):
     if neg: u += "\n\nEditör şu tweetleri gereksiz bulup sildi, bu tarz yazma:\n" + "\n".join(f"- {x.get('tweet','')}" for x in neg if x.get("tweet"))
     if hata: u += f"\n\nÖnceki taslak şu nedenle reddedildi, düzelt: {hata}"
     raw = claude(SONNET, YAZ_SYS, u, 800); p = jparse(raw)
-    if not p.get("tweet"): raise RuntimeError("yazım yanıtı çözülemedi: " + raw[:250])
+    if not p.get("tweet"): raise RuntimeError(f"yazım yanıtı çözülemedi (stop={SON}, uzunluk={len(raw)}): " + raw[:150] + " … " + raw[-100:])
     return p
 
 # ---- doğrulama (kod) ----
@@ -287,7 +293,7 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
             except Exception: pass
         return k
     except Exception as e:
-        k.update(durum="hata", sebep=repr(e)[:300])
+        k.update(durum="hata", sebep=repr(e)[:700])
         try:
             kayit.append(k); _kaydet(kayit)
             tg(token, chat, f"SonarBIST hata · {hisse} · {baslik[:100]}\n{repr(e)[:300]}")
