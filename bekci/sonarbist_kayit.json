@@ -1379,5 +1379,53 @@
   "tur": "Şirket Genel Bilgi Formu (usulî güncelleme)",
   "gerekce": "BIMAS'ın bağlı ortaklık ve iştirak listesini içeren rutin Şirket Genel Bilgi Formu güncellemesidir; yeni bir işlem, tutar veya sermaye değişikliği bildirilmediği için etkisi düşüktür.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1691979",
+  "hisse": "LXGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-03T19:38:01+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 8,
+   "yenilik": 6,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Pay geri alımı her zaman önemli sayılan türlerden olduğu için taban puan verildi; 03.11.2026'da 75.000 lot yaklaşık 5,273 TL'den alındı (yaklaşık 0,4 milyon TL, piyasa değerinin çok küçük bir kısmı), toplam geri alınan pay sermayenin %1,57'sine ulaştı.",
+  "durum": "paylasildi",
+  "tweet": "LXGYO (Luxera GYO) 3 Kasım'da 75.000 lot pay geri aldı. Ağırlıklı ortalama fiyat 5,273 TL, alım sermayenin %0,02273'ü.\n\nProgramda toplam geri alınan pay sermayenin %1,56930'una ulaştı. PD/DD 2,44x, piyasa değeri 5,1 milyar TL.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "75.000 lot"
+    ],
+    [
+     "Fiyat aralığı",
+     "5,260-5,280 TL"
+    ],
+    [
+     "Ağırlıklı ortalama",
+     "5,273 TL"
+    ],
+    [
+     "Günlük sermaye oranı",
+     "%0,02273"
+    ],
+    [
+     "Toplam geri alınan oran",
+     "%1,56930"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2117702939208806755",
+  "x_gorsel_hata": null
  }
 ]
