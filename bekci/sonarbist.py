@@ -155,11 +155,12 @@ def dogrula(tweet, kaynak, gecmis, hisse=""):
     kay = _sayilar(kaynak)
     for tok in re.findall(r"\d+(?:[.,]\d+)*", tweet):
         d = re.sub(r"\D", "", tok)
-        if not any(k == d or (k.startswith(d) and set(k[len(d):]) <= {"0"}) or (d.startswith(k) and k and set(d[len(k):]) <= {"0"}) for k in kay):
+        if tok not in kaynak and not any(k == d or (k.startswith(d) and set(k[len(d):]) <= {"0"}) or (d.startswith(k) and k and set(d[len(k):]) <= {"0"}) for k in kay):
             h.append(f"rakam kaynakta yok: {tok}"); break
-    ac = " ".join(tweet.lower().split()[:3])
+    def _acilis(t): return " ".join(re.sub(r"^\S+ \([^)]*\),?\s*", "", t.lower()).split()[:3])
+    ac = _acilis(tweet)
     for g in gecmis[-8:]:
-        if " ".join(g.lower().split()[:3]) == ac: h.append("açılış son tweetlerle aynı"); break
+        if _acilis(g) == ac: h.append("açılış son tweetlerle aynı"); break
     for g in gecmis[-20:]:
         if difflib.SequenceMatcher(None, tweet.lower(), g.lower()).ratio() > 0.6: h.append("son tweetlere çok benziyor"); break
     return h
@@ -275,19 +276,38 @@ def fr_olc(kid):
     return {"satirlar": sat, "kart": kart}
 
 def fr_kart(hisse, baslik, olc):
+    """Finansal sonuç kartı (1080x1350, açık tema): her kalemde bu dönem, karşılaştırma ve yeşil artış / kırmızı azalış yüzdesi."""
     from playwright.sync_api import sync_playwright
     yol = os.path.join(BASE, "sonarbist_kart.png")
-    trs = "".join(f'<tr><td class="a">{html.escape(a)}</td><td>{html.escape(c)}</td><td class="o">{html.escape(o)}</td><td class="{"u" if y == "up" else "d" if y == "down" else "n"}">{html.escape(d)}</td></tr>' for a, c, o, d, y in olc["kart"])
-    h = f"""<html><body style="margin:0;background:#ffffff"><div id="k" style="width:900px;box-sizing:border-box;padding:36px 40px;font-family:Arial,Helvetica,sans-serif;color:#0f172a;background:#ffffff">
-<div style="font-size:15px;color:#1d6fd8;letter-spacing:.5px">FİNANSAL SONUÇLAR</div>
-<div style="font-size:34px;font-weight:700;margin:4px 0 2px">{html.escape(hisse)}</div>
-<div style="font-size:16px;color:#64748b;margin-bottom:22px">{html.escape(baslik)[:90]}</div>
-<table style="width:100%;border-collapse:collapse;font-size:20px"><tr style="color:#64748b;font-size:14px;text-align:left"><th style="padding:8px 0">Kalem</th><th>Bu dönem</th><th>Karşılaştırma dönemi</th><th>Değişim</th></tr>{trs}</table>
-<div style="margin-top:20px;font-size:13px;color:#64748b">Kaynak: KAP finansal rapor</div></div>
-<style>td{{padding:11px 0;border-top:1px solid #e2e8f0}}td.a{{font-weight:600}}td.o{{color:#64748b}}td.u{{color:#047857;font-weight:600}}td.d{{color:#b91c1c;font-weight:600}}td.n{{color:#64748b}}</style></body></html>"""
+    ok = {"up": "▲", "down": "▼"}
+    tarih = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=3))).strftime("%d.%m.%Y")
+    rows = ""
+    for a_, c, o, d, y in olc["kart"]:
+        chip = '<span class="c %s">%s</span>' % (y or "n", html.escape((ok.get(y, "") + " " + d).strip())) if d else ""
+        et = "önceki yıl sonu" if a_ == "Özkaynaklar" else "geçen yılın aynı dönemi"
+        rows += '<div class="r"><div class="l">%s</div><div class="rr"><div class="v">%s</div>%s</div><div class="o">%s: %s</div></div>' % (
+            html.escape(a_), html.escape(c), chip, et, html.escape(o))
+    css = ("*{box-sizing:border-box}body{margin:0;background:#f6f8fb}"
+           "#k{width:1080px;height:1350px;padding:72px;background:#f6f8fb;color:#0f172a;font-family:'Plus Jakarta Sans','Segoe UI',Arial,Helvetica,sans-serif;position:relative;overflow:hidden}"
+           "#k:before{content:'';position:absolute;left:0;right:0;top:0;height:10px;background:#1d6fd8}"
+           ".h{color:#1d6fd8;font-size:30px;font-weight:600;letter-spacing:.5px}"
+           ".t{font-size:64px;font-weight:700;line-height:1.1;margin:26px 0 8px}.s{color:#64748b;font-size:28px;margin-bottom:40px}"
+           ".r{background:#fff;box-shadow:0 1px 3px rgba(15,23,42,.12);border-left:8px solid #1d6fd8;border-radius:10px;padding:22px 36px;margin-bottom:20px}"
+           ".l{color:#64748b;font-size:28px;font-weight:500}.rr{display:flex;justify-content:space-between;align-items:center;margin:4px 0}"
+           ".v{font-size:52px;font-weight:700}.o{color:#64748b;font-size:26px}"
+           ".c{font-size:30px;font-weight:700;padding:8px 20px;border-radius:999px;white-space:nowrap}"
+           ".c.up{color:#047857;background:#d1fae5}.c.down{color:#b91c1c;background:#fee2e2}.c.n{color:#475569;background:#e2e8f0}"
+           ".f{position:absolute;left:72px;bottom:48px;color:#64748b;font-size:26px}")
+    doc = ('<html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet"><style>' + css + '</style></head><body><div id="k"><div class="h">'
+           + html.escape(hisse) + " · KAP · " + tarih + '</div><div class="t">Finansal sonuçlar</div><div class="s">' + html.escape(baslik)[:70] + '</div>' + rows + '<div class="f">Kaynak: KAP finansal rapor</div></div></body></html>')
     with sync_playwright() as p:
-        b = p.chromium.launch(); pg = b.new_page(viewport={"width": 900, "height": 700}, device_scale_factor=2)
-        pg.set_content(h); pg.locator("#k").screenshot(path=yol); b.close()
+        b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1080, "height": 1350})
+        try: pg.set_content(doc, wait_until="networkidle", timeout=20000)
+        except Exception: pg.set_content(doc)
+        try: pg.evaluate("document.fonts.ready")
+        except Exception: pass
+        pg.wait_for_timeout(500)
+        pg.locator("#k").screenshot(path=yol); b.close()
     return yol
 
 KART_KAYNAK = {"kap": "KAP", "ozet": "KAP", "spk-basin": "SPK", "bist": "Borsa İstanbul", "sunum": "Yatırımcı sunumu"}
