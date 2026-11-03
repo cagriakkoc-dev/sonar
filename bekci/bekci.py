@@ -309,6 +309,15 @@ def main():
                 kuyruk.append({"id": d["disclosureIndex"], "hisse": t, "tur": etiket, "ozet": d.get("summary") or d.get("subject"),
                                "tarih": d.get("publishDate"), "yil": d.get("year"), "donem": d.get("ruleType"), "durum": "bekliyor", "dosyalar": dosyalar})
             mesajlar.append(f"{t} · {etiket}{donem}\n{d.get('summary') or d.get('subject')}\n{d.get('publishDate','')}\nhttps://www.kap.org.tr/tr/Bildirim/{d['disclosureIndex']}")
+    # SonarBIST (gölge mod): yeni KAP bildirimlerini puanlar, taslağı Telegram'a yollar (bekci/sonarbist.py)
+    if not ilk:
+        try:
+            import sonarbist
+            for t, d in sorted(yeni, key=lambda x: x[1]["disclosureIndex"]):
+                sonarbist.isle(TOKEN, st.get("chat_id"), "kap", d["disclosureIndex"], t, d.get("title") or d.get("subject") or d.get("summary") or "",
+                               d.get("summary") or "", fr=d.get("disclosureClass") == "FR", link=f"https://www.kap.org.tr/tr/Bildirim/{d['disclosureIndex']}")
+        except Exception as e:
+            print("sonarbist hatası:", repr(e)[:200])
     # elle kuyruğa ekleme (test / geçmiş bildirim): KUYRUGA_EKLE="ANHYT:1687664,AKSA:123"
     for parca in filter(None, os.environ.get("KUYRUGA_EKLE", "").replace(" ", "").split(",")):
         t, i = parca.split(":"); i = int(i)
@@ -324,9 +333,21 @@ def main():
     # SPK bültenleri / SPK basın duyuruları / Borsa İstanbul duyuruları (bekci/duzenleyici.py → bekci/duyurular.json)
     try:
         import duzenleyici
+        _once = {x.get("id") for x in (json.load(open(os.path.join(os.path.dirname(__file__), "duyurular.json"))) if os.path.exists(os.path.join(os.path.dirname(__file__), "duyurular.json")) else [])}
         dm, dh = duzenleyici.tara()
         mesajlar += dm
         st["duyuru_hata"] = dh
+        # SonarBIST (gölge mod): yeni SPK basın duyuruları ve Borsa İstanbul duyuruları (bülten PDF'leri atlanır)
+        if not ilk:
+            try:
+                import sonarbist
+                for x in json.load(open(os.path.join(os.path.dirname(__file__), "duyurular.json"))):
+                    if x.get("id") in _once or x.get("k") not in ("spk-basin", "bist"): continue
+                    kod = (x.get("kod") or [""])[0] if isinstance(x.get("kod"), list) else (x.get("kod") or "")
+                    sonarbist.isle(TOKEN, st.get("chat_id"), "bist" if x["k"] == "bist" else "spk", x["id"], kod, x.get("t", ""), "", link=x.get("u", ""),
+                                   metin_fn=lambda u=x.get("u", ""): sonarbist.duz_metin(sonarbist.http(u, headers=sonarbist.UA, timeout=60).decode("utf-8", "ignore"))[:7000])
+            except Exception as e:
+                print("sonarbist duyuru hatası:", repr(e)[:200])
     except Exception as e:
         print("duyuru taraması hatası:", repr(e)[:200]); st["duyuru_hata"] = [repr(e)[:80]]
     # şirket sitelerinde yatırımcı sunumu (bekci/sunum.py → bekci/sunumlar.json; deneme: 6 şirket)
