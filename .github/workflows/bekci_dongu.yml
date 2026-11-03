@@ -26,7 +26,11 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          SONARBIST_MOD: golge
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          SONARBIST_MOD: canli
         run: |
           git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
           BITIS=$(( $(date +%s) + 340*60 ))
