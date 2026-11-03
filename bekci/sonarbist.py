@@ -98,7 +98,9 @@ def puanla(hisse, baslik, metin, buy, kayit=()):
     u = f"Şirket: {hisse}\nBüyüklükler (Sonar): {buy}\nBaşlık: {baslik}\n\nBildirim metni:\n{metin[:6000]}"
     neg = olumsuz(kayit)
     if neg: u += "\n\nEditör şu bildirimler için atılan tweetleri GEREKSİZ bulup sildi; benzerlerini belirgin düşük puanla (örnekler):\n" + "\n".join(f"- {x.get('hisse')} | {x.get('tur')} | {x.get('baslik','')[:100]} (önceki puan {x.get('puan')})" for x in neg)
-    return jparse(claude(HAIKU, PUAN_SYS, u, 300))
+    raw = claude(HAIKU, PUAN_SYS, u, 500); p = jparse(raw)
+    if p.get("puan") is None: raise RuntimeError("puanlama yanıtı çözülemedi: " + raw[:250])
+    return p
 
 # ---- yazım (Sonnet) ----
 YAZ_SYS = """Sen SonarBIST'in editörüsün: Borsa İstanbul haber notlarını X'te kısa bir muhabir notu gibi yazarsın. Yalnız JSON döndür.
@@ -113,7 +115,9 @@ def yaz(hisse, baslik, metin, buy, gecmis, hata=None, kayit=()):
     neg = olumsuz(kayit)
     if neg: u += "\n\nEditör şu tweetleri gereksiz bulup sildi, bu tarz yazma:\n" + "\n".join(f"- {x.get('tweet','')}" for x in neg if x.get("tweet"))
     if hata: u += f"\n\nÖnceki taslak şu nedenle reddedildi, düzelt: {hata}"
-    return jparse(claude(SONNET, YAZ_SYS, u, 600))
+    raw = claude(SONNET, YAZ_SYS, u, 800); p = jparse(raw)
+    if not p.get("tweet"): raise RuntimeError("yazım yanıtı çözülemedi: " + raw[:250])
+    return p
 
 # ---- doğrulama (kod) ----
 YASAK = re.compile(r"\b(hedef fiyat|tavsiye|yükselecek|düşecek|yükselir|düşer|fırsat|kaçırma|al\b|sat\b|tut\b)", re.I)
