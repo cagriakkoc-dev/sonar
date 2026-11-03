@@ -52,5 +52,24 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "ozet-1691690",
+  "hisse": "PAHOL",
+  "baslik": "Pasifik Enerji ve Pasifik GSYO tarafından Egehidro Enerji Madencilik Sanayi ve Ticaret A.Ş'nin satın alınması hk.",
+  "t": "2026-11-03T14:26:47+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "hata",
+  "sebep": "RuntimeError('yazım yanıtı çözülemedi (stop=max_tokens, uzunluk=0):  … ')"
  }
 ]
