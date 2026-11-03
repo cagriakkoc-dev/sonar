@@ -864,5 +864,53 @@
   "tur": "proje süre uzatımı",
   "gerekce": "Pendik gelir paylaşımı projesinde İller Bankası 192 gün süre uzatımı verdi ve geçici kabul tarihi 06.08.2027 oldu; bu bir sözleşme değişikliği ve teslim takvimi güncellemesi olup yeni iş ilişkisi ya da tutar bilgisi içermediğinden editörün 80 puan kuralına girmez.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1691924",
+  "hisse": "MAVI",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-03T16:11:35+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 10,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Günlük alım küçük (20.000 lot, yaklaşık 0,69 milyon TL), ancak kümülatif geri alım %2,69'a (21,4 milyon pay) ulaştığı için pay geri alımı türünün 80 puan alt sınırı uygulandı.",
+  "durum": "paylasildi",
+  "tweet": "MAVI (Mavi Giyim) 3 Kasım'da 34,28 TL fiyattan 20.000 lot pay geri aldı. Alım sermayenin %0,00252'si.\n\nProgram toplamı 21.379.128 lota, sermayenin yaklaşık %2,69'una çıktı. Ekim sonunda günlük 400.000 lota varan alımlar bu kez 20.000 lotla sınırlı kaldı.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "03.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "20.000 lot"
+    ],
+    [
+     "İşlem fiyatı",
+     "34,28 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,00252"
+    ],
+    [
+     "Toplam geri alınan",
+     "21.379.128 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2117650987867336841",
+  "x_gorsel_hata": null
  }
 ]
