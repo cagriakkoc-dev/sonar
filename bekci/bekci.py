@@ -406,6 +406,12 @@ def main():
         print("Telegram ayarlı değil; mesajlar gönderilmedi.")
     if bekleyen_bildirim and TOKEN and st.get("chat_id"):
         json.dump([], open(BILDIR, "w"))
+    # bu çalışmada başka modüllerin (sunum.py) dosyaya eklediği kayıtlar ezilmesin
+    try:
+        ids = {str(k.get("id")) for k in kuyruk}
+        kuyruk += [k for k in json.load(open(KUYRUK)) if str(k.get("id")) not in ids]
+    except Exception as e:
+        print("kuyruk birleştirme hatası:", repr(e)[:120])
     json.dump(kuyruk, open(KUYRUK, "w"), ensure_ascii=False, indent=1)
     st["seen"] = sorted(seen)[-1500:]
     st["last_run"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
