@@ -330,6 +330,20 @@ def main():
             print("elle kuyruğa eklendi", t, i)
         except Exception as e:
             print("elle ekleme hatası", parca, repr(e)[:150])
+    # SonarBIST: elle yeniden deneme (bekci/sonarbist_yeniden.json: [["EYGYO", 1691656]]); işlenince dosya silinir
+    try:
+        _yp = os.path.join(os.path.dirname(__file__), "sonarbist_yeniden.json")
+        if os.path.exists(_yp) and not ilk:
+            import sonarbist
+            _liste = json.load(open(_yp)); os.remove(_yp)
+            for _t, _i in _liste:
+                sonarbist._kaydet([k for k in sonarbist._js(sonarbist.KAYIT) if k.get("id") != f"kap-{_i}"])
+                _d = next((x for x in kap(SIRKETLER[_t], gun=30) if x["disclosureIndex"] == _i), {})
+                print("sonarbist yeniden:", _t, _i, bool(_d))
+                sonarbist.isle(TOKEN, st.get("chat_id"), "kap", _i, _t, _d.get("title") or _d.get("subject") or _d.get("summary") or "",
+                               _d.get("summary") or "", fr=_d.get("disclosureClass") == "FR", link=f"https://www.kap.org.tr/tr/Bildirim/{_i}")
+    except Exception as e:
+        print("sonarbist yeniden hatası:", repr(e)[:200])
     # SPK bültenleri / SPK basın duyuruları / Borsa İstanbul duyuruları (bekci/duzenleyici.py → bekci/duyurular.json)
     try:
         import duzenleyici
