@@ -10,7 +10,7 @@ PUBLIC = os.path.join(BASE, "..", "public", "sirket")
 ESIK = int(os.environ.get("SONARBIST_ESIK", "80"))
 DUSUK = int(os.environ.get("SONARBIST_DUSUK", "60"))  # gölge modda "paylaşılmazdı" olarak gösterilen alt sınır
 SAAT_TAVAN, GUN_TAVAN, DUSUK_TAVAN = 3, 12, 10
-HAIKU = os.environ.get("SONARBIST_HAIKU", "claude-haiku-5-5")
+HAIKU = os.environ.get("SONARBIST_HAIKU", "claude-sonnet-5-5")  # puanlama modeli; Haiku yanıtları kesildi, şimdilik Sonnet (geri almak için SONARBIST_HAIKU=claude-haiku-5-5)
 SONNET = os.environ.get("SONARBIST_SONNET", "claude-sonnet-5-5")
 KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
 MOD = os.environ.get("SONARBIST_MOD", "golge").strip().lower()
