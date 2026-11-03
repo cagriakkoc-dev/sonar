@@ -16,5 +16,23 @@
   "mod": "golge",
   "durum": "hata",
   "sebep": "RuntimeError('Claude API 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg45PNMbu4HN6TxySZdD\"}')"
+ },
+ {
+  "id": "kap-1691656",
+  "hisse": "EYGYO",
+  "baslik": "Kar Payı Dağıtım İşlemlerine İlişkin Bildirim",
+  "t": "2026-11-03T13:23:05+00:00",
+  "mod": "golge",
+  "durum": "hata",
+  "sebep": "RuntimeError('HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg4pM49XUsfnhakfp3Ac\"}')"
+ },
+ {
+  "id": "kap-1691662",
+  "hisse": "ISMEN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-03T13:23:07+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
  }
 ]
