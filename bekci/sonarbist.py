@@ -88,7 +88,8 @@ def buyukluk(hisse):
 # ---- puanlama (Haiku) ----
 PUAN_SYS = """Sen Borsa İstanbul bildirimlerini önem puanına çeviren bir analistsin. Yalnız JSON döndür.
 Puan 0-100 = finansal etki (0-40: tutarın şirket büyüklüğüne oranı; büyüklük verisi verilir) + yenilik/sürpriz (0-20) + kapsam (0-20: şirketin tamamını etkiliyor mu: yönetim, temettü, sermaye, birleşme) + kesinlik (0-10: imzalı/kesinleşmiş mi, niyet/görüşme mi) + ilgi (0-10: BIST 30/100 üyeliği, bilinen büyük şirket).
-Rutin işlemler, küçük tutarlar, usulî bildirimler düşük puan alır. Çıktı: {"puan": int, "fin": int, "yenilik": int, "kapsam": int, "kesinlik": int, "ilgi": int, "tur": "kısa tür", "gerekce": "tek cümle"}"""
+Rutin işlemler, küçük tutarlar, usulî bildirimler düşük puan alır.
+Şu türler editörün kararıyla HER ZAMAN önemlidir ve en az 80 puan alır (şirket küçük veya tutar belirsiz olsa bile): kâr payı (temettü) dağıtım kararı, tutarı veya ödemesi; yeni iş ilişkisi, sözleşme, sipariş; finansal sonuç (bilanço) açıklaması; yatırımcı sunumu; geleceğe ilişkin değerlendirme, beklenti, rehberlik (gelir/kâr hedefi, yatırım planı). Bu türlerde puanı 80-100 arasında ver; genel kurul toplantı usulü, hazirun cetveli gibi usulî bildirimler bu gruba girmez. Çıktı: {"puan": int, "fin": int, "yenilik": int, "kapsam": int, "kesinlik": int, "ilgi": int, "tur": "kısa tür", "gerekce": "tek cümle"}"""
 
 def olumsuz(kayit):
     """Kullanıcının X'ten silip bildirdiği tweetler: gereksiz paylaşım örnekleri (kayıtta "silindi": true)."""
