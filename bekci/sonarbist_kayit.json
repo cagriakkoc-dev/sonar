@@ -166,21 +166,51 @@
   "durum": "dusuk"
  },
  {
+  "id": "kap-1691843",
+  "hisse": "AKFGY",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-03T15:22:13+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 6,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Günlük alımlar (30.10-03.11.2026, yaklaşık 2,1-2,2 TL fiyatla 150 bin-500 bin lot) piyasa değerine göre küçük olsa da, program kapsamında geri alınan toplam 80.946.465 pay sermayenin %2,0756'sına ulaştığı için pay geri alımı kuralı gereği en az 80 puan verildi.",
+  "durum": "paylasildi",
+  "tweet": "AKFGY (Akfen GYO) 3 Kasım'da 150.000 lot payı 2,16 TL fiyattan geri aldı. Programda geri alınan toplam pay 80.946.465 lota ulaştı, sermayeye oranı %2,0756.\n\nAlımlar, PD/DD'si 0,27x ile defter değerinin altında işlem gören bir şirkette sürüyor.",
+  "kap_ogesi": "geri alınan toplam 80.946.465 adet payın sermayeye oranı %2,0756'dır",
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2117638592776618489",
+  "x_gorsel_hata": null
+ },
+ {
   "id": "kap-1691829",
   "hisse": "TUKAS",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-03T15:14:47+00:00",
-  "mod": "golge",
-  "puan": 22,
+  "t": "2026-11-03T15:22:41+00:00",
+  "mod": "canli",
+  "puan": 80,
   "alt": {
    "fin": 6,
-   "yenilik": 3,
-   "kapsam": 5,
-   "kesinlik": 7,
-   "ilgi": 1
+   "yenilik": 5,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 3
   },
-  "tur": "pay geri alım bildirimi",
-  "gerekce": "21.09.2026 tarihli YK kararıyla başlayan geri alım programının rutin günlük bildirimidir; 03.11 alımı yaklaşık 6,9 milyon TL ile piyasa değerinin %0,1'inden azdır, toplam 235,5 milyon pay ise yeni bir bilgi veya sürpriz taşımaz.",
-  "durum": "dusuk"
+  "tur": "pay geri alımı",
+  "gerekce": "3 Kasım'da yaklaşık 6,9 milyon TL'lik 4,1 milyon lot alım piyasa değerine göre küçük ve rutin bir devam bildirimi, ancak pay geri alımı editör kuralıyla her zaman önemli sayıldığından alt sınır olan 80 verildi (şirketin elindeki paylar 235,5 milyon adede ulaştı).",
+  "durum": "paylasildi",
+  "tweet": "TUKAS (Tukaş) 3 Kasım'da 4.100.000 lot pay geri aldı, ortalama fiyat 1,687 TL, sermayeye oranı %0,09111.\n\n21 Eylül'de başlayan programda şirketin elindeki pay 235.500.000 adede çıktı.\n\nSon 4 çeyrekte 1,3 milyar TL net zarar var, PD/DD 0,42x.",
+  "kap_ogesi": "03.11.2026 tarihinde 1,68-1,70 TL fiyat aralığından toplam 4.100.000 adet pay geri alınmış",
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2117638718412747251",
+  "x_gorsel_hata": null
  }
 ]
