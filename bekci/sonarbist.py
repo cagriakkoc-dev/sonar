@@ -47,6 +47,7 @@ def http(url, data=None, headers=None, timeout=90):
 
 def claude(model, system, user, maxtok=700):
     global SON
+    maxtok = max(maxtok * 4, 3000)  # Sonnet 5.5 düşünme belirteçleri çıktıyı kesiyordu
     b = {"model": model, "max_tokens": maxtok, "system": [{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
          "messages": [{"role": "user", "content": user}]}
     try:
@@ -308,6 +309,10 @@ def ozetleri_tara(token, chat):
     if not os.path.exists(gp):
         json.dump(mevcut, open(gp, "w", encoding="utf-8")); return
     gor = _js(gp)
+    # tek seferlik: PAHOL özeti belirteç sınırı yüzünden yazılamadı, yeniden dene
+    ky = _js(KAYIT)
+    if any(k.get("id") == "ozet-1691690" and k.get("durum") == "hata" for k in ky):
+        _kaydet([k for k in ky if k.get("id") != "ozet-1691690"]); gor = [x for x in gor if x != "pahol-1691690"]
     for d in mevcut:
         if d in gor: continue
         gor.append(d); json.dump(gor, open(gp, "w", encoding="utf-8"), ensure_ascii=False)
