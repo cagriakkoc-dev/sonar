@@ -27,21 +27,21 @@
   "sebep": "aracı kurum rutin işlemi"
  },
  {
+  "id": "kap-1691690",
+  "hisse": "PAHOL",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-03T13:44:20+00:00",
+  "mod": "golge",
+  "durum": "hata",
+  "sebep": "RuntimeError('puanlama yanıtı çözülemedi: {\"puan\": 27,')"
+ },
+ {
   "id": "kap-1691656",
   "hisse": "EYGYO",
   "baslik": "Kar Payı Dağıtım İşlemlerine İlişkin Bildirim",
-  "t": "2026-11-03T13:33:41+00:00",
+  "t": "2026-11-03T13:44:25+00:00",
   "mod": "golge",
-  "puan": null,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": null,
-  "gerekce": null,
-  "durum": "dusuk"
+  "durum": "hata",
+  "sebep": "RuntimeError('puanlama yanıtı çözülemedi: {\"puan\": 23, \"fin\": 0, \"yenilik\": 5, \"kapsam\": 10, \"kesinlik\": 6, \"ilgi\": 2, \"tur')"
  }
 ]
