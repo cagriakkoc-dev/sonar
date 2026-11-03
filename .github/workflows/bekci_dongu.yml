@@ -20,9 +20,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: pip install -q pypdf || true
+      - name: SonarBIST (ekran görüntüsü için tarayıcı)
+        run: pip install -q playwright && python3 -m playwright install --with-deps chromium || true
       - name: Döngü
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SONARBIST_MOD: golge
         run: |
           git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
           BITIS=$(( $(date +%s) + 340*60 ))
