@@ -117,7 +117,7 @@ Pay geri alımı bildiriminde: alınan lot (adet) ve tutarı, kaynakta yazıyors
 Biçim: noktalı virgül (;) kullanma. Birden çok bilgi varsa onları ";" ile tek cümleye bağlama; boş satırla ayrılmış kısa paragraflar halinde ya da her biri "• " ile başlayan kısa maddeler halinde ver (madde işareti yalnız "•"). Tweet bir muhabir notu gibi okunmalı, ama tek uzun cümle olmamalı.
 Yasaklar: "Neden önemli?" / "Önemi:" gibi başlık; emoji, hashtag, $ işareti; bağlantı ve alan adı (kap.org.tr dahil); tahmin ve tavsiye (al/sat, hedef fiyat, yükselir/düşer, fırsat); kaynakta olmayan her rakam; hisse kodu tweette mutlaka geçer ve öne alınır: önce kod, parantez içinde şirket adı, örneğin "PAHOL (Pasifik Holding) ..." biçiminde; kodu yalnız bir kez ve düz yazıyla yaz.
 Yorum yalnız bağlam verir: geçmişle kıyas, büyüklük (verilen Sonar büyüklükleri ve metindeki rakamlarla), şirket için ne anlama geldiği. Rakam hesaplama; kaynakta yazan rakamları kullan. Son 20 tweetle açılış, cümle yapısı ve kapanış tekrar etmemeli; her tweet farklı kalıpla başlar.
-En çok 270 karakter. Çıktı: {"tweet": "...", "kap_ogesi": "ekran görüntüsüne alınacak bölümü KAP metninden birebir 6-12 kelimelik bir parçayla tanımla; parça tweetteki asıl bilginin geçtiği cümleden olsun (yasal uyarı, imza, ön yazı değil) ve yalnız KAP metninden alınsın, Sonar özet girişinden değil"}"""
+En çok 270 karakter. Çıktı: {"tweet": "...", "kart": {"baslik": "en çok 6 kelimelik kart başlığı", "satirlar": [["etiket", "değer"], ...]}}. Kart tweetin görselidir: 3-5 satır, her satır kısa etiket + kaynakta yazan değer (lot, tutar, fiyat, oran, tarih, süre gibi). Etiket en çok 4 kelime, değer en çok 22 karakter ve kaynaktaki rakamlarla birebir (örn. "4.100.000 lot", "%0,09", "1,68-1,70 TL"). Başlıkta ve satırlarda hisse kodu, marka adı, kullanıcı adı, bağlantı, # veya @ olmasın; rakam hesaplama."""
 
 def yaz(hisse, baslik, metin, buy, gecmis, hata=None, kayit=()):
     u = (f"Şirket: {hisse}\nBüyüklükler (Sonar): {buy}\nBaşlık: {baslik}\n\nSon 20 SonarBIST tweeti (tekrar etme):\n" +
@@ -277,16 +277,63 @@ def fr_kart(hisse, baslik, olc):
     from playwright.sync_api import sync_playwright
     yol = os.path.join(BASE, "sonarbist_kart.png")
     trs = "".join(f'<tr><td class="a">{html.escape(a)}</td><td>{html.escape(c)}</td><td class="o">{html.escape(o)}</td><td class="{"u" if y == "up" else "d" if y == "down" else "n"}">{html.escape(d)}</td></tr>' for a, c, o, d, y in olc["kart"])
-    h = f"""<html><body style="margin:0;background:#fff"><div id="k" style="width:900px;box-sizing:border-box;padding:36px 40px;font-family:Arial,Helvetica,sans-serif;color:#0f172a;background:#fff">
-<div style="font-size:15px;color:#64748b;letter-spacing:.5px">FİNANSAL SONUÇLAR</div>
+    h = f"""<html><body style="margin:0;background:#0e141b"><div id="k" style="width:900px;box-sizing:border-box;padding:36px 40px;font-family:Arial,Helvetica,sans-serif;color:#e7ecf3;background:#0e141b">
+<div style="font-size:15px;color:#7cc4ff;letter-spacing:.5px">FİNANSAL SONUÇLAR</div>
 <div style="font-size:34px;font-weight:700;margin:4px 0 2px">{html.escape(hisse)}</div>
-<div style="font-size:16px;color:#475569;margin-bottom:22px">{html.escape(baslik)[:90]}</div>
-<table style="width:100%;border-collapse:collapse;font-size:20px"><tr style="color:#64748b;font-size:14px;text-align:left"><th style="padding:8px 0">Kalem</th><th>Bu dönem</th><th>Karşılaştırma dönemi</th><th>Değişim</th></tr>{trs}</table>
-<div style="margin-top:20px;font-size:13px;color:#94a3b8">Kaynak: KAP finansal rapor · Sonar</div></div>
-<style>td{{padding:11px 0;border-top:1px solid #e2e8f0}}td.a{{font-weight:600}}td.o{{color:#64748b}}td.u{{color:#047857;font-weight:600}}td.d{{color:#b91c1c;font-weight:600}}td.n{{color:#475569}}</style></body></html>"""
+<div style="font-size:16px;color:#8a97aa;margin-bottom:22px">{html.escape(baslik)[:90]}</div>
+<table style="width:100%;border-collapse:collapse;font-size:20px"><tr style="color:#8a97aa;font-size:14px;text-align:left"><th style="padding:8px 0">Kalem</th><th>Bu dönem</th><th>Karşılaştırma dönemi</th><th>Değişim</th></tr>{trs}</table>
+<div style="margin-top:20px;font-size:13px;color:#8a97aa">Kaynak: KAP finansal rapor</div></div>
+<style>td{{padding:11px 0;border-top:1px solid #2a3544}}td.a{{font-weight:600}}td.o{{color:#8a97aa}}td.u{{color:#3fd4a0;font-weight:600}}td.d{{color:#ff7d6e;font-weight:600}}td.n{{color:#8a97aa}}</style></body></html>"""
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={"width": 900, "height": 700}, device_scale_factor=2)
         pg.set_content(h); pg.locator("#k").screenshot(path=yol); b.close()
+    return yol
+
+KART_KAYNAK = {"kap": "KAP", "ozet": "KAP", "spk-basin": "SPK", "bist": "Borsa İstanbul", "sunum": "Yatırımcı sunumu"}
+
+def kart_dogrula(kart, kaynak):
+    if not isinstance(kart, dict): return ["kart eksik"]
+    sat = kart.get("satirlar")
+    if not isinstance(sat, list) or not (2 <= len(sat) <= 5): return ["kart 2-5 satır olmalı"]
+    if not str(kart.get("baslik", "")).strip(): return ["kart başlığı boş"]
+    kay = _sayilar(kaynak)
+    for x in sat:
+        if not (isinstance(x, list) and len(x) == 2): return ["kart satırı [etiket, değer] olmalı"]
+        def _ok(d): return any(k == d or (k.startswith(d) and set(k[len(d):]) <= {"0"}) or (d.startswith(k) and k and set(d[len(k):]) <= {"0"}) for k in kay)
+        for tok in re.findall(r"\d+(?:[.,/:-]\d+)*", f"{x[0]} {x[1]}"):
+            if not (_ok(re.sub(r"\D", "", tok)) or all(_ok(pp) for pp in re.split(r"[.,/:-]", tok))):
+                return [f"kart rakamı kaynakta yok: {tok}"]
+    dump = json.dumps(kart, ensure_ascii=False)
+    if re.search(r"[#$@]|https?://|www\.", dump) or ALAN.search(dump): return ["kartta bağlantı, @, # veya $ var"]
+    return []
+
+def ozet_karti(hisse, kaynak, kart):
+    """Özet kartı (1080x1350, koyu, SmartCüzdan tarzı); marka veya kullanıcı adı yok."""
+    from playwright.sync_api import sync_playwright
+    yol = os.path.join(BASE, "sonarbist_ozet_karti.png")
+    tarih = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=3))).strftime("%d.%m.%Y")
+    et = KART_KAYNAK.get(kaynak, "KAP")
+    bas = html.escape(str(kart["baslik"])[:70])
+    sat = "".join('<div class="r"><div class="l">%s</div><div class="v" style="font-size:%dpx">%s</div></div>' % (
+        html.escape(str(a)), 54 if len(str(d)) <= 22 else 42, html.escape(str(d))) for a, d in kart["satirlar"][:5])
+    css = ("*{box-sizing:border-box}body{margin:0;background:#0e141b}"
+           "#k{width:1080px;height:1350px;padding:72px;background:#0e141b;color:#e7ecf3;font-family:'Plus Jakarta Sans','Segoe UI',Arial,Helvetica,sans-serif;position:relative;overflow:hidden}"
+           "#k:before{content:'';position:absolute;left:0;right:0;top:0;height:10px;background:#7cc4ff}"
+           ".h{color:#7cc4ff;font-size:30px;font-weight:600;letter-spacing:.5px}"
+           ".t{font-size:%dpx;font-weight:700;line-height:1.14;margin:30px 0 52px}"
+           ".r{background:#1b2431;border-left:8px solid #7cc4ff;border-radius:10px;padding:28px 40px;margin-bottom:24px}"
+           ".l{color:#8a97aa;font-size:30px;margin-bottom:8px;font-weight:500}.v{font-weight:700;line-height:1.15}"
+           ".f{position:absolute;left:72px;bottom:56px;color:#8a97aa;font-size:28px}") % (66 if len(bas) <= 32 else 52)
+    doc = ('<html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet"><style>' + css + '</style></head><body><div id="k"><div class="h">'
+           + html.escape(hisse) + " · " + et + " · " + tarih + '</div><div class="t">' + bas + '</div>' + sat + '<div class="f">Kaynak: ' + et + '</div></div></body></html>')
+    with sync_playwright() as p:
+        b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1080, "height": 1350})
+        try: pg.set_content(doc, wait_until="networkidle", timeout=20000)
+        except Exception: pg.set_content(doc)
+        try: pg.evaluate("document.fonts.ready")
+        except Exception: pass
+        pg.wait_for_timeout(500)
+        pg.locator("#k").screenshot(path=yol); b.close()
     return yol
 
 # ---- Telegram (gölge mod) ----
@@ -399,18 +446,19 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
             if puan >= DUSUK and len(bugun) < DUSUK_TAVAN:
                 tg(token, chat, f"SonarBIST · paylaşılmazdı (puan {puan}) · {hisse}\n{baslik[:200]}\n{p.get('gerekce','')}\n{link}"); k["durum"] = "dusuk_bildirildi"
             kayit.append(k); _kaydet(kayit); return k
-        saat = [x for x in kayit if x.get("durum") == "taslak" and x["t"] > (simdi - datetime.timedelta(hours=1)).isoformat()]
-        gun = [x for x in kayit if x.get("durum") == "taslak" and x["t"][:10] == simdi.date().isoformat()]
+        saat = [x for x in kayit if x.get("durum") in ("taslak", "paylasildi") and x["t"] > (simdi - datetime.timedelta(hours=1)).isoformat()]
+        gun = [x for x in kayit if x.get("durum") in ("taslak", "paylasildi") and x["t"][:10] == simdi.date().isoformat()]
         if len(saat) >= SAAT_TAVAN or len(gun) >= GUN_TAVAN:
             k.update(durum="tavan", sebep="saat/gün tavanı"); kayit.append(k); _kaydet(kayit)
             tg(token, chat, f"SonarBIST · tavan nedeniyle sıraya alınmadı (puan {puan}) · {hisse}\n{baslik[:200]}\n{link}"); return k
         gecmis = [x["tweet"] for x in kayit if x.get("tweet")]
-        kaynak_m = metin + " " + buy; hata = None; taslak = {}
+        kaynak_m = metin + " " + buy; hata = None; taslak = {}; kh = []
         for deneme in range(2):
             taslak = yaz(hisse, baslik, metin, buy, gecmis, hata, kayit)
             h = dogrula(taslak.get("tweet", ""), kaynak_m, gecmis, hisse)
-            if not h: break
-            hata = "; ".join(h)
+            kh = [] if fr else kart_dogrula(taslak.get("kart"), kaynak_m)
+            if not h and not kh: break
+            hata = "; ".join(h + kh)
         if h:
             k.update(durum="dogrulama_hatasi", sebep=hata, tweet_red=taslak.get("tweet")); kayit.append(k); _kaydet(kayit)
             tg(token, chat, f"SonarBIST · taslak doğrulamadan geçmedi (puan {puan}) · {hisse}\n{baslik[:160]}\nNeden: {hata}\nTaslak: {taslak.get('tweet')}\n{link}"); return k
@@ -421,14 +469,17 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
             foto, ghata = (None, None)
             if kaynak == "ozet":
                 foto, ghata = site_karti(hisse, kid)  # panelde üretilen kart
-            if not foto and kaynak in ("kap", "ozet"):
-                foto, g2 = goruntu(kid, taslak.get("kap_ogesi")); ghata = ghata or g2
-        k.update(durum="taslak", tweet=taslak["tweet"], kap_ogesi=taslak.get("kap_ogesi"), goruntu=bool(foto), goruntu_hata=ghata)
+            if not foto:
+                if kh: ghata = "kart doğrulanamadı: " + "; ".join(kh)[:150]
+                else:
+                    try: foto, ghata = ozet_karti(hisse, kaynak, taslak["kart"]), None
+                    except Exception as e: ghata = "kart: " + repr(e)[:150]
+        k.update(durum="taslak", tweet=taslak["tweet"], kart=taslak.get("kart"), goruntu=bool(foto), goruntu_hata=ghata)
         if MOD == "canli" and x_hazir():
             k["mod"] = "canli"; tid, xg = x_paylas(taslak["tweet"], foto)
             k.update(durum="paylasildi", tweet_id=tid, x_gorsel_hata=xg); kayit.append(k); _kaydet(kayit)
             tg(token, chat, f"SonarBIST PAYLAŞILDI · puan {puan} · {hisse}\nhttps://x.com/{HESAP}/status/{tid}\n\n{taslak['tweet']}\n\nGerekçe: {p.get('gerekce','')}\n{link}" +
-               (f"\n(KAP görseli yok: {ghata})" if ghata else "") + (f"\n(X görsel yüklemesi başarısız, metinle atıldı: {xg})" if xg else "") + "\nGereksizse X'ten sil ve bana 'sildim' de.", foto)
+               (f"\n(görsel yok: {ghata})" if ghata else "") + (f"\n(X görsel yüklemesi başarısız, metinle atıldı: {xg})" if xg else "") + "\nGereksizse X'ten sil ve bana 'sildim' de.", foto)
             if foto:
                 try: os.remove(foto)
                 except Exception: pass
