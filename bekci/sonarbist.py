@@ -113,9 +113,9 @@ def puanla(hisse, baslik, metin, buy, kayit=()):
 # ---- yazım (Sonnet) ----
 YAZ_SYS = """Sen SonarBIST'in editörüsün: Borsa İstanbul haber notlarını X'te kısa bir muhabir notu gibi yazarsın. Yalnız JSON döndür.
 Dil: akıcı, sade, formal ama robot gibi değil Türkçe. Yapı: önce bilgi (ne açıklandı, rakamlarla), sonra neden önemli olduğu 1-2 cümleyle, doğal akışın devamı olarak.
-Yasaklar: "Neden önemli?" / "Önemi:" gibi başlık; emoji, hashtag, $ işareti; bağlantı ve alan adı (kap.org.tr dahil); tahmin ve tavsiye (al/sat, hedef fiyat, yükselir/düşer, fırsat); kaynakta olmayan her rakam; ticker yerine şirket adı veya kodu düz yazılır.
+Yasaklar: "Neden önemli?" / "Önemi:" gibi başlık; emoji, hashtag, $ işareti; bağlantı ve alan adı (kap.org.tr dahil); tahmin ve tavsiye (al/sat, hedef fiyat, yükselir/düşer, fırsat); kaynakta olmayan her rakam; hisse kodu tweette mutlaka geçer ve öne alınır: önce kod, parantez içinde şirket adı, örneğin "PAHOL (Pasifik Holding) ..." biçiminde; kodu yalnız bir kez ve düz yazıyla yaz.
 Yorum yalnız bağlam verir: geçmişle kıyas, büyüklük (verilen Sonar büyüklükleri ve metindeki rakamlarla), şirket için ne anlama geldiği. Rakam hesaplama; kaynakta yazan rakamları kullan. Son 20 tweetle açılış, cümle yapısı ve kapanış tekrar etmemeli; her tweet farklı kalıpla başlar.
-En çok 270 karakter. Çıktı: {"tweet": "...", "kap_ogesi": "ekran görüntüsüne alınacak bölümü KAP metninden birebir 6-12 kelimelik bir parçayla tanımla"}"""
+En çok 270 karakter. Çıktı: {"tweet": "...", "kap_ogesi": "ekran görüntüsüne alınacak bölümü KAP metninden birebir 6-12 kelimelik bir parçayla tanımla; parça tweetteki asıl bilginin geçtiği cümleden olsun (yasal uyarı, imza, ön yazı değil) ve yalnız KAP metninden alınsın, Sonar özet girişinden değil"}"""
 
 def yaz(hisse, baslik, metin, buy, gecmis, hata=None, kayit=()):
     u = (f"Şirket: {hisse}\nBüyüklükler (Sonar): {buy}\nBaşlık: {baslik}\n\nSon 20 SonarBIST tweeti (tekrar etme):\n" +
@@ -140,8 +140,9 @@ def _sayilar(s):
         for p in re.split(r"[.,/:-]", tok): out.add(p)
     return out
 
-def dogrula(tweet, kaynak, gecmis):
+def dogrula(tweet, kaynak, gecmis, hisse=""):
     h = []
+    if hisse and not re.search(r"\b" + re.escape(hisse) + r"\b", tweet): h.append(f"hisse kodu ({hisse}) tweette düz yazı olarak geçmiyor")
     if not tweet or len(tweet) > 280: h.append("uzunluk 280'i aşıyor veya boş")
     if re.search(r"https?://|www\.", tweet) or ALAN.search(tweet): h.append("bağlantı/alan adı var")
     if re.search(r"[#$]", tweet) or EMOJI.search(tweet): h.append("emoji, hashtag veya $ var")
@@ -172,21 +173,23 @@ def goruntu(i, parca):
             pg.goto(f"https://www.kap.org.tr/tr/Bildirim/{i}", wait_until="domcontentloaded", timeout=60000)
             pg.wait_for_selector(".notification_detail-disclosure-detail, .disclosureScrollableArea", timeout=45000)
             pg.wait_for_timeout(1500)
-            kap = pg.locator(".notification_detail-disclosure-detail").first
-            box = kap.bounding_box() or {"x": 0, "y": 0, "width": 1100, "height": 900}
-            hedef = None
-            if parca:
-                js = """(t)=>{const r=document.querySelector('.notification_detail-disclosure-detail'); if(!r) return null;
-                  const n=t.toLowerCase().replace(/\\s+/g,' ').slice(0,40); let best=null;
-                  for(const e of r.querySelectorAll('td,p,div,span,tr')){const x=(e.innerText||'').toLowerCase().replace(/\\s+/g,' ');
-                    if(x.includes(n) && (!best || x.length<best.len)) best={e,len:x.length};}
-                  if(!best) return null; const rc=best.e.getBoundingClientRect(); return [rc.y+window.scrollY+rc.height];}"""
-                try:
-                    r = pg.evaluate(js, parca)
-                    if r: hedef = r[0]
-                except Exception: pass
-            bas = box["y"]; bit = min((hedef + 16) if hedef else bas + 900, bas + 1300)
-            pg.screenshot(path=yol, clip={"x": box["x"], "y": bas, "width": box["width"], "height": max(300, bit - bas)}, full_page=True)
+            js = r"""(t)=>{const r=document.querySelector('.notification_detail-disclosure-detail'); if(!r) return false;
+              document.querySelectorAll('[data-sb]').forEach(e=>e.removeAttribute('data-sb'));
+              const n=(t||'').toLowerCase().replace(/\s+/g,' ').slice(0,40); let best=null;
+              if(n){for(const e of r.querySelectorAll('td,p,div,span,tr,li')){const x=(e.innerText||'').toLowerCase().replace(/\s+/g,' ');
+                if(x.includes(n) && (!best || x.length<best.len)) best={e,len:x.length};}}
+              let e=best?best.e:r;
+              if(best){ while(e.parentElement && e!==r && e.getBoundingClientRect().height<220) e=e.parentElement;
+                if(e.getBoundingClientRect().height>1100) e=best.e; }
+              e.setAttribute('data-sb','1'); return !!best;}"""
+            bulundu = pg.evaluate(js, parca or "")
+            hed = pg.locator('[data-sb="1"]').first
+            hed.scroll_into_view_if_needed()
+            if bulundu:
+                hed.screenshot(path=yol)
+            else:  # bölüm bulunamazsa bildirimin üst kısmı
+                bx = hed.bounding_box()
+                pg.screenshot(path=yol, clip={"x": bx["x"], "y": max(bx["y"], 0), "width": bx["width"], "height": min(max(bx["height"], 300), 700)})
             b.close()
         return yol, None
     except Exception as e:
@@ -370,7 +373,7 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
         kaynak_m = metin + " " + buy; hata = None; taslak = {}
         for deneme in range(2):
             taslak = yaz(hisse, baslik, metin, buy, gecmis, hata, kayit)
-            h = dogrula(taslak.get("tweet", ""), kaynak_m, gecmis)
+            h = dogrula(taslak.get("tweet", ""), kaynak_m, gecmis, hisse)
             if not h: break
             hata = "; ".join(h)
         if h:
