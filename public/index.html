@@ -1331,7 +1331,7 @@ function renderCompany(c){setSum(c);
 }
 /* ---------- şirket sitesindeki yatırımcı sunumları (bekçi: bekci/sunum.py → açık depo bekci/sunumlar.json) ---------- */
 const SNM_URL='https://raw.githubusercontent.com/cagriakkoc-dev/sonar/main/bekci/sunumlar.json';let SNM=null,snmP=null;
-function snmLoad(){if(!snmP)snmP=fetch(SNM_URL+'?v='+Math.floor(Date.now()/3e5),{cache:'no-store'}).then(r=>r.ok?r.json():{}).catch(()=>({})).then(j=>SNM=j&&typeof j==='object'?j:{});return snmP}
+function snmLoad(){if(!snmP)snmP=VERI('sunumlar.json',SNM_URL).then(j=>SNM=j&&typeof j==='object'?j:{});return snmP}
 function snmFill(){const el=document.getElementById('snm-slot');if(!el)return;const t=el.dataset.t;snmLoad().then(()=>{const e=document.getElementById('snm-slot');if(!e||e.dataset.t!==t)return;const S=SNM[t];
   if(!S||!(S.liste||[]).length){e.innerHTML='';return}const L=S.liste.slice(0,4),C=BY[t],NS=(C?.news||[]).filter(n=>n.sunum),nOf=u=>NS.find(n=>n.sunum===u);
   const N0=NS.slice().sort((a,b)=>b.id-a.id)[0],F=N0?(N0.social?.tweets?N0.social.tweets.map(x=>x.card):(N0.cards||[])).filter(c=>c&&c.type==='facts'):[];
@@ -1922,6 +1922,8 @@ function renderHaberler(tag){{const r=$('.rail');document.documentElement.style.
   const qi=$('#blq');if(qi){qi.oninput=()=>{state.hq=qi.value;const p=qi.selectionStart;renderHaberler(tag);const n=$('#blq');n.focus();try{n.setSelectionRange(p,p)}catch(e){}}}
 }
 /* ---------- SPK ve Borsa İstanbul duyuruları (bekçi: bekci/duzenleyici.py → açık depo bekci/duyurular.json) ---------- */
+/* bekçi verisi sitenin kendi adresinden (/veri/, Render) okunur; yoksa açık depodan (raw) */
+const VERI=(f,raw)=>fetch('/veri/'+f+'?v='+Math.floor(Date.now()/3e5),{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>raw?fetch(raw+'?v='+Math.floor(Date.now()/3e5),{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null):null);
 const DUY_URL='https://raw.githubusercontent.com/cagriakkoc-dev/sonar/main/bekci/duyurular.json';
 const DUYK={'spk-bulten':{l:'SPK bülteni',c:'#c2410c'},'spk-basin':{l:'SPK duyurusu',c:'#b45309'},'bist':{l:'Borsa İstanbul',c:'#1d4ed8'}};
 let DUY=null,duyP=null;
@@ -1931,8 +1933,8 @@ function duyDuzelt(L,D){D=D&&typeof D==='object'?D:{};const E=(Array.isArray(D.e
   return L.concat(E).flatMap(x=>{const o=x.id[0]!=='_'?D[x.id]:null;if(!o||typeof o!=='object')return [x];if(o.gizli)return [];
     const y={...x};if(o.t)y.t=o.t;const k=(x.kod||[]).filter(t=>!(o.kod_cikar||[]).includes(t));(o.kod_ekle||[]).forEach(t=>{if(!k.includes(t))k.push(t)});y.kod=k;
     if(x.bol)y.bol=Object.fromEntries(Object.entries(x.bol).filter(([t])=>k.includes(t)));return [y]}).sort((a,b)=>((b.d||'')+b.id).localeCompare((a.d||'')+a.id))}
-function duyLoad(){if(duyP)return duyP;const v='?v='+Math.floor(Date.now()/3e5),J=u=>fetch(u+v,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null);
-  duyP=Promise.all([J(DUY_URL),J(DUZ_URL)]).then(([L,D])=>{DUY=duyDuzelt((Array.isArray(L)?L:[]).filter(x=>x&&x.id&&x.t&&x.u),D);
+function duyLoad(){if(duyP)return duyP;
+  duyP=Promise.all([VERI('duyurular.json',DUY_URL),VERI('duyuru_duzelt.json',DUZ_URL)]).then(([L,D])=>{DUY=duyDuzelt((Array.isArray(L)?L:[]).filter(x=>x&&x.id&&x.t&&x.u),D);
   const v=state.view||'';if(v==='DUYURU'||v==='HABERLER'||v.startsWith('HABERLER-'))render();return DUY});return duyP}
 const duyTarih=d=>{const m=/^(\d{4})-(\d{2})-(\d{2})/.exec(d||'');return m?m[3]+'.'+m[2]+'.'+m[1]:''};
 function duyRow(x,full){const K=DUYK[x.k]||{l:x.k,c:'#64748b'},kod=(x.kod||[]).filter(t=>BY[t]),bol=x.bol||{},N=full?kod.length:6;
