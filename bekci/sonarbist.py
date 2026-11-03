@@ -161,6 +161,37 @@ def dogrula(tweet, kaynak, gecmis, hisse=""):
     return h
 
 # ---- KAP ekran görüntüsü (bölüm 5, en iyi çaba) ----
+def site_karti(hisse, kid, bekle=75):
+    """Sonar'daki haber sayfasında (admin panelinde üretilen) ilk kartı 1080x1350 PNG olarak alır."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception:
+        return None, "playwright yok"
+    import base64, time
+    yol = os.path.join(BASE, "sonarbist_site_karti.png")
+    url = f"https://sonar.smartcuzdan.io/haber/{hisse.lower()}-{kid}/"
+    son = "kart bulunamadı"
+    try:
+        with sync_playwright() as p:
+            b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1200, "height": 1400}, locale="tr-TR")
+            bit = time.time() + bekle
+            while time.time() < bit:
+                try:
+                    pg.goto(url + "?t=" + str(int(time.time())), wait_until="domcontentloaded", timeout=45000)
+                    pg.wait_for_selector('canvas[data-hc="0"]', timeout=15000)
+                    pg.wait_for_timeout(3500)
+                    d = pg.evaluate("document.querySelector('canvas[data-hc=\"0\"]').toDataURL('image/png')")
+                    if d and len(d) > 20000:
+                        open(yol, "wb").write(base64.b64decode(d.split(",", 1)[1])); b.close(); return yol, None
+                    son = "kart boş"
+                except Exception as e:
+                    son = repr(e)[:120]
+                pg.wait_for_timeout(8000)
+            b.close()
+    except Exception as e:
+        son = repr(e)[:150]
+    return None, "site kartı: " + son
+
 def goruntu(i, parca):
     try:
         from playwright.sync_api import sync_playwright
@@ -314,8 +345,9 @@ def ozetleri_tara(token, chat):
     gor = _js(gp)
     # tek seferlik: PAHOL özeti belirteç sınırı yüzünden yazılamadı, yeniden dene
     ky = _js(KAYIT)
-    if any(k.get("id") == "ozet-1691690" and k.get("durum") == "hata" for k in ky):
-        _kaydet([k for k in ky if k.get("id") != "ozet-1691690"]); gor = [x for x in gor if x != "pahol-1691690"]
+    esk = [k for k in ky if k.get("id") == "ozet-1691690" and str(k.get("tweet_id")) == "2117626345618375133"]
+    if esk:  # Cagri bu tweeti sildi (3 Kas): olumsuz örnek olarak sakla, aynı özeti yeni biçimle yeniden at
+        esk[0].update(id="ozet-1691690-silindi", silindi=True); _kaydet(ky); gor = [x for x in gor if x != "pahol-1691690"]
     for d in mevcut:
         if d in gor: continue
         gor.append(d); json.dump(gor, open(gp, "w", encoding="utf-8"), ensure_ascii=False)
@@ -383,7 +415,11 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
             try: foto, ghata = fr_kart(hisse, baslik, olc), None
             except Exception as e: foto, ghata = None, "kart: " + repr(e)[:120]
         else:
-            foto, ghata = goruntu(kid, taslak.get("kap_ogesi")) if kaynak in ("kap", "ozet") else (None, None)
+            foto, ghata = (None, None)
+            if kaynak == "ozet":
+                foto, ghata = site_karti(hisse, kid)  # panelde üretilen kart
+            if not foto and kaynak in ("kap", "ozet"):
+                foto, g2 = goruntu(kid, taslak.get("kap_ogesi")); ghata = ghata or g2
         k.update(durum="taslak", tweet=taslak["tweet"], kap_ogesi=taslak.get("kap_ogesi"), goruntu=bool(foto), goruntu_hata=ghata)
         if MOD == "canli" and x_hazir():
             k["mod"] = "canli"; tid, xg = x_paylas(taslak["tweet"], foto)
