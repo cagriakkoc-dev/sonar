@@ -37,11 +37,11 @@ jobs:
           while [ "$(date +%s)" -lt "$BITIS" ]; do
             git pull -q --rebase || git rebase --abort || true
             TETIK=${TETIK:-0} python3 bekci/bekci.py || echo "bekçi hatası"
-            git add bekci/
+            git add bekci/ public/veri/ 2>/dev/null || git add bekci/
             ADDED=$(git diff --cached --numstat | awk '{s+=$1} END {print s+0}')
             FILES=$(git diff --cached --name-only | grep -v '^bekci/state.json$' | wc -l)
             if [ "$FILES" -gt 0 ] || [ "$ADDED" -gt 2 ]; then
-              git commit -q -m "Bekçi durumu [skip render]"
+              if git diff --cached --name-only | grep -q "^public/veri/"; then git commit -q -m "Bekçi durumu · site verisi"; else git commit -q -m "Bekçi durumu [skip render]"; fi
               for n in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
             else
               git reset -q; git checkout -q -- bekci/state.json 2>/dev/null || true

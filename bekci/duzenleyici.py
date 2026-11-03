@@ -202,6 +202,15 @@ def ayrinti(x, P):
 
 
 DUZ = os.path.join(B, "duyuru_duzelt.json")
+# panel düzeltmeleri sonar-site'ta tutulur, yayınla public/veri/'ye gelir; o varsa o kullanılır
+_DUZ2 = os.path.join(B, "..", "public", "veri", "duyuru_duzelt.json")
+if os.path.exists(_DUZ2): DUZ = _DUZ2
+
+
+def veri_kopya(ad, obj):
+    """Sitenin kendi adresinden okuduğu kopya: public/veri/<ad> (Render yayınlar)."""
+    d = os.path.join(B, "..", "public", "veri"); os.makedirs(d, exist_ok=True)
+    json.dump(obj, open(os.path.join(d, ad), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 
 
 def duzelt(L, D=None):
@@ -259,6 +268,7 @@ def tara(kuru=False, sessiz=None):
     if kuru:
         print(json.dumps(yeni[:40], ensure_ascii=False, indent=1)); return [], hatalar
     json.dump(tum[:400], open(DUY, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    veri_kopya("duyurular.json", tum[:400])
     if ilk:
         return [f"SPK ve Borsa İstanbul duyuru takibi başladı: {len(yeni)} kayıt Sonar'a alındı. Yeni bülten ve duyurular buraya gelecek."], hatalar
     msj = []

@@ -178,6 +178,8 @@ def tara(kuru=False, zorla=False):
     if kuru:
         print(json.dumps(D, ensure_ascii=False, indent=1)[:6000]); return []
     json.dump(D, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    vd = os.path.join(B, "..", "public", "veri"); os.makedirs(vd, exist_ok=True)   # sitenin okuduğu kopya (gorulen listesi olmadan)
+    json.dump({t: {k: v for k, v in e.items() if k != "gorulen"} for t, e in D.items()}, open(os.path.join(vd, "sunumlar.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     return msj
 
 
