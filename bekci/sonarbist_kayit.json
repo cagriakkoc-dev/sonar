@@ -1044,5 +1044,62 @@
   "tur": "Eurobond geri alımı (borç yönetimi)",
   "gerekce": "Şirket kendi ihraç ettiği 10 milyon ABD Doları nominal Eurobond'u geri aldı; tutar yaklaşık 10,4 milyon ABD Doları olup piyasa değerinin binde birkaçı kadardır, işlem kesinleşmiş ancak rutin bir borç yönetimi adımıdır ve pay geri alımı değildir.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1691942",
+  "hisse": "ANHYT",
+  "baslik": "Pay Alım Satım Bildirimi",
+  "t": "2026-11-03T16:55:01+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1691943",
+  "hisse": "GARAN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-03T16:55:01+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 26,
+   "yenilik": 16,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "Pay geri alım programı",
+  "gerekce": "GARAN, 3 yıllık program kapsamında azami 85 milyon TL nominal paya karşılık 11 milyar TL'ye kadar (piyasa değerinin yaklaşık %2,1'i) pay geri alacak; pay geri alımı editör kuralı gereği her zaman önemli sayılır ve PAHOL satın alma örneğinden farklı bir türdür.",
+  "durum": "paylasildi",
+  "tweet": "GARAN (Garanti Bankası) 4 Kasım'dan itibaren 3 yıllık pay geri alım programı başlatıyor.\n\n• Azami 85 milyon TL nominal pay\n• Fon üst sınırı 11,0 milyar TL\n\nAmaç, finansal yapıya duyulan güveni göstermek. Piyasa değeri 516,2 milyar TL, PD/DD 0,99x.",
+  "kart": {
+   "baslik": "Pay geri alım programı başladı",
+   "satirlar": [
+    [
+     "Yönetim kurulu kararı",
+     "03.11.2026"
+    ],
+    [
+     "Uygulama başlangıcı",
+     "04 Kasım 2026"
+    ],
+    [
+     "Program süresi",
+     "3 yıl"
+    ],
+    [
+     "Azami nominal pay",
+     "85.000.000 TL"
+    ],
+    [
+     "Azami fon",
+     "11,0 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2117661914020888594",
+  "x_gorsel_hata": null
  }
 ]
