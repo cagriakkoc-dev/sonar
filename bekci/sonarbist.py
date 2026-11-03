@@ -114,6 +114,7 @@ def puanla(hisse, baslik, metin, buy, kayit=()):
 # ---- yazım (Sonnet) ----
 YAZ_SYS = """Sen SonarBIST'in editörüsün: Borsa İstanbul haber notlarını X'te kısa bir muhabir notu gibi yazarsın. Yalnız JSON döndür.
 Dil: akıcı, sade, formal ama robot gibi değil Türkçe. Yapı: önce bilgi (ne açıklandı, rakamlarla), sonra neden önemli olduğu 1-2 cümleyle, doğal akışın devamı olarak.
+Doğal anlatım: bildirimde neyin bulunmadığını söyleme ("Bildirimde rakam yok", "tutar belirtilmedi", "ayrıntı verilmedi" gibi cümleler yasak); yalnız var olan bilgiyi ve bağlamı yaz. Sunum veya genel özel durum bildirimlerinde ne açıklandığını ve şirket için neden önemli olduğunu anlat.
 Pay geri alımı bildiriminde: alınan lot (adet) ve tutarı, kaynakta yazıyorsa ortalama fiyatı ve şirket sermayesine oranını (%) mutlaka ver; oran kaynakta yoksa kendin hesaplama, yazma.
 Biçim: noktalı virgül (;) kullanma. Birden çok bilgi varsa onları ";" ile tek cümleye bağlama; boş satırla ayrılmış kısa paragraflar halinde ya da her biri "• " ile başlayan kısa maddeler halinde ver (madde işareti yalnız "•"). Tweet bir muhabir notu gibi okunmalı, ama tek uzun cümle olmamalı.
 Yasaklar: "Neden önemli?" / "Önemi:" gibi başlık; emoji, hashtag, $ işareti; bağlantı ve alan adı (kap.org.tr dahil); tahmin ve tavsiye (al/sat, hedef fiyat, yükselir/düşer, fırsat); kaynakta olmayan her rakam; hisse kodu tweette mutlaka geçer ve öne alınır: önce kod, parantez içinde şirket adı, örneğin "PAHOL (Pasifik Holding) ..." biçiminde; kodu yalnız bir kez ve düz yazıyla yaz.
@@ -151,6 +152,7 @@ def dogrula(tweet, kaynak, gecmis, hisse=""):
     if re.search(r"[#$]", tweet) or EMOJI.search(tweet): h.append("emoji, hashtag veya $ var")
     if YASAK.search(tweet): h.append("tavsiye/tahmin kalıbı")
     if BASLIK.search(tweet): h.append("başlık kalıbı")
+    if re.search(r"(bildirimde|açıklamada)[^.\n]{0,40}(yok|yer almıyor|belirtilmemiş|bulunmuyor)|belirtilmedi|rakam yok|ayrıntı verilmedi", tweet, re.I): h.append("bilginin eksikliğini söyleme, yalnız var olanı yaz")
     if ";" in tweet: h.append("noktalı virgül var: paragraf veya • maddeleriyle ayır")
     kay = _sayilar(kaynak)
     for tok in re.findall(r"\d+(?:[.,]\d+)*", tweet):
