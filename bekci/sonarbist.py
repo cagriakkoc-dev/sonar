@@ -1,7 +1,7 @@
 """SonarBIST: yeni KAP / SPK / Borsa İstanbul bildirimlerini puanlar, tweet taslağı yazar.
-Mod: SONARBIST_MOD=golge (varsayılan: tweet atılmaz, Telegram'a gider). Canlı mod bu sürümde YOK.
+Mod: SONARBIST_MOD=golge (varsayılan: tweet atılmaz, Telegram'a gider) veya canli (X'e paylaşır, Telegram'a bilgi verir).
 Acil durdurma: bekci/x_durdur dosyası varsa hiçbir şey yapılmaz. Tasarım: proje dokümanı claude/sonarbist.md"""
-import json, os, re, time, html, difflib, datetime, urllib.request, urllib.error, uuid
+import json, os, re, time, html, difflib, datetime, urllib.request, urllib.error, uuid, hmac, hashlib, base64, urllib.parse
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 KAYIT = os.path.join(BASE, "sonarbist_kayit.json")
@@ -13,6 +13,9 @@ SAAT_TAVAN, GUN_TAVAN, DUSUK_TAVAN = 3, 12, 10
 HAIKU = os.environ.get("SONARBIST_HAIKU", "claude-haiku-5-5")
 SONNET = os.environ.get("SONARBIST_SONNET", "claude-sonnet-5-5")
 KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+MOD = os.environ.get("SONARBIST_MOD", "golge").strip().lower()
+XK = {k: os.environ.get(v, "").strip() for k, v in (("ck", "X_API_KEY"), ("cs", "X_API_SECRET"), ("tk", "X_ACCESS_TOKEN"), ("ts", "X_ACCESS_SECRET"))}
+HESAP = "SonarBIST"
 UA = {"User-Agent": "Mozilla/5.0 SonarBIST"}
 
 # ---- kural tabanlı ön eleme (bölüm 3) ----
@@ -36,7 +39,10 @@ def _kaydet(k):
 
 def http(url, data=None, headers=None, timeout=90):
     req = urllib.request.Request(url, data=data, headers=headers or {})
-    with urllib.request.urlopen(req, timeout=timeout) as r: return r.read()
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r: return r.read()
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"HTTP {e.code}: {e.read()[:300].decode('utf-8', 'replace')}")
 
 def claude(model, system, user, maxtok=700):
     b = {"model": model, "max_tokens": maxtok, "system": [{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
@@ -84,8 +90,14 @@ PUAN_SYS = """Sen Borsa İstanbul bildirimlerini önem puanına çeviren bir ana
 Puan 0-100 = finansal etki (0-40: tutarın şirket büyüklüğüne oranı; büyüklük verisi verilir) + yenilik/sürpriz (0-20) + kapsam (0-20: şirketin tamamını etkiliyor mu: yönetim, temettü, sermaye, birleşme) + kesinlik (0-10: imzalı/kesinleşmiş mi, niyet/görüşme mi) + ilgi (0-10: BIST 30/100 üyeliği, bilinen büyük şirket).
 Rutin işlemler, küçük tutarlar, usulî bildirimler düşük puan alır. Çıktı: {"puan": int, "fin": int, "yenilik": int, "kapsam": int, "kesinlik": int, "ilgi": int, "tur": "kısa tür", "gerekce": "tek cümle"}"""
 
-def puanla(hisse, baslik, metin, buy):
+def olumsuz(kayit):
+    """Kullanıcının X'ten silip bildirdiği tweetler: gereksiz paylaşım örnekleri (kayıtta "silindi": true)."""
+    return [x for x in kayit if x.get("silindi")][-15:]
+
+def puanla(hisse, baslik, metin, buy, kayit=()):
     u = f"Şirket: {hisse}\nBüyüklükler (Sonar): {buy}\nBaşlık: {baslik}\n\nBildirim metni:\n{metin[:6000]}"
+    neg = olumsuz(kayit)
+    if neg: u += "\n\nEditör şu bildirimler için atılan tweetleri GEREKSİZ bulup sildi; benzerlerini belirgin düşük puanla (örnekler):\n" + "\n".join(f"- {x.get('hisse')} | {x.get('tur')} | {x.get('baslik','')[:100]} (önceki puan {x.get('puan')})" for x in neg)
     return jparse(claude(HAIKU, PUAN_SYS, u, 300))
 
 # ---- yazım (Sonnet) ----
@@ -95,9 +107,11 @@ Yasaklar: "Neden önemli?" / "Önemi:" gibi başlık; emoji, hashtag, $ işareti
 Yorum yalnız bağlam verir: geçmişle kıyas, büyüklük (verilen Sonar büyüklükleri ve metindeki rakamlarla), şirket için ne anlama geldiği. Rakam hesaplama; kaynakta yazan rakamları kullan. Son 20 tweetle açılış, cümle yapısı ve kapanış tekrar etmemeli; her tweet farklı kalıpla başlar.
 En çok 270 karakter. Çıktı: {"tweet": "...", "kap_ogesi": "ekran görüntüsüne alınacak bölümü KAP metninden birebir 6-12 kelimelik bir parçayla tanımla"}"""
 
-def yaz(hisse, baslik, metin, buy, gecmis, hata=None):
+def yaz(hisse, baslik, metin, buy, gecmis, hata=None, kayit=()):
     u = (f"Şirket: {hisse}\nBüyüklükler (Sonar): {buy}\nBaşlık: {baslik}\n\nSon 20 SonarBIST tweeti (tekrar etme):\n" +
          "\n".join(f"- {t}" for t in gecmis[-20:]) + f"\n\nBildirim metni:\n{metin[:7000]}")
+    neg = olumsuz(kayit)
+    if neg: u += "\n\nEditör şu tweetleri gereksiz bulup sildi, bu tarz yazma:\n" + "\n".join(f"- {x.get('tweet','')}" for x in neg if x.get("tweet"))
     if hata: u += f"\n\nÖnceki taslak şu nedenle reddedildi, düzelt: {hata}"
     return jparse(claude(SONNET, YAZ_SYS, u, 600))
 
@@ -178,6 +192,38 @@ def tg(token, chat, metin, foto=None):
         http(f"https://api.telegram.org/bot{token}/sendMessage", json.dumps({"chat_id": chat, "text": metin, "disable_web_page_preview": True}).encode(),
              {"Content-Type": "application/json"})
 
+
+# ---- X (canlı mod): OAuth 1.0a ----
+def _pe(x): return urllib.parse.quote(str(x), safe="~")
+
+def oauth_baslik(method, url, params, ck, cs, tk, ts, nonce=None, stamp=None):
+    o = {"oauth_consumer_key": ck, "oauth_nonce": nonce or uuid.uuid4().hex, "oauth_signature_method": "HMAC-SHA1",
+         "oauth_timestamp": stamp or str(int(time.time())), "oauth_token": tk, "oauth_version": "1.0"}
+    allp = sorted((_pe(k), _pe(v)) for k, v in {**params, **o}.items())
+    taban = "&".join([method.upper(), _pe(url), _pe("&".join(f"{k}={v}" for k, v in allp))])
+    o["oauth_signature"] = base64.b64encode(hmac.new(f"{_pe(cs)}&{_pe(ts)}".encode(), taban.encode(), hashlib.sha1).digest()).decode()
+    return "OAuth " + ", ".join(f'{_pe(k)}="{_pe(v)}"' for k, v in sorted(o.items()))
+
+def x_hazir(): return all(XK.values())
+
+def x_gorsel(yol):
+    """Görseli yükler, media_id döner (v2 medya yükleme). Başarısızsa istisna."""
+    url = "https://api.x.com/2/media/upload"; sn = uuid.uuid4().hex
+    body = (f'--{sn}\r\nContent-Disposition: form-data; name="media_category"\r\n\r\ntweet_image\r\n'.encode() +
+            f'--{sn}\r\nContent-Disposition: form-data; name="media"; filename="kap.png"\r\nContent-Type: image/png\r\n\r\n'.encode() +
+            open(yol, "rb").read() + f"\r\n--{sn}--\r\n".encode())
+    r = http(url, body, {"Content-Type": f"multipart/form-data; boundary={sn}", "Authorization": oauth_baslik("POST", url, {}, XK["ck"], XK["cs"], XK["tk"], XK["ts"])})
+    j = json.loads(r); return (j.get("data") or j).get("id") or j.get("media_id_string")
+
+def x_paylas(metin, gorsel=None):
+    """Tweet atar; (tweet_id, gorsel_hatasi) döner."""
+    url = "https://api.x.com/2/tweets"; payload = {"text": metin}; ghata = None
+    if gorsel:
+        try: payload["media"] = {"media_ids": [str(x_gorsel(gorsel))]}
+        except Exception as e: ghata = repr(e)[:200]
+    r = http(url, json.dumps(payload).encode(), {"Content-Type": "application/json", "Authorization": oauth_baslik("POST", url, {}, XK["ck"], XK["cs"], XK["tk"], XK["ts"])})
+    return json.loads(r)["data"]["id"], ghata
+
 # ---- ana akış ----
 def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin_fn=None):
     """Bir bildirimi işler. kaynak: kap|spk|bist. Dönüş: kayıt sözlüğü veya None."""
@@ -194,7 +240,7 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
             tg(token, chat, f"SonarBIST · {hisse} finansal rapor (bilanço kartı henüz yok, atlandı)\n{link}"); return k
         metin = metin_fn() if metin_fn else kap_metin(kid)
         buy = buyukluk(hisse) if hisse else "veri yok"
-        p = puanla(hisse, baslik, metin, buy)
+        p = puanla(hisse, baslik, metin, buy, kayit)
         k.update(puan=p.get("puan"), alt={x: p.get(x) for x in ("fin", "yenilik", "kapsam", "kesinlik", "ilgi")}, tur=p.get("tur"), gerekce=p.get("gerekce"))
         puan = int(p.get("puan") or 0)
         if puan < ESIK:
@@ -211,7 +257,7 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
         gecmis = [x["tweet"] for x in kayit if x.get("tweet")]
         kaynak_m = metin + " " + buy; hata = None; taslak = {}
         for deneme in range(2):
-            taslak = yaz(hisse, baslik, metin, buy, gecmis, hata)
+            taslak = yaz(hisse, baslik, metin, buy, gecmis, hata, kayit)
             h = dogrula(taslak.get("tweet", ""), kaynak_m, gecmis)
             if not h: break
             hata = "; ".join(h)
@@ -220,6 +266,15 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
             tg(token, chat, f"SonarBIST · taslak doğrulamadan geçmedi (puan {puan}) · {hisse}\n{baslik[:160]}\nNeden: {hata}\nTaslak: {taslak.get('tweet')}\n{link}"); return k
         foto, ghata = goruntu(kid, taslak.get("kap_ogesi")) if kaynak == "kap" else (None, None)
         k.update(durum="taslak", tweet=taslak["tweet"], kap_ogesi=taslak.get("kap_ogesi"), goruntu=bool(foto), goruntu_hata=ghata)
+        if MOD == "canli" and x_hazir():
+            k["mod"] = "canli"; tid, xg = x_paylas(taslak["tweet"], foto)
+            k.update(durum="paylasildi", tweet_id=tid, x_gorsel_hata=xg); kayit.append(k); _kaydet(kayit)
+            tg(token, chat, f"SonarBIST PAYLAŞILDI · puan {puan} · {hisse}\nhttps://x.com/{HESAP}/status/{tid}\n\n{taslak['tweet']}\n\nGerekçe: {p.get('gerekce','')}\n{link}" +
+               (f"\n(KAP görseli yok: {ghata})" if ghata else "") + (f"\n(X görsel yüklemesi başarısız, metinle atıldı: {xg})" if xg else "") + "\nGereksizse X'ten sil ve bana 'sildim' de.", foto)
+            if foto:
+                try: os.remove(foto)
+                except Exception: pass
+            return k
         kayit.append(k); _kaydet(kayit)
         tg(token, chat, f"SonarBIST taslağı (gölge) · puan {puan} · {hisse}\n\n{taslak['tweet']}\n\nGerekçe: {p.get('gerekce','')}\n{link}" + (f"\n(görsel alınamadı: {ghata})" if ghata else ""), foto)
         if foto:
