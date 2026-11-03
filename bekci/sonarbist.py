@@ -191,6 +191,66 @@ def goruntu(i, parca):
     except Exception as e:
         return None, repr(e)[:150]
 
+
+# ---- finansal rapor (bilanço) ölçüleri ve kartı ----
+def _tl(v):
+    a = abs(v)
+    if a >= 1e9: return f"{v/1e9:.1f}".replace(".", ",") + " milyar TL"
+    if a >= 1e6: return f"{v/1e6:.1f}".replace(".", ",") + " milyon TL"
+    return f"{v/1e3:.0f}".replace(".", ",") + " bin TL"
+
+def _deg(c, o):
+    if o is None or c is None: return "", ""
+    if o == 0: return "kıyaslanamaz", ""
+    if o < 0 < c: return "zarardan kâra", "up"
+    if c < 0 < o: return "kârdan zarara", "down"
+    y = (c - o) / abs(o) * 100
+    s = f"%{abs(y):.1f}".replace(".", ",") + (" artış" if y >= 0 else " azalış")
+    return s, ("up" if y >= 0 else "down")
+
+def fr_olc(kid):
+    """KAP bildirim sayfasındaki XBRL satırlarından ana kalemleri çıkarır. Bulamazsa None."""
+    import sys as _s
+    _s.path.insert(0, os.path.join(BASE, "araclar"))
+    import xbrl_cek
+    raw = http(f"https://www.kap.org.tr/tr/Bildirim/{kid}", headers=UA, timeout=90).decode("utf-8", "ignore")
+    rows = [r for r in xbrl_cek.rows(raw) if len(r) >= 3 and isinstance(r[1], (int, float)) and isinstance(r[2], (int, float))]
+    def bul(*adlar, onek=False):
+        for ad in adlar:
+            for r in rows:
+                l = r[0].strip().lower()
+                if (l.startswith(ad) if onek else l == ad): return r
+        return None
+    sec = [("Hasılat", bul("hasılat"), "geçen yıl aynı dönem"),
+           ("Brüt kâr", bul("brüt kar (zarar)", "brüt kâr (zarar)", "brüt kar", onek=True), "geçen yıl aynı dönem"),
+           ("Esas faaliyet kârı", bul("esas faaliyet karı (zararı)", "esas faaliyet kârı (zararı)", "esas faaliyet karı", onek=True), "geçen yıl aynı dönem"),
+           ("Net dönem kârı", bul("net dönem karı veya zararı", "dönem karı (zararı)"), "geçen yıl aynı dönem"),
+           ("Özkaynaklar", bul("ana ortaklığa ait özkaynaklar", "özkaynaklar"), "önceki yıl sonu")]
+    sec = [(a, r, k) for a, r, k in sec if r]
+    if not any(a in ("Hasılat", "Net dönem kârı") for a, _, _ in sec): return None
+    sat = []; kart = []
+    for ad, r, kar in sec:
+        c, o = r[1], r[2]; yaz_, yon = _deg(c, o)
+        sat.append(f"{ad}: {_tl(c)} ({kar}: {_tl(o)}; {yaz_})")
+        kart.append((ad, _tl(c), _tl(o), yaz_, yon))
+    return {"satirlar": sat, "kart": kart}
+
+def fr_kart(hisse, baslik, olc):
+    from playwright.sync_api import sync_playwright
+    yol = os.path.join(BASE, "sonarbist_kart.png")
+    trs = "".join(f'<tr><td class="a">{html.escape(a)}</td><td>{html.escape(c)}</td><td class="o">{html.escape(o)}</td><td class="{"u" if y == "up" else "d" if y == "down" else "n"}">{html.escape(d)}</td></tr>' for a, c, o, d, y in olc["kart"])
+    h = f"""<html><body style="margin:0;background:#fff"><div id="k" style="width:900px;box-sizing:border-box;padding:36px 40px;font-family:Arial,Helvetica,sans-serif;color:#0f172a;background:#fff">
+<div style="font-size:15px;color:#64748b;letter-spacing:.5px">FİNANSAL SONUÇLAR</div>
+<div style="font-size:34px;font-weight:700;margin:4px 0 2px">{html.escape(hisse)}</div>
+<div style="font-size:16px;color:#475569;margin-bottom:22px">{html.escape(baslik)[:90]}</div>
+<table style="width:100%;border-collapse:collapse;font-size:20px"><tr style="color:#64748b;font-size:14px;text-align:left"><th style="padding:8px 0">Kalem</th><th>Bu dönem</th><th>Karşılaştırma dönemi</th><th>Değişim</th></tr>{trs}</table>
+<div style="margin-top:20px;font-size:13px;color:#94a3b8">Kaynak: KAP finansal rapor · Sonar</div></div>
+<style>td{{padding:11px 0;border-top:1px solid #e2e8f0}}td.a{{font-weight:600}}td.o{{color:#64748b}}td.u{{color:#047857;font-weight:600}}td.d{{color:#b91c1c;font-weight:600}}td.n{{color:#475569}}</style></body></html>"""
+    with sync_playwright() as p:
+        b = p.chromium.launch(); pg = b.new_page(viewport={"width": 900, "height": 700}, device_scale_factor=2)
+        pg.set_content(h); pg.locator("#k").screenshot(path=yol); b.close()
+    return yol
+
 # ---- Telegram (gölge mod) ----
 def tg(token, chat, metin, foto=None):
     if foto and os.path.exists(foto):
@@ -246,10 +306,16 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
         sebep = on_eleme(hisse, baslik, ozet or "")
         if sebep:
             k.update(durum="elendi", sebep=sebep); kayit.append(k); _kaydet(kayit); return k
-        if fr:  # finansal rapor: bilanço kartı bu sürümde yok
-            k.update(durum="fr_atlandi", sebep="finansal rapor: bilanço kartı henüz yok"); kayit.append(k); _kaydet(kayit)
-            tg(token, chat, f"SonarBIST · {hisse} finansal rapor (bilanço kartı henüz yok, atlandı)\n{link}"); return k
-        metin = metin_fn() if metin_fn else kap_metin(kid)
+        olc = None
+        if fr:  # finansal rapor: XBRL ölçüleri + bilanço kartı
+            olc = fr_olc(kid)
+            if not olc:
+                k.update(durum="fr_atlandi", sebep="finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"); kayit.append(k); _kaydet(kayit)
+                tg(token, chat, f"SonarBIST · {hisse} finansal rapor, kalemler çıkarılamadı, atlandı\n{link}"); return k
+        if fr:
+            metin = ("[FİNANSAL SONUÇ] Dönem: " + baslik + ". Tweet: önce hasılat ve net kârı, geçen yılın aynı dönemiyle kıyaslayarak yaz; yalnız aşağıdaki rakam ve yüzdeleri kullan, kendin hesaplama. Kalemler:\n" + "\n".join(olc["satirlar"]))
+        else:
+            metin = metin_fn() if metin_fn else kap_metin(kid)
         buy = buyukluk(hisse) if hisse else "veri yok"
         p = puanla(hisse, baslik, metin, buy, kayit)
         k.update(puan=p.get("puan"), alt={x: p.get(x) for x in ("fin", "yenilik", "kapsam", "kesinlik", "ilgi")}, tur=p.get("tur"), gerekce=p.get("gerekce"))
@@ -275,7 +341,11 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
         if h:
             k.update(durum="dogrulama_hatasi", sebep=hata, tweet_red=taslak.get("tweet")); kayit.append(k); _kaydet(kayit)
             tg(token, chat, f"SonarBIST · taslak doğrulamadan geçmedi (puan {puan}) · {hisse}\n{baslik[:160]}\nNeden: {hata}\nTaslak: {taslak.get('tweet')}\n{link}"); return k
-        foto, ghata = goruntu(kid, taslak.get("kap_ogesi")) if kaynak == "kap" else (None, None)
+        if fr:
+            try: foto, ghata = fr_kart(hisse, baslik, olc), None
+            except Exception as e: foto, ghata = None, "kart: " + repr(e)[:120]
+        else:
+            foto, ghata = goruntu(kid, taslak.get("kap_ogesi")) if kaynak == "kap" else (None, None)
         k.update(durum="taslak", tweet=taslak["tweet"], kap_ogesi=taslak.get("kap_ogesi"), goruntu=bool(foto), goruntu_hata=ghata)
         if MOD == "canli" and x_hazir():
             k["mod"] = "canli"; tid, xg = x_paylas(taslak["tweet"], foto)

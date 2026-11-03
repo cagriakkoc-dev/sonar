@@ -314,7 +314,7 @@ def main():
         try:
             import sonarbist
             for t, d in sorted(yeni, key=lambda x: x[1]["disclosureIndex"]):
-                sonarbist.isle(TOKEN, st.get("chat_id"), "kap", d["disclosureIndex"], t, d.get("title") or d.get("subject") or d.get("summary") or "",
+                sonarbist.isle(TOKEN, st.get("chat_id"), "kap", d["disclosureIndex"], t, (d.get("title") or d.get("subject") or d.get("summary") or "") + (f" ({d['year']} {d.get('ruleType') or ''})".replace(" )", ")") if d.get("disclosureClass") == "FR" and d.get("year") else ""),
                                d.get("summary") or "", fr=d.get("disclosureClass") == "FR", link=f"https://www.kap.org.tr/tr/Bildirim/{d['disclosureIndex']}")
         except Exception as e:
             print("sonarbist hatası:", repr(e)[:200])
@@ -367,7 +367,23 @@ def main():
     # şirket sitelerinde yatırımcı sunumu (bekci/sunum.py → bekci/sunumlar.json; deneme: 6 şirket)
     try:
         import sunum
+        _sg = {u for e in json.load(open(sunum.OUT)).values() for u in e.get("gorulen", [])} if os.path.exists(sunum.OUT) else set()
         mesajlar += sunum.tara()
+        # SonarBIST: yeni yatırımcı sunumları (ilk okuma sessiz; pypdf ile ilk sayfalar okunur, görsel yok)
+        if not ilk and _sg:
+            try:
+                import sonarbist, hashlib
+                for _h, _e in json.load(open(sunum.OUT)).items():
+                    for _x in _e.get("liste", []):
+                        if _x["u"] in _sg: continue
+                        def _pdf(u=_x["u"]):
+                            import io
+                            from pypdf import PdfReader
+                            _b = sonarbist.http(u, headers=sonarbist.UA, timeout=120)
+                            return " ".join((p.extract_text() or "") for p in PdfReader(io.BytesIO(_b)).pages[:10])[:7000]
+                        sonarbist.isle(TOKEN, st.get("chat_id"), "sunum", hashlib.md5(_x["u"].encode()).hexdigest()[:12], _h, "Yatırımcı sunumu: " + _x.get("t", ""), "", link=_x["u"], metin_fn=_pdf)
+            except Exception as e:
+                print("sonarbist sunum hatası:", repr(e)[:200])
     except Exception as e:
         print("sunum taraması hatası:", repr(e)[:200])
     mesajlar += bekleyen_bildirim
