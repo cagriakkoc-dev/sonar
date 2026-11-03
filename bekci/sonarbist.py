@@ -10,6 +10,7 @@ PUBLIC = os.path.join(BASE, "..", "public", "sirket")
 ESIK = int(os.environ.get("SONARBIST_ESIK", "80"))
 DUSUK = int(os.environ.get("SONARBIST_DUSUK", "60"))  # gölge modda "paylaşılmazdı" olarak gösterilen alt sınır
 SAAT_TAVAN, GUN_TAVAN, DUSUK_TAVAN = 3, 12, 10
+ACIK_TAVAN_SON = datetime.datetime(2026, 11, 3, 21, 0, tzinfo=datetime.timezone.utc)  # Cagri 3 Kas: test için tavan bugünlük kapalı (TR gece yarısına kadar)
 HAIKU = os.environ.get("SONARBIST_HAIKU", "claude-sonnet-5-5")  # puanlama modeli; Haiku yanıtları kesildi, şimdilik Sonnet (geri almak için SONARBIST_HAIKU=claude-haiku-5-5)
 SONNET = os.environ.get("SONARBIST_SONNET", "claude-sonnet-5-5")
 KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
@@ -448,7 +449,8 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
             kayit.append(k); _kaydet(kayit); return k
         saat = [x for x in kayit if x.get("durum") in ("taslak", "paylasildi") and x["t"] > (simdi - datetime.timedelta(hours=1)).isoformat()]
         gun = [x for x in kayit if x.get("durum") in ("taslak", "paylasildi") and x["t"][:10] == simdi.date().isoformat()]
-        if len(saat) >= SAAT_TAVAN or len(gun) >= GUN_TAVAN:
+        if simdi < ACIK_TAVAN_SON: pass
+        elif len(saat) >= SAAT_TAVAN or len(gun) >= GUN_TAVAN:
             k.update(durum="tavan", sebep="saat/gün tavanı"); kayit.append(k); _kaydet(kayit)
             tg(token, chat, f"SonarBIST · tavan nedeniyle sıraya alınmadı (puan {puan}) · {hisse}\n{baslik[:200]}\n{link}"); return k
         gecmis = [x["tweet"] for x in kayit if x.get("tweet")]
