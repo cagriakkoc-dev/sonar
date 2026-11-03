@@ -277,13 +277,13 @@ def fr_kart(hisse, baslik, olc):
     from playwright.sync_api import sync_playwright
     yol = os.path.join(BASE, "sonarbist_kart.png")
     trs = "".join(f'<tr><td class="a">{html.escape(a)}</td><td>{html.escape(c)}</td><td class="o">{html.escape(o)}</td><td class="{"u" if y == "up" else "d" if y == "down" else "n"}">{html.escape(d)}</td></tr>' for a, c, o, d, y in olc["kart"])
-    h = f"""<html><body style="margin:0;background:#0e141b"><div id="k" style="width:900px;box-sizing:border-box;padding:36px 40px;font-family:Arial,Helvetica,sans-serif;color:#e7ecf3;background:#0e141b">
-<div style="font-size:15px;color:#7cc4ff;letter-spacing:.5px">FİNANSAL SONUÇLAR</div>
+    h = f"""<html><body style="margin:0;background:#ffffff"><div id="k" style="width:900px;box-sizing:border-box;padding:36px 40px;font-family:Arial,Helvetica,sans-serif;color:#0f172a;background:#ffffff">
+<div style="font-size:15px;color:#1d6fd8;letter-spacing:.5px">FİNANSAL SONUÇLAR</div>
 <div style="font-size:34px;font-weight:700;margin:4px 0 2px">{html.escape(hisse)}</div>
-<div style="font-size:16px;color:#8a97aa;margin-bottom:22px">{html.escape(baslik)[:90]}</div>
-<table style="width:100%;border-collapse:collapse;font-size:20px"><tr style="color:#8a97aa;font-size:14px;text-align:left"><th style="padding:8px 0">Kalem</th><th>Bu dönem</th><th>Karşılaştırma dönemi</th><th>Değişim</th></tr>{trs}</table>
-<div style="margin-top:20px;font-size:13px;color:#8a97aa">Kaynak: KAP finansal rapor</div></div>
-<style>td{{padding:11px 0;border-top:1px solid #2a3544}}td.a{{font-weight:600}}td.o{{color:#8a97aa}}td.u{{color:#3fd4a0;font-weight:600}}td.d{{color:#ff7d6e;font-weight:600}}td.n{{color:#8a97aa}}</style></body></html>"""
+<div style="font-size:16px;color:#64748b;margin-bottom:22px">{html.escape(baslik)[:90]}</div>
+<table style="width:100%;border-collapse:collapse;font-size:20px"><tr style="color:#64748b;font-size:14px;text-align:left"><th style="padding:8px 0">Kalem</th><th>Bu dönem</th><th>Karşılaştırma dönemi</th><th>Değişim</th></tr>{trs}</table>
+<div style="margin-top:20px;font-size:13px;color:#64748b">Kaynak: KAP finansal rapor</div></div>
+<style>td{{padding:11px 0;border-top:1px solid #e2e8f0}}td.a{{font-weight:600}}td.o{{color:#64748b}}td.u{{color:#047857;font-weight:600}}td.d{{color:#b91c1c;font-weight:600}}td.n{{color:#64748b}}</style></body></html>"""
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={"width": 900, "height": 700}, device_scale_factor=2)
         pg.set_content(h); pg.locator("#k").screenshot(path=yol); b.close()
@@ -316,14 +316,14 @@ def ozet_karti(hisse, kaynak, kart):
     bas = html.escape(str(kart["baslik"])[:70])
     sat = "".join('<div class="r"><div class="l">%s</div><div class="v" style="font-size:%dpx">%s</div></div>' % (
         html.escape(str(a)), 54 if len(str(d)) <= 22 else 42, html.escape(str(d))) for a, d in kart["satirlar"][:5])
-    css = ("*{box-sizing:border-box}body{margin:0;background:#0e141b}"
-           "#k{width:1080px;height:1350px;padding:72px;background:#0e141b;color:#e7ecf3;font-family:'Plus Jakarta Sans','Segoe UI',Arial,Helvetica,sans-serif;position:relative;overflow:hidden}"
-           "#k:before{content:'';position:absolute;left:0;right:0;top:0;height:10px;background:#7cc4ff}"
-           ".h{color:#7cc4ff;font-size:30px;font-weight:600;letter-spacing:.5px}"
+    css = ("*{box-sizing:border-box}body{margin:0;background:#f6f8fb}"
+           "#k{width:1080px;height:1350px;padding:72px;background:#f6f8fb;color:#0f172a;font-family:'Plus Jakarta Sans','Segoe UI',Arial,Helvetica,sans-serif;position:relative;overflow:hidden}"
+           "#k:before{content:'';position:absolute;left:0;right:0;top:0;height:10px;background:#1d6fd8}"
+           ".h{color:#1d6fd8;font-size:30px;font-weight:600;letter-spacing:.5px}"
            ".t{font-size:%dpx;font-weight:700;line-height:1.14;margin:30px 0 52px}"
-           ".r{background:#1b2431;border-left:8px solid #7cc4ff;border-radius:10px;padding:28px 40px;margin-bottom:24px}"
-           ".l{color:#8a97aa;font-size:30px;margin-bottom:8px;font-weight:500}.v{font-weight:700;line-height:1.15}"
-           ".f{position:absolute;left:72px;bottom:56px;color:#8a97aa;font-size:28px}") % (66 if len(bas) <= 32 else 52)
+           ".r{background:#ffffff;box-shadow:0 1px 3px rgba(15,23,42,.12);border-left:8px solid #1d6fd8;border-radius:10px;padding:28px 40px;margin-bottom:24px}"
+           ".l{color:#64748b;font-size:30px;margin-bottom:8px;font-weight:500}.v{font-weight:700;line-height:1.15}"
+           ".f{position:absolute;left:72px;bottom:56px;color:#64748b;font-size:28px}") % (66 if len(bas) <= 32 else 52)
     doc = ('<html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet"><style>' + css + '</style></head><body><div id="k"><div class="h">'
            + html.escape(hisse) + " · " + et + " · " + tarih + '</div><div class="t">' + bas + '</div>' + sat + '<div class="f">Kaynak: ' + et + '</div></div></body></html>')
     with sync_playwright() as p:
