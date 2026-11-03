@@ -119,5 +119,68 @@
   "tur": "Değerleme raporu",
   "gerekce": "Hayat City Projesi'nin parseline ilişkin değerleme raporu bildirimi tutar veya değer içermiyor (rapor ekte), GYO'lar için rutin bir bildirim olduğundan ve editörün zorunlu önemli türlerine girmediğinden düşük puan aldı.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1691818",
+  "hisse": "OSMEN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-03T15:14:40+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1691822",
+  "hisse": "A1CAP",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-03T15:14:40+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 2,
+   "yenilik": 3,
+   "kapsam": 2,
+   "kesinlik": 5,
+   "ilgi": 0
+  },
+  "tur": "irtibat bürosu kapatılması",
+  "gerekce": "Antalya irtibat bürosunun kapatılması ve müşteri hesaplarının genel müdürlüğe alınması, şirket büyüklüğüne oranla ihmal edilebilir bir idari/operasyonel değişikliktir; temettü, sözleşme, bilanço veya beklenti gibi her zaman önemli sayılan türlerden biri değildir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1691823",
+  "hisse": "A1CAP",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-03T15:14:44+00:00",
+  "mod": "golge",
+  "puan": 4,
+  "alt": {
+   "fin": 0,
+   "yenilik": 1,
+   "kapsam": 1,
+   "kesinlik": 1,
+   "ilgi": 1
+  },
+  "tur": "Şirket Genel Bilgi Formu (şube/irtibat bürosu listesi)",
+  "gerekce": "Bildirim, şube ve irtibat bürolarının iletişim bilgilerini içeren usulî bir genel bilgi formu güncellemesidir; finansal etkisi, yeni bir gelişmesi veya editörce önemli sayılan bir türü yoktur.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1691829",
+  "hisse": "TUKAS",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-03T15:14:47+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 6,
+   "yenilik": 3,
+   "kapsam": 5,
+   "kesinlik": 7,
+   "ilgi": 1
+  },
+  "tur": "pay geri alım bildirimi",
+  "gerekce": "21.09.2026 tarihli YK kararıyla başlayan geri alım programının rutin günlük bildirimidir; 03.11 alımı yaklaşık 6,9 milyon TL ile piyasa değerinin %0,1'inden azdır, toplam 235,5 milyon pay ise yeni bir bilgi veya sürpriz taşımaz.",
+  "durum": "dusuk"
  }
 ]
