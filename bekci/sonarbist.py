@@ -295,8 +295,38 @@ def x_paylas(metin, gorsel=None):
     r = http(url, json.dumps(payload).encode(), {"Content-Type": "application/json", "Authorization": oauth_baslik("POST", url, {}, XK["ck"], XK["cs"], XK["tk"], XK["ts"])})
     return json.loads(r)["data"]["id"], ghata
 
+
+# ---- Sonar'da yayına alınan özetler (public/haber/<hisse>-<kapid>) ----
+def ozetleri_tara(token, chat):
+    """Cagri bir haber özetini yayına alınca public/haber/<hisse>-<id>/ oluşur; SonarBIST o özetin girişini (meta açıklama)
+    ve KAP metnini kaynak alıp tweet atar. İlk çalışmada mevcut sayfalar sessizce 'görüldü' sayılır."""
+    if os.path.exists(DURDUR) or not KEY: return
+    kok = os.path.join(BASE, "..", "public", "haber")
+    if not os.path.isdir(kok): return
+    gp = os.path.join(BASE, "sonarbist_ozet_gorulen.json")
+    mevcut = sorted(d for d in os.listdir(kok) if os.path.isfile(os.path.join(kok, d, "index.html")))
+    if not os.path.exists(gp):
+        json.dump(mevcut, open(gp, "w", encoding="utf-8")); return
+    gor = _js(gp)
+    for d in mevcut:
+        if d in gor: continue
+        gor.append(d); json.dump(gor, open(gp, "w", encoding="utf-8"), ensure_ascii=False)
+        m = re.match(r"^([a-z0-9]+)-(\d{7})$", d)
+        if not m: continue  # sunum özetleri vb. (kimlik KAP numarası değil)
+        hisse, kid = m.group(1).upper(), m.group(2)
+        if any(k.get("id") == f"kap-{kid}" and k.get("durum") == "paylasildi" for k in _js(KAYIT)): continue  # anlık tweet zaten atılmış
+        t = open(os.path.join(kok, d, "index.html"), encoding="utf-8", errors="ignore").read()
+        bm = re.search(r"<title>(.*?) · Sonar</title>", t); dm = re.search(r'<meta name="description" content="(.*?)"', t)
+        baslik = html.unescape(bm.group(1)).split(": ", 1)[-1] if bm else d
+        giris = html.unescape(dm.group(1)) if dm else ""
+        def mf(g=giris, i=kid):
+            try: kapm = kap_metin(i)
+            except Exception: kapm = ""
+            return "[SONAR ÖZETİ, yayına alındı] Özet girişi: " + g + "\n\nKAP metni:\n" + kapm
+        isle(token, chat, "ozet", kid, hisse, baslik, giris, link=f"https://www.kap.org.tr/tr/Bildirim/{kid}", metin_fn=mf, zorla=True)
+
 # ---- ana akış ----
-def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin_fn=None):
+def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin_fn=None, zorla=False):
     """Bir bildirimi işler. kaynak: kap|spk|bist. Dönüş: kayıt sözlüğü veya None."""
     if os.path.exists(DURDUR) or not KEY: return None
     kayit = _js(KAYIT); anahtar = f"{kaynak}-{kid}"
@@ -317,7 +347,7 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
         else:
             metin = metin_fn() if metin_fn else kap_metin(kid)
         buy = buyukluk(hisse) if hisse else "veri yok"
-        p = puanla(hisse, baslik, metin, buy, kayit)
+        p = {"puan": 100, "tur": "yayınlanan özet", "gerekce": "Sonar'da yayına alınan özet"} if zorla else puanla(hisse, baslik, metin, buy, kayit)
         k.update(puan=p.get("puan"), alt={x: p.get(x) for x in ("fin", "yenilik", "kapsam", "kesinlik", "ilgi")}, tur=p.get("tur"), gerekce=p.get("gerekce"))
         puan = int(p.get("puan") or 0)
         if puan < ESIK:
@@ -345,7 +375,7 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
             try: foto, ghata = fr_kart(hisse, baslik, olc), None
             except Exception as e: foto, ghata = None, "kart: " + repr(e)[:120]
         else:
-            foto, ghata = goruntu(kid, taslak.get("kap_ogesi")) if kaynak == "kap" else (None, None)
+            foto, ghata = goruntu(kid, taslak.get("kap_ogesi")) if kaynak in ("kap", "ozet") else (None, None)
         k.update(durum="taslak", tweet=taslak["tweet"], kap_ogesi=taslak.get("kap_ogesi"), goruntu=bool(foto), goruntu_hata=ghata)
         if MOD == "canli" and x_hazir():
             k["mod"] = "canli"; tid, xg = x_paylas(taslak["tweet"], foto)

@@ -316,6 +316,7 @@ def main():
             for t, d in sorted(yeni, key=lambda x: x[1]["disclosureIndex"]):
                 sonarbist.isle(TOKEN, st.get("chat_id"), "kap", d["disclosureIndex"], t, (d.get("title") or d.get("subject") or d.get("summary") or "") + (f" ({d['year']} {d.get('ruleType') or ''})".replace(" )", ")") if d.get("disclosureClass") == "FR" and d.get("year") else ""),
                                d.get("summary") or "", fr=d.get("disclosureClass") == "FR", link=f"https://www.kap.org.tr/tr/Bildirim/{d['disclosureIndex']}")
+            sonarbist.ozetleri_tara(TOKEN, st.get("chat_id"))
         except Exception as e:
             print("sonarbist hatası:", repr(e)[:200])
     # elle kuyruğa ekleme (test / geçmiş bildirim): KUYRUGA_EKLE="ANHYT:1687664,AKSA:123"
