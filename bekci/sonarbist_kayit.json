@@ -2831,5 +2831,109 @@
   "tur": "Şirket Genel Bilgi Formu (usulî)",
   "gerekce": "Yatırımcı ilişkileri iletişim bilgilerindeki personel güncellemesinden ibaret, finansal etkisi olmayan rutin bir form bildirimidir ve editörün önemli saydığı türlerin hiçbirine girmez.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1692755",
+  "hisse": "SAHOL",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-04T16:32:13+00:00",
+  "mod": "golge",
+  "puan": 85,
+  "alt": {
+   "fin": 31,
+   "yenilik": 16,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "BIST 30 şirketi SAHOL'un 9 aylık net kârı geçen yılki 3,3 milyar TL zarardan 23,4 milyar TL kâra döndü (piyasa değerinin yaklaşık %11'i) ve esas faaliyet kârı %21,6 arttı; bilanço türü olduğu için en az 80 puan alır (hasılat %35,7 düşmüş görünürken brüt kârın hasılattan yüksek çıkması veri tutarsızlığına işaret edebilir).",
+  "durum": "dogrulama_hatasi",
+  "sebep": "açılış son tweetlerle aynı",
+  "tweet_red": "SAHOL (Sabancı Holding) 9 aylık hasılatı 227,6 milyar TL'den 146,4 milyar TL'ye indi, %35,7 azalış. Net dönem kârı 23,4 milyar TL, geçen yıl 3,3 milyar TL zarardı.\n\nEsas faaliyet kârı %21,6 artışla 87,1 milyar TL. PD/DD 0,49x."
+ },
+ {
+  "id": "kap-1692756",
+  "hisse": "SAHOL",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-04T16:32:44+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1692757",
+  "hisse": "SAHOL",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-04T16:32:46+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1692759",
+  "hisse": "PEKGY",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-04T16:32:46+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 0,
+   "yenilik": 3,
+   "kapsam": 4,
+   "kesinlik": 3,
+   "ilgi": 2
+  },
+  "tur": "Şirket Genel Bilgi Formu",
+  "gerekce": "Yönetim kurulu üyelerinin ve yönetimdeki personelin listelendiği rutin bir genel bilgi formu güncellemesidir; yeni bir karar, tutar veya yönetim değişikliği içermez, bu yüzden düşük puan alır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1692762",
+  "hisse": "TCELL",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-04T16:32:49+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "TCELL 4 Kasım 2026'da ortalama 93,71 TL fiyatla 12,88 milyon adet (sermayenin %0,59'u, yaklaşık 1,21 milyar TL) pay geri aldı ve program kapsamındaki toplam alım yaklaşık 22,8 milyon adede ulaştı; pay geri alımı her zaman önemli türlerden olduğu için taban puan olan 80 verildi.",
+  "durum": "paylasildi",
+  "tweet": "TCELL (Turkcell) 4 Kasım'da 12.883.764 lot pay geri aldı. Ortalama fiyat 93,71 TL, tutar 1.207.273.409 TL, sermayeye oranı %0,58563.\n\nÖnceki gün alım 3.434.298 lottu. Şirket amacı adil hisse değerinin korunması olarak belirtti. PD/DD 0,76x.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "4 Kasım 2026"
+    ],
+    [
+     "Alınan pay",
+     "12.883.764 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "93,71 TL"
+    ],
+    [
+     "İşlem tutarı",
+     "1.207.273.409 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,58563"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118018718902980938",
+  "x_gorsel_hata": null
  }
 ]
