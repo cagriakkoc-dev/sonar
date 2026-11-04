@@ -2394,5 +2394,164 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1692599",
+  "hisse": "GEDIK",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-04T15:36:10+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 8,
+   "yenilik": 8,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "GEDIK 04.11.2026'da 5,00 TL'den 150 bin pay (yaklaşık 0,75 milyon TL) geri aldı ve toplam payı %5,04'e çıktı; tutar piyasa değerine göre küçük olsa da pay geri alımları editör kuralı gereği en az 80 puan alır, silinen PAHOL örneği ise satın alma bildirimi olduğundan bu türle benzer sayılmadı.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1692602",
+  "hisse": "LXGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-04T15:36:18+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 12,
+   "yenilik": 6,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Günlük alım yalnızca 125.000 lot (yaklaşık 0,69 milyon TL) ve piyasa değerine oranı çok küçük, ancak kümülatif geri alım sermayenin %1,61'ine ulaştı. Pay geri alımı editör kuralı gereği her zaman önemli türlerden olduğundan taban puan olan 80 verildi.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1692603",
+  "hisse": "OSMEN",
+  "baslik": "İhraç Tavanına İlişkin Bildirim",
+  "t": "2026-11-04T15:36:23+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1692604",
+  "hisse": "ADGYO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-04T15:36:23+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 20,
+   "yenilik": 12,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Hasılat %4,1 azalırken brüt ve esas faaliyet kârı arttı, net zarar -80,1 milyon TL'den -156,4 milyon TL'ye büyüdü; finansal sonuç açıklaması editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1692605",
+  "hisse": "ADGYO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-04T15:36:31+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 28,
+   "yenilik": 18,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "9 aylık finansal rapor her zaman önemli türde olup, net sonucun geçen yılki 251,5 milyon TL kârdan 363,1 milyon TL zarara dönmesi ve hasılatın %4,1 gerilemesi, buna karşın brüt ve esas faaliyet kârının artması dikkat çekiyor.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1692609",
+  "hisse": "ADGYO",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-04T15:36:41+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1692615",
+  "hisse": "ADGYO",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-04T15:36:41+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1692616",
+  "hisse": "ADGYO",
+  "baslik": "Portföy Sınırlamalarına Uyumun Kontrolü",
+  "t": "2026-11-04T15:36:43+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 2,
+   "yenilik": 2,
+   "kapsam": 3,
+   "kesinlik": 3,
+   "ilgi": 2
+  },
+  "tur": "portföy sınırlamaları uyum tablosu (usulî)",
+  "gerekce": "30.09.2026 tarihli finansal tablo dipnotundaki portföy sınırlamalarına uyum tablosunun rutin yeniden paylaşımı olup yeni bir karar, tutar veya sürpriz içermiyor, bu nedenle düşük puan aldı.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1692655",
+  "hisse": "OSMEN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-04T15:36:47+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 4,
+   "yenilik": 6,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "04.11.2026'da yaklaşık 442 bin TL'lik (100.000 adet, ort. 4,418 TL) alımla programdaki toplam geri alım 2.125.432 adede (sermayenin %0,5295'i) ulaştı; tutar 3,2 milyar TL piyasa değerine göre küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1692657",
+  "hisse": "RGYAS",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-04T15:36:54+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 34,
+   "yenilik": 15,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "finansal sonuç (9 aylık)",
+  "gerekce": "Hasılat %28,7 artarken esas faaliyet kârı %10,3, net kâr %19,4 düştü; 13,0 milyar TL net kâr 64 milyar TL piyasa değerine göre büyük olduğundan ve finansal sonuçlar her zaman önemli sayıldığından yüksek puan aldı.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
