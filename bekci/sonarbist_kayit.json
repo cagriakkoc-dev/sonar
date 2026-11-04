@@ -1720,5 +1720,56 @@
   "tur": "tahvil kupon faiz ödemesi",
   "gerekce": "42,77 milyon TL nominal tahvilin 1,88 milyon TL'lik rutin kupon faiz ödemesi, 13,8 milyar TL piyasa değerine göre çok küçük ve usulî bir bildirimdir; temettü, sözleşme veya bilanço gibi her zaman önemli türlerden değildir.",
   "durum": "dusuk"
+ },
+ {
+  "id": "analiz-1643238",
+  "hisse": "THYAO",
+  "baslik": "2026/6 Konsolide Finansal Rapor",
+  "t": "2026-11-04T11:37:22+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "THYAO (Türk Hava Yolları) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat %43,4 arttı\n• Finansman gideri %10,5 azaldı\n• Özkaynaklar %11,8 arttı\n\nDikkat edilecekler\n• Net kâr %84,0 azaldı\n• Esas faaliyet zararı 5 bin TL\n• Net borç %25,2 arttı",
+  "kart": {
+   "tweet": "THYAO (Türk Hava Yolları) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat %43,4 arttı\n• Finansman gideri %10,5 azaldı\n• Özkaynaklar %11,8 arttı\n\nDikkat edilecekler\n• Net kâr %84,0 azaldı\n• Esas faaliyet zararı 5 bin TL\n• Net borç %25,2 arttı",
+   "guclu": [
+    {
+     "ad": "Hasılat",
+     "deger": "585 bin TL",
+     "not": "Geçen yıl 408 bin TL, artış %43,4"
+    },
+    {
+     "ad": "Finansman gideri",
+     "deger": "31 bin TL",
+     "not": "Azalış %10,5, geçen yıl 35 bin TL"
+    },
+    {
+     "ad": "Özkaynaklar",
+     "deger": "1,0 milyon TL",
+     "not": "Yıl sonu 911 bin TL, artış %11,8"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Net dönem kârı",
+     "deger": "19 bin TL",
+     "not": "Geçen yıl 118 bin TL, %84,0 azalış"
+    },
+    {
+     "ad": "Esas faaliyet sonucu",
+     "deger": "zarar 5 bin TL",
+     "not": "Geçen yıl 25 bin TL"
+    },
+    {
+     "ad": "Net borç",
+     "deger": "620 bin TL",
+     "not": "Yıl sonu 495 bin TL, artış %25,2"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2117944363888103762",
+  "x_gorsel_hata": null
  }
 ]
