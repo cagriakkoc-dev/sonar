@@ -1475,5 +1475,133 @@
   "goruntu_hata": null,
   "tweet_id": "2117719263993635131",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1691982",
+  "hisse": "TKFEN",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-04T05:14:33+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 3,
+   "yenilik": 7,
+   "kapsam": 9,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "Üst yönetim ataması (CFO)",
+  "gerekce": "Tekfen'de CFO görevine Gürhan Kartal'ın atanması kesinleşmiş bir üst düzey yönetim değişikliği olsa da doğrudan finansal etkisi yoktur ve editörün sildiği benzer örnekler nedeniyle puan düşük tutulmuştur.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1691983",
+  "hisse": "THYAO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-04T05:14:37+00:00",
+  "mod": "canli",
+  "puan": 85,
+  "alt": {
+   "fin": 30,
+   "yenilik": 16,
+   "kapsam": 19,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "THYAO 2026 9 aylık finansal raporunda hasılat %42 artarken brüt kâr %7, net kâr %32 geriledi; bilanço açıklaması her zaman önemli grupta olduğundan ve BIST 30 şirketi olduğundan yüksek puan aldı.",
+  "durum": "paylasildi",
+  "tweet": "THYAO (Türk Hava Yolları) 9 aylık hasılatı 691 bin TL'den %42,0 artışla 981 bin TL oldu. Net dönem kârı %32,0 azalışla 118 bin TL'den 80 bin TL'ye geriledi.\n\nBrüt kâr %7,0 azalışla 110 bin TL. Hasılat büyürken kâr kalemleri geriledi. PD/DD 0,44x.",
+  "kart": {
+   "baslik": "9 Aylık Finansal Sonuçlar",
+   "satirlar": [
+    [
+     "Hasılat",
+     "981 bin TL (%42,0 artış)"
+    ],
+    [
+     "Brüt kâr",
+     "110 bin TL (%7,0 azalış)"
+    ],
+    [
+     "Net dönem kârı",
+     "80 bin TL (%32,0 azalış)"
+    ],
+    [
+     "Özkaynaklar",
+     "1,1 milyon TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2117848046247538876",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1691984",
+  "hisse": "THYAO",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-04T05:14:57+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1691985",
+  "hisse": "THYAO",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-04T05:14:59+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1691986",
+  "hisse": "THYAO",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-04T05:14:59+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 10,
+   "kapsam": 20,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "finansal sonuç / yatırımcı sunumu duyurusu",
+  "gerekce": "THYAO'nun 2026 3. çeyrek finansal tabloları, faaliyet raporu ve güncel yatırımcı sunumunun yayımlandığını bildiren bu açıklama, bilanço ve yatırımcı sunumu türü olduğu için en az 80 alır; ancak yeni rakam içermeyen, yalnızca yönlendiren bir bildirim olduğundan taban puanda tutuldu.",
+  "durum": "paylasildi",
+  "tweet": "THYAO (Türk Hava Yolları) 2026 üçüncü çeyrek konsolide tablolarını, faaliyet raporunu ve güncel yatırımcı sunumunu internet sitesinde yatırımcılara açtı.\n\nSon 4 çeyrekte hasılat 1.132,5 milyar TL, net kâr 112,1 milyar TL. Piyasa değeri 449,9 milyar TL.",
+  "kart": {
+   "baslik": "Üçüncü çeyrek materyalleri yayında",
+   "satirlar": [
+    [
+     "Dönem",
+     "2026 üçüncü çeyrek"
+    ],
+    [
+     "Yayımlanan",
+     "Tablo, rapor, sunum"
+    ],
+    [
+     "Hasılat, son 4 çeyrek",
+     "1.132,5 milyar TL"
+    ],
+    [
+     "Net kâr, son 4 çeyrek",
+     "112,1 milyar TL"
+    ],
+    [
+     "Piyasa değeri",
+     "449,9 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2117848193987739654",
+  "x_gorsel_hata": null
  }
 ]
