@@ -2701,5 +2701,42 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1692740",
+  "hisse": "AKSA",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-04T16:10:00+00:00",
+  "mod": "golge",
+  "puan": 88,
+  "alt": {
+   "fin": 32,
+   "yenilik": 15,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Hasılat %17,1 artarken esas faaliyet kârı %52,3 ve net kâr %26,0 düştüğü için kârlılıkta belirgin bozulma var; finansal sonuç açıklaması editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1692741",
+  "hisse": "AKSA",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-04T16:10:06+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1692742",
+  "hisse": "AKSA",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-04T16:10:08+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
  }
 ]
