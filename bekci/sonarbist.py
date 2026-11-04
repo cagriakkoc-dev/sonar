@@ -235,6 +235,10 @@ def goruntu(i, parca):
 
 
 # ---- finansal rapor (bilanço) ölçüleri ve kartı ----
+def _k(s):
+    """Türkçe büyük/küçük harf: İ→i, I→ı, sonra küçült."""
+    return s.replace("İ", "i").replace("I", "ı").strip().lower()
+
 def _tl(v):
     a = abs(v)
     if a >= 1e9: return f"{v/1e9:.1f}".replace(".", ",") + " milyar TL"
@@ -260,7 +264,7 @@ def fr_olc(kid):
     def bul(*adlar, onek=False):
         for ad in adlar:
             for r in rows:
-                l = r[0].strip().lower()
+                l = _k(r[0])
                 if (l.startswith(ad) if onek else l == ad): return r
         return None
     sec = [("Hasılat", bul("hasılat"), "geçen yıl aynı dönem"),
@@ -275,7 +279,7 @@ def fr_olc(kid):
         c, o = r[1], r[2]; yaz_, yon = _deg(c, o)
         sat.append(f"{ad}: {_tl(c)} ({kar}: {_tl(o)}; {yaz_})")
         kart.append((ad, _tl(c), _tl(o), yaz_, yon))
-    return {"satirlar": sat, "kart": kart}
+    return {"satirlar": sat, "kart": kart, "rows": rows}
 
 def fr_kart(hisse, baslik, olc):
     """Finansal sonuç kartı (1080x1350, açık tema): her kalemde bu dönem, karşılaştırma ve yeşil artış / kırmızı azalış yüzdesi."""
@@ -394,9 +398,10 @@ def x_gorsel(yol):
     r = http(url, body, {"Content-Type": f"multipart/form-data; boundary={sn}", "Authorization": oauth_baslik("POST", url, {}, XK["ck"], XK["cs"], XK["tk"], XK["ts"])})
     j = json.loads(r); return (j.get("data") or j).get("id") or j.get("media_id_string")
 
-def x_paylas(metin, gorsel=None):
+def x_paylas(metin, gorsel=None, yanit=None):
     """Tweet atar; (tweet_id, gorsel_hatasi) döner."""
     url = "https://api.x.com/2/tweets"; payload = {"text": metin}; ghata = None
+    if yanit: payload["reply"] = {"in_reply_to_tweet_id": str(yanit)}
     if gorsel:
         try: payload["media"] = {"media_ids": [str(x_gorsel(gorsel))]}
         except Exception as e: ghata = repr(e)[:200]
@@ -404,11 +409,196 @@ def x_paylas(metin, gorsel=None):
     return json.loads(r)["data"]["id"], ghata
 
 
+
+# ---- bilanço sonrası: güçlü yönler / dikkat edilecekler (3 Kas: THYAO ile test) ----
+def _yz(x): return f"%{abs(x):.1f}".replace(".", ",")
+
+def fr_analiz_olc(rows):
+    """XBRL satırlarından gösterge listesi üretir; yön (güçlü/dikkat/nötr) kodla belirlenir. Dönüş: [{ad, deger, kars, tur}]"""
+    rows = [r for r in rows if len(r) >= 3 and isinstance(r[1], (int, float))]
+    def bul(*adlar, onek=False):
+        for ad in adlar:
+            for r in rows:
+                l = _k(r[0])
+                if (l.startswith(ad) if onek else l == ad) and isinstance(r[2], (int, float)): return r
+        return None
+    O = []
+    def ekle(ad, deger, kars, tur): O.append({"ad": ad, "deger": deger, "kars": kars, "tur": tur})
+    has = bul("hasılat"); brut = bul("brüt kar (zarar)", "brüt kâr (zarar)", "brüt kar", onek=True)
+    esas = bul("esas faaliyet karı (zararı)", "esas faaliyet kârı (zararı)", "esas faaliyet karı", onek=True)
+    net = bul("net dönem karı veya zararı", "dönem karı (zararı)")
+    if not has or not net: return []
+    c, o = has[1], has[2]
+    if o:
+        y = (c - o) / abs(o) * 100
+        ekle("Hasılat", _tl(c), f"geçen yılın aynı dönemi {_tl(o)}, {'artış' if y >= 0 else 'azalış'} {_yz(y)}", "guclu" if y >= 5 else "dikkat" if y <= -5 else "notr")
+    def marj(r): return r[1] / has[1] * 100, (r[2] / has[2] * 100 if has[2] else None)
+    for ad, r in (("Brüt kâr marjı", brut), ("Esas faaliyet kâr marjı", esas)):
+        if not r or not has[1]: continue
+        m1, m0 = marj(r)
+        if m0 is None: continue
+        d = m1 - m0
+        ekle(ad, _yz(m1), f"geçen yılın aynı dönemi {_yz(m0)}", "guclu" if d >= 1 else "dikkat" if d <= -1 else "notr")
+    if esas and esas[1] < 0: ekle("Esas faaliyet sonucu", "zarar " + _tl(abs(esas[1])), f"geçen yılın aynı dönemi {_tl(esas[2])}", "dikkat")
+    d_, yon = _deg(net[1], net[2])
+    if d_ and yon: ekle("Net dönem kârı", _tl(net[1]), f"geçen yılın aynı dönemi {_tl(net[2])}, {d_}", "guclu" if yon == "up" else "dikkat")
+    par = bul("net parasal pozisyon kazançları (kayıpları)", "net parasal pozisyon", onek=True)
+    if par and par[1] > 0 and net[1] > 0 and par[1] >= net[1]:
+        ekle("Net parasal kazanç", _tl(par[1]), f"net dönem kârı {_tl(net[1])}, kâr parasal kazançtan geliyor", "dikkat")
+    fg = bul("finansman giderleri")
+    if fg and fg[2]:
+        y = (abs(fg[1]) - abs(fg[2])) / abs(fg[2]) * 100
+        if abs(y) >= 10: ekle("Finansman gideri", _tl(abs(fg[1])), f"geçen yılın aynı dönemi {_tl(abs(fg[2]))}, {'azalış' if y < 0 else 'artış'} {_yz(y)}", "guclu" if y < 0 else "dikkat")
+    kv = bul("kısa vadeli borçlanmalar"); ukv = bul("uzun vadeli borçlanmaların kısa vadeli kısımları"); uv = bul("uzun vadeli borçlanmalar")
+    nk = bul("nakit ve nakit benzerleri"); fy = bul("finansal yatırımlar")
+    if nk and (kv or uv):
+        def top(i): return sum((r[i] or 0) for r in (kv, ukv, uv) if r) - (nk[i] or 0) - ((fy[i] or 0) if fy else 0)
+        n1, n0 = top(1), top(2)
+        if n1 <= 0: ekle("Net nakit", _tl(abs(n1)), "borçtan fazla nakit ve finansal yatırım var", "guclu")
+        elif n0 > 0:
+            y = (n1 - n0) / n0 * 100
+            ekle("Net borç", _tl(n1), f"önceki yıl sonu {_tl(n0)}, {'azalış' if y < 0 else 'artış'} {_yz(y)}", "guclu" if y <= -5 else "dikkat" if y >= 5 else "notr")
+    ok = bul("işletme faaliyetlerinden nakit akışları", "işletme faaliyetlerinden sağlanan nakit akışları")
+    if ok:
+        if ok[1] < 0: ekle("İşletme nakit akışı", "eksi " + _tl(abs(ok[1])), f"geçen yılın aynı dönemi {_tl(ok[2])}", "dikkat")
+        elif ok[2] and ok[1] >= ok[2]: ekle("İşletme nakit akışı", _tl(ok[1]), f"geçen yılın aynı dönemi {_tl(ok[2])}", "guclu")
+    ozk = bul("ana ortaklığa ait özkaynaklar", "özkaynaklar")
+    if ozk and ozk[2]:
+        y = (ozk[1] - ozk[2]) / abs(ozk[2]) * 100
+        if abs(y) >= 3: ekle("Özkaynaklar", _tl(ozk[1]), f"önceki yıl sonu {_tl(ozk[2])}, {'artış' if y > 0 else 'azalış'} {_yz(y)}", "guclu" if y > 0 else "dikkat")
+    da = bul("dönen varlıklar", "toplam dönen varlıklar"); kyl = bul("kısa vadeli yükümlülükler", "toplam kısa vadeli yükümlülükler")
+    if da and kyl and kyl[1]:
+        cr = da[1] / kyl[1]
+        if cr >= 1.5 or cr < 1: ekle("Cari oran", f"{cr:.2f}".replace(".", ","), "dönen varlıklar / kısa vadeli yükümlülükler", "guclu" if cr >= 1.5 else "dikkat")
+    return O
+
+AN_SYS = """Sen SonarBIST'in editörüsün. Bir şirketin bilançosundan çıkan göstergeleri okuyup "güçlü yönler" ve "dikkat edilecekler" olarak iki kısa liste yazarsın. Yalnız JSON döndür.
+Girdi satırları [guclu], [dikkat] veya [notr] etiketlidir; etiketi kod belirledi. Güçlü yönlere yalnız [guclu], dikkat edilecekler listesine yalnız [dikkat] satırlarından seç; [notr] kullanma. En önemli en çok 3 güçlü ve en çok 3 dikkat maddesini seç (daha az varsa daha az; bir taraf boşsa o tarafı boş bırak).
+Rakamlar satırlarda yazdığı gibi aynen kullanılır (örn. "122,3 milyar TL", "%26,7"); kendin rakam hesaplama, yuvarlama veya yeni rakam ekleme. Tahmin, tavsiye, al/sat, hedef fiyat, "fırsat", "yükselir/düşer" yasak; yalnız bilançodaki durumu söyle. Dikkat maddeleri risk dili değil olgu dili kullanır ("Net borç arttı", "kâr parasal kazançtan geliyor").
+Tweet: ilk sözcük hisse kodu, parantez içinde şirket adı: "THYAO (Türk Hava Yolları) bilançosunda öne çıkanlar." Sonra boş satır, "Güçlü yönler" başlığı ve her biri "• " ile başlayan kısa maddeler (rakamlı), boş satır, "Dikkat edilecekler" başlığı ve "• " maddeleri. Boş olan tarafın başlığını yazma. Noktalı virgül, emoji, hashtag, bağlantı, $ yok. En çok 270 karakter; kısa maddeler yaz.
+Kart: her madde için {"ad": "en çok 4 kelime", "deger": "en çok 22 karakter, satırdaki değer", "not": "en çok 40 karakter kısa açıklama, rakam yazılırsa satırdaki gibi"}.
+Çıktı: {"tweet": "...", "guclu": [{"ad":"","deger":"","not":""}], "dikkat": [{"ad":"","deger":"","not":""}]}"""
+
+def analiz_dogrula(p, kaynak, hisse):
+    h = dogrula(p.get("tweet", ""), kaynak, [], hisse)
+    g, d = p.get("guclu") or [], p.get("dikkat") or []
+    if not isinstance(g, list) or not isinstance(d, list) or not (g or d) or len(g) > 3 or len(d) > 3: return h + ["kart maddeleri 0-3 + 0-3 olmalı, en az bir madde"]
+    for x in g + d:
+        if not (isinstance(x, dict) and all(isinstance(x.get(a), str) and x.get(a).strip() for a in ("ad", "deger", "not"))): return h + ["kart maddesi ad/deger/not içermeli"]
+        if len(x["deger"]) > 24 or len(x["not"]) > 44 or len(x["ad"]) > 40: return h + [f"kart maddesi çok uzun: {x['ad']}"]
+        h += kart_dogrula({"baslik": "x", "satirlar": [[x["ad"], x["deger"] + " " + x["not"]]] * 2}, kaynak)
+    return h
+
+def analiz_karti(hisse, p):
+    """Güçlü yönler (yeşil) / dikkat edilecekler (kırmızı) kartı, 1080x1350, açık zemin."""
+    from playwright.sync_api import sync_playwright
+    yol = os.path.join(BASE, "sonarbist_analiz_karti.png")
+    tarih = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=3))).strftime("%d.%m.%Y")
+    n = len(p.get("guclu") or []) + len(p.get("dikkat") or [])
+    kucuk = n > 4
+    def bolum(liste, sinif, baslik, isaret):
+        if not liste: return ""
+        s = '<div class="b %s"><span class="ik">%s</span>%s</div>' % (sinif, isaret, baslik)
+        for x in liste:
+            s += '<div class="r %s"><div class="rl"><div class="a">%s</div><div class="n">%s</div></div><div class="v">%s</div></div>' % (sinif, html.escape(x["ad"]), html.escape(x["not"]), html.escape(x["deger"]))
+        return s
+    govde = bolum(p.get("guclu"), "g", "GÜÇLÜ YÖNLER", "✓") + bolum(p.get("dikkat"), "d", "DİKKAT EDİLECEKLER", "!")
+    css = ("*{box-sizing:border-box}body{margin:0;background:#f6f8fb}"
+           "#k{width:1080px;height:1350px;padding:64px 72px;background:#f6f8fb;color:#0f172a;font-family:'Plus Jakarta Sans','Segoe UI',Arial,Helvetica,sans-serif;position:relative;overflow:hidden}"
+           "#k:before{content:'';position:absolute;left:0;right:0;top:0;height:12px;background:linear-gradient(90deg,#16a34a 0 50%,#dc2626 50% 100%)}"
+           ".h{color:#1d6fd8;font-size:30px;font-weight:600;letter-spacing:.5px}"
+           ".t{font-size:58px;font-weight:800;line-height:1.1;margin:22px 0 30px}"
+           ".b{display:flex;align-items:center;font-size:30px;font-weight:800;letter-spacing:1px;margin:18px 0 14px}"
+           ".b.g{color:#15803d}.b.d{color:#b91c1c}"
+           ".ik{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;color:#fff;font-size:28px;margin-right:16px}"
+           ".b.g .ik{background:#16a34a}.b.d .ik{background:#dc2626}"
+           ".r{display:flex;justify-content:space-between;align-items:center;gap:24px;border-radius:14px;padding:" + ("16px 30px" if kucuk else "26px 34px") + ";margin-bottom:" + ("12px" if kucuk else "18px") + "}"
+           ".r.g{background:#ecfdf5;border-left:10px solid #16a34a}.r.d{background:#fef2f2;border-left:10px solid #dc2626}"
+           ".a{font-size:" + ("30px" if kucuk else "34px") + ";font-weight:700}.n{color:#475569;font-size:" + ("24px" if kucuk else "27px") + ";margin-top:4px}"
+           ".v{font-size:" + ("40px" if kucuk else "46px") + ";font-weight:800;white-space:nowrap;text-align:right}"
+           ".r.g .v{color:#15803d}.r.d .v{color:#b91c1c}"
+           ".f{position:absolute;left:72px;bottom:44px;color:#64748b;font-size:26px}")
+    doc = ('<html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet"><style>' + css + '</style></head><body><div id="k"><div class="h">'
+           + html.escape(hisse) + " · KAP · " + tarih + '</div><div class="t">Bilanço: öne çıkanlar</div>' + govde + '<div class="f">Kaynak: KAP finansal rapor</div></div></body></html>')
+    with sync_playwright() as pw:
+        b = pw.chromium.launch(); pg = b.new_page(viewport={"width": 1080, "height": 1350})
+        try: pg.set_content(doc, wait_until="networkidle", timeout=20000)
+        except Exception: pg.set_content(doc)
+        try: pg.evaluate("document.fonts.ready")
+        except Exception: pass
+        pg.wait_for_timeout(500)
+        pg.locator("#k").screenshot(path=yol); b.close()
+    return yol
+
+def analiz_isle(token, chat, hisse, kid, baslik="Finansal rapor", yanit=None, rows=None):
+    """Bilanço sonrası ikinci tweet. yanit: ilk (bilanço) tweetinin id'si; verilirse yanıt olarak atılır."""
+    if os.path.exists(DURDUR) or not KEY: return None
+    kayit = _js(KAYIT); anahtar = f"analiz-{kid}"
+    if any(k.get("id") == anahtar for k in kayit): return None
+    k = {"id": anahtar, "hisse": hisse, "baslik": baslik[:150], "t": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"), "mod": "golge", "tur": "bilanço analizi"}
+    try:
+        if rows is None:
+            import sys as _s
+            _s.path.insert(0, os.path.join(BASE, "araclar"))
+            import xbrl_cek
+            rows = xbrl_cek.rows(http(f"https://www.kap.org.tr/tr/Bildirim/{kid}", headers=UA, timeout=90).decode("utf-8", "ignore"))
+        olc = fr_analiz_olc(rows)
+        if not any(x["tur"] == "guclu" for x in olc) and not any(x["tur"] == "dikkat" for x in olc):
+            k.update(durum="analiz_atlandi", sebep="güçlü/dikkat göstergesi çıkmadı"); kayit.append(k); _kaydet(kayit); return k
+        satir = "\n".join(f"[{x['tur']}] {x['ad']}: {x['deger']} ({x['kars']})" for x in olc)
+        buy = buyukluk(hisse)
+        kaynak_m = satir + " " + buy
+        u = f"Şirket: {hisse}\nBüyüklükler (Sonar): {buy}\nBaşlık: {baslik}\n\nGöstergeler:\n{satir}"
+        hata = None; p = {}; h = []
+        for deneme in range(2):
+            raw = claude(SONNET, AN_SYS, u + (f"\n\nÖnceki taslak reddedildi, düzelt: {hata}" if hata else ""), 900); p = jparse(raw)
+            h = analiz_dogrula(p, kaynak_m, hisse) if p.get("tweet") else ["yanıt çözülemedi"]
+            if not h: break
+            hata = "; ".join(h)
+        if h:
+            k.update(durum="analiz_hata", sebep=hata, tweet_red=p.get("tweet")); kayit.append(k); _kaydet(kayit)
+            tg(token, chat, f"SonarBIST · bilanço analizi doğrulamadan geçmedi · {hisse}\nNeden: {hata}\nTaslak: {p.get('tweet')}"); return k
+        try: foto, ghata = analiz_karti(hisse, p), None
+        except Exception as e: foto, ghata = None, "kart: " + repr(e)[:120]
+        k.update(tweet=p["tweet"], kart=p, goruntu=bool(foto), goruntu_hata=ghata)
+        if MOD == "canli" and x_hazir():
+            k["mod"] = "canli"; tid, xg = x_paylas(p["tweet"], foto, yanit)
+            k.update(durum="analiz_paylasildi", tweet_id=tid, x_gorsel_hata=xg); kayit.append(k); _kaydet(kayit)
+            tg(token, chat, f"SonarBIST PAYLAŞILDI (bilanço analizi) · {hisse}\nhttps://x.com/{HESAP}/status/{tid}\n\n{p['tweet']}" + (f"\n(görsel yok: {ghata})" if ghata else "") + (f"\n(X görsel yüklemesi başarısız: {xg})" if xg else ""), foto)
+        else:
+            k["durum"] = "analiz_taslak"; kayit.append(k); _kaydet(kayit)
+            tg(token, chat, f"SonarBIST bilanço analizi taslağı (gölge) · {hisse}\n\n{p['tweet']}", foto)
+        if foto:
+            try: os.remove(foto)
+            except Exception: pass
+        return k
+    except Exception as e:
+        k.update(durum="analiz_hata", sebep=repr(e)[:600])
+        try:
+            kayit.append(k); _kaydet(kayit); tg(token, chat, f"SonarBIST bilanço analizi hata · {hisse}\n{repr(e)[:300]}")
+        except Exception: pass
+        return k
+
+def analiz_kanca(token, chat):
+    """bekci/sonarbist_analiz.json: [[hisse, kapId(, başlık)], ...] listesindeki bilançoların analiz tweetini tek başına atar (test)."""
+    yol = os.path.join(BASE, "sonarbist_analiz.json")
+    if not os.path.exists(yol): return
+    try: liste = json.load(open(yol, encoding="utf-8"))
+    except Exception: return
+    try: os.remove(yol)
+    except Exception: pass
+    for e in liste:
+        hisse, kid = e[0], e[1]; baslik = e[2] if len(e) > 2 else "Finansal rapor"
+        kayit = [x for x in _js(KAYIT) if x.get("id") != f"analiz-{kid}"]; _kaydet(kayit)
+        analiz_isle(token, chat, hisse, kid, baslik)
+
 # ---- Sonar'da yayına alınan özetler (public/haber/<hisse>-<kapid>) ----
 def ozetleri_tara(token, chat):
     """Cagri bir haber özetini yayına alınca public/haber/<hisse>-<id>/ oluşur; SonarBIST o özetin girişini (meta açıklama)
     ve KAP metnini kaynak alıp tweet atar. İlk çalışmada mevcut sayfalar sessizce 'görüldü' sayılır."""
     if os.path.exists(DURDUR) or not KEY: return
+    try: analiz_kanca(token, chat)
+    except Exception: pass
     kok = os.path.join(BASE, "..", "public", "haber")
     if not os.path.isdir(kok): return
     gp = os.path.join(BASE, "sonarbist_ozet_gorulen.json")
@@ -506,6 +696,9 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
                (f"\n(görsel yok: {ghata})" if ghata else "") + (f"\n(X görsel yüklemesi başarısız, metinle atıldı: {xg})" if xg else "") + "\nGereksizse X'ten sil ve bana 'sildim' de.", foto)
             if foto:
                 try: os.remove(foto)
+                except Exception: pass
+            if fr and olc:
+                try: analiz_isle(token, chat, hisse, kid, baslik, tid, olc.get("rows"))
                 except Exception: pass
             return k
         kayit.append(k); _kaydet(kayit)
