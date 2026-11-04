@@ -274,24 +274,55 @@ def _olcek(rows, hisse):
 def _olcekle(rows, f):
     return rows if f == 1 else [[r[0]] + [(v * f if isinstance(v, (int, float)) else v) for v in r[1:]] for r in rows]
 
-def fr_olc(kid, hisse=""):
-    """KAP bildirim sayfasındaki XBRL satırlarından ana kalemleri çıkarır. Bulamazsa None."""
-    import sys as _s
-    _s.path.insert(0, os.path.join(BASE, "araclar"))
-    import xbrl_cek
-    raw = http(f"https://www.kap.org.tr/tr/Bildirim/{kid}", headers=UA, timeout=90).decode("utf-8", "ignore")
-    rows = [r for r in xbrl_cek.rows(raw) if len(r) >= 3 and isinstance(r[1], (int, float)) and isinstance(r[2], (int, float))]
+def _dort(r): return len(r) >= 5 and all(isinstance(v, (int, float)) for v in r[1:5])
+
+NET_ANA_ORTAKLIK = False  # True: ana ortaklık payı satırı tercih edilir (THYAO 9A: 80,3 / 81,1); False: konsolide dönem karı (80,2 / 81,0)
+NET_ETIKET = ("dönem karı (zararı)", "sürdürülen faaliyetler dönem karı (zararı)", "net dönem karı veya zararı")
+
+def _ana_kalemler(rows):
+    """Gelir tablosu kalemlerini 4 sütunlu satırlardan seçer (cari birikimli, önceki yıl birikimli, cari çeyrek, önceki yıl çeyrek).
+    Net kâr: gelir tablosundaki 'dönem karı (zararı)' (yoksa 'sürdürülen faaliyetler ...'), hemen altında ana ortaklık payı satırı varsa o.
+    'net dönem karı veya zararı' (bilanço, özkaynak içi) yalnız gelir tablosu satırı yoksa ve karşılaştırma 'önceki yıl sonu' olarak.
+    Dönüş: {has, brut, esas, net, net_kars, duzeltildi}"""
+    def b4(*adlar, onek=False):
+        for ad in adlar:
+            for r in rows:
+                if not _dort(r): continue
+                l = _k(r[0])
+                if (l.startswith(ad) if onek else l == ad): return r
+        return None
+    out = {"has": b4("hasılat"), "brut": b4("brüt kar (zarar)", "brüt kâr (zarar)", "brüt kar", onek=True),
+           "esas": b4("esas faaliyet karı (zararı)", "esas faaliyet kârı (zararı)", "esas faaliyet karı", onek=True),
+           "net": None, "net_kars": "geçen yıl aynı dönem", "duzeltildi": False}
+    for ad in NET_ETIKET[:2]:
+        for i, r in enumerate(rows):
+            if _dort(r) and _k(r[0]) == ad:
+                out["net"] = r
+                for r2 in rows[i + 1:i + 5]:
+                    if NET_ANA_ORTAKLIK and _dort(r2) and _k(r2[0]).startswith("ana ortaklık pay"): out["net"] = r2; break
+                break
+        if out["net"]: break
+    if not out["net"]:
+        r = next((r for r in rows if _k(r[0]) == NET_ETIKET[2] and len(r) >= 3 and isinstance(r[2], (int, float))), None)
+        if r: out["net"] = r; out["net_kars"] = "önceki yıl sonu"
+    adaylar = [r for r in rows if _k(r[0]) in NET_ETIKET and len(r) >= 3 and isinstance(r[1], (int, float)) and isinstance(r[2], (int, float))]
+    out["duzeltildi"] = any(a[1] == b[1] and a[2] != b[2] for i, a in enumerate(adaylar) for b in adaylar[i + 1:])
+    return out
+
+def fr_olc_rows(rows, hisse=""):
+    rows = [r for r in rows if len(r) >= 3 and isinstance(r[1], (int, float)) and isinstance(r[2], (int, float))]
     rows = _olcekle(rows, _olcek(rows, hisse)) if hisse else rows
+    ak = _ana_kalemler(rows)
     def bul(*adlar, onek=False):
         for ad in adlar:
             for r in rows:
                 l = _k(r[0])
                 if (l.startswith(ad) if onek else l == ad): return r
         return None
-    sec = [("Hasılat", bul("hasılat"), "geçen yıl aynı dönem"),
-           ("Brüt kâr", bul("brüt kar (zarar)", "brüt kâr (zarar)", "brüt kar", onek=True), "geçen yıl aynı dönem"),
-           ("Esas faaliyet kârı", bul("esas faaliyet karı (zararı)", "esas faaliyet kârı (zararı)", "esas faaliyet karı", onek=True), "geçen yıl aynı dönem"),
-           ("Net dönem kârı", bul("net dönem karı veya zararı", "dönem karı (zararı)"), "geçen yıl aynı dönem"),
+    sec = [("Hasılat", ak["has"], "geçen yıl aynı dönem"),
+           ("Brüt kâr", ak["brut"], "geçen yıl aynı dönem"),
+           ("Esas faaliyet kârı", ak["esas"], "geçen yıl aynı dönem"),
+           ("Net dönem kârı", ak["net"], ak["net_kars"]),
            ("Özkaynaklar", bul("ana ortaklığa ait özkaynaklar", "özkaynaklar"), "önceki yıl sonu")]
     sec = [(a, r, k) for a, r, k in sec if r]
     if not any(a in ("Hasılat", "Net dönem kârı") for a, _, _ in sec): return None
@@ -299,8 +330,16 @@ def fr_olc(kid, hisse=""):
     for ad, r, kar in sec:
         c, o = r[1], r[2]; yaz_, yon = _deg(c, o)
         sat.append(f"{ad}: {_tl(c)} ({kar}: {_tl(o)}; {yaz_})")
-        kart.append((ad, _tl(c), _tl(o), yaz_, yon))
-    return {"satirlar": sat, "kart": kart, "rows": rows}
+        kart.append((ad, _tl(c), _tl(o), yaz_, yon, kar))
+    return {"satirlar": sat, "kart": kart, "rows": rows, "duzeltildi": ak["duzeltildi"]}
+
+def fr_olc(kid, hisse=""):
+    """KAP bildirim sayfasındaki XBRL satırlarından ana kalemleri çıkarır. Bulamazsa None."""
+    import sys as _s
+    _s.path.insert(0, os.path.join(BASE, "araclar"))
+    import xbrl_cek
+    raw = http(f"https://www.kap.org.tr/tr/Bildirim/{kid}", headers=UA, timeout=90).decode("utf-8", "ignore")
+    return fr_olc_rows(xbrl_cek.rows(raw), hisse)
 
 def fr_kart(hisse, baslik, olc):
     """Finansal sonuç kartı (1080x1350, açık tema): her kalemde bu dönem, karşılaştırma ve yeşil artış / kırmızı azalış yüzdesi."""
@@ -309,9 +348,9 @@ def fr_kart(hisse, baslik, olc):
     ok = {"up": "▲", "down": "▼"}
     tarih = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=3))).strftime("%d.%m.%Y")
     rows = ""
-    for a_, c, o, d, y in olc["kart"]:
+    for a_, c, o, d, y, kl in olc["kart"]:
         chip = '<span class="c %s">%s</span>' % (y or "n", html.escape((ok.get(y, "") + " " + d).strip())) if d else ""
-        et = "önceki yıl sonu" if a_ == "Özkaynaklar" else "geçen yılın aynı dönemi"
+        et = "önceki yıl sonu" if kl == "önceki yıl sonu" else "geçen yılın aynı dönemi"
         rows += '<div class="r"><div class="l">%s</div><div class="rr"><div class="v">%s</div>%s</div><div class="o">%s: %s</div></div>' % (
             html.escape(a_), html.escape(c), chip, et, html.escape(o))
     css = ("*{box-sizing:border-box}body{margin:0;background:#f6f8fb}"
@@ -445,9 +484,8 @@ def fr_analiz_olc(rows):
         return None
     O = []
     def ekle(ad, deger, kars, tur): O.append({"ad": ad, "deger": deger, "kars": kars, "tur": tur})
-    has = bul("hasılat"); brut = bul("brüt kar (zarar)", "brüt kâr (zarar)", "brüt kar", onek=True)
-    esas = bul("esas faaliyet karı (zararı)", "esas faaliyet kârı (zararı)", "esas faaliyet karı", onek=True)
-    net = bul("net dönem karı veya zararı", "dönem karı (zararı)")
+    ak = _ana_kalemler(rows); has, brut, esas, net = ak["has"], ak["brut"], ak["esas"], ak["net"]
+    nkars = "geçen yılın aynı dönemi" if ak["net_kars"] == "geçen yıl aynı dönem" else ak["net_kars"]
     if not has or not net: return []
     c, o = has[1], has[2]
     if o:
@@ -462,7 +500,7 @@ def fr_analiz_olc(rows):
         ekle(ad, _yz(m1), f"geçen yılın aynı dönemi {_yz(m0)}", "guclu" if d >= 1 else "dikkat" if d <= -1 else "notr")
     if esas and esas[1] < 0: ekle("Esas faaliyet sonucu", "zarar " + _tl(abs(esas[1])), f"geçen yılın aynı dönemi {_tl(esas[2])}", "dikkat")
     d_, yon = _deg(net[1], net[2])
-    if d_ and yon: ekle("Net dönem kârı", _tl(net[1]), f"geçen yılın aynı dönemi {_tl(net[2])}, {d_}", "guclu" if yon == "up" else "dikkat")
+    if d_ and yon: ekle("Net dönem kârı", _tl(net[1]), f"{nkars} {_tl(net[2])}, {d_}", "guclu" if yon == "up" else "dikkat")
     par = bul("net parasal pozisyon kazançları (kayıpları)", "net parasal pozisyon", onek=True)
     if par and par[1] > 0 and net[1] > 0 and par[1] >= net[1]:
         ekle("Net parasal kazanç", _tl(par[1]), f"net dönem kârı {_tl(net[1])}, kâr parasal kazançtan geliyor", "dikkat")
@@ -667,6 +705,8 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
             if not olc:
                 k.update(durum="fr_atlandi", sebep="finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"); kayit.append(k); _kaydet(kayit)
                 tg(token, chat, f"SonarBIST · {hisse} finansal rapor, kalemler çıkarılamadı, atlandı\n{link}"); return k
+        if fr and olc and olc.get("duzeltildi"):
+            tg(token, chat, f"SonarBIST · {hisse}: net kâr satırı düzeltildi (gelir tablosundaki 4 sütunlu satır kullanıldı)\n{link}")
         if fr:
             metin = ("[FİNANSAL SONUÇ] Dönem: " + baslik + ". Tweet: önce hasılat ve net kârı, geçen yılın aynı dönemiyle kıyaslayarak yaz; yalnız aşağıdaki rakam ve yüzdeleri kullan, kendin hesaplama. Kalemler:\n" + "\n".join(olc["satirlar"]))
         else:
