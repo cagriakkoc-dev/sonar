@@ -2274,7 +2274,8 @@ function renderHome(){
   window.__CARD=CARD;homeFilterBind();drawHome();
 }
 function render(){const v=state.view;if(v==='GIRIS')renderHome();else if(v==='HABERLER'||v.startsWith('HABERLER-'))renderHaberler(v.split('-')[1]||'');else if(v.startsWith('HABER-'))renderHaber(v.split('-')[1],v.split('-')[2]);else if(v==='OZET')renderOzetIndex();else if(v.startsWith('KARS-'))renderKars(v.slice(5));else if(v.startsWith('YAZI-'))renderYazi(v.slice(5));else if(v.startsWith('OZET-'))renderOzet(v.slice(5,v.length).split('-')[0],v.slice(5).split('-').slice(1).join('-'));else if(v==='KARSILASTIR')renderCompare();else if(v==='DUYURU')renderDuyurular();else if(v==='HAKKINDA')renderHakkinda();else if(v.startsWith('SEKTOR-'))renderSector(v.slice(7));else if(v==='DENETIM')(PUB?renderHome():renderAudit());else renderCompany(BY[v]);renderSide()}
-let rT;addEventListener('resize',()=>{clearTimeout(rT);rT=setTimeout(render,200)});
+/* mobilde kaydırırken adres çubuğu açılıp kapanınca yalnız yükseklik değişir: o durumda sayfa yeniden çizilmez (aksi halde içerik zıplıyordu). Yalnız genişlik değişince (döndürme, pencere) çizilir. */
+let rT,rW=innerWidth;addEventListener('resize',()=>{if(Math.abs(innerWidth-rW)<2)return;rW=innerWidth;clearTimeout(rT);rT=setTimeout(render,200)});
 document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('.brand'))go('GIRIS')});
 (function themeInit(){const root=document.documentElement,btn=$('#themebtn'),lbl=$('#themelbl');
   const isDark=()=>root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
