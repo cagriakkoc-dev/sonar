@@ -254,13 +254,34 @@ def _deg(c, o):
     s = f"%{abs(y):.1f}".replace(".", ",") + (" artış" if y >= 0 else " azalış")
     return s, ("up" if y >= 0 else "down")
 
-def fr_olc(kid):
+def _tr_say(s):
+    return float(s.replace(".", "").replace(",", "."))
+
+def _olcek(rows, hisse):
+    """KAP rakamlarının birimi şirkete göre TL, bin TL veya milyon TL olabilir; Sonar'daki son 4 çeyrek hasılatına bakıp çarpanı bulur."""
+    try:
+        m = re.search(r"Hasılat · son 4 çeyrek: (-?[\d.,]+) (milyar|milyon) TL", buyukluk(hisse))
+        if not m: return 1
+        ltm = _tr_say(m.group(1)) * (1e9 if m.group(2) == "milyar" else 1e6)
+        has = next((r for r in rows if _k(r[0]) == "hasılat" and isinstance(r[1], (int, float))), None)
+        if not has or not has[1] or not ltm: return 1
+        for f in (1, 1000, 1000000):
+            if 0.1 <= abs(has[1]) * f / ltm <= 1.6: return f
+    except Exception:
+        pass
+    return 1
+
+def _olcekle(rows, f):
+    return rows if f == 1 else [[r[0]] + [(v * f if isinstance(v, (int, float)) else v) for v in r[1:]] for r in rows]
+
+def fr_olc(kid, hisse=""):
     """KAP bildirim sayfasındaki XBRL satırlarından ana kalemleri çıkarır. Bulamazsa None."""
     import sys as _s
     _s.path.insert(0, os.path.join(BASE, "araclar"))
     import xbrl_cek
     raw = http(f"https://www.kap.org.tr/tr/Bildirim/{kid}", headers=UA, timeout=90).decode("utf-8", "ignore")
     rows = [r for r in xbrl_cek.rows(raw) if len(r) >= 3 and isinstance(r[1], (int, float)) and isinstance(r[2], (int, float))]
+    rows = _olcekle(rows, _olcek(rows, hisse)) if hisse else rows
     def bul(*adlar, onek=False):
         for ad in adlar:
             for r in rows:
@@ -542,6 +563,7 @@ def analiz_isle(token, chat, hisse, kid, baslik="Finansal rapor", yanit=None, ro
             _s.path.insert(0, os.path.join(BASE, "araclar"))
             import xbrl_cek
             rows = xbrl_cek.rows(http(f"https://www.kap.org.tr/tr/Bildirim/{kid}", headers=UA, timeout=90).decode("utf-8", "ignore"))
+            rows = _olcekle(rows, _olcek(rows, hisse))
         olc = fr_analiz_olc(rows)
         if not any(x["tur"] == "guclu" for x in olc) and not any(x["tur"] == "dikkat" for x in olc):
             k.update(durum="analiz_atlandi", sebep="güçlü/dikkat göstergesi çıkmadı"); kayit.append(k); _kaydet(kayit); return k
@@ -641,7 +663,7 @@ def isle(token, chat, kaynak, kid, hisse, baslik, ozet, fr=False, link="", metin
             k.update(durum="elendi", sebep=sebep); kayit.append(k); _kaydet(kayit); return k
         olc = None
         if fr:  # finansal rapor: XBRL ölçüleri + bilanço kartı
-            olc = fr_olc(kid)
+            olc = fr_olc(kid, hisse)
             if not olc:
                 k.update(durum="fr_atlandi", sebep="finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"); kayit.append(k); _kaydet(kayit)
                 tg(token, chat, f"SonarBIST · {hisse} finansal rapor, kalemler çıkarılamadı, atlandı\n{link}"); return k
