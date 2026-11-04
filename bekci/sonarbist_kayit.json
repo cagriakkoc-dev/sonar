@@ -3232,5 +3232,151 @@
   "tur": "Şirket Genel Bilgi Formu (yönetici bilgileri)",
   "gerekce": "Genel müdür yardımcılarının görev ve meslek bilgilerini içeren, yeni bir karar veya finansal etki taşımayan rutin bilgi formu güncellemesidir.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1692843",
+  "hisse": "AEFES",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-04T18:55:56+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "AEFES'in 9 aylık bilançosunda hasılat %2,8 artarak 251,6 milyar TL'ye çıktı, net kâr ise %11,1 düşüşle 23,2 milyar TL'ye geriledi; finansal sonuç açıklamaları editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "AEFES (Anadolu Efes) dokuz ayda 251,6 milyar TL hasılat açıkladı, geçen yıl 244,7 milyar TL'ydi (%2,8 artış). Net kâr 26,1 milyar TL'den %11,1 azalışla 23,2 milyar TL oldu.\n\nEsas faaliyet kârı %4,3 artışla 30,5 milyar TL, net kâr ise geriledi. PD/DD 0,99x.",
+  "kart": {
+   "baslik": "9 aylık finansal sonuçlar",
+   "satirlar": [
+    [
+     "Hasılat",
+     "251,6 milyar TL"
+    ],
+    [
+     "Brüt kâr",
+     "95,4 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "30,5 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "23,2 milyar TL"
+    ],
+    [
+     "Özkaynaklar",
+     "144,1 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118054750809944510",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1692843",
+  "hisse": "AEFES",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-04T18:56:20+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "AEFES (Anadolu Efes) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net borç 49,7 milyar TL, %27,9 azaldı\n• Finansman gideri %22,7 azaldı\n• İşletme nakit akışı 38,8 milyar TL\n\nDikkat edilecekler\n• Net dönem kârı 23,2 milyar TL, %11,1 azaldı",
+  "kart": {
+   "tweet": "AEFES (Anadolu Efes) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net borç 49,7 milyar TL, %27,9 azaldı\n• Finansman gideri %22,7 azaldı\n• İşletme nakit akışı 38,8 milyar TL\n\nDikkat edilecekler\n• Net dönem kârı 23,2 milyar TL, %11,1 azaldı",
+   "guclu": [
+    {
+     "ad": "Net borç",
+     "deger": "49,7 milyar TL",
+     "not": "Önceki yıl sonuna göre %27,9 azaldı"
+    },
+    {
+     "ad": "Finansman gideri",
+     "deger": "20,6 milyar TL",
+     "not": "Geçen yıla göre %22,7 azaldı"
+    },
+    {
+     "ad": "İşletme nakit akışı",
+     "deger": "38,8 milyar TL",
+     "not": "Geçen yıl 33,4 milyar TL"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Net dönem kârı",
+     "deger": "23,2 milyar TL",
+     "not": "Geçen yıla göre %11,1 azaldı"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118054802227925408",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1692844",
+  "hisse": "RGYAS",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-04T18:56:32+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "finansal sonuç ve yatırımcı sunumu",
+  "gerekce": "9 aylık konsolide finansal sonuçlar ile yatırımcı sunumu duyuruluyor; bu türler editör kararıyla en az 80 puan alır, ancak bildirim yalnızca web sitesine yönlendirdiği için puan alt sınırda tutuldu.",
+  "durum": "paylasildi",
+  "tweet": "RGYAS (Rönesans Gayrimenkul) 9 aylık konsolide finansal tablolarını, ara dönem faaliyet raporunu ve yatırımcı sunumunu yayımladı.\n\nSon 4 çeyrekte hasılat 15,6 milyar TL, net kâr 19,4 milyar TL. Piyasa değeri 64,0 milyar TL, PD/DD 0,39x.",
+  "kart": {
+   "baslik": "Dokuz aylık finansal tablolar",
+   "satirlar": [
+    [
+     "Dönem",
+     "01.01-30.09.2026"
+    ],
+    [
+     "Hasılat (4 çeyrek)",
+     "15,6 milyar TL"
+    ],
+    [
+     "Net kâr (4 çeyrek)",
+     "19,4 milyar TL"
+    ],
+    [
+     "Piyasa değeri",
+     "64,0 milyar TL"
+    ],
+    [
+     "PD/DD",
+     "0,39x"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118054884071403856",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1692845",
+  "hisse": "AEFES",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-04T18:56:51+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
  }
 ]
