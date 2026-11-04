@@ -28,13 +28,14 @@ a{color:var(--muted);font-size:13px}
 </style>
 </head>
 <body>
-<form class="box" id="f" autocomplete="on">
+<p id="sp" class="msg" style="text-align:center;margin:30vh 0 0">Açılıyor…</p>
+<form class="box" id="f" autocomplete="on" style="display:none">
   <div class="brand"><svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true"><rect x="3" y="3" width="58" height="58" rx="15" fill="#0B2545"/><path stroke="#fff" fill="none" stroke-width="2.5" stroke-linecap="round" d="M20 33V50M32 26V50"/><rect x="16.5" y="38" width="7" height="8" rx="2" fill="#fff"/><rect x="28.5" y="30" width="7" height="12" rx="2" fill="#fff"/><path stroke="#19C3B1" fill="none" stroke-width="2.5" stroke-linecap="round" d="M44 14V50"/><rect x="40" y="19" width="8" height="20" rx="2" fill="#19C3B1"/></svg>
     <div><b>sonar</b><small>Yönetim paneli</small></div></div>
   <input type="text" name="username" value="sonar" autocomplete="username" hidden>
   <label for="p">Şifre</label>
   <input type="password" id="p" autocomplete="current-password" required autofocus>
-  <div class="row"><input type="checkbox" id="r"><label for="r" style="margin:0">Bu cihazda hatırla</label></div>
+  <div class="row"><input type="checkbox" id="r" checked><label for="r" style="margin:0">Bu cihazda hatırla</label></div>
   <button id="b">Giriş</button>
   <div class="msg" id="m" role="status"></div>
   <p style="margin:14px 0 0"><a href="/">← Siteye dön</a></p>
@@ -68,10 +69,14 @@ function hook(){
   addEventListener('DOMContentLoaded',()=>scan(document.documentElement));
 }
 (async()=>{let s=null;try{s=sessionStorage.getItem(SK)||localStorage.getItem(SK)}catch(e){}
-  if(s){$('#m').textContent='Açılıyor…';try{await open_(unb64(s));return}catch(e){try{sessionStorage.removeItem(SK);localStorage.removeItem(SK)}catch(_){}$('#m').textContent=''}}
-})();
+  const show=msg=>{$('#sp')&&$('#sp').remove();$('#f').style.display='';if(msg){$('#m').className='msg err';$('#m').textContent=msg}$('#p').focus()};
+  if(s){try{await open_(unb64(s));return}catch(e){
+    if(e&&e.message==='dosya'){show('Panel dosyası yüklenemedi. Sayfayı yenile.');return}
+    try{sessionStorage.removeItem(SK);localStorage.removeItem(SK)}catch(_){}
+    show('Kayıtlı oturum geçersiz (şifre değişmiş olabilir). Şifreyi yeniden gir.');return}}
+  show()})();
 $('#f').onsubmit=async e=>{e.preventDefault();const btn=$('#b'),m=$('#m');btn.disabled=true;m.className='msg';m.textContent='Kontrol ediliyor…';
-  try{const raw=await derive($('#p').value);await (async()=>{try{(($('#r').checked)?localStorage:sessionStorage).setItem(SK,b64(raw))}catch(_){}})();await open_(raw)}
+  try{const raw=await derive($('#p').value);await (async()=>{try{const k=b64(raw);if($('#r').checked){localStorage.setItem(SK,k);sessionStorage.removeItem(SK);try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}catch(_){}}else{sessionStorage.setItem(SK,k);localStorage.removeItem(SK)}}catch(_){}})();await open_(raw)}
   catch(err){try{sessionStorage.removeItem(SK);localStorage.removeItem(SK)}catch(_){}m.className='msg err';m.textContent=err&&err.message==='dosya'?'Panel dosyası yüklenemedi.':'Şifre yanlış.';btn.disabled=false}};
 })();
 </script>
