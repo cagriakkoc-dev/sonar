@@ -5013,5 +5013,144 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1693392",
+  "hisse": "OSMEN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-05T15:51:04+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 3,
+   "yenilik": 5,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Günlük alım yaklaşık 468 bin TL ile piyasa değerinin çok küçük bir kısmı, ancak pay geri alımı editör kuralı gereği her zaman önemli sayılır; program kapsamında toplam geri alım 2.228.786 adede (%0,5552) ulaştığı için taban puan olan 80 verildi.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1693404",
+  "hisse": "DZGYO",
+  "baslik": "Maddi Duran Varlık Satımı",
+  "t": "2026-11-05T15:51:09+00:00",
+  "mod": "golge",
+  "puan": 65,
+  "alt": {
+   "fin": 30,
+   "yenilik": 12,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Maddi duran varlık satışı (otel binası)",
+  "gerekce": "Yaklaşık 979 milyon TL'lik otel satışı 2,6 milyar TL piyasa değerinin yaklaşık %38'ine denk geliyor ve ekspertiz değerinin biraz üzerinde, satış gerçekleşmiş, tahsilat tarihi belli; ancak şirket BIST 30/100 dışında ve bildirim sabit kıymet satışı olduğu için garantili önemli türlerden değil.",
+  "durum": "dusuk_bildirildi"
+ },
+ {
+  "id": "kap-1693405",
+  "hisse": "SOKM",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-05T15:51:18+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 12,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "SOKM'un 2026 9 aylık finansal raporunda hasılat %4,9 artışla 270,1 milyar TL olurken net zarar 665,2 milyon TL'den 437,3 milyon TL'ye geriledi; finansal sonuç bildirimleri editör kararıyla en az 80 puan aldığı için puan tabana oturtuldu.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1693406",
+  "hisse": "ISMEN",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-05T15:51:27+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 8,
+   "ilgi": 10
+  },
+  "tur": "Finansal sonuç (ana ortak bankanın tablolarındaki ön veriler)",
+  "gerekce": "İş Yatırım'ın denetimsiz ve TMS 29 uygulanmamış 9 aylık net kârı 11,9 milyar TL (geçen yıl 11,6 milyar TL) olarak açıklandı; resmî SPK tabloları farklılaşabileceği için bu finansal sonuç bildirimi 80 puan tabanında tutuldu.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1693407",
+  "hisse": "SOKM",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-05T15:51:36+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1693408",
+  "hisse": "SOKM",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-05T15:51:38+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1693409",
+  "hisse": "DOHOL",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-05T15:51:38+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 22,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "finansal sonuç ve yatırımcı sunumu",
+  "gerekce": "DOHOL'un 9 aylık konsolide finansal tabloları ile yatırımcı bülteni ve sunumu açıklandı; bu türler editör kuralı gereği en az 80 puan alır, silinen PAHOL satın alma özetiyle aynı kategoride değildir.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1693410",
+  "hisse": "VAKBN",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-05T15:51:46+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1693411",
+  "hisse": "VAKBN",
+  "baslik": "Faaliyet Raporu (Konsolide Olmayan) (2026 9 Aylık)",
+  "t": "2026-11-05T15:51:49+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1693412",
+  "hisse": "VAKBN",
+  "baslik": "Sorumluluk Beyanı (Konsolide Olmayan) (2026 9 Aylık)",
+  "t": "2026-11-05T15:51:51+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
  }
 ]
