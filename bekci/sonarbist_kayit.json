@@ -3602,5 +3602,122 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1692858",
+  "hisse": "PETKM",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-05T04:27:40+00:00",
+  "mod": "canli",
+  "puan": 90,
+  "alt": {
+   "fin": 36,
+   "yenilik": 17,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 9
+  },
+  "tur": "Finansal sonuç (9 aylık bilanço)",
+  "gerekce": "PETKM'in 9 aylık bilançosunda net kâr zarardan 3,8 milyar TL kâra döndü, hasılat %22,0 arttı; finansal sonuç açıklamaları editör kararıyla her zaman önemli sayıldığı için puan 80'in üzerinde.",
+  "durum": "paylasildi",
+  "tweet": "PETKM (Petkim) dokuz ayda 100,9 milyar TL hasılat açıkladı, geçen yıl 82,7 milyar TL'ydi (%22,0 artış). Net dönem kârı 3,8 milyar TL, geçen yıl 6,2 milyar TL zarardı.\n\nBrüt kâr da zarardan kâra geçti. Esas faaliyet zararı 6,3 milyar TL'ye daraldı. PD/DD 0,64x.",
+  "kart": {
+   "baslik": "9 Aylık Finansal Sonuçlar",
+   "satirlar": [
+    [
+     "Hasılat",
+     "100,9 milyar TL"
+    ],
+    [
+     "Geçen yıl hasılat",
+     "82,7 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "3,8 milyar TL"
+    ],
+    [
+     "Brüt kâr",
+     "3,3 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "-6,3 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118198612756779513",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1692858",
+  "hisse": "PETKM",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-05T04:27:59+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "PETKM (Petkim) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net kâr 3,8 milyar TL, zarardan kâra\n• İşletme nakit akışı 5,9 milyar TL\n• Net borç %13,2 azaldı\n\nDikkat edilecekler\n• Esas faaliyet zararı 6,3 milyar TL\n• Kâr parasal kazançtan geliyor\n• Cari oran 0,55",
+  "kart": {
+   "tweet": "PETKM (Petkim) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net kâr 3,8 milyar TL, zarardan kâra\n• İşletme nakit akışı 5,9 milyar TL\n• Net borç %13,2 azaldı\n\nDikkat edilecekler\n• Esas faaliyet zararı 6,3 milyar TL\n• Kâr parasal kazançtan geliyor\n• Cari oran 0,55",
+   "guclu": [
+    {
+     "ad": "Net dönem kârı",
+     "deger": "3,8 milyar TL",
+     "not": "Geçen yıl -6,2 milyar TL, zarardan kâra"
+    },
+    {
+     "ad": "İşletme nakit akışı",
+     "deger": "5,9 milyar TL",
+     "not": "Geçen yıl -5,5 milyar TL"
+    },
+    {
+     "ad": "Net borç",
+     "deger": "50,2 milyar TL",
+     "not": "Yıl sonuna göre azalış %13,2"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Esas faaliyet sonucu",
+     "deger": "zarar 6,3 milyar TL",
+     "not": "Geçen yıl -11,4 milyar TL"
+    },
+    {
+     "ad": "Net parasal kazanç",
+     "deger": "12,6 milyar TL",
+     "not": "Kâr parasal kazançtan geliyor"
+    },
+    {
+     "ad": "Cari oran",
+     "deger": "0,55",
+     "not": "Dönen varlık / KV yükümlülük"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118198701927674277",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1692859",
+  "hisse": "PETKM",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-05T04:28:20+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1692860",
+  "hisse": "PETKM",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-05T04:28:22+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
  }
 ]
