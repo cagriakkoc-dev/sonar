@@ -12,8 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          DIS=$(grep -v '^#' bekci/istek/dis.txt | grep '|' | paste -sd';' | sed 's/;/;;/g')
-          DIS="$DIS" python3 bekci/araclar/dis_cek.py
+          DIS_DOSYA=bekci/istek/dis.txt python3 bekci/araclar/dis_cek.py
       - run: |
           git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
           git add bekci/dis
