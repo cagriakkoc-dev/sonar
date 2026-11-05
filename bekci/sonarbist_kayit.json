@@ -5603,5 +5603,24 @@
   "mod": "golge",
   "durum": "fr_atlandi",
   "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1693480",
+  "hisse": "GARAN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-05T17:51:17+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 14,
+   "yenilik": 10,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "GARAN'ın 11 milyar TL azami tutarlı geri alım programı kapsamında 05.11.2026'da 2.686.000 TL nominal (yaklaşık 378 milyon TL) pay alındı. Günlük tutar piyasa değerinin çok küçük bir kısmı olsa da pay geri alımı editör kuralı gereği en az 80 puan alır; bu bildirim, ihtiyaç duyulan önceki örnekteki satın alma özetinden farklı bir türdür.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
