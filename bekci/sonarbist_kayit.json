@@ -5496,5 +5496,112 @@
   "tur": "portföy sınırlamalarına uyum kontrolü (usulî)",
   "gerekce": "GYO'ların dönemsel olarak yayımladığı rutin portföy sınırlamaları uyum tablosudur; yeni bir gelişme, sözleşme, temettü veya finansal sonuç içermediği için usulî bildirim olarak düşük puan alır.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1693477",
+  "hisse": "TOASO",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-05T17:39:57+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1693478",
+  "hisse": "TOASO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-05T17:39:57+00:00",
+  "mod": "canli",
+  "puan": 88,
+  "alt": {
+   "fin": 34,
+   "yenilik": 17,
+   "kapsam": 17,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "finansal sonuç",
+  "gerekce": "TOASO'nun 9 aylık net kârı 11,0 milyar TL ile geçen yılın 3,8 milyar TL'sinin yaklaşık 3 katına çıktı, esas faaliyet kârı zarardan kâra döndü; bu rakamlar kesinleşmiş bir BIST 30 bilançosu olduğu için finansal sonuç türünün 80 puan tabanının üstünde kalıyor.",
+  "durum": "paylasildi",
+  "tweet": "TOASO (Tofaş) hasılatı geçen yılki 245,8 milyar TL'den 293,5 milyar TL'ye taşıdı (%19,4 artış). Net kâr 3,8 milyar TL'den 11,0 milyar TL'ye yükseldi.\n\nEsas faaliyet kârı zarardan 5,6 milyar TL kâra geçti. Özkaynaklar %2,5 azalışla 72,8 milyar TL. PD/DD 2,34x.",
+  "kart": {
+   "baslik": "9 aylık finansal sonuçlar",
+   "satirlar": [
+    [
+     "Hasılat",
+     "293,5 milyar TL"
+    ],
+    [
+     "Brüt kâr",
+     "22,8 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "5,6 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "11,0 milyar TL"
+    ],
+    [
+     "Özkaynaklar",
+     "72,8 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118398047394644414",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1693478",
+  "hisse": "TOASO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-05T17:40:28+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "TOASO (Tofaş) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net dönem kârı 11,0 milyar TL (%188,6 artış)\n• Hasılat 293,5 milyar TL (%19,4 artış)\n• Finansman gideri 3,2 milyar TL (%46,4 azalış)\n\nDikkat edilecekler\n• Net borç 51,4 milyar TL (%23,2 artış)",
+  "kart": {
+   "tweet": "TOASO (Tofaş) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net dönem kârı 11,0 milyar TL (%188,6 artış)\n• Hasılat 293,5 milyar TL (%19,4 artış)\n• Finansman gideri 3,2 milyar TL (%46,4 azalış)\n\nDikkat edilecekler\n• Net borç 51,4 milyar TL (%23,2 artış)",
+   "guclu": [
+    {
+     "ad": "Net dönem kârı",
+     "deger": "11,0 milyar TL",
+     "not": "Geçen yıl 3,8 milyar TL, %188,6 artış"
+    },
+    {
+     "ad": "Hasılat",
+     "deger": "293,5 milyar TL",
+     "not": "Geçen yıl 245,8 milyar TL, %19,4 artış"
+    },
+    {
+     "ad": "Finansman gideri",
+     "deger": "3,2 milyar TL",
+     "not": "Geçen yıl 5,9 milyar TL, %46,4 azalış"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Net borç",
+     "deger": "51,4 milyar TL",
+     "not": "Yıl sonu 41,7 milyar TL, %23,2 artış"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118398106295255528",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1693479",
+  "hisse": "TOASO",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-05T17:40:42+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
  }
 ]
