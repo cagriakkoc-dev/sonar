@@ -3773,5 +3773,71 @@
   "tur": "Borçlanma aracı ihracı (finansman bonosu)",
   "gerekce": "1 milyar TL'lik nitelikli yatırımcıya satılan 178 gün vadeli finansman bonosu, 538,7 milyar TL hasılatlı şirket için rutin bir fonlama işlemi olup editörün önemli saydığı türlerden biri değildir.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1692878",
+  "hisse": "KCAER",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-05T06:17:00+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 32,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "Finansal sonuç / yatırımcı sunumu",
+  "gerekce": "KCAER 2026 3. çeyrek finansal sonuç sunumunun yayımlandığını duyuran bildirim, finansal sonuç ve yatırımcı sunumu türünde olduğu için en az 80 puan alır; örnekteki silinen PAHOL satın alma özeti ise farklı türde olduğundan puanı düşürmedi.",
+  "durum": "paylasildi",
+  "tweet": "KCAER (Kocaer Çelik) 2026 üçüncü çeyrek sonuçlarına ilişkin Finansal Sonuçlar Sunumu'nu yatırımcı ilişkileri sayfasında yayımladı.\n\nSon 4 çeyrekte hasılat 23,3 milyar TL, net kâr 638,1 milyon TL. Piyasa değeri 28,7 milyar TL, F/K 45,0x, PD/DD 1,93x.",
+  "kart": {
+   "baslik": "Üçüncü çeyrek sunumu yayımlandı",
+   "satirlar": [
+    [
+     "Dönem",
+     "2026 3. çeyrek"
+    ],
+    [
+     "Hasılat (son 4 çeyrek)",
+     "23,3 milyar TL"
+    ],
+    [
+     "Net kâr (son 4 çeyrek)",
+     "638,1 milyon TL"
+    ],
+    [
+     "Piyasa değeri",
+     "28,7 milyar TL"
+    ],
+    [
+     "F/K",
+     "45,0x"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118226100224467225",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1692879",
+  "hisse": "KCAER",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-05T06:17:13+00:00",
+  "mod": "golge",
+  "puan": 6,
+  "alt": {
+   "fin": 0,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 2,
+   "ilgi": 1
+  },
+  "tur": "Şirket Genel Bilgi Formu (usulî güncelleme)",
+  "gerekce": "Yönetim kurulu üyeleri ve görevlerine ilişkin rutin bilgi formu güncellemesi olup yeni bir karar, tutar veya sürpriz içermiyor; editörün sildiği benzer örnekler doğrultusunda düşük puan verildi.",
+  "durum": "dusuk"
  }
 ]
