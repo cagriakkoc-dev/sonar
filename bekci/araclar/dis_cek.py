@@ -7,7 +7,7 @@ _P = [l.strip() for l in open(_D, encoding="utf-8") if "|" in l and not l.starts
 for parca in filter(None, _P):
     ad, url = parca.split("|", 1)
     if os.path.exists(os.path.join(OUT, ad.strip())): continue
-    if time.time() - T0 > 420: print("süre doldu; kalanlar sonraki çalıştırmada"); break   # zaten indirilmiş (yenilemek için dosyayı sil ya da yeni ad ver)
+    if time.time() - T0 > 360: print("süre doldu; kalanlar sonraki çalıştırmada"); break   # zaten indirilmiş (yenilemek için dosyayı sil ya da yeni ad ver)
     try:
         b = urllib.request.urlopen(urllib.request.Request(url.strip(), headers={"User-Agent": "Mozilla/5.0 (Macintosh) AppleWebKit/537.36 Chrome/124 Safari/537.36"}), timeout=60).read()
         if ad.strip().startswith("kapb_"):   # KAP bildirim sayfası ~5 MB: yalnız başlık ve ek dosya kimlikleri saklanır
