@@ -5622,5 +5622,122 @@
   "gerekce": "GARAN'ın 11 milyar TL azami tutarlı geri alım programı kapsamında 05.11.2026'da 2.686.000 TL nominal (yaklaşık 378 milyon TL) pay alındı. Günlük tutar piyasa değerinin çok küçük bir kısmı olsa da pay geri alımı editör kuralı gereği en az 80 puan alır; bu bildirim, ihtiyaç duyulan önceki örnekteki satın alma özetinden farklı bir türdür.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1693490",
+  "hisse": "MGROS",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-05T18:33:30+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1693491",
+  "hisse": "MGROS",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-05T18:33:30+00:00",
+  "mod": "canli",
+  "puan": 88,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Migros'un 2026 9 aylık bilançosunda hasılat %4,1 artarken net kâr %33,9 düşüp 4,8 milyar TL'ye geriledi; finansal sonuç açıklaması editör kuralı gereği en az 80 puan alır, BIST 30 şirketi olması ilgiyi artırır.",
+  "durum": "paylasildi",
+  "tweet": "MGROS (Migros) 2026'nın ilk dokuz ayını 398,0 milyar TL hasılatla kapattı, geçen yıl 382,5 milyar TL'ydi (%4,1 artış). Net dönem kârı 7,3 milyar TL'den 4,8 milyar TL'ye indi (%33,9 azalış).\n\nEsas faaliyet zararı 8,0 milyar TL'den 11,8 milyar TL'ye çıktı. F/K 21,2x.",
+  "kart": {
+   "baslik": "Dokuz aylık finansal sonuçlar",
+   "satirlar": [
+    [
+     "Hasılat",
+     "398,0 milyar TL"
+    ],
+    [
+     "Geçen yıl hasılat",
+     "382,5 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "4,8 milyar TL"
+    ],
+    [
+     "Geçen yıl net kâr",
+     "7,3 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "-11,8 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118411523890499996",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1693491",
+  "hisse": "MGROS",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-05T18:34:01+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "MGROS (Migros) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Finansman gideri %13,7 azaldı\n• Net borç 3,9 milyar TL, %19,3 azaldı\n• Özkaynaklar 101,6 milyar TL\n\nDikkat edilecekler\n• Net kâr %33,9 azaldı\n• Kâr parasal kazançtan geliyor\n• Cari oran 0,82",
+  "kart": {
+   "tweet": "MGROS (Migros) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Finansman gideri %13,7 azaldı\n• Net borç 3,9 milyar TL, %19,3 azaldı\n• Özkaynaklar 101,6 milyar TL\n\nDikkat edilecekler\n• Net kâr %33,9 azaldı\n• Kâr parasal kazançtan geliyor\n• Cari oran 0,82",
+   "guclu": [
+    {
+     "ad": "Finansman gideri",
+     "deger": "9,9 milyar TL",
+     "not": "Geçen yıl 11,5 milyar TL, azalış %13,7"
+    },
+    {
+     "ad": "Net borç",
+     "deger": "3,9 milyar TL",
+     "not": "Yıl sonu 4,8 milyar TL, %19,3 azaldı"
+    },
+    {
+     "ad": "Özkaynaklar",
+     "deger": "101,6 milyar TL",
+     "not": "Yıl sonuna göre %3,4 arttı"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Net dönem kârı",
+     "deger": "4,8 milyar TL",
+     "not": "Geçen yıl 7,3 milyar TL, %33,9 azaldı"
+    },
+    {
+     "ad": "Net parasal kazanç",
+     "deger": "22,9 milyar TL",
+     "not": "Net dönem kârının üzerinde"
+    },
+    {
+     "ad": "Cari oran",
+     "deger": "0,82",
+     "not": "Dönen varlıklar kısa vadelinin altında"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118411588482871466",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1693492",
+  "hisse": "MGROS",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-05T18:34:16+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
  }
 ]
