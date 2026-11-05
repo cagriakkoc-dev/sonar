@@ -3490,5 +3490,117 @@
   "tur": "Yatırım güncellemesi (kira sözleşmesi)",
   "gerekce": "08.09.2026'da duyurulan ABD'deki 1 GW'lık güneş paneli yatırımının devamı olarak tesis için taşınmaz kira sözleşmesi imzalandı, ancak kira tutarı belirtilmiyor ve bu yalnızca önceden bilinen yatırımın bir ara adımı olduğundan, editörün benzer güncellemeleri gereksiz bulmasına uygun şekilde puan düşük tutuldu.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1692855",
+  "hisse": "ZOREN",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-05T00:06:13+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 34,
+   "yenilik": 14,
+   "kapsam": 17,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "9 aylık finansal sonuç editör kuralıyla en az 80 puan alır; hasılat %31,1 düşüp 21,4 milyar TL'ye gerilemiş, net zarar 8,0 milyar TL'ye çıkmış ve bu zarar 13,8 milyar TL'lik piyasa değerine göre çok büyük.",
+  "durum": "paylasildi",
+  "tweet": "ZOREN (Zorlu Enerji) dokuz ayda 21,4 milyar TL hasılat açıkladı, geçen yıl 31,0 milyar TL'ydi (%31,1 azalış). Net zarar 5,8 milyar TL'den 8,0 milyar TL'ye çıktı.\n\nBrüt kâr 2,0 milyar TL'ye (%58,3 azalış), özkaynaklar 64,7 milyar TL'ye geriledi. PD/DD 0,22x.",
+  "kart": {
+   "baslik": "9 aylık finansal sonuç",
+   "satirlar": [
+    [
+     "Hasılat",
+     "21,4 milyar TL"
+    ],
+    [
+     "Brüt kâr",
+     "2,0 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "1,9 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "-8,0 milyar TL"
+    ],
+    [
+     "Özkaynaklar",
+     "64,7 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118132827971875239",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1692855",
+  "hisse": "ZOREN",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-05T00:06:35+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "ZOREN (Zorlu Enerji) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Finansman gideri 18,4 milyar TL, %30,3 azaldı\n• İşletme nakit akışı 4,0 milyar TL\n\nDikkat edilecekler\n• Hasılat %31,1 azaldı\n• Net dönem kârı -8,0 milyar TL\n• Brüt kâr marjı %9,3 (geçen yıl %15,4)",
+  "kart": {
+   "tweet": "ZOREN (Zorlu Enerji) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Finansman gideri 18,4 milyar TL, %30,3 azaldı\n• İşletme nakit akışı 4,0 milyar TL\n\nDikkat edilecekler\n• Hasılat %31,1 azaldı\n• Net dönem kârı -8,0 milyar TL\n• Brüt kâr marjı %9,3 (geçen yıl %15,4)",
+   "guclu": [
+    {
+     "ad": "Finansman gideri",
+     "deger": "18,4 milyar TL",
+     "not": "Geçen yıl 26,4 milyar TL, azalış %30,3"
+    },
+    {
+     "ad": "İşletme nakit akışı",
+     "deger": "4,0 milyar TL",
+     "not": "Geçen yıl 1,4 milyar TL"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Hasılat",
+     "deger": "21,4 milyar TL",
+     "not": "Geçen yıl 31,0 milyar TL, azalış %31,1"
+    },
+    {
+     "ad": "Net dönem kârı",
+     "deger": "-8,0 milyar TL",
+     "not": "Geçen yıl -5,8 milyar TL"
+    },
+    {
+     "ad": "Brüt kâr marjı",
+     "deger": "%9,3",
+     "not": "Geçen yılın aynı dönemi %15,4"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118132899832885587",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1692856",
+  "hisse": "ZOREN",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-05T00:06:52+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1692857",
+  "hisse": "ZOREN",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-05T00:06:53+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
  }
 ]
