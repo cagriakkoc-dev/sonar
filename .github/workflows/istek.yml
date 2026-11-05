@@ -3,6 +3,9 @@ name: İstek (push ile dış veri)
 on:
   push:
     paths: ['bekci/istek/dis.txt']
+  schedule:
+    - cron: '7,37 * * * *'   # kuyrukta inmemiş satır kaldıysa yarım saatte bir devam eder (5 Kas)
+concurrency: { group: istek-dis, cancel-in-progress: false }
 permissions:
   contents: write
 jobs:
