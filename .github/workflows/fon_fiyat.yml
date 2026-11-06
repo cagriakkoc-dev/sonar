@@ -12,9 +12,11 @@ jobs:
   fiyat:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      FIYAT_SURE: "22"
     steps:
       - uses: actions/checkout@v4
-      - run: python3 bekci/fon/fon_fiyat.py
+      - run: python3 -u bekci/fon/fon_fiyat.py
       - run: |
           git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
           git add -A public/veri/fon/fiyat
