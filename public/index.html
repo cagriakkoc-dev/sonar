@@ -2544,11 +2544,45 @@ function renderFon(k){document.documentElement.style.setProperty('--co','var(--a
   const isl=(a)=>a&&a.length?'<ul>'+a.map(x=>`<li>${hl(x[0])} · ${fonTL(x[1])}</li>`).join('')+'</ul>':'<p class="note">Bu ay yok.</p>';
   app.innerHTML=`<section class="home-hero"><div class="eyebrow"><a href="/fon/" data-go="FON">Fonlar</a> · ${esc(f.kurucu||'')}</div><h1>${f.kod}</h1><p>${esc(fonAd(f.ad))}</p></section>
   <div class="fstat"><div><span>Fon büyüklüğü</span><b>${fonTL(f.toplam)}</b></div><div><span>Hisse payı</span><b>%${nf(f.hisse_ag,1)}</b></div><div><span>Hisse sayısı</span><b>${f.n}</b></div><div><span>Getiri · 1 ay / 1 yıl</span><b style="font-size:17px">${fonGet(f.getiri?.['1a'])} <span class="note">·</span> ${fonGet(f.getiri?.['1y'])}</b></div><div><span>Rapor dönemi</span><b>${fonDon(f.donem)}</b></div></div>
-  <section class="fpan panel"><h3>Hisse dağılımı · ${fonDon(f.donem)} sonu</h3>${bars}<p class="note">Ağırlık = hissenin değeri ÷ fon toplam değeri. Kaynak: <a href="https://www.kap.org.tr/tr/Bildirim/${f.bildirim}" target="_blank" rel="noopener">KAP Portföy Dağılım Raporu</a>.</p></section>
+  <div class="fgrid">${fonDonut(f)}<section class="fpan panel" id="fonalan"><h3>Son 1 yıl · pay fiyatı</h3><p class="note">Yükleniyor…</p></section></div>
+  <section class="fpan panel"><h3>Tüm hisseler · ${fonDon(f.donem)} sonu</h3>${bars}<p class="note">Ağırlık = hissenin değeri ÷ fon toplam değeri. Kaynak: <a href="https://www.kap.org.tr/tr/Bildirim/${f.bildirim}" target="_blank" rel="noopener">KAP Portföy Dağılım Raporu</a>.</p></section>
   ${D?`<section class="fpan panel"><h3>${fonDon(D.onceki)} → ${fonDon(f.donem)} değişim</h3><div class="fgrid"><div><p><b>Portföye girenler</b><br>${lst(D.eklenen.map(x=>[x]))}</p><p><b>Portföyden çıkanlar</b><br>${lst(D.cikan.map(x=>[x]))}</p></div><div><p><b>Ağırlığı en çok artanlar</b><br>${lst(D.artan,1)}</p><p><b>Ağırlığı en çok azalanlar</b><br>${lst(D.azalan,1)}</p></div></div></section>`:''}
   <div class="fgrid"><section class="fpan panel"><h3>${fonDon(f.donem)} içinde alışlar</h3>${isl(f.alis)}</section><section class="fpan panel"><h3>${fonDon(f.donem)} içinde satışlar</h3>${isl(f.satis)}</section></div>
   <p class="note">Hisse bazında içerik aylık açıklanır; ay içindeki değişimler bir sonraki raporda görünür. Yatırım tavsiyesi değildir.</p>`;
-  app.querySelectorAll('[data-go]').forEach(b=>b.onclick=e=>{if(navKey(e))return;e.preventDefault();go(b.dataset.go)})}
+  app.querySelectorAll('[data-go]').forEach(b=>b.onclick=e=>{if(navKey(e))return;e.preventDefault();go(b.dataset.go)});fonAlan(f.kod)}
+/* fon sayfası grafikleri: portföy dağılımı (halka/daire) ve son 1 yıl pay fiyatı (alan grafiği). Fiyat: /veri/fon/fiyat/<KOD>.json (TEFAS). */
+const FONPAL=['#2f6fde','#e8833a','#2fa37a','#d94f5c','#8a63d2','#c9a227','#1fa2b8','#b8578f','#6d8f3c','#7b8794'];
+function fonDonut(f){
+  const H=(f.h||[]).filter(h=>h[1]>0),top=H.slice(0,8),rest=H.slice(8).reduce((s,h)=>s+(h[1]||0),0),dis=Math.max(0,100-(f.hisse_ag||0));
+  const S=top.map((h,i)=>[h[0],h[1],FONPAL[i]]);if(rest>0.005)S.push(['Diğer '+(H.length-8)+' hisse',rest,'#9aa5b4']);if(dis>0.005)S.push(['Hisse dışı (nakit, repo vb.)',dis,'#d5dbe3']);
+  const T=Math.max(100,S.reduce((s,x)=>s+x[1],0)),R=80,C=2*Math.PI*R;let off=0;
+  const arcs=S.map(([k,v,c])=>{const L=C*v/T,a=`<circle r="${R}" cx="110" cy="110" fill="none" stroke="${c}" stroke-width="36" stroke-dasharray="${L.toFixed(2)} ${(C-L).toFixed(2)}" stroke-dashoffset="${(-off).toFixed(2)}" transform="rotate(-90 110 110)"><title>${esc(k)} %${nf(v,2)}</title></circle>`;off+=L;return a}).join('');
+  const leg=S.map(([k,v,c])=>`<li><i style="background:${c}"></i><span>${BY[k]?`<a href="/sirket/${k.toLowerCase()}/" data-go="${k}">${k}</a>`:/^(Diğer|Hisse dışı)/.test(k)?esc(k):`<b>${esc(k)}</b>`}</span><b>%${nf(v,1)}</b></li>`).join('');
+  return `<section class="fpan panel"><h3>Portföy dağılımı · ${fonDon(f.donem)} sonu</h3><div class="fdon"><svg viewBox="0 0 220 220" role="img" aria-label="${f.kod} portföy dağılımı daire grafiği">${arcs}<text x="110" y="104" text-anchor="middle" class="fdon-v">%${nf(f.hisse_ag,1)}</text><text x="110" y="126" text-anchor="middle" class="fdon-l">hisse senedi</text></svg><ul class="fleg">${leg}</ul></div></section>`}
+function fonAlan(kod){const el=document.getElementById('fonalan');if(!el)return;
+  fetch('/veri/fon/fiyat/'+kod+'.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null).then(d=>{const el=document.getElementById('fonalan');if(!el)return;
+    const P=(d&&d.f||[]).filter(x=>x[1]>0);if(P.length<5){el.innerHTML='<h3>Son 1 yıl · pay fiyatı</h3><p class="note">Fiyat verisi henüz yok.</p>';return}
+    const W=600,Hh=230,pl=8,pr=8,pt=14,pb=26,ys=P.map(x=>x[1]),mn=Math.min(...ys),mx=Math.max(...ys),pad=(mx-mn)*0.08||mx*0.02,lo=mn-pad,hi=mx+pad;
+    const X=i=>pl+(W-pl-pr)*i/(P.length-1),Y=v=>pt+(Hh-pt-pb)*(1-(v-lo)/(hi-lo));
+    const line=P.map((p,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(p[1]).toFixed(1)).join(''),area=line+`L${X(P.length-1).toFixed(1)} ${Hh-pb}L${X(0).toFixed(1)} ${Hh-pb}Z`;
+    const ch=100*(P.at(-1)[1]/P[0][1]-1),col=ch>=0?'var(--up)':'var(--down)';
+    const AY=['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'],lbl=s=>+s.slice(8)+' '+AY[+s.slice(5,7)-1]+' '+s.slice(2,4);
+    const xt=[0,Math.round((P.length-1)/3),Math.round(2*(P.length-1)/3),P.length-1].map((i,j)=>`<text x="${X(i).toFixed(1)}" y="${Hh-8}" text-anchor="${j===0?'start':j===3?'end':'middle'}" class="fal-x">${lbl(P[i][0])}</text>`).join('');
+    const gy=[mn,(mn+mx)/2,mx].map(v=>`<line x1="${pl}" x2="${W-pr}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}" class="fal-g"/><text x="${W-pr}" y="${(Y(v)-4).toFixed(1)}" text-anchor="end" class="fal-x">${nf(v,4)}</text>`).join('');
+    el.innerHTML=`<h3>Son 1 yıl · pay fiyatı <span style="color:${col};font-weight:700">${ch>=0?'+':'−'}%${nf(Math.abs(ch),1)}</span></h3>
+     <div class="fal"><svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="${kod} son 1 yıl pay fiyatı alan grafiği"><defs><linearGradient id="falg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".35"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>${gy}<path d="${area}" fill="url(#falg)"/><path d="${line}" fill="none" stroke="${col}" stroke-width="2"/>${xt}<line class="fal-c" x1="0" x2="0" y1="${pt}" y2="${Hh-pb}" visibility="hidden"/><circle class="fal-d" r="4" fill="${col}" visibility="hidden"/><rect x="0" y="0" width="${W}" height="${Hh}" fill="transparent"/></svg><div class="fal-t" hidden></div></div>
+     <p class="note">Günlük pay fiyatı, kaynak TEFAS. ${lbl(P[0][0])} – ${lbl(P.at(-1)[0])}.</p>`;
+    const svg=el.querySelector('svg'),c=el.querySelector('.fal-c'),dt=el.querySelector('.fal-d'),tt=el.querySelector('.fal-t');
+    const mv=e=>{const b=svg.getBoundingClientRect(),cx=((e.touches?e.touches[0].clientX:e.clientX)-b.left)*W/b.width;let i=Math.round((cx-pl)/(W-pl-pr)*(P.length-1));i=Math.max(0,Math.min(P.length-1,i));
+      c.setAttribute('x1',X(i));c.setAttribute('x2',X(i));c.setAttribute('visibility','visible');dt.setAttribute('cx',X(i));dt.setAttribute('cy',Y(P[i][1]));dt.setAttribute('visibility','visible');
+      tt.hidden=false;tt.textContent=lbl(P[i][0])+' · '+nf(P[i][1],6);tt.style.left=Math.min(b.width-130,Math.max(0,X(i)*b.width/W-60))+'px'};
+    svg.addEventListener('mousemove',mv);svg.addEventListener('touchmove',mv,{passive:true});svg.addEventListener('mouseleave',()=>{c.setAttribute('visibility','hidden');dt.setAttribute('visibility','hidden');tt.hidden=true})})}
+(function(){if(document.getElementById('fongrafstil'))return;document.head.insertAdjacentHTML('beforeend',`<style id="fongrafstil">
+.fdon{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.fdon svg{width:210px;height:210px;flex:none}.fdon-v{font:800 26px var(--f-display);fill:var(--fg)}.fdon-l{font:500 12px var(--f-body);fill:var(--muted)}
+.fleg{list-style:none;margin:0;padding:0;flex:1;min-width:180px;font-size:14px}.fleg li{display:grid;grid-template-columns:12px 1fr auto;gap:8px;align-items:center;padding:3px 0}.fleg i{width:12px;height:12px;border-radius:3px}.fleg a{color:var(--fg);font-weight:700;text-decoration:none}.fleg a:hover{color:var(--accent)}.fleg b{font-variant-numeric:tabular-nums}
+.fal{position:relative}.fal svg{width:100%;height:auto;display:block;touch-action:pan-y}.fal-g{stroke:var(--line);stroke-dasharray:3 4}.fal-x{font:11px var(--f-body);fill:var(--muted)}.fal-c{stroke:var(--muted);stroke-dasharray:3 3}
+.fal-t{position:absolute;top:0;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:3px 8px;font-size:12px;white-space:nowrap;pointer-events:none}</style>`)})();
+
 function fonKutu(t){if(!FONV){fonYukle();return}const L=FONV.hisse?.[t];if(!L||!L.length||!app)return;
   const el=document.createElement('section');el.className='panel fpan fonkutu';
   el.innerHTML=`<h3>Bu hisseyi tutan fonlar</h3><p class="note" style="margin-top:0">${L.length} hisse senedi yoğun fonun portföyünde. Ağırlık: fondaki payı, son aylık rapor.</p>`+L.slice(0,15).map(r=>{const f=FONBY(r[0]);return `<div class="fbar"><a href="/fon/${r[0].toLowerCase()}/" data-go="FON-${r[0]}">${r[0]}</a><span class="note" style="margin:0">${esc(fonAd(f?.ad||''))}</span><span class="p">%${nf(r[1],2)}</span></div>`}).join('')+(L.length>15?`<p class="note">+${L.length-15} fon daha</p>`:'');
