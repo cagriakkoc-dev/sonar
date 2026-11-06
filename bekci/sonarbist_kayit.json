@@ -8557,5 +8557,135 @@
   "goruntu_hata": null,
   "tweet_id": "2118765942796640742",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1694450",
+  "hisse": "CVKMD",
+  "baslik": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
+  "t": "2026-11-06T18:13:10+00:00",
+  "mod": "golge",
+  "puan": 28,
+  "alt": {
+   "fin": 6,
+   "yenilik": 4,
+   "kapsam": 8,
+   "kesinlik": 7,
+   "ilgi": 3
+  },
+  "tur": "Sermaye artırımı fon kullanım raporu",
+  "gerekce": "Bedelli sermaye artırımından elde edilen fonun kullanımına ilişkin, Pay Tebliği gereği yayımlanan rutin bir güncelleme raporudur; metinde yeni tutar veya karar yoktur, ayrıca editörün her zaman önemli saydığı türlerin dışındadır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694456",
+  "hisse": "HEKTS",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-06T18:13:13+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 15,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 7
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Finansal sonuç açıklaması editör kuralıyla en az 80 puan alır; hasılat %11,4 düşerken brüt kâr zarardan kâra geçti, net zarar 3,3 milyar TL ile piyasa değerine göre yüksek kaldı.",
+  "durum": "paylasildi",
+  "tweet": "HEKTS (Hektaş) dokuz ayda 5,7 milyar TL hasılat yaptı, geçen yıl 6,4 milyar TL'ydi (%11,4 azalış). Net zarar 3,2 milyar TL'den 3,3 milyar TL'ye çıktı.\n\nBrüt kâr zarardan 695,6 milyon TL kâra döndü, esas faaliyet zararı 2,7 milyar TL'den 1,5 milyar TL'ye indi.",
+  "kart": {
+   "baslik": "9 aylık finansal sonuç",
+   "satirlar": [
+    [
+     "Hasılat",
+     "5,7 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "-3,3 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "-1,5 milyar TL"
+    ],
+    [
+     "Brüt kâr",
+     "695,6 milyon TL"
+    ],
+    [
+     "Özkaynaklar",
+     "16,4 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118768786329239584",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1694456",
+  "hisse": "HEKTS",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-06T18:13:39+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "HEKTS (Hektaş) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Brüt kâr marjı %12,2, geçen yıl %8,0\n• Esas faaliyet kâr marjı %26,7\n\nDikkat edilecekler\n• Net dönem kârı -3,3 milyar TL\n• İşletme nakit akışı eksi 397,5 milyon TL\n• Hasılat %11,4 azaldı",
+  "kart": {
+   "tweet": "HEKTS (Hektaş) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Brüt kâr marjı %12,2, geçen yıl %8,0\n• Esas faaliyet kâr marjı %26,7\n\nDikkat edilecekler\n• Net dönem kârı -3,3 milyar TL\n• İşletme nakit akışı eksi 397,5 milyon TL\n• Hasılat %11,4 azaldı",
+   "guclu": [
+    {
+     "ad": "Brüt kâr marjı",
+     "deger": "%12,2",
+     "not": "Geçen yıl %8,0"
+    },
+    {
+     "ad": "Esas faaliyet kâr marjı",
+     "deger": "%26,7",
+     "not": "Geçen yıl %41,3"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Net dönem kârı",
+     "deger": "-3,3 milyar TL",
+     "not": "Geçen yıl -3,2 milyar TL"
+    },
+    {
+     "ad": "İşletme nakit akışı",
+     "deger": "eksi 397,5 milyon TL",
+     "not": "Geçen yıl 1,5 milyar TL"
+    },
+    {
+     "ad": "Hasılat",
+     "deger": "5,7 milyar TL",
+     "not": "Geçen yıl 6,4 milyar TL, %11,4 azalış"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118768840918053246",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1694458",
+  "hisse": "HEKTS",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-06T18:13:52+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1694459",
+  "hisse": "HEKTS",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-06T18:13:54+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
  }
 ]
