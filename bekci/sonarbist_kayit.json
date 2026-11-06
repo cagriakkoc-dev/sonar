@@ -8843,5 +8843,43 @@
   "gerekce": "BRSAN'ın 2026 üçüncü çeyrek finansal sonuçlarını ve 2026 beklentilerini içeren yatırımcı sunumu, editörün her zaman önemli saydığı bilanço, sunum ve rehberlik türlerine girdiği için en az 80 puan alır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1694485",
+  "hisse": "BRYAT",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-06T19:50:04+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 26,
+   "yenilik": 16,
+   "kapsam": 20,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "9 aylık finansal rapor editör kuralı gereği en az 80 puan alır; hasılat %107,9 artıp esas faaliyet kârı zarardan kâra geçerken net kâr %47,7 azaldı.",
+  "durum": "dogrulama_hatasi",
+  "sebep": "açılış son tweetlerle aynı",
+  "tweet_red": "BRYAT (Borusan Yatırım) 9 aylık hasılatı 89,7 milyon TL'den 186,4 milyon TL'ye çıkardı (%107,9 artış). Net dönem kârı 1,2 milyar TL'den 614,8 milyon TL'ye indi (%47,7 azalış).\n\nEsas faaliyet kârı zarardan 29,0 milyon TL kâra geçti. Net kâr hasılatın üzerinde kaldı."
+ },
+ {
+  "id": "kap-1694486",
+  "hisse": "BRYAT",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-06T19:50:39+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1694487",
+  "hisse": "BRYAT",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-06T19:50:41+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
  }
 ]
