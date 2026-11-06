@@ -8687,5 +8687,161 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1694461",
+  "hisse": "HEKTS",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-06T18:24:49+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 2,
+   "yenilik": 4,
+   "kapsam": 3,
+   "kesinlik": 4,
+   "ilgi": 1
+  },
+  "tur": "Üst düzey atama (Satış Direktörü)",
+  "gerekce": "Satış Direktörü atanması şirketin tamamını etkilemeyen rutin bir üst düzey yönetici değişikliğidir, parasal etkisi yoktur ve editörün 80 puan alan zorunlu türlerinden hiçbirine girmez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694463",
+  "hisse": "HEKTS",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-06T18:24:53+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 0,
+   "yenilik": 2,
+   "kapsam": 3,
+   "kesinlik": 5,
+   "ilgi": 2
+  },
+  "tur": "Şirket Genel Bilgi Formu (usulî güncelleme)",
+  "gerekce": "Sermaye yapısı ve üst yönetim listesini yeniden sunan rutin form güncellemesi; yeni bir finansal veya stratejik gelişme içermiyor, bu nedenle düşük puan aldı.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694465",
+  "hisse": "BRSAN",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-06T18:24:56+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 32,
+   "yenilik": 17,
+   "kapsam": 17,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "finansal sonuç",
+  "gerekce": "2026 9 aylık bilançoda hasılat %44,5, net kâr %155,2 artışla 3,9 milyar TL'ye çıktı; net kâr, 80,1 milyar TL piyasa değerine göre belirgin büyüklükte ve finansal sonuç türü olduğu için yüksek puan alır.",
+  "durum": "paylasildi",
+  "tweet": "BRSAN (Borusan Mannesmann) 9 aylık hasılatı 51,3 milyar TL'den 74,1 milyar TL'ye çıkardı (%44,5 artış).\n\nNet dönem kârı 1,5 milyar TL'den 3,9 milyar TL'ye yükseldi (%155,2 artış).\n\nEsas faaliyet kârı %112,2 artışla 5,5 milyar TL. Özkaynaklar 47,7 milyar TL.",
+  "kart": {
+   "baslik": "9 aylık finansal sonuçlar",
+   "satirlar": [
+    [
+     "Hasılat",
+     "74,1 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "3,9 milyar TL"
+    ],
+    [
+     "Net kâr artışı",
+     "%155,2"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "5,5 milyar TL"
+    ],
+    [
+     "Özkaynaklar",
+     "47,7 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118771720236540342",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1694465",
+  "hisse": "BRSAN",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-06T18:25:18+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "BRSAN (Borusan Mannesmann) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat 74,1 milyar TL, %44,5 arttı\n• Net dönem kârı 3,9 milyar TL, %155,2 arttı\n• İşletme nakit akışı 10,4 milyar TL, geçen yıl 4,9 milyar TL",
+  "kart": {
+   "tweet": "BRSAN (Borusan Mannesmann) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat 74,1 milyar TL, %44,5 arttı\n• Net dönem kârı 3,9 milyar TL, %155,2 arttı\n• İşletme nakit akışı 10,4 milyar TL, geçen yıl 4,9 milyar TL",
+   "guclu": [
+    {
+     "ad": "Hasılat",
+     "deger": "74,1 milyar TL",
+     "not": "Geçen yıl 51,3 milyar TL, artış %44,5"
+    },
+    {
+     "ad": "Net dönem kârı",
+     "deger": "3,9 milyar TL",
+     "not": "Geçen yıl 1,5 milyar TL, %155,2 artış"
+    },
+    {
+     "ad": "İşletme nakit akışı",
+     "deger": "10,4 milyar TL",
+     "not": "Geçen yıl 4,9 milyar TL"
+    }
+   ],
+   "dikkat": []
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118771762171109425",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1694466",
+  "hisse": "BRSAN",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-06T18:25:28+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1694467",
+  "hisse": "BRSAN",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-06T18:25:31+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1694468",
+  "hisse": "BRSAN",
+  "baslik": "Geleceğe Dönük Değerlendirmeler",
+  "t": "2026-11-06T18:25:31+00:00",
+  "mod": "golge",
+  "puan": 85,
+  "alt": {
+   "fin": 32,
+   "yenilik": 17,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "Finansal sonuç, yatırımcı sunumu ve 2026 beklentileri",
+  "gerekce": "BRSAN'ın 2026 üçüncü çeyrek finansal sonuçlarını ve 2026 beklentilerini içeren yatırımcı sunumu, editörün her zaman önemli saydığı bilanço, sunum ve rehberlik türlerine girdiği için en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
