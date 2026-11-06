@@ -10,7 +10,7 @@ on:
         required: false
         default: 'HSY'
       limit:
-        description: 'Fon başına son kaç rapor'
+        description: 'Fon başına son kaç rapor (geçmiş için 12)'
         required: false
         default: '2'
       yeniden:
@@ -23,23 +23,54 @@ concurrency:
   group: fon-veri
   cancel-in-progress: false
 jobs:
-  pdr:
+  liste:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - run: python3 bekci/fon/fon_listesi.py
+      - run: |
+          git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
+          git add -A veri/fon/liste.json
+          git diff --cached --quiet || (git commit -q -m "Fon listesi [skip render]" && for n in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 5; done)
+  pdr:
+    needs: liste
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        parca: [0, 1, 2, 3, 4, 5]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - env:
           FON_KOD: ${{ inputs.kod || 'HSY' }}
           FON_LIMIT: ${{ inputs.limit || '2' }}
           YENIDEN: ${{ inputs.yeniden }}
           FON_KAYNAK: ${{ runner.temp }}
-        run: python3 bekci/fon/kap_pdr.py
+          FON_PARCA: ${{ matrix.parca }}/6
+        run: python3 -u bekci/fon/kap_pdr.py
+      - if: always()
+        run: |
+          git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
+          git add -A veri/fon
+          git diff --cached --quiet || (git commit -q -m "Fon PDR verisi (parça ${{ matrix.parca }}) [skip render]" && for n in 1 2 3 4 5 6 7 8 9 10; do git pull -q --rebase && git push -q && break; sleep $((RANDOM % 10 + 3)); done)
+  dizin:
+    needs: pdr
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
       - run: python3 bekci/fon/yeniden_ayristir.py
       - run: python3 bekci/fon/dizin.py
-      - run: python3 -c "import json;k=json.load(open('veri/fon/son_kosu.json'));print({x:len(k[x]) for x in ('basarili','atlandi','hata')});print(json.dumps(k['hata'],ensure_ascii=False)[:3000])"
+      - run: python3 -c "import json,glob;H=[h for p in glob.glob('veri/fon/son_kosu*.json') for h in json.load(open(p))['hata']];print('hata',len(H));print(json.dumps(H,ensure_ascii=False)[:3000])"
       - run: |
           git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
           git add -A veri/fon public/veri/fon
-          git diff --cached --quiet || (git commit -q -m "Fon PDR verisi" && for n in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 5; done)
+          git diff --cached --quiet || (git commit -q -m "Fon dizini" && for n in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 5; done)
