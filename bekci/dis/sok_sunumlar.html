@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+<script nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg=" src="/media/plg_n3tcookieconsent/js/n3tconsentmanager.min.js?d935c7"></script>
+<script nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg=">					  initN3tConsentManager({
+	      cookie_name: "n3t_cc",
+	      	      cookies: [{"name":"sokmarket_cookieconsent","is_regex":false,"category":"functional","required":true},{"name":"^_ga_","is_regex":true,"category":"analytics","required":false},{"name":"_ga","is_regex":false,"category":"analytics","required":false}],
+    options: {"cookie_expiration":395,"use_rfc_cookie":true,"current_lang":"default","autoclear_cookies":true,"hide_from_bots":true,"gui_options":{"consent_modal":{"layout":"bar","position":"bottom right","transition":"slide","swap_buttons":true},"settings_modal":{"layout":"bar","position":"right","transition":"slide"}},"languages":{"default":{"consent_modal":{"title":"\u00c7erez Kullan\u0131m\u0131","description":"Bu web sitesi, d\u00fczg\u00fcn \u00e7al\u0131\u015fmas\u0131 i\u00e7in temel \u00e7erezleri ve etkile\u015fimlerinizle ilgili anlay\u0131\u015f kazanmak i\u00e7in takip \u00e7erezlerini kullan\u0131r. Takip \u00e7erezleri yaln\u0131zca onayland\u0131ktan sonra ayarlan\u0131r. <br\/><br\/>Daha fazlas\u0131n\u0131 okuyun: <a aria-label='Gizlilik Politikas\u0131' class='cc-link' href='\/tr\/gizlilik-politikasi'>Gizlilik Politikas\u0131<\/a>","revision_message":"<br\/><br\/>Tekrar rahats\u0131z etti\u011fim i\u00e7in \u00f6z\u00fcr dilerim, ancak \u015fartlar\u0131m\u0131z de\u011fi\u015fti.","primary_btn":{"text":"Hepsini Kabul Et","role":"accept_all"},"secondary_btn":{"text":"Ayarlar","role":"settings"}},"settings_modal":{"title":"\u00c7erez Ayarlar\u0131","save_settings_btn":"Ayarlar\u0131 Kaydet","accept_all_btn":"Hepsini Kabul Et","close_btn_label":"Kapat","cookie_table_headers":[{"name":"Ad"},{"description":"A\u00e7\u0131klama"},{"provider":"Sa\u011flay\u0131c\u0131"},{"expiration":"S\u00fcresi"}],"blocks":[{"title":"\u00c7erez Kullan\u0131m\u0131","description":"Web sitesinin temel i\u015flevlerini sa\u011flamak ve \u00e7evrimi\u00e7i deneyiminizi iyile\u015ftirmek i\u00e7in \u00e7erezler kullan\u0131r\u0131z. \u0130stedi\u011finiz her kategoride \u00e7erezleri se\u00e7erek ne zaman isterseniz \u00e7erez kullan\u0131m\u0131n\u0131z\u0131 a\u00e7abilir veya kapatabilirsiniz."},{"title":"Mutlak Gerekli \u00c7erezler","description":"Bu \u00e7erezler, bu web sitesinin d\u00fczg\u00fcn \u00e7al\u0131\u015fmas\u0131 i\u00e7in gereklidir. Bu \u00e7erezler olmadan bu web sitesi d\u00fczg\u00fcn \u00e7al\u0131\u015fmaz.","toggle":{"value":"functional","enabled":true,"readonly":true},"cookie_table":[{"name":"sokmarket_cookieconsent","description":"Bu \u00e7erez, kullan\u0131c\u0131lar\u0131n \u00e7erezlere ili\u015fkin onay bilgilerini saklar.","is_regex":false,"provider":"\u015eok Marketler Kurumsal Yat\u0131r\u0131mc\u0131 \u0130li\u015fkileri","expiration":"&nbsp;"}]},{"title":"Analiz \u00c7erezleri","description":"Bu \u00e7erezler, web sitesini nas\u0131l kulland\u0131\u011f\u0131n\u0131z, hangi sayfalar\u0131 ziyaret etti\u011finiz ve hangi ba\u011flant\u0131lar\u0131 t\u0131klad\u0131\u011f\u0131n\u0131z hakk\u0131nda bilgiler toplar. T\u00fcm veriler anonimdir ve sizi tan\u0131mlamak i\u00e7in kullan\u0131lamaz.","toggle":{"value":"analytics","enabled":false,"readonly":false},"cookie_table":[{"name":"^_ga_","description":"Kullan\u0131c\u0131lar\u0131 tan\u0131mlamak i\u00e7in kullan\u0131lan bir kimlik.","is_regex":true,"provider":"Google Analytics","expiration":"&nbsp;"},{"name":"_ga","description":"Kullan\u0131c\u0131lar\u0131 tan\u0131mlamak i\u00e7in kullan\u0131lan bir kimlik.","is_regex":false,"provider":"Google Analytics","expiration":"&nbsp;"}]},{"title":"","description":"<div class=\"n3tcc-consent-info\">Onayland\u0131: <strong>{{consent_date}}<\/strong><br\/>Onay ID'si: <strong>{{consent_guid}}<\/strong><\/div>"},{"title":"","description":"\u00c7erezlerle ilgili ayr\u0131nt\u0131l\u0131 bilgiler i\u00e7in <a aria-label='Gizlilik Politikas\u0131' class='cc-link' href='\/tr\/gizlilik-politikasi'>Gizlilik Politikam\u0131z\u0131<\/a> inceleyin."}]}}}},
+    unknown_cookies: "settings",
+	      show_trigger: true,
+    trigger_text: "\u00c7erez Ayarlar\u0131",
+    trigger_icon: "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 120.23 122.88\">\n  <g>\n    <path style=\"fill-rule:evenodd;clip-rule:evenodd;\" d=\"M98.18,0c3.3,0,5.98,2.68,5.98,5.98c0,3.3-2.68,5.98-5.98,5.98c-3.3,0-5.98-2.68-5.98-5.98 C92.21,2.68,94.88,0,98.18,0L98.18,0z M99.78,52.08c5.16,7.7,11.69,10.06,20.17,4.85c0.28,2.9,0.35,5.86,0.2,8.86 c-1.67,33.16-29.9,58.69-63.06,57.02C23.94,121.13-1.59,92.9,0.08,59.75C1.74,26.59,30.95,0.78,64.1,2.45 c-2.94,9.2-0.45,17.37,7.03,20.15C64.35,44.38,79.49,58.63,99.78,52.08L99.78,52.08z M30.03,47.79c4.97,0,8.99,4.03,8.99,8.99 s-4.03,8.99-8.99,8.99c-4.97,0-8.99-4.03-8.99-8.99S25.07,47.79,30.03,47.79L30.03,47.79z M58.35,59.25c2.86,0,5.18,2.32,5.18,5.18 c0,2.86-2.32,5.18-5.18,5.18c-2.86,0-5.18-2.32-5.18-5.18C53.16,61.57,55.48,59.25,58.35,59.25L58.35,59.25z M35.87,80.59 c3.49,0,6.32,2.83,6.32,6.32c0,3.49-2.83,6.32-6.32,6.32c-3.49,0-6.32-2.83-6.32-6.32C29.55,83.41,32.38,80.59,35.87,80.59 L35.87,80.59z M49.49,32.23c2.74,0,4.95,2.22,4.95,4.95c0,2.74-2.22,4.95-4.95,4.95c-2.74,0-4.95-2.22-4.95-4.95 C44.54,34.45,46.76,32.23,49.49,32.23L49.49,32.23z M76.39,82.8c4.59,0,8.3,3.72,8.3,8.3c0,4.59-3.72,8.3-8.3,8.3 c-4.59,0-8.3-3.72-8.3-8.3C68.09,86.52,71.81,82.8,76.39,82.8L76.39,82.8z M93.87,23.1c3.08,0,5.58,2.5,5.58,5.58 c0,3.08-2.5,5.58-5.58,5.58s-5.58-2.5-5.58-5.58C88.29,25.6,90.79,23.1,93.87,23.1L93.87,23.1z\"\/>\n  <\/g>\n<\/svg>\n",
+    trigger_layout: "icon",
+    trigger_position: "bottom left",
+	  	      log_user_preferences_url: "\/tr\/component\/ajax\/?group=system&format=json&plugin=N3tCookieConsentLogConsent",
+	    });
+</script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+                        
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Şok Marketler Kurumsal Yatırımcı İlişkileri - Yatırımcı Sunumları</title>
+	<link href="https://sokmarketyatirimciiliskileri.com/tr/yatirimci-sunumlari" rel="alternate" hreflang="tr">
+	<link href="https://sokmarketyatirimciiliskileri.com/en/investor-presentations" rel="alternate" hreflang="en">
+	<link href="/media/system/images/favicon.svg" rel="icon" type="image/svg+xml">
+	<link href="/media/system/images/favicon.ico" rel="alternate icon" type="image/vnd.microsoft.icon">
+	<link href="/media/system/images/apple-touch-icon.png" rel="apple-touch-icon">
+	<link href="https://sokmarketyatirimciiliskileri.com/tr/component/finder/search?format=opensearch&amp;Itemid=104" rel="search" title="OpenSearch Şok Marketler Kurumsal Yatırımcı İlişkileri" type="application/opensearchdescription+xml">
+
+    <link href="/media/system/css/joomla-fontawesome.min.css?d935c7" rel="lazy-stylesheet" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="><noscript><link href="/media/system/css/joomla-fontawesome.min.css?d935c7" rel="stylesheet"></noscript>
+	<link href="/media/templates/site/sokyi/css/global/colors_standard.min.css?d935c7" rel="stylesheet" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg=">
+	<link href="/media/templates/site/sokyi/css/template.min.css?d935c7" rel="stylesheet" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg=">
+	<link href="/media/mod_languages/css/template.min.css?d935c7" rel="stylesheet" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg=">
+	<link href="/media/vendor/awesomplete/css/awesomplete.css?1.1.7" rel="stylesheet" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg=">
+	<link href="/media/templates/site/sokyi/css/vendor/joomla-custom-elements/joomla-alert.min.css?0.4.1" rel="stylesheet" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg=">
+	<link href="/media/plg_n3tcookieconsent/css/n3tconsentmanager.min.css?d935c7" rel="stylesheet" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg=">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js?d935c7" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="></script>
+	<script src="/media/templates/site/sokyi/js/jquery.tagcloud.js?d935c7" defer nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="></script>
+	<script src="https://www.googletagmanager.com/gtag/js?id=G-Q7GK22V4E1" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="></script>
+	<script nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg=">
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag("js", new Date());
+				gtag("config", "G-Q7GK22V4E1", { cookie_flags: "SameSite=None;Secure", anonymize_ip: true });
+			</script>
+	<script src="/media/mod_menu/js/menu.min.js?d935c7" type="module" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="></script>
+	<script type="application/json" class="joomla-script-options new" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg=">{"joomla.jtext":{"MOD_FINDER_SEARCH_VALUE":"Arama &hellip;","COM_FINDER_SEARCH_FORM_LIST_LABEL":"Arama Sonuçları","JLIB_JS_AJAX_ERROR_OTHER":"JSON verileri alınırken bir hata oluştu: HTTP %s durum kodu.","JLIB_JS_AJAX_ERROR_PARSE":"Aşağıdaki JSON verileri işlenirken bir ayrıştırma hatası oluştu:<br><code style=\"color:inherit;white-space:pre-wrap;padding:0;margin:0;border:0;background:inherit;\">%s<\/code>","ERROR":"Hata","MESSAGE":"Mesaj","NOTICE":"Bildirim","WARNING":"Uyarı","SUCCESS":"Başarılı","JCLOSE":"Kapat","JOK":"TAMAM","JOPEN":"Açık"},"finder-search":{"url":"\/tr\/component\/finder\/?task=suggestions.suggest&format=json&tmpl=component&Itemid=104"},"system.paths":{"root":"","rootFull":"https:\/\/sokmarketyatirimciiliskileri.com\/","base":"","baseFull":"https:\/\/sokmarketyatirimciiliskileri.com\/"},"csrf.token":"f46eb1834460eebfccc6aa42834d5d30"}</script>
+	<script src="/media/system/js/core.min.js?a3d8f8" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="></script>
+	<script src="/media/templates/site/sokyi/js/template.min.js?d935c7" defer nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="></script>
+	<script src="/media/vendor/bootstrap/js/collapse.min.js?5.2.3" type="module" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="></script>
+	<script src="/media/vendor/awesomplete/js/awesomplete.min.js?1.1.7" defer nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="></script>
+	<script src="/media/com_finder/js/finder.min.js?755761" type="module" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="></script>
+	<script src="/media/system/js/messages.min.js?9a4811" type="module" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="></script>
+	<script src="/media/plg_n3tcookieconsent/js/cookieconsent.min.js?d935c7" defer nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg="></script>
+	<script type="application/ld+json" nonce="MGFiYmE3OTlkNmNhMTY0ODdlZDZkZThmOWJmOWYxZTk1OTc4N2ZlYTRjNzI4NWU1ZTRlZWRjNWIwYWI4OTg5ZTA1YjExMDQwZTdlMGFmZWY0MzdmMzk4N2YyYzEzMmI1MmQ2YTVjOGVkNmNhYTMwY2JmNGYzYjFiYjJhZTZiYjg=">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://sokmarketyatirimciiliskileri.com/#/schema/Organization/base","name":"Şok Marketler Kurumsal Yatırımcı İlişkileri","url":"https://sokmarketyatirimciiliskileri.com/"},{"@type":"WebSite","@id":"https://sokmarketyatirimciiliskileri.com/#/schema/WebSite/base","url":"https://sokmarketyatirimciiliskileri.com/","name":"Şok Marketler Kurumsal Yatırımcı İlişkileri","publisher":{"@id":"https://sokmarketyatirimciiliskileri.com/#/schema/Organization/base"},"potentialAction":{"@type":"SearchAction","target":"https://sokmarketyatirimciiliskileri.com/tr/component/finder/search?q={search_term_string}\u0026amp;Itemid=104","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://sokmarketyatirimciiliskileri.com/#/schema/WebPage/base","url":"https://sokmarketyatirimciiliskileri.com/tr/yatirimci-sunumlari","name":"Şok Marketler Kurumsal Yatırımcı İlişkileri - Yatırımcı Sunumları","isPartOf":{"@id":"https://sokmarketyatirimciiliskileri.com/#/schema/WebSite/base"},"about":{"@id":"https://sokmarketyatirimciiliskileri.com/#/schema/Organization/base"},"inLanguage":"tr-TR"}]}</script>
+	<link href="https://sokmarketyatirimciiliskileri.com/tr/yatirimci-sunumlari" rel="alternate" hreflang="x-default">
+
+</head>
+
+<body class="site com_content itemid-163">
+    <header class="header container-header full-width position-sticky sticky-top">
+
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="d-flex align-items-center justify-content-between w-100 container-xxl">
+                                    <div class="navbar-brand">
+                        <a class="brand-logo" href="/" aria-label="Şok Market Logo">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" id="logo" viewBox="0 0 100 67">
+                                <polygon points="20.82 52.38 27.42 42.02 18.08 29.49 29.51 25.12 21.29 6.24 42.2 19.29 54.65 12.42 56.63 24.64 77.68 24.27 60.67 39.41 63.88 56.1 47.58 52.11 41.76 64.48 33.66 49.02 20.82 52.38" fill="#df1f26"/>
+                                <path d="m42.91,21.8s15.04-1.59,14.72,13.93c0,0-.39,13.06-15.36,13.12,0,0-13.03.23-13.03-12.19,0,0,.25-14.23,13.64-14.81" fill="#fff"/>
+                                <path d="m15.14,52.27l3.22.83-8.69,13.91-3-1.4,4.36-11.54c-2.59,1.02-5.35,1.57-8.13,1.61l-1.19-6.98s7.32-.39,10.19-3.28c0,0,2.26-2.38.52-4.04-1.44-1.4-3.12-2.53-4.95-3.33-3.21-1.61-7.47-4.69-7.47-8.86.33-3.12,2.06-5.92,4.7-7.6,4.59-3.18,11.74-5.21,15.16-5.69l.6,6.97s-10.28.75-10.31,4.53c0,0-.25,2.02,2.45,3.57,3.01,1.7,8.69,3.96,10.08,7.06,0,0,3.52,7.58-7.54,14.21" fill="#194791"/>
+                                <polygon points="16.84 62.25 32.45 50.83 34.69 54.7 16.84 62.25" fill="#df1f26"/><polygon points="48.6 53.82 56.18 55.58 60.8 65.88 48.6 53.82" fill="#df1f26"/>
+                                <polygon points="74.07 33.62 70.76 15.96 61.39 17.68 68.8 56.23 78.06 54.43 74.43 35.83 94.43 51.64 100 44.18 83.82 32.7 93.86 17.9 86.49 13.21 74.07 33.62" fill="#194791"/>
+                                <polygon points="57.51 19.86 67.39 6.59 56.29 14.98 57.51 19.86" fill="#df1f26"/><polygon points="24.09 0 30.19 10.76 40.5 16.11 24.09 0" fill="#df1f26"/>
+                                <path d="m43.28,28.65s5.69-.34,5.45,6.86c0,0-.54,6.26-5.78,6.06,0,0-5.2-.23-5.09-6.2,0,0,0-6.36,5.42-6.73" fill="#df1f26"/>
+                            </svg>
+                        </a>
+                    </div>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combinemenu" aria-controls="combinemenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="topMenu" class="d-none d-lg-block">
+                                            <div class="d-flex flex-row-reverse">
+                        <div class="mod-languages">
+    <p class="visually-hidden" id="language_picker_des_111">Dilinizi seçin</p>
+
+
+    <ul aria-labelledby="language_picker_des_111" class="mod-languages__list lang-inline">
+
+                                            <li class="lang-active">
+                <a aria-current="true"  href="https://sokmarketyatirimciiliskileri.com/tr/yatirimci-sunumlari">
+                                                                        <img title="Turkish" src="/media/mod_languages/images/tr_tr.gif" alt="Turkish">                                                            </a>
+            </li>
+                                        <li>
+                <a  href="/en/investor-presentations">
+                                                                        <img title="English" src="/media/mod_languages/images/en_gb.gif" alt="English">                                                            </a>
+            </li>
+                </ul>
+
+</div>
+<ul class="mod-menu mod-list nav ">
+<li class="nav-item item-116"><a href="https://kurumsal.sokmarket.com.tr/hakkimizda" target="_blank" rel="noopener noreferrer">Bir Bakışta Şok Marketler</a></li><li class="nav-item item-108"><a href="https://kurumsal.sokmarket.com.tr/hakkimizda" target="_blank" rel="noopener noreferrer">Hakkımızda</a></li><li class="nav-item item-109"><a href="https://kurumsal.sokmarket.com.tr/markalar/soka-ozel-urunler" target="_blank" rel="noopener noreferrer">Markalar</a></li><li class="nav-item item-110"><a href="https://kurumsal.sokmarket.com.tr/magazalarimiz" target="_blank" rel="noopener noreferrer">Mağazalarımız</a></li><li class="nav-item item-111"><a href="https://kurumsal.sokmarket.com.tr/insan-kaynaklari/sokta-kariyer" target="_blank" rel="noopener noreferrer">İnsan Kaynakları</a></li></ul>
+
+                        </div>
+                                                                <div class="grid-child container-below-top">
+                            
+<form class="mod-finder js-finder-searchform form-search" action="/tr/component/finder/search?Itemid=101" method="get" role="search">
+    <label for="mod-finder-searchword115" class="visually-hidden finder">Arama</label><div class="mod-finder__search input-group"><input type="text" name="q" id="mod-finder-searchword115" class="js-finder-search-query form-control" value="" placeholder="Arama &hellip;"><button class="btn btn-primary" type="submit"><span class="icon-search icon-white" aria-hidden="true"></span> Arama</button></div>
+            <input type="hidden" name="Itemid" value="101"></form>
+
+                        </div>
+                                    </div>
+            </div>
+            <div class="collapse navbar-collapse w-100" id="combinemenu" aria-labelledby="combinemenuLabel">
+                <div class="container-xxl">
+                                            <div class="grid-child container-below-top d-lg-none">
+                            
+<form class="mod-finder js-finder-searchform form-search" action="/tr/component/finder/search?Itemid=101" method="get" role="search">
+    <label for="mod-finder-searchword115" class="visually-hidden finder">Arama</label><div class="mod-finder__search input-group"><input type="text" name="q" id="mod-finder-searchword115" class="js-finder-search-query form-control" value="" placeholder="Arama &hellip;"><button class="btn btn-primary" type="submit"><span class="icon-search icon-white" aria-hidden="true"></span> Arama</button></div>
+            <input type="hidden" name="Itemid" value="101"></form>
+
+                        </div>
+                                                                <div class="container-topbar d-flex flex-column-reverse d-lg-none">
+                        <div class="mod-languages">
+    <p class="visually-hidden" id="language_picker_des_111">Dilinizi seçin</p>
+
+
+    <ul aria-labelledby="language_picker_des_111" class="mod-languages__list lang-inline">
+
+                                            <li class="lang-active">
+                <a aria-current="true"  href="https://sokmarketyatirimciiliskileri.com/tr/yatirimci-sunumlari">
+                                                                        <img title="Turkish" src="/media/mod_languages/images/tr_tr.gif" alt="Turkish">                                                            </a>
+            </li>
+                                        <li>
+                <a  href="/en/investor-presentations">
+                                                                        <img title="English" src="/media/mod_languages/images/en_gb.gif" alt="English">                                                            </a>
+            </li>
+                </ul>
+
+</div>
+<ul class="mod-menu mod-list nav ">
+<li class="nav-item item-116"><a href="https://kurumsal.sokmarket.com.tr/hakkimizda" target="_blank" rel="noopener noreferrer">Bir Bakışta Şok Marketler</a></li><li class="nav-item item-108"><a href="https://kurumsal.sokmarket.com.tr/hakkimizda" target="_blank" rel="noopener noreferrer">Hakkımızda</a></li><li class="nav-item item-109"><a href="https://kurumsal.sokmarket.com.tr/markalar/soka-ozel-urunler" target="_blank" rel="noopener noreferrer">Markalar</a></li><li class="nav-item item-110"><a href="https://kurumsal.sokmarket.com.tr/magazalarimiz" target="_blank" rel="noopener noreferrer">Mağazalarımız</a></li><li class="nav-item item-111"><a href="https://kurumsal.sokmarket.com.tr/insan-kaynaklari/sokta-kariyer" target="_blank" rel="noopener noreferrer">İnsan Kaynakları</a></li></ul>
+
+                        </div>
+                                                                <div class="grid-child container-nav">
+                                                            <ul class="mod-menu mod-list nav navbar-nav">
+<li class="nav-item item-114 divider"><span class="mod-menu__separator separator ">Yatırımcı İlişkileri</span>
+</li><li class="nav-item item-115 divider"><span class="mod-menu__separator separator d-none d-lg-inline">|</span>
+</li><li class="nav-item item-104 default"><a href="/tr/" ><img src="/images/home.png" alt="" width="19" height="16" loading="lazy"><span class="image-title visually-hidden">Anasayfa</span></a></li><li class="nav-item item-135"><a href="/tr/kurumsal-yonetim" >Kurumsal Yönetim</a></li><li class="nav-item item-192"><a href="/tr/finansal-bilgiler" >Finansal Bilgiler</a></li><li class="nav-item item-177"><a href="/tr/genel-kurul-seti" >Genel Kurul</a></li><li class="nav-item item-200"><a href="/tr/hisse-senedi-bilgileri" >Hisse Senedi Bilgileri</a></li><li class="nav-item item-119"><a href="https://kurumsal.sokmarket.com.tr/surdurulebilirlik" target="_blank" rel="noopener noreferrer">Sürdürülebilirlik</a></li><li class="nav-item item-131"><a href="/tr/iletisim-bilgileri" >İletişim Bilgileri</a></li><li class="nav-item item-187"><a href="/tr/sss" >SSS</a></li></ul>
+
+                                                    </div>
+                                    </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="site-grid container-xxl">
+                    <div class="container-topimage full-width">
+                
+<div id="mod-custom160" class="mod-custom custom">
+    <img src="/images/moduls/presentations.jpg" loading="lazy" width="1400" height="362" alt="Sunumlar" data-path="local-images:/moduls/presentations.jpg"/>
+<div class="overlay">
+<h3 class="bold">Sunumlar</h3>
+</div></div>
+
+            </div>
+        
+        
+        
+        
+        
+                    <div class="grid-child container-bottom-a">
+                <div class="bottom-a card ">
+            <h3 class="card-header ">ANAHTAR KELİMELER</h3>        <div class="card-body">
+                
+<div id="mod-custom120" class="mod-custom custom">
+    <svg id="anahtarkelimeler" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 525">
+    <a href="/tr/iletisim-bilgileri"><text transform="translate(0 50)" fill="#e01f25" font-family="Open Sans" font-size="30" font-weight="700">İletişim Bilgileri</text></a>
+    <a href="/tr/ust-yonetim"><text transform="translate(0 100)" fill="#184690" font-family="Open Sans" font-size="30" font-weight="700">Üst Yönetim</text></a>
+    <a href="/tr/yonetim-kurulu"><text transform="translate(0 150)" fill="#e01f25" font-family="Open Sans" font-size="30" font-weight="700">Yönetim Kurulu</text></a>
+    <a href="/tr/yatirimci-sunumlari"><text transform="translate(0 200)" fill="#184690" font-family="Open Sans" font-size="30" font-weight="700">Yatırımcı Sunumları</text></a>
+    <a href="/tr/kar-dagitim-politikasi"><text transform="translate(0 250)" fill="#e01f25" font-family="Open Sans" font-size="30" font-weight="700">Kâr Dağıtım Politikası</text></a>
+    <a href="/tr/hisse-bilgileri"><text transform="translate(0 300)" fill="#184690" font-family="Open Sans" font-size="30" font-weight="700">Hisse Bilgileri</text></a>
+    <a href="/images/PDFs/HalkaArz/SOKMarketler-Esas-Sozlesme-05082026.pdf" target="_blank"><text transform="translate(0 350)" fill="#e01f25" font-family="Open Sans" font-size="30" font-weight="700">Şirket Esas Sözleşmesi</text></a>
+    <a href="/tr/tarihsel-kar-zarar-hesaplayicisi"><text transform="translate(0 400)" fill="#184690" font-family="Open Sans" font-size="30" font-weight="700">Tarihsel Kâr/Zarar Hesaplayıcısı</text></a>
+    <a href="/tr/genel-kurul-seti"><text transform="translate(0 450)" fill="#e01f25" font-family="Open Sans" font-size="30" font-weight="700">Genel Kurul Seti</text></a>
+    <a href="/tr/karsilastirmali-interaktif-hisse-grafigi"><text transform="translate(0 500)" fill="#184690" font-family="Open Sans" font-size="30" font-weight="700">Karşılaştırmalı İnteraktif Hisse Grafiği</text></a>
+    <a href="/tr/birlesme"><text transform="translate(470 50)" fill="#e01f25" font-family="Open Sans" font-size="30" font-weight="700">Birleşme</text></a>
+    <a href="/tr/halka-arz"><text transform="translate(470 100)" fill="#184690" font-family="Open Sans" font-size="30" font-weight="700">Halka Arz</text></a>
+    <a href="/tr/kurumsal-yonetim"><text transform="translate(470 150)" fill="#e01f25" font-family="Open Sans" font-size="30" font-weight="700">Kurumsal Yönetim</text></a>
+    <a href="/tr/diger-bilgiler"><text transform="translate(470 200)" fill="#184690" font-family="Open Sans" font-size="30" font-weight="700">Diğer Bilgiler</text></a>
+    <a href="/tr/analistler"><text transform="translate(470 250)" fill="#e01f25" font-family="Open Sans" font-size="30" font-weight="700">Analistler</text></a>
+    <a href="/tr/finansal-takvim"><text transform="translate(470 300)" fill="#184690" font-family="Open Sans" font-size="30" font-weight="700">Finansal Takvim</text></a>
+    <a href="/tr/sss"><text transform="translate(470 350)" fill="#e01f25" font-family="Open Sans" font-size="30" font-weight="700">Sıkça Sorulan Sorular</text></a>
+</svg></div>
+    </div>
+</div>
+
+            </div>
+        
+        <div class="grid-child container-component">
+            
+            
+            <div id="system-message-container" aria-live="polite"></div>
+
+                            <main>
+                <div class="com-content-article item-page">
+    <meta itemprop="inLanguage" content="tr">
+    
+    
+        <div class="page-header">
+        <h1>
+            Yatırımcı Sunumları        </h1>
+                            </div>
+        
+        
+    
+    
+        
+                                                <div class="com-content-article__body">
+        <div class="moduletable ">
+        <div class="mod-articlescategory category-module mod-list">
+        
+<div id="yearFilter-wrap">
+    <label for="yearFilter">Yıla Göre Filtrele: &nbsp;</label>
+    <select id="yearFilter">
+        <option value="all">Tüm Yıllar</option>
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+            </select>
+</div>
+
+    <div class="year-group" data-year="2026">
+        <h4 id="year-title">2026</h4>
+                    <div class="d-flex align-items-center item-727">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_9M2026_Investor-Presentation_TR.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2026 Yılı 3. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_9M2026_Investor-Presentation_TR.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-721">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/Sok-Marketler-1H2026-Yatirimci-Sunumu_v2.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2026 Yılı 2. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/Sok-Marketler-1H2026-Yatirimci-Sunumu_v2.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-693">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_1Q2026_Investor-Presentation-TR.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2026 Yılı 1. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_1Q2026_Investor-Presentation-TR.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+            </div>
+    <div class="year-group" data-year="2025">
+        <h4 id="year-title">2025</h4>
+                    <div class="d-flex align-items-center item-685">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_4Q2025_Investor-Presentation-TR-v2.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2025 Yılı 4. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_4Q2025_Investor-Presentation-TR-v2.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-677">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/YH-Analist-Gunu-Sunumu_27112025.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2025 Yatırımcı Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/YH-Analist-Gunu-Sunumu_27112025.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-675">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_3Q2025_Investor-Presentation-TR_v2.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2025 Yılı 3. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_3Q2025_Investor-Presentation-TR_v2.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-666">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_2Q2025_TR-Webcast_v2.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2025 Yılı 2. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_2Q2025_TR-Webcast_v2.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-630">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_1C2025-Sunum.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2025 Yılı 1. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_1C2025-Sunum.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+            </div>
+    <div class="year-group" data-year="2024">
+        <h4 id="year-title">2024</h4>
+                    <div class="d-flex align-items-center item-606">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_4Q2024_TR-Webcast-enf-muh.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2024 Yılı 4. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_4Q2024_TR-Webcast-enf-muh.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-605">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/YH-Analist-Gunu-Sunumu.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2024 Yatırımcı Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/YH-Analist-Gunu-Sunumu.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-604">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_3Q2024_TR-Webcast-enf-muh.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2024 Yılı 3. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_3Q2024_TR-Webcast-enf-muh.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-603">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_2Q2024_TR-Webcast-enf-muh_ZK_.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2024 Yılı 2. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_2Q2024_TR-Webcast-enf-muh_ZK_.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-602">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_1Q2024_TR-Webcast-enf-muh.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2024 Yılı 1. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_1Q2024_TR-Webcast-enf-muh.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+            </div>
+    <div class="year-group" data-year="2023">
+        <h4 id="year-title">2023</h4>
+                    <div class="d-flex align-items-center item-601">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_4Q2023_TR-Webcast-enf-muh.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2023 Yılı 4. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_4Q2023_TR-Webcast-enf-muh.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-600">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_YH-Analist-Gunu-Sunumu_22112023.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2023 Yatırımcı Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_YH-Analist-Gunu-Sunumu_22112023.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-599">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_3Q2023_TR.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2023 Yılı 3. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_3Q2023_TR.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-598">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_2Q2023_TR-UD.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2023 Yılı 2. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_2Q2023_TR-UD.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-159">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_1Q2023_TR.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2023 Yılı 1. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_1Q2023_TR.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+            </div>
+    <div class="year-group" data-year="2022">
+        <h4 id="year-title">2022</h4>
+                    <div class="d-flex align-items-center item-160">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_4C2022_TR.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2022 Yılı 4. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_4C2022_TR.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-161">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_Yatirimci_Toplantisi_Sunumu_TR.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2022 Yatırımcı Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_Yatirimci_Toplantisi_Sunumu_TR.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-162">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_3C2022_TR_v2.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2022 Yılı 3. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_3C2022_TR_v2.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-163">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_2Q2022_TR-yeni.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2022 Yılı 2. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_2Q2022_TR-yeni.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-164">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_1Q2022_TR.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2022 Yılı 1. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_1Q2022_TR.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+            </div>
+    <div class="year-group" data-year="2021">
+        <h4 id="year-title">2021</h4>
+                    <div class="d-flex align-items-center item-165">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_4Q2021_TR.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2021 Yılı 4. Çeyrek Webcast Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_4Q2021_TR.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-166">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK_3C2021_TR.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2021 Yılı 3. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK_3C2021_TR.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-167">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SOK-2C2021-finansal-sonuc.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2021 Yılı 2. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SOK-2C2021-finansal-sonuc.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-168">
+                                                                                                            <a href="/images/PDFs/Webcasts/SOK-1C2021-finansal-sonuclar.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2021 Yılı 1. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/Webcasts/SOK-1C2021-finansal-sonuclar.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+            </div>
+    <div class="year-group" data-year="2020">
+        <h4 id="year-title">2020</h4>
+                    <div class="d-flex align-items-center item-169">
+                                                                                                            <a href="/images/PDFs/Webcasts/Webcast-Presentation-4C2020.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2020 Yılı 4. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/Webcasts/Webcast-Presentation-4C2020.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-170">
+                                                                                                            <a href="/images/PDFs/Webcasts/Webcast_Presentation_3C2020.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2020 Yılı 3. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/Webcasts/Webcast_Presentation_3C2020.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-171">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/Webcast_Presentation_2CC2020.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2020 Yılı 2. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/Webcast_Presentation_2CC2020.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-172">
+                                                                                                            <a href="/images/PDFs/Webcasts/Webcast-Sunumu-1C2020-TR-v2.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2020 Yılı 1. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/Webcasts/Webcast-Sunumu-1C2020-TR-v2.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+            </div>
+    <div class="year-group" data-year="2019">
+        <h4 id="year-title">2019</h4>
+                    <div class="d-flex align-items-center item-173">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/Webcast_Presentation_4C2019.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2019 Yılı 4. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/Webcast_Presentation_4C2019.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-174">
+                                                                                                            <a href="/images/PDFs/InvestorPresentations/Sok_Market_Investor_Presentation_as-of-30092019.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">Yatırımcı Sunumu (İngilizce)	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/InvestorPresentations/Sok_Market_Investor_Presentation_as-of-30092019.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-175">
+                                                                                                            <a href="/images/PDFs/Webcasts/Webcast_Presentation_3C2019.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2019 Yılı 3. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/Webcasts/Webcast_Presentation_3C2019.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-176">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/Analist-Toplantisi-Sunumu.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">Analist Toplantısı Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/Analist-Toplantisi-Sunumu.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-177">
+                                                                                                            <a href="/images/PDFs/InvestorPresentations/Sok-Market-Investor-Presentation-20190808.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">Yatırımcı Sunumu (İngilizce)	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/InvestorPresentations/Sok-Market-Investor-Presentation-20190808.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-178">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/Webcast-Presentation-2C2019.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2019 Yılı 2. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/Webcast-Presentation-2C2019.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-179">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/Yatirimci_Sunumu_1C2019.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2019 Yılı 1. Çeyrek Webcast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/Yatirimci_Sunumu_1C2019.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-180">
+                                                                                                            <a href="/images/PDFs/InvestorPresentations/Sok-Market-Investor-Presentation-MAY2019_.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">Yatırımcı Sunumu (İngilizce)	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/InvestorPresentations/Sok-Market-Investor-Presentation-MAY2019_.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+            </div>
+    <div class="year-group" data-year="2018">
+        <h4 id="year-title">2018</h4>
+                    <div class="d-flex align-items-center item-181">
+                                                                                                            <a href="/images/PDFs/InvestorPresentations/Sok-Market-Investor-Presentation-31122018.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">Yatırımcı Sunumu (İngilizce)	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/InvestorPresentations/Sok-Market-Investor-Presentation-31122018.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-182">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/Webcast-Presentation-YE2018-TR.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">4. Çeyrek WebCast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/Webcast-Presentation-YE2018-TR.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-183">
+                                                                                                            <a href="/images/PDFs/Webcasts/Webcast-Sunumu-3C2018-tr.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">3. Çeyrek WebCast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/Webcasts/Webcast-Sunumu-3C2018-tr.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-184">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SokMarket-9Aylik-Finansal-Sonuclar.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">3. Çeyrek Bilgilendirme Notu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SokMarket-9Aylik-Finansal-Sonuclar.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-185">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/Sok-Marketler-Analist-ve-Yatirimci-Toplantisi-26.09.2018.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">Analist ve Yatırımcı Toplantısı Sunumu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/Sok-Marketler-Analist-ve-Yatirimci-Toplantisi-26.09.2018.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-186">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/2nci-Ceyrek-2018-Web-Cast-Sunumu.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2. Çeyrek WebCast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/2nci-Ceyrek-2018-Web-Cast-Sunumu.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-187">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/2nci-Ceyrek-2018-Donemi-Finansal-Sonuclar-Sunumu.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">2. Çeyrek Bilgilendirme Notu</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/2nci-Ceyrek-2018-Donemi-Finansal-Sonuclar-Sunumu.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-188">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SokMarket1C_2018YatirimciSunumu.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">1. Çeyrek WebCast Sunumu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SokMarket1C_2018YatirimciSunumu.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+                    <div class="d-flex align-items-center item-189">
+                                                                                                            <a href="/images/PDFs/YatirimciSunumlari/SokMarket1CeyrekEarningsRelease.pdf" class="mod-articles-category-title flex-grow-1 px-2" target="_blank">1. Çeyrek Bilgilendirme Notu	</a>                
+                <span class="iconlink-container">
+                    <a href="/images/PDFs/YatirimciSunumlari/SokMarket1CeyrekEarningsRelease.pdf" class="image-icon d-flex ps-2" target="_blank"><img src="/images/download.png" alt="Download"></a>                </span>
+
+                
+                
+                
+                
+                
+                            </div>
+            </div>
+</div>
+</div>
+     </div>
+
+        
+                                        </div>
+
+                </main>
+                        
+        </div>
+
+        
+            </div>
+    
+        
+        <footer class="container-footer footer full-width">
+        <div class="grid-child">
+            <ul class="mod-menu mod-list nav ">
+<li class="nav-item item-129 divider"><span class="mod-menu__separator separator ">Şok Marketler © 2018</span>
+</li><li class="nav-item item-124"><a href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/11155" class="d-flex flex-row-reverse" target="_blank" rel="noopener noreferrer">Bilgi Toplumu Hizmetleri</a></li><li class="nav-item item-125"><a href="/tr/gizlilik-politikasi" >Gizlilik Politikası</a></li><li class="nav-item item-126"><a href="/tr/cekince" >Çekince</a></li><li class="nav-item item-127"><a href="/tr/kisisel-verilerin-korunmasi" >Kişisel Verilerin Korunması</a></li><li class="nav-item item-128"><a href="/tr/kullanim-sartlari" >Kullanım Şartları</a></li></ul>
+
+        </div>
+    </footer>
+    
+            <a href="#top" id="back-top" class="back-to-top-link" aria-label="Back to Top">
+            <span class="icon-arrow-up icon-fw" aria-hidden="true"></span>
+        </a>
+    
+    
+
+    
+    
+
+</body>
+</html>
