@@ -8098,5 +8098,104 @@
   "tur": "portföy sınırlamaları uyum tablosu (usulî)",
   "gerekce": "30.09.2026 finansal tablo dipnotundaki portföy sınırlamaları uyum tablosunun yeni KAP şablonuyla yeniden yayımlanmasından ibaret, yeni bir bilgi içermeyen usulî bildirim; bilanço açıklaması, temettü veya sözleşme gibi her zaman önemli türlere girmiyor.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694372",
+  "hisse": "FZLGY",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-06T16:13:03+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 32,
+   "yenilik": 18,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Hasılat %2793,1 artışla 4,5 milyar TL'ye çıkarken brüt kâr ve net dönem kârı zarara döndü (net dönem zararı 314,3 milyon TL); bilanço açıklamaları editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "FZLGY (Fuzul GYO) için 9 aylık hasılat 155,5 milyon TL'den 4,5 milyar TL'ye sıçradı (%2793,1 artış). Net dönem kârı 309,8 milyon TL'den 314,3 milyon TL zarara döndü.\n\nEsas faaliyet kârı %365,8 artışla 137,8 milyon TL oldu, brüt kâr ise 21,0 milyon TL zararda.",
+  "kart": {
+   "baslik": "9 Aylık Finansal Sonuçlar",
+   "satirlar": [
+    [
+     "Hasılat",
+     "4,5 milyar TL"
+    ],
+    [
+     "Brüt kâr",
+     "-21,0 milyon TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "137,8 milyon TL"
+    ],
+    [
+     "Net dönem kârı",
+     "-314,3 milyon TL"
+    ],
+    [
+     "Özkaynaklar",
+     "4,8 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118738579484524558",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1694372",
+  "hisse": "FZLGY",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-06T16:13:37+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "FZLGY (Fuzul GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat 4,5 milyar TL\n• Net borç 846,3 milyon TL, %40,3 azaldı\n• Cari oran 5,73\n\nDikkat edilecekler\n• Net kâr -314,3 milyon TL, zarara döndü\n• Brüt kâr marjı %0,5 (geçen yıl %60,9)\n• Finansman gideri 634,0 milyon TL",
+  "kart": {
+   "tweet": "FZLGY (Fuzul GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat 4,5 milyar TL\n• Net borç 846,3 milyon TL, %40,3 azaldı\n• Cari oran 5,73\n\nDikkat edilecekler\n• Net kâr -314,3 milyon TL, zarara döndü\n• Brüt kâr marjı %0,5 (geçen yıl %60,9)\n• Finansman gideri 634,0 milyon TL",
+   "guclu": [
+    {
+     "ad": "Hasılat",
+     "deger": "4,5 milyar TL",
+     "not": "Geçen yıl 155,5 milyon TL"
+    },
+    {
+     "ad": "Net borç",
+     "deger": "846,3 milyon TL",
+     "not": "Yıl sonuna göre azalış %40,3"
+    },
+    {
+     "ad": "Cari oran",
+     "deger": "5,73",
+     "not": "Dönen varlık / kısa vadeli borç"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Net dönem kârı",
+     "deger": "-314,3 milyon TL",
+     "not": "Geçen yıl 309,8 milyon TL kâr"
+    },
+    {
+     "ad": "Brüt kâr marjı",
+     "deger": "%0,5",
+     "not": "Geçen yıl %60,9"
+    },
+    {
+     "ad": "Finansman gideri",
+     "deger": "634,0 milyon TL",
+     "not": "Artış %180,8"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118738652930916566",
+  "x_gorsel_hata": null
  }
 ]
