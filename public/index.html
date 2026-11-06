@@ -2545,6 +2545,7 @@ function renderFon(k){document.documentElement.style.setProperty('--co','var(--a
   app.innerHTML=`<section class="home-hero"><div class="eyebrow"><a href="/fon/" data-go="FON">Fonlar</a> · ${esc(f.kurucu||'')}</div><h1>${f.kod}</h1><p>${esc(fonAd(f.ad))}</p></section>
   <div class="fstat"><div><span>Fon büyüklüğü</span><b>${fonTL(f.toplam)}</b></div><div><span>Hisse payı</span><b>%${nf(f.hisse_ag,1)}</b></div><div><span>Hisse sayısı</span><b>${f.n}</b></div><div><span>Getiri · 1 ay / 1 yıl</span><b style="font-size:17px">${fonGet(f.getiri?.['1a'])} <span class="note">·</span> ${fonGet(f.getiri?.['1y'])}</b></div><div><span>Rapor dönemi</span><b>${fonDon(f.donem)}</b></div></div>
   <div class="fgrid">${fonDonut(f)}<section class="fpan panel" id="fonalan"><h3>Son 1 yıl · pay fiyatı</h3><p class="note">Yükleniyor…</p></section></div>
+  ${fonYigin(f)}
   <section class="fpan panel"><h3>Tüm hisseler · ${fonDon(f.donem)} sonu</h3>${bars}<p class="note">Ağırlık = hissenin değeri ÷ fon toplam değeri. Kaynak: <a href="https://www.kap.org.tr/tr/Bildirim/${f.bildirim}" target="_blank" rel="noopener">KAP Portföy Dağılım Raporu</a>.</p></section>
   ${D?`<section class="fpan panel"><h3>${fonDon(D.onceki)} → ${fonDon(f.donem)} değişim</h3><div class="fgrid"><div><p><b>Portföye girenler</b><br>${lst(D.eklenen.map(x=>[x]))}</p><p><b>Portföyden çıkanlar</b><br>${lst(D.cikan.map(x=>[x]))}</p></div><div><p><b>Ağırlığı en çok artanlar</b><br>${lst(D.artan,1)}</p><p><b>Ağırlığı en çok azalanlar</b><br>${lst(D.azalan,1)}</p></div></div></section>`:''}
   <div class="fgrid"><section class="fpan panel"><h3>${fonDon(f.donem)} içinde alışlar</h3>${isl(f.alis)}</section><section class="fpan panel"><h3>${fonDon(f.donem)} içinde satışlar</h3>${isl(f.satis)}</section></div>
@@ -2582,6 +2583,31 @@ function fonAlan(kod){const el=document.getElementById('fonalan');if(!el)return;
 .fleg{list-style:none;margin:0;padding:0;flex:1;min-width:180px;font-size:14px}.fleg li{display:grid;grid-template-columns:12px 1fr auto;gap:8px;align-items:center;padding:3px 0}.fleg i{width:12px;height:12px;border-radius:3px}.fleg a{color:var(--fg);font-weight:700;text-decoration:none}.fleg a:hover{color:var(--accent)}.fleg b{font-variant-numeric:tabular-nums}
 .fal{position:relative}.fal svg{width:100%;height:auto;display:block;touch-action:pan-y}.fal-g{stroke:var(--line);stroke-dasharray:3 4}.fal-x{font:11px var(--f-body);fill:var(--muted)}.fal-c{stroke:var(--muted);stroke-dasharray:3 3}
 .fal-t{position:absolute;top:0;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:3px 8px;font-size:12px;white-space:nowrap;pointer-events:none}</style>`)})();
+
+/* aylara göre portföy dağılımı: yığılmış alan grafiği (f.gecmis: ay[], seri{kod:[%]}, diger[], disi[]) */
+function fonYigin(f){const G=f.gecmis;if(!G||!G.ay||G.ay.length<2)return `<section class="fpan panel"><h3>Aylara göre portföy dağılımı</h3><p class="note">Bu grafik için en az iki aylık rapor gerekiyor; şu an ${G&&G.ay?G.ay.length:0} ay var.</p></section>`;
+  const AY=['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'],al=p=>AY[+p.slice(5)-1]+' '+p.slice(2,4);
+  const K=Object.keys(G.seri),L=[...K.map((k,i)=>[k,G.seri[k],FONPAL[i%FONPAL.length]]),['Diğer hisseler',G.diger,'#9aa5b4'],['Hisse dışı',G.disi,'#d5dbe3']];
+  const n=G.ay.length,W=innerWidth<700?400:640,H=innerWidth<700?280:260,pl=34,pr=10,pt=10,pb=26,X=i=>pl+(W-pl-pr)*i/(n-1),Y=v=>pt+(H-pt-pb)*(1-v/100);
+  const tot=G.ay.map((_,i)=>Math.max(100,L.reduce((s,l)=>s+(l[1][i]||0),0)));let alt=G.ay.map(()=>0);
+  const kat=L.map(([k,v,c])=>{const ust=alt.map((a,i)=>a+100*(v[i]||0)/tot[i]);
+    const d='M'+ust.map((u,i)=>X(i).toFixed(1)+' '+Y(u).toFixed(1)).join('L')+'L'+alt.map((a,i)=>[i,a]).reverse().map(([i,a])=>X(i).toFixed(1)+' '+Y(a).toFixed(1)).join('L')+'Z';alt=ust;
+    return `<path d="${d}" fill="${c}" fill-opacity=".9" stroke="var(--panel)" stroke-width=".6"><title>${esc(k)}</title></path>`}).join('');
+  const gy=[0,25,50,75,100].map(v=>`<line x1="${pl}" x2="${W-pr}" y1="${Y(v)}" y2="${Y(v)}" class="fal-g"/><text x="${pl-5}" y="${Y(v)+4}" text-anchor="end" class="fal-x">%${v}</text>`).join('');
+  const adim=Math.max(1,Math.ceil(n/7)),xt=G.ay.map((p,i)=>(i%adim||(i!==n-1&&n-1-i<adim))&&i!==n-1?'':`<text x="${X(i).toFixed(1)}" y="${H-8}" text-anchor="${i===0?'start':i===n-1?'end':'middle'}" class="fal-x">${al(p)}</text>`).join('');
+  const leg=L.map(([k,v,c])=>`<span><i style="background:${c}"></i>${BY[k]?`<a href="/sirket/${k.toLowerCase()}/" data-go="${k}">${k}</a>`:/^(Diğer|Hisse dışı)/.test(k)?esc(k):`<b>${esc(k)}</b>`}</span>`).join('');
+  setTimeout(()=>{const el=document.getElementById('fonyigin');if(!el)return;const svg=el.querySelector('svg'),c=el.querySelector('.fal-c'),tt=el.querySelector('.fal-t');
+    const mv=e=>{const b=svg.getBoundingClientRect(),cx=((e.touches?e.touches[0].clientX:e.clientX)-b.left)*W/b.width;let i=Math.round((cx-pl)/(W-pl-pr)*(n-1));i=Math.max(0,Math.min(n-1,i));
+      c.setAttribute('x1',X(i));c.setAttribute('x2',X(i));c.setAttribute('visibility','visible');
+      tt.hidden=false;tt.innerHTML=`<b>${al(G.ay[i])}</b><br>`+L.map(([k,v,cc])=>`<i style="background:${cc}"></i>${esc(k)} %${nf(v[i]||0,1)}`).reverse().join('<br>');
+      const x=X(i)*b.width/W;tt.style.left=(x>b.width/2?Math.max(0,x-tt.offsetWidth-10):x+10)+'px'};
+    svg.addEventListener('mousemove',mv);svg.addEventListener('touchmove',mv,{passive:true});svg.addEventListener('mouseleave',()=>{c.setAttribute('visibility','hidden');tt.hidden=true})},0);
+  return `<section class="fpan panel" id="fonyigin"><h3>Aylara göre portföy dağılımı · ${al(G.ay[0])} – ${al(G.ay[n-1])}</h3>
+   <div class="fal fyig"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${f.kod} aylara göre portföy dağılımı yığılmış alan grafiği">${kat}${gy}${xt}<line class="fal-c" x1="0" x2="0" y1="${pt}" y2="${H-pb}" visibility="hidden"/><rect x="0" y="0" width="${W}" height="${H}" fill="transparent"/></svg><div class="fal-t" hidden></div></div>
+   <div class="fyleg">${leg}</div><p class="note">Her ay sonu Portföy Dağılım Raporu'ndan. Renkli katmanlar, dönem boyunca ortalama ağırlığı en yüksek 8 hisse; toplam %100 = fon toplam değeri.</p></section>`}
+(function(){if(document.getElementById('fonyiginstil'))return;document.head.insertAdjacentHTML('beforeend',`<style id="fonyiginstil">
+.fyleg{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;margin-top:8px}.fyleg span{display:inline-flex;align-items:center;gap:6px}.fyleg i,.fyig .fal-t i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px}
+.fyleg a{color:var(--fg);font-weight:700;text-decoration:none}.fyig .fal-t{line-height:1.5}@media(max-width:700px){.fyig .fal-t{font-size:11px;padding:2px 6px}}</style>`)})();
 
 function fonKutu(t){if(!FONV){fonYukle();return}const L=FONV.hisse?.[t];if(!L||!L.length||!app)return;
   const el=document.createElement('section');el.className='panel fpan fonkutu';
