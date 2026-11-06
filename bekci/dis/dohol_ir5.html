@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/Assets/images/favicon.png">
+    <title>Investor Presentations - Do&#x11F;an Holding</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Assets/css/bootstrap-fix.css">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" href="/Assets/css/ie10-viewport-bug-workaround.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="/Assets/css/custom.css?24092021">
+    <link rel="stylesheet" href="/Assets/style.css">
+    <link rel="stylesheet" href="/Assets/css/responsive.css?23092021">
+    <link rel="stylesheet" href="/Assets/css/responsive-additional.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="/Assets/css/plugins.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Fonts -->
+    <!--
+    <link href="/Assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/Assets/fonts/font-awesome/css/font-awesome.min-new.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/915e4f5ab7.js" crossorigin="anonymous"></script>
+    -->
+    <link rel="stylesheet" href="/Assets/fonts/ionicons/css/ionicons.min.css">
+
+    <script src="/Assets/js/jquery.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZS7CE15CWE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZS7CE15CWE');
+    </script>
+
+    
+
+    <style>
+        .ozetFinans .table tbody tr td {
+            padding: 27px 31px;
+        }
+
+        .xTiwIcon {
+        }
+
+            .xTiwIcon i.xIc {
+                width: 22px;
+                height: 20px;
+                display: inline-block;
+                background: url('/Assets/images/twitter-icon_n.png') no-repeat 0 0;
+            }
+
+            .xTiwIcon:hover i.xIc {
+                background: url('/Assets/images/twitter-icon_n_over.png') no-repeat 0 0;
+            }
+
+        ._menuText ._social .xTiwIcon i.xIc {
+            width: 20px;
+            height: 18px;
+            display: inline-block;
+            background: url('/Assets/images/twitter-icon_n-menu.png') no-repeat 0 0;
+        }
+
+        ._menuText ._social .xTiwIcon:hover i.xIc {
+            background: url('/Assets/images/twitter-icon_n-menu_over.png') no-repeat 0 0;
+        }
+
+        ._box ._link.linkEd {
+            margin-left: 10px;
+        }
+
+        .blackTable {
+            border: 1px solid #000;
+        }
+
+            .blackTable td {
+                border: 1px solid #000;
+                text-align: center;
+                vertical-align: middle;
+                padding: 10px 0;
+            }
+
+        .ozetFinans.newLBi table {
+            margin: 0 auto;
+        }
+
+        ._navItems ._nav ul li.hasSub {
+            margin-bottom: 10px;
+        }
+
+            ._navItems ._nav ul li.hasSub > span {
+                position: relative;
+                font-size: 19px;
+                line-height: 1.68;
+                letter-spacing: -0.4px;
+                color: #76879e;
+                display: inline-block;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+            }
+
+                ._navItems ._nav ul li.hasSub > span:hover, ._navItems ._nav ul li.hasSub.active > span {
+                    color: #16509f;
+                }
+
+                ._navItems ._nav ul li.hasSub > span:after {
+                    content: '';
+                    position: absolute;
+                    width: 6px;
+                    height: 11px;
+                    top: 12px;
+                    right: -20px;
+                    background: url(https://www.doganholding.com.tr/Assets/images/arrow-forward-blue.png) no-repeat;
+                }
+
+                ._navItems ._nav ul li.hasSub > span.act:after {
+                    transform: rotate(90deg);
+                }
+
+            ._navItems ._nav ul li.hasSub ul {
+                display: none;
+                position: relative;
+                left: inherit;
+                top: inherit;
+                min-width: inherit;
+                -webkit-transform: none;
+                margin-bottom: 15px;
+            }
+
+                ._navItems ._nav ul li.hasSub ul li {
+                    list-style-type: disclosure-closed;
+                    list-style-position: inside;
+                    padding-left: 10px;
+                    margin-bottom: 0;
+                }
+
+                    ._navItems ._nav ul li.hasSub ul li::marker {
+                        font-size: 11px;
+                    }
+
+                    ._navItems ._nav ul li.hasSub ul li a {
+                        font-size: 14px;
+                    }
+                    
+                    
+        ._history li p.greyT { color: #c0c0c0; }
+    </style>
+    <script>
+        $( document ).ready(function() {
+
+            $('._navItems ._nav ul li.hasSub span').click(function(){
+                $(this).next("ul").slideToggle();
+                $(this).toggleClass("act");
+                $(this).closest("li.hasSub").siblings().find('ul').slideUp().prev("span").removeClass("act");
+            });
+
+            $('.inPageNav ul li span').click(function(){
+                $(this).next("ul").slideToggle();
+                $(this).parent("li").toggleClass("active");
+                $(this).closest("li").siblings().find('ul').slideUp().parent("li").removeClass("active");
+            });
+            
+            var playermodal;
+            jQuery("a.fancybox").fancybox({
+                smallBtn:false,
+                lang: "en",
+                i18n: {
+                    en: {
+                    CLOSE: "Close"
+                    },
+                    tr: {
+                        CLOSE: "Kapat"
+                    }
+                },
+              afterShow : function() {
+
+                const player = new Plyr('#player', {
+                    autoplay: true,
+                    controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'pip', 'airplay', 'fullscreen']
+                });
+                jQuery("#film60th").addClass("loadingvideo");
+
+                playermodal = player;
+
+                player.on('playing', event => {
+                    const instance = event.detail.plyr;
+                    jQuery("#film60th").removeClass("loadingvideo");
+                });
+
+                player.on('timeupdate', event => {
+                    const instance = event.detail.plyr;
+                    if(player.currentTime > 142){
+                        player.stop();
+                        $.fancybox.close();
+                    }
+                });
+
+              },
+
+              beforeClose : function() {
+                playermodal.destroy();
+              }
+
+
+            });
+
+        });
+    </script>
+
+</head>
+<body class=" en pageCat_4017">
+
+    <!-- PreLoader -->
+    <div class="_preLoader"></div>
+
+    <div class="_wrap">
+        
+
+<!-- Navigation -->
+
+    <a href="/en/investor-relations/" class="custRelMobBtn showMob">
+        <span>Investor Relations</span>
+        <i class="fa fa-angle-down"></i>
+    </a>
+
+<section class="_navigation animated _adj">
+    <div class="_holder">
+        <!-- Logo -->
+        <div class="_logo">
+            <a href="/en">
+                <img src="/media/3013/dogan-holding-logo-1-tr.png" alt="" />
+
+
+                        <img src="/media/3014/dogan-holding-logo-2-en.png" alt="" />
+
+
+
+            </a>
+        </div>
+        <!-- Right Meta -->
+        <div class="_headMeta">
+            <!--<img src="/Assets/images/great-place_badge.png" class="greatBadge" alt="Great Place" />-->
+                <a href="/en/investor-relations/" class="btn custRelTopBtn showDes">
+                    Investor Relations
+                </a>
+            <!-- Language Selector -->
+            <div class="_lang font-spr">
+                            <a title="Türkçe" href="/yatirimci-iliskileri/sunumlar/yatirimci-sunumu/">
+                                TR
+                            </a>
+                            <a class="active" title="English">EN</a>
+            </div>
+            <!-- Search -->
+            <div class="_search">
+                <a href="#">
+                    <i class="ion-ios-search"></i>
+                </a>
+            </div>
+            <!-- Menu Toggle -->
+            <div class="_menuToggle">
+                <div class="_inner">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="_navItems _lines text-center">
+    <div class="middle">
+        <div>
+            <div class="_max900 _relative _z9">
+                <div class="row">
+                    <div class="col-lg-4 text-left my-auto font-spb">
+                        <ul class="_nav">
+                                        <li>
+                                            <a href="#">Corporate</a>
+
+                                                <ul>
+                                                            <li class="">
+                                                                    <a href="/en/corporate/about-dogan-group/">About Do&#x11F;an Group</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/corporate/our-founder/">Our Founder</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/corporate/message-from-the-ceo/">Message from the CEO</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/corporate/our-philosophy-principles/">Our Philosophy &amp; Principles</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/corporate/board-of-directors/">Board of Directors</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/corporate/our-leaders/">Our Leaders</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/corporate/history/">History</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/corporate/shareholder-structure/">Shareholder Structure</a>
+                                                            </li>
+
+                                                </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sectors</a>
+
+                                                <ul>
+                                                            <li class="">
+                                                                    <a href="/en/sectors/electricity-generation/">Electricity Generation</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sectors/industry-trade/">Industry &amp; Trade</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sectors/mining/">Mining</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sectors/automotive-trade-and-marketing/">Automotive Trade and Marketing</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sectors/finance-and-investment/">Finance and Investment</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sectors/internet-entertainment/">Internet &amp; Entertainment</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sectors/real-estate-investment/">Real Estate Investment</a>
+                                                            </li>
+
+                                                </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sustainability</a>
+
+                                                <ul>
+                                                            <li class="">
+                                                                    <a href="/en/sustainability/better-is-possible/">Better Is Possible</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sustainability/overview/">Overview</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sustainability/sustainability-committee/">Sustainability Committee</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sustainability/corporate-social-responsibility/">Corporate Social Responsibility</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sustainability/reports-guidelines/">Reports &amp; Guidelines</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sustainability/aydin-dogan-foundation/">Ayd&#x131;n Do&#x11F;an Foundation</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sustainability/occupational-health-and-safety/">Occupational Health and Safety</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/sustainability/dogan-group-s-environmental-policy/">Do&#x11F;an Group&#x2019;s Environmental Policy</a>
+                                                            </li>
+
+                                                </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Investor Relations</a>
+
+                                                <ul>
+                                                        <li>
+                                                            <a href="/en/investor-relations/">Investor Relations Overview</a>
+                                                        </li>
+                                                            <li class="hasSub">
+                                                                    <span><a href="/en/investor-relations/company-and-stock-information/">Company and Stock Information</a></span>
+                                                                        <ul>
+                                                                            
+                                                                                    <li class=""><a href="/en/investor-relations/company-and-stock-information/company-profile/">Company Profile</a> </li>
+                                                                                            <li class=""><a href="/en/investor-relations/company-and-stock-information/company-profile/company-information/">Company Information</a></li>
+                                                                                            <li class=""><a href="/en/investor-relations/company-and-stock-information/company-profile/stock-profile/">Stock Profile</a></li>
+                                                                                            <li class=""><a href="/en/investor-relations/company-and-stock-information/company-profile/shareholder-structure/">Shareholder Structure</a></li>
+                                                                                    <li class=""><a href="/en/investor-relations/company-and-stock-information/equity-research-analysts/">Equity Research Analysts</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/company-and-stock-information/merger/">Merger</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/company-and-stock-information/buy-back-program/">Buy-Back Program</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/company-and-stock-information/dividend-payments/">Dividend Payments</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/company-and-stock-information/capital-increase/">Capital Increase</a> </li>
+                                                                        </ul>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/investor-relations/financial-results/">Financial Results</a>
+                                                            </li>
+                                                            <li class="hasSub">
+                                                                    <span><a href="/en/investor-relations/presentations/">Presentations</a></span>
+                                                                        <ul>
+                                                                            
+                                                                                    <li class=""><a href="/en/investor-relations/presentations/investor-presentations/">Investor Presentations</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/financial-results/">Earnings Presentation</a> </li>
+                                                                        </ul>
+                                                            </li>
+                                                            <li class="hasSub">
+                                                                    <span><a href="/en/investor-relations/material-disclosures/">Material Disclosures</a></span>
+                                                                        <ul>
+                                                                            
+                                                                                    <li class=""><a href="/en/investor-relations/material-disclosures/developments-in-the-lawsuit-against-company/">Developments in the Lawsuit Against Company</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/material-disclosures/competition-authoritys-approval-for-the-sale-of-ditas-shares/">Competition Authority&#x27;s Approval for the Sale of DITAS Shares</a> </li>
+                                                                        </ul>
+                                                            </li>
+                                                            <li class="hasSub">
+                                                                    <span><a href="/en/investor-relations/corporate-governance/">Corporate Governance</a></span>
+                                                                        <ul>
+                                                                            
+                                                                                    <li class=""><a href="/en/investor-relations/corporate-governance/articles-of-association/">Articles of Association</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/corporate-governance/board-of-directors/">Board of Directors</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/corporate-governance/committees/">Committees</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/corporate-governance/corporate-governance-reports/">Corporate Governance Reports</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/corporate-governance/policies/">Policies</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/corporate-governance/ethics-hotline/">Ethics Hotline</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/corporate-governance/code-of-ethics-and-business-conduct/">Code of Ethics and Business Conduct</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/corporate-governance/general-assembly-meetings/">General Assembly Meetings</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/corporate-governance/independent-audit-company/">Independent Audit Company</a> </li>
+                                                                                    <li class=""><a href="/en/investor-relations/corporate-governance/corporate-governance-rating/">Corporate Governance Rating</a> </li>
+                                                                        </ul>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/investor-relations/contacts/">Contacts</a>
+                                                            </li>
+
+                                                </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">News &amp; Bulletins</a>
+
+                                                <ul>
+                                                            <li class="">
+                                                                    <span><a href="/en/news-bulletins/news-bulletins/">News &amp; Bulletins</a></span>
+                                                                        <ul>
+                                                                            
+                                                                        </ul>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/news-bulletins/gallery/">Gallery</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/news-bulletins/videos/">Videos</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/news-bulletins/press-contact/">Press Contact</a>
+                                                            </li>
+
+                                                </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Human Resources</a>
+
+                                                <ul>
+                                                            <li class="">
+                                                                    <a href="/en/human-resources/human-resources-policy/">Human Resources Policy</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/human-resources/working-at-dogan-holding/">Working at Do&#x11F;an Holding</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/human-resources/careers-at-dogan-holding/">Careers at Do&#x11F;an Holding</a>
+                                                            </li>
+
+                                                </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact Us</a>
+
+                                                <ul>
+                                                            <li class="">
+                                                                    <a href="/en/contact-us/contact-information/">Contact Information</a>
+                                                            </li>
+                                                            <li class="">
+                                                                    <a href="/en/contact-us/companies-of-the-group/">Companies of the Group</a>
+                                                            </li>
+
+                                                </ul>
+                                        </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 offset-lg-4 my-auto">
+                        <div class="_menuText text-left">
+                            <p>
+                                <span class="font-spb">Doğan Şirketler Grubu Holding A.Ş.</span> <br />
+                                Burhaniye Mahallesi Kısıklı Caddesi No: 65<br>34676  Üsküdar/İstanbul
+                            </p>
+                            <p><span class="font-spb">+90 (216) 556 90 00</span></p>
+                            <div class="_social">
+                                <a href="https://twitter.com/doganholding" title="Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://facebook.com/doganholding" title="Facebook" target="_blank"><i class="fa fa-facebook-f"></i> </a>
+                                <a href="https://www.linkedin.com/company/doganholding" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                                <a href="https://instagram.com/doganholding" title="Instagram" target="_blank"><i class="fa fa-instagram"></i> </a>
+                                <a href="https://www.youtube.com/channel/UCQNYgardn_hyMOeWCTnnL5Q" target="_blank"><i class="fa fa-youtube-play"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Social & Copyright -->
+    <div class="_socialCopy">
+        <div class="_inner">
+            <div class="row">
+                <div class="col-lg-6 my-auto">
+                    <div class="_social">
+                        <a href="https://twitter.com/doganholding" title="Twitter" target="_blank" class="xTiwIcon"><i class="xIc"></i><!--<i class="fa fa-twitter"></i>--> </a>
+                        <a href="https://facebook.com/doganholding" title="Facebook" target="_blank"><i class="fa fa-facebook-f"></i> </a>
+                        <a href="https://www.linkedin.com/company/doganholding" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                        <a href="https://instagram.com/doganholding" title="Instagram" target="_blank"><i class="fa fa-instagram"></i> </a>
+                        <a href="https://www.youtube.com/channel/UCQNYgardn_hyMOeWCTnnL5Q" target="_blank"><i class="fa fa-youtube-play"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="_extraLayer"></span>
+</section>
+
+        
+
+<!-- Search -->
+<section class="_searchOverlay _lines">
+    <div class="_holder _relative _z9">
+        <div class="_sForm">
+                    <form action="/en/search-results/" method="get">
+                        <input type="search" name="keyword" placeholder="Search…" required />
+                        <button type="submit"><i class="fa fa-angle-right"></i></button>
+                    </form>
+            <span class="_sIcon">
+                <i class="ion-ios-search"></i>
+            </span>
+        </div>
+    </div>
+</section>
+
+        
+
+
+
+<section class="_bd _lines" style="display:none">
+    <!-- Breadcrumbs -->
+    <div class="_breadCrumb _relative _z9">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/en">Home Page</a></li>
+                <li class="breadcrumb-item"><a>Investor Relations</a></li>
+                <!--<li class="breadcrumb-item"><a href="/en/investor-relations/presentations/">Investor Relations</a></li>-->
+                <li class="breadcrumb-item active" aria-current="page">Presentations</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+
+<!-- Content -->
+<section class="__content _lines">
+    <div class="plr-155 _relative _z9 _shapes _tables newSubNaviPages">
+        <a href="/en/investor-relations/presentations/" class="newLTopBackBtn">Back</a>
+        
+        <div class="subNavPageCont">
+
+            
+
+
+<a href="#" class="inPageNavMobilBtn">
+            <span>Investor Relations Menu</span>
+    
+    <div class="innavInner">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</a>
+
+
+<div class="inPageNav">
+    <ul>
+                        <li class="">
+                            <span><a href="/en/investor-relations/company-and-stock-information/">Company and Stock Information</a></span>
+                                    <ul style="display:none">
+                                        
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/company-and-stock-information/company-profile/">Company Profile</a>
+                                                    </li>
+                                                            <li class=""><a href="/en/investor-relations/company-and-stock-information/company-profile/company-information/">Company Information</a></li>
+                                                            <li class=""><a href="/en/investor-relations/company-and-stock-information/company-profile/stock-profile/">Stock Profile</a></li>
+                                                            <li class=""><a href="/en/investor-relations/company-and-stock-information/company-profile/shareholder-structure/">Shareholder Structure</a></li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/company-and-stock-information/equity-research-analysts/">Equity Research Analysts</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/company-and-stock-information/merger/">Merger</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/company-and-stock-information/buy-back-program/">Buy-Back Program</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/company-and-stock-information/dividend-payments/">Dividend Payments</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/company-and-stock-information/capital-increase/">Capital Increase</a>
+                                                    </li>
+                                    </ul>
+                        </li>
+                        <li class=""><a href="/en/investor-relations/financial-results/">Financial Results</a></li>
+                        <li class="active">
+                            <span><a href="/en/investor-relations/presentations/">Presentations</a></span>
+                                    <ul style="display:block">
+                                        
+                                                    <li class="active">
+                                                        <a href="/en/investor-relations/presentations/investor-presentations/">Investor Presentations</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/financial-results/">Earnings Presentation</a>
+                                                    </li>
+                                    </ul>
+                        </li>
+                        <li class=""><a href="/en/investor-relations/material-disclosures/">Material Disclosures</a></li>
+                        <li class="">
+                            <span><a href="/en/investor-relations/corporate-governance/">Corporate Governance</a></span>
+                                    <ul style="display:none">
+                                        
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/corporate-governance/articles-of-association/">Articles of Association</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/corporate-governance/board-of-directors/">Board of Directors</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/corporate-governance/committees/">Committees</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/corporate-governance/corporate-governance-reports/">Corporate Governance Reports</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/corporate-governance/policies/">Policies</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/corporate-governance/ethics-hotline/">Ethics Hotline</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/corporate-governance/code-of-ethics-and-business-conduct/">Code of Ethics and Business Conduct</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/corporate-governance/general-assembly-meetings/">General Assembly Meetings</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/corporate-governance/independent-audit-company/">Independent Audit Company</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/en/investor-relations/corporate-governance/corporate-governance-rating/">Corporate Governance Rating</a>
+                                                    </li>
+                                    </ul>
+                        </li>
+                        <li class=""><a href="/en/investor-relations/contacts/">Contacts</a></li>
+
+    </ul>
+</div>
+
+            <div class="row newTempContArea">
+                <h1 class="_title text-center mb-100 wow fadeInUp">Investor Presentation</h1>
+                
+                <div class="yearFiltBox">
+                    <div>
+                        <label>Yıl</label>
+                        <select class="_filterT onlyYear">
+                                    <option value="2026" selected="selected">2026</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2022">2022</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                        <div class="_tg borderBottom" data-year="2026" style="display: block;">
+                            <a href="/media/jvdmyrep/dohol_investor-presentation_oct-2026.pdf" target="_blank" class="_head _adj">
+                                <h3>Investor Presentation</h3>
+                                <i class="fa fa-file-text"></i>
+                            </a>
+                        </div>
+                        <div class="_tg borderBottom" data-year="2025" style="display: none;">
+                            <a href="/media/uhxjexsi/dohol_investor-presentation_dec-2025.pdf" target="_blank" class="_head _adj">
+                                <h3>Investor Presentation</h3>
+                                <i class="fa fa-file-text"></i>
+                            </a>
+                        </div>
+                        <div class="_tg borderBottom" data-year="2025" style="display: none;">
+                            <a href="/media/rofgkeva/dohol_investor-day_investor-presentation_december-2025.pdf" target="_blank" class="_head _adj">
+                                <h3>Investor Day Presentation</h3>
+                                <i class="fa fa-file-text"></i>
+                            </a>
+                        </div>
+                        <div class="_tg borderBottom" data-year="2025" style="display: none;">
+                            <a href="/media/5mpnrl5e/dohol-2025-esg-reports-executive-summary.pdf" target="_blank" class="_head _adj">
+                                <h3>ESG Reports Summary</h3>
+                                <i class="fa fa-file-text"></i>
+                            </a>
+                        </div>
+                        <div class="_tg borderBottom" data-year="2024" style="display: none;">
+                            <a href="/media/3prnqe2i/dohol_investor-presentation_eng_march-2024-1.pdf" target="_blank" class="_head _adj">
+                                <h3>Investor Presentation 2024 - March</h3>
+                                <i class="fa fa-file-text"></i>
+                            </a>
+                        </div>
+                        <div class="_tg borderBottom" data-year="2024" style="display: none;">
+                            <a href="/media/uu3plel1/dohol_investor-day-presentation_vfinal-eng.pdf" target="_blank" class="_head _adj">
+                                <h3>Investor Presentation 2024 - December</h3>
+                                <i class="fa fa-file-text"></i>
+                            </a>
+                        </div>
+                        <div class="_tg borderBottom" data-year="2022" style="display: none;">
+                            <a href="/media/skzhbkfw/dohol_investor-day-presentation_eng.pdf" target="_blank" class="_head _adj">
+                                <h3>Investor Presentation</h3>
+                                <i class="fa fa-file-text"></i>
+                            </a>
+                        </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Footer -->
+        
+
+
+<footer>
+    <div class="_top _lines _relative">
+        <div class="container _relative _z9">
+            <!-- Row -->
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="_widget">
+                        <h5>SOCIAL MEDIA</h5>
+						<div class="_social newP">
+                            <a href="https://twitter.com/doganholding" title="Twitter" target="_blank"><img src="/Assets/images/social/x-twitter.svg" alt="" /></a>
+                            <a href="https://facebook.com/doganholding" title="Facebook" target="_blank"><img src="/Assets/images/social/facebook.svg" alt="" /></a>
+                            <a href="https://www.linkedin.com/company/doganholding" title="LinkedIn" target="_blank"><img src="/Assets/images/social/linkedin.svg" alt="" /></a>
+                            <a href="https://instagram.com/doganholding" title="Instagram" target="_blank"><img src="/Assets/images/social/instagram.svg" alt="" /></a>
+                            <a href="https://www.youtube.com/channel/UCQNYgardn_hyMOeWCTnnL5Q" title="YouTube" target="_blank"><img src="/Assets/images/social/youtube.svg" alt="" /></a>
+                        </div>
+						<!--
+                        <div class="_social">
+                            <a href="https://twitter.com/doganholding" title="Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://facebook.com/doganholding" title="Facebook" target="_blank"><i class="fa fa-brands fa-facebook-f"></i> </a>
+                            <a href="https://linkedin.com/company/dogan-sirketler-grubu-holidng-a-s-/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                            <a href="https://instagram.com/doganholding" title="Instagram" target="_blank"><i class="fa fa-instagram"></i> </a>
+                            <a href="https://www.youtube.com/channel/UCQNYgardn_hyMOeWCTnnL5Q" title="YouTube" target="_blank"><i class="fa fa-youtube-play"></i> </a>
+                        </div>
+						-->
+                        <div class="_copy">
+                            <p>© 2026 Doğan Şirketler Grubu Holding A.Ş. All right reserved.</p>
+							<p class="text-right"><small>Made by <a href="https://super-agency.com" target="_blank">SuperAgency</a></small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="_copyright text-center">
+        <ul>
+
+            			<li><a target="_blank" href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/10633">Information Society Services</a> </li>
+            			<li><a href="/en/legal-notice-and-terms-of-use/">Legal Notice and Terms of Use</a> </li>
+            			<li><a href="/en/personal-data-protection-policy/">Personal Data Protection Policy</a> </li>
+                        <li><a href="/en/investor-relations/corporate-governance/ethics-hotline/">Ethics Hotline</a> </li>
+
+
+        </ul>
+        <div class="_copy">
+            <p>© 2026 Doğan Şirketler Grubu Holding A.Ş. All right reserved.</p>
+			<p><small>Made by <a href="https://super-agency.com" target="_blank">SuperAgency</a></small></p>
+        </div>
+    </div>
+</footer>
+
+        <!-- Cookie -->
+
+        <div class="cookieBox closed">
+            <a href="#" class="openCookieBox"><span>COOKIE SETTINGS</span><img src="/Assets/images/cokie-open-icon.svg" alt="" /></a>
+
+            <div class="cookieContArea">
+                <a href="#" class="closeCokBox"><img src="/Assets/images/cokie-close-icon.svg" alt="" /></a>
+                <div class="_inner">
+                    <div class="row">
+                        <div class="col-lg-12 text-left">
+                            <h4>This website uses cookies</h4>
+                        </div>
+                        <div class="col-lg-12 text-left mb40">
+                            <p>This website uses cookies to improve the user experience. By using our website, you consent to all cookies in accordance with our Cookie Policy. <a href="/en/cookie-policy/">Read more.</a></p>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="cookie_1" id="cookie_1" checked disabled readonly />
+                                    <label for="cookie_1">ABSOLUTELY NECESSARY COOKIES</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="cookie_2" id="cookie_2" />
+                                    <label for="cookie_2">PERFORMANCE COOKIES</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="cookie_3" id="cookie_3" />
+                                    <label for="cookie_3">TARGETING COOKIES</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="cookie_4" id="cookie_4" />
+                                    <label for="cookie_4">FUNCTIONAL COOKIES</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="cookie_5" id="cookie_5" />
+                                    <label for="cookie_5">UNCLASSIFIED COOKIES</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 text-right cookieButtons">
+                            <a href="#" class="btn btn-gray acceptBtn">ACCEPT ALL COOKIES</a>
+                        </div>
+                        <div class="col-lg-6 text-right cookieButtons">
+                            <a href="#" class="btn btn-gray rejectBtn">REJECT ALL COOKIES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/Assets/js/bootstrap.min.js"></script>
+    <!-- Plugins -->
+    <script src="/Assets/js/plugins.js"></script>
+    <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+    <!-- Custom -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="/Assets/js/jquery.paginate.js"></script>
+    <script src="/Assets/js/js.cookie.min.js"></script>
+    <script src="/Assets/js/custom.js?2.0"></script>
+
+    <script>
+        var pageLink = $(location).attr('pathname');
+        if(pageLink == "/haberler-ve-bultenler/galeri/" || pageLink == "/en/news-bulletins/gallery/"){
+            setTimeout(function() {
+                $(".companyLogoFiles .companyLogoFilesSectorTitle:nth-child(6)").hide();
+            }, 1000);
+        }
+    </script>
+
+    
+
+    <!--
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-49405391-1', 'doganholding.com.tr',{'storage': 'none'});
+        ga('send', 'pageview');
+    </script>
+    -->
+
+</body>
+</html>
