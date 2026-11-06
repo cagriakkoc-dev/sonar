@@ -36,9 +36,10 @@ jobs:
           YENIDEN: ${{ inputs.yeniden }}
           FON_KAYNAK: ${{ runner.temp }}
         run: python3 bekci/fon/kap_pdr.py
+      - run: python3 bekci/fon/yeniden_ayristir.py
       - run: python3 bekci/fon/dizin.py
       - run: python3 -c "import json;k=json.load(open('veri/fon/son_kosu.json'));print({x:len(k[x]) for x in ('basarili','atlandi','hata')});print(json.dumps(k['hata'],ensure_ascii=False)[:3000])"
       - run: |
           git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
-          git add veri/fon public/veri/fon
+          git add -A veri/fon public/veri/fon
           git diff --cached --quiet || (git commit -q -m "Fon PDR verisi" && for n in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 5; done)
