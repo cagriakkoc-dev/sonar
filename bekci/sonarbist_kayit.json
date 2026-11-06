@@ -7839,5 +7839,107 @@
   "tur": "SPK basın duyurusu (kapalı fonlar)",
   "gerekce": "SPK, daha önce ilan edilen kapalı fonlara ilişkin kararları yineleyip işleme açılmanın yanlış yönlendirmelerle gündeme gelmesini düzeltiyor; yeni bir karar ya da borsada işlem gören belirli bir şirket üzerinde ölçülebilir finansal etki yok, 80 puanlık zorunlu türlerden hiçbirine de girmiyor.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694309",
+  "hisse": "OSMEN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-06T15:52:40+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 4,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "OSMEN 06.11.2026'da yaklaşık 1,17 milyon TL'lik 259.959 nominal pay geri aldı (sermayenin %0,06'sı) ve programdaki toplam 2.488.745 adede (%0,62) ulaştı; günlük tutar piyasa değerine göre çok küçük olsa da pay geri alımı her zaman önemli sayıldığı için taban puan 80 verildi.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1694313",
+  "hisse": "TUKAS",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-06T15:52:46+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 32,
+   "yenilik": 16,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "finansal sonuç",
+  "gerekce": "9 aylık bilançoda hasılat %5,7 artsa da brüt ve esas faaliyet kârı belirgin düştü, net dönem sonucu geçen yılki 1,4 milyar TL kârdan 691,9 milyon TL zarara döndü; finansal sonuç bildirimi olduğu için en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1694315",
+  "hisse": "AGESA",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-06T15:52:55+00:00",
+  "mod": "golge",
+  "puan": 45,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "aylık prim üretimi açıklaması",
+  "gerekce": "Ocak-Ekim 2026 prim üretimi 27,3 milyar TL ile yıllık %41 artmış ve gerçekleşmiş veri olsa da bu bir bilanço, temettü veya yeni sözleşme değil, dönemsel operasyonel bilgilendirmedir; bu yüzden zorunlu 80+ gruba girmez ve orta puan alır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694329",
+  "hisse": "ERBOS",
+  "baslik": "Herhangi Bir Otoriteye Mali Tablo Verilmesi",
+  "t": "2026-11-06T15:53:01+00:00",
+  "mod": "golge",
+  "puan": 28,
+  "alt": {
+   "fin": 7,
+   "yenilik": 5,
+   "kapsam": 6,
+   "kesinlik": 8,
+   "ilgi": 2
+  },
+  "tur": "Vergi dairesine mali tablo verilmesi (geçici vergi)",
+  "gerekce": "Bildirim, SPK mevzuatına göre hazırlanmamış gelir tablosunun geçici vergi beyannamesi ekinde vergi dairesine sunulduğunu duyuran usulî bir bildirimdir; finansal sonuç açıklaması sayılmaz, yeni bilgi içermez ve şirket küçük ölçekli olduğu için ilgisi düşüktür.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694336",
+  "hisse": "ENTRA",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-06T15:53:07+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 24,
+   "yenilik": 15,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "9 aylık bilançoda hasılat %22,4 düşse de net sonuç 713,1 milyon TL zarardan 645,1 milyon TL kâra döndü; finansal sonuç türü editör kuralıyla en az 80 puan aldı ve bileşen toplamı bu taban nedeniyle puandan düşüktür.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1694337",
+  "hisse": "ENTRA",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-06T15:53:16+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
  }
 ]
