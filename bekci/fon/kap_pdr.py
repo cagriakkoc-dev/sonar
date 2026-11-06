@@ -62,7 +62,7 @@ def main():
     elif kodlar == ["PILOT"]: kodlar = (["MAC"] + [k for k in HSY if k != "MAC"])[:15]
     print("fon sayısı", len(kodlar))
     sp = os.path.join(VERI, "son_kosu.json")
-    kosu = {"zaman": datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z", "basarili": [], "atlandi": [], "hata": []}
+    kosu = {"zaman": datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds") + "Z", "basarili": [], "atlandi": [], "hata": []}
     for kod in kodlar:
         oid = OIDS.get(kod)
         if not oid: kosu["hata"].append({"kod": kod, "neden": "kap_fon_oid.json'da yok"}); continue
@@ -75,6 +75,7 @@ def main():
                 kosu["atlandi"].append({"kod": kod, "donem": r["donem"]}); continue
             try:
                 metin, ekler = pdf_metin(r["id"])
+                if len(metin.strip()) < 200: raise RuntimeError("metin yok (taranmış PDF)")
                 a = ayristir(metin)
                 if not a["dogrulama"]["tutuyor"] or os.environ.get("HAM"):  # ham metin yalnız tutmayan raporlarda saklanır (hata ayıklama)
                     os.makedirs(os.path.join(VERI, "ham", kod), exist_ok=True)
