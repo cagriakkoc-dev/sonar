@@ -2,286 +2,340 @@
  "fon_toplam_deger": 370088485.69,
  "fon_portfoy_degeri": 365947813.98,
  "islemler": {
-  "alis": [],
-  "satis": []
+  "alis": [
+   [
+    "GENIL",
+    9516574.75,
+    184
+   ],
+   [
+    "EBEBK",
+    9436616.2,
+    121
+   ],
+   [
+    "LKMNH",
+    2220470.69,
+    60
+   ]
+  ],
+  "satis": [
+   [
+    "EREGL",
+    8121523.54,
+    58
+   ],
+   [
+    "AVPGY",
+    4135588.37,
+    72
+   ],
+   [
+    "TUPRS",
+    4096101.25,
+    13
+   ],
+   [
+    "GRSEL",
+    3987282.4,
+    17
+   ],
+   [
+    "LOGO",
+    3884654.7,
+    171
+   ],
+   [
+    "BIMAS",
+    3238930.25,
+    21
+   ],
+   [
+    "ARASE",
+    3064322.55,
+    85
+   ],
+   [
+    "ASELS",
+    2931121.5,
+    37
+   ],
+   [
+    "GENIL",
+    2510543.5,
+    58
+   ],
+   [
+    "CIMSA",
+    1471262.9,
+    24
+   ],
+   [
+    "EGGUB",
+    1335757.2,
+    46
+   ],
+   [
+    "SARKY",
+    1271642.23,
+    52
+   ],
+   [
+    "NTGAZ",
+    1150114.38,
+    82
+   ],
+   [
+    "EKGYO",
+    1108798.0,
+    13
+   ],
+   [
+    "ALBRK",
+    920245.12,
+    14
+   ],
+   [
+    "ARDYZ",
+    856711.5,
+    15
+   ],
+   [
+    "MAVI",
+    846788.76,
+    19
+   ],
+   [
+    "EGPRO",
+    745773.52,
+    83
+   ],
+   [
+    "BASGZ",
+    559799.44,
+    7
+   ],
+   [
+    "EBEBK",
+    525022.65,
+    12
+   ],
+   [
+    "PLTUR",
+    320742.45,
+    21
+   ],
+   [
+    "LKMNH",
+    290009.02,
+    10
+   ],
+   [
+    "ELITE",
+    129349.36,
+    11
+   ]
+  ]
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 26,
+ "hisse_agirligi": 84.4047,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 312372106.05,
+  "hisse_grup_toplami": 312372106.05,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 3,
+  "bicim": "tr",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
-   "isin": "TRD090828T17",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 16247468.22,
-   "satir": 1,
-   "agirlik": 4.3902
+   "isin": "TRAASELS91H2",
+   "kod": "ASELS",
+   "deger": 34559118.0,
+   "satir": 2,
+   "agirlik": 9.3381
   },
   {
-   "isin": "TRD050231T12",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 10422076.66,
+   "isin": "TREBIMM00018",
+   "kod": "BIMAS",
+   "deger": 34360800.0,
+   "satir": 2,
+   "agirlik": 9.2845
+  },
+  {
+   "isin": "TRATUPRS91E8",
+   "kod": "TUPRS",
+   "deger": 31990842.0,
+   "satir": 2,
+   "agirlik": 8.6441
+  },
+  {
+   "isin": "TRAEREGL91G3",
+   "kod": "EREGL",
+   "deger": 26943262.64,
+   "satir": 2,
+   "agirlik": 7.2802
+  },
+  {
+   "isin": "TRACIMSA91F9",
+   "kod": "CIMSA",
+   "deger": 16866212.56,
+   "satir": 2,
+   "agirlik": 4.5573
+  },
+  {
+   "isin": "TRENTGZ00014",
+   "kod": "NTGAZ",
+   "deger": 16559002.2,
+   "satir": 2,
+   "agirlik": 4.4743
+  },
+  {
+   "isin": "TREGRSL00025",
+   "kod": "GRSEL",
+   "deger": 13581718.5,
+   "satir": 2,
+   "agirlik": 3.6699
+  },
+  {
+   "isin": "TRAEGGUB91E8",
+   "kod": "EGGUB",
+   "deger": 13433956.8,
+   "satir": 2,
+   "agirlik": 3.6299
+  },
+  {
+   "isin": "TREEGYO00017",
+   "kod": "EKGYO",
+   "deger": 12894023.61,
+   "satir": 2,
+   "agirlik": 3.484
+  },
+  {
+   "isin": "TREEBEB00025",
+   "kod": "EBEBK",
+   "deger": 12577410.85,
+   "satir": 2,
+   "agirlik": 3.3985
+  },
+  {
+   "isin": "TRASARKY91G6",
+   "kod": "SARKY",
+   "deger": 12394147.26,
+   "satir": 2,
+   "agirlik": 3.349
+  },
+  {
+   "isin": "TREBSGZ00037",
+   "kod": "BASGZ",
+   "deger": 10594901.0,
    "satir": 1,
-   "agirlik": 2.8161
+   "agirlik": 2.8628
+  },
+  {
+   "isin": "TREALBK00011",
+   "kod": "ALBRK",
+   "deger": 10005604.0,
+   "satir": 2,
+   "agirlik": 2.7036
+  },
+  {
+   "isin": "TREMAVI00037",
+   "kod": "MAVI",
+   "deger": 9273840.52,
+   "satir": 2,
+   "agirlik": 2.5058
+  },
+  {
+   "isin": "TRALOGOW91U2",
+   "kod": "LOGO",
+   "deger": 8740960.8,
+   "satir": 2,
+   "agirlik": 2.3619
+  },
+  {
+   "isin": "TREARDY00023",
+   "kod": "ARDYZ",
+   "deger": 8415774.5,
+   "satir": 2,
+   "agirlik": 2.274
+  },
+  {
+   "isin": "TREARAS00039",
+   "kod": "ARASE",
+   "deger": 8259720.0,
+   "satir": 2,
+   "agirlik": 2.2318
+  },
+  {
+   "isin": "TRAEGPRO91E8",
+   "kod": "EGPRO",
+   "deger": 7518975.12,
+   "satir": 2,
+   "agirlik": 2.0317
+  },
+  {
+   "isin": "TREGENL00024",
+   "kod": "GENIL",
+   "deger": 6926760.05,
+   "satir": 2,
+   "agirlik": 1.8716
   },
   {
    "isin": "TREAVRK00024",
    "kod": "AVPGY",
-   "ad": "TL     AVPGY",
-   "tur": "fon",
    "deger": 5591677.0,
    "satir": 2,
    "agirlik": 1.5109
   },
   {
-   "isin": "TREALBK00011",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREARAS00039",
-   "kod": "ENERJİ",
-   "ad": "ENERJİ",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREARDY00023",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAASELS91H2",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREBSGZ00037",
-   "kod": null,
-   "ad": "Gayrimenku",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREBIMM00018",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRACIMSA91F9",
-   "kod": "SANAYI",
-   "ad": "VE",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREEBEB00025",
-   "kod": null,
-   "ad": "MAĞAZACI",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAEGGUB91E8",
-   "kod": "GÜBRE",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAEGPRO91E8",
-   "kod": "PROFIL",
-   "ad": "TICARET",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREEGYO00017",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREELIT00019",
-   "kod": "GIDA",
-   "ad": "GIDA",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAEREGL91G3",
-   "kod": "ÇELİK",
-   "ad": "ÇELİK",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREGENL00024",
-   "kod": null,
-   "ad": "Ürünleri",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREGRSL00025",
-   "kod": null,
-   "ad": "Turizm",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREKTLV00019",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
    "isin": "TRELKMH00013",
-   "kod": "EĞİTİM",
-   "ad": "EĞİTİM",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "LKMNH",
+   "deger": 5115380.24,
    "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRALOGOW91U2",
-   "kod": "SANAYI",
-   "ad": "SANAYI",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREMAVI00037",
-   "kod": null,
-   "ad": "Sanayi Ve",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREMRCN00023",
-   "kod": null,
-   "ad": "Kimya",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRENTGZ00014",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
+   "agirlik": 1.3822
   },
   {
    "isin": "TREPLTU00028",
-   "kod": null,
-   "ad": "Taşımacılık",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "PLTUR",
+   "deger": 3314760.3,
    "satir": 2,
+   "agirlik": 0.8957
+  },
+  {
+   "isin": "TREELIT00019",
+   "kod": "ELITE",
+   "deger": 2453210.12,
+   "satir": 1,
+   "agirlik": 0.6629
+  },
+  {
+   "isin": "TREMRCN00023",
+   "kod": "MERCN",
+   "deger": 32.64,
+   "satir": 1,
    "agirlik": 0.0
   },
   {
    "isin": "TREPOHO00012",
-   "kod": null,
-   "ad": "HOLDİNG",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "POLHO",
+   "deger": 12.62,
    "satir": 1,
    "agirlik": 0.0
   },
   {
-   "isin": "TRASARKY91G6",
-   "kod": "TIK",
-   "ad": "BAKIR",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRATUPRS91E8",
-   "kod": "PETROL",
-   "ad": "PETROL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRYKTPY00400",
-   "kod": "TÜRK",
-   "ad": "TÜRK",
-   "tur": "fon",
-   "deger": 0.0,
+   "isin": "TREKTLV00019",
+   "kod": "KTLEV",
+   "deger": 2.72,
    "satir": 1,
    "agirlik": 0.0
   }
  ],
- "kod": "KPA",
- "donem": "2026-10",
  "bildirim": 1693020,
  "yayin": "05.11.2026 11:51:34",
  "ekler": [
   "4028328ca17e4f5e01a1a6c4b37b4f50"
- ]
+ ],
+ "kod": "KPA",
+ "donem": "2026-10"
 }

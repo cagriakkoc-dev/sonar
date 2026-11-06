@@ -1,146 +1,195 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 778565395.03,
+ "fon_portfoy_degeri": 825490019.11,
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": null,
+ "hisse_sayisi": 24,
+ "hisse_agirligi": 90.8737,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 707511227.98,
+  "hisse_grup_toplami": 707511227.98,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 0,
+  "bicim": "us",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
-   "isin": "TRT280628T18",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 1780.0,
-   "satir": 2
+   "isin": null,
+   "kod": "ASELS",
+   "deger": 50682566.25,
+   "satir": 1,
+   "agirlik": 6.5097
   },
   {
-   "isin": "TRFALVSE2615",
-   "kod": null,
-   "ad": "",
-   "tur": "fi̇nansman bonolari",
-   "deger": 1439.0,
-   "satir": 3
+   "isin": null,
+   "kod": "GARAN",
+   "deger": 44272867.1,
+   "satir": 1,
+   "agirlik": 5.6865
   },
   {
-   "isin": "TRT280531T14",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 1345.0,
-   "satir": 2
+   "isin": null,
+   "kod": "AKBNK",
+   "deger": 44256510.45,
+   "satir": 1,
+   "agirlik": 5.6844
   },
   {
-   "isin": "TRT120128T11",
-   "kod": "TERS",
-   "ad": "REPO -",
-   "tur": "repo",
-   "deger": 1301.0,
-   "satir": 3
+   "isin": null,
+   "kod": "APX30",
+   "deger": 38946460.0,
+   "satir": 1,
+   "agirlik": 5.0023
   },
   {
-   "isin": "TRT210427T18",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 1160.0,
-   "satir": 2
+   "isin": null,
+   "kod": "BIMAS",
+   "deger": 38455187.0,
+   "satir": 1,
+   "agirlik": 4.9392
   },
   {
-   "isin": "TRT080530T19",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 1125.0,
-   "satir": 6
+   "isin": null,
+   "kod": "AKSEN",
+   "deger": 37973605.8,
+   "satir": 1,
+   "agirlik": 4.8774
   },
   {
-   "isin": "TRT070727T13",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 1075.0,
-   "satir": 2
+   "isin": null,
+   "kod": "TURSG",
+   "deger": 36972938.34,
+   "satir": 1,
+   "agirlik": 4.7489
   },
   {
-   "isin": "TRT210235T10",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 925.0,
-   "satir": 2
+   "isin": null,
+   "kod": "TCELL",
+   "deger": 36651470.1,
+   "satir": 1,
+   "agirlik": 4.7076
   },
   {
-   "isin": "TRT160228T16",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 750.0,
-   "satir": 1
+   "isin": null,
+   "kod": "KCHOL",
+   "deger": 31460500.4,
+   "satir": 1,
+   "agirlik": 4.0408
   },
   {
-   "isin": "TRT151227T16",
-   "kod": "TERS",
-   "ad": "REPO -",
-   "tur": "repo",
-   "deger": 623.0,
-   "satir": 2
+   "isin": null,
+   "kod": "DOHOL",
+   "deger": 31206099.68,
+   "satir": 1,
+   "agirlik": 4.0082
   },
   {
-   "isin": "TRT110429T18",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 520.0,
-   "satir": 1
+   "isin": null,
+   "kod": "YKBNK",
+   "deger": 30074512.16,
+   "satir": 1,
+   "agirlik": 3.8628
   },
   {
-   "isin": "TRT040832T18",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 290.0,
-   "satir": 1
+   "isin": null,
+   "kod": "KLYPV",
+   "deger": 29641410.0,
+   "satir": 1,
+   "agirlik": 3.8072
   },
   {
-   "isin": "TRT150927T11",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 230.0,
-   "satir": 1
+   "isin": null,
+   "kod": "MPARK",
+   "deger": 29534413.0,
+   "satir": 1,
+   "agirlik": 3.7934
   },
   {
-   "isin": "TRT030730T12",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 190.0,
-   "satir": 1
+   "isin": null,
+   "kod": "TUPRS",
+   "deger": 29013722.25,
+   "satir": 1,
+   "agirlik": 3.7266
   },
   {
-   "isin": "TRT190728T34",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "diger",
-   "deger": 0.0,
-   "satir": 1
+   "isin": null,
+   "kod": "TABGD",
+   "deger": 27842320.8,
+   "satir": 1,
+   "agirlik": 3.5761
+  },
+  {
+   "isin": null,
+   "kod": "TAVHL",
+   "deger": 25738655.0,
+   "satir": 1,
+   "agirlik": 3.3059
+  },
+  {
+   "isin": null,
+   "kod": "MGROS",
+   "deger": 25544513.5,
+   "satir": 1,
+   "agirlik": 3.281
+  },
+  {
+   "isin": null,
+   "kod": "SAHOL",
+   "deger": 24707879.2,
+   "satir": 1,
+   "agirlik": 3.1735
+  },
+  {
+   "isin": null,
+   "kod": "ULKER",
+   "deger": 20834758.7,
+   "satir": 1,
+   "agirlik": 2.676
+  },
+  {
+   "isin": null,
+   "kod": "ASTOR",
+   "deger": 18192160.25,
+   "satir": 1,
+   "agirlik": 2.3366
+  },
+  {
+   "isin": null,
+   "kod": "TTKOM",
+   "deger": 17142261.5,
+   "satir": 1,
+   "agirlik": 2.2018
+  },
+  {
+   "isin": null,
+   "kod": "THYAO",
+   "deger": 15186853.5,
+   "satir": 1,
+   "agirlik": 1.9506
+  },
+  {
+   "isin": null,
+   "kod": "RGYAS",
+   "deger": 14344563.0,
+   "satir": 1,
+   "agirlik": 1.8424
+  },
+  {
+   "isin": null,
+   "kod": "SARAE",
+   "deger": 8835000.0,
+   "satir": 1,
+   "agirlik": 1.1348
   }
  ],
- "kod": "RHS",
- "donem": "2026-08",
  "bildirim": 1660075,
  "yayin": "08.09.2026 15:14:44",
  "ekler": [
   "4028328d9f52dddd01a080edd1d05b9e"
- ]
+ ],
+ "kod": "RHS",
+ "donem": "2026-08"
 }

@@ -1,250 +1,223 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 399887267.31,
+ "fon_portfoy_degeri": 401939672.64,
  "islemler": {
   "alis": [],
   "satis": []
  },
  "hisse_sayisi": 28,
- "hisse_agirligi": null,
+ "hisse_agirligi": 93.9365,
  "dogrulama": {
-  "hisse_satir_toplami": 7219.0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 375640220.72,
+  "hisse_grup_toplami": 375640220.72,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 1,
+  "bicim": "us",
+  "tutuyor": true
  },
  "hisseler": [
   {
-   "isin": "TRAGSDHO91Q9",
-   "kod": "GSDHO",
-   "ad": "GSDHO",
-   "tur": "hisse",
-   "deger": 930.0,
-   "satir": 1
+   "isin": "TRESOKM00022",
+   "kod": "SOKM",
+   "deger": 37329000.0,
+   "satir": 1,
+   "agirlik": 9.3349
   },
   {
    "isin": "TRAALARK91Q0",
    "kod": "ALARK",
-   "ad": "ALARK",
-   "tur": "hisse",
-   "deger": 750.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREICNT00027",
-   "kod": "ENTRA",
-   "ad": "ENTRA",
-   "tur": "hisse",
-   "deger": 710.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRADOHOL91Q8",
-   "kod": "DOHOL",
-   "ad": "DOHOL",
-   "tur": "hisse",
-   "deger": 700.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAISGYO91Q3",
-   "kod": "ISGYO",
-   "ad": "ISGYO",
-   "tur": "hisse",
-   "deger": 600.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAAEFES91A9",
-   "kod": "AEFES",
-   "ad": "AEFES",
-   "tur": "hisse",
-   "deger": 536.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRECOLA00011",
-   "kod": "CCOLA",
-   "ad": "CCOLA",
-   "tur": "hisse",
-   "deger": 500.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRETAVH00018",
-   "kod": "TAVHL",
-   "ad": "TAVHL",
-   "tur": "hisse",
-   "deger": 500.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRETKNO00010",
-   "kod": "TKNSA",
-   "ad": "TKNSA",
-   "tur": "hisse",
-   "deger": 500.0,
-   "satir": 1
+   "deger": 36993750.0,
+   "satir": 1,
+   "agirlik": 9.251
   },
   {
    "isin": "TRATUPRS91E8",
    "kod": "TUPRS",
-   "ad": "TUPRS",
-   "tur": "hisse",
-   "deger": 500.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAANHYT91O3",
-   "kod": "ANHYT",
-   "ad": "ANHYT",
-   "tur": "hisse",
-   "deger": 492.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAYAZIC91Q6",
-   "kod": "AGHOL",
-   "ad": "AGHOL",
-   "tur": "hisse",
-   "deger": 301.0,
-   "satir": 1
+   "deger": 33862500.0,
+   "satir": 1,
+   "agirlik": 8.468
   },
   {
    "isin": "TREMAVI00037",
    "kod": "MAVI",
-   "ad": "MAVI",
-   "tur": "hisse",
-   "deger": 200.0,
-   "satir": 1
+   "deger": 23272200.0,
+   "satir": 1,
+   "agirlik": 5.8197
   },
   {
-   "isin": "TRAAKBNK91N6",
-   "kod": "AKBNK",
-   "ad": "AKBNK",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TRADOHOL91Q8",
+   "kod": "DOHOL",
+   "deger": 18553700.0,
+   "satir": 1,
+   "agirlik": 4.6397
   },
   {
-   "isin": "TRAAKGRT91O5",
-   "kod": "AKGRT",
-   "ad": "AKGRT",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAANSGR91O1",
-   "kod": "ANSGR",
-   "ad": "ANSGR",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAEREGL91G3",
-   "kod": "EREGL",
-   "ad": "EREGL",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREEUPW00019",
-   "kod": "EUPWR",
-   "ad": "EUPWR",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAOTOSN91H6",
-   "kod": "FROTO",
-   "ad": "FROTO",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAISCTR91N2",
-   "kod": "ISCTR",
-   "ad": "ISCTR",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREISMD00011",
-   "kod": "ISMEN",
-   "ad": "ISMEN",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAKCHOL91Q8",
-   "kod": "KCHOL",
-   "ad": "KCHOL",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TRETAVH00018",
+   "kod": "TAVHL",
+   "deger": 18287500.0,
+   "satir": 1,
+   "agirlik": 4.5732
   },
   {
    "isin": "TRAKRDMR91G7",
    "kod": "KRDMD",
-   "ad": "KRDMD",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRENETG00027",
-   "kod": "NETGL",
-   "ad": "NETGL",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREORZK00018",
-   "kod": "ORZAX",
-   "ad": "ORZAX",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRASAHOL91Q5",
-   "kod": "SAHOL",
-   "ad": "SAHOL",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRESOKM00022",
-   "kod": "SOKM",
-   "ad": "SOKM",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 17592000.0,
+   "satir": 1,
+   "agirlik": 4.3992
   },
   {
    "isin": "TRAYKBNK91N6",
    "kod": "YKBNK",
-   "ad": "YKBNK",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 17020000.0,
+   "satir": 1,
+   "agirlik": 4.2562
+  },
+  {
+   "isin": "TRASAHOL91Q5",
+   "kod": "SAHOL",
+   "deger": 16960000.0,
+   "satir": 1,
+   "agirlik": 4.2412
+  },
+  {
+   "isin": "TRAOTOSN91H6",
+   "kod": "FROTO",
+   "deger": 14710000.0,
+   "satir": 1,
+   "agirlik": 3.6785
+  },
+  {
+   "isin": "TRAGSDHO91Q9",
+   "kod": "GSDHO",
+   "deger": 13771930.0,
+   "satir": 1,
+   "agirlik": 3.444
+  },
+  {
+   "isin": "TRAISCTR91N2",
+   "kod": "ISCTR",
+   "deger": 13420000.0,
+   "satir": 1,
+   "agirlik": 3.3559
+  },
+  {
+   "isin": "TRAAKBNK91N6",
+   "kod": "AKBNK",
+   "deger": 13400000.0,
+   "satir": 1,
+   "agirlik": 3.3509
+  },
+  {
+   "isin": "TRAYAZIC91Q6",
+   "kod": "AGHOL",
+   "deger": 12000301.92,
+   "satir": 1,
+   "agirlik": 3.0009
+  },
+  {
+   "isin": "TRECOLA00011",
+   "kod": "CCOLA",
+   "deger": 11617500.0,
+   "satir": 1,
+   "agirlik": 2.9052
+  },
+  {
+   "isin": "TRAEREGL91G3",
+   "kod": "EREGL",
+   "deger": 10782000.0,
+   "satir": 1,
+   "agirlik": 2.6963
+  },
+  {
+   "isin": "TRAAEFES91A9",
+   "kod": "AEFES",
+   "deger": 10611536.0,
+   "satir": 1,
+   "agirlik": 2.6536
+  },
+  {
+   "isin": "TRAKCHOL91Q8",
+   "kod": "KCHOL",
+   "deger": 10420000.0,
+   "satir": 1,
+   "agirlik": 2.6057
+  },
+  {
+   "isin": "TREISMD00011",
+   "kod": "ISMEN",
+   "deger": 10367000.0,
+   "satir": 1,
+   "agirlik": 2.5925
+  },
+  {
+   "isin": "TRETKNO00010",
+   "kod": "TKNSA",
+   "deger": 9161500.0,
+   "satir": 1,
+   "agirlik": 2.291
+  },
+  {
+   "isin": "TRAANHYT91O3",
+   "kod": "ANHYT",
+   "deger": 6905492.8,
+   "satir": 1,
+   "agirlik": 1.7269
+  },
+  {
+   "isin": "TREEUPW00019",
+   "kod": "EUPWR",
+   "deger": 5010000.0,
+   "satir": 1,
+   "agirlik": 1.2529
+  },
+  {
+   "isin": "TRAANSGR91O1",
+   "kod": "ANSGR",
+   "deger": 4736000.0,
+   "satir": 1,
+   "agirlik": 1.1843
+  },
+  {
+   "isin": "TRAISGYO91Q3",
+   "kod": "ISGYO",
+   "deger": 4287600.0,
+   "satir": 1,
+   "agirlik": 1.0722
+  },
+  {
+   "isin": "TRENETG00027",
+   "kod": "NETGL",
+   "deger": 1629000.0,
+   "satir": 1,
+   "agirlik": 0.4074
+  },
+  {
+   "isin": "TRAAKGRT91O5",
+   "kod": "AKGRT",
+   "deger": 1533000.0,
+   "satir": 1,
+   "agirlik": 0.3834
+  },
+  {
+   "isin": "TREICNT00027",
+   "kod": "ENTRA",
+   "deger": 1333710.0,
+   "satir": 1,
+   "agirlik": 0.3335
+  },
+  {
+   "isin": "TREORZK00018",
+   "kod": "ORZAX",
+   "deger": 73000.0,
+   "satir": 1,
+   "agirlik": 0.0183
   }
  ],
- "diger_kalemler": [],
- "kod": "BIG",
- "donem": "2026-09",
  "bildirim": 1674875,
  "yayin": "07.10.2026 16:32:18",
  "ekler": [
   "4028328da0b8438901a112930ceb5d84"
- ]
+ ],
+ "kod": "BIG",
+ "donem": "2026-09"
 }

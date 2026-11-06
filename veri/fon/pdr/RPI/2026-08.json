@@ -1,82 +1,153 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 13984572.33,
+ "fon_portfoy_degeri": 13947723.32,
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": null,
+ "hisse_sayisi": 18,
+ "hisse_agirligi": 85.4634,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 11951689.78,
+  "hisse_grup_toplami": 11951689.78,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 0,
+  "bicim": "us",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
-   "isin": "TRD200127T10",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 3436.2,
-   "satir": 10
+   "isin": null,
+   "kod": "TUPRS",
+   "deger": 1289605.5,
+   "satir": 1,
+   "agirlik": 9.2216
   },
   {
-   "isin": "TRD080927T34",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 2551.2,
-   "satir": 4
+   "isin": null,
+   "kod": "BIMAS",
+   "deger": 1216500.0,
+   "satir": 1,
+   "agirlik": 8.6989
   },
   {
-   "isin": "TRD170730T14",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 1825.0,
-   "satir": 3
+   "isin": null,
+   "kod": "EKGYO",
+   "deger": 1011580.0,
+   "satir": 1,
+   "agirlik": 7.2335
   },
   {
-   "isin": "TRD081128T13",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 690.0,
-   "satir": 1
+   "isin": null,
+   "kod": "MPARK",
+   "deger": 842000.0,
+   "satir": 1,
+   "agirlik": 6.0209
   },
   {
-   "isin": "TRD140329T14",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 540.0,
-   "satir": 1
+   "isin": null,
+   "kod": "RGYAS",
+   "deger": 648569.4,
+   "satir": 1,
+   "agirlik": 4.6377
   },
   {
-   "isin": "TRD020828T14",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 445.0,
-   "satir": 1
+   "isin": null,
+   "kod": "ASELS",
+   "deger": 609502.5,
+   "satir": 1,
+   "agirlik": 4.3584
   },
   {
-   "isin": "TRD050231T12",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 0.0,
-   "satir": 1
+   "isin": null,
+   "kod": "KCAER",
+   "deger": 604406.7,
+   "satir": 1,
+   "agirlik": 4.322
+  },
+  {
+   "isin": null,
+   "kod": "ALBRK",
+   "deger": 600543.16,
+   "satir": 1,
+   "agirlik": 4.2943
+  },
+  {
+   "isin": null,
+   "kod": "AVPGY",
+   "deger": 599512.0,
+   "satir": 1,
+   "agirlik": 4.287
+  },
+  {
+   "isin": null,
+   "kod": "ISDMR",
+   "deger": 592429.5,
+   "satir": 1,
+   "agirlik": 4.2363
+  },
+  {
+   "isin": null,
+   "kod": "CIMSA",
+   "deger": 589776.0,
+   "satir": 1,
+   "agirlik": 4.2173
+  },
+  {
+   "isin": null,
+   "kod": "MAVI",
+   "deger": 587719.68,
+   "satir": 1,
+   "agirlik": 4.2026
+  },
+  {
+   "isin": null,
+   "kod": "AKFYE",
+   "deger": 582203.38,
+   "satir": 1,
+   "agirlik": 4.1632
+  },
+  {
+   "isin": null,
+   "kod": "ENJSA",
+   "deger": 509322.6,
+   "satir": 1,
+   "agirlik": 3.642
+  },
+  {
+   "isin": null,
+   "kod": "GOKNR",
+   "deger": 462172.6,
+   "satir": 1,
+   "agirlik": 3.3049
+  },
+  {
+   "isin": null,
+   "kod": "LOGO",
+   "deger": 434215.8,
+   "satir": 1,
+   "agirlik": 3.105
+  },
+  {
+   "isin": null,
+   "kod": "EREGL",
+   "deger": 407190.0,
+   "satir": 1,
+   "agirlik": 2.9117
+  },
+  {
+   "isin": null,
+   "kod": "KOTON",
+   "deger": 364440.96,
+   "satir": 1,
+   "agirlik": 2.606
   }
  ],
- "kod": "RPI",
- "donem": "2026-08",
  "bildirim": 1660088,
  "yayin": "08.09.2026 15:16:12",
  "ekler": [
   "4028328c9f52dc4001a07b488ba75e74"
- ]
+ ],
+ "kod": "RPI",
+ "donem": "2026-08"
 }

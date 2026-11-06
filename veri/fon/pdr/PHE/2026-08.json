@@ -5,121 +5,79 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 8,
+ "hisse_agirligi": 69.217,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 19586619683.31,
+  "hisse_grup_toplami": 21431159339.11,
+  "fark_yuzde": -8.6068,
+  "yuzde_sutun": 3,
+  "bicim": "tr",
   "tutuyor": false
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
-   "isin": "TREDSTF00012",
-   "kod": "FİNANS",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "isin": "TREODNE00017",
+   "kod": "ODINE",
+   "deger": 5012329740.0,
    "satir": 2,
-   "agirlik": 0.0
+   "agirlik": 17.713
   },
   {
    "isin": "TREGUND00019",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "GUNDG",
+   "deger": 4754862294.0,
    "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREHDEF00017",
-   "kod": null,
-   "ad": "HOLDİNG",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAMTEKS91B0",
-   "kod": "YAPI",
-   "ad": "YAPI",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREKTLV00019",
-   "kod": null,
-   "ad": "TASARRUF",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREODNE00017",
-   "kod": null,
-   "ad": "TEKNOLOJİ",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
+   "agirlik": 16.8032
   },
   {
    "isin": "TREPASF00024",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "PASEU",
+   "deger": 3755422693.4,
    "satir": 3,
-   "agirlik": 0.0
+   "agirlik": 13.2713
+  },
+  {
+   "isin": "TREKTLV00019",
+   "kod": "KTLEV",
+   "deger": 3143730755.58,
+   "satir": 2,
+   "agirlik": 11.1096
+  },
+  {
+   "isin": "TREDSTF00012",
+   "kod": "DSTKF",
+   "deger": 1938091487.0,
+   "satir": 2,
+   "agirlik": 6.849
+  },
+  {
+   "isin": "TREHDEF00017",
+   "kod": "HEDEF",
+   "deger": 931828916.22,
+   "satir": 2,
+   "agirlik": 3.293
+  },
+  {
+   "isin": "TRAMTEKS91B0",
+   "kod": "IEYHO",
+   "deger": 50353795.2,
+   "satir": 1,
+   "agirlik": 0.1779
   },
   {
    "isin": "TRAGUSGR91O3",
-   "kod": null,
-   "ad": "SİGORTA",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRYPSLP00036",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRYPSLP00051",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRYPSLP00093",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "TURSG",
+   "deger": 1.91,
    "satir": 1,
    "agirlik": 0.0
   }
  ],
- "kod": "PHE",
- "donem": "2026-08",
  "bildirim": 1660304,
  "yayin": "08.09.2026 17:11:08",
  "ekler": [
   "4028328c9f52dc4001a0808c36a22e4c"
- ]
+ ],
+ "kod": "PHE",
+ "donem": "2026-08"
 }

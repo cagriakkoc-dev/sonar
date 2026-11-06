@@ -1,179 +1,209 @@
 {
  "fon_toplam_deger": 90201620.86,
- "fon_portfoy_degeri": null,
+ "fon_portfoy_degeri": 90610478.62,
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 26,
+ "hisse_agirligi": 90.0718,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
+  "hisse_satir_toplami": 81246250.0,
   "hisse_grup_toplami": 81246250.0,
-  "fark_yuzde": -100.0,
-  "tutuyor": false
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 0,
+  "bicim": "tr",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
-   "isin": "TRT040832T18",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 15000000.0,
-   "satir": 2,
-   "agirlik": 16.6294
-  },
-  {
-   "isin": "TRT181028T14",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 14007086.3,
-   "satir": 2,
-   "agirlik": 15.5286
-  },
-  {
-   "isin": "TRT150328T24",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 14000000.0,
+   "isin": null,
+   "kod": "BIMAS",
+   "deger": 7323750.0,
    "satir": 1,
-   "agirlik": 15.5208
+   "agirlik": 8.1193
   },
   {
-   "isin": "TRT280628T18",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 14000000.0,
-   "satir": 2,
-   "agirlik": 15.5208
-  },
-  {
-   "isin": "TRT120128T11",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 13000000.0,
-   "satir": 2,
-   "agirlik": 14.4122
-  },
-  {
-   "isin": "TRT280531T14",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 12000000.0,
-   "satir": 2,
-   "agirlik": 13.3035
-  },
-  {
-   "isin": "TRT210235T10",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 10000000.0,
-   "satir": 2,
-   "agirlik": 11.0863
-  },
-  {
-   "isin": "TRT180827T19",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 7000000.0,
+   "isin": null,
+   "kod": "ASELS",
+   "deger": 6730000.0,
    "satir": 1,
-   "agirlik": 7.7604
+   "agirlik": 7.4611
   },
   {
-   "isin": "TRT190728T34",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 7000000.0,
+   "isin": null,
+   "kod": "SAHOL",
+   "deger": 4240000.0,
    "satir": 1,
-   "agirlik": 7.7604
+   "agirlik": 4.7006
   },
   {
-   "isin": "TRT050630T11",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 7000000.0,
+   "isin": null,
+   "kod": "GARAN",
+   "deger": 3687000.0,
    "satir": 1,
-   "agirlik": 7.7604
+   "agirlik": 4.0875
   },
   {
-   "isin": "TRT021030T18",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 7000000.0,
+   "isin": null,
+   "kod": "KCHOL",
+   "deger": 3647000.0,
    "satir": 1,
-   "agirlik": 7.7604
+   "agirlik": 4.0432
   },
   {
-   "isin": "TRT050935T13",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 6000000.0,
+   "isin": null,
+   "kod": "THYAO",
+   "deger": 3540625.0,
    "satir": 1,
-   "agirlik": 6.6518
+   "agirlik": 3.9252
   },
   {
-   "isin": "TRT080530T19",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 5000000.0,
+   "isin": null,
+   "kod": "YKBNK",
+   "deger": 3404000.0,
    "satir": 1,
-   "agirlik": 5.5431
+   "agirlik": 3.7738
   },
   {
-   "isin": "TRT180237T13",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 5000000.0,
+   "isin": null,
+   "kod": "TCELL",
+   "deger": 3363500.0,
    "satir": 1,
-   "agirlik": 5.5431
+   "agirlik": 3.7289
   },
   {
-   "isin": "TRT040729T14",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 3000000.0,
+   "isin": null,
+   "kod": "ISCTR",
+   "deger": 3355000.0,
    "satir": 1,
-   "agirlik": 3.3259
+   "agirlik": 3.7194
   },
   {
-   "isin": "TRT131027T36",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 3000000.0,
+   "isin": null,
+   "kod": "AKBNK",
+   "deger": 3350000.0,
    "satir": 1,
-   "agirlik": 3.3259
+   "agirlik": 3.7139
   },
   {
-   "isin": "TRT020529T18",
-   "kod": null,
-   "ad": "Ters Repo",
-   "tur": "halk bankas",
-   "deger": 2000000.0,
+   "isin": null,
+   "kod": "ENKAI",
+   "deger": 3298000.0,
    "satir": 1,
-   "agirlik": 2.2173
+   "agirlik": 3.6563
+  },
+  {
+   "isin": null,
+   "kod": "MGROS",
+   "deger": 3279250.0,
+   "satir": 1,
+   "agirlik": 3.6355
+  },
+  {
+   "isin": null,
+   "kod": "MPARK",
+   "deger": 3133125.0,
+   "satir": 1,
+   "agirlik": 3.4735
+  },
+  {
+   "isin": null,
+   "kod": "EKGYO",
+   "deger": 2766000.0,
+   "satir": 1,
+   "agirlik": 3.0665
+  },
+  {
+   "isin": null,
+   "kod": "PGSUS",
+   "deger": 2722000.0,
+   "satir": 1,
+   "agirlik": 3.0177
+  },
+  {
+   "isin": null,
+   "kod": "TOASO",
+   "deger": 2620000.0,
+   "satir": 1,
+   "agirlik": 2.9046
+  },
+  {
+   "isin": null,
+   "kod": "TAVHL",
+   "deger": 2612500.0,
+   "satir": 1,
+   "agirlik": 2.8963
+  },
+  {
+   "isin": null,
+   "kod": "TTKOM",
+   "deger": 2577500.0,
+   "satir": 1,
+   "agirlik": 2.8575
+  },
+  {
+   "isin": null,
+   "kod": "CCOLA",
+   "deger": 2323500.0,
+   "satir": 1,
+   "agirlik": 2.5759
+  },
+  {
+   "isin": null,
+   "kod": "TRALT",
+   "deger": 2235000.0,
+   "satir": 1,
+   "agirlik": 2.4778
+  },
+  {
+   "isin": null,
+   "kod": "HALKB",
+   "deger": 2205000.0,
+   "satir": 1,
+   "agirlik": 2.4445
+  },
+  {
+   "isin": null,
+   "kod": "ASTOR",
+   "deger": 1906000.0,
+   "satir": 1,
+   "agirlik": 2.113
+  },
+  {
+   "isin": null,
+   "kod": "DOHOL",
+   "deger": 1837000.0,
+   "satir": 1,
+   "agirlik": 2.0365
+  },
+  {
+   "isin": null,
+   "kod": "AKSEN",
+   "deger": 1822500.0,
+   "satir": 1,
+   "agirlik": 2.0205
+  },
+  {
+   "isin": null,
+   "kod": "EREGL",
+   "deger": 1797000.0,
+   "satir": 1,
+   "agirlik": 1.9922
+  },
+  {
+   "isin": null,
+   "kod": "FROTO",
+   "deger": 1471000.0,
+   "satir": 1,
+   "agirlik": 1.6308
   }
  ],
- "kod": "UPH",
- "donem": "2026-09",
  "bildirim": 1673242,
  "yayin": "06.10.2026 15:13:46",
  "ekler": [
   "4028328da0b8438a01a110e4aab61b45"
- ]
+ ],
+ "kod": "UPH",
+ "donem": "2026-09"
 }

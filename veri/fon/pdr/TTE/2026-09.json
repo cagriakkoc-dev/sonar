@@ -1,394 +1,332 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 2256779760.5,
+ "fon_portfoy_degeri": 2199694018.44,
  "islemler": {
   "alis": [],
-  "satis": []
+  "satis": [
+   [
+    "ASELS",
+    168263469.17,
+    71
+   ],
+   [
+    "MIATK",
+    14005943.82,
+    36
+   ]
+  ]
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": null,
+ "hisse_sayisi": 42,
+ "hisse_agirligi": 93.2296,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 2103986559.72,
+  "hisse_grup_toplami": 2103986559.72,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 3,
+  "bicim": "us",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
-  {
-   "isin": "TRAALCTL91H9",
-   "kod": "ALCTL",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREALTA00014",
-   "kod": "ALTNY",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREARDY00023",
-   "kod": "ARDYZ",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TRAARENA91U1",
-   "kod": "ARENA",
-   "ad": "TL     SANAYİ VE TİCARET",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
+ "hisseler": [
   {
    "isin": "TRAASELS91H2",
    "kod": "ASELS",
-   "ad": "TL    SANAYİ VE TİCARET",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREATTP00023",
-   "kod": "ATATP",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREAZTK00021",
-   "kod": "AZTEK",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREBINU00019",
-   "kod": "BINBN",
-   "ad": "TL   ŞEHİR TEKNOLOJİLERİ",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREDSPC00017",
-   "kod": "DESPC",
-   "ad": "TL      PAZARLAMA VE",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREDGTE00010",
-   "kod": "DGATE",
-   "ad": "TL   MALZEMELERİ TİCARET",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREDFRB00020",
-   "kod": "DOFRB",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREEDTA00021",
-   "kod": "EDATA",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREEMPA00012",
-   "kod": "EMPAE",
-   "ad": "TL    SANAYİ VE TİCARET",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TRAESCOM91U8",
-   "kod": "ESCOM",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREFONT00010",
-   "kod": "FONET",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREFRTE00012",
-   "kod": "FORTE",
-   "ad": "TL   Teknolojileri ve Savunma",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREHTTB00036",
-   "kod": "HTTBT",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREINDX00019",
-   "kod": "INDES",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREARMD00010",
-   "kod": "INGRM",
-   "ad": "TL   SİSTEMLERİ SANAYİ VE",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREKREL00019",
-   "kod": "KAREL",
-   "ad": "TL    SANAYİ VE TİCARET",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREKFIN00037",
-   "kod": "KFEIN",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREKRON00014",
-   "kod": "KRONT",
-   "ad": "TL   TELEKOMÜNİKASYON",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TRALINKW91U8",
-   "kod": "LINK",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "deger": 444570607.9,
+   "satir": 2,
+   "agirlik": 19.6993
   },
   {
    "isin": "TRALOGOW91U2",
    "kod": "LOGO",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "deger": 150897337.05,
+   "satir": 2,
+   "agirlik": 6.6864
   },
   {
-   "isin": "TREMANS00025",
-   "kod": "MANAS",
-   "ad": "TL   YÖNETİMİ VE SANAYİ",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREMTRP00014",
-   "kod": "MCARD",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "isin": "TREARDY00023",
+   "kod": "ARDYZ",
+   "deger": 128978699.33,
+   "satir": 2,
+   "agirlik": 5.7152
   },
   {
    "isin": "TREMIAT00015",
    "kod": "MIATK",
-   "ad": "TL      Mia Teknoloji A.Ş.",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "deger": 109709580.2,
+   "satir": 2,
+   "agirlik": 4.8613
   },
   {
-   "isin": "TREMBTL00025",
-   "kod": "MOBTL",
-   "ad": "TL   HİZMETLERİ SANAYİ VE",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "isin": "TREINDX00019",
+   "kod": "INDES",
+   "deger": 91904655.19,
+   "satir": 2,
+   "agirlik": 4.0724
   },
   {
-   "isin": "TREMTRK00015",
-   "kod": "MTRKS",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "isin": "TREALTA00014",
+   "kod": "ALTNY",
+   "deger": 84282320.16,
+   "satir": 2,
+   "agirlik": 3.7346
   },
   {
-   "isin": "TRANETAS91H6",
-   "kod": "NETAS",
-   "ad": "TL   TELEKOMÜNİKASYON",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TRENETC00026",
-   "kod": "NETCD",
-   "ad": "TL    NETCAD YAZILIM A.Ş.",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREOBAS00018",
-   "kod": "OBASE",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREODNE00017",
-   "kod": "ODINE",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREONRY00015",
-   "kod": "ONRYT",
-   "ad": "TL    TEKNOLOJI ANONIM",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREPAPL00010",
-   "kod": "PAPIL",
-   "ad": "TL   BİLİŞİM MÜHENDİSLİK",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "isin": "TREATTP00023",
+   "kod": "ATATP",
+   "deger": 75245610.0,
+   "satir": 2,
+   "agirlik": 3.3342
   },
   {
    "isin": "TREPSFD00010",
    "kod": "PATEK",
-   "ad": "TL   Yazılım Bilgi Teknolojileri",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "deger": 71547903.57,
+   "satir": 2,
+   "agirlik": 3.1704
   },
   {
-   "isin": "TREPNTA00042",
-   "kod": "PENTA",
-   "ad": "TL     ÜRÜNLERİ DAĞITIM",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "isin": "TREDFRB00020",
+   "kod": "DOFRB",
+   "deger": 59004519.3,
+   "satir": 2,
+   "agirlik": 2.6145
   },
   {
-   "isin": "TREPKRT00018",
-   "kod": "PKART",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "isin": "TRENETC00026",
+   "kod": "NETCD",
+   "deger": 57937040.0,
+   "satir": 2,
+   "agirlik": 2.5672
   },
   {
-   "isin": "TREREED00035",
-   "kod": "REEDR",
-   "ad": "TL    SANAYİ VE TİCARET",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "isin": "TREHTTB00036",
+   "kod": "HTTBT",
+   "deger": 55327044.33,
+   "satir": 2,
+   "agirlik": 2.4516
+  },
+  {
+   "isin": "TREMANS00025",
+   "kod": "MANAS",
+   "deger": 54524830.7,
+   "satir": 1,
+   "agirlik": 2.416
   },
   {
    "isin": "TRESDTT00013",
    "kod": "SDTTR",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "deger": 48218806.8,
+   "satir": 2,
+   "agirlik": 2.1366
   },
   {
-   "isin": "TRESMRT00018",
-   "kod": "SMART",
-   "ad": "TL   SMARTİKS YAZILIM A.Ş.",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "isin": "TREODNE00017",
+   "kod": "ODINE",
+   "deger": 43890798.0,
+   "satir": 1,
+   "agirlik": 1.9448
+  },
+  {
+   "isin": "TREFONT00010",
+   "kod": "FONET",
+   "deger": 43018811.15,
+   "satir": 2,
+   "agirlik": 1.9062
+  },
+  {
+   "isin": "TREFRTE00012",
+   "kod": "FORTE",
+   "deger": 42630997.5,
+   "satir": 2,
+   "agirlik": 1.889
+  },
+  {
+   "isin": "TREMBTL00025",
+   "kod": "MOBTL",
+   "deger": 37338245.28,
+   "satir": 2,
+   "agirlik": 1.6545
+  },
+  {
+   "isin": "TREKREL00019",
+   "kod": "KAREL",
+   "deger": 33109689.58,
+   "satir": 2,
+   "agirlik": 1.4671
+  },
+  {
+   "isin": "TREREED00035",
+   "kod": "REEDR",
+   "deger": 32991282.4,
+   "satir": 2,
+   "agirlik": 1.4619
+  },
+  {
+   "isin": "TRAESCOM91U8",
+   "kod": "ESCOM",
+   "deger": 32736165.3,
+   "satir": 2,
+   "agirlik": 1.4506
+  },
+  {
+   "isin": "TRALINKW91U8",
+   "kod": "LINK",
+   "deger": 31914851.5,
+   "satir": 2,
+   "agirlik": 1.4142
+  },
+  {
+   "isin": "TREKRON00014",
+   "kod": "KRONT",
+   "deger": 31525874.1,
+   "satir": 2,
+   "agirlik": 1.3969
+  },
+  {
+   "isin": "TRANETAS91H6",
+   "kod": "NETAS",
+   "deger": 29529343.6,
+   "satir": 2,
+   "agirlik": 1.3085
+  },
+  {
+   "isin": "TREEMPA00012",
+   "kod": "EMPAE",
+   "deger": 28559580.48,
+   "satir": 2,
+   "agirlik": 1.2655
+  },
+  {
+   "isin": "TREMTRP00014",
+   "kod": "MCARD",
+   "deger": 27981100.8,
+   "satir": 2,
+   "agirlik": 1.2399
+  },
+  {
+   "isin": "TREPAPL00010",
+   "kod": "PAPIL",
+   "deger": 27831042.99,
+   "satir": 2,
+   "agirlik": 1.2332
+  },
+  {
+   "isin": "TREPNTA00042",
+   "kod": "PENTA",
+   "deger": 25608047.85,
+   "satir": 2,
+   "agirlik": 1.1347
   },
   {
    "isin": "TREVBTY00029",
    "kod": "VBTYZ",
-   "ad": "TL      VBT YAZILIM A.Ş.",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2
+   "deger": 21969671.64,
+   "satir": 2,
+   "agirlik": 0.9735
   },
   {
-   "isin": "TRT110429T18",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TRAALCTL91H9",
+   "kod": "ALCTL",
+   "deger": 19215302.3,
+   "satir": 2,
+   "agirlik": 0.8514
   },
   {
-   "isin": "TRT160431T19",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TREBINU00019",
+   "kod": "BINBN",
+   "deger": 17976839.2,
+   "satir": 2,
+   "agirlik": 0.7966
   },
   {
-   "isin": "TRYISPO00969",
-   "kod": "IOO",
-   "ad": "TL",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TREKFIN00037",
+   "kod": "KFEIN",
+   "deger": 15470964.08,
+   "satir": 2,
+   "agirlik": 0.6855
   },
   {
-   "isin": "TRMTI1WWWWW0",
-   "kod": "TI1",
-   "ad": "TL",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TREARMD00010",
+   "kod": "INGRM",
+   "deger": 14493443.25,
+   "satir": 2,
+   "agirlik": 0.6422
+  },
+  {
+   "isin": "TREAZTK00021",
+   "kod": "AZTEK",
+   "deger": 14154875.77,
+   "satir": 2,
+   "agirlik": 0.6272
+  },
+  {
+   "isin": "TREMTRK00015",
+   "kod": "MTRKS",
+   "deger": 14143467.3,
+   "satir": 2,
+   "agirlik": 0.6267
+  },
+  {
+   "isin": "TRAARENA91U1",
+   "kod": "ARENA",
+   "deger": 13784461.0,
+   "satir": 2,
+   "agirlik": 0.6108
+  },
+  {
+   "isin": "TREEDTA00021",
+   "kod": "EDATA",
+   "deger": 13483065.55,
+   "satir": 2,
+   "agirlik": 0.5974
+  },
+  {
+   "isin": "TREONRY00015",
+   "kod": "ONRYT",
+   "deger": 13397943.54,
+   "satir": 2,
+   "agirlik": 0.5937
+  },
+  {
+   "isin": "TREDGTE00010",
+   "kod": "DGATE",
+   "deger": 12212103.0,
+   "satir": 2,
+   "agirlik": 0.5411
+  },
+  {
+   "isin": "TREPKRT00018",
+   "kod": "PKART",
+   "deger": 11916431.45,
+   "satir": 2,
+   "agirlik": 0.528
+  },
+  {
+   "isin": "TRESMRT00018",
+   "kod": "SMART",
+   "deger": 8333694.6,
+   "satir": 2,
+   "agirlik": 0.3693
+  },
+  {
+   "isin": "TREOBAS00018",
+   "kod": "OBASE",
+   "deger": 6742789.9,
+   "satir": 2,
+   "agirlik": 0.2988
+  },
+  {
+   "isin": "TREDSPC00017",
+   "kod": "DESPC",
+   "deger": 5876722.08,
+   "satir": 2,
+   "agirlik": 0.2604
   }
  ],
- "kod": "TTE",
- "donem": "2026-09",
  "bildirim": 1671887,
  "yayin": "05.10.2026 13:00:53",
  "ekler": [
   "4028328ca0b8418501a10b7428cd42f0"
- ]
+ ],
+ "kod": "TTE",
+ "donem": "2026-09"
 }

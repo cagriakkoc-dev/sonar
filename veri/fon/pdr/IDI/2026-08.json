@@ -5,103 +5,58 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 5,
+ "hisse_agirligi": 102.9264,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 72622200.0,
+  "hisse_grup_toplami": 72622200.0,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 3,
+  "bicim": "tr",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
-  {
-   "isin": "TRT080530T19",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 28028314.52,
-   "satir": 1,
-   "agirlik": 39.7241
-  },
+ "hisseler": [
   {
    "isin": "TREASTR00013",
-   "kod": "ENERJİ",
-   "ad": "ENERJİ",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "ASTOR",
+   "deger": 15636000.0,
    "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREENKA00011",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAEREGL91G3",
-   "kod": "ÇELİK",
-   "ad": "ÇELİK",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 22.1607
   },
   {
    "isin": "TREGLRM00010",
-   "kod": "SANAYİ",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "GLRMK",
+   "deger": 15264000.0,
    "satir": 2,
-   "agirlik": 0.0
+   "agirlik": 21.6335
+  },
+  {
+   "isin": "TRAEREGL91G3",
+   "kod": "EREGL",
+   "deger": 15124200.0,
+   "satir": 1,
+   "agirlik": 21.4353
   },
   {
    "isin": "TRAMRDIN91F2",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "OYAKC",
+   "deger": 13488000.0,
    "satir": 2,
-   "agirlik": 0.0
+   "agirlik": 19.1164
   },
   {
-   "isin": "TRYAZIM01612",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRYAZIM01240",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRYAZIM00341",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
+   "isin": "TREENKA00011",
+   "kod": "ENKAI",
+   "deger": 13110000.0,
+   "satir": 2,
+   "agirlik": 18.5806
   }
  ],
- "kod": "IDI",
- "donem": "2026-08",
  "bildirim": 1659740,
  "yayin": "07.09.2026 18:32:23",
  "ekler": [
   "4028328d9f52dddd01a07c5590864c53"
- ]
+ ],
+ "kod": "IDI",
+ "donem": "2026-08"
 }

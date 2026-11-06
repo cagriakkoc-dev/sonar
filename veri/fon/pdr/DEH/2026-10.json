@@ -2,178 +2,267 @@
  "fon_toplam_deger": 10781684.52,
  "fon_portfoy_degeri": 10758501.23,
  "islemler": {
-  "alis": [],
-  "satis": []
+  "alis": [
+   [
+    "KCHOL",
+    521500.0,
+    1
+   ],
+   [
+    "TRALT",
+    438600.0,
+    1
+   ],
+   [
+    "ASTOR",
+    363446.1,
+    2
+   ],
+   [
+    "BIMAS",
+    362700.0,
+    1
+   ]
+  ],
+  "satis": [
+   [
+    "YEOTK",
+    613045.16,
+    3
+   ],
+   [
+    "SAHOL",
+    586400.6,
+    2
+   ],
+   [
+    "TURSG",
+    549718.17,
+    2
+   ],
+   [
+    "LMKDC",
+    435569.72,
+    3
+   ],
+   [
+    "ASTOR",
+    371600.0,
+    1
+   ],
+   [
+    "ASELS",
+    369258.75,
+    2
+   ],
+   [
+    "SAYAS",
+    355293.44,
+    7
+   ],
+   [
+    "TRGYO",
+    111343.2,
+    2
+   ],
+   [
+    "TUPRS",
+    96358.5,
+    2
+   ],
+   [
+    "MPARK",
+    63862.0,
+    1
+   ],
+   [
+    "SOKM",
+    63384.0,
+    1
+   ],
+   [
+    "THYAO",
+    63030.0,
+    1
+   ],
+   [
+    "ENKAI",
+    62979.3,
+    1
+   ],
+   [
+    "YKBNK",
+    62884.92,
+    1
+   ],
+   [
+    "TAVHL",
+    62880.0,
+    1
+   ],
+   [
+    "GARAN",
+    62847.6,
+    1
+   ],
+   [
+    "BIMAS",
+    62832.0,
+    1
+   ],
+   [
+    "AKGRT",
+    62796.61,
+    1
+   ],
+   [
+    "AKBNK",
+    62618.85,
+    1
+   ],
+   [
+    "AKSEN",
+    62582.75,
+    1
+   ]
+  ]
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 17,
+ "hisse_agirligi": 84.4325,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 9103240.59,
+  "hisse_grup_toplami": 9103240.59,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 3,
+  "bicim": "tr",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
-   "isin": "TRELIMK00029",
-   "kod": "LMKDC",
-   "ad": "TL          LİMAK",
-   "tur": "fon",
-   "deger": 289650.0,
+   "isin": "TRAYKBNK91N6",
+   "kod": "YKBNK",
+   "deger": 955838.16,
    "satir": 1,
-   "agirlik": 2.6865
-  },
-  {
-   "isin": "TRAAKBNK91N6",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAAKGRT91O5",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREAKSN00011",
-   "kod": "ENERJİ",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAASELS91H2",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREBIMM00018",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREENKA00011",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAGARAN91N1",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAKCHOL91Q8",
-   "kod": null,
-   "ad": "HOLDİNG",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREMLPC00021",
-   "kod": "SAĞLIK",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 8.8654
   },
   {
    "isin": "TRESOKM00022",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "SOKM",
+   "deger": 871909.6,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 8.087
+  },
+  {
+   "isin": "TREBIMM00018",
+   "kod": "BIMAS",
+   "deger": 788825.0,
+   "satir": 1,
+   "agirlik": 7.3163
+  },
+  {
+   "isin": "TREAKSN00011",
+   "kod": "AKSEN",
+   "deger": 538431.0,
+   "satir": 1,
+   "agirlik": 4.9939
   },
   {
    "isin": "TRETAVH00018",
-   "kod": "NLARI",
-   "ad": "NLARI",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "TAVHL",
+   "deger": 527500.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 4.8926
   },
   {
-   "isin": "TRATHYAO91M5",
-   "kod": "HAVA",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "isin": "TREENKA00011",
+   "kod": "ENKAI",
+   "deger": 516467.7,
    "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREKOAL00014",
-   "kod": "ALTIN",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRETRGY00018",
-   "kod": "KUL",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
+   "agirlik": 4.7902
   },
   {
    "isin": "TRATUPRS91E8",
-   "kod": "PETROL",
-   "ad": "PETROL",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "TUPRS",
+   "deger": 515250.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 4.7789
   },
   {
-   "isin": "TRAYKBNK91N6",
-   "kod": "KREDİ",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "isin": "TREMLPC00021",
+   "kod": "MPARK",
+   "deger": 512408.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 4.7526
+  },
+  {
+   "isin": "TRETRGY00018",
+   "kod": "TRGYO",
+   "deger": 511500.0,
+   "satir": 2,
+   "agirlik": 4.7442
+  },
+  {
+   "isin": "TRAAKGRT91O5",
+   "kod": "AKGRT",
+   "deger": 492458.63,
+   "satir": 1,
+   "agirlik": 4.5675
+  },
+  {
+   "isin": "TRAKCHOL91Q8",
+   "kod": "KCHOL",
+   "deger": 482000.0,
+   "satir": 1,
+   "agirlik": 4.4705
+  },
+  {
+   "isin": "TRAAKBNK91N6",
+   "kod": "AKBNK",
+   "deger": 475568.1,
+   "satir": 1,
+   "agirlik": 4.4109
+  },
+  {
+   "isin": "TRAGARAN91N1",
+   "kod": "GARAN",
+   "deger": 438450.4,
+   "satir": 1,
+   "agirlik": 4.0666
+  },
+  {
+   "isin": "TRAASELS91H2",
+   "kod": "ASELS",
+   "deger": 431668.0,
+   "satir": 1,
+   "agirlik": 4.0037
+  },
+  {
+   "isin": "TRATHYAO91M5",
+   "kod": "THYAO",
+   "deger": 431116.0,
+   "satir": 1,
+   "agirlik": 3.9986
+  },
+  {
+   "isin": "TREKOAL00014",
+   "kod": "TRALT",
+   "deger": 324200.0,
+   "satir": 1,
+   "agirlik": 3.007
+  },
+  {
+   "isin": "TRELIMK00029",
+   "kod": "LMKDC",
+   "deger": 289650.0,
+   "satir": 1,
+   "agirlik": 2.6865
   }
  ],
- "kod": "DEH",
- "donem": "2026-10",
  "bildirim": 1692966,
  "yayin": "05.11.2026 10:52:30",
  "ekler": [
   "4028328ca17e4f5f01a1aa81c98d111c"
- ]
+ ],
+ "kod": "DEH",
+ "donem": "2026-10"
 }

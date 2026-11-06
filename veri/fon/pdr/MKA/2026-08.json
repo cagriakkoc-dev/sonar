@@ -3,186 +3,202 @@
  "fon_portfoy_degeri": 85951105.67,
  "islemler": {
   "alis": [],
-  "satis": []
+  "satis": [
+   [
+    "EKGYO",
+    793050.0,
+    2
+   ],
+   [
+    "KUTPO",
+    573249.9,
+    10
+   ],
+   [
+    "GOKNR",
+    567174.76,
+    2
+   ],
+   [
+    "AVPGY",
+    462386.4,
+    3
+   ],
+   [
+    "KRVGD",
+    366000.0,
+    1
+   ],
+   [
+    "YATAS",
+    328940.98,
+    2
+   ],
+   [
+    "HOROZ",
+    323000.0,
+    1
+   ],
+   [
+    "BRISA",
+    238218.5,
+    4
+   ],
+   [
+    "RGYAS",
+    206971.4,
+    3
+   ],
+   [
+    "VAKKO",
+    135061.25,
+    3
+   ]
+  ]
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 18,
+ "hisse_agirligi": 94.7783,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 81143550.0,
+  "hisse_grup_toplami": 81143550.0,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 3,
+  "bicim": "tr",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
+  {
+   "isin": "TREGLRM00010",
+   "kod": "GLRMK",
+   "deger": 7632000.0,
+   "satir": 1,
+   "agirlik": 8.9144
+  },
+  {
+   "isin": "TREMAVI00037",
+   "kod": "MAVI",
+   "deger": 7007200.0,
+   "satir": 1,
+   "agirlik": 8.1846
+  },
+  {
+   "isin": "TRAGOLTS91F0",
+   "kod": "GOLTS",
+   "deger": 6940250.0,
+   "satir": 1,
+   "agirlik": 8.1064
+  },
+  {
+   "isin": "TREATKY00016",
+   "kod": "ATAKP",
+   "deger": 6305390.0,
+   "satir": 1,
+   "agirlik": 7.3649
+  },
+  {
+   "isin": "TRALOGOW91U2",
+   "kod": "LOGO",
+   "deger": 4693500.0,
+   "satir": 1,
+   "agirlik": 5.4822
+  },
+  {
+   "isin": "TRERSGY00036",
+   "kod": "RGYAS",
+   "deger": 4415700.0,
+   "satir": 1,
+   "agirlik": 5.1577
+  },
+  {
+   "isin": "TRAVAKKO91B7",
+   "kod": "VAKKO",
+   "deger": 4186350.0,
+   "satir": 1,
+   "agirlik": 4.8898
+  },
+  {
+   "isin": "TRACIMSA91F9",
+   "kod": "CIMSA",
+   "deger": 4110560.0,
+   "satir": 1,
+   "agirlik": 4.8013
+  },
   {
    "isin": "TREEGYO00017",
    "kod": "EKGYO",
-   "ad": "TL        EMLAK",
-   "tur": "fon",
    "deger": 4000000.0,
    "satir": 1,
    "agirlik": 4.6721
   },
   {
-   "isin": "TRAALKIM91E0",
-   "kod": "ALKALI",
-   "ad": "ALKALI",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREATKY00016",
-   "kod": "GIDA",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
    "isin": "TREAVRK00024",
-   "kod": "KUL",
-   "ad": "KUL",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "AVPGY",
+   "deger": 3993100.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 4.6641
   },
   {
    "isin": "TRABRISA91E3",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "BRISA",
+   "deger": 3972800.0,
    "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRACIMSA91F9",
-   "kod": "SANAYI",
-   "ad": "VE",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREGLRM00010",
-   "kod": "SANAYİ",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREGKNR00036",
-   "kod": "İMALAT",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAGOLTS91F0",
-   "kod": null,
-   "ad": "ÇIMENTO",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREHROZ00022",
-   "kod": "KARGO",
-   "ad": "HİZMETLE",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 4.6404
   },
   {
    "isin": "TRAKARSN91H7",
-   "kod": null,
-   "ad": "SANAYII VE",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "KARSN",
+   "deger": 3952000.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 4.6161
   },
   {
-   "isin": "TREKRVG00013",
-   "kod": "SANAYİ",
-   "ad": "VE",
-   "tur": "fon",
-   "deger": 0.0,
+   "isin": "TREHROZ00022",
+   "kod": "HOROZ",
+   "deger": 3912800.0,
    "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAKUTPO91F9",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRALOGOW91U2",
-   "kod": "SANAYI",
-   "ad": "VE",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREMAVI00037",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRERSGY00036",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAVAKKO91B7",
-   "kod": "GIYIM",
-   "ad": "GIYIM",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 4.5703
   },
   {
    "isin": "TRAYATAS91B4",
-   "kod": "YORGAN",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "YATAS",
+   "deger": 3686400.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 4.3058
+  },
+  {
+   "isin": "TREKRVG00013",
+   "kod": "KRVGD",
+   "deger": 3277000.0,
+   "satir": 1,
+   "agirlik": 3.8276
+  },
+  {
+   "isin": "TRAALKIM91E0",
+   "kod": "ALKIM",
+   "deger": 3096000.0,
+   "satir": 1,
+   "agirlik": 3.6162
+  },
+  {
+   "isin": "TRAKUTPO91F9",
+   "kod": "KUTPO",
+   "deger": 3055200.0,
+   "satir": 1,
+   "agirlik": 3.5686
+  },
+  {
+   "isin": "TREGKNR00036",
+   "kod": "GOKNR",
+   "deger": 2907300.0,
+   "satir": 1,
+   "agirlik": 3.3958
   }
  ],
- "kod": "MKA",
- "donem": "2026-08",
  "bildirim": 1660154,
  "yayin": "08.09.2026 16:01:00",
  "ekler": [
   "4028328c9f52dc3f01a0811984843afb"
- ]
+ ],
+ "kod": "MKA",
+ "donem": "2026-08"
 }

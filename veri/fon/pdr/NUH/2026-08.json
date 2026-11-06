@@ -5,166 +5,128 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 15,
+ "hisse_agirligi": 85.7937,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 111175795.33,
+  "hisse_grup_toplami": 111175795.33,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 3,
+  "bicim": "tr",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
-  {
-   "isin": "TREAKFY00015",
-   "kod": "BİLİR",
-   "ad": "BİLİR",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREAVRK00024",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREBERK00010",
-   "kod": "ÜRETİM",
-   "ad": "VE",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREGNTK00016",
-   "kod": "SANAYİ",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
+ "hisseler": [
   {
    "isin": "TREGRSL00025",
-   "kod": null,
-   "ad": "Taşımacılık",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "GRSEL",
+   "deger": 12415500.0,
    "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREINDX00019",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREKMPU00017",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREKRPL00015",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREMACK00017",
-   "kod": null,
-   "ad": "HİZMETLE",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREMAKM00024",
-   "kod": "LERİ",
-   "ad": "LERİ",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREMTRK00015",
-   "kod": "BİLGİ",
-   "ad": "DAĞITIM",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 9.581
   },
   {
    "isin": "TREOZSU00023",
-   "kod": "BALIK",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "OZSUB",
+   "deger": 12132036.0,
    "satir": 2,
-   "agirlik": 0.0
+   "agirlik": 9.3622
   },
   {
-   "isin": "TRETAPD00019",
-   "kod": "EĞİTİM",
-   "ad": "EĞİTİM",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAYUNSA91B5",
-   "kod": "SANAYİ",
-   "ad": "VE",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
+   "isin": "TREKMPU00017",
+   "kod": "KMPUR",
+   "deger": 11820800.0,
+   "satir": 1,
+   "agirlik": 9.122
   },
   {
    "isin": "TREYYLA00014",
-   "kod": "GIDA",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "YYLGD",
+   "deger": 6533850.0,
    "satir": 2,
-   "agirlik": 0.0
+   "agirlik": 5.0421
   },
   {
-   "isin": "TRYVVGS00040",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "isin": "TREBERK00010",
+   "kod": "BRKSN",
+   "deger": 6441776.0,
+   "satir": 2,
+   "agirlik": 4.9711
+  },
+  {
+   "isin": "TRETAPD00019",
+   "kod": "TNZTP",
+   "deger": 6304000.0,
+   "satir": 2,
+   "agirlik": 4.8648
+  },
+  {
+   "isin": "TRAYUNSA91B5",
+   "kod": "YUNSA",
+   "deger": 6303550.0,
+   "satir": 2,
+   "agirlik": 4.8644
+  },
+  {
+   "isin": "TREINDX00019",
+   "kod": "INDES",
+   "deger": 6291100.0,
+   "satir": 2,
+   "agirlik": 4.8548
+  },
+  {
+   "isin": "TREAVRK00024",
+   "kod": "AVPGY",
+   "deger": 6244005.0,
+   "satir": 2,
+   "agirlik": 4.8185
+  },
+  {
+   "isin": "TREKRPL00015",
+   "kod": "KRPLS",
+   "deger": 6215416.45,
+   "satir": 2,
+   "agirlik": 4.7964
+  },
+  {
+   "isin": "TREGNTK00016",
+   "kod": "GENKM",
+   "deger": 6150400.0,
+   "satir": 2,
+   "agirlik": 4.7462
+  },
+  {
+   "isin": "TREAKFY00015",
+   "kod": "AKFYE",
+   "deger": 6110722.2,
+   "satir": 2,
+   "agirlik": 4.7156
+  },
+  {
+   "isin": "TREMAKM00024",
+   "kod": "MAKIM",
+   "deger": 6106692.6,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 4.7125
+  },
+  {
+   "isin": "TREMACK00017",
+   "kod": "MACKO",
+   "deger": 6055468.0,
+   "satir": 1,
+   "agirlik": 4.673
+  },
+  {
+   "isin": "TREMTRK00015",
+   "kod": "MTRKS",
+   "deger": 6050479.08,
+   "satir": 1,
+   "agirlik": 4.6691
   }
  ],
- "kod": "NUH",
- "donem": "2026-08",
  "bildirim": 1660400,
  "yayin": "08.09.2026 18:11:26",
  "ekler": [
   "4028328c9f52dc3f01a0818f2e045278"
- ]
+ ],
+ "kod": "NUH",
+ "donem": "2026-08"
 }

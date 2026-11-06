@@ -5,112 +5,79 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 8,
+ "hisse_agirligi": 87.2062,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 171258000.6,
+  "hisse_grup_toplami": 171258000.6,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 3,
+  "bicim": "tr",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
    "isin": "TRAAKBNK91N6",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "AKBNK",
+   "deger": 35175000.0,
    "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREEGYO00017",
-   "kod": "KUL",
-   "ad": "KUL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAGARAN91N1",
-   "kod": null,
-   "ad": "BANKASI",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAISCTR91N2",
-   "kod": null,
-   "ad": "BANKASI",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRASAHOL91Q5",
-   "kod": "ÖMER",
-   "ad": "SABANCI",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREVKFB00019",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAVAKFN91P9",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 17.9114
   },
   {
    "isin": "TRAYKBNK91N6",
-   "kod": "KREDİ",
-   "ad": "KREDİ",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "YKBNK",
+   "deger": 34040000.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 17.3335
   },
   {
-   "isin": "TRYAZIM01240",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "isin": "TRAISCTR91N2",
+   "kod": "ISCTR",
+   "deger": 30500000.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 15.5309
   },
   {
-   "isin": "TRYAZIM01075",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "isin": "TRAGARAN91N1",
+   "kod": "GARAN",
+   "deger": 24580000.0,
+   "satir": 1,
+   "agirlik": 12.5164
+  },
+  {
+   "isin": "TREVKFB00019",
+   "kod": "VAKBN",
+   "deger": 24195000.0,
+   "satir": 1,
+   "agirlik": 12.3203
+  },
+  {
+   "isin": "TRASAHOL91Q5",
+   "kod": "SAHOL",
+   "deger": 19080000.0,
+   "satir": 1,
+   "agirlik": 9.7157
+  },
+  {
+   "isin": "TREEGYO00017",
+   "kod": "EKGYO",
+   "deger": 3688000.0,
+   "satir": 1,
+   "agirlik": 1.878
+  },
+  {
+   "isin": "TRAVAKFN91P9",
+   "kod": "VAKFN",
+   "deger": 0.6,
    "satir": 1,
    "agirlik": 0.0
   }
  ],
- "kod": "BFT",
- "donem": "2026-09",
  "bildirim": 1677704,
  "yayin": "08.10.2026 18:02:04",
  "ekler": [
   "4028328ca0b8418501a11bc556534b5e"
- ]
+ ],
+ "kod": "BFT",
+ "donem": "2026-09"
 }

@@ -2,24 +2,70 @@
  "fon_toplam_deger": 59730672.32,
  "fon_portfoy_degeri": 60192883.08,
  "islemler": {
-  "alis": [],
-  "satis": []
+  "alis": [
+   [
+    "AKSEN",
+    2881625.8,
+    8
+   ],
+   [
+    "AKFYE",
+    597900.0,
+    3
+   ],
+   [
+    "ZOREN",
+    545020.0,
+    1
+   ],
+   [
+    "ODAS",
+    502600.0,
+    1
+   ]
+  ],
+  "satis": [
+   [
+    "CATES",
+    1863121.65,
+    9
+   ],
+   [
+    "ENJSA",
+    1125949.2,
+    4
+   ],
+   [
+    "CWENE",
+    1024394.8,
+    7
+   ],
+   [
+    "ALFAS",
+    542946.26,
+    5
+   ],
+   [
+    "ENDAE",
+    391787.07,
+    8
+   ]
+  ]
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 27,
+ "hisse_agirligi": 90.4455,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 54023681.88,
+  "hisse_grup_toplami": 54023681.88,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 3,
+  "bicim": "tr",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
    "isin": "TREENRY00016",
    "kod": "ENERY",
-   "ad": "TL     ENERYA",
-   "tur": "fon",
    "deger": 5631600.04,
    "satir": 1,
    "agirlik": 9.4283
@@ -27,26 +73,13 @@
   {
    "isin": "TREAHLA00019",
    "kod": "AHGAZ",
-   "ad": "TL       AHLATCI",
-   "tur": "fon",
    "deger": 4747500.0,
    "satir": 1,
    "agirlik": 7.9482
   },
   {
-   "isin": "TRYMKFT00190",
-   "kod": "IDL",
-   "ad": "AKTİF PORTFÖY      TL    AKTİF",
-   "tur": "fon",
-   "deger": 4529880.32,
-   "satir": 1,
-   "agirlik": 7.5838
-  },
-  {
    "isin": "TREAKSN00011",
    "kod": "AKSEN",
-   "ad": "TL         AKSA",
-   "tur": "fon",
    "deger": 4446400.0,
    "satir": 1,
    "agirlik": 7.4441
@@ -54,8 +87,6 @@
   {
    "isin": "TREENSA00014",
    "kod": "ENJSA",
-   "ad": "TL    ENERJİSA",
-   "tur": "fon",
    "deger": 4404000.0,
    "satir": 1,
    "agirlik": 7.3731
@@ -63,8 +94,6 @@
   {
    "isin": "TRAZOREN91L8",
    "kod": "ZOREN",
-   "ad": "TL      ZORLU",
-   "tur": "fon",
    "deger": 2668000.0,
    "satir": 1,
    "agirlik": 4.4667
@@ -72,8 +101,6 @@
   {
    "isin": "TREODAS00014",
    "kod": "ODAS",
-   "ad": "TL       ODAS",
-   "tur": "fon",
    "deger": 2635200.0,
    "satir": 1,
    "agirlik": 4.4118
@@ -81,8 +108,6 @@
   {
    "isin": "TRAAKENR91L9",
    "kod": "AKENR",
-   "ad": "TL      AK ENERJI",
-   "tur": "fon",
    "deger": 2630000.0,
    "satir": 1,
    "agirlik": 4.4031
@@ -90,8 +115,6 @@
   {
    "isin": "TRECAN200011",
    "kod": "CANTE",
-   "ad": "TL       Çan2",
-   "tur": "fon",
    "deger": 2484000.0,
    "satir": 1,
    "agirlik": 4.1587
@@ -99,8 +122,6 @@
   {
    "isin": "TRECWEN00012",
    "kod": "CWENE",
-   "ad": "TL   CW ENERJİ",
-   "tur": "fon",
    "deger": 2437500.0,
    "satir": 1,
    "agirlik": 4.0808
@@ -108,8 +129,6 @@
   {
    "isin": "TREAYDM00024",
    "kod": "AYDEM",
-   "ad": "TL      Aydem",
-   "tur": "fon",
    "deger": 2263520.0,
    "satir": 1,
    "agirlik": 3.7895
@@ -117,8 +136,6 @@
   {
    "isin": "TREICNT00027",
    "kod": "ENTRA",
-   "ad": "TL         IC",
-   "tur": "fon",
    "deger": 2230801.59,
    "satir": 1,
    "agirlik": 3.7348
@@ -126,8 +143,6 @@
   {
    "isin": "TREAKFY00015",
    "kod": "AKFYE",
-   "ad": "TL         Akfen",
-   "tur": "fon",
    "deger": 2152700.0,
    "satir": 1,
    "agirlik": 3.604
@@ -135,8 +150,6 @@
   {
    "isin": "TRENTGZ00014",
    "kod": "NTGAZ",
-   "ad": "TL   NATURELG",
-   "tur": "fon",
    "deger": 1955520.0,
    "satir": 1,
    "agirlik": 3.2739
@@ -144,8 +157,6 @@
   {
    "isin": "TREBION00012",
    "kod": "BIOEN",
-   "ad": "TL   BİOTREND",
-   "tur": "fon",
    "deger": 1890900.0,
    "satir": 1,
    "agirlik": 3.1657
@@ -153,8 +164,6 @@
   {
    "isin": "TRESMAR00026",
    "kod": "SMRTG",
-   "ad": "TL      SMART",
-   "tur": "fon",
    "deger": 1742390.0,
    "satir": 1,
    "agirlik": 2.9171
@@ -162,8 +171,6 @@
   {
    "isin": "TREIZDM00016",
    "kod": "IZENR",
-   "ad": "TL    GARANTI",
-   "tur": "fon",
    "deger": 1596000.0,
    "satir": 1,
    "agirlik": 2.672
@@ -171,8 +178,6 @@
   {
    "isin": "TREGWIN00014",
    "kod": "GWIND",
-   "ad": "TL     GALATA",
-   "tur": "fon",
    "deger": 1471600.0,
    "satir": 1,
    "agirlik": 2.4637
@@ -180,8 +185,6 @@
   {
    "isin": "TRETATL00022",
    "kod": "TATEN",
-   "ad": "TL      INFYO",
-   "tur": "fon",
    "deger": 1263000.0,
    "satir": 1,
    "agirlik": 2.1145
@@ -189,44 +192,20 @@
   {
    "isin": "TREARAS00039",
    "kod": "ARASE",
-   "ad": "TL         DOĞU",
-   "tur": "fon",
    "deger": 1081800.0,
    "satir": 1,
    "agirlik": 1.8111
   },
   {
-   "isin": "TRYMKFT00281",
-   "kod": "NKL",
-   "ad": "AKTİF PORTFÖY      TL    AKTİF",
-   "tur": "fon",
-   "deger": 931744.06,
-   "satir": 1,
-   "agirlik": 1.5599
-  },
-  {
    "isin": "TREENDA00016",
    "kod": "ENDAE",
-   "ad": "TL       ENDA",
-   "tur": "fon",
    "deger": 906500.0,
    "satir": 1,
    "agirlik": 1.5176
   },
   {
-   "isin": "TRYMKFT00034",
-   "kod": "MPF",
-   "ad": "AKTİF              TL    AKTİF",
-   "tur": "fon",
-   "deger": 664247.56,
-   "satir": 1,
-   "agirlik": 1.1121
-  },
-  {
    "isin": "TREHUNR00025",
    "kod": "HUNER",
-   "ad": "TL        HUN",
-   "tur": "fon",
    "deger": 652000.0,
    "satir": 1,
    "agirlik": 1.0916
@@ -234,8 +213,6 @@
   {
    "isin": "TREKLYN00024",
    "kod": "KLYPV",
-   "ad": "TL      Kalyon",
-   "tur": "fon",
    "deger": 622000.0,
    "satir": 1,
    "agirlik": 1.0413
@@ -243,8 +220,6 @@
   {
    "isin": "TREESEN00024",
    "kod": "ESEN",
-   "ad": "TL    ESENBOG",
-   "tur": "fon",
    "deger": 617100.0,
    "satir": 1,
    "agirlik": 1.0331
@@ -252,8 +227,6 @@
   {
    "isin": "TRAAKSUE91L2",
    "kod": "AKSUE",
-   "ad": "TL         AKSU",
-   "tur": "fon",
    "deger": 543609.0,
    "satir": 1,
    "agirlik": 0.9101
@@ -261,8 +234,6 @@
   {
    "isin": "TREALFS00023",
    "kod": "ALFAS",
-   "ad": "TL       Alfa Solar",
-   "tur": "fon",
    "deger": 488640.0,
    "satir": 1,
    "agirlik": 0.8181
@@ -270,8 +241,6 @@
   {
    "isin": "TRAAYENW91L0",
    "kod": "AYEN",
-   "ad": "TL       AYEN",
-   "tur": "fon",
    "deger": 461400.0,
    "satir": 1,
    "agirlik": 0.7725
@@ -279,18 +248,16 @@
   {
    "isin": "TREKARY00028",
    "kod": "A1YEN",
-   "ad": "TL           A1",
-   "tur": "fon",
-   "deger": 0.0,
+   "deger": 1.25,
    "satir": 1,
    "agirlik": 0.0
   }
  ],
- "kod": "ENJ",
- "donem": "2026-08",
  "bildirim": 1660034,
  "yayin": "08.09.2026 14:16:07",
  "ekler": [
   "4028328c9f52dc3f01a07d0cf602218a"
- ]
+ ],
+ "kod": "ENJ",
+ "donem": "2026-08"
 }

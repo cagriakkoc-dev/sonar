@@ -5,283 +5,93 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 10,
+ "hisse_agirligi": 92.5521,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 479599737.55,
+  "hisse_grup_toplami": 480583706.4,
+  "fark_yuzde": -0.2047,
+  "yuzde_sutun": 3,
+  "bicim": "tr",
   "tutuyor": false
  },
- "hisseler": [],
- "diger_kalemler": [
-  {
-   "isin": "TRT190728T18",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 29348965.0,
-   "satir": 1,
-   "agirlik": 5.6637
-  },
-  {
-   "isin": "TRVXIST05QS5",
-   "kod": null,
-   "ad": "F_AKBNK1126            TL",
-   "tur": "repo",
-   "deger": 24964000.0,
-   "satir": 1,
-   "agirlik": 4.8175
-  },
-  {
-   "isin": "TRT180827T19",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 23616396.99,
-   "satir": 2,
-   "agirlik": 4.5574
-  },
-  {
-   "isin": "TRT150927T11",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 16196610.0,
-   "satir": 2,
-   "agirlik": 3.1256
-  },
-  {
-   "isin": "TRT080530T27",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 15794190.0,
-   "satir": 1,
-   "agirlik": 3.0479
-  },
-  {
-   "isin": "TRT210427T18",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 9916570.0,
-   "satir": 2,
-   "agirlik": 1.9137
-  },
-  {
-   "isin": "TRT090130T12",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 9594070.0,
-   "satir": 2,
-   "agirlik": 1.8514
-  },
-  {
-   "isin": "TRT151227T16",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 9567425.0,
-   "satir": 1,
-   "agirlik": 1.8463
-  },
-  {
-   "isin": "TRT020529T18",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 9295060.0,
-   "satir": 1,
-   "agirlik": 1.7937
-  },
-  {
-   "isin": "TRT181028T14",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 8771770.0,
-   "satir": 1,
-   "agirlik": 1.6928
-  },
-  {
-   "isin": "TRT080530T19",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 8604694.86,
-   "satir": 4,
-   "agirlik": 1.6605
-  },
-  {
-   "isin": "TRT150328T24",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 8060690.0,
-   "satir": 1,
-   "agirlik": 1.5555
-  },
-  {
-   "isin": "TRT180237T13",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 5708220.0,
-   "satir": 2,
-   "agirlik": 1.1016
-  },
-  {
-   "isin": "TRT160431T19",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 5442780.0,
-   "satir": 1,
-   "agirlik": 1.0503
-  },
-  {
-   "isin": "TRT280531T14",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 4530595.0,
-   "satir": 4,
-   "agirlik": 0.8743
-  },
-  {
-   "isin": "TRT280628T18",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 1761885.0,
-   "satir": 1,
-   "agirlik": 0.34
-  },
-  {
-   "isin": "TRT040832T18",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 1755400.0,
-   "satir": 2,
-   "agirlik": 0.3388
-  },
-  {
-   "isin": "TRT120128T11",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 1677975.0,
-   "satir": 2,
-   "agirlik": 0.3238
-  },
-  {
-   "isin": "TRT070727T13",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 1207465.0,
-   "satir": 2,
-   "agirlik": 0.233
-  },
+ "hisseler": [
   {
    "isin": "TRAAKBNK91N6",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "AKBNK",
+   "deger": 137025000.0,
    "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREALBK00011",
-   "kod": "TÜRK",
-   "ad": "KATILIM",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAGARAN91N1",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRETHAL00019",
-   "kod": null,
-   "ad": "BANKASI",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRATEKST91N0",
-   "kod": "TURKEY",
-   "ad": "TURKEY",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAISCTR91N2",
-   "kod": null,
-   "ad": "BANKASI",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRASKBNK91N8",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRATSKBW91N0",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREVKFB00019",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 26.4428
   },
   {
    "isin": "TRAYKBNK91N6",
-   "kod": "KREDİ",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "YKBNK",
+   "deger": 109860600.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 21.2007
+  },
+  {
+   "isin": "TRAISCTR91N2",
+   "kod": "ISCTR",
+   "deger": 93147576.28,
+   "satir": 1,
+   "agirlik": 17.9754
+  },
+  {
+   "isin": "TRAGARAN91N1",
+   "kod": "GARAN",
+   "deger": 72678600.0,
+   "satir": 1,
+   "agirlik": 14.0254
+  },
+  {
+   "isin": "TRETHAL00019",
+   "kod": "HALKB",
+   "deger": 23898600.0,
+   "satir": 1,
+   "agirlik": 4.6119
+  },
+  {
+   "isin": "TREVKFB00019",
+   "kod": "VAKBN",
+   "deger": 21169040.0,
+   "satir": 1,
+   "agirlik": 4.0852
+  },
+  {
+   "isin": "TRATSKBW91N0",
+   "kod": "TSKB",
+   "deger": 10191600.0,
+   "satir": 1,
+   "agirlik": 1.9668
+  },
+  {
+   "isin": "TREALBK00011",
+   "kod": "ALBRK",
+   "deger": 7350000.0,
+   "satir": 1,
+   "agirlik": 1.4184
+  },
+  {
+   "isin": "TRASKBNK91N8",
+   "kod": "SKBNK",
+   "deger": 3546721.27,
+   "satir": 1,
+   "agirlik": 0.6844
+  },
+  {
+   "isin": "TRATEKST91N0",
+   "kod": "ICBCT",
+   "deger": 732000.0,
+   "satir": 1,
+   "agirlik": 0.1413
   }
  ],
- "kod": "YZH",
- "donem": "2026-10",
  "bildirim": 1692909,
  "yayin": "05.11.2026 09:27:21",
  "ekler": [
   "4028328ca17e4f5e01a1a6e16cef5a1f"
- ]
+ ],
+ "kod": "YZH",
+ "donem": "2026-10"
 }

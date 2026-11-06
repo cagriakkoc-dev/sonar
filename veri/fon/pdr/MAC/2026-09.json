@@ -1,19 +1,101 @@
 {
  "fon_toplam_deger": 3570543380.83,
+ "fon_portfoy_degeri": 3588414130.87,
+ "islemler": {
+  "alis": [
+   [
+    "TCELL",
+    187898051.8,
+    21
+   ],
+   [
+    "ALGYO",
+    42360133.67,
+    17
+   ]
+  ],
+  "satis": [
+   [
+    "TBPP",
+    2171976346.79,
+    43
+   ],
+   [
+    "ALARK",
+    111992614.2,
+    60
+   ],
+   [
+    "GSDHO",
+    90526907.85,
+    39
+   ],
+   [
+    "TSKB",
+    56776626.16,
+    21
+   ],
+   [
+    "AEFES",
+    46469295.57,
+    35
+   ],
+   [
+    "ANHYT",
+    36694860.3,
+    41
+   ],
+   [
+    "TABGD",
+    34848148.9,
+    38
+   ],
+   [
+    "TCELL",
+    34718002.9,
+    14
+   ],
+   [
+    "AKGRT",
+    32431677.73,
+    16
+   ],
+   [
+    "KRVGD",
+    28450106.75,
+    12
+   ],
+   [
+    "TTRAK",
+    15415260.0,
+    23
+   ],
+   [
+    "ANSGR",
+    11417614.68,
+    14
+   ],
+   [
+    "LOGO",
+    2426594.5,
+    5
+   ]
+  ]
+ },
  "hisse_sayisi": 20,
  "hisse_agirligi": 96.14,
  "dogrulama": {
   "hisse_satir_toplami": 3432718639.36,
   "hisse_grup_toplami": 3432718639.36,
   "fark_yuzde": -0.0,
+  "yuzde_sutun": 0,
+  "bicim": "tr",
   "tutuyor": true
  },
  "hisseler": [
   {
    "isin": "TRETABG00020",
    "kod": "TABGD",
-   "ad": "TAB GIDA SANAYİ VE TİCARET A.Ş.",
-   "tur": "hisse",
    "deger": 331855000.0,
    "satir": 36,
    "agirlik": 9.2942
@@ -21,8 +103,6 @@
   {
    "isin": "TRAAEFES91A9",
    "kod": "AEFES",
-   "ad": "ANADOLU EFES BİRACILIK VE MALT SANAYİ A.Ş.",
-   "tur": "hisse",
    "deger": 313820000.0,
    "satir": 12,
    "agirlik": 8.7891
@@ -30,8 +110,6 @@
   {
    "isin": "TRAAKGRT91O5",
    "kod": "AKGRT",
-   "ad": "AKSİGORTA A.Ş.",
-   "tur": "hisse",
    "deger": 222285000.0,
    "satir": 27,
    "agirlik": 6.2255
@@ -39,8 +117,6 @@
   {
    "isin": "TREMAVI00037",
    "kod": "MAVI",
-   "ad": "MAVİ GİYİM SANAYİ VE TİCARET A.Ş.",
-   "tur": "hisse",
    "deger": 203170000.0,
    "satir": 11,
    "agirlik": 5.6902
@@ -48,8 +124,6 @@
   {
    "isin": "TRETTRK00010",
    "kod": "TTRAK",
-   "ad": "TÜRK TRAKTÖR VE ZİRAAT MAKİNELERİ A.Ş.",
-   "tur": "hisse",
    "deger": 184532986.0,
    "satir": 25,
    "agirlik": 5.1682
@@ -57,8 +131,6 @@
   {
    "isin": "TRALOGOW91U2",
    "kod": "LOGO",
-   "ad": "LOGO YAZILIM SANAYİ VE TİCARET A.Ş.",
-   "tur": "hisse",
    "deger": 179863650.0,
    "satir": 35,
    "agirlik": 5.0374
@@ -66,8 +138,6 @@
   {
    "isin": "TRECUHE00019",
    "kod": "AGESA",
-   "ad": "AGESA HAYAT VE EMEKLİLİK A.Ş.",
-   "tur": "hisse",
    "deger": 178074000.0,
    "satir": 17,
    "agirlik": 4.9873
@@ -75,8 +145,6 @@
   {
    "isin": "TRAGSDHO91Q9",
    "kod": "GSDHO",
-   "ad": "GSD HOLDİNG A.Ş.",
-   "tur": "hisse",
    "deger": 172174469.48,
    "satir": 36,
    "agirlik": 4.8221
@@ -84,8 +152,6 @@
   {
    "isin": "TRAANSGR91O1",
    "kod": "ANSGR",
-   "ad": "ANADOLU ANONİM TÜRK SİGORTA ŞİRKETİ",
-   "tur": "hisse",
    "deger": 172082560.0,
    "satir": 18,
    "agirlik": 4.8195
@@ -93,8 +159,6 @@
   {
    "isin": "TREDOTO00013",
    "kod": "DOAS",
-   "ad": "DOĞUŞ OTOMOTİV SERVİS VE TİCARET A.Ş.",
-   "tur": "hisse",
    "deger": 165830000.0,
    "satir": 15,
    "agirlik": 4.6444
@@ -102,8 +166,6 @@
   {
    "isin": "TRABRISA91E3",
    "kod": "BRISA",
-   "ad": "BRİSA BRIDGESTONE SABANCI LASTİK SANAYİ VE TİCARET A.Ş.",
-   "tur": "hisse",
    "deger": 164880000.0,
    "satir": 46,
    "agirlik": 4.6178
@@ -111,8 +173,6 @@
   {
    "isin": "TRAGOLTS91F0",
    "kod": "GOLTS",
-   "ad": "GÖLTAŞ GÖLLER BÖLGESİ ÇİMENTO SANAYİ VE TİCARET A.Ş.",
-   "tur": "hisse",
    "deger": 162825000.0,
    "satir": 29,
    "agirlik": 4.5602
@@ -120,8 +180,6 @@
   {
    "isin": "TRAASUZU91H4",
    "kod": "ASUZU",
-   "ad": "ANADOLU ISUZU OTOMOTİV SANAYİ VE TİCARET A.Ş.",
-   "tur": "hisse",
    "deger": 162532412.64,
    "satir": 48,
    "agirlik": 4.552
@@ -129,8 +187,6 @@
   {
    "isin": "TRAANHYT91O3",
    "kod": "ANHYT",
-   "ad": "ANADOLU HAYAT EMEKLİLİK A.Ş.",
-   "tur": "hisse",
    "deger": 160161600.0,
    "satir": 27,
    "agirlik": 4.4856
@@ -138,8 +194,6 @@
   {
    "isin": "TRATCELL91M1",
    "kod": "TCELL",
-   "ad": "TURKCELL İLETİŞİM HİZMETLERİ A.Ş.",
-   "tur": "hisse",
    "deger": 148955000.0,
    "satir": 4,
    "agirlik": 4.1718
@@ -147,8 +201,6 @@
   {
    "isin": "TRATSKBW91N0",
    "kod": "TSKB",
-   "ad": "TÜRKİYE SINAİ KALKINMA BANKASI A.Ş.",
-   "tur": "hisse",
    "deger": 133265972.44,
    "satir": 14,
    "agirlik": 3.7324
@@ -156,8 +208,6 @@
   {
    "isin": "TREATKY00016",
    "kod": "ATAKP",
-   "ad": "ATAKEY PATATES GIDA SANAYİ VE TİCARET A.Ş.",
-   "tur": "hisse",
    "deger": 130720000.0,
    "satir": 60,
    "agirlik": 3.6611
@@ -165,8 +215,6 @@
   {
    "isin": "TRAALGYO91Q5",
    "kod": "ALGYO",
-   "ad": "ALARKO GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-   "tur": "hisse",
    "deger": 118900000.0,
    "satir": 21,
    "agirlik": 3.33
@@ -174,8 +222,6 @@
   {
    "isin": "TRAALARK91Q0",
    "kod": "ALARK",
-   "ad": "ALARKO HOLDİNG A.Ş.",
-   "tur": "hisse",
    "deger": 113447500.0,
    "satir": 9,
    "agirlik": 3.1773
@@ -183,19 +229,16 @@
   {
    "isin": "TREGMAT00027",
    "kod": "GMTAS",
-   "ad": "GİMAT MAĞAZACILIK SANAYİ VE TİCARET A.Ş.",
-   "tur": "hisse",
    "deger": 13343488.8,
    "satir": 3,
    "agirlik": 0.3737
   }
  ],
- "diger_kalemler": [],
- "kod": "MAC",
- "donem": "2026-09",
  "bildirim": 1675949,
  "yayin": "08.10.2026 12:37:14",
  "ekler": [
   "4028328da0b8438a01a11ade624f39f8"
- ]
+ ],
+ "kod": "MAC",
+ "donem": "2026-09"
 }

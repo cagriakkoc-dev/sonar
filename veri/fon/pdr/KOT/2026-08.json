@@ -5,103 +5,72 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 7,
+ "hisse_agirligi": 93.7659,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 141847015.0,
+  "hisse_grup_toplami": 141847015.0,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 3,
+  "bicim": "tr",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
+  {
+   "isin": "TRATUPRS91E8",
+   "kod": "TUPRS",
+   "deger": 25696050.0,
+   "satir": 1,
+   "agirlik": 16.986
+  },
+  {
+   "isin": "TRAKCHOL91Q8",
+   "kod": "KCHOL",
+   "deger": 24606050.0,
+   "satir": 1,
+   "agirlik": 16.2655
+  },
+  {
+   "isin": "TRAYKBNK91N6",
+   "kod": "YKBNK",
+   "deger": 23555400.0,
+   "satir": 1,
+   "agirlik": 15.571
+  },
   {
    "isin": "TRAAYGAZ91E0",
    "kod": "AYGAZ",
-   "ad": "TL      AYGAZ A.Ş.",
-   "tur": "fon",
    "deger": 22997750.0,
    "satir": 1,
    "agirlik": 15.2023
   },
   {
-   "isin": "TRAOTOSN91H6",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 2,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAKCHOL91Q8",
-   "kod": null,
-   "ad": "HOLDİNG",
-   "tur": "fon",
-   "deger": 0.0,
+   "isin": "TRATOASO91H3",
+   "kod": "TOASO",
+   "deger": 19869062.5,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 13.1342
   },
   {
    "isin": "TRAOTKAR91H3",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "OTKAR",
+   "deger": 14549772.5,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 9.6179
   },
   {
-   "isin": "TRATOASO91H3",
-   "kod": "TÜRK",
-   "ad": "OTOMOBİL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRATUPRS91E8",
-   "kod": "PETROL",
-   "ad": "PETROL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRAYKBNK91N6",
-   "kod": "KREDİ",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRYAZIM01612",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRYAZIM00341",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
+   "isin": "TRAOTOSN91H6",
+   "kod": "FROTO",
+   "deger": 10572930.0,
+   "satir": 2,
+   "agirlik": 6.9891
   }
  ],
- "kod": "KOT",
- "donem": "2026-08",
  "bildirim": 1659713,
  "yayin": "07.09.2026 18:31:50",
  "ekler": [
   "4028328d9f52dddd01a07c5ce5e74de7"
- ]
+ ],
+ "kod": "KOT",
+ "donem": "2026-08"
 }

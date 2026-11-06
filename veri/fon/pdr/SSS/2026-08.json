@@ -1,162 +1,146 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 247857479.61,
+ "fon_portfoy_degeri": 239482557.65,
  "islemler": {
   "alis": [],
   "satis": []
  },
  "hisse_sayisi": 17,
- "hisse_agirligi": null,
+ "hisse_agirligi": 94.7907,
  "dogrulama": {
-  "hisse_satir_toplami": 6355.28,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 234945885.05,
+  "hisse_grup_toplami": 234945885.05,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 1,
+  "bicim": "us",
+  "tutuyor": true
  },
  "hisseler": [
   {
-   "isin": "TRAKCHOL91Q8",
-   "kod": "KCHOL",
-   "ad": "KCHOL",
-   "tur": "hisse",
-   "deger": 884.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREKMPU00017",
-   "kod": "KMPUR",
-   "ad": "KMPUR",
-   "tur": "hisse",
-   "deger": 867.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREPAPL00010",
-   "kod": "PAPIL",
-   "ad": "PAPIL",
-   "tur": "hisse",
-   "deger": 800.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREKREL00019",
-   "kod": "KAREL",
-   "ad": "KAREL",
-   "tur": "hisse",
-   "deger": 753.28,
-   "satir": 1
-  },
-  {
-   "isin": "TREALTA00014",
-   "kod": "ALTNY",
-   "ad": "ALTNY",
-   "tur": "hisse",
-   "deger": 644.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREFRTE00012",
-   "kod": "FORTE",
-   "ad": "FORTE",
-   "tur": "hisse",
-   "deger": 450.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRETUMO00011",
-   "kod": "TMSN",
-   "ad": "TMSN",
-   "tur": "hisse",
-   "deger": 445.0,
-   "satir": 1
-  },
-  {
    "isin": "TRAASELS91H2",
    "kod": "ASELS",
-   "ad": "ASELS",
-   "tur": "hisse",
-   "deger": 386.0,
-   "satir": 1
+   "deger": 50985386.25,
+   "satir": 1,
+   "agirlik": 20.5704
   },
   {
-   "isin": "TRESDTT00013",
-   "kod": "SDTTR",
-   "ad": "SDTTR",
-   "tur": "hisse",
-   "deger": 380.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAOTKAR91H3",
-   "kod": "OTKAR",
-   "ad": "OTKAR",
-   "tur": "hisse",
-   "deger": 320.0,
-   "satir": 1
+   "isin": "TRAKCHOL91Q8",
+   "kod": "KCHOL",
+   "deger": 37791884.2,
+   "satir": 1,
+   "agirlik": 15.2474
   },
   {
    "isin": "TRATHYAO91M5",
    "kod": "THYAO",
-   "ad": "THYAO",
-   "tur": "hisse",
-   "deger": 250.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREKMBH00014",
-   "kod": "BERA",
-   "ad": "BERA",
-   "tur": "hisse",
-   "deger": 176.0,
-   "satir": 1
+   "deger": 31736250.0,
+   "satir": 1,
+   "agirlik": 12.8042
   },
   {
    "isin": "TRAYAZIC91Q6",
    "kod": "AGHOL",
-   "ad": "AGHOL",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAAKSAW91E1",
-   "kod": "AKSA",
-   "ad": "AKSA",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAASUZU91H4",
-   "kod": "ASUZU",
-   "ad": "ASUZU",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 27200000.0,
+   "satir": 1,
+   "agirlik": 10.974
   },
   {
    "isin": "TRADOHOL91Q8",
    "kod": "DOHOL",
-   "ad": "DOHOL",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 26544000.0,
+   "satir": 1,
+   "agirlik": 10.7094
+  },
+  {
+   "isin": "TRAAKSAW91E1",
+   "kod": "AKSA",
+   "deger": 14001000.0,
+   "satir": 1,
+   "agirlik": 5.6488
+  },
+  {
+   "isin": "TRAOTKAR91H3",
+   "kod": "OTKAR",
+   "deger": 10467320.5,
+   "satir": 1,
+   "agirlik": 4.2231
+  },
+  {
+   "isin": "TREKMBH00014",
+   "kod": "BERA",
+   "deger": 8041176.8,
+   "satir": 1,
+   "agirlik": 3.2443
+  },
+  {
+   "isin": "TREFRTE00012",
+   "kod": "FORTE",
+   "deger": 7359450.0,
+   "satir": 1,
+   "agirlik": 2.9692
+  },
+  {
+   "isin": "TREALTA00014",
+   "kod": "ALTNY",
+   "deger": 4288644.91,
+   "satir": 1,
+   "agirlik": 1.7303
+  },
+  {
+   "isin": "TRESDTT00013",
+   "kod": "SDTTR",
+   "deger": 3581380.0,
+   "satir": 1,
+   "agirlik": 1.4449
+  },
+  {
+   "isin": "TREKMPU00017",
+   "kod": "KMPUR",
+   "deger": 3088867.39,
+   "satir": 1,
+   "agirlik": 1.2462
   },
   {
    "isin": "TREKTMR00015",
    "kod": "KATMR",
-   "ad": "KATMR",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 2829000.0,
+   "satir": 1,
+   "agirlik": 1.1414
+  },
+  {
+   "isin": "TRAASUZU91H4",
+   "kod": "ASUZU",
+   "deger": 2400000.0,
+   "satir": 1,
+   "agirlik": 0.9683
+  },
+  {
+   "isin": "TREPAPL00010",
+   "kod": "PAPIL",
+   "deger": 2296800.0,
+   "satir": 1,
+   "agirlik": 0.9267
+  },
+  {
+   "isin": "TRETUMO00011",
+   "kod": "TMSN",
+   "deger": 1581445.0,
+   "satir": 1,
+   "agirlik": 0.638
+  },
+  {
+   "isin": "TREKREL00019",
+   "kod": "KAREL",
+   "deger": 753280.0,
+   "satir": 1,
+   "agirlik": 0.3039
   }
  ],
- "diger_kalemler": [],
- "kod": "SSS",
- "donem": "2026-08",
  "bildirim": 1658343,
  "yayin": "03.09.2026 16:56:23",
  "ekler": [
   "4028328d9f52dddd01a0673cf2d85886"
- ]
+ ],
+ "kod": "SSS",
+ "donem": "2026-08"
 }

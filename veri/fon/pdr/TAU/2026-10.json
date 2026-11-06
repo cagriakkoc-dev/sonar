@@ -1,130 +1,90 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 2078695011.06,
+ "fon_portfoy_degeri": 2083295380.58,
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": null,
+ "hisse_sayisi": 9,
+ "hisse_agirligi": 94.894,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 1972557439.35,
+  "hisse_grup_toplami": 1972557439.97,
+  "fark_yuzde": -0.0,
+  "yuzde_sutun": 3,
+  "bicim": "us",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
+  {
+   "isin": "TRAAKBNK91N6",
+   "kod": "AKBNK",
+   "deger": 537949127.1,
+   "satir": 1,
+   "agirlik": 25.8792
+  },
   {
    "isin": "TRAYKBNK91N6",
    "kod": "YKBNK",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 990.0,
-   "satir": 11
-  },
-  {
-   "isin": "TRETHAL00019",
-   "kod": "HALKB",
-   "ad": "TL      T. HALK BANKASI A.Ş.",
-   "tur": "fon",
-   "deger": 800.0,
-   "satir": 3
-  },
-  {
-   "isin": "TRASKBNK91N8",
-   "kod": "SKBNK",
-   "ad": "TL     ŞEKERBANK T.A.Ş.",
-   "tur": "fon",
-   "deger": 750.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRATSKBW91N0",
-   "kod": "TSKB",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 630.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRRSKBK00082",
-   "kod": "SKBNK",
-   "ad": "SKBNK.R         TL     ŞEKERBANK T.A.Ş.",
-   "tur": "fon",
-   "deger": 600.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREVKFB00019",
-   "kod": "VAKBN",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 510.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAGARAN91N1",
-   "kod": "GARAN",
-   "ad": "TL      GARANTI BANKASI A.Ş.",
-   "tur": "fon",
-   "deger": 400.0,
-   "satir": 4
+   "deger": 485241772.92,
+   "satir": 11,
+   "agirlik": 23.3436
   },
   {
    "isin": "TRAISCTR91N2",
    "kod": "ISCTR",
-   "ad": "TL        T.IŞ BANKASI A.S.",
-   "tur": "fon",
-   "deger": 200.0,
-   "satir": 2
+   "deger": 364039205.83,
+   "satir": 2,
+   "agirlik": 17.5129
   },
   {
-   "isin": "TRAAKBNK91N6",
-   "kod": "AKBNK",
-   "ad": "TL         AKBANK T.A.Ş.",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TRAGARAN91N1",
+   "kod": "GARAN",
+   "deger": 313553634.4,
+   "satir": 4,
+   "agirlik": 15.0842
+  },
+  {
+   "isin": "TRETHAL00019",
+   "kod": "HALKB",
+   "deger": 101597245.2,
+   "satir": 3,
+   "agirlik": 4.8875
+  },
+  {
+   "isin": "TREVKFB00019",
+   "kod": "VAKBN",
+   "deger": 65485111.2,
+   "satir": 1,
+   "agirlik": 3.1503
+  },
+  {
+   "isin": "TRATSKBW91N0",
+   "kod": "TSKB",
+   "deger": 39627971.46,
+   "satir": 1,
+   "agirlik": 1.9064
+  },
+  {
+   "isin": "TRASKBNK91N8",
+   "kod": "SKBNK",
+   "deger": 33589525.74,
+   "satir": 1,
+   "agirlik": 1.6159
   },
   {
    "isin": "TREALBK00011",
    "kod": "ALBRK",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRT021030T18",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRT120128T11",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRMTI1WWWWW0",
-   "kod": "TI1",
-   "ad": "TL   İŞ PORTFÖY YÖNETİMİ AŞ",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 31473845.5,
+   "satir": 1,
+   "agirlik": 1.5141
   }
  ],
- "kod": "TAU",
- "donem": "2026-10",
  "bildirim": 1692330,
  "yayin": "04.11.2026 16:32:44",
  "ekler": [
   "4028328ca17e4f5d01a1a6b4542a66b8"
- ]
+ ],
+ "kod": "TAU",
+ "donem": "2026-10"
 }

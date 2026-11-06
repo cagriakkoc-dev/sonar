@@ -1,25 +1,230 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 221022690.03,
+ "fon_portfoy_degeri": 221021442.42,
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": null,
+ "hisse_sayisi": 29,
+ "hisse_agirligi": 99.6733,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 220300692.83,
+  "hisse_grup_toplami": 220300692.83,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 0,
+  "bicim": "us",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [],
- "kod": "OPI",
- "donem": "2026-08",
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "BIMAS",
+   "deger": 17586535.0,
+   "satir": 1,
+   "agirlik": 7.9569
+  },
+  {
+   "isin": null,
+   "kod": "TUPRS",
+   "deger": 16217729.75,
+   "satir": 1,
+   "agirlik": 7.3376
+  },
+  {
+   "isin": null,
+   "kod": "TBORG",
+   "deger": 15850450.0,
+   "satir": 1,
+   "agirlik": 7.1714
+  },
+  {
+   "isin": null,
+   "kod": "ASELS",
+   "deger": 12344550.0,
+   "satir": 1,
+   "agirlik": 5.5852
+  },
+  {
+   "isin": null,
+   "kod": "CCOLA",
+   "deger": 11629003.2,
+   "satir": 1,
+   "agirlik": 5.2615
+  },
+  {
+   "isin": null,
+   "kod": "ASTOR",
+   "deger": 10847475.0,
+   "satir": 1,
+   "agirlik": 4.9079
+  },
+  {
+   "isin": null,
+   "kod": "RGYAS",
+   "deger": 10123800.0,
+   "satir": 1,
+   "agirlik": 4.5804
+  },
+  {
+   "isin": null,
+   "kod": "AKBNK",
+   "deger": 9676039.5,
+   "satir": 1,
+   "agirlik": 4.3778
+  },
+  {
+   "isin": null,
+   "kod": "INDES",
+   "deger": 9235334.8,
+   "satir": 1,
+   "agirlik": 4.1785
+  },
+  {
+   "isin": null,
+   "kod": "TRGYO",
+   "deger": 8202500.0,
+   "satir": 1,
+   "agirlik": 3.7112
+  },
+  {
+   "isin": null,
+   "kod": "ENKAI",
+   "deger": 8167530.0,
+   "satir": 1,
+   "agirlik": 3.6953
+  },
+  {
+   "isin": null,
+   "kod": "AYGAZ",
+   "deger": 8056750.0,
+   "satir": 1,
+   "agirlik": 3.6452
+  },
+  {
+   "isin": null,
+   "kod": "DOHOL",
+   "deger": 7553980.0,
+   "satir": 1,
+   "agirlik": 3.4177
+  },
+  {
+   "isin": null,
+   "kod": "TURSG",
+   "deger": 7480051.8,
+   "satir": 1,
+   "agirlik": 3.3843
+  },
+  {
+   "isin": null,
+   "kod": "TABGD",
+   "deger": 7124697.0,
+   "satir": 1,
+   "agirlik": 3.2235
+  },
+  {
+   "isin": null,
+   "kod": "ALARK",
+   "deger": 6562005.3,
+   "satir": 1,
+   "agirlik": 2.9689
+  },
+  {
+   "isin": null,
+   "kod": "AGESA",
+   "deger": 6530988.75,
+   "satir": 1,
+   "agirlik": 2.9549
+  },
+  {
+   "isin": null,
+   "kod": "CIMSA",
+   "deger": 5910851.24,
+   "satir": 1,
+   "agirlik": 2.6743
+  },
+  {
+   "isin": null,
+   "kod": "GARAN",
+   "deger": 5902935.5,
+   "satir": 1,
+   "agirlik": 2.6707
+  },
+  {
+   "isin": null,
+   "kod": "BRSAN",
+   "deger": 5502400.0,
+   "satir": 1,
+   "agirlik": 2.4895
+  },
+  {
+   "isin": null,
+   "kod": "AVPGY",
+   "deger": 5263999.8,
+   "satir": 1,
+   "agirlik": 2.3817
+  },
+  {
+   "isin": null,
+   "kod": "TAVHL",
+   "deger": 5019630.0,
+   "satir": 1,
+   "agirlik": 2.2711
+  },
+  {
+   "isin": null,
+   "kod": "ULKER",
+   "deger": 4847315.55,
+   "satir": 1,
+   "agirlik": 2.1931
+  },
+  {
+   "isin": null,
+   "kod": "OSMEN",
+   "deger": 4517405.75,
+   "satir": 1,
+   "agirlik": 2.0439
+  },
+  {
+   "isin": null,
+   "kod": "ISMEN",
+   "deger": 4304049.64,
+   "satir": 1,
+   "agirlik": 1.9473
+  },
+  {
+   "isin": null,
+   "kod": "OPT25",
+   "deger": 2504258.64,
+   "satir": 1,
+   "agirlik": 1.133
+  },
+  {
+   "isin": null,
+   "kod": "OPTGY",
+   "deger": 2438791.55,
+   "satir": 1,
+   "agirlik": 1.1034
+  },
+  {
+   "isin": null,
+   "kod": "OPX30",
+   "deger": 816025.0,
+   "satir": 1,
+   "agirlik": 0.3692
+  },
+  {
+   "isin": null,
+   "kod": "OPK30",
+   "deger": 83610.06,
+   "satir": 1,
+   "agirlik": 0.0378
+  }
+ ],
  "bildirim": 1658991,
  "yayin": "04.09.2026 16:55:53",
  "ekler": [
   "4028328d9f52dddd01a06cb2f3a4103a"
- ]
+ ],
+ "kod": "OPI",
+ "donem": "2026-08"
 }

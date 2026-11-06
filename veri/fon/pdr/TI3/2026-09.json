@@ -1,138 +1,115 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 1672172495.16,
+ "fon_portfoy_degeri": 1672108118.58,
  "islemler": {
   "alis": [],
-  "satis": []
+  "satis": [
+   [
+    "ISCTR",
+    217801360.73,
+    139
+   ],
+   [
+    "SISE",
+    19472961.41,
+    22
+   ]
+  ]
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": null,
+ "hisse_sayisi": 11,
+ "hisse_agirligi": 97.0208,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 1622354987.61,
+  "hisse_grup_toplami": 1622354987.61,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 3,
+  "bicim": "us",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
-   "isin": "TRAANHYT91O3",
-   "kod": "ANHYT",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TRAISCTR91N2",
+   "kod": "ISCTR",
+   "deger": 372716829.56,
+   "satir": 1,
+   "agirlik": 22.2894
   },
   {
    "isin": "TRAANSGR91O1",
    "kod": "ANSGR",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAISCTR91N2",
-   "kod": "ISCTR",
-   "ad": "TL           T.IŞ BANKASI A.S.",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAISGEN91P9",
-   "kod": "ISFIN",
-   "ad": "TL     İŞ FİNANSAL KİRALAMA A.Ş.",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREIGSY00019",
-   "kod": "ISGSY",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAISGYO91Q3",
-   "kod": "ISGYO",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREISMD00011",
-   "kod": "ISMEN",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAISYAT91Q5",
-   "kod": "ISYAT",
-   "ad": "TL    İŞ YATIRIM ORTAKLIĞI A.Ş.",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 267141803.28,
+   "satir": 1,
+   "agirlik": 15.9757
   },
   {
    "isin": "TRASISEW91Q3",
    "kod": "SISE",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 258614491.33,
+   "satir": 1,
+   "agirlik": 15.4658
   },
   {
-   "isin": "TRETSGY00016",
-   "kod": "TSGYO",
-   "ad": "TL",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TREISMD00011",
+   "kod": "ISMEN",
+   "deger": 174005787.93,
+   "satir": 1,
+   "agirlik": 10.406
+  },
+  {
+   "isin": "TRAISGYO91Q3",
+   "kod": "ISGYO",
+   "deger": 161180556.54,
+   "satir": 1,
+   "agirlik": 9.639
   },
   {
    "isin": "TRATSKBW91N0",
    "kod": "TSKB",
-   "ad": "TL",
-   "tur": "sinai̇ kalkinma banka",
-   "deger": 0.0,
-   "satir": 2
+   "deger": 150994433.41,
+   "satir": 2,
+   "agirlik": 9.0298
   },
   {
-   "isin": "TRT110429T18",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TRAANHYT91O3",
+   "kod": "ANHYT",
+   "deger": 109707811.63,
+   "satir": 1,
+   "agirlik": 6.5608
   },
   {
-   "isin": "TRT160431T19",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 2
+   "isin": "TRAISGEN91P9",
+   "kod": "ISFIN",
+   "deger": 77100667.65,
+   "satir": 1,
+   "agirlik": 4.6108
   },
   {
-   "isin": "TRMTI1WWWWW0",
-   "kod": "TI1",
-   "ad": "TL      İŞ PORTFÖY YÖNETİMİ AŞ",
-   "tur": "repo",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TREIGSY00019",
+   "kod": "ISGSY",
+   "deger": 28540198.61,
+   "satir": 1,
+   "agirlik": 1.7068
+  },
+  {
+   "isin": "TRAISYAT91Q5",
+   "kod": "ISYAT",
+   "deger": 16228886.32,
+   "satir": 1,
+   "agirlik": 0.9705
+  },
+  {
+   "isin": "TRETSGY00016",
+   "kod": "TSGYO",
+   "deger": 6123521.35,
+   "satir": 1,
+   "agirlik": 0.3662
   }
  ],
- "kod": "TI3",
- "donem": "2026-09",
  "bildirim": 1671881,
  "yayin": "05.10.2026 12:59:27",
  "ekler": [
   "4028328ca0b8418501a10b6fedfd421c"
- ]
+ ],
+ "kod": "TI3",
+ "donem": "2026-09"
 }

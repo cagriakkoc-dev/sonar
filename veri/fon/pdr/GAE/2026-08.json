@@ -1,299 +1,244 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 1414078728.92,
+ "fon_portfoy_degeri": 1415325601.35,
  "islemler": {
   "alis": [],
   "satis": []
  },
  "hisse_sayisi": 31,
- "hisse_agirligi": null,
+ "hisse_agirligi": 95.8833,
  "dogrulama": {
-  "hisse_satir_toplami": 0.0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 1355865275.38,
+  "hisse_grup_toplami": 1355865275.38,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 0,
+  "bicim": "us",
+  "tutuyor": true
  },
  "hisseler": [
   {
-   "isin": "TREKOAL00014",
-   "kod": "TRALT",
-   "ad": "KOZA ALTIN İŞLETMELERİ A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
-  },
-  {
-   "isin": "TRAAEFES91A9",
-   "kod": "AEFES",
-   "ad": "ANADOLU EFES BİRACILIK VE MALT",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 18
-  },
-  {
-   "isin": "TRAAKBNK91N6",
-   "kod": "AKBNK",
-   "ad": "AKBANK T.A.Ş",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 23
-  },
-  {
    "isin": "TRAASELS91H2",
    "kod": "ASELS",
-   "ad": "ASELSAN ELEKTRONİK SANAYİ VE T",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 29
-  },
-  {
-   "isin": "TREASTR00013",
-   "kod": "ASTOR",
-   "ad": "ASTOR ENERJİ A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
-  },
-  {
-   "isin": "TREBIMM00018",
-   "kod": "BIMAS",
-   "ad": "BİM BİRLEŞİK MAĞAZALAR A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 38
-  },
-  {
-   "isin": "TREDSTF00012",
-   "kod": "DSTKF",
-   "ad": "DESTEK FİNANS FAKTORİNG A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 26
-  },
-  {
-   "isin": "TREEGYO00017",
-   "kod": "EKGYO",
-   "ad": "EMLAK KONUT GAYRİMENKUL YATIRI",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 5
-  },
-  {
-   "isin": "TREENKA00011",
-   "kod": "ENKAI",
-   "ad": "ENKA İNŞAAT VE SANAYİ A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 28
-  },
-  {
-   "isin": "TRAEREGL91G3",
-   "kod": "EREGL",
-   "ad": "EREĞLİ DEMİR VE ÇELİK FABRİKAL",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 28
-  },
-  {
-   "isin": "TRAOTOSN91H6",
-   "kod": "FROTO",
-   "ad": "FORD OTOMOTİV SANAYİ A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 32
-  },
-  {
-   "isin": "TRAGARAN91N1",
-   "kod": "GARAN",
-   "ad": "GARANTİ BANKASI A.Ş",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 20
-  },
-  {
-   "isin": "TRAGUBRF91E2",
-   "kod": "GUBRF",
-   "ad": "GÜBRE FABRİKALARI T.A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 5
-  },
-  {
-   "isin": "TRAISCTR91N2",
-   "kod": "ISCTR",
-   "ad": "T.IS BANKASI",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 31
-  },
-  {
-   "isin": "TRAKCHOL91Q8",
-   "kod": "KCHOL",
-   "ad": "KOÇ HOLDİNG A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 23
-  },
-  {
-   "isin": "TREKPKS00023",
-   "kod": "KPEKS",
-   "ad": "KAPEKS KİMYA SANAYİ A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAKRDMR91G7",
-   "kod": "KRDMD",
-   "ad": "KARDEMİR KARABÜK DEMİR ÇELİK S",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 16
-  },
-  {
-   "isin": "TREMGTI00012",
-   "kod": "MGROS",
-   "ad": "MİGROS TİCARET A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 11
-  },
-  {
-   "isin": "TRAPETKM91E0",
-   "kod": "PETKM",
-   "ad": "PETKİM PETROKİMYA HOLDİNG A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 38
-  },
-  {
-   "isin": "TREPEGS00016",
-   "kod": "PGSUS",
-   "ad": "PEGASUS HAVA TAŞIMACILIĞI A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 28
-  },
-  {
-   "isin": "TRASAHOL91Q5",
-   "kod": "SAHOL",
-   "ad": "HACI ÖMER SABANCI HOLDİNG A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 32
-  },
-  {
-   "isin": "TRASASAW91E4",
-   "kod": "SASA",
-   "ad": "SASA POLYESTER SANAYİ A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 23
-  },
-  {
-   "isin": "TRASISEW91Q3",
-   "kod": "SISE",
-   "ad": "TÜRKİYE ŞİŞE VE CAM FABRİKALAR",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 40
-  },
-  {
-   "isin": "TRETAVH00018",
-   "kod": "TAVHL",
-   "ad": "TAV HAVALİMANLARI HOLDİNG A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
-  },
-  {
-   "isin": "TRATCELL91M1",
-   "kod": "TCELL",
-   "ad": "TURKCELL İLETİŞİM HİZMETLERİ A",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 27
-  },
-  {
-   "isin": "TRATHYAO91M5",
-   "kod": "THYAO",
-   "ad": "TÜRK HAVA YOLLARI A.O.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 18
-  },
-  {
-   "isin": "TRATOASO91H3",
-   "kod": "TOASO",
-   "ad": "TOFAŞ TÜRK OTOMOBİL FABRİKASI",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
-  },
-  {
-   "isin": "TRETTLK00013",
-   "kod": "TTKOM",
-   "ad": "TÜRK TELEKOMÜNİKASYON A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
+   "deger": 195331646.25,
+   "satir": 29,
+   "agirlik": 13.8134
   },
   {
    "isin": "TRATUPRS91E8",
    "kod": "TUPRS",
-   "ad": "TÜPRAŞ-TÜRKİYE PETROL RAFİNERİ",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 19
+   "deger": 143179031.0,
+   "satir": 19,
+   "agirlik": 10.1253
   },
   {
-   "isin": "TREVKFB00019",
-   "kod": "VAKBN",
-   "ad": "T. VAKIFLAR BANKASI",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 19
+   "isin": "TREBIMM00018",
+   "kod": "BIMAS",
+   "deger": 136593891.5,
+   "satir": 38,
+   "agirlik": 9.6596
+  },
+  {
+   "isin": "TRATHYAO91M5",
+   "kod": "THYAO",
+   "deger": 88313520.75,
+   "satir": 18,
+   "agirlik": 6.2453
+  },
+  {
+   "isin": "TRAAKBNK91N6",
+   "kod": "AKBNK",
+   "deger": 79725119.25,
+   "satir": 23,
+   "agirlik": 5.638
+  },
+  {
+   "isin": "TREDSTF00012",
+   "kod": "DSTKF",
+   "deger": 68163155.0,
+   "satir": 26,
+   "agirlik": 4.8203
+  },
+  {
+   "isin": "TREASTR00013",
+   "kod": "ASTOR",
+   "deger": 57487057.0,
+   "satir": 3,
+   "agirlik": 4.0653
+  },
+  {
+   "isin": "TRAEREGL91G3",
+   "kod": "EREGL",
+   "deger": 53740819.86,
+   "satir": 28,
+   "agirlik": 3.8004
+  },
+  {
+   "isin": "TRAKCHOL91Q8",
+   "kod": "KCHOL",
+   "deger": 53200214.2,
+   "satir": 23,
+   "agirlik": 3.7622
+  },
+  {
+   "isin": "TREENKA00011",
+   "kod": "ENKAI",
+   "deger": 48157662.2,
+   "satir": 28,
+   "agirlik": 3.4056
   },
   {
    "isin": "TRAYKBNK91N6",
    "kod": "YKBNK",
-   "ad": "YAPI KREDİ BANKASI",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 32
-  }
- ],
- "diger_kalemler": [
-  {
-   "isin": "TRT190728T18",
-   "kod": null,
-   "ad": "",
-   "tur": "diger",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 42936673.56,
+   "satir": 32,
+   "agirlik": 3.0364
   },
   {
-   "isin": "TRMGA4WWWWW7",
-   "kod": "GAL",
-   "ad": "GARANTİ PORTFÖY YÖNETİM ŞİRKET",
-   "tur": "diger",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TRAISCTR91N2",
+   "kod": "ISCTR",
+   "deger": 40982937.44,
+   "satir": 31,
+   "agirlik": 2.8982
   },
   {
-   "isin": "TRYGAPO01506",
-   "kod": "PIP",
-   "ad": "GARANTİ PORTFÖY YÖNETİM ŞİRKET",
-   "tur": "diger",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TRATCELL91M1",
+   "kod": "TCELL",
+   "deger": 40304811.9,
+   "satir": 27,
+   "agirlik": 2.8503
+  },
+  {
+   "isin": "TRASAHOL91Q5",
+   "kod": "SAHOL",
+   "deger": 40167336.0,
+   "satir": 32,
+   "agirlik": 2.8405
+  },
+  {
+   "isin": "TRAGARAN91N1",
+   "kod": "GARAN",
+   "deger": 31744428.1,
+   "satir": 20,
+   "agirlik": 2.2449
+  },
+  {
+   "isin": "TRASISEW91Q3",
+   "kod": "SISE",
+   "deger": 25408741.82,
+   "satir": 40,
+   "agirlik": 1.7968
+  },
+  {
+   "isin": "TRASASAW91E4",
+   "kod": "SASA",
+   "deger": 24694255.9,
+   "satir": 23,
+   "agirlik": 1.7463
+  },
+  {
+   "isin": "TRAOTOSN91H6",
+   "kod": "FROTO",
+   "deger": 19487356.65,
+   "satir": 32,
+   "agirlik": 1.3781
+  },
+  {
+   "isin": "TRETAVH00018",
+   "kod": "TAVHL",
+   "deger": 16500225.0,
+   "satir": 3,
+   "agirlik": 1.1669
+  },
+  {
+   "isin": "TRAGUBRF91E2",
+   "kod": "GUBRF",
+   "deger": 16059136.25,
+   "satir": 5,
+   "agirlik": 1.1357
+  },
+  {
+   "isin": "TREKOAL00014",
+   "kod": "TRALT",
+   "deger": 15807948.3,
+   "satir": 3,
+   "agirlik": 1.1179
+  },
+  {
+   "isin": "TRAAEFES91A9",
+   "kod": "AEFES",
+   "deger": 15793163.28,
+   "satir": 18,
+   "agirlik": 1.1169
+  },
+  {
+   "isin": "TREEGYO00017",
+   "kod": "EKGYO",
+   "deger": 15143400.0,
+   "satir": 5,
+   "agirlik": 1.0709
+  },
+  {
+   "isin": "TREPEGS00016",
+   "kod": "PGSUS",
+   "deger": 15065736.0,
+   "satir": 28,
+   "agirlik": 1.0654
+  },
+  {
+   "isin": "TRAKRDMR91G7",
+   "kod": "KRDMD",
+   "deger": 14947252.88,
+   "satir": 16,
+   "agirlik": 1.057
+  },
+  {
+   "isin": "TRATOASO91H3",
+   "kod": "TOASO",
+   "deger": 14649398.75,
+   "satir": 3,
+   "agirlik": 1.036
+  },
+  {
+   "isin": "TRAPETKM91E0",
+   "kod": "PETKM",
+   "deger": 11335745.52,
+   "satir": 38,
+   "agirlik": 0.8016
+  },
+  {
+   "isin": "TREKPKS00023",
+   "kod": "KPEKS",
+   "deger": 10290000.0,
+   "satir": 1,
+   "agirlik": 0.7277
+  },
+  {
+   "isin": "TREVKFB00019",
+   "kod": "VAKBN",
+   "deger": 9447030.12,
+   "satir": 19,
+   "agirlik": 0.6681
+  },
+  {
+   "isin": "TREMGTI00012",
+   "kod": "MGROS",
+   "deger": 6127781.0,
+   "satir": 11,
+   "agirlik": 0.4333
+  },
+  {
+   "isin": "TRETTLK00013",
+   "kod": "TTKOM",
+   "deger": 5079799.9,
+   "satir": 3,
+   "agirlik": 0.3592
   }
  ],
- "kod": "GAE",
- "donem": "2026-08",
  "bildirim": 1659655,
  "yayin": "07.09.2026 17:57:01",
  "ekler": [
   "4028328d9f52dddd01a07c09ae933dbc"
- ]
+ ],
+ "kod": "GAE",
+ "donem": "2026-08"
 }

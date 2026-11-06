@@ -1,82 +1,188 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 31526354.56,
+ "fon_portfoy_degeri": 31584231.35,
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": null,
+ "hisse_sayisi": 23,
+ "hisse_agirligi": 85.1411,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 26841888.0,
+  "hisse_grup_toplami": 26841888.0,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 0,
+  "bicim": "us",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
-   "isin": "TRD080927T34",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 2610.0,
-   "satir": 8
+   "isin": null,
+   "kod": "ASELS",
+   "deger": 2723062.5,
+   "satir": 1,
+   "agirlik": 8.6374
   },
   {
-   "isin": "TRD200127T10",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 1566.03,
-   "satir": 6
+   "isin": null,
+   "kod": "TUPRS",
+   "deger": 2621637.5,
+   "satir": 1,
+   "agirlik": 8.3157
   },
   {
-   "isin": "TRD110827T14",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 1555.0,
-   "satir": 2
+   "isin": null,
+   "kod": "BIMAS",
+   "deger": 2433000.0,
+   "satir": 1,
+   "agirlik": 7.7174
   },
   {
-   "isin": "TRD020627T17",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 1311.38,
-   "satir": 2
+   "isin": null,
+   "kod": "OPK30",
+   "deger": 2282580.0,
+   "satir": 1,
+   "agirlik": 7.2402
   },
   {
-   "isin": "TRD160926T35",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 970.0,
-   "satir": 1
+   "isin": null,
+   "kod": "MPARK",
+   "deger": 1536650.0,
+   "satir": 1,
+   "agirlik": 4.8742
   },
   {
-   "isin": "TRD061027T17",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 345.0,
-   "satir": 1
+   "isin": null,
+   "kod": "EKGYO",
+   "deger": 1350000.0,
+   "satir": 1,
+   "agirlik": 4.2821
   },
   {
-   "isin": "TRD170730T14",
-   "kod": null,
-   "ad": "HM Kira Sertifikasi",
-   "tur": "diger",
-   "deger": 220.0,
-   "satir": 1
+   "isin": null,
+   "kod": "EREGL",
+   "deger": 1337910.0,
+   "satir": 1,
+   "agirlik": 4.2438
+  },
+  {
+   "isin": null,
+   "kod": "GLRMK",
+   "deger": 1280480.0,
+   "satir": 1,
+   "agirlik": 4.0616
+  },
+  {
+   "isin": null,
+   "kod": "GUBRF",
+   "deger": 1252550.0,
+   "satir": 1,
+   "agirlik": 3.973
+  },
+  {
+   "isin": null,
+   "kod": "ENJSA",
+   "deger": 1112010.0,
+   "satir": 1,
+   "agirlik": 3.5272
+  },
+  {
+   "isin": null,
+   "kod": "Z30KP",
+   "deger": 1090980.0,
+   "satir": 1,
+   "agirlik": 3.4605
+  },
+  {
+   "isin": null,
+   "kod": "CIMSA",
+   "deger": 1045512.0,
+   "satir": 1,
+   "agirlik": 3.3163
+  },
+  {
+   "isin": null,
+   "kod": "RGYAS",
+   "deger": 947760.0,
+   "satir": 1,
+   "agirlik": 3.0062
+  },
+  {
+   "isin": null,
+   "kod": "KARSN",
+   "deger": 770640.0,
+   "satir": 1,
+   "agirlik": 2.4444
+  },
+  {
+   "isin": null,
+   "kod": "SSAAT",
+   "deger": 735420.0,
+   "satir": 1,
+   "agirlik": 2.3327
+  },
+  {
+   "isin": null,
+   "kod": "LOGO",
+   "deger": 724140.0,
+   "satir": 1,
+   "agirlik": 2.2969
+  },
+  {
+   "isin": null,
+   "kod": "ALBRK",
+   "deger": 707420.0,
+   "satir": 1,
+   "agirlik": 2.2439
+  },
+  {
+   "isin": null,
+   "kod": "GRSEL",
+   "deger": 690000.0,
+   "satir": 1,
+   "agirlik": 2.1886
+  },
+  {
+   "isin": null,
+   "kod": "DYOBY",
+   "deger": 576150.0,
+   "satir": 1,
+   "agirlik": 1.8275
+  },
+  {
+   "isin": null,
+   "kod": "PETKM",
+   "deger": 546635.0,
+   "satir": 1,
+   "agirlik": 1.7339
+  },
+  {
+   "isin": null,
+   "kod": "KMPUR",
+   "deger": 461750.0,
+   "satir": 1,
+   "agirlik": 1.4646
+  },
+  {
+   "isin": null,
+   "kod": "AVPGY",
+   "deger": 369225.0,
+   "satir": 1,
+   "agirlik": 1.1712
+  },
+  {
+   "isin": null,
+   "kod": "KRDMD",
+   "deger": 246376.0,
+   "satir": 1,
+   "agirlik": 0.7815
   }
  ],
- "kod": "OHK",
- "donem": "2026-08",
  "bildirim": 1660504,
  "yayin": "08.09.2026 20:50:17",
  "ekler": [
   "4028328d9f52dddc01a0821b28f72bbb"
- ]
+ ],
+ "kod": "OHK",
+ "donem": "2026-08"
 }

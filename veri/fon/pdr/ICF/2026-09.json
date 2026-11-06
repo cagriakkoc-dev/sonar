@@ -1,58 +1,515 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 17055596.28,
+ "fon_portfoy_degeri": 16949496.25,
  "islemler": {
-  "alis": [],
-  "satis": []
+  "alis": [
+   [
+    "MPARK",
+    733447.5,
+    3
+   ],
+   [
+    "EUPWR",
+    274879.2,
+    3
+   ],
+   [
+    "CWENE",
+    231280.0,
+    1
+   ],
+   [
+    "ALARK",
+    156711.0,
+    2
+   ],
+   [
+    "TRMET",
+    112282.5,
+    1
+   ],
+   [
+    "SAHOL",
+    106202.5,
+    1
+   ],
+   [
+    "TCELL",
+    84172.5,
+    1
+   ],
+   [
+    "GARAN",
+    71558.5,
+    1
+   ],
+   [
+    "ASTOR",
+    69410.0,
+    1
+   ],
+   [
+    "ISCTR",
+    66570.0,
+    1
+   ],
+   [
+    "ASELS",
+    66150.0,
+    1
+   ],
+   [
+    "TRGYO",
+    65180.0,
+    2
+   ],
+   [
+    "DOHOL",
+    61389.0,
+    1
+   ],
+   [
+    "TABGD",
+    56049.0,
+    2
+   ],
+   [
+    "EKGYO",
+    48361.5,
+    1
+   ],
+   [
+    "MGROS",
+    47595.0,
+    2
+   ],
+   [
+    "YKBNK",
+    45874.5,
+    1
+   ],
+   [
+    "TUPRS",
+    40766.25,
+    1
+   ],
+   [
+    "THYAO",
+    36920.0,
+    1
+   ],
+   [
+    "TAVHL",
+    33000.0,
+    1
+   ],
+   [
+    "TURSG",
+    25821.0,
+    1
+   ],
+   [
+    "TTKOM",
+    23391.0,
+    1
+   ],
+   [
+    "GLRMK",
+    17472.0,
+    1
+   ]
+  ],
+  "satis": [
+   [
+    "MGROS",
+    974005.0,
+    4
+   ],
+   [
+    "TRMET",
+    441510.0,
+    2
+   ],
+   [
+    "TUPRS",
+    383915.0,
+    5
+   ],
+   [
+    "BIMAS",
+    382640.0,
+    4
+   ],
+   [
+    "THYAO",
+    349912.5,
+    3
+   ],
+   [
+    "KCHOL",
+    241281.0,
+    3
+   ],
+   [
+    "ASELS",
+    228862.5,
+    3
+   ],
+   [
+    "CCOLA",
+    203002.5,
+    4
+   ],
+   [
+    "TCELL",
+    177128.0,
+    3
+   ],
+   [
+    "MPARK",
+    148329.0,
+    3
+   ],
+   [
+    "ISCTR",
+    147229.5,
+    2
+   ],
+   [
+    "SAHOL",
+    142007.5,
+    3
+   ],
+   [
+    "TAVHL",
+    138782.25,
+    4
+   ],
+   [
+    "YKBNK",
+    133013.0,
+    2
+   ],
+   [
+    "TOASO",
+    107897.0,
+    4
+   ],
+   [
+    "TRGYO",
+    106785.25,
+    4
+   ],
+   [
+    "AKBNK",
+    101315.0,
+    2
+   ],
+   [
+    "GARAN",
+    98680.0,
+    2
+   ],
+   [
+    "EUPWR",
+    88359.5,
+    1
+   ],
+   [
+    "EKGYO",
+    81521.85,
+    2
+   ],
+   [
+    "TABGD",
+    78589.0,
+    2
+   ],
+   [
+    "SOKM",
+    72591.25,
+    2
+   ],
+   [
+    "TTKOM",
+    71613.0,
+    3
+   ],
+   [
+    "TURSG",
+    68904.0,
+    1
+   ],
+   [
+    "DOHOL",
+    54161.42,
+    3
+   ],
+   [
+    "ALARK",
+    50871.0,
+    1
+   ],
+   [
+    "GLRMK",
+    5852.0,
+    1
+   ],
+   [
+    "EREGL",
+    5297.6,
+    1
+   ]
+  ]
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": null,
+ "hisse_sayisi": 33,
+ "hisse_agirligi": 0.0355,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 6053.68,
+  "hisse_grup_toplami": 88000.0,
+  "fark_yuzde": -93.1208,
+  "yuzde_sutun": 0,
+  "bicim": "us",
   "tutuyor": false
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
-   "isin": "TRT070727T13",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 599.89,
-   "satir": 1
+   "isin": null,
+   "kod": "MPARK",
+   "deger": 829.29,
+   "satir": 2,
+   "agirlik": 0.0049
   },
   {
-   "isin": "TRT180827T19",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 599.89,
-   "satir": 1
+   "isin": null,
+   "kod": "THYAO",
+   "deger": 622.65,
+   "satir": 2,
+   "agirlik": 0.0037
   },
   {
-   "isin": "TRT110930T36",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 500.0,
-   "satir": 1
+   "isin": null,
+   "kod": "TAVHL",
+   "deger": 559.75,
+   "satir": 2,
+   "agirlik": 0.0033
   },
   {
-   "isin": "TRT080530T19",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 236.92,
-   "satir": 2
+   "isin": null,
+   "kod": "MGROS",
+   "deger": 541.49,
+   "satir": 1,
+   "agirlik": 0.0032
+  },
+  {
+   "isin": null,
+   "kod": "KCHOL",
+   "deger": 413.36,
+   "satir": 2,
+   "agirlik": 0.0024
+  },
+  {
+   "isin": null,
+   "kod": "ASELS",
+   "deger": 368.13,
+   "satir": 1,
+   "agirlik": 0.0022
+  },
+  {
+   "isin": null,
+   "kod": "BIMAS",
+   "deger": 342.22,
+   "satir": 1,
+   "agirlik": 0.002
+  },
+  {
+   "isin": null,
+   "kod": "ASTOR",
+   "deger": 302.74,
+   "satir": 1,
+   "agirlik": 0.0018
+  },
+  {
+   "isin": null,
+   "kod": "TOASO",
+   "deger": 272.24,
+   "satir": 1,
+   "agirlik": 0.0016
+  },
+  {
+   "isin": null,
+   "kod": "TABGD",
+   "deger": 247.84,
+   "satir": 1,
+   "agirlik": 0.0015
+  },
+  {
+   "isin": null,
+   "kod": "TUPRS",
+   "deger": 219.08,
+   "satir": 1,
+   "agirlik": 0.0013
+  },
+  {
+   "isin": null,
+   "kod": "SAHOL",
+   "deger": 182.8,
+   "satir": 2,
+   "agirlik": 0.0011
+  },
+  {
+   "isin": null,
+   "kod": "GLRMK",
+   "deger": 176.23,
+   "satir": 1,
+   "agirlik": 0.001
+  },
+  {
+   "isin": null,
+   "kod": "CCOLA",
+   "deger": 148.58,
+   "satir": 2,
+   "agirlik": 0.0009
+  },
+  {
+   "isin": null,
+   "kod": "GARAN",
+   "deger": 118.54,
+   "satir": 1,
+   "agirlik": 0.0007
+  },
+  {
+   "isin": null,
+   "kod": "ALARK",
+   "deger": 108.35,
+   "satir": 1,
+   "agirlik": 0.0006
+  },
+  {
+   "isin": null,
+   "kod": "TCELL",
+   "deger": 94.65,
+   "satir": 1,
+   "agirlik": 0.0006
+  },
+  {
+   "isin": null,
+   "kod": "TRGYO",
+   "deger": 92.67,
+   "satir": 1,
+   "agirlik": 0.0005
+  },
+  {
+   "isin": null,
+   "kod": "AKBNK",
+   "deger": 72.77,
+   "satir": 1,
+   "agirlik": 0.0004
+  },
+  {
+   "isin": null,
+   "kod": "EUPWR",
+   "deger": 53.41,
+   "satir": 1,
+   "agirlik": 0.0003
+  },
+  {
+   "isin": null,
+   "kod": "TTKOM",
+   "deger": 48.83,
+   "satir": 1,
+   "agirlik": 0.0003
+  },
+  {
+   "isin": null,
+   "kod": "SOKM",
+   "deger": 40.05,
+   "satir": 1,
+   "agirlik": 0.0002
+  },
+  {
+   "isin": null,
+   "kod": "DOHOL",
+   "deger": 35.51,
+   "satir": 2,
+   "agirlik": 0.0002
+  },
+  {
+   "isin": null,
+   "kod": "YKBNK",
+   "deger": 33.69,
+   "satir": 1,
+   "agirlik": 0.0002
+  },
+  {
+   "isin": null,
+   "kod": "CWENE",
+   "deger": 33.04,
+   "satir": 1,
+   "agirlik": 0.0002
+  },
+  {
+   "isin": null,
+   "kod": "EREGL",
+   "deger": 27.96,
+   "satir": 1,
+   "agirlik": 0.0002
+  },
+  {
+   "isin": null,
+   "kod": "OYAKC",
+   "deger": 21.85,
+   "satir": 1,
+   "agirlik": 0.0001
+  },
+  {
+   "isin": null,
+   "kod": "EKGYO",
+   "deger": 19.53,
+   "satir": 1,
+   "agirlik": 0.0001
+  },
+  {
+   "isin": null,
+   "kod": "ISCTR",
+   "deger": 12.44,
+   "satir": 1,
+   "agirlik": 0.0001
+  },
+  {
+   "isin": null,
+   "kod": "TURSG",
+   "deger": 6.33,
+   "satir": 1,
+   "agirlik": 0.0
+  },
+  {
+   "isin": null,
+   "kod": "KAYSE",
+   "deger": 4.17,
+   "satir": 1,
+   "agirlik": 0.0
+  },
+  {
+   "isin": null,
+   "kod": "CANTE",
+   "deger": 1.79,
+   "satir": 1,
+   "agirlik": 0.0
+  },
+  {
+   "isin": null,
+   "kod": "VKGYO",
+   "deger": 1.68,
+   "satir": 1,
+   "agirlik": 0.0
   }
  ],
- "kod": "ICF",
- "donem": "2026-09",
  "bildirim": 1675617,
  "yayin": "08.10.2026 09:58:18",
  "ekler": [
   "4028328ca0b8418601a116ae442301ab"
- ]
+ ],
+ "kod": "ICF",
+ "donem": "2026-09"
 }

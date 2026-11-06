@@ -1,71 +1,26 @@
 {
- "fon_toplam_deger": 1284185835.97,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 100000000.0,
+ "fon_portfoy_degeri": 99129727.0,
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 5,
- "hisse_agirligi": 0.3831,
+ "hisse_sayisi": 0,
+ "hisse_agirligi": 0.0,
  "dogrulama": {
-  "hisse_satir_toplami": 4920000.0,
-  "hisse_grup_toplami": 1284185835.97,
-  "fark_yuzde": -99.6169,
+  "hisse_satir_toplami": 0,
+  "hisse_grup_toplami": null,
+  "fark_yuzde": null,
+  "yuzde_sutun": 0,
+  "bicim": "us",
   "tutuyor": false
  },
- "hisseler": [
-  {
-   "isin": "TRD200127T10",
-   "kod": "SVDA",
-   "ad": "04.08.2026",
-   "tur": "hisse",
-   "deger": 2645000.0,
-   "satir": 7,
-   "agirlik": 0.206
-  },
-  {
-   "isin": "TRD080927T34",
-   "kod": "SVDA",
-   "ad": "13.08.2026",
-   "tur": "hisse",
-   "deger": 1025000.0,
-   "satir": 2,
-   "agirlik": 0.0798
-  },
-  {
-   "isin": "TRD070427T14",
-   "kod": "SVDA",
-   "ad": "19.08.2026",
-   "tur": "hisse",
-   "deger": 800000.0,
-   "satir": 1,
-   "agirlik": 0.0623
-  },
-  {
-   "isin": "TRD140628T12",
-   "kod": "SVDA",
-   "ad": "05.08.2026",
-   "tur": "hisse",
-   "deger": 320000.0,
-   "satir": 1,
-   "agirlik": 0.0249
-  },
-  {
-   "isin": "TRD160627T11",
-   "kod": "SVDA",
-   "ad": "07.08.2026",
-   "tur": "hisse",
-   "deger": 130000.0,
-   "satir": 1,
-   "agirlik": 0.0101
-  }
- ],
- "diger_kalemler": [],
- "kod": "ZPE",
- "donem": "2026-08",
+ "hisseler": [],
  "bildirim": 1660127,
  "yayin": "08.09.2026 15:38:09",
  "ekler": [
   "4028328d9f52dddd01a08104207c6135"
- ]
+ ],
+ "kod": "ZPE",
+ "donem": "2026-08"
 }

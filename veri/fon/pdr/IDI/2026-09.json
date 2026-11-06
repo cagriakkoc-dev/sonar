@@ -5,85 +5,65 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 6,
+ "hisse_agirligi": 90.7493,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 24796200.0,
+  "hisse_grup_toplami": 24796200.0,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 3,
+  "bicim": "tr",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
-   "isin": "TREENKA00011",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "isin": "TREMEGM00024",
+   "kod": "MEGMT",
+   "deger": 5325000.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 19.4885
   },
   {
    "isin": "TRAEREGL91G3",
-   "kod": "ÇELİK",
-   "ad": "ÇELİK",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "EREGL",
+   "deger": 4672200.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 17.0993
+  },
+  {
+   "isin": "TREENKA00011",
+   "kod": "ENKAI",
+   "deger": 4122500.0,
+   "satir": 1,
+   "agirlik": 15.0876
   },
   {
    "isin": "TREGLRM00010",
-   "kod": "SANAYİ",
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "GLRMK",
+   "deger": 3960000.0,
    "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 14.4928
   },
   {
    "isin": "TREKZYB00011",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "KBORU",
+   "deger": 3888500.0,
    "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TREMEGM00024",
-   "kod": "SANAYİ",
-   "ad": "VE",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 14.2312
   },
   {
    "isin": "TRAMRDIN91F2",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
+   "kod": "OYAKC",
+   "deger": 2828000.0,
    "satir": 1,
-   "agirlik": 0.0
-  },
-  {
-   "isin": "TRYAZIM01240",
-   "kod": null,
-   "ad": "",
-   "tur": "fon",
-   "deger": 0.0,
-   "satir": 1,
-   "agirlik": 0.0
+   "agirlik": 10.3499
   }
  ],
- "kod": "IDI",
- "donem": "2026-09",
  "bildirim": 1677698,
  "yayin": "08.10.2026 18:01:42",
  "ekler": [
   "4028328ca0b8418501a11bc32e874a66"
- ]
+ ],
+ "kod": "IDI",
+ "donem": "2026-09"
 }

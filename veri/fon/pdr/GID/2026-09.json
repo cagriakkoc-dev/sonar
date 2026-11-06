@@ -1,243 +1,216 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 29141737.85,
+ "fon_portfoy_degeri": 28854715.73,
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 26,
- "hisse_agirligi": null,
+ "hisse_sayisi": 27,
+ "hisse_agirligi": 91.066,
  "dogrulama": {
-  "hisse_satir_toplami": 0.0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 26538224.29,
+  "hisse_grup_toplami": 26538224.29,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 0,
+  "bicim": "us",
+  "tutuyor": true
  },
  "hisseler": [
   {
-   "isin": "TRAAFYON91F6",
-   "kod": "AFYON",
-   "ad": "AFYON ÇİMENTO SANAYİ T.A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 4
-  },
-  {
-   "isin": "TRAAKCNS91F3",
-   "kod": "AKCNS",
-   "ad": "AKÇANSA ÇİMENTO SANAYİ VE TİCARET A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
-  },
-  {
-   "isin": "TREAKFG00012",
-   "kod": "AKFGY",
-   "ad": "AKFEN GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREAVRK00024",
-   "kod": "AVPGY",
-   "ad": "AVRUPAKENT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
-  },
-  {
-   "isin": "TREBSGZ00037",
-   "kod": "BASGZ",
-   "ad": "BAŞKENT DOĞALGAZ DAĞITIM GYO A.Ş",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 4
-  },
-  {
-   "isin": "TREBOBT00014",
-   "kod": "BOBET",
-   "ad": "BOĞAZİÇİ BETON SANAYİ VE TİCARET A.Ş",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRABRSAN91G8",
-   "kod": "BRSAN",
-   "ad": "BORUSAN MANNESMANN BORU SANAYİ VE TİCARET A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAEGPRO91E8",
-   "kod": "EGPRO",
-   "ad": "EGE PROFİL TİCARET VE SANAYİ A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TRAMRDIN91F2",
+   "kod": "OYAKC",
+   "deger": 2867066.8,
+   "satir": 2,
+   "agirlik": 9.8384
   },
   {
    "isin": "TREEGYO00017",
    "kod": "EKGYO",
-   "ad": "EMLAK KONUT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREENKA00011",
-   "kod": "ENKAI",
-   "ad": "ENKA İNŞAAT VE SANAYİ A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
-  },
-  {
-   "isin": "TRAEREGL91G3",
-   "kod": "EREGL",
-   "ad": "EREĞLİ DEMİR VE ÇELİK FABRİKALARI T.A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREGESN00029",
-   "kod": "GESAN",
-   "ad": "GİRİŞİM ELEKTRİK SANAYİ TAAHHÜT VE TİCARET A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
-  },
-  {
-   "isin": "TREGLRM00010",
-   "kod": "GLRMK",
-   "ad": "GÜLERMAK AĞIR SANAYİ İNŞAAT VE TAAHHÜT A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREKLKM00025",
-   "kod": "KLKIM",
-   "ad": "KALEKİM KİMYEVİ MADDELER AŞ.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
-  },
-  {
-   "isin": "TRAKRDMR91G7",
-   "kod": "KRDMD",
-   "ad": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş. (D GRUBU)",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TRAKUTPO91F9",
-   "kod": "KUTPO",
-   "ad": "KÜTAHYA PORSELEN SANAYİİ A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 4
+   "deger": 2510753.52,
+   "satir": 2,
+   "agirlik": 8.6157
   },
   {
    "isin": "TRELIMK00029",
    "kod": "LMKDC",
-   "ad": "LİMAK DOĞU ANADOLU ÇİMENTO SANAYİ VE TİCARET A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 2
+   "deger": 1572067.52,
+   "satir": 2,
+   "agirlik": 5.3946
   },
   {
-   "isin": "TREMEGM00024",
-   "kod": "MEGMT",
-   "ad": "MEGA METAL SANAYİ VE TİCARET A.Ş",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREORGE00011",
-   "kod": "ORGE",
-   "ad": "ORGE ENERJİ AŞ",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAMRDIN91F2",
-   "kod": "OYAKC",
-   "ad": "OYAK ÇİMENTO FABRİKALARI AŞ",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TREOZAK00014",
-   "kod": "OZKGY",
-   "ad": "ÖZAK GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
-  },
-  {
-   "isin": "TREPSFK00023",
-   "kod": "PSGYO",
-   "ad": "PASIFIK GMYO",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 2
-  },
-  {
-   "isin": "TRERSGY00036",
-   "kod": "RGYAS",
-   "ad": "RÖNESANS GAYRİMENKUL",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 2
+   "isin": "TRAAKCNS91F3",
+   "kod": "AKCNS",
+   "deger": 1466160.0,
+   "satir": 3,
+   "agirlik": 5.0311
   },
   {
    "isin": "TRETRGY00018",
    "kod": "TRGYO",
-   "ad": "TORUNLAR GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 3
+   "deger": 1388861.0,
+   "satir": 3,
+   "agirlik": 4.7659
   },
   {
-   "isin": "TREUCYM00024",
-   "kod": "UCAYM",
-   "ad": "ÜÇAY MÜHENDİSLİK ENERJİ VE İKLİMLENDİRME TEKNOLOJİLERİ A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 2
+   "isin": "TREBSGZ00037",
+   "kod": "BASGZ",
+   "deger": 1224844.3,
+   "satir": 4,
+   "agirlik": 4.2031
+  },
+  {
+   "isin": "TRERSGY00036",
+   "kod": "RGYAS",
+   "deger": 1143597.2,
+   "satir": 2,
+   "agirlik": 3.9243
+  },
+  {
+   "isin": "TRABRSAN91G8",
+   "kod": "BRSAN",
+   "deger": 1080000.0,
+   "satir": 1,
+   "agirlik": 3.706
+  },
+  {
+   "isin": "TREKLKM00025",
+   "kod": "KLKIM",
+   "deger": 1072924.8,
+   "satir": 3,
+   "agirlik": 3.6817
+  },
+  {
+   "isin": null,
+   "kod": "AKSGY",
+   "deger": 1068284.7,
+   "satir": 3,
+   "agirlik": 3.6658
+  },
+  {
+   "isin": "TREENKA00011",
+   "kod": "ENKAI",
+   "deger": 1040931.25,
+   "satir": 3,
+   "agirlik": 3.572
+  },
+  {
+   "isin": "TRAAFYON91F6",
+   "kod": "AFYON",
+   "deger": 989886.48,
+   "satir": 4,
+   "agirlik": 3.3968
+  },
+  {
+   "isin": "TREGLRM00010",
+   "kod": "GLRMK",
+   "deger": 984852.0,
+   "satir": 2,
+   "agirlik": 3.3795
+  },
+  {
+   "isin": "TREGESN00029",
+   "kod": "GESAN",
+   "deger": 953921.92,
+   "satir": 3,
+   "agirlik": 3.2734
   },
   {
    "isin": "TREYEOT00010",
    "kod": "YEOTK",
-   "ad": "YEO TEKNOLOJİ ENERJİ VE ENDÜSTRİ A.Ş.",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
-  }
- ],
- "diger_kalemler": [
+   "deger": 906127.2,
+   "satir": 1,
+   "agirlik": 3.1094
+  },
   {
-   "isin": "TRT110429T18",
-   "kod": null,
-   "ad": "",
-   "tur": "diger",
-   "deger": 0.0,
-   "satir": 1
+   "isin": "TREORGE00011",
+   "kod": "ORGE",
+   "deger": 884206.3,
+   "satir": 1,
+   "agirlik": 3.0342
+  },
+  {
+   "isin": "TREAKFG00012",
+   "kod": "AKFGY",
+   "deger": 833467.95,
+   "satir": 2,
+   "agirlik": 2.86
+  },
+  {
+   "isin": "TREAVRK00024",
+   "kod": "AVPGY",
+   "deger": 772855.38,
+   "satir": 3,
+   "agirlik": 2.6521
+  },
+  {
+   "isin": "TREUCYM00024",
+   "kod": "UCAYM",
+   "deger": 772819.27,
+   "satir": 2,
+   "agirlik": 2.6519
+  },
+  {
+   "isin": "TRAKUTPO91F9",
+   "kod": "KUTPO",
+   "deger": 767936.0,
+   "satir": 4,
+   "agirlik": 2.6352
+  },
+  {
+   "isin": "TREPSFK00023",
+   "kod": "PSGYO",
+   "deger": 691863.69,
+   "satir": 2,
+   "agirlik": 2.3741
+  },
+  {
+   "isin": "TREOZAK00014",
+   "kod": "OZKGY",
+   "deger": 506498.72,
+   "satir": 3,
+   "agirlik": 1.7381
+  },
+  {
+   "isin": "TRAKRDMR91G7",
+   "kod": "KRDMD",
+   "deger": 354478.8,
+   "satir": 2,
+   "agirlik": 1.2164
+  },
+  {
+   "isin": "TRAEGPRO91E8",
+   "kod": "EGPRO",
+   "deger": 339932.34,
+   "satir": 1,
+   "agirlik": 1.1665
+  },
+  {
+   "isin": "TRAEREGL91G3",
+   "kod": "EREGL",
+   "deger": 144910.08,
+   "satir": 2,
+   "agirlik": 0.4973
+  },
+  {
+   "isin": "TREBOBT00014",
+   "kod": "BOBET",
+   "deger": 126474.0,
+   "satir": 1,
+   "agirlik": 0.434
+  },
+  {
+   "isin": "TREMEGM00024",
+   "kod": "MEGMT",
+   "deger": 72503.07,
+   "satir": 1,
+   "agirlik": 0.2488
   }
  ],
- "kod": "GID",
- "donem": "2026-09",
  "bildirim": 1676928,
  "yayin": "08.10.2026 15:43:47",
  "ekler": [
   "4028328ca0b8418501a11b3539532cd4"
- ]
+ ],
+ "kod": "GID",
+ "donem": "2026-09"
 }

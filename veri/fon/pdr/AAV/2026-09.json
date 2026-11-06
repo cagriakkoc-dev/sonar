@@ -1,34 +1,237 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 173483419.62,
+ "fon_portfoy_degeri": 172482617.92,
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": null,
+ "hisse_sayisi": 30,
+ "hisse_agirligi": 84.3408,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 146317263.36,
+  "hisse_grup_toplami": 146317263.36,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 0,
+  "bicim": "us",
+  "tutuyor": true
  },
- "hisseler": [],
- "diger_kalemler": [
+ "hisseler": [
   {
-   "isin": "TRT080530T27",
-   "kod": null,
-   "ad": "",
-   "tur": "repo",
-   "deger": 118.0,
-   "satir": 1
+   "isin": null,
+   "kod": "BIMAS",
+   "deger": 12555000.0,
+   "satir": 1,
+   "agirlik": 7.237
+  },
+  {
+   "isin": null,
+   "kod": "ASELS",
+   "deger": 12114000.0,
+   "satir": 1,
+   "agirlik": 6.9828
+  },
+  {
+   "isin": null,
+   "kod": "TUPRS",
+   "deger": 12040000.0,
+   "satir": 1,
+   "agirlik": 6.9401
+  },
+  {
+   "isin": null,
+   "kod": "TCELL",
+   "deger": 7688000.0,
+   "satir": 1,
+   "agirlik": 4.4315
+  },
+  {
+   "isin": null,
+   "kod": "ENKAI",
+   "deger": 7420500.0,
+   "satir": 1,
+   "agirlik": 4.2774
+  },
+  {
+   "isin": null,
+   "kod": "AKBNK",
+   "deger": 7370000.0,
+   "satir": 1,
+   "agirlik": 4.2482
+  },
+  {
+   "isin": null,
+   "kod": "THYAO",
+   "deger": 7081250.0,
+   "satir": 1,
+   "agirlik": 4.0818
+  },
+  {
+   "isin": null,
+   "kod": "TRALT",
+   "deger": 6705000.0,
+   "satir": 1,
+   "agirlik": 3.8649
+  },
+  {
+   "isin": null,
+   "kod": "ALARK",
+   "deger": 5919000.0,
+   "satir": 1,
+   "agirlik": 3.4119
+  },
+  {
+   "isin": null,
+   "kod": "TOASO",
+   "deger": 5334320.0,
+   "satir": 1,
+   "agirlik": 3.0748
+  },
+  {
+   "isin": null,
+   "kod": "MGROS",
+   "deger": 5045000.0,
+   "satir": 1,
+   "agirlik": 2.9081
+  },
+  {
+   "isin": null,
+   "kod": "YKBNK",
+   "deger": 4765600.0,
+   "satir": 1,
+   "agirlik": 2.747
+  },
+  {
+   "isin": null,
+   "kod": "KCHOL",
+   "deger": 4376400.0,
+   "satir": 1,
+   "agirlik": 2.5227
+  },
+  {
+   "isin": null,
+   "kod": "EREGL",
+   "deger": 4312800.0,
+   "satir": 1,
+   "agirlik": 2.486
+  },
+  {
+   "isin": null,
+   "kod": "YEOTK",
+   "deger": 4038000.0,
+   "satir": 1,
+   "agirlik": 2.3276
+  },
+  {
+   "isin": null,
+   "kod": "GARAN",
+   "deger": 3687000.0,
+   "satir": 1,
+   "agirlik": 2.1253
+  },
+  {
+   "isin": null,
+   "kod": "MPARK",
+   "deger": 3342000.0,
+   "satir": 1,
+   "agirlik": 1.9264
+  },
+  {
+   "isin": null,
+   "kod": "ULKER",
+   "deger": 3338000.0,
+   "satir": 1,
+   "agirlik": 1.9241
+  },
+  {
+   "isin": null,
+   "kod": "TABGD",
+   "deger": 3211500.0,
+   "satir": 1,
+   "agirlik": 1.8512
+  },
+  {
+   "isin": null,
+   "kod": "ENJSA",
+   "deger": 3162000.0,
+   "satir": 1,
+   "agirlik": 1.8227
+  },
+  {
+   "isin": null,
+   "kod": "ASTOR",
+   "deger": 3049600.0,
+   "satir": 1,
+   "agirlik": 1.7579
+  },
+  {
+   "isin": null,
+   "kod": "AKSEN",
+   "deger": 2916000.0,
+   "satir": 1,
+   "agirlik": 1.6809
+  },
+  {
+   "isin": null,
+   "kod": "RGYAS",
+   "deger": 2841000.0,
+   "satir": 1,
+   "agirlik": 1.6376
+  },
+  {
+   "isin": null,
+   "kod": "ANHYT",
+   "deger": 2830400.0,
+   "satir": 1,
+   "agirlik": 1.6315
+  },
+  {
+   "isin": null,
+   "kod": "TAVHL",
+   "deger": 2612500.0,
+   "satir": 1,
+   "agirlik": 1.5059
+  },
+  {
+   "isin": null,
+   "kod": "GLRMK",
+   "deger": 2395800.0,
+   "satir": 1,
+   "agirlik": 1.381
+  },
+  {
+   "isin": null,
+   "kod": "GLYHO",
+   "deger": 2359500.0,
+   "satir": 1,
+   "agirlik": 1.3601
+  },
+  {
+   "isin": null,
+   "kod": "AEFES",
+   "deger": 2298400.0,
+   "satir": 1,
+   "agirlik": 1.3249
+  },
+  {
+   "isin": null,
+   "kod": "GESAN",
+   "deger": 1316493.36,
+   "satir": 1,
+   "agirlik": 0.7589
+  },
+  {
+   "isin": null,
+   "kod": "KTLEV",
+   "deger": 192200.0,
+   "satir": 1,
+   "agirlik": 0.1108
   }
  ],
- "kod": "AAV",
- "donem": "2026-09",
  "bildirim": 1674762,
  "yayin": "07.10.2026 16:08:24",
  "ekler": [
   "4028328da0b8438a01a11676d87b02e3"
- ]
+ ],
+ "kod": "AAV",
+ "donem": "2026-09"
 }

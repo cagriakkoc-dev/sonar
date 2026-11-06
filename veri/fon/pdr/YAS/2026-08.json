@@ -1,187 +1,132 @@
 {
- "fon_toplam_deger": null,
- "fon_portfoy_degeri": null,
+ "fon_toplam_deger": 6479738307.33,
+ "fon_portfoy_degeri": 6499361038.37,
  "islemler": {
   "alis": [],
   "satis": []
  },
  "hisse_sayisi": 15,
- "hisse_agirligi": null,
+ "hisse_agirligi": 86.9198,
  "dogrulama": {
-  "hisse_satir_toplami": 6249.95,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "tutuyor": false
+  "hisse_satir_toplami": 5632172727.12,
+  "hisse_grup_toplami": 5632172727.12,
+  "fark_yuzde": 0.0,
+  "yuzde_sutun": 1,
+  "bicim": "us",
+  "tutuyor": true
  },
  "hisseler": [
   {
-   "isin": "TRAOTOSN91H6",
-   "kod": "FROTO",
-   "ad": "FROTO",
-   "tur": "hisse",
-   "deger": 987.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRETTRK00010",
-   "kod": "TTRAK",
-   "ad": "TTRAK",
-   "tur": "hisse",
-   "deger": 956.0,
-   "satir": 1
+   "isin": "TRAAYGAZ91E0",
+   "kod": "AYGAZ",
+   "deger": 648225156.45,
+   "satir": 1,
+   "agirlik": 10.0039
   },
   {
    "isin": "TRATUPRS91E8",
    "kod": "TUPRS",
-   "ad": "TUPRS",
-   "tur": "hisse",
-   "deger": 817.0,
-   "satir": 1
+   "deger": 638398817.24,
+   "satir": 1,
+   "agirlik": 9.8522
   },
   {
    "isin": "TRAYKBNK91N6",
    "kod": "YKBNK",
-   "ad": "YKBNK",
-   "tur": "hisse",
-   "deger": 634.0,
-   "satir": 1
+   "deger": 636832634.03,
+   "satir": 1,
+   "agirlik": 9.8281
   },
   {
    "isin": "TRAKCHOL91Q8",
    "kod": "KCHOL",
-   "ad": "KCHOL",
-   "tur": "hisse",
-   "deger": 633.96,
-   "satir": 1
-  },
-  {
-   "isin": "TRAOTKAR91H3",
-   "kod": "OTKAR",
-   "ad": "OTKAR",
-   "tur": "hisse",
-   "deger": 616.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAARCLK91H5",
-   "kod": "ARCLK",
-   "ad": "ARCLK",
-   "tur": "hisse",
-   "deger": 518.0,
-   "satir": 1
-  },
-  {
-   "isin": "TREMAVI00037",
-   "kod": "MAVI",
-   "ad": "MAVI",
-   "tur": "hisse",
-   "deger": 400.0,
-   "satir": 1
+   "deger": 633955078.22,
+   "satir": 1,
+   "agirlik": 9.7837
   },
   {
    "isin": "TRATOASO91H3",
    "kod": "TOASO",
-   "ad": "TOASO",
-   "tur": "hisse",
-   "deger": 400.0,
-   "satir": 1
+   "deger": 628486400.27,
+   "satir": 1,
+   "agirlik": 9.6993
   },
   {
-   "isin": "TRAAYGAZ91E0",
-   "kod": "AYGAZ",
-   "ad": "AYGAZ",
-   "tur": "hisse",
-   "deger": 156.0,
-   "satir": 1
+   "isin": "TRAOTOSN91H6",
+   "kod": "FROTO",
+   "deger": 618420987.0,
+   "satir": 1,
+   "agirlik": 9.5439
+  },
+  {
+   "isin": "TRETTRK00010",
+   "kod": "TTRAK",
+   "deger": 590180956.88,
+   "satir": 1,
+   "agirlik": 9.1081
+  },
+  {
+   "isin": "TRAARCLK91H5",
+   "kod": "ARCLK",
+   "deger": 561988518.56,
+   "satir": 1,
+   "agirlik": 8.673
+  },
+  {
+   "isin": "TRAOTKAR91H3",
+   "kod": "OTKAR",
+   "deger": 542731616.5,
+   "satir": 1,
+   "agirlik": 8.3758
+  },
+  {
+   "isin": "TREMAVI00037",
+   "kod": "MAVI",
+   "deger": 132952400.0,
+   "satir": 1,
+   "agirlik": 2.0518
   },
   {
    "isin": "TRETAVH00018",
    "kod": "TAVHL",
-   "ad": "TAVHL",
-   "tur": "hisse",
-   "deger": 132.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRAISCTR91N2",
-   "kod": "ISCTR",
-   "ad": "ISCTR",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 132.5,
+   "satir": 1,
+   "agirlik": 0.0
   },
   {
    "isin": "TRAPETKM91E0",
    "kod": "PETKM",
-   "ad": "PETKM",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 16.05,
+   "satir": 1,
+   "agirlik": 0.0
+  },
+  {
+   "isin": "TRAISCTR91N2",
+   "kod": "ISCTR",
+   "deger": 6.66,
+   "satir": 1,
+   "agirlik": 0.0
   },
   {
    "isin": "TRASKBNK91N8",
    "kod": "SKBNK",
-   "ad": "SKBNK",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 4.12,
+   "satir": 1,
+   "agirlik": 0.0
   },
   {
    "isin": "TRATATKS91A5",
    "kod": "TATGD",
-   "ad": "TATGD",
-   "tur": "hisse",
-   "deger": 0.0,
-   "satir": 1
+   "deger": 2.64,
+   "satir": 1,
+   "agirlik": 0.0
   }
  ],
- "diger_kalemler": [
-  {
-   "isin": "TRSKFTF32710",
-   "kod": null,
-   "ad": "",
-   "tur": "özel sektör",
-   "deger": 500.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRFYAKF92613",
-   "kod": null,
-   "ad": "",
-   "tur": "fi̇nansman bonolari",
-   "deger": 200.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRFYKFKA2610",
-   "kod": null,
-   "ad": "",
-   "tur": "fi̇nansman bonolari",
-   "deger": 128.2,
-   "satir": 1
-  },
-  {
-   "isin": "TRFYKYMA2615",
-   "kod": null,
-   "ad": "",
-   "tur": "fi̇nansman bonolari",
-   "deger": 0.0,
-   "satir": 1
-  },
-  {
-   "isin": "TRSKCTF22718",
-   "kod": null,
-   "ad": "",
-   "tur": "özel sektör",
-   "deger": 0.0,
-   "satir": 1
-  }
- ],
- "kod": "YAS",
- "donem": "2026-08",
  "bildirim": 1658146,
  "yayin": "03.09.2026 15:12:53",
  "ekler": [
   "4028328c9f52dc4001a0671be893001a"
- ]
+ ],
+ "kod": "YAS",
+ "donem": "2026-08"
 }
