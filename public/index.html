@@ -287,10 +287,11 @@ table.t th{color:var(--muted);font-weight:500;text-align:right;padding:6px 8px;b
 table.t td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;font-family:var(--f-mono)}
 table.t th:first-child,table.t td:first-child{text-align:left}
 .tw{overflow-x:auto}
-.smalls{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.smalls{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px 18px}
 .small h4{margin:0;font-size:12px;color:var(--muted);font-weight:500}
 .small .v{font:600 18px var(--f-mono)}
 .small svg{width:100%;height:56px}
+.small svg.kc{height:128px;display:block;margin-top:6px}.kc-yoy{font-size:12px;margin-top:2px}.kc-leg{font-size:10.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;margin:2px 0 4px}.kc-leg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:3px;vertical-align:middle}
 .macro{border-top:1px solid var(--line);padding-block:22px 40px}
 .foot{color:var(--muted);font-size:12px;padding-block:0 40px;max-width:90ch}
 .tip{position:fixed;z-index:50;pointer-events:none;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;max-width:280px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
@@ -1320,12 +1321,42 @@ function renderMix(c){
   const calcN={calc_kar:'Gelir tablosundan hesaplandı: brüt kârın ne kadarı net faaliyet giderlerine gidiyor, ne kadarı esas faaliyet kârı olarak kalıyor (tek çeyrek). Şirket bölüm bazında kâr açıklamıyorsa kâr görünümü budur. ',calc_teknik:'Gelir tablosundan: hayat ve emeklilik teknik kârı ile teknik olmayan yatırım gelirleri (tek çeyrek). ',calc_gelir:'Gelir tablosundan: net kazanılmış prim ve yatırım gelirleri (tek çeyrek). ',rent:'Yatırımcı sunumlarından: AVM tutarları kira ve ortak alan gelirini birlikte içerir; Turizm üç otelin kira geliri toplamı; diğer ticari: dükkân ve ofis kiraları. 2024 sonu ve 2025 Ç1 AVM tutarları sunumdaki bölüm hasılatıdır. Kira kırılımı 2025 Ç2 sunumunda verilmedi. '}[state.mix[c.t]]||'';const calcN2=(c.mixNote||{})[state.mix[c.t]];
   $('#mixnote').innerHTML=esc((calcN2?calcN2+' ':calcN)+(mkd==='y'?'Birikimli: yılbaşından dönem sonuna kadar (Ç4 = yıllık). ':mkd==='q'?'Tek çeyrek'+(ps.some(p=>pick(p).der)?'; şirketin tek çeyrek tablosu olmayan dönemlerde birikimli tutarların farkı (TMS 29 dönemlerinde fiyat esasları farklı, yaklaşık). ':'. '):'')+(!mkd&&kinds.has('y')&&!kinds.has('q')?'Şirket bu kırılımı birikimli/yıllık açıklıyor. ':'')+(miss.length?`Şirketin bu kırılımı açıklamadığı dönemler: ${miss.map(QS).join(', ')}.`:'Tüm dönemler mevcut.')+(nR?' Eksi kalemler (indirimler, negatif marjlı ürünler vb.) sıfırın altında, pozitif toplamın yüzdesi olarak gösterilir.':' Paylar pozitif kalemlerin toplamına göre.')+' Tutarlar üzerine gelince görünür.'+(cat==='g'&&!cats.k.length?' Şirket ürün veya bölüm bazında kâr açıklamıyor; bu yüzden kâr görünümü yok.':''))+((()=>{const lr=ps.length?pick(ps[ps.length-1]):null;return srcOf(lr)?` Son dönem kaynağı: ${srcLink(lr)}`:''})());
 }
+/* sektöre özgü gösterge kartı: eksenli ayrıntılı grafik (çubuk: tek çeyrek akışlar, aynı çeyrekler koyu; çizgi: oran ve dönem sonu) */
+function kcBars(m,u){return u!=='%'&&!/payı|oranı|marjı|kullanım|fiyat|başı|değer ·|iskonto/i.test(m)&&/tek çeyrek|yılbaşından/.test(m)}
+function kcYoy(rows,last){const pp=(+last.p.slice(0,4)-1)+last.p.slice(4);const o=rows.find(r=>r.p===pp);if(!o||o.v==null||last.v==null)return '';
+  const pt=last.u==='%';const d=pt?last.v-o.v:(o.v?((last.v/o.v)-1)*100:null);if(d==null||!isFinite(d))return '';const up=d>=0;
+  return `<span style="color:${up?'var(--up)':'var(--down)'}">${up?'▲':'▼'} ${pt?nf(Math.abs(d),1)+' puan':'%'+nf(Math.abs(d),1)}</span> <span style="color:var(--muted)">bir yıl önce ${nf(o.v,last.d??1)} ${esc(last.u)}</span>`}
+function kpiChart(vals,P,{unit='',dd=1,bars=true}={}){
+  const pts=vals.map((v,i)=>[i,v]).filter(d=>d[1]!=null);if(pts.length<2)return spark(vals,{w:200,h:56,labels:P.map(QL),unit:' '+unit});
+  const W=320,H=128,ml=36,mr=4,mt=6,mb=16,n=vals.length,bw=(W-ml-mr)/n;
+  const vs=pts.map(d=>d[1]);let lo=Math.min(...vs),hi=Math.max(...vs);if(bars)lo=Math.min(0,lo);else{const pad=(hi-lo)*.12||Math.abs(hi)*.05||1;lo-=pad;hi+=pad}
+  const tk=niceTicks(lo,hi,3);const t0=bars?Math.min(tk[0],0):tk[0],t1=tk[tk.length-1];const y=v=>mt+(t1-v)/(t1-t0||1)*(H-mt-mb);const xc=i=>ml+i*bw+bw/2;
+  const lq=P[pts[pts.length-1][0]].slice(5);const fk=v=>{const a=Math.abs(v);return a>=1e6?nf(v/1e6,1)+' mn':a>=1e4?nf(v/1e3,0)+' b':nf(v,a<10&&v%1?1:0)};
+  let s=`<svg class="kc" viewBox="0 0 ${W} ${H}" role="img" data-kc="${esc(JSON.stringify({v:vals,p:P,u:unit,d:dd,W,ml,bw}))}">`;
+  tk.filter(t=>t>=t0&&t<=t1).forEach(t=>{s+=`<line x1="${ml}" x2="${W-mr}" y1="${y(t).toFixed(1)}" y2="${y(t).toFixed(1)}" stroke="var(--line)" stroke-width="1"/><text x="${ml-4}" y="${(y(t)+3).toFixed(1)}" text-anchor="end" font-size="9" fill="var(--muted)">${fk(t)}</text>`});
+  P.forEach((p,i)=>{if(p.endsWith('-03')||i===0){s+=`<line x1="${ml+i*bw}" x2="${ml+i*bw}" y1="${mt}" y2="${H-mb}" stroke="var(--line)" stroke-dasharray="2 3"/><text x="${ml+i*bw+2}" y="${H-4}" font-size="9" fill="var(--muted)">'${p.slice(2,4)}</text>`}});
+  if(bars){vals.forEach((v,i)=>{if(v==null)return;const same=P[i].slice(5)===lq,lastb=i===pts[pts.length-1][0];const y0=y(Math.max(0,v)),y1=y(Math.min(0,v));
+      s+=`<rect x="${(ml+i*bw+bw*.14).toFixed(1)}" y="${y0.toFixed(1)}" width="${(bw*.72).toFixed(1)}" height="${Math.max(.8,y1-y0).toFixed(1)}" rx="1" fill="${lastb?'var(--co-ui)':same?'var(--co-ui)':'var(--muted)'}" fill-opacity="${lastb?1:same?.7:.35}"/>`});
+    const ma=vals.map((v,i)=>{if(i<3)return null;const q=vals.slice(i-3,i+1);return q.some(x=>x==null)?null:q.reduce((a,b)=>a+b,0)/4});let d='',sg=false;ma.forEach((v,i)=>{if(v==null){sg=false;return}d+=(sg?'L':'M')+xc(i).toFixed(1)+' '+y(v).toFixed(1);sg=true});
+    if(d)s+=`<path d="${d}" fill="none" stroke="#d58a20" stroke-width="1.4"/>`}
+  else{let d='',sg=false;vals.forEach((v,i)=>{if(v==null){sg=false;return}d+=(sg?'L':'M')+xc(i).toFixed(1)+' '+y(v).toFixed(1);sg=true});
+    s+=`<path d="${d}" fill="none" stroke="var(--co-ui)" stroke-width="1.8"/>`;vals.forEach((v,i)=>{if(v!=null)s+=`<circle cx="${xc(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="${i===pts[pts.length-1][0]?3:1.8}" fill="${P[i].slice(5)===lq?'var(--co-ui)':'var(--muted)'}"/>`})}
+  s+=`<rect class="kc-hv" x="0" y="${mt}" width="${bw.toFixed(1)}" height="${H-mt-mb}" fill="var(--fg)" fill-opacity="0"/></svg>`;
+  return s+`<div class="kc-leg">${bars?'<span><i style="background:var(--co-ui)"></i>Ç'+(+lq/3)+'\'ler</span><span><i style="background:var(--muted);opacity:.5"></i>diğer</span><span><i style="background:#d58a20;height:2px"></i>4Ç ort.</span>':'<i style="background:var(--co-ui)"></i>Ç'+(+lq/3)+' dönemleri koyu'}</div>`}
+const KCC=new WeakMap();
+document.addEventListener('pointermove',e=>{const svg=e.target.closest&&e.target.closest('svg[data-kc]');if(!svg)return;let m=KCC.get(svg);if(!m){try{m=JSON.parse(svg.dataset.kc)}catch(_){return}KCC.set(svg,m)}
+  const r=svg.getBoundingClientRect();const x=(e.clientX-r.left)/r.width*m.W;const i=Math.floor((x-m.ml)/m.bw);const hv=svg.querySelector('.kc-hv');if(i<0||i>=m.v.length){hideTip();if(hv)hv.setAttribute('fill-opacity',0);return}
+  if(hv){hv.setAttribute('x',m.ml+i*m.bw);hv.setAttribute('fill-opacity',.06)}const v=m.v[i],p=m.p[i];const f=x=>x==null?'—':nf(x,m.d)+' '+m.u;
+  const ip=m.p.indexOf((+p.slice(0,4)-1)+p.slice(4)),pv=ip>=0?m.v[ip]:null,qv=i>0?m.v[i-1]:null;const ch=(a,b)=>a==null||b==null||!b?'':m.u==='%'?((a-b>=0?'+':'−')+nf(Math.abs(a-b),1)+' puan'):((a/b-1>=0?'+':'−')+'%'+nf(Math.abs(a/b-1)*100,1));
+  showTip(e,`<div class="eyebrow">${esc(QL(p))}</div><b>${esc(f(v))}</b>${v!=null&&pv!=null?`<div class="note" style="margin:2px 0 0">Yıllık: ${esc(ch(v,pv))} (${esc(f(pv))})</div>`:''}${v!=null&&qv!=null?`<div class="note" style="margin:0">Önceki çeyrek: ${esc(ch(v,qv))}</div>`:''}`)});
+document.addEventListener('pointerout',e=>{const svg=e.target.closest&&e.target.closest('svg[data-kc]');if(svg&&!svg.contains(e.relatedTarget)){hideTip();const hv=svg.querySelector('.kc-hv');if(hv)hv.setAttribute('fill-opacity',0)}});
 function sectorHTML(c){
   const K=c.kpi||[],ms=c.ms||[];if(!K.length&&!ms.length)return '';
   const mets=[...new Set(K.map(k=>k.m))];
   let h=`<div class="panel ${mets.length>6?'s12':'s5'}"><div class="ph"><h2>Sektöre özgü göstergeler</h2><span class="sub">Şirket sunum ve faaliyet raporlarından.</span></div><div class="smalls">`;
   mets.forEach(m=>{const rows=K.filter(k=>k.m===m).sort((a,b)=>a.p<b.p?-1:1);const last=rows[rows.length-1];const have=new Set(rows.map(r=>r.p));const PP=c.periods.filter(p=>p>=rows[0].p);const miss=PP.filter(p=>!have.has(p));const dd=last.d??1;
-    h+=`<div class="small"><h4>${esc(m)}</h4><div class="v">${nf(last.v,dd)} <span style="font-size:12px;color:var(--muted)">${esc(last.u)}</span></div>${spark(PP.map(p=>rows.find(r=>r.p===p)?.v??null),{w:200,h:56,labels:PP.map(QL),unit:' '+last.u})}<div class="note" style="margin:0">${QL(last.p)}${miss.length?` · açıklanmayan ${miss.length} dönem${rows.every(r=>r.p.endsWith('12'))?' (yalnız yıl sonu açıklanıyor)':''}`:''}</div>${c.kpiNotes?.[m]?`<div class="note" style="margin:2px 0 0">${esc(c.kpiNotes[m])}</div>`:''}${srcOf(last)?`<div class="note" style="margin:2px 0 0">Son dönem: ${srcLink(last)}</div>`:''}</div>`});
+    const yv=kcYoy(rows,last);
+    h+=`<div class="small"><h4>${esc(m)}</h4><div class="v">${nf(last.v,dd)} <span style="font-size:12px;color:var(--muted)">${esc(last.u)}</span></div>${yv?`<div class="kc-yoy">${yv}</div>`:''}${kpiChart(PP.map(p=>rows.find(r=>r.p===p)?.v??null),PP,{unit:last.u,dd,bars:kcBars(m,last.u)})}<div class="note" style="margin:0">${QL(last.p)}${miss.length?` · açıklanmayan ${miss.length} dönem${rows.every(r=>r.p.endsWith('12'))?' (yalnız yıl sonu açıklanıyor)':''}`:''}</div>${c.kpiNotes?.[m]?`<div class="note" style="margin:2px 0 0">${esc(c.kpiNotes[m])}</div>`:''}${srcOf(last)?`<div class="note" style="margin:2px 0 0">Son dönem: ${srcLink(last)}</div>`:''}</div>`});
   ms.forEach(s=>{const o=s.obs;if(!o.length)return;const last=o[o.length-1];h+=`<div class="small"><h4>Pazar payı · ${esc(s.label)}</h4><div class="v">${nf(last[1],1)}%</div>${spark(o.map(x=>x[1]),{w:200,h:56,labels:o.map(x=>x[0]),unit:'%'})}<div class="note" style="margin:0">${esc(last[0])} · ${o.length} açıklama</div></div>`});
   return h+'</div></div>';
 }
