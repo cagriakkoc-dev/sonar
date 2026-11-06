@@ -2,7 +2,7 @@
 Ortam: FON_KOD (ör. MAC; virgülle birden çok), FON_LIMIT (son kaç rapor, varsayılan 2), FON_KAYNAK (PDF geçici klasörü)
 Çıktı: veri/fon/pdr/<KOD>/<YYYY-MM>.json, veri/fon/son_kosu.json; ham pdftotext metni yalnız doğrulaması tutmayan raporlarda veri/fon/ham/<KOD>/
 Fon bildirimleri: GET /tr/api/disclosure/filter/FILTERYFBF/<fonOid>/ALL/365 (fonOid: kap_fon_oid.json)"""
-import os, re, json, time, subprocess, tempfile, urllib.request, datetime, sys
+import os, re, json, time, subprocess, tempfile, urllib.request, datetime, sys, gzip
 sys.path.insert(0, os.path.dirname(__file__))
 from pdr_ayristir import ayristir
 
@@ -60,8 +60,11 @@ def main():
     HSY = [f["kod"] for f in LISTE if f.get("hisse_yogun") and not f.get("serbest")]
     if kodlar == ["HSY"]: kodlar = HSY                      # tüm hisse yoğun (serbest olmayan) fonlar
     elif kodlar == ["PILOT"]: kodlar = (["MAC"] + [k for k in HSY if k != "MAC"])[:15]
-    print("fon sayısı", len(kodlar))
-    sp = os.path.join(VERI, "son_kosu.json")
+    parca = os.environ.get("FON_PARCA")             # "i/n": paralel koşuda bu işin payı
+    if parca:
+        pi, pn = map(int, parca.split("/")); kodlar = kodlar[pi::pn]
+    print("fon sayısı", len(kodlar), flush=True)
+    sp = os.path.join(VERI, f"son_kosu_{pi}.json" if parca else "son_kosu.json")
     kosu = {"zaman": datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds") + "Z", "basarili": [], "atlandi": [], "hata": []}
     for kod in kodlar:
         oid = OIDS.get(kod)
@@ -79,14 +82,14 @@ def main():
                 a = ayristir(metin)
                 if not a["dogrulama"]["tutuyor"] or os.environ.get("HAM"):  # ham metin yalnız tutmayan raporlarda saklanır (hata ayıklama)
                     os.makedirs(os.path.join(VERI, "ham", kod), exist_ok=True)
-                    open(os.path.join(VERI, "ham", kod, f"{r['donem']}.txt"), "w").write(metin)
+                    with gzip.open(os.path.join(VERI, "ham", kod, f"{r['donem']}.txt.gz"), "wt", encoding="utf-8") as g: g.write(metin)
                 a.update({"kod": kod, "donem": r["donem"], "bildirim": r["id"], "yayin": r["yayin"], "ekler": ekler})
                 os.makedirs(os.path.dirname(hedef), exist_ok=True)
                 json.dump(a, open(hedef, "w"), ensure_ascii=False, indent=1)
                 d = a["dogrulama"]
                 ozet = {"kod": kod, "donem": r["donem"], "hisse": a["hisse_sayisi"], "tutuyor": d["tutuyor"], "fark_yuzde": d["fark_yuzde"]}
                 (kosu["basarili"] if d["tutuyor"] else kosu["hata"]).append(ozet)
-                print(ozet)
+                print(ozet, flush=True)
             except Exception as e:
                 kosu["hata"].append({"kod": kod, "donem": r["donem"], "neden": repr(e)[:200]}); print(kod, r["donem"], "hata", repr(e)[:200])
             time.sleep(1.5)

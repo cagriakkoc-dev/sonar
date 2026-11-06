@@ -25,12 +25,20 @@ def main():
             fark = sorted(((k, round(A.get(k, 0) - B.get(k, 0), 2)) for k in set(A) | set(B)), key=lambda x: -abs(x[1]))
             deg = {"onceki": onc["donem"], "eklenen": sorted(set(A) - set(B)), "cikan": sorted(set(B) - set(A)),
                    "artan": [list(x) for x in fark if x[1] > 0 and x[0] in B][:5], "azalan": [list(x) for x in fark if x[1] < 0 and x[0] in A][:5]}
+        # aylara göre dağılım (yığılmış grafik): ortalama ağırlığa göre ilk 8 hisse + diğer hisseler + hisse dışı
+        AG = [ag(a) for a in P]; ort = {}
+        for d in AG:
+            for k_, v in d.items(): ort[k_] = ort.get(k_, 0) + v / len(AG)
+        ust8 = [k_ for k_, _ in sorted(ort.items(), key=lambda x: -x[1])[:8]]
+        gecmis = {"ay": [a["donem"] for a in P], "seri": {k_: [round(d.get(k_, 0), 2) for d in AG] for k_ in ust8},
+                  "diger": [round(sum(v for k_, v in d.items() if k_ not in ust8), 2) for d in AG],
+                  "disi": [round(max(0, 100 - (a.get("hisse_agirligi") or 0)), 2) for a in P]}
         L = liste.get(kod, {})
         isl = son.get("islemler") or {}
         F.append({"kod": kod, "ad": L.get("ad") or kod, "kurucu": L.get("kurucu", ""), "donem": son["donem"], "toplam": son.get("fon_toplam_deger"),
                   "hisse_ag": son.get("hisse_agirligi"), "n": son.get("hisse_sayisi"), "getiri": L.get("getiri"), "bildirim": son.get("bildirim"),
                   "h": [[x["kod"] or x["isin"], x.get("agirlik"), x["deger"]] for x in son["hisseler"]], "degisim": deg,
-                  "alis": [x[:2] for x in (isl.get("alis") or []) if x[0] in KODLAR][:10], "satis": [x[:2] for x in (isl.get("satis") or []) if x[0] in KODLAR][:10]})
+                  "alis": [x[:2] for x in (isl.get("alis") or []) if x[0] in KODLAR][:10], "satis": [x[:2] for x in (isl.get("satis") or []) if x[0] in KODLAR][:10], "gecmis": gecmis})
         for x in son["hisseler"]:
             if x.get("kod"): H.setdefault(x["kod"], []).append([kod, x.get("agirlik"), son["donem"]])
     for k in H: H[k].sort(key=lambda r: -(r[1] or 0))
