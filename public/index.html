@@ -641,7 +641,7 @@ COS.forEach(c=>{c.mix=c.mix||[];const q=(m,p)=>{const cl=c.fin[m]?.[p];return cl
       if(!c.mix.some(m=>MIXG.includes(m.meas)&&!m.calc))add('calc_gelir',{'Net kazanılmış prim':q('net_earned_premiums',p),'Yatırım gelirleri':q('investment_income',p)},p)}})});
 function setSum(c,p){c.summary=(p&&c.summaries.find(s=>s.p===p))||c.summaries[c.summaries.length-1]||null;return c.summary}
 const tip=$('#tip');
-function showTip(e,html){tip.innerHTML=html;tip.hidden=false;const w=tip.offsetWidth,h=tip.offsetHeight;tip.style.left=Math.max(8,Math.min(e.clientX+14,innerWidth-w-8))+'px';tip.style.top=Math.max(8,Math.min(e.clientY+14,innerHeight-h-8))+'px'}
+function showTip(e,html){tip.innerHTML=html;tip.style.left='0px';tip.style.top='0px';tip.hidden=false;const w=tip.offsetWidth,h=tip.offsetHeight,G=14,M=8;let x=e.clientX+G;if(x+w>innerWidth-M)x=e.clientX-G-w;if(x<M)x=Math.min(M,innerWidth-w-M);let y=e.clientY+G;if(y+h>innerHeight-M)y=e.clientY-G-h;if(y<M)y=M;tip.style.left=x+'px';tip.style.top=y+'px'}
 function hideTip(){tip.hidden=true}
 const LOGOS=JSON.parse(document.getElementById('logos').textContent);
 const state={view:'GIRIS',metric:{},mode:'q',sel:null,mix:{},peer:'net_profit|COMPANY'};
