@@ -1,0 +1,42 @@
+"""Fon dizini: son PDR'lerden site verisi.
+Çıktı: veri/fon/fonlar.json ve public/veri/fon/fonlar.json (sitenin okuduğu kopya)
+  fonlar[]: kod, ad, kurucu, donem, toplam (TL), hisse_ag (%), n, getiri, h: [[hisse, ağırlık %, değer TL]], degisim, alis, satis, bildirim
+  hisse{}: hisse kodu -> [[fon kodu, ağırlık %, dönem]] (şirket sayfasındaki "Bu hisseyi tutan fonlar")"""
+import os, json, glob, datetime
+
+KOK = os.path.join(os.path.dirname(__file__), "..", "..")
+VERI = os.path.join(KOK, "veri", "fon")
+
+def main():
+    liste = {f["kod"]: f for f in (json.load(open(os.path.join(VERI, "liste.json"))).get("fonlar", []) if os.path.exists(os.path.join(VERI, "liste.json")) else [])}
+    F, H = [], {}
+    for d in sorted(glob.glob(os.path.join(VERI, "pdr", "*"))):
+        kod = os.path.basename(d)
+        P = sorted(glob.glob(os.path.join(d, "*.json")))
+        if not P: continue
+        son = json.load(open(P[-1])); onc = json.load(open(P[-2])) if len(P) > 1 else None
+        if not son.get("dogrulama", {}).get("tutuyor"): continue
+        ag = lambda a: {x["kod"] or x["isin"]: x.get("agirlik") or 0 for x in a["hisseler"]}
+        A = ag(son); deg = None
+        if onc and onc.get("dogrulama", {}).get("tutuyor"):
+            B = ag(onc)
+            fark = sorted(((k, round(A.get(k, 0) - B.get(k, 0), 2)) for k in set(A) | set(B)), key=lambda x: -abs(x[1]))
+            deg = {"onceki": onc["donem"], "eklenen": sorted(set(A) - set(B)), "cikan": sorted(set(B) - set(A)),
+                   "artan": [list(x) for x in fark if x[1] > 0 and x[0] in B][:5], "azalan": [list(x) for x in fark if x[1] < 0 and x[0] in A][:5]}
+        L = liste.get(kod, {})
+        isl = son.get("islemler") or {}
+        F.append({"kod": kod, "ad": L.get("ad") or kod, "kurucu": L.get("kurucu", ""), "donem": son["donem"], "toplam": son.get("fon_toplam_deger"),
+                  "hisse_ag": son.get("hisse_agirligi"), "n": son.get("hisse_sayisi"), "getiri": L.get("getiri"), "bildirim": son.get("bildirim"),
+                  "h": [[x["kod"] or x["isin"], x.get("agirlik"), x["deger"]] for x in son["hisseler"]], "degisim": deg,
+                  "alis": [x[:2] for x in (isl.get("alis") or [])[:10]], "satis": [x[:2] for x in (isl.get("satis") or [])[:10]]})
+        for x in son["hisseler"]:
+            if x.get("kod"): H.setdefault(x["kod"], []).append([kod, x.get("agirlik"), son["donem"]])
+    for k in H: H[k].sort(key=lambda r: -(r[1] or 0))
+    out = {"guncel": datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z", "fonlar": sorted(F, key=lambda f: -(f["toplam"] or 0)), "hisse": H}
+    for p in (os.path.join(VERI, "fonlar.json"), os.path.join(KOK, "public", "veri", "fon", "fonlar.json")):
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        json.dump(out, open(p, "w"), ensure_ascii=False, separators=(",", ":"))
+    print(f"dizin: {len(F)} fon, {len(H)} hisse")
+
+if __name__ == "__main__":
+    main()

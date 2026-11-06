@@ -33,8 +33,28 @@ def bolum_turu(baslik):
     if "FON" in b: return "fon"
     return b.strip()[:20].lower()
 
+ROMA = re.compile(r"^\s*([IVX]+)\s*-\s*(.+)")
+
+def islemler(metin):
+    """VII- PORTFÖYDEN SATIŞLAR / IX- PORTFÖYE ALIŞLAR: pay satırlarını hisse bazında toplar (TL)."""
+    out, kisim = {"alis": {}, "satis": {}}, None
+    for s in metin.splitlines():
+        m = ROMA.match(s)
+        if m:
+            b = m.group(2).upper()
+            kisim = "satis" if "SATIŞ" in b or "SATIS" in b else "alis" if "ALIŞ" in b or "ALIS" in b else None
+            continue
+        if not kisim: continue
+        mk = re.search(r"\b([A-ZÇĞİÖŞÜ0-9]{3,6})\.E\b", s)
+        if not mk: continue
+        n = [v for h, v in sayilar(s[mk.end():]) if "%" not in h]
+        if not n: continue
+        k = out[kisim].setdefault(mk.group(1), [0.0, 0])
+        k[0] += n[-1]; k[1] += 1
+    return {t: sorted(([kod, round(v[0], 2), v[1]] for kod, v in d.items()), key=lambda x: -x[1]) for t, d in out.items()}
+
 def ayristir(metin):
-    bolum, kalemler, fon_toplam, hisse_grup = None, {}, None, None
+    bolum, kalemler, fon_toplam, hisse_grup, portfoy = None, {}, None, None, None
     onceki = ""
     satirlar = metin.splitlines()
     for i, s in enumerate(satirlar):
@@ -42,6 +62,9 @@ def ayristir(metin):
         m = BOLUM.match(s)
         if m and not ISIN.search(s) and len(s.strip()) < 90:
             bolum = bolum_turu(m.group(2))
+        if u.strip().startswith("FON PORTFOY DE") or u.strip().startswith("FON PORTFÖY DE"):
+            n = [v for h, v in sayilar(s) if "%" not in h and v > 1000]
+            if n: portfoy = max(n)
         if ("FON PORTF" in u and ("DEĞER" in u or "DEGER" in u)) or "FON TOPLAM DEĞER" in u:
             n = [v for h, v in sayilar(s) if "%" not in h and v > 1000]
             if n and ("TOPLAM" in u or "DEĞERİ" in u or "DEGERI" in u or "DEĞERİ" in u):
@@ -80,7 +103,7 @@ def ayristir(metin):
     dog = {"hisse_satir_toplami": round(hs, 2), "hisse_grup_toplami": hisse_grup,
            "fark_yuzde": round(100 * (hs - hisse_grup) / hisse_grup, 4) if hisse_grup else None}
     dog["tutuyor"] = bool(hisse_grup and abs(dog["fark_yuzde"]) <= 0.2)
-    return {"fon_toplam_deger": fon_toplam, "hisse_sayisi": len(hisseler),
+    return {"fon_toplam_deger": fon_toplam, "fon_portfoy_degeri": portfoy, "islemler": islemler(metin), "hisse_sayisi": len(hisseler),
             "hisse_agirligi": round(100 * hs / fon_toplam, 4) if fon_toplam else None,
             "dogrulama": dog, "hisseler": hisseler, "diger_kalemler": [x for x in L if x["tur"] != "hisse"]}
 

@@ -1,6 +1,6 @@
 """KAP'tan fonların aylık Portföy Dağılım Raporlarını (PDR) çeker ve ayrıştırır.
-Ortam: FON_KOD (ör. MAC; virgülle birden çok), FON_LIMIT (son kaç rapor, varsayılan 3), FON_KAYNAK (PDF geçici klasörü)
-Çıktı: veri/fon/pdr/<KOD>/<YYYY-MM>.json, veri/fon/ham/<KOD>/<YYYY-MM>.txt (pdftotext), veri/fon/son_kosu.json
+Ortam: FON_KOD (ör. MAC; virgülle birden çok), FON_LIMIT (son kaç rapor, varsayılan 2), FON_KAYNAK (PDF geçici klasörü)
+Çıktı: veri/fon/pdr/<KOD>/<YYYY-MM>.json, veri/fon/son_kosu.json; ham pdftotext metni yalnız doğrulaması tutmayan raporlarda veri/fon/ham/<KOD>/
 Fon bildirimleri: GET /tr/api/disclosure/filter/FILTERYFBF/<fonOid>/ALL/365 (fonOid: kap_fon_oid.json)"""
 import os, re, json, time, subprocess, tempfile, urllib.request, datetime, sys
 sys.path.insert(0, os.path.dirname(__file__))
@@ -10,8 +10,11 @@ KOK = os.path.join(os.path.dirname(__file__), "..", "..")
 VERI = os.path.join(KOK, "veri", "fon")
 UA = {"User-Agent": "Mozilla/5.0 Sonar-Bekci", "Accept": "application/json, text/html, */*"}
 OIDS = json.load(open(os.path.join(os.path.dirname(__file__), "kap_fon_oid.json")))
+_LP = os.path.join(VERI, "liste.json")
+LISTE = json.load(open(_LP)).get("fonlar", []) if os.path.exists(_LP) else []
+OIDS.update({f["kod"]: f["oid"] for f in LISTE})
 KAYNAK = os.environ.get("FON_KAYNAK") or tempfile.mkdtemp()
-LIMIT = int(os.environ.get("FON_LIMIT") or 3)
+LIMIT = int(os.environ.get("FON_LIMIT") or 2)
 
 def get(u, t=90):
     for k in range(4):
@@ -54,6 +57,10 @@ def pdf_metin(bid):
 
 def main():
     kodlar = [k.strip().upper() for k in (os.environ.get("FON_KOD") or "MAC").split(",") if k.strip()]
+    HSY = [f["kod"] for f in LISTE if f.get("hisse_yogun") and not f.get("serbest")]
+    if kodlar == ["HSY"]: kodlar = HSY                      # tüm hisse yoğun (serbest olmayan) fonlar
+    elif kodlar == ["PILOT"]: kodlar = (["MAC"] + [k for k in HSY if k != "MAC"])[:15]
+    print("fon sayısı", len(kodlar))
     sp = os.path.join(VERI, "son_kosu.json")
     kosu = {"zaman": datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z", "basarili": [], "atlandi": [], "hata": []}
     for kod in kodlar:
@@ -68,9 +75,10 @@ def main():
                 kosu["atlandi"].append({"kod": kod, "donem": r["donem"]}); continue
             try:
                 metin, ekler = pdf_metin(r["id"])
-                os.makedirs(os.path.join(VERI, "ham", kod), exist_ok=True)
-                open(os.path.join(VERI, "ham", kod, f"{r['donem']}.txt"), "w").write(metin)
                 a = ayristir(metin)
+                if not a["dogrulama"]["tutuyor"] or os.environ.get("HAM"):  # ham metin yalnız tutmayan raporlarda saklanır (hata ayıklama)
+                    os.makedirs(os.path.join(VERI, "ham", kod), exist_ok=True)
+                    open(os.path.join(VERI, "ham", kod, f"{r['donem']}.txt"), "w").write(metin)
                 a.update({"kod": kod, "donem": r["donem"], "bildirim": r["id"], "yayin": r["yayin"], "ekler": ekler})
                 os.makedirs(os.path.dirname(hedef), exist_ok=True)
                 json.dump(a, open(hedef, "w"), ensure_ascii=False, indent=1)
