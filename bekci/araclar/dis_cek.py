@@ -1,5 +1,6 @@
 """Dış URL'leri indirir. DIS="ad1|url1;;ad2|url2" -> bekci/dis/<ad>. Var olan dosya atlanır (her push tüm listeyi yeniden indirip 10 dk sınırına takılıyordu, 5 Kas)."""
-import os, re, time, urllib.request
+import os, re, time, urllib.request, urllib.parse
+GEVSEK_SSL = {"www.fordotosan.com.tr"}  # sunucu ara sertifikayı göndermiyor (bekci/sunum.py ile aynı; yalnız açık belgeler)
 T0 = time.time()
 OUT = os.path.join(os.path.dirname(__file__), "..", "dis"); os.makedirs(OUT, exist_ok=True)
 _D = os.environ.get("DIS_DOSYA")   # dosyadan okuma (ortam değişkeni 128 KB sınırını aşıyordu, 5 Kas)
@@ -9,7 +10,8 @@ for parca in filter(None, _P):
     if os.path.exists(os.path.join(OUT, ad.strip())): continue
     if time.time() - T0 > 900: print("süre doldu; kalanlar sonraki çalıştırmada"); break   # zaten indirilmiş (yenilemek için dosyayı sil ya da yeni ad ver)
     try:
-        b = urllib.request.urlopen(urllib.request.Request(url.strip(), headers={"User-Agent": "Mozilla/5.0 (Macintosh) AppleWebKit/537.36 Chrome/124 Safari/537.36"}), timeout=60).read()
+        _c = __import__("ssl")._create_unverified_context() if urllib.parse.urlparse(url.strip()).hostname in GEVSEK_SSL else None
+        b = urllib.request.urlopen(urllib.request.Request(url.strip(), headers={"User-Agent": "Mozilla/5.0 (Macintosh) AppleWebKit/537.36 Chrome/124 Safari/537.36"}), timeout=60, context=_c).read()
         if ad.strip().startswith("kapb_"):   # KAP bildirim sayfası ~5 MB: yalnız başlık ve ek dosya kimlikleri saklanır
             t = b.decode("utf-8", "ignore"); m = re.search(r"<title>(.*?)</title>", t, re.S)
             ids = list(dict.fromkeys(re.findall(r"file/download/([0-9a-f]{32})", t)))
