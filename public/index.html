@@ -62,18 +62,18 @@
   --f-display:"Plus Jakarta Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --f-body:"Plus Jakarta Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --f-mono:"Plus Jakarta Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --co:#7cc4ff; --co-dk:#7cc4ff; --co-ui:var(--co-dk);
+  --co:#7cc4ff; --co-dk:#7cc4ff; --co-ui:var(--co-dk); --qh:#ff7ac8; --qh:#ff7ac8; --qh:#ff7ac8; --qh:#ff7ac8;
   color-scheme:dark;
 }
 @media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
   --bg:#f3f5f8; --panel:#ffffff; --panel2:#eef1f6; --line:#d8dee8; --fg:#121a26; --muted:#5a6678; --faint:#8b96a6;
   --accent:#0b6bcb; --p-sr:#121a26; --p-kap:#0f9a6c; --p-pdf:#7b4fd1; --p-calc:#b97508; --p-fix:#d23f2f; --p-na:#b7c0cc;
-  --up:#0f9a6c; --down:#d23f2f; --co-ui:var(--co); color-scheme:light;}
+  --up:#0f9a6c; --down:#d23f2f; --co-ui:var(--co); --qh:#d6247e; color-scheme:light;}
   :root:not([data-theme="dark"]) .card{--cui:var(--c)}}
 :root[data-theme="light"]{
   --bg:#f3f5f8; --panel:#ffffff; --panel2:#eef1f6; --line:#d8dee8; --fg:#121a26; --muted:#5a6678; --faint:#8b96a6;
   --accent:#0b6bcb; --p-sr:#121a26; --p-kap:#0f9a6c; --p-pdf:#7b4fd1; --p-calc:#b97508; --p-fix:#d23f2f; --p-na:#b7c0cc;
-  --up:#0f9a6c; --down:#d23f2f; --co-ui:var(--co); color-scheme:light;}
+  --up:#0f9a6c; --down:#d23f2f; --co-ui:var(--co); --qh:#d6247e; color-scheme:light;}
 :root[data-theme="light"] .card{--cui:var(--c)}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:14px;line-height:1.45;}
@@ -294,6 +294,7 @@ table.t th:first-child,table.t td:first-child{text-align:left}
 .small svg.kc{height:128px;display:block;margin-top:6px}.kc-yoy{font-size:12px;margin-top:2px}.kc-leg{font-size:10.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;margin:2px 0 4px}.kc-leg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:3px;vertical-align:middle}
 .macro{border-top:1px solid var(--line);padding-block:22px 40px}
 .foot{color:var(--muted);font-size:12px;padding-block:0 40px;max-width:90ch}
+.qband{fill:var(--qh);fill-opacity:0;pointer-events:none;transition:fill-opacity .12s}svg.qh-on .qband.qm{fill-opacity:.14}svg.qh-on [data-pk]:not(.qm):not(.qband):not(.qdot){opacity:.28}svg.qh-on .qb.qm{fill:var(--qh)!important;fill-opacity:1!important}svg.qh-on .qb2.qm{fill:var(--qh)!important}.qdot{opacity:0;fill:var(--qh);pointer-events:none}svg.qh-on .qdot.qm{opacity:1}[data-pk]{transition:opacity .12s}
 .tip{position:fixed;z-index:50;pointer-events:none;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;max-width:280px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .tip b{font-family:var(--f-mono)}
 .list{margin:0;padding-left:18px;color:var(--muted);font-size:13px}
@@ -643,6 +644,11 @@ function setSum(c,p){c.summary=(p&&c.summaries.find(s=>s.p===p))||c.summaries[c.
 const tip=$('#tip');
 function showTip(e,html){tip.innerHTML=html;tip.style.left='0px';tip.style.top='0px';tip.hidden=false;const w=tip.offsetWidth,h=tip.offsetHeight,G=14,M=8;let x=e.clientX+G;if(x+w>innerWidth-M)x=e.clientX-G-w;if(x<M)x=Math.min(M,innerWidth-w-M);let y=e.clientY+G;if(y+h>innerHeight-M)y=e.clientY-G-h;if(y<M)y=M;tip.style.left=x+'px';tip.style.top=y+'px'}
 function hideTip(){tip.hidden=true}
+/* aynı çeyrek vurgusu: üzerine gelinen dönemle aynı çeyreğin (aylıkta aynı ayın) bütün yılları --qh renginde, diğerleri silik */
+function qkey(p,m){if(!p||p.length<7)return null;const mo=+p.slice(5,7);return m?'M'+mo:(mo%3?null:'Q'+mo/3)}
+function qvaried(ps,m){return new Set(ps.map(p=>qkey(p,m)).filter(Boolean)).size>1}
+function qbands(ps,m,X,w,y0,h){return ps.map((p,i)=>{const k=qkey(p,m);return k?`<rect class="qband" data-pk="${k}" x="${X(i).toFixed(1)}" y="${y0}" width="${w.toFixed(1)}" height="${h}"/>`:''}).join('')}
+function qhSet(svg,k){if(!svg)return;svg.classList.toggle('qh-on',!!k);if(svg._qk===k)return;svg._qk=k;svg.querySelectorAll('[data-pk]').forEach(e=>e.classList.toggle('qm',!!k&&e.dataset.pk===k))}
 const LOGOS=JSON.parse(document.getElementById('logos').textContent);
 const state={view:'GIRIS',metric:{},mode:'q',sel:null,mix:{},peer:'net_profit|COMPANY'};
 
@@ -698,7 +704,7 @@ function zoomable(el,n,minN,draw,lab,{anchor=null,unit='dönem'}={}){
   el.addEventListener('click',e=>{if(el._drag){el._drag=0;e.stopPropagation();e.preventDefault()}},true);
 }
 function barChart(el,data,o){zoomable(el,data.length,4,(a,b)=>barChart0(el,data.slice(a,b),o),i=>data[i].label)}
-function lineChart(el,seriesList,o={}){const L=o.labels||[];zoomable(el,L.length,3,(a,b)=>lineChart0(el,seriesList.map(s=>({...s,v:s.v.slice(a,b),mark:s.mark&&s.mark.slice(a,b),na:s.na&&s.na.slice(a,b)})),{...o,labels:L.slice(a,b)}),i=>L[i])}
+function lineChart(el,seriesList,o={}){const L=o.labels||[];zoomable(el,L.length,3,(a,b)=>lineChart0(el,seriesList.map(s=>({...s,v:s.v.slice(a,b),mark:s.mark&&s.mark.slice(a,b),na:s.na&&s.na.slice(a,b)})),{...o,labels:L.slice(a,b),ps:o.ps&&o.ps.slice(a,b)}),i=>L[i])}
 /* bar chart with provenance */
 function barChart0(el,data,{fmt=fmtM,color='var(--co-ui)',height=260,noSel=0}={}){
   const W=Math.max(320,el.clientWidth||800),H=height,ml=58,mr=10,mt=12,mb=34;
@@ -707,31 +713,33 @@ function barChart0(el,data,{fmt=fmtM,color='var(--co-ui)',height=260,noSel=0}={}
   let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Çubuk grafik">`;
   ticks.forEach(t=>{s+=`<line class="gridline" x1="${ml}" x2="${W-mr}" y1="${y(t)}" y2="${y(t)}"/><g class="axis"><text x="${ml-8}" y="${y(t)+4}" text-anchor="end">${esc(fmtC(t))}</text></g>`});
   s+=`<line x1="${ml}" x2="${W-mr}" y1="${y(0)}" y2="${y(0)}" stroke="var(--muted)" stroke-width="1"/>`;
-  const every=Math.ceil(data.length/(W<560?6:12));
+  const every=Math.ceil(data.length/(W<560?6:12));const QV=qvaried(data.map(d=>d.p||''));
   data.forEach((d,i)=>{const pv=provOf(d.cl);const bx=x(i)+bw*.16,bwid=Math.max(2,bw*.68);
     if(d.v==null){s+=`<rect x="${bx}" y="${mt}" width="${bwid}" height="${H-mt-mb}" fill="url(#hatch)" opacity=".55" data-i="${i}" class="bar"/>`}
-    else{const yy=Math.min(y(d.v),y(0)),hh=Math.max(1,Math.abs(y(d.v)-y(0)));const fill=pv==='sr'||pv==='fxs'||pv==='co'?color:PROV[pv][1];s+=`<rect class="bar" data-i="${i}" x="${bx}" y="${yy}" width="${bwid}" height="${hh}" rx="1.5" fill="${fill}" ${d.partial?'fill-opacity=".55"':''}/>`;
+    else{const yy=Math.min(y(d.v),y(0)),hh=Math.max(1,Math.abs(y(d.v)-y(0)));const fill=pv==='sr'||pv==='fxs'||pv==='co'?color:PROV[pv][1];s+=`<rect class="bar qb" ${QV&&qkey(d.p)?`data-pk="${qkey(d.p)}"`:''} data-i="${i}" x="${bx}" y="${yy}" width="${bwid}" height="${hh}" rx="1.5" fill="${fill}" ${d.partial?'fill-opacity=".55"':''}/>`;
       if(pv!=='sr'&&pv!=='fxs')s+=`<circle cx="${bx+bwid/2}" cy="${H-mb+8}" r="2.6" fill="${PROV[pv][1]}"/>`}
     if((i%every===0&&data.length-1-i>=every*.6)||i===data.length-1)s+=`<g class="axis"><text x="${x(i)+bw/2}" y="${H-6}" text-anchor="middle">${esc(d.label)}</text></g>`});
   s+=`<rect x="${ml}" y="${mt}" width="${W-ml-mr}" height="${H-mt-mb}" fill="transparent" class="hit"/><defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="transparent"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--p-na)" stroke-width="2"/></pattern></defs></svg>`;
   el.innerHTML=s;const svg=el.querySelector('svg');
-  svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const xx=(e.clientX-r.left)*W/r.width;const i=Math.floor((xx-ml)/bw);if(i<0||i>=data.length){hideTip();return}const d=data[i],pv=provOf(d.cl);
+  svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const xx=(e.clientX-r.left)*W/r.width;const i=Math.floor((xx-ml)/bw);if(i<0||i>=data.length){hideTip();qhSet(svg,null);return}const d=data[i],pv=provOf(d.cl);if(QV)qhSet(svg,qkey(d.p));
     showTip(e,`<div class="eyebrow">${esc(d.label)}</div><b>${d.v==null?(d.cl?.qna?'Çeyrek açıklanmadı':'Uygulanmaz'):esc(fmt(d.v))}</b><div style="margin-top:4px">${d.tip?esc(d.tip):`<span class="sw" style="background:${PROV[pv][1]}"></span> ${esc(PROV[pv][0])}`}${d.cl?.qs==='diff'?' · çeyrek, dönem farkından':d.cl?.qs==='cpi'?' · Ç4, TÜFE düzeltmeli fark':''}</div>${d.v==null&&d.cl?.qna?`<div class="note" style="margin-top:4px">${esc(d.cl.qna)}</div>`:''}${d.cl?.note?`<div class="note" style="margin-top:4px">${esc(d.cl.note)}</div>`:''}`)});
-  svg.addEventListener('mouseleave',hideTip);
+  svg.addEventListener('mouseleave',()=>{hideTip();qhSet(svg,null)});
   if(!noSel)svg.addEventListener('click',e=>{const r=svg.getBoundingClientRect();const i=Math.floor(((e.clientX-r.left)*W/r.width-ml)/bw);if(data[i]){state.sel={m:state.metric[state.view],p:data[i].p};renderMatrixSel()}});
 }
-function lineChart0(el,seriesList,{height=220,fmt=v=>nf(v),labels}={}){
+function lineChart0(el,seriesList,{height=220,fmt=v=>nf(v),labels,ps,freq}={}){
   const W=Math.max(320,el.clientWidth||700),H=height,ml=52,mr=12,mt=10,mb=28;const n=labels.length;
   const all=seriesList.flatMap(s=>s.v.filter(v=>v!=null));if(!all.length){el.innerHTML='<p class="note">Veri yok.</p>';return}
   const ticks=niceTicks(Math.min(...all),Math.max(...all));const t0=ticks[0],t1=ticks[ticks.length-1];
   const x=i=>ml+(n<=1?0:i*(W-ml-mr)/(n-1)),y=v=>mt+(t1-v)/(t1-t0||1)*(H-mt-mb);
   let s=`<svg viewBox="0 0 ${W} ${H}" role="img">`;ticks.forEach(t=>{s+=`<line class="gridline" x1="${ml}" x2="${W-mr}" y1="${y(t)}" y2="${y(t)}"/><g class="axis"><text x="${ml-8}" y="${y(t)+4}" text-anchor="end">${esc(fmt(t))}</text></g>`});
   const every=Math.ceil(n/(W<560?5:10));labels.forEach((l,i)=>{if((i%every===0&&n-1-i>=every*.6)||i===n-1)s+=`<g class="axis"><text x="${x(i)}" y="${H-6}" text-anchor="middle">${esc(l)}</text></g>`});
+  const QV=ps&&qvaried(ps,freq==='m');const stp=n<=1?20:(W-ml-mr)/(n-1);if(QV)s+=qbands(ps,freq==='m',i=>x(i)-stp/2,stp,mt,H-mt-mb);
   seriesList.forEach(sr=>{let d='',on=false;sr.v.forEach((v,i)=>{if(v==null){on=false;return}d+=(on?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1);on=true});s+=`<path d="${d}" fill="none" stroke="${sr.color}" stroke-width="2" ${sr.dash?'stroke-dasharray="5 4"':''}/>`;sr.v.forEach((v,i)=>{if(v!=null&&(sr.mark?.[i]))s+=`<circle cx="${x(i)}" cy="${y(v)}" r="${sr.dash?4:3}" fill="${sr.mark[i]}" ${sr.dash?`stroke="${sr.color}" stroke-width="2"`:''}/>`})});
+  if(QV)seriesList.forEach(sr=>sr.v.forEach((v,i)=>{const k=qkey(ps[i],freq==='m');if(v!=null&&k)s+=`<circle class="qdot" data-pk="${k}" cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="4" stroke="var(--panel)" stroke-width="1.5"/>`}));
   s+=`<line id="hl" x1="0" x2="0" y1="${mt}" y2="${H-mb}" stroke="var(--muted)" stroke-dasharray="3 3" opacity="0"/></svg>`;el.innerHTML=s;const svg=el.querySelector('svg'),hl=svg.querySelector('#hl');
-  svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const xx=(e.clientX-r.left)*W/r.width;const i=Math.round((xx-ml)/((W-ml-mr)/(n-1||1)));if(i<0||i>=n){hideTip();return}hl.setAttribute('x1',x(i));hl.setAttribute('x2',x(i));hl.setAttribute('opacity',1);
+  svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const xx=(e.clientX-r.left)*W/r.width;const i=Math.round((xx-ml)/((W-ml-mr)/(n-1||1)));if(i<0||i>=n){hideTip();qhSet(svg,null);return}if(QV)qhSet(svg,qkey(ps[i],freq==='m'));hl.setAttribute('x1',x(i));hl.setAttribute('x2',x(i));hl.setAttribute('opacity',1);
     showTip(e,`<div class="eyebrow">${esc(labels[i])}</div>`+seriesList.map(sr=>`<div><span class="sw" style="background:${sr.color}"></span> ${esc(sr.name)}: <b>${sr.v[i]==null?(sr.na?.[i]||'—'):esc(fmt(sr.v[i]))}</b></div>`).join(''))});
-  svg.addEventListener('mouseleave',()=>{hideTip();hl.setAttribute('opacity',0)});
+  svg.addEventListener('mouseleave',()=>{hideTip();hl.setAttribute('opacity',0);qhSet(svg,null)});
 }
 </script>
 <script>
@@ -1046,7 +1054,7 @@ function groupedChart0(el,c,m,bal,years){
       const pv=provOf(d.cl);hits.push({x,w:bw,d,yr,q});
       if(d.v==null){s+=`<rect x="${x+bw*.1}" y="${mt}" width="${bw*.8}" height="${H-mt-mb}" fill="url(#hatchg)" opacity=".5"/>`;return}
       const yy=Math.min(y(d.v),y(0)),hh=Math.max(1,Math.abs(y(d.v)-y(0)));
-      s+=`<rect x="${x+bw*.1}" y="${yy}" width="${bw*.8}" height="${hh}" rx="1.5" fill="var(--co-ui)" fill-opacity="${op(i)}"/>`;
+      s+=`<rect class="qb2" data-pk="Q${q}" x="${x+bw*.1}" y="${yy}" width="${bw*.8}" height="${hh}" rx="1.5" fill="var(--co-ui)" fill-opacity="${op(i)}"/>`;
       if(pv!=='sr'&&pv!=='na')s+=`<circle cx="${x+bw/2}" cy="${H-mb+7}" r="2.4" fill="${PROV[pv][1]}"/>`;
       if(bw>=26)s+=`<g class="axis"><text x="${x+bw/2}" y="${H-mb+20}" text-anchor="middle" style="font-size:9.5px">'${yr.slice(2)}</text></g>`});
     s+=`<g class="axis"><text x="${ml+(q-.5)*gw}" y="${H-10}" text-anchor="middle" style="font-size:12px;font-weight:600;fill:var(--fg)">Ç${q} · ${['Ocak–Mart','Nisan–Haziran','Temmuz–Eylül','Ekim–Aralık'][q-1]}</text></g>`;
@@ -1054,10 +1062,10 @@ function groupedChart0(el,c,m,bal,years){
   s+=`<defs><pattern id="hatchg" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="var(--p-na)" stroke-width="2"/></pattern></defs></svg>`;
   s+=`<div class="legend" style="margin-top:6px">${years.map((yr,i)=>`<span><i class="sw" style="background:var(--co-ui);opacity:${op(i)}"></i>${yr}</span>`).join('')}</div>`;
   el.innerHTML=s;const svg=el.querySelector('svg');
-  svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const xx=(e.clientX-r.left)*W/r.width;const h=hits.find(h=>xx>=h.x&&xx<h.x+h.w);if(!h){hideTip();return}
+  svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const xx=(e.clientX-r.left)*W/r.width;const h=hits.find(h=>xx>=h.x&&xx<h.x+h.w);if(!h){hideTip();qhSet(svg,null);return}qhSet(svg,'Q'+h.q);
     const prev=get(String(+h.yr-1),h.q);const ch=h.d.v!=null&&prev?.v!=null&&prev.v>0?(h.d.v/prev.v-1)*100:null;const pv=provOf(h.d.cl);
     showTip(e,`<div class="eyebrow">${h.yr} Ç${h.q}</div><b>${h.d.v==null?'Uygulanmaz':esc(fmtM(h.d.v))+' TL'}</b>${ch==null?'':`<div class="${ch>=0?'up':'down'}" style="font-family:var(--f-mono)">${ch>=0?'▲':'▼'} ${nf(Math.abs(ch),1)}% · ${+h.yr-1} Ç${h.q}'e göre</div>`}<div style="margin-top:4px"><span class="sw" style="background:${PROV[pv][1]}"></span> ${esc(PROV[pv][0])}</div>${h.d.cl?.note?`<div class="note" style="margin-top:4px">${esc(h.d.cl.note)}</div>`:''}`)});
-  svg.addEventListener('mouseleave',hideTip);
+  svg.addEventListener('mouseleave',()=>{hideTip();qhSet(svg,null)});
   svg.addEventListener('click',e=>{const r=svg.getBoundingClientRect();const xx=(e.clientX-r.left)*W/r.width;const h=hits.find(h=>xx>=h.x&&xx<h.x+h.w);if(h){state.sel={m,p:h.d.p};renderMatrixSel()}});
 }
 function bridgeHTML(c){
@@ -1241,7 +1249,7 @@ function segMarginHTML(c){if(!segMarginData(c))return '';
 function renderSegMargin(c){const rows=segMarginData(c);if(!rows||!$('#segmchart'))return;
   const names=[...new Set(rows.flatMap(r=>Object.keys(r.g)))].sort((a,b)=>(a==='Toplam')-(b==='Toplam'));const pal=['var(--co-ui)','#d58a20','#7a67bd','#4c9d78','#bf647f','#5aa0c8'];
   const col=(n,i)=>n==='Toplam'?'var(--muted)':pal[i%pal.length];
-  lineChart($('#segmchart'),names.map((n,i)=>({name:n,color:col(n,i),v:rows.map(r=>r.g[n]??null)})),{labels:rows.map(r=>QS(r.p)),fmt:v=>'%'+nf(v,1),height:220});
+  lineChart($('#segmchart'),names.map((n,i)=>({name:n,color:col(n,i),v:rows.map(r=>r.g[n]??null)})),{labels:rows.map(r=>QS(r.p)),fmt:v=>'%'+nf(v,1),height:220,ps:rows.map(r=>r.p)});
   $('#segmleg').innerHTML=names.map((n,i)=>`<span><i class="sw" style="background:${col(n,i)}"></i>${esc(n)}</span>`).join('');
   const L=rows[rows.length-1],P=rows.find(r=>r.p===String(+L.p.slice(0,4)-1)+L.p.slice(4));
   $('#segmnote').innerHTML=`${esc(QL(L.p))} birikimli: `+names.map(n=>{const v=L.g[n];if(v==null)return '';const d=P&&P.g[n]!=null?v-P.g[n]:null;return `${esc(n)} %${nf(v,1)}${d!=null?` (<span class="${d>=0?'up':'down'}">${d>=0?'+':'−'}${nf(Math.abs(d),1)} puan</span> geçen yılın aynı dönemine göre)`:''}`}).filter(Boolean).join(' · ')+`. Bölüm FAVÖK'ü şirketin bölüm raporlamasındaki düzeltilmiş tutardır. Son dönem kaynağı: ${srcLink(L.e)}`}
@@ -1250,8 +1258,8 @@ function ndHTML(c){const R=(c.rat||[]).filter(r=>r.nd!=null);if(R.length<2)retur
 function renderND(c){if(!$('#ndchart'))return;const R=(c.rat||[]).filter(r=>r.nd!=null),mode=state.ndMode||'oran';
   document.querySelectorAll('[data-nd]').forEach(b=>{b.setAttribute('aria-pressed',b.dataset.nd===mode);b.onclick=()=>{state.ndMode=b.dataset.nd;renderND(c)}});
   const lab=R.map(r=>QS(r.p));
-  if(mode==='oran'){lineChart($('#ndchart'),[{name:'Net borç / FAVÖK',color:'var(--co-ui)',v:R.map(r=>r.ndfavok??null)}],{labels:lab,fmt:v=>nf(v,2)+'x',height:220});$('#ndleg').innerHTML=''}
-  else{lineChart($('#ndchart'),[{name:'Net borç',color:'var(--co-ui)',v:R.map(r=>r.nd)},{name:'FAVÖK · son 4 çeyrek',color:'#d58a20',v:R.map(r=>r.favok4??null)}],{labels:lab,fmt:v=>fmtM(v)+' TL',height:220});
+  if(mode==='oran'){lineChart($('#ndchart'),[{name:'Net borç / FAVÖK',color:'var(--co-ui)',v:R.map(r=>r.ndfavok??null)}],{labels:lab,fmt:v=>nf(v,2)+'x',height:220,ps:R.map(r=>r.p)});$('#ndleg').innerHTML=''}
+  else{lineChart($('#ndchart'),[{name:'Net borç',color:'var(--co-ui)',v:R.map(r=>r.nd)},{name:'FAVÖK · son 4 çeyrek',color:'#d58a20',v:R.map(r=>r.favok4??null)}],{labels:lab,fmt:v=>fmtM(v)+' TL',height:220,ps:R.map(r=>r.p)});
     $('#ndleg').innerHTML=`<span><i class="sw" style="background:var(--co-ui)"></i>Net borç</span><span><i class="sw" style="background:#d58a20"></i>FAVÖK · son 4 çeyrek</span>`}
   const L=R[R.length-1],P=R.find(r=>r.p===String(+L.p.slice(0,4)-1)+L.p.slice(4)),u=c.fin?.assets?.[L.p]?.u;
   const d=P&&P.ndfavok!=null&&L.ndfavok!=null?L.ndfavok-P.ndfavok:null;
@@ -1272,12 +1280,13 @@ function renderLines(c,key){const L=c.lines[key];const AY=["Oca","Şub","Mar","N
   if(L.style==='bars'){const el=$('#mixchart');const W=Math.max(320,el.clientWidth||700),H=240,ml=46,mb=26,mt=10;const bw=(W-ml)/ps.length;
     const sums=ps.map(p=>{const g=O.find(o=>o.p===p).g;let u=0,d=0;Object.values(g).forEach(v=>v>0?u+=v:d+=v);return [u,d]});const tk=niceTicks(Math.min(0,...sums.map(x=>x[1])),Math.max(...sums.map(x=>x[0])),5);const t0=tk[0],t1=tk[tk.length-1];const y=v=>mt+(t1-v)/(t1-t0)*(H-mt-mb);
     let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(L.label)}">`;tk.forEach(t=>{s+=`<line class="gridline" x1="${ml}" x2="${W}" y1="${y(t)}" y2="${y(t)}"/><g class="axis"><text x="${ml-6}" y="${y(t)+4}" text-anchor="end">${nf(t,0)}</text></g>`});
+    const FM=L.freq==='m',QV=qvaried(ps,FM),one=names.length===1;if(QV)s+=qbands(ps,FM,i=>ml+i*bw,bw,mt,H-mt-mb);
     s+=`<line x1="${ml}" x2="${W}" y1="${y(0)}" y2="${y(0)}" stroke="var(--muted)"/>`;
-    ps.forEach((p,i)=>{const g=O.find(o=>o.p===p).g;let u=0,d=0;const x=ml+i*bw+bw*.14,w=bw*.72;names.forEach((n,ni)=>{const v=g[n];if(v==null)return;const col=pal[ni%pal.length];if(v>=0){s+=`<rect x="${x}" y="${y(u+v)}" width="${w}" height="${Math.max(.5,y(u)-y(u+v))}" fill="${col}"/>`;u+=v}else{s+=`<rect x="${x}" y="${y(d)}" width="${w}" height="${Math.max(.5,y(d+v)-y(d))}" fill="${col}" fill-opacity=".8"/>`;d+=v}});
+    ps.forEach((p,i)=>{const g=O.find(o=>o.p===p).g;let u=0,d=0;const x=ml+i*bw+bw*.14,w=bw*.72;const pk=QV&&qkey(p,FM)?` data-pk="${qkey(p,FM)}"${one?' class="qb"':''}`:'';names.forEach((n,ni)=>{const v=g[n];if(v==null)return;const col=pal[ni%pal.length];if(v>=0){s+=`<rect${pk} x="${x}" y="${y(u+v)}" width="${w}" height="${Math.max(.5,y(u)-y(u+v))}" fill="${col}"/>`;u+=v}else{s+=`<rect${pk} x="${x}" y="${y(d)}" width="${w}" height="${Math.max(.5,y(d+v)-y(d))}" fill="${col}" fill-opacity=".8"/>`;d+=v}});
       s+=`<g class="axis"><text x="${x+w/2}" y="${H-6}" text-anchor="middle">${i%Math.ceil(ps.length/(W<560?5:10))===0||i===ps.length-1?LS(p):''}</text></g>`});
-    el.innerHTML=s+'</svg>';const svg=el.querySelector('svg');svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const i=Math.floor(((e.clientX-r.left)*W/r.width-ml)/bw);const p=ps[i];if(!p){hideTip();return}const oo=O.find(o=>o.p===p),g=oo.g;
-      showTip(e,`<div class="eyebrow">${esc(LL(p))}</div><table style="border-collapse:collapse;font-size:12px;margin-top:4px">${names.filter(n=>g[n]!=null).map((n,ni)=>`<tr><td style="padding:2px 8px 2px 0"><span class="sw" style="background:${pal[names.indexOf(n)%pal.length]}"></span> ${esc(n)}</td><td style="text-align:right;font-family:var(--f-mono);color:${g[n]<0?'var(--down)':'var(--fg)'}">${esc(fm(g[n]))}</td></tr>`).join('')}</table>${srcTip(oo.src?oo:L)}`)});svg.addEventListener('mouseleave',hideTip)}
-  else lineChart($('#mixchart'),names.map((n,i)=>({name:n,color:pal[i%pal.length],v:ps.map(p=>O.find(o=>o.p===p)?.g[n]??null)})),{labels:ps.map(LS),fmt:fm,height:200});
+    el.innerHTML=s+'</svg>';const svg=el.querySelector('svg');svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const i=Math.floor(((e.clientX-r.left)*W/r.width-ml)/bw);const p=ps[i];if(!p){hideTip();qhSet(svg,null);return}if(QV)qhSet(svg,qkey(p,FM));const oo=O.find(o=>o.p===p),g=oo.g;
+      showTip(e,`<div class="eyebrow">${esc(LL(p))}</div><table style="border-collapse:collapse;font-size:12px;margin-top:4px">${names.filter(n=>g[n]!=null).map((n,ni)=>`<tr><td style="padding:2px 8px 2px 0"><span class="sw" style="background:${pal[names.indexOf(n)%pal.length]}"></span> ${esc(n)}</td><td style="text-align:right;font-family:var(--f-mono);color:${g[n]<0?'var(--down)':'var(--fg)'}">${esc(fm(g[n]))}</td></tr>`).join('')}</table>${srcTip(oo.src?oo:L)}`)});svg.addEventListener('mouseleave',()=>{hideTip();qhSet(svg,null)})}
+  else lineChart($('#mixchart'),names.map((n,i)=>({name:n,color:pal[i%pal.length],v:ps.map(p=>O.find(o=>o.p===p)?.g[n]??null)})),{labels:ps.map(LS),fmt:fm,height:200,ps,freq:L.freq});
   $('#mixleg').innerHTML=names.map((g,gi)=>`<span><i class="sw" style="background:${pal[gi%pal.length]}"></i>${esc(g)}</span>`).join('');
   {const lo=[...O].reverse().find(o=>o.src)||L;$('#mixnote').innerHTML=esc(L.note||'')+(srcOf(lo)?` <span style="white-space:nowrap">Son dönem kaynağı: ${srcLink(lo)}</span>`:'')}}
 function renderMix(c){
@@ -1304,18 +1313,18 @@ function renderMix(c){
   const W=Math.max(320,el.clientWidth||700),H=nR?200+nR*1.1:200,ml=40,mb=26,mt=8;const bw=(W-ml)/ps.length;const yv=v=>mt+(100-v)/(100+nR)*(H-mt-mb);
   let s=`<svg viewBox="0 0 ${W} ${H}" role="img">`;for(let t=-nR;t<=100;t+=25){const y=yv(t);s+=`<line class="gridline" x1="${ml}" x2="${W}" y1="${y}" y2="${y}"/><g class="axis"><text x="${ml-6}" y="${y+4}" text-anchor="end">${t<0?'−'+(-t):t}%</text></g>`}
   if(nR)s+=`<line x1="${ml}" x2="${W}" y1="${yv(0)}" y2="${yv(0)}" stroke="var(--muted)"/>`;
-  const every=Math.ceil(ps.length/(W<560?5:10));
-  ps.forEach((p,i)=>{const r=pick(p);const tot=posT(r);let up=0,dn=0;
+  const every=Math.ceil(ps.length/(W<560?5:10));const QV=qvaried(ps);if(QV)s+=qbands(ps,0,i=>ml+i*bw,bw,mt,H-mt-mb);
+  ps.forEach((p,i)=>{const r=pick(p);const tot=posT(r);let up=0,dn=0;const pk=QV&&qkey(p)?` data-pk="${qkey(p)}"`:'';
     groups.forEach((g,gi)=>{const v=r.g[g];if(v==null||!tot||v===0)return;const sh=Math.abs(v)/tot*100;const x=ml+i*bw+bw*.12,w=bw*.76;
-      if(v>0){s+=`<rect x="${x}" y="${yv(up+sh)}" width="${w}" height="${Math.max(0.5,yv(up)-yv(up+sh))}" fill="${pal[gi%pal.length]}"/>`;up+=sh}
-      else{const a=Math.min(nR,dn),b2=Math.min(nR,dn+sh);s+=`<rect x="${x}" y="${yv(-a)}" width="${w}" height="${Math.max(0.5,yv(-b2)-yv(-a))}" fill="${pal[gi%pal.length]}" fill-opacity=".72" stroke="${pal[gi%pal.length]}" stroke-dasharray="2 2"/>`;dn+=sh}});
+      if(v>0){s+=`<rect${pk} x="${x}" y="${yv(up+sh)}" width="${w}" height="${Math.max(0.5,yv(up)-yv(up+sh))}" fill="${pal[gi%pal.length]}"/>`;up+=sh}
+      else{const a=Math.min(nR,dn),b2=Math.min(nR,dn+sh);s+=`<rect${pk} x="${x}" y="${yv(-a)}" width="${w}" height="${Math.max(0.5,yv(-b2)-yv(-a))}" fill="${pal[gi%pal.length]}" fill-opacity=".72" stroke="${pal[gi%pal.length]}" stroke-dasharray="2 2"/>`;dn+=sh}});
     if((i%every===0&&ps.length-1-i>=every*.6)||i===ps.length-1)s+=`<g class="axis"><text x="${ml+i*bw+bw/2}" y="${H-6}" text-anchor="middle">${QS(p)}</text></g>`});
   el.innerHTML=s+'</svg>';
   {const svg=el.querySelector('svg');const fmtV=(v,u)=>u==='TRY'?fmtM(v)+' TL':nf(v,u==='adet'?0:1)+' '+u;
-   svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const xx=(e.clientX-r.left)*W/r.width;const i=Math.floor((xx-ml)/bw);if(i<0||i>=ps.length){hideTip();return}
+   svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const xx=(e.clientX-r.left)*W/r.width;const i=Math.floor((xx-ml)/bw);if(i<0||i>=ps.length){hideTip();qhSet(svg,null);return}if(QV)qhSet(svg,qkey(ps[i]));
      const rr=pick(ps[i]);const ent=Object.entries(rr.g);const tot=ent.filter(([,v])=>v>0).reduce((a,[,v])=>a+v,0);const sum=ent.reduce((a,[,v])=>a+(v||0),0);
      showTip(e,`<div class="eyebrow">${esc(QL(ps[i]))} · ${rr.k==='q'?(rr.der?'tek çeyrek · birikimli farkından, yaklaşık':'tek çeyrek'):'birikimli'}</div><table style="border-collapse:collapse;font-size:12px;margin-top:4px">${groups.filter(g=>rr.g[g]!=null).map(g=>{const gi=groups.indexOf(g),v=rr.g[g];return `<tr><td style="padding:2px 8px 2px 0"><span class="sw" style="background:${pal[gi%pal.length]}"></span> ${esc(g)}</td><td style="text-align:right;font-family:var(--f-mono);padding:2px 8px">${esc(fmtV(v,rr.u))}</td><td style="text-align:right;font-family:var(--f-mono);color:var(--muted)">${v&&tot?(v<0?'−':'')+nf(Math.abs(v)/tot*100,1)+'%':'—'}</td></tr>`}).join('')}<tr><td style="padding-top:4px;border-top:1px solid var(--line)">Toplam</td><td style="text-align:right;font-family:var(--f-mono);padding:4px 8px 0;border-top:1px solid var(--line)">${esc(fmtV(sum,rr.u))}</td><td style="border-top:1px solid var(--line)"></td></tr></table>${rr.note?`<div class="note" style="margin-top:4px;max-width:260px">${esc(rr.note)}</div>`:''}${srcTip(rr)}`)});
-   svg.addEventListener('mouseleave',hideTip);}
+   svg.addEventListener('mouseleave',()=>{hideTip();qhSet(svg,null)});}
   $('#mixleg').innerHTML=groups.map((g,gi)=>`<span><i class="sw" style="background:${pal[gi%pal.length]}"></i>${esc(g)}</span>`).join('');
   const miss=c.periods.filter(p=>p>=ps[0]&&p<=ps[ps.length-1]&&!byP[p]);const kinds=new Set(ps.map(p=>pick(p).k));
   const calcN={calc_kar:'Gelir tablosundan hesaplandı: brüt kârın ne kadarı net faaliyet giderlerine gidiyor, ne kadarı esas faaliyet kârı olarak kalıyor (tek çeyrek). Şirket bölüm bazında kâr açıklamıyorsa kâr görünümü budur. ',calc_teknik:'Gelir tablosundan: hayat ve emeklilik teknik kârı ile teknik olmayan yatırım gelirleri (tek çeyrek). ',calc_gelir:'Gelir tablosundan: net kazanılmış prim ve yatırım gelirleri (tek çeyrek). ',rent:'Yatırımcı sunumlarından: AVM tutarları kira ve ortak alan gelirini birlikte içerir; Turizm üç otelin kira geliri toplamı; diğer ticari: dükkân ve ofis kiraları. 2024 sonu ve 2025 Ç1 AVM tutarları sunumdaki bölüm hasılatıdır. Kira kırılımı 2025 Ç2 sunumunda verilmedi. '}[state.mix[c.t]]||'';const calcN2=(c.mixNote||{})[state.mix[c.t]];
@@ -1334,22 +1343,23 @@ function kpiChart(vals,P,{unit='',dd=1,bars=true}={}){
   const lq=P[pts[pts.length-1][0]].slice(5);const fk=v=>{const a=Math.abs(v);return a>=1e6?nf(v/1e6,1)+' mn':a>=1e4?nf(v/1e3,0)+' b':nf(v,a<10&&v%1?1:0)};
   let s=`<svg class="kc" viewBox="0 0 ${W} ${H}" role="img" data-kc="${esc(JSON.stringify({v:vals,p:P,u:unit,d:dd,W,ml,bw}))}">`;
   tk.filter(t=>t>=t0&&t<=t1).forEach(t=>{s+=`<line x1="${ml}" x2="${W-mr}" y1="${y(t).toFixed(1)}" y2="${y(t).toFixed(1)}" stroke="var(--line)" stroke-width="1"/><text x="${ml-4}" y="${(y(t)+3).toFixed(1)}" text-anchor="end" font-size="9" fill="var(--muted)">${fk(t)}</text>`});
+  const QV=qvaried(P);if(QV)s+=qbands(P,0,i=>ml+i*bw,bw,mt,H-mt-mb);
   P.forEach((p,i)=>{if(p.endsWith('-03')||i===0){s+=`<line x1="${ml+i*bw}" x2="${ml+i*bw}" y1="${mt}" y2="${H-mb}" stroke="var(--line)" stroke-dasharray="2 3"/><text x="${ml+i*bw+2}" y="${H-4}" font-size="9" fill="var(--muted)">'${p.slice(2,4)}</text>`}});
   if(bars){vals.forEach((v,i)=>{if(v==null)return;const same=P[i].slice(5)===lq,lastb=i===pts[pts.length-1][0];const y0=y(Math.max(0,v)),y1=y(Math.min(0,v));
-      s+=`<rect x="${(ml+i*bw+bw*.14).toFixed(1)}" y="${y0.toFixed(1)}" width="${(bw*.72).toFixed(1)}" height="${Math.max(.8,y1-y0).toFixed(1)}" rx="1" fill="${lastb?'var(--co-ui)':same?'var(--co-ui)':'var(--muted)'}" fill-opacity="${lastb?1:same?.7:.35}"/>`});
+      s+=`<rect class="qb" data-pk="${qkey(P[i])||''}" x="${(ml+i*bw+bw*.14).toFixed(1)}" y="${y0.toFixed(1)}" width="${(bw*.72).toFixed(1)}" height="${Math.max(.8,y1-y0).toFixed(1)}" rx="1" fill="${lastb?'var(--co-ui)':same?'var(--co-ui)':'var(--muted)'}" fill-opacity="${lastb?1:same?.7:.35}"/>`});
     const ma=vals.map((v,i)=>{if(i<3)return null;const q=vals.slice(i-3,i+1);return q.some(x=>x==null)?null:q.reduce((a,b)=>a+b,0)/4});let d='',sg=false;ma.forEach((v,i)=>{if(v==null){sg=false;return}d+=(sg?'L':'M')+xc(i).toFixed(1)+' '+y(v).toFixed(1);sg=true});
-    if(d)s+=`<path d="${d}" fill="none" stroke="#d58a20" stroke-width="1.4"/>`}
+    if(d)s+=`<path d="${d}" fill="none" stroke="var(--fg)" stroke-opacity=".55" stroke-dasharray="4 3" stroke-width="1.3"/>`}
   else{let d='',sg=false;vals.forEach((v,i)=>{if(v==null){sg=false;return}d+=(sg?'L':'M')+xc(i).toFixed(1)+' '+y(v).toFixed(1);sg=true});
-    s+=`<path d="${d}" fill="none" stroke="var(--co-ui)" stroke-width="1.8"/>`;vals.forEach((v,i)=>{if(v!=null)s+=`<circle cx="${xc(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="${i===pts[pts.length-1][0]?3:1.8}" fill="${P[i].slice(5)===lq?'var(--co-ui)':'var(--muted)'}"/>`})}
+    s+=`<path d="${d}" fill="none" stroke="var(--co-ui)" stroke-width="1.8"/>`;vals.forEach((v,i)=>{if(v!=null)s+=`<circle class="qb" data-pk="${qkey(P[i])||''}" cx="${xc(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="${i===pts[pts.length-1][0]?3:1.8}" fill="${P[i].slice(5)===lq?'var(--co-ui)':'var(--muted)'}"/>`})}
   s+=`<rect class="kc-hv" x="0" y="${mt}" width="${bw.toFixed(1)}" height="${H-mt-mb}" fill="var(--fg)" fill-opacity="0"/></svg>`;
-  return s+`<div class="kc-leg">${bars?'<span><i style="background:var(--co-ui)"></i>Ç'+(+lq/3)+'\'ler</span><span><i style="background:var(--muted);opacity:.5"></i>diğer</span><span><i style="background:#d58a20;height:2px"></i>4Ç ort.</span>':'<i style="background:var(--co-ui)"></i>Ç'+(+lq/3)+' dönemleri koyu'}</div>`}
+  return s+`<div class="kc-leg">${bars?'<span><i style="background:var(--co-ui)"></i>Ç'+(+lq/3)+'\'ler</span><span><i style="background:var(--muted);opacity:.5"></i>diğer</span><span><i style="background:var(--fg);opacity:.55;height:2px"></i>4Ç ort.</span>':'<i style="background:var(--co-ui)"></i>Ç'+(+lq/3)+' dönemleri koyu'}</div>`}
 const KCC=new WeakMap();
 document.addEventListener('pointermove',e=>{const svg=e.target.closest&&e.target.closest('svg[data-kc]');if(!svg)return;let m=KCC.get(svg);if(!m){try{m=JSON.parse(svg.dataset.kc)}catch(_){return}KCC.set(svg,m)}
-  const r=svg.getBoundingClientRect();const x=(e.clientX-r.left)/r.width*m.W;const i=Math.floor((x-m.ml)/m.bw);const hv=svg.querySelector('.kc-hv');if(i<0||i>=m.v.length){hideTip();if(hv)hv.setAttribute('fill-opacity',0);return}
+  const r=svg.getBoundingClientRect();const x=(e.clientX-r.left)/r.width*m.W;const i=Math.floor((x-m.ml)/m.bw);const hv=svg.querySelector('.kc-hv');if(i<0||i>=m.v.length){hideTip();qhSet(svg,null);if(hv)hv.setAttribute('fill-opacity',0);return}qhSet(svg,qkey(m.p[i]));
   if(hv){hv.setAttribute('x',m.ml+i*m.bw);hv.setAttribute('fill-opacity',.06)}const v=m.v[i],p=m.p[i];const f=x=>x==null?'—':nf(x,m.d)+' '+m.u;
   const ip=m.p.indexOf((+p.slice(0,4)-1)+p.slice(4)),pv=ip>=0?m.v[ip]:null,qv=i>0?m.v[i-1]:null;const ch=(a,b)=>a==null||b==null||!b?'':m.u==='%'?((a-b>=0?'+':'−')+nf(Math.abs(a-b),1)+' puan'):((a/b-1>=0?'+':'−')+'%'+nf(Math.abs(a/b-1)*100,1));
   showTip(e,`<div class="eyebrow">${esc(QL(p))}</div><b>${esc(f(v))}</b>${v!=null&&pv!=null?`<div class="note" style="margin:2px 0 0">Yıllık: ${esc(ch(v,pv))} (${esc(f(pv))})</div>`:''}${v!=null&&qv!=null?`<div class="note" style="margin:0">Önceki çeyrek: ${esc(ch(v,qv))}</div>`:''}`)});
-document.addEventListener('pointerout',e=>{const svg=e.target.closest&&e.target.closest('svg[data-kc]');if(svg&&!svg.contains(e.relatedTarget)){hideTip();const hv=svg.querySelector('.kc-hv');if(hv)hv.setAttribute('fill-opacity',0)}});
+document.addEventListener('pointerout',e=>{const svg=e.target.closest&&e.target.closest('svg[data-kc]');if(svg&&!svg.contains(e.relatedTarget)){hideTip();qhSet(svg,null);const hv=svg.querySelector('.kc-hv');if(hv)hv.setAttribute('fill-opacity',0)}});
 function sectorHTML(c){
   const K=c.kpi||[],ms=c.ms||[];if(!K.length&&!ms.length)return '';
   const mets=[...new Set(K.map(k=>k.m))];
@@ -1477,7 +1487,7 @@ function renderFXCmp(c){const cur=FXC[c.t],[ad,sy]=FXN[cur],X=fxClone(c,cur);set
   <div class="panel s12" id="fxcpanel"><div class="ph"><h2>TL ve ${esc(cur)} seyri · ${esc(ML[1])}</h2><div class="controls"><span role="group">${M.map(m=>`<button class="chip" data-fxc="${m[0]}" aria-pressed="${m[0]===ML[0]}">${esc(m[1])}</button>`).join('')}</span></div><span class="sub">İki seri de ilk dönem = 100 olacak şekilde endekslendi; aradaki açılma kurun etkisidir.</span></div><div class="chart" id="fxcchart"></div><div class="legend"><span><i class="sw" style="background:#8a94a6"></i>TL</span><span><i class="sw" style="background:var(--co-ui)"></i>${esc(cur)}</span></div></div>
   ${fxHTML(c)}</div>`;
   const ps=P.filter(z=>val(c,ML[0],z,ML[2])!=null&&val(X,ML[0],z,ML[2])!=null),b0=ps.find(z=>val(c,ML[0],z,ML[2])>0&&val(X,ML[0],z,ML[2])>0);
-  if(b0){const pp=ps.slice(ps.indexOf(b0)),t0=val(c,ML[0],b0,ML[2]),f0=val(X,ML[0],b0,ML[2]);lineChart($('#fxcchart'),[{name:'TL',color:'#8a94a6',v:pp.map(z=>val(c,ML[0],z,ML[2])/t0*100)},{name:cur,color:'var(--co-ui)',v:pp.map(z=>val(X,ML[0],z,ML[2])/f0*100)}],{labels:pp.map(QS),fmt:v=>nf(v,0),height:240})}else $('#fxcchart').innerHTML='<p class="note">Endeks için pozitif başlangıç değeri yok.</p>';
+  if(b0){const pp=ps.slice(ps.indexOf(b0)),t0=val(c,ML[0],b0,ML[2]),f0=val(X,ML[0],b0,ML[2]);lineChart($('#fxcchart'),[{name:'TL',color:'#8a94a6',v:pp.map(z=>val(c,ML[0],z,ML[2])/t0*100)},{name:cur,color:'var(--co-ui)',v:pp.map(z=>val(X,ML[0],z,ML[2])/f0*100)}],{labels:pp.map(QS),fmt:v=>nf(v,0),height:240,ps:pp})}else $('#fxcchart').innerHTML='<p class="note">Endeks için pozitif başlangıç değeri yok.</p>';
   document.querySelectorAll('[data-fxc]').forEach(b=>b.onclick=()=>{state.fxC=b.dataset.fxc;renderFXCmp(c)});
   renderFX(c);fxTabsBind(c)}
 const FXM=[['rev','Hasılat'],['gp','Brüt kâr'],['fv','FAVÖK'],['np','Net kâr'],['eq','Özkaynak'],['nd','Net borç'],['as','Toplam varlık']];
@@ -1507,22 +1517,22 @@ function renderSpread(c){const S=spreadData(c);if(!S||!$('#spreadline'))return;c
   const ev=W=>Math.ceil(D.length/(W<560?6:12));
   // çizgiler
   {const el=$('#spreadline'),W=Math.max(320,el.clientWidth||700),H=210,ml=52,mr=12,mt=10,mb=26,bw=(W-ml-mr)/D.length,all=D.flatMap(x=>[x.r,x.c]),T=niceTicks(Math.min(...all),Math.max(...all)),t0=T[0],t1=T[T.length-1],y=v=>mt+(t1-v)/(t1-t0)*(H-mt-mb),x=i=>ml+i*bw+bw/2;
-   let g=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="RASK ve CASK">`+spBands(D,ml,bw,mt,H-mt-mb);
+   let g=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="RASK ve CASK">`+spBands(D,ml,bw,mt,H-mt-mb)+qbands(D.map(d=>d.p),0,i=>ml+i*bw,bw,mt,H-mt-mb);
    T.forEach(t=>{g+=`<line class="gridline" x1="${ml}" x2="${W-mr}" y1="${y(t)}" y2="${y(t)}"/><g class="axis"><text x="${ml-6}" y="${y(t)+4}" text-anchor="end">${esc(nf(t,1))}</text></g>`});
-   const line=(k,col,on)=>`<polyline fill="none" stroke="${col}" stroke-width="${on?2.6:1.6}" stroke-opacity="${on?1:.22}" points="${D.map((d,i)=>x(i)+','+y(d[k])).join(' ')}"/>`+D.map((d,i)=>`<circle cx="${x(i)}" cy="${y(d[k])}" r="${on?2.6:1.8}" fill="${col}" fill-opacity="${on?1:.22}"/>`).join('');
+   const line=(k,col,on)=>`<polyline fill="none" stroke="${col}" stroke-width="${on?2.6:1.6}" stroke-opacity="${on?1:.22}" points="${D.map((d,i)=>x(i)+','+y(d[k])).join(' ')}"/>`+D.map((d,i)=>`<circle data-pk="${qkey(d.p)}" cx="${x(i)}" cy="${y(d[k])}" r="${on?2.6:1.8}" fill="${col}" fill-opacity="${on?1:.22}"/><circle class="qdot" data-pk="${qkey(d.p)}" cx="${x(i)}" cy="${y(d[k])}" r="4.2" stroke="${col}" stroke-width="2"/>`).join('');
    const onR=!sel||sel==='r',onC=!sel||sel==='c';g+=(sel==='r'?line('c',SP_C,onC)+line('r',SP_R,onR):line('r',SP_R,onR)+line('c',SP_C,onC));
    D.forEach((d,i)=>{if(i%ev(W)===0||i===D.length-1)g+=`<g class="axis"><text x="${x(i)}" y="${H-6}" text-anchor="middle">${esc(lab[i])}</text></g>`});
    el.innerHTML=g+`<rect x="${ml}" y="${mt}" width="${W-ml-mr}" height="${H-mt-mb}" fill="transparent"/></svg>`;const sv=el.querySelector('svg');
-   sv.addEventListener('mousemove',e=>{const r=sv.getBoundingClientRect(),i=Math.floor(((e.clientX-r.left)*W/r.width-ml)/bw),d=D[i];if(!d){hideTip();return}
-     showTip(e,`<div class="eyebrow">${esc(QL(d.p))} · ${/-(06|09)$/.test(d.p)?'yaz sezonu':'kış sezonu'}</div><span style="color:${SP_R}">RASK</span> <b>${nf(d.r,2)}</b> · <span style="color:${SP_C}">CASK</span> <b>${nf(d.c,2)}</b><br>Makas <b style="color:${d.s>=0?'var(--up)':'var(--down)'}">${d.s>=0?'+':'−'}${nf(Math.abs(d.s),2)}</b> ${esc(S.L.unit)}`)});sv.addEventListener('mouseleave',hideTip)}
+   sv.addEventListener('mousemove',e=>{const r=sv.getBoundingClientRect(),i=Math.floor(((e.clientX-r.left)*W/r.width-ml)/bw),d=D[i];if(!d){hideTip();qhSet(sv,null);return}qhSet(sv,qkey(d.p));
+     showTip(e,`<div class="eyebrow">${esc(QL(d.p))} · ${/-(06|09)$/.test(d.p)?'yaz sezonu':'kış sezonu'}</div><span style="color:${SP_R}">RASK</span> <b>${nf(d.r,2)}</b> · <span style="color:${SP_C}">CASK</span> <b>${nf(d.c,2)}</b><br>Makas <b style="color:${d.s>=0?'var(--up)':'var(--down)'}">${d.s>=0?'+':'−'}${nf(Math.abs(d.s),2)}</b> ${esc(S.L.unit)}`)});sv.addEventListener('mouseleave',()=>{hideTip();qhSet(sv,null)})}
   // makas çubukları
   {const el=$('#spreadbar'),W=Math.max(320,el.clientWidth||700),H=150,ml=52,mr=12,mt=10,mb=26,vs=D.map(x=>x.s),T=niceTicks(Math.min(0,...vs),Math.max(0,...vs)),t0=T[0],t1=T[T.length-1],y=v=>mt+(t1-v)/(t1-t0)*(H-mt-mb),bw=(W-ml-mr)/D.length;
-   let g=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="RASK eksi CASK">`+spBands(D,ml,bw,mt,H-mt-mb);T.forEach(t=>{g+=`<line class="gridline" x1="${ml}" x2="${W-mr}" y1="${y(t)}" y2="${y(t)}"/><g class="axis"><text x="${ml-6}" y="${y(t)+4}" text-anchor="end">${esc(nf(t,1))}</text></g>`});
+   let g=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="RASK eksi CASK">`+spBands(D,ml,bw,mt,H-mt-mb)+qbands(D.map(d=>d.p),0,i=>ml+i*bw,bw,mt,H-mt-mb);T.forEach(t=>{g+=`<line class="gridline" x1="${ml}" x2="${W-mr}" y1="${y(t)}" y2="${y(t)}"/><g class="axis"><text x="${ml-6}" y="${y(t)+4}" text-anchor="end">${esc(nf(t,1))}</text></g>`});
    g+=`<line x1="${ml}" x2="${W-mr}" y1="${y(0)}" y2="${y(0)}" stroke="var(--muted)"/>`;
-   D.forEach((x,i)=>{const yy=Math.min(y(x.s),y(0)),hh=Math.max(1,Math.abs(y(x.s)-y(0)));g+=`<rect class="bar" x="${ml+i*bw+bw*.18}" y="${yy}" width="${Math.max(2,bw*.64)}" height="${hh}" rx="1.5" fill="${x.s>=0?'var(--up)':'var(--down)'}"/>`;
+   D.forEach((x,i)=>{const yy=Math.min(y(x.s),y(0)),hh=Math.max(1,Math.abs(y(x.s)-y(0)));g+=`<rect class="bar" data-pk="${qkey(x.p)}" x="${ml+i*bw+bw*.18}" y="${yy}" width="${Math.max(2,bw*.64)}" height="${hh}" rx="1.5" fill="${x.s>=0?'var(--up)':'var(--down)'}"/>`;
      if(i%ev(W)===0||i===D.length-1)g+=`<g class="axis"><text x="${ml+i*bw+bw/2}" y="${H-6}" text-anchor="middle">${esc(lab[i])}</text></g>`});
-   el.innerHTML=g+'</svg>';const sv=el.querySelector('svg');sv.addEventListener('mousemove',e=>{const r=sv.getBoundingClientRect(),i=Math.floor(((e.clientX-r.left)*W/r.width-ml)/bw),x=D[i];if(!x){hideTip();return}
-    showTip(e,`<div class="eyebrow">${esc(QL(x.p))}</div>RASK <b>${nf(x.r,2)}</b> · CASK <b>${nf(x.c,2)}</b><br>Makas <b style="color:${x.s>=0?'var(--up)':'var(--down)'}">${x.s>=0?'+':'−'}${nf(Math.abs(x.s),2)}</b> ${esc(S.L.unit)}`)});sv.addEventListener('mouseleave',hideTip)}
+   el.innerHTML=g+'</svg>';const sv=el.querySelector('svg');sv.addEventListener('mousemove',e=>{const r=sv.getBoundingClientRect(),i=Math.floor(((e.clientX-r.left)*W/r.width-ml)/bw),x=D[i];if(!x){hideTip();qhSet(sv,null);return}qhSet(sv,qkey(x.p));
+    showTip(e,`<div class="eyebrow">${esc(QL(x.p))}</div>RASK <b>${nf(x.r,2)}</b> · CASK <b>${nf(x.c,2)}</b><br>Makas <b style="color:${x.s>=0?'var(--up)':'var(--down)'}">${x.s>=0?'+':'−'}${nf(Math.abs(x.s),2)}</b> ${esc(S.L.unit)}`)});sv.addEventListener('mouseleave',()=>{hideTip();qhSet(sv,null)})}
   // lejant
   const it=(k,col,t)=>{const on=!sel||sel===k;return `<button type="button" class="spleg" data-sp="${k}" aria-pressed="${sel===k}" style="opacity:${on?1:.4};font-weight:${sel===k?700:500}"><i class="sw" style="background:${col}"></i>${t}</button>`};
   $('#spreadleg').innerHTML=it('r',SP_R,'RASK (birim gelir)')+it('c',SP_C,'CASK (birim maliyet)')+`<span><i class="sw" style="background:var(--up)"></i>Makas pozitif</span><span><i class="sw" style="background:var(--down)"></i>Makas negatif</span><span><i class="sw" style="background:${SP_HI};outline:1px solid rgba(46,160,90,.35)"></i>Yaz sezonu</span><span><i class="sw" style="background:${SP_LO};outline:1px solid rgba(214,69,65,.35)"></i>Kış sezonu</span>`;
@@ -1598,11 +1608,11 @@ function renderAnhyt(c){
    const W=Math.max(320,el.clientWidth||800),H=240,ml=56,mr=8,mb=26,mt=12;const tk=niceTicks(Math.min(0,...rows.map(neg)),Math.max(...rows.map(pos)));const t0=tk[0],t1=tk[tk.length-1];const bw=(W-ml-mr)/rows.length;const y=v=>mt+(t1-v)/(t1-t0)*(H-mt-mb);
    let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${kind==='gelir'?'Teknik gelir':'Teknik kâr'} grafiği">`;tk.forEach(t=>{s+=`<line class="gridline" x1="${ml}" x2="${W-mr}" y1="${y(t)}" y2="${y(t)}"/><g class="axis"><text x="${ml-6}" y="${y(t)+4}" text-anchor="end">${fmtC(t)}</text></g>`});
    s+=`<line x1="${ml}" x2="${W-mr}" y1="${y(0)}" y2="${y(0)}" stroke="var(--muted)"/>`;
-   const every=Math.ceil(rows.length/(W<560?5:10));
-   rows.forEach((r,i)=>{const x=ml+i*bw+bw*.15,w=bw*.7;let up=0,dn=0;ser.forEach(se=>{const v=r[se.k];if(v==null)return;if(v>=0){s+=`<rect x="${x}" y="${y(up+v)}" width="${w}" height="${Math.max(.5,y(up)-y(up+v))}" fill="${se.c}"/>`;up+=v}else{s+=`<rect x="${x}" y="${y(dn)}" width="${w}" height="${Math.max(.5,y(dn+v)-y(dn))}" fill="${se.c}" fill-opacity=".7"/>`;dn+=v}});
+   const every=Math.ceil(rows.length/(W<560?5:10));const QV=qvaried(rows.map(r=>r.p));if(QV)s+=qbands(rows.map(r=>r.p),0,i=>ml+i*bw,bw,mt,H-mt-mb);
+   rows.forEach((r,i)=>{const x=ml+i*bw+bw*.15,w=bw*.7;let up=0,dn=0;const pk=QV?` data-pk="${qkey(r.p)}"`:'';ser.forEach(se=>{const v=r[se.k];if(v==null)return;if(v>=0){s+=`<rect${pk} x="${x}" y="${y(up+v)}" width="${w}" height="${Math.max(.5,y(up)-y(up+v))}" fill="${se.c}"/>`;up+=v}else{s+=`<rect${pk} x="${x}" y="${y(dn)}" width="${w}" height="${Math.max(.5,y(dn+v)-y(dn))}" fill="${se.c}" fill-opacity=".7"/>`;dn+=v}});
      if((i%every===0&&rows.length-1-i>=every*.6)||i===rows.length-1)s+=`<g class="axis"><text x="${x+w/2}" y="${H-6}" text-anchor="middle">${QS(r.p)}</text></g>`});
    el.innerHTML=s+'</svg>';const svg=el.querySelector('svg');
-   svg.addEventListener('mousemove',e=>{const rr=svg.getBoundingClientRect();const i=Math.floor(((e.clientX-rr.left)*W/rr.width-ml)/bw);const r=rows[i];if(!r){hideTip();return}const tot=ser.reduce((a,x)=>a+(r[x.k]||0),0);
+   svg.addEventListener('mousemove',e=>{const rr=svg.getBoundingClientRect();const i=Math.floor(((e.clientX-rr.left)*W/rr.width-ml)/bw);const r=rows[i];if(!r){hideTip();qhSet(svg,null);return}if(QV)qhSet(svg,qkey(r.p));const tot=ser.reduce((a,x)=>a+(r[x.k]||0),0);
      showTip(e,`<div class="eyebrow">${esc(QL(r.p))} · ${tm==='q'?'tek çeyrek':'birikimli'}</div>`+ser.map(x=>`<div><span class="sw" style="background:${x.c}"></span> ${esc(x.n)}: <b>${esc(fmtM(r[x.k]))}</b>${tot>0&&r[x.k]!=null?` <span style="color:var(--muted)">(%${nf(r[x.k]/tot*100,1)})</span>`:''}</div>`).join('')+`<div style="margin-top:4px">Toplam: <b>${esc(fmtM(tot))}</b></div>`)});
    svg.addEventListener('mouseleave',hideTip);}
   drawTech();
@@ -1611,7 +1621,7 @@ function renderAnhyt(c){
   const ps=$('#peersel');ps.value=state.peer;const draw=()=>{state.peer=ps.value;const P=c.periods;const get=co=>c.peers.find(x=>x.co===co&&x.key===ps.value)?.s||{};const po=c.peerOther;const a=get(c.t),b=get(po);const ac=c.peers.find(x=>x.co===c.t&&x.key===ps.value)?.cons||{};const L=P[P.length-1];
     const sers=[{name:PEERN[c.t]||c.t,color:'var(--co-ui)',v:P.map(p=>a[p]??null)},{name:PEERN[po]||po,color:BY[po]?.color||'#e44825',v:P.map(p=>b[p]??null),na:P.map(p=>p===L&&b[p]==null?'Henüz açıklanmadı':null)}];
     if(ac[L]!=null&&a[L]==null){const vv=P.map(p=>p===L?ac[L]:p===P[P.length-2]?a[p]??null:null);sers.push({name:(PEERN[c.t]||c.t)+' · konsolide (solo rapor bekleniyor)',color:'var(--co-ui)',v:vv,mark:P.map(p=>p===L?'var(--panel)':null),dash:true})}
-    lineChart($('#peerchart'),sers,{labels:P.map(QS),fmt:v=>fmtM(v)});
+    lineChart($('#peerchart'),sers,{labels:P.map(QS),fmt:v=>fmtM(v),ps:P});
     $('#peernote').textContent=c.peerNote||'Konsolide olmayan raporlar; iki şirket aynı kapsamda. Akım kalemleri tek çeyrek tutarıdır.'};ps.onchange=draw;draw();
 }
 /* ---------- rakiple karşılaştır (sanayi şirketleri) ---------- */
@@ -1641,7 +1651,7 @@ function renderPeerInd(c){const o=BY[c.peerOther];const sel=$('#peersel2');if(!o
   if(state.peerInd&&[...sel.options].some(x=>x.value===state.peerInd))sel.value=state.peerInd;
   const draw=()=>{state.peerInd=sel.value;const k=sel.value,u=(PEERM.find(m=>m[0]===k)||[])[2];
     const fmt=u==='tl'?(v=>Math.abs(v)>=1000?nf(v/1000,1)+' Mr':nf(v,0)+' Mn'):u==='%'?(v=>nf(v,1)+'%'):u==='x'?(v=>nf(v,2)+'x'):(v=>nf(v,1)+' bin');
-    lineChart($('#peerchart2'),[{name:c.name,color:c.color,v:P.map(p=>peerVal(c,k,p))},{name:o.name,color:o.color,v:P.map(p=>peerVal(o,k,p))}],{labels:P.map(QS),fmt})};
+    lineChart($('#peerchart2'),[{name:c.name,color:c.color,v:P.map(p=>peerVal(c,k,p))},{name:o.name,color:o.color,v:P.map(p=>peerVal(o,k,p))}],{labels:P.map(QS),fmt,ps:P})};
   sel.onchange=draw;draw();
   // son ortak dönem tablosu
   const L=P.filter(p=>c.periods.includes(p)&&o.periods.includes(p)).pop();
@@ -1693,8 +1703,8 @@ function renderCompare(){
   app.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));app.querySelectorAll('[data-cg]').forEach(b=>b.onclick=()=>{state.cmpg=b.dataset.cg;renderCompare();renderSide()});
   if(state.cmpg)selPickBind(state.cmpg,gAll,()=>renderCompare());
   const P=[...new Set(inds.flatMap(c=>c.periods))].sort();const pv=(c,k)=>P.map(p=>c.rat.find(r=>r.p===p)?.[k]??null);
-  lineChart($('#cmp1'),inds.map(c=>({name:c.t,color:CMP[c.t],v:pv(c,'pddd')})),{labels:P.map(QS),fmt:v=>nf(v,2)+'x'});
-  lineChart($('#cmp2'),inds.filter(c=>c.grp!=='Aracı kurum'&&!BANK(c)&&!NL(c)).map(c=>({name:c.t,color:CMP[c.t],v:pv(c,'nm')})),{labels:P.map(QS),fmt:v=>nf(v,1)+'%'});
+  lineChart($('#cmp1'),inds.map(c=>({name:c.t,color:CMP[c.t],v:pv(c,'pddd')})),{labels:P.map(QS),fmt:v=>nf(v,2)+'x',ps:P});
+  lineChart($('#cmp2'),inds.filter(c=>c.grp!=='Aracı kurum'&&!BANK(c)&&!NL(c)).map(c=>({name:c.t,color:CMP[c.t],v:pv(c,'nm')})),{labels:P.map(QS),fmt:v=>nf(v,1)+'%',ps:P});
 }
 /* ---------- sektör ---------- */
 const GRPS=[...new Set(COS.map(c=>c.grp).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'tr'));
@@ -1819,7 +1829,7 @@ function renderSecRatios(cs){if(!$('#smpanel'))return;const ML=secMetList(cs),L=
   const ts=$('#smts');ts.value=state.smts&&ML.find(m=>m.k===state.smts)?state.smts:(ML.find(m=>m.k==='roe')||ML.find(m=>!m.snap)).k;
   const drawTS=()=>{const m=SMBY[ts.value];state.smts=ts.value;const P=[...new Set(cs.flatMap(c=>c.periods))].sort().filter(p=>cs.some(c=>secMet(c)[p]?.[m.k]!=null));
     const S=cs.map(c=>({name:c.t,color:CMP[c.t]||c.color,v:P.map(p=>secMet(c)[p]?.[m.k]??null)}));if(!one)S.push({name:'Medyan',color:'var(--fg)',v:P.map(p=>median(cs.map(c=>secMet(c)[p]?.[m.k])))});
-    lineChart($('#smchart'),S,{labels:P.map(QS),fmt:v=>smFmt(m,v),height:240});$('#smleg').innerHTML=S.map(s=>`<span><i class="sw" style="background:${s.color}"></i>${esc(s.name)}</span>`).join('');$('#smtsnote').textContent=m.d};
+    lineChart($('#smchart'),S,{labels:P.map(QS),fmt:v=>smFmt(m,v),height:240,ps:P});$('#smleg').innerHTML=S.map(s=>`<span><i class="sw" style="background:${s.color}"></i>${esc(s.name)}</span>`).join('');$('#smtsnote').textContent=m.d};
   ts.onchange=drawTS;drawTS();
   if(one)return;
   const sx=$('#smx'),sy=$('#smy');sx.value=state.smx||(ML.find(m=>m.k==='roe')?'roe':ML[0].k);sy.value=state.smy||(ML.find(m=>m.k==='pddd')?'pddd':ML[1].k);
@@ -1860,8 +1870,8 @@ function renderSector(k){const g=GRPS.find(x=>grpKey(x)===k);if(!g){renderHome()
     $('#sectab').querySelectorAll('[data-sk]').forEach(h=>h.onclick=()=>{const k2=h.dataset.sk;state.secSort=[k2,state.secSort[0]===k2?-state.secSort[1]:(k2==='c'?1:-1)];drawT()});
     $('#sectab').querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go))};
   selPickBind(k,all,()=>{const y=scrollY;renderSector(k);scrollTo({top:y})});drawT();app.querySelectorAll('.hero [data-go],.yzl [data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
-  if(!allIns)lineChart($('#sec1'),[{name:'Sektör toplamı',color:'var(--co-ui)',v:agg.map(a=>a.gm)},{name:'Medyan şirket',color:'#d58a20',v:agg.map(a=>a.med)},{name:'Net marj · toplam',color:'#7a67bd',v:agg.map(a=>a.nm)}],{labels:qsP.map(QS),fmt:v=>nf(v,1)+'%'});
-  lineChart($('#sec2'),cs.map(c=>({name:c.t,color:CMP[c.t]||c.color,v:pdP.map(p=>pdOf(c).find(r=>r.p===p)?.pddd??null)})),{labels:pdP.map(QS),fmt:v=>nf(v,2)+'x'});
+  if(!allIns)lineChart($('#sec1'),[{name:'Sektör toplamı',color:'var(--co-ui)',v:agg.map(a=>a.gm)},{name:'Medyan şirket',color:'#d58a20',v:agg.map(a=>a.med)},{name:'Net marj · toplam',color:'#7a67bd',v:agg.map(a=>a.nm)}],{labels:qsP.map(QS),fmt:v=>nf(v,1)+'%',ps:qsP});
+  lineChart($('#sec2'),cs.map(c=>({name:c.t,color:CMP[c.t]||c.color,v:pdP.map(p=>pdOf(c).find(r=>r.p===p)?.pddd??null)})),{labels:pdP.map(QS),fmt:v=>nf(v,2)+'x',ps:pdP});
   renderSecRatios(cs);
 }
 function secDataHTML(g){const S=(DATA.sektor||{})[g];if(!S||!S.series?.length)return '';
