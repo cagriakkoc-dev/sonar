@@ -5824,5 +5824,112 @@
   "gerekce": "Migros'un 9 aylık operasyonel ve finansal sonuçlarını içeren yatırımcı sunumu ve bilgilendirme notu yayımlandı, 2026 beklentileri de güncellendi; bu türler editör kararıyla her zaman önemli sayıldığı için puan en az 80'dir.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1693506",
+  "hisse": "SASA",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-06T04:51:20+00:00",
+  "mod": "canli",
+  "puan": 83,
+  "alt": {
+   "fin": 32,
+   "yenilik": 15,
+   "kapsam": 17,
+   "kesinlik": 10,
+   "ilgi": 9
+  },
+  "tur": "Finansal sonuç (9 aylık bilanço)",
+  "gerekce": "SASA'nın 9 aylık hasılatı %32,2 artışla 66,3 milyar TL'ye çıktı, net zarar 13,1 milyar TL'den 1,4 milyar TL'ye geriledi ve esas faaliyet kârı %186,5 arttı; finansal sonuç bildirimi olduğu için 80 puan alt sınırının üzerinde tutuldu.",
+  "durum": "paylasildi",
+  "tweet": "SASA (Sasa Polyester) dokuz ayda net zararını 13,1 milyar TL'den 1,4 milyar TL'ye indirdi. Hasılat %32,2 artışla 66,3 milyar TL oldu.\n\nEsas faaliyet kârı 1,7 milyar TL'den 4,8 milyar TL'ye çıktı. Son 4 çeyrek net kârı -11,7 milyar TL, PD/DD 0,60x.",
+  "kart": {
+   "baslik": "9 Aylık Finansal Sonuçlar",
+   "satirlar": [
+    [
+     "Hasılat",
+     "66,3 milyar TL"
+    ],
+    [
+     "Brüt kâr",
+     "8,3 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "4,8 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "-1,4 milyar TL"
+    ],
+    [
+     "Özkaynaklar",
+     "215,1 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118566962334998822",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1693506",
+  "hisse": "SASA",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-06T04:51:40+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "SASA (Sasa Polyester) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat 66,3 milyar TL, artış %32,2\n• Net dönem kârı -1,4 milyar TL, geçen yıl -13,1 milyar TL\n• Finansman gideri 36,3 milyar TL, azalış %33,0\n\nDikkat edilecekler\n• Cari oran 0,62",
+  "kart": {
+   "tweet": "SASA (Sasa Polyester) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat 66,3 milyar TL, artış %32,2\n• Net dönem kârı -1,4 milyar TL, geçen yıl -13,1 milyar TL\n• Finansman gideri 36,3 milyar TL, azalış %33,0\n\nDikkat edilecekler\n• Cari oran 0,62",
+   "guclu": [
+    {
+     "ad": "Hasılat",
+     "deger": "66,3 milyar TL",
+     "not": "Geçen yıl 50,2 milyar TL, %32,2 artış"
+    },
+    {
+     "ad": "Net dönem kârı",
+     "deger": "-1,4 milyar TL",
+     "not": "Geçen yıl -13,1 milyar TL"
+    },
+    {
+     "ad": "Finansman gideri",
+     "deger": "36,3 milyar TL",
+     "not": "Geçen yıl 54,1 milyar TL, azalış %33,0"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Cari oran",
+     "deger": "0,62",
+     "not": "Dönen varlık / kısa vadeli yükümlülük"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118567010850549838",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1693507",
+  "hisse": "SASA",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-06T04:51:52+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1693508",
+  "hisse": "SASA",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-06T04:51:54+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
  }
 ]
