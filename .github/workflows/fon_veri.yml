@@ -10,7 +10,7 @@ on:
         required: false
         default: 'HSY'
       limit:
-        description: 'Fon başına son kaç rapor (geçmiş için 12)'
+        description: 'Fon başına son kaç rapor (geçmiş için 60 = 5 yıl)'
         required: false
         default: '2'
       yeniden:
@@ -40,7 +40,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        parca: [0, 1, 2, 3, 4, 5]
+        parca: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -51,7 +51,7 @@ jobs:
           FON_LIMIT: ${{ inputs.limit || '2' }}
           YENIDEN: ${{ inputs.yeniden }}
           FON_KAYNAK: ${{ runner.temp }}
-          FON_PARCA: ${{ matrix.parca }}/6
+          FON_PARCA: ${{ matrix.parca }}/12
         run: python3 -u bekci/fon/kap_pdr.py
       - if: always()
         run: |
