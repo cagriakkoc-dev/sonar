@@ -1,0 +1,343 @@
+{
+ "fon_toplam_deger": null,
+ "fon_portfoy_degeri": 10067.0,
+ "islemler": {
+  "alis": [
+   [
+    "DOHOL",
+    4000000.0,
+    2
+   ],
+   [
+    "EUPWR",
+    1218000.0,
+    1
+   ],
+   [
+    "KOPOL",
+    271068.0,
+    1
+   ]
+  ],
+  "satis": [
+   [
+    "SISE",
+    1454314.5,
+    9
+   ],
+   [
+    "EREGL",
+    1279734.0,
+    8
+   ],
+   [
+    "KCHOL",
+    1197000.0,
+    8
+   ],
+   [
+    "TCELL",
+    1081630.0,
+    10
+   ],
+   [
+    "BIMAS",
+    906840.0,
+    7
+   ],
+   [
+    "FROTO",
+    897216.0,
+    7
+   ],
+   [
+    "SAHOL",
+    754350.0,
+    4
+   ],
+   [
+    "TOASO",
+    610985.0,
+    6
+   ],
+   [
+    "KOPOL",
+    435921.6,
+    1
+   ],
+   [
+    "AKSA",
+    351110.0,
+    3
+   ],
+   [
+    "EKGYO",
+    303000.0,
+    4
+   ],
+   [
+    "TTRAK",
+    268015.0,
+    4
+   ],
+   [
+    "CCOLA",
+    241635.0,
+    4
+   ],
+   [
+    "ENJSA",
+    230350.0,
+    2
+   ],
+   [
+    "OTKAR",
+    218560.0,
+    5
+   ],
+   [
+    "VESBE",
+    189502.0,
+    4
+   ],
+   [
+    "ISMEN",
+    186848.0,
+    3
+   ],
+   [
+    "EGEEN",
+    181077.5,
+    9
+   ],
+   [
+    "AEFES",
+    157250.0,
+    1
+   ],
+   [
+    "ALKIM",
+    154700.0,
+    1
+   ],
+   [
+    "DOHOL",
+    151800.0,
+    3
+   ],
+   [
+    "GWIND",
+    146337.5,
+    3
+   ],
+   [
+    "ISDMR",
+    144970.0,
+    3
+   ],
+   [
+    "TTKOM",
+    142700.0,
+    2
+   ],
+   [
+    "ECZYT",
+    138600.0,
+    1
+   ],
+   [
+    "ECILC",
+    134300.0,
+    3
+   ]
+  ]
+ },
+ "hisse_sayisi": 28,
+ "hisse_agirligi": null,
+ "dogrulama": {
+  "hisse_satir_toplami": 20000.0,
+  "hisse_grup_toplami": 10000.0,
+  "fark_yuzde": 100.0,
+  "yuzde_sutun": 2,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "hisseler": [
+  {
+   "isin": "TRADOHOL91Q8",
+   "kod": "DOHOL",
+   "deger": 10169.0,
+   "satir": 2
+  },
+  {
+   "isin": "TRAEREGL91G3",
+   "kod": "EREGL",
+   "deger": 1232.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRASISEW91Q3",
+   "kod": "SISE",
+   "deger": 1228.0,
+   "satir": 1
+  },
+  {
+   "isin": "TREBIMM00018",
+   "kod": "BIMAS",
+   "deger": 1193.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRAKCHOL91Q8",
+   "kod": "KCHOL",
+   "deger": 900.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRASAHOL91Q5",
+   "kod": "SAHOL",
+   "deger": 838.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRATCELL91M1",
+   "kod": "TCELL",
+   "deger": 820.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRAOTOSN91H6",
+   "kod": "FROTO",
+   "deger": 720.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRATOASO91H3",
+   "kod": "TOASO",
+   "deger": 482.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRECOLA00011",
+   "kod": "CCOLA",
+   "deger": 321.0,
+   "satir": 1
+  },
+  {
+   "isin": "TREEUPW00019",
+   "kod": "EUPWR",
+   "deger": 317.0,
+   "satir": 1
+  },
+  {
+   "isin": "TREEGYO00017",
+   "kod": "EKGYO",
+   "deger": 257.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRAAEFES91A9",
+   "kod": "AEFES",
+   "deger": 255.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRAAKSAW91E1",
+   "kod": "AKSA",
+   "deger": 163.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRETTLK00013",
+   "kod": "TTKOM",
+   "deger": 160.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRETTRK00010",
+   "kod": "TTRAK",
+   "deger": 140.0,
+   "satir": 1
+  },
+  {
+   "isin": "TREENSA00014",
+   "kod": "ENJSA",
+   "deger": 137.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRAOTKAR91H3",
+   "kod": "OTKAR",
+   "deger": 111.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRAEGEEN91H5",
+   "kod": "EGEEN",
+   "deger": 98.0,
+   "satir": 1
+  },
+  {
+   "isin": "TREISDC00020",
+   "kod": "ISDMR",
+   "deger": 94.0,
+   "satir": 1
+  },
+  {
+   "isin": "TREISMD00011",
+   "kod": "ISMEN",
+   "deger": 84.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRAECILC91E0",
+   "kod": "ECILC",
+   "deger": 82.0,
+   "satir": 1
+  },
+  {
+   "isin": "TREVEST00017",
+   "kod": "VESBE",
+   "deger": 59.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRAECZYT91Q5",
+   "kod": "ECZYT",
+   "deger": 57.0,
+   "satir": 1
+  },
+  {
+   "isin": "TREGWIN00014",
+   "kod": "GWIND",
+   "deger": 47.0,
+   "satir": 1
+  },
+  {
+   "isin": "TRAALKIM91E0",
+   "kod": "ALKIM",
+   "deger": 24.0,
+   "satir": 1
+  },
+  {
+   "isin": "TREGKNR00036",
+   "kod": "GOKNR",
+   "deger": 9.0,
+   "satir": 1
+  },
+  {
+   "isin": "TREAKFY00015",
+   "kod": "AKFYE",
+   "deger": 3.0,
+   "satir": 1
+  }
+ ],
+ "kod": "DPT",
+ "donem": "2023-04",
+ "bildirim": 1147753,
+ "yayin": "07.05.2023 23:24:06",
+ "ekler": [
+  "4028328c86d231ff0187f29649fd0290",
+  "4028328c86d231ff0187f2964a350291"
+ ]
+}
