@@ -9182,5 +9182,122 @@
   "tur": "ihale ara sonucu (gelir paylaşımı)",
   "gerekce": "5. Levent ihalesinin 2. oturumundaki en yüksek teklife göre şirket payı 4,4 milyar TL (piyasa değerinin yaklaşık %5,6'sı) olsa da teklifler henüz değerlendirme aşamasında, sonuç kesinleşmediği için yeni iş ilişkisi sayılmadı ve puan düşük tutuldu.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694505",
+  "hisse": "ERBOS",
+  "baslik": "Sorumluluk Beyanı (Konsolide Olmayan) (2026 9 Aylık)",
+  "t": "2026-11-07T06:39:45+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1694506",
+  "hisse": "ERBOS",
+  "baslik": "Faaliyet Raporu (Konsolide Olmayan) (2026 9 Aylık)",
+  "t": "2026-11-07T06:39:45+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1694507",
+  "hisse": "ERBOS",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-07T06:39:47+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 22,
+   "yenilik": 12,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Hasılat %10,1 ve brüt kâr %20,2 düşerken net zarar 216,0 milyon TL'den 144,9 milyon TL'ye daralmış; bileşenler tek başına yaklaşık 64 puan eder, ancak finansal sonuç açıklamaları editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "ERBOS (Erbosan) net zararını 216,0 milyon TL'den 144,9 milyon TL'ye indirdi. Dokuz aylık hasılat 5,2 milyar TL'den 4,7 milyar TL'ye geriledi (%10,1 azalış).\n\nEsas faaliyet kârı %1,2 artışla 580,1 milyon TL, brüt kâr %20,2 azalışla 473,7 milyon TL.",
+  "kart": {
+   "baslik": "9 aylık finansal sonuçlar",
+   "satirlar": [
+    [
+     "Hasılat",
+     "4,7 milyar TL"
+    ],
+    [
+     "Brüt kâr",
+     "473,7 milyon TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "580,1 milyon TL"
+    ],
+    [
+     "Net dönem kârı",
+     "-144,9 milyon TL"
+    ],
+    [
+     "Özkaynaklar",
+     "4,2 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118956665580265718",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1694507",
+  "hisse": "ERBOS",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-07T06:40:13+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "ERBOS (Erbosan) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Esas faaliyet marjı %12,5\n• Finansman gideri %41,2 azaldı\n• Net zarar %32,9 küçüldü\n\nDikkat edilecekler\n• Net borç 922,2 milyon TL\n• İşletme nakit akışı eksi 592,5 milyon TL\n• Hasılat %10,1 azaldı",
+  "kart": {
+   "tweet": "ERBOS (Erbosan) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Esas faaliyet marjı %12,5\n• Finansman gideri %41,2 azaldı\n• Net zarar %32,9 küçüldü\n\nDikkat edilecekler\n• Net borç 922,2 milyon TL\n• İşletme nakit akışı eksi 592,5 milyon TL\n• Hasılat %10,1 azaldı",
+   "guclu": [
+    {
+     "ad": "Esas faaliyet kâr marjı",
+     "deger": "%12,5",
+     "not": "Geçen yıl aynı dönem %11,1"
+    },
+    {
+     "ad": "Finansman gideri",
+     "deger": "271,0 milyon TL",
+     "not": "Geçen yıl 461,1 milyon TL, azalış %41,2"
+    },
+    {
+     "ad": "Net dönem zararı",
+     "deger": "-144,9 milyon TL",
+     "not": "Geçen yıl -216,0 milyon TL"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Net borç",
+     "deger": "922,2 milyon TL",
+     "not": "Yıl sonu 427,0 milyon TL, artış %116,0"
+    },
+    {
+     "ad": "İşletme nakit akışı",
+     "deger": "-592,5 milyon TL",
+     "not": "Geçen yıl -284,1 milyon TL"
+    },
+    {
+     "ad": "Hasılat",
+     "deger": "4,7 milyar TL",
+     "not": "Geçen yıl 5,2 milyar TL, azalış %10,1"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118956736581366179",
+  "x_gorsel_hata": null
  }
 ]
