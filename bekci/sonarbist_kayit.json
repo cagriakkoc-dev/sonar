@@ -8935,5 +8935,252 @@
   "tur": "Kurumsal yönetim bilgi formu güncellemesi",
   "gerekce": "Kurumsal Yönetim Komitesi üyesinin görevden ayrılmasına dair usulî form güncellemesi; toplantı sayısı ve katılım oranı gibi rutin bilgiler içeriyor, finansal etkisi yok ve editörün 80+ puanlı türlerinden hiçbirine girmiyor.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694498",
+  "hisse": "EKGYO",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-07T00:56:05+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1694499",
+  "hisse": "EKGYO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-07T00:56:05+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 30,
+   "yenilik": 15,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 9
+  },
+  "tur": "finansal sonuç",
+  "gerekce": "9 aylık bilançoda hasılat %10,0 ve net kâr %63,6 düşüş gösterdiği için sürpriz etkisi yüksek; finansal sonuç bildirimleri için en az 80 puan kuralı da geçerli.",
+  "durum": "paylasildi",
+  "tweet": "EKGYO (Emlak Konut) dokuz ayda 78,0 milyar TL olan hasılatı 70,2 milyar TL'ye indirdi (%10,0 azalış). Net kâr 11,8 milyar TL'den 4,3 milyar TL'ye geriledi (%63,6 azalış).\n\nBrüt kâr %6,1 artışla 24,6 milyar TL, esas faaliyet kârı %7,4 azalışla 22,1 milyar TL oldu.",
+  "kart": {
+   "baslik": "9 aylık finansal sonuç",
+   "satirlar": [
+    [
+     "Hasılat",
+     "70,2 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "4,3 milyar TL"
+    ],
+    [
+     "Brüt kâr",
+     "24,6 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "22,1 milyar TL"
+    ],
+    [
+     "Özkaynaklar",
+     "164,0 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118870167459447107",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1694499",
+  "hisse": "EKGYO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-07T00:56:30+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "EKGYO (Emlak Konut GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Brüt kâr marjı %35,0\n• Net borç 20,8 milyar TL, %48,4 azaldı\n• Cari oran 2,11\n\nDikkat edilecekler\n• Net kâr %63,6 azaldı\n• Kâr parasal kazançtan geliyor\n• Finansman gideri 23,3 milyar TL",
+  "kart": {
+   "tweet": "EKGYO (Emlak Konut GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Brüt kâr marjı %35,0\n• Net borç 20,8 milyar TL, %48,4 azaldı\n• Cari oran 2,11\n\nDikkat edilecekler\n• Net kâr %63,6 azaldı\n• Kâr parasal kazançtan geliyor\n• Finansman gideri 23,3 milyar TL",
+   "guclu": [
+    {
+     "ad": "Brüt kâr marjı",
+     "deger": "%35,0",
+     "not": "Geçen yıl %29,7 idi"
+    },
+    {
+     "ad": "Net borç",
+     "deger": "20,8 milyar TL",
+     "not": "Yıl sonuna göre %48,4 azaldı"
+    },
+    {
+     "ad": "Cari oran",
+     "deger": "2,11",
+     "not": "Dönen varlıklar / kısa vadeli borç"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Net dönem kârı",
+     "deger": "4,3 milyar TL",
+     "not": "Geçen yıl 11,8 milyar TL idi"
+    },
+    {
+     "ad": "Net parasal kazanç",
+     "deger": "8,3 milyar TL",
+     "not": "Kâr parasal kazançtan geliyor"
+    },
+    {
+     "ad": "Finansman gideri",
+     "deger": "23,3 milyar TL",
+     "not": "Geçen yıl 10,1 milyar TL idi"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118870221796630915",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1694500",
+  "hisse": "EKGYO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-07T00:56:43+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 30,
+   "yenilik": 15,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 9
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Hasılat %13,6, net dönem kârı %78,6 azaldı (13,4 milyar TL'den 2,9 milyar TL'ye); finansal sonuç bildirimleri editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "EKGYO (Emlak Konut) ilk üç çeyrekte 73,6 milyar TL hasılat yaptı, geçen yıl 85,2 milyar TL'ydi (%13,6 azalış). Net kâr 13,4 milyar TL'den 2,9 milyar TL'ye indi (%78,6 azalış).\n\nEsas faaliyet kârı %21,9 azalışla 20,6 milyar TL. Net kârdaki düşüş bundan daha sert.",
+  "kart": {
+   "baslik": "9 aylık bilanço özeti",
+   "satirlar": [
+    [
+     "Hasılat",
+     "85,2 → 73,6 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "13,4 → 2,9 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "20,6 milyar TL"
+    ],
+    [
+     "Brüt kâr",
+     "25,1 milyar TL"
+    ],
+    [
+     "Özkaynaklar",
+     "161,7 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2118870370178502767",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1694500",
+  "hisse": "EKGYO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-07T00:57:18+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "EKGYO (Emlak Konut GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Brüt kâr marjı %34,1\n• Cari oran 1,96\n\nDikkat edilecekler\n• Net kâr 2,9 milyar TL, %78,6 azaldı\n• Kâr parasal kazançtan geliyor (7,4 milyar TL)\n• Finansman gideri 22,6 milyar TL, %124,2 arttı",
+  "kart": {
+   "tweet": "EKGYO (Emlak Konut GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Brüt kâr marjı %34,1\n• Cari oran 1,96\n\nDikkat edilecekler\n• Net kâr 2,9 milyar TL, %78,6 azaldı\n• Kâr parasal kazançtan geliyor (7,4 milyar TL)\n• Finansman gideri 22,6 milyar TL, %124,2 arttı",
+   "guclu": [
+    {
+     "ad": "Brüt kâr marjı",
+     "deger": "%34,1",
+     "not": "Geçen yıl aynı dönem %31,4"
+    },
+    {
+     "ad": "Cari oran",
+     "deger": "1,96",
+     "not": "Dönen varlıklar / kısa vadeli borç"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Net dönem kârı",
+     "deger": "2,9 milyar TL",
+     "not": "Geçen yıl 13,4 milyar TL, %78,6 azalış"
+    },
+    {
+     "ad": "Net parasal kazanç",
+     "deger": "7,4 milyar TL",
+     "not": "Kâr parasal kazançtan geliyor"
+    },
+    {
+     "ad": "Finansman gideri",
+     "deger": "22,6 milyar TL",
+     "not": "Geçen yıl 10,1 milyar TL, %124,2 artış"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2118870431935402154",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1694501",
+  "hisse": "EKGYO",
+  "baslik": "Portföy Sınırlamalarına Uyumun Kontrolü",
+  "t": "2026-11-07T00:57:33+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 1,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 4,
+   "ilgi": 6
+  },
+  "tur": "Portföy sınırlamalarına uyum tablosu (usulî/düzenleyici bildirim)",
+  "gerekce": "30.09.2026 finansal tablolarındaki bilgilerin SPK talimatı gereği analiz edilebilir veri formatında yeniden yayımlandığı, yeni bir bilgi içermeyen rutin bir bildirimdir; EKGYO'nun BIST'teki bilinirliği puanı sınırlı biçimde yükseltmiştir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694502",
+  "hisse": "EKGYO",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-07T00:57:39+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1694503",
+  "hisse": "EKGYO",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-07T00:57:40+00:00",
+  "mod": "golge",
+  "puan": 46,
+  "alt": {
+   "fin": 20,
+   "yenilik": 8,
+   "kapsam": 6,
+   "kesinlik": 4,
+   "ilgi": 8
+  },
+  "tur": "ihale ara sonucu (gelir paylaşımı)",
+  "gerekce": "5. Levent ihalesinin 2. oturumundaki en yüksek teklife göre şirket payı 4,4 milyar TL (piyasa değerinin yaklaşık %5,6'sı) olsa da teklifler henüz değerlendirme aşamasında, sonuç kesinleşmediği için yeni iş ilişkisi sayılmadı ve puan düşük tutuldu.",
+  "durum": "dusuk"
  }
 ]
