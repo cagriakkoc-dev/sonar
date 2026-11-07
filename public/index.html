@@ -2562,22 +2562,33 @@ function fonDonut(f){
   return `<section class="fpan panel"><h3>Portföy dağılımı · ${fonDon(f.donem)} sonu</h3><div class="fdon"><svg viewBox="0 0 220 220" role="img" aria-label="${f.kod} portföy dağılımı daire grafiği">${arcs}<text x="110" y="104" text-anchor="middle" class="fdon-v">%${nf(f.hisse_ag,1)}</text><text x="110" y="126" text-anchor="middle" class="fdon-l">hisse senedi</text></svg><ul class="fleg">${leg}</ul></div></section>`}
 function fonAlan(kod){const el=document.getElementById('fonalan');if(!el)return;
   fetch('/veri/fon/fiyat/'+kod+'.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null).then(d=>{const el=document.getElementById('fonalan');if(!el)return;
-    const P=(d&&d.f||[]).filter(x=>x[1]>0);if(P.length<5){el.innerHTML='<h3>Son 1 yıl · pay fiyatı</h3><p class="note">Fiyat verisi henüz yok.</p>';return}
-    const W=600,Hh=230,pl=8,pr=8,pt=14,pb=26,ys=P.map(x=>x[1]),mn=Math.min(...ys),mx=Math.max(...ys),pad=(mx-mn)*0.08||mx*0.02,lo=mn-pad,hi=mx+pad;
-    const X=i=>pl+(W-pl-pr)*i/(P.length-1),Y=v=>pt+(Hh-pt-pb)*(1-(v-lo)/(hi-lo));
-    const line=P.map((p,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(p[1]).toFixed(1)).join(''),area=line+`L${X(P.length-1).toFixed(1)} ${Hh-pb}L${X(0).toFixed(1)} ${Hh-pb}Z`;
-    const ch=100*(P.at(-1)[1]/P[0][1]-1),col=ch>=0?'var(--up)':'var(--down)';
+    const T=(d&&d.f||[]).filter(x=>x[1]>0);if(T.length<5){el.innerHTML='<h3>Pay fiyatı</h3><p class="note">Fiyat verisi henüz yok.</p>';return}
+    /* TEFAS'taki dönemler: Haftalık, Aylık, 3 Aylık, 6 Aylık, 1 Yıllık, 3 Yıllık, 5 Yıllık (son fiyat tarihinden geriye) */
+    const DON=[['1H','Haftalık',0,7],['1A','Aylık',1],['3A','3 Aylık',3],['6A','6 Aylık',6],['1Y','1 Yıllık',12],['3Y','3 Yıllık',36],['5Y','5 Yıllık',60]];
+    const son=new Date(T.at(-1)[0]+'T00:00:00'),bas=([,, ay,gun])=>{const t=new Date(son);if(gun)t.setDate(t.getDate()-gun);else t.setMonth(t.getMonth()-ay);return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0')};
+    const ilk=T[0][0],eksik=x=>(new Date(ilk)-new Date(bas(x)))/864e5>7;window.__fonDon=window.__fonDon||'1Y';
     const AY=['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'],lbl=s=>+s.slice(8)+' '+AY[+s.slice(5,7)-1]+' '+s.slice(2,4);
-    const xt=[0,Math.round((P.length-1)/3),Math.round(2*(P.length-1)/3),P.length-1].map((i,j)=>`<text x="${X(i).toFixed(1)}" y="${Hh-8}" text-anchor="${j===0?'start':j===3?'end':'middle'}" class="fal-x">${lbl(P[i][0])}</text>`).join('');
-    const gy=[mn,(mn+mx)/2,mx].map(v=>`<line x1="${pl}" x2="${W-pr}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}" class="fal-g"/><text x="${W-pr}" y="${(Y(v)-4).toFixed(1)}" text-anchor="end" class="fal-x">${nf(v,4)}</text>`).join('');
-    el.innerHTML=`<h3>Son 1 yıl · pay fiyatı <span style="color:${col};font-weight:700">${ch>=0?'+':'−'}%${nf(Math.abs(ch),1)}</span></h3>
-     <div class="fal"><svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="${kod} son 1 yıl pay fiyatı alan grafiği"><defs><linearGradient id="falg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".35"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>${gy}<path d="${area}" fill="url(#falg)"/><path d="${line}" fill="none" stroke="${col}" stroke-width="2"/>${xt}<line class="fal-c" x1="0" x2="0" y1="${pt}" y2="${Hh-pb}" visibility="hidden"/><circle class="fal-d" r="4" fill="${col}" visibility="hidden"/><rect x="0" y="0" width="${W}" height="${Hh}" fill="transparent"/></svg><div class="fal-t" hidden></div></div>
-     <p class="note">Günlük pay fiyatı, kaynak TEFAS. ${lbl(P[0][0])} – ${lbl(P.at(-1)[0])}.</p>`;
-    const svg=el.querySelector('svg'),c=el.querySelector('.fal-c'),dt=el.querySelector('.fal-d'),tt=el.querySelector('.fal-t');
-    const mv=e=>{const b=svg.getBoundingClientRect(),cx=((e.touches?e.touches[0].clientX:e.clientX)-b.left)*W/b.width;let i=Math.round((cx-pl)/(W-pl-pr)*(P.length-1));i=Math.max(0,Math.min(P.length-1,i));
-      c.setAttribute('x1',X(i));c.setAttribute('x2',X(i));c.setAttribute('visibility','visible');dt.setAttribute('cx',X(i));dt.setAttribute('cy',Y(P[i][1]));dt.setAttribute('visibility','visible');
-      tt.hidden=false;tt.textContent=lbl(P[i][0])+' · '+nf(P[i][1],6);tt.style.left=Math.min(b.width-130,Math.max(0,X(i)*b.width/W-60))+'px'};
-    svg.addEventListener('mousemove',mv);svg.addEventListener('touchmove',mv,{passive:true});svg.addEventListener('mouseleave',()=>{c.setAttribute('visibility','hidden');dt.setAttribute('visibility','hidden');tt.hidden=true})})}
+    const ciz=()=>{const D=DON.find(x=>x[0]===window.__fonDon)||DON[4],b0=bas(D),P0=T.filter(x=>x[0]>=b0),P=P0.length>=2?P0:T.slice(-2),kisa=eksik(D);
+      const W=600,Hh=230,pl=8,pr=8,pt=14,pb=26,ys=P.map(x=>x[1]),mn=Math.min(...ys),mx=Math.max(...ys),pad=(mx-mn)*0.08||mx*0.02,lo=mn-pad,hi=mx+pad;
+      const X=i=>pl+(W-pl-pr)*i/(P.length-1),Y=v=>pt+(Hh-pt-pb)*(1-(v-lo)/(hi-lo));
+      const line=P.map((p,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(p[1]).toFixed(1)).join(''),area=line+`L${X(P.length-1).toFixed(1)} ${Hh-pb}L${X(0).toFixed(1)} ${Hh-pb}Z`;
+      const ch=100*(P.at(-1)[1]/P[0][1]-1),col=ch>=0?'var(--up)':'var(--down)';
+      const xi=P.length<4?[0,P.length-1]:[0,Math.round((P.length-1)/3),Math.round(2*(P.length-1)/3),P.length-1];
+      const xt=xi.map((i,j)=>`<text x="${X(i).toFixed(1)}" y="${Hh-8}" text-anchor="${j===0?'start':j===xi.length-1?'end':'middle'}" class="fal-x">${lbl(P[i][0])}</text>`).join('');
+      const gy=[mn,(mn+mx)/2,mx].map(v=>`<line x1="${pl}" x2="${W-pr}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}" class="fal-g"/><text x="${W-pr}" y="${(Y(v)-4).toFixed(1)}" text-anchor="end" class="fal-x">${nf(v,4)}</text>`).join('');
+      const btn=DON.map(x=>`<button class="chip" data-fd="${x[0]}" aria-pressed="${x[0]===D[0]}"${eksik(x)&&x!==DON.find(eksik)?' disabled title="Bu dönem için fiyat geçmişi yok"':''}>${x[1]}</button>`).join('');
+      el.innerHTML=`<h3>Pay fiyatı · ${D[1].toLowerCase()} <span style="color:${col};font-weight:700">${ch>=0?'+':'−'}%${nf(Math.abs(ch),2)}</span></h3>
+       <div class="fdbt">${btn}</div>
+       <div class="fal"><svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="${kod} pay fiyatı alan grafiği, ${D[1]}"><defs><linearGradient id="falg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".35"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>${gy}<path d="${area}" fill="url(#falg)"/><path d="${line}" fill="none" stroke="${col}" stroke-width="2"/>${xt}<line class="fal-c" x1="0" x2="0" y1="${pt}" y2="${Hh-pb}" visibility="hidden"/><circle class="fal-d" r="4" fill="${col}" visibility="hidden"/><rect x="0" y="0" width="${W}" height="${Hh}" fill="transparent"/></svg><div class="fal-t" hidden></div></div>
+       <p class="note">Günlük pay fiyatı, kaynak TEFAS. ${lbl(P[0][0])} – ${lbl(P.at(-1)[0])}${kisa?' (fonun fiyat geçmişi daha kısa)':''}.</p>`;
+      el.querySelectorAll('[data-fd]').forEach(b=>b.onclick=()=>{window.__fonDon=b.dataset.fd;ciz()});
+      const svg=el.querySelector('svg'),c=el.querySelector('.fal-c'),dt=el.querySelector('.fal-d'),tt=el.querySelector('.fal-t');
+      const mv=e=>{const b=svg.getBoundingClientRect(),cx=((e.touches?e.touches[0].clientX:e.clientX)-b.left)*W/b.width;let i=Math.round((cx-pl)/(W-pl-pr)*(P.length-1));i=Math.max(0,Math.min(P.length-1,i));
+        c.setAttribute('x1',X(i));c.setAttribute('x2',X(i));c.setAttribute('visibility','visible');dt.setAttribute('cx',X(i));dt.setAttribute('cy',Y(P[i][1]));dt.setAttribute('visibility','visible');
+        tt.hidden=false;tt.textContent=lbl(P[i][0])+' · '+nf(P[i][1],6);tt.style.left=Math.min(b.width-130,Math.max(0,X(i)*b.width/W-60))+'px'};
+      svg.addEventListener('mousemove',mv);svg.addEventListener('touchmove',mv,{passive:true});svg.addEventListener('mouseleave',()=>{c.setAttribute('visibility','hidden');dt.setAttribute('visibility','hidden');tt.hidden=true})};
+    ciz()})}
+(function(){if(document.getElementById('fondonstil'))return;document.head.insertAdjacentHTML('beforeend',`<style id="fondonstil">.fdbt{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.fdbt .chip[disabled]{opacity:.35;cursor:default}</style>`)})();
 (function(){if(document.getElementById('fongrafstil'))return;document.head.insertAdjacentHTML('beforeend',`<style id="fongrafstil">
 .fdon{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.fdon svg{width:210px;height:210px;flex:none}.fdon-v{font:800 26px var(--f-display);fill:var(--fg)}.fdon-l{font:500 12px var(--f-body);fill:var(--muted)}
 .fleg{list-style:none;margin:0;padding:0;flex:1;min-width:180px;font-size:14px}.fleg li{display:grid;grid-template-columns:12px 1fr auto;gap:8px;align-items:center;padding:3px 0}.fleg i{width:12px;height:12px;border-radius:3px}.fleg a{color:var(--fg);font-weight:700;text-decoration:none}.fleg a:hover{color:var(--accent)}.fleg b{font-variant-numeric:tabular-nums}
