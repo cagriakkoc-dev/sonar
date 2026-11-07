@@ -1,259 +1,393 @@
 {
- "zaman": "2026-11-06T21:29:10Z",
+ "zaman": "2026-11-07T08:53:38Z",
  "basarili": [
   {
-   "kod": "KOT",
-   "donem": "2026-10",
-   "hisse": 7,
+   "kod": "MAC",
+   "donem": "2025-09",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2025-08",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2025-07",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2025-06",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2025-05",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2025-04",
+   "hisse": 19,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2025-03",
+   "hisse": 19,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2025-02",
+   "hisse": 19,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2025-01",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-12",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-11",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-10",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-09",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-08",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-07",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-06",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-05",
+   "hisse": 19,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-04",
+   "hisse": 18,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-03",
+   "hisse": 19,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-02",
+   "hisse": 18,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2024-01",
+   "hisse": 19,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-12",
+   "hisse": 18,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-11",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-10",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-09",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-08",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-07",
+   "hisse": 19,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-06",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-05",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": -0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-04",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-03",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-02",
+   "hisse": 19,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2023-01",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2022-12",
+   "hisse": 22,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2022-11",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2022-10",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2022-09",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2022-08",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2022-07",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2022-06",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2022-04",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2022-03",
+   "hisse": 18,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2022-02",
+   "hisse": 18,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2022-01",
+   "hisse": 19,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2021-12",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2021-11",
+   "hisse": 20,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "MAC",
+   "donem": "2021-10",
+   "hisse": 20,
    "tutuyor": true,
    "fark_yuzde": 0.0
   }
  ],
  "atlandi": [
   {
-   "kod": "AAV",
+   "kod": "MAC",
    "donem": "2026-09"
   },
   {
-   "kod": "AAV",
+   "kod": "MAC",
    "donem": "2026-08"
   },
   {
-   "kod": "AKU",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "AKU",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "BFT",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "BFT",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "BIO",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "BIO",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "DEH",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "DEH",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "DTH",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "DTH",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "GAE",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "GAE",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "GKG",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "GKG",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "GNS",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "GNS",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "GTM",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "GTM",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "HGM",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "HGM",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "HRZ",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "HRZ",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "ICZ",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "ICZ",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "IHK",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "IHK",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "IVF",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "IVF",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "KOT",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "KTI",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "KTI",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "MKA",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "MKA",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "NKC",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "NKC",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "NST",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "NST",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "OPI",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "OPI",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "PHK",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "PHK",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "PUK",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "PUK",
+   "kod": "MAC",
    "donem": "2026-07"
   },
   {
-   "kod": "SAS",
-   "donem": "2026-10"
+   "kod": "MAC",
+   "donem": "2026-06"
   },
   {
-   "kod": "SAS",
-   "donem": "2026-09"
+   "kod": "MAC",
+   "donem": "2026-05"
   },
   {
-   "kod": "SSS",
-   "donem": "2026-09"
+   "kod": "MAC",
+   "donem": "2026-04"
   },
   {
-   "kod": "SSS",
-   "donem": "2026-08"
+   "kod": "MAC",
+   "donem": "2026-03"
   },
   {
-   "kod": "TI2",
-   "donem": "2026-10"
+   "kod": "MAC",
+   "donem": "2026-02"
   },
   {
-   "kod": "TI2",
-   "donem": "2026-09"
+   "kod": "MAC",
+   "donem": "2026-01"
   },
   {
-   "kod": "TLZ",
-   "donem": "2026-09"
+   "kod": "MAC",
+   "donem": "2025-12"
   },
   {
-   "kod": "TLZ",
-   "donem": "2026-08"
+   "kod": "MAC",
+   "donem": "2025-11"
   },
   {
-   "kod": "VAY",
-   "donem": "2026-10"
-  },
-  {
-   "kod": "VAY",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "YEF",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "YEF",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "YLY",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "YLY",
-   "donem": "2026-08"
-  },
-  {
-   "kod": "ZLH",
-   "donem": "2026-09"
-  },
-  {
-   "kod": "ZLH",
-   "donem": "2026-08"
+   "kod": "MAC",
+   "donem": "2025-10"
   }
  ],
- "hata": []
+ "hata": [
+  {
+   "kod": "MAC",
+   "donem": "2022-05",
+   "hisse": 20,
+   "tutuyor": false,
+   "fark_yuzde": -0.8103
+  }
+ ]
 }
