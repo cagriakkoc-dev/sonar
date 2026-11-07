@@ -24,7 +24,14 @@ def get(u, t=90):
             time.sleep(15 * (k + 1) if "429" in repr(e) else 4)
 
 def pdr_listesi(oid):
+    # son 365 gün; 12'den fazla rapor istenirse KAP'ın yıl filtresiyle (yayım yılı) geriye doğru eklenir
     L = json.loads(get(f"https://www.kap.org.tr/tr/api/disclosure/filter/FILTERYFBF/{oid}/ALL/365"))
+    if LIMIT > 12:
+        y = datetime.date.today().year
+        for yil in range(y, y - (LIMIT + 11) // 12 - 1, -1):
+            try: L += json.loads(get(f"https://www.kap.org.tr/tr/api/disclosure/filter/FILTERYFBF/{oid}/ALL/{yil}"))
+            except Exception as e: print(oid, yil, "liste hata", repr(e)[:100])
+            time.sleep(0.5)
     out = []
     for x in L:
         b = x.get("disclosureBasic", x)
