@@ -9299,5 +9299,122 @@
   "durum": "analiz_paylasildi",
   "tweet_id": "2118956736581366179",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1694542",
+  "hisse": "GLYHO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-08T11:00:45+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Hasılat %19,2 ve net kâr %10,8 artan 9 aylık finansal rapor, editörün her zaman önemli saydığı finansal sonuç türünde olduğu için en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "GLYHO (Global Yatırım Holding) dokuz ayda hasılatını 24,6 milyar TL'den 29,4 milyar TL'ye çıkardı (%19,2 artış). Net kâr 4,0 milyar TL'den 4,4 milyar TL'ye yükseldi (%10,8 artış).\n\nEsas faaliyet kârı %7,0 artışla 7,0 milyar TL, özkaynaklar 18,3 milyar TL.",
+  "kart": {
+   "baslik": "9 aylık bilanço özeti",
+   "satirlar": [
+    [
+     "Hasılat",
+     "29,4 milyar TL"
+    ],
+    [
+     "Brüt kâr",
+     "11,5 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "7,0 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "4,4 milyar TL"
+    ],
+    [
+     "Özkaynaklar",
+     "18,3 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2119384709256139069",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1694542",
+  "hisse": "GLYHO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-08T11:01:07+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "GLYHO (Global Yatırım Holding) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat 29,4 milyar TL (%19,2 artış)\n• Net kâr 4,4 milyar TL\n• İşletme nakit akışı 12,3 milyar TL\n\nDikkat edilecekler\n• Brüt marj %39,2'ye indi\n• Faaliyet marjı %23,8'e indi\n• Cari oran 0,99",
+  "kart": {
+   "tweet": "GLYHO (Global Yatırım Holding) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat 29,4 milyar TL (%19,2 artış)\n• Net kâr 4,4 milyar TL\n• İşletme nakit akışı 12,3 milyar TL\n\nDikkat edilecekler\n• Brüt marj %39,2'ye indi\n• Faaliyet marjı %23,8'e indi\n• Cari oran 0,99",
+   "guclu": [
+    {
+     "ad": "Hasılat",
+     "deger": "29,4 milyar TL",
+     "not": "Geçen yıl 24,6 milyar TL, artış %19,2"
+    },
+    {
+     "ad": "Net dönem kârı",
+     "deger": "4,4 milyar TL",
+     "not": "Geçen yıl 4,0 milyar TL, %10,8 artış"
+    },
+    {
+     "ad": "İşletme nakit akışı",
+     "deger": "12,3 milyar TL",
+     "not": "Geçen yıl 11,4 milyar TL"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Brüt kâr marjı",
+     "deger": "%39,2",
+     "not": "Geçen yıl %44,5"
+    },
+    {
+     "ad": "Esas faaliyet kâr marjı",
+     "deger": "%23,8",
+     "not": "Geçen yıl %26,5"
+    },
+    {
+     "ad": "Cari oran",
+     "deger": "0,99",
+     "not": "Dönen varlıklar kısa vadeden az"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2119384807356743914",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1694543",
+  "hisse": "GLYHO",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-08T11:01:30+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1694544",
+  "hisse": "GLYHO",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-08T11:01:31+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
  }
 ]
