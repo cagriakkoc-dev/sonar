@@ -1,0 +1,23 @@
+name: Seslendirme (ElevenLabs)
+# seslendirme/istek/*.json eklenince ya da değişince çalışır; çıktı seslendirme/cikti/ altına yazılır.
+on:
+  push:
+    paths: ['seslendirme/istek/*.json']
+  workflow_dispatch:
+concurrency: { group: seslendirme, cancel-in-progress: false }
+permissions:
+  contents: write
+jobs:
+  ses:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - run: python3 seslendirme/seslendir.py
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      - run: |
+          git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
+          git add seslendirme/cikti
+          git diff --cached --quiet || (git commit -q -m "Seslendirme çıktısı [skip render]" && for n in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done)
