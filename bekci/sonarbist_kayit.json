@@ -1,42 +1,5 @@
 [
  {
-  "id": "kap-1692589",
-  "hisse": "KCAER",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-04T15:24:46+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1692590",
-  "hisse": "KCAER",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-04T15:24:47+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1692599",
-  "hisse": "GEDIK",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-04T15:36:10+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 8,
-   "yenilik": 8,
-   "kapsam": 12,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "GEDIK 04.11.2026'da 5,00 TL'den 150 bin pay (yaklaşık 0,75 milyon TL) geri aldı ve toplam payı %5,04'e çıktı; tutar piyasa değerine göre küçük olsa da pay geri alımları editör kuralı gereği en az 80 puan alır, silinen PAHOL örneği ise satın alma bildirimi olduğundan bu türle benzer sayılmadı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1692602",
   "hisse": "LXGYO",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -10977,6 +10940,43 @@
   },
   "tur": "Finansal sonuç (9 aylık bilanço)",
   "gerekce": "Finansal sonuç açıklaması editör kuralı gereği önemli sayılır; hasılat %32,2, brüt kâr %69,2 ve esas faaliyet kârı %69,9 artarken net kâr %10,6 azalmış, 5,4 milyar TL net kâr 22,5 milyar TL piyasa değerine göre büyük bir tutardır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695971",
+  "hisse": "TRMET",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T18:10:24+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695973",
+  "hisse": "TRMET",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T18:10:24+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695974",
+  "hisse": "TRMET",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T18:10:25+00:00",
+  "mod": "golge",
+  "puan": 88,
+  "alt": {
+   "fin": 33,
+   "yenilik": 14,
+   "kapsam": 17,
+   "kesinlik": 9,
+   "ilgi": 6
+  },
+  "tur": "Finansal sonuç (9 aylık bilanço)",
+  "gerekce": "2026 9 aylık finansal rapor hasılatta %32,3, brüt kârda %69,4 ve esas faaliyet kârında %69,6 artış gösterirken net kâr %22,9 düştüğü için, bilanço açıklaması her zaman önemli olan türdedir ve operasyonel güçlenme ile net kâr gerilemesi arasındaki ayrışma dikkat çekicidir.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
