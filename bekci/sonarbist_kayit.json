@@ -1,42 +1,5 @@
 [
  {
-  "id": "kap-1692585",
-  "hisse": "MPARK",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-04T15:24:34+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1692587",
-  "hisse": "KCAER",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-04T15:24:34+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 33,
-   "yenilik": 16,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 7
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "9 aylık finansal sonuç editör kuralı gereği önemli sayıldı: hasılat %11,3 ve esas faaliyet kârı %20,8 düşerken net kâr %49,4 artarak 873,3 milyon TL'ye çıktı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1692588",
-  "hisse": "SEGYO",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-04T15:24:44+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1692589",
   "hisse": "KCAER",
   "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
@@ -10979,5 +10942,42 @@
   "tur": "Halka arz varsayımları değerlendirme raporu",
   "gerekce": "SPK Pay Tebliği'nin 29/5. maddesi gereği yayımlanan, halka arz fiyatı varsayımlarını değerlendiren düzenleyici bir rapordur; metinde yeni bir tutar, sözleşme, kâr payı veya rehberlik bilgisi yoktur, içerik ekte olduğundan editör kuralındaki zorunlu önemli türlere girmez.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695966",
+  "hisse": "TRENJ",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T18:07:40+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695968",
+  "hisse": "TRENJ",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T18:07:40+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695969",
+  "hisse": "TRENJ",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T18:07:41+00:00",
+  "mod": "golge",
+  "puan": 88,
+  "alt": {
+   "fin": 33,
+   "yenilik": 15,
+   "kapsam": 17,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "Finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Finansal sonuç açıklaması editör kuralı gereği önemli sayılır; hasılat %32,2, brüt kâr %69,2 ve esas faaliyet kârı %69,9 artarken net kâr %10,6 azalmış, 5,4 milyar TL net kâr 22,5 milyar TL piyasa değerine göre büyük bir tutardır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
