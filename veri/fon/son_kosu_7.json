@@ -1,6 +1,145 @@
 {
- "zaman": "2026-11-09T15:48:17Z",
- "basarili": [],
- "atlandi": [],
- "hata": []
+ "zaman": "2026-11-09T17:34:00Z",
+ "basarili": [
+  {
+   "kod": "HIH",
+   "donem": "2026-10",
+   "hisse": 19,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "NKM",
+   "donem": "2026-10",
+   "hisse": 21,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "YHB",
+   "donem": "2026-10",
+   "hisse": 31,
+   "tutuyor": true,
+   "fark_yuzde": -0.0
+  }
+ ],
+ "atlandi": [
+  {
+   "kod": "ALC",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "ALC",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "BIY",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "BIY",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "DTL",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "DTL",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "GAF",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "GAF",
+   "donem": "2026-08"
+  },
+  {
+   "kod": "GO9",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "HIH",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "IDH",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "IDH",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "KH1",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "KH1",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "KVT",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "KVT",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "NKM",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "RBH",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "ST1",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "ST1",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "TPR",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "TPR",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "YHB",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "ZPE",
+   "donem": "2026-09"
+  }
+ ],
+ "hata": [
+  {
+   "kod": "GO9",
+   "donem": "2026-10",
+   "hisse": 0,
+   "tutuyor": false,
+   "fark_yuzde": null
+  },
+  {
+   "kod": "RBH",
+   "donem": "2026-10",
+   "neden": "RuntimeError('metin yok (taranmış PDF)')"
+  },
+  {
+   "kod": "ZPE",
+   "donem": "2026-10",
+   "hisse": 0,
+   "tutuyor": false,
+   "fark_yuzde": null
+  }
+ ]
 }
