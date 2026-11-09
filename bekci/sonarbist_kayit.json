@@ -10465,5 +10465,517 @@
   "tur": "Borçlanma aracı itfası",
   "gerekce": "10 milyon GBP'lik (yaklaşık 500 milyon TL) yurtdışı borçlanma aracının vadesinde itfası, 287,5 milyar TL piyasa değerine göre çok küçük, rutin ve önceden planlı bir işlemdir; editörün gereksiz bulduğu bildirimlere benzer şekilde düşük puan alır.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695248",
+  "hisse": "A1CAP",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-09T15:18:48+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 2,
+   "yenilik": 4,
+   "kapsam": 3,
+   "kesinlik": 4,
+   "ilgi": 1
+  },
+  "tur": "Üst düzey yönetici istifası",
+  "gerekce": "Genel Müdür Yardımcısının istifasının kabulü şirketin tamamını etkilemeyen rutin bir yönetim değişikliğidir; finansal etkisi yoktur ve şirket BIST 30/100 dışında küçük ölçektedir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695251",
+  "hisse": "A1CAP",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-09T15:18:50+00:00",
+  "mod": "golge",
+  "puan": 6,
+  "alt": {
+   "fin": 0,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 1,
+   "ilgi": 2
+  },
+  "tur": "Şirket Genel Bilgi Formu (usulî)",
+  "gerekce": "Yönetim ve imza yetkilisi listesini güncelleyen rutin bir form olup görünür bir değişiklik, tutar ya da yeni gelişme içermiyor, bu yüzden düşük puan aldı.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695255",
+  "hisse": "EGEEN",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:18:53+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 22,
+   "yenilik": 14,
+   "kapsam": 14,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Hasılat %4,2 azalarak 4,5 milyar TL olurken brüt kâr %18,4 artışla 1,1 milyar TL, net dönem kârı %136,5 artışla 260,6 milyon TL oldu; finansal sonuç bildirimi olduğu için editör kuralı gereği taban puan 80 uygulandı.",
+  "durum": "paylasildi",
+  "tweet": "EGEEN (Ege Endüstri) 9 ayda 260,6 milyon TL net kâr yazdı, geçen yıl 110,2 milyon TL'ydi (%136,5 artış).\n\nHasılat 4,7 milyar TL'den 4,5 milyar TL'ye indi (%4,2 azalış). Esas faaliyet kârı %9,3 azalışla 526,1 milyon TL.\n\nSon 4 çeyrek net kârı eksi 249,1 milyon TL.",
+  "kart": {
+   "baslik": "9 aylık finansal sonuçlar",
+   "satirlar": [
+    [
+     "Hasılat",
+     "4,5 milyar TL"
+    ],
+    [
+     "Net dönem kârı",
+     "260,6 milyon TL"
+    ],
+    [
+     "Brüt kâr",
+     "1,1 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "526,1 milyon TL"
+    ],
+    [
+     "Özkaynaklar",
+     "10,0 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2119812112562188564",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1695255",
+  "hisse": "EGEEN",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:19:27+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "EGEEN (Ege Endüstri) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net kâr 260,6 milyon TL, geçen yıl 110,2 milyon TL\n• Finansman gideri 285,3 milyon TL, azalış %63,5\n• Brüt marj %23,5, geçen yıl %19,0\n\nDikkat edilecekler\n• İşletme nakit akışı eksi 80,2 milyon TL",
+  "kart": {
+   "tweet": "EGEEN (Ege Endüstri) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net kâr 260,6 milyon TL, geçen yıl 110,2 milyon TL\n• Finansman gideri 285,3 milyon TL, azalış %63,5\n• Brüt marj %23,5, geçen yıl %19,0\n\nDikkat edilecekler\n• İşletme nakit akışı eksi 80,2 milyon TL",
+   "guclu": [
+    {
+     "ad": "Net dönem kârı",
+     "deger": "260,6 milyon TL",
+     "not": "Geçen yıl 110,2 milyon TL"
+    },
+    {
+     "ad": "Finansman gideri",
+     "deger": "285,3 milyon TL",
+     "not": "Azalış %63,5"
+    },
+    {
+     "ad": "Brüt kâr marjı",
+     "deger": "%23,5",
+     "not": "Geçen yıl %19,0"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "İşletme nakit akışı",
+     "deger": "eksi 80,2 milyon TL",
+     "not": "Geçen yıl 1,0 milyar TL"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2119812167541133633",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1695256",
+  "hisse": "EGEEN",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:19:40+00:00",
+  "mod": "golge",
+  "durum": "hata",
+  "sebep": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+ },
+ {
+  "id": "kap-1695256",
+  "hisse": "EGEEN",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:19:40+00:00",
+  "mod": "golge",
+  "durum": "hata",
+  "sebep": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+ },
+ {
+  "id": "kap-1695259",
+  "hisse": "EGEEN",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:19:44+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695263",
+  "hisse": "EGEEN",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-09T15:19:44+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 5,
+   "yenilik": 4,
+   "kapsam": 10,
+   "kesinlik": 9,
+   "ilgi": 2
+  },
+  "tur": "kâr payı avansı dağıtılmaması kararı",
+  "gerekce": "Şirket son 4 çeyrekte zarar yazdığı için kâr payı avansı dağıtılmaması beklenen bir sonuçtur; dağıtım, tutar veya ödeme içermediğinden 80 puan tabanına girmeyen, düşük yenilikli bir bildirimdir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695267",
+  "hisse": "EGEEN",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-09T15:19:49+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 0,
+   "yenilik": 3,
+   "kapsam": 4,
+   "kesinlik": 3,
+   "ilgi": 2
+  },
+  "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
+  "gerekce": "Yönetim kurulu üyelerine ilişkin rutin bilgi formu güncellemesi olup yeni bir karar, tutar veya finansal etki içermiyor; editörün gereksiz bulduğu bildirimlere benziyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695274",
+  "hisse": "ISGYO",
+  "baslik": "Maddi Duran Varlık Alımı",
+  "t": "2026-11-09T15:19:52+00:00",
+  "mod": "golge",
+  "puan": 36,
+  "alt": {
+   "fin": 11,
+   "yenilik": 7,
+   "kapsam": 5,
+   "kesinlik": 8,
+   "ilgi": 5
+  },
+  "tur": "Maddi duran varlık alımı (gayrimenkul hissesi)",
+  "gerekce": "İstanbul Kadıköy'deki otel projesi arsasının %45 hissesi 383,9 milyon TL + KDV'ye alınıyor; bu tutar 22,8 milyar TL piyasa değerinin yaklaşık %1,7'si olduğundan etkisi sınırlı, alım yönetim kurulu kararıyla kesinleşmiş ve bedel değerleme raporunun altında kalıyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695287",
+  "hisse": "ARCLK",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-09T15:19:59+00:00",
+  "mod": "golge",
+  "puan": 24,
+  "alt": {
+   "fin": 7,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 9,
+   "ilgi": 5
+  },
+  "tur": "Borçlanma aracı kupon ve anapara ödemesi (rutin itfa)",
+  "gerekce": "TRFARCLK2611 finansman bonosunun yaklaşık 3,5 milyar TL anaparası ile kuponları vadesinde ödenip itfa edildi; tutar piyasa değerinin yaklaşık %6'sı olsa da bu önceden planlı, rutin bir borç servisidir ve sürpriz ya da yeni bilgi içermez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695293",
+  "hisse": "TUKAS",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-09T15:20:03+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 3,
+   "yenilik": 1,
+   "kapsam": 1,
+   "kesinlik": 8,
+   "ilgi": 1
+  },
+  "tur": "tahvil kupon ödemesi",
+  "gerekce": "TRSTKAS22715 tahvilinin 25,8 milyon TL'lik 5. kupon ödemesi, hasılatın yaklaşık %0,25'i ve piyasa değerinin %0,3'ü olan rutin bir faiz ödemesidir; yeni bir gelişme ya da şirket geneline etki içermez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695300",
+  "hisse": "ALTNY",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:20:07+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 18,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Hasılat %12,8 ve esas faaliyet kârı %14,5 artarken net kâr %68,4 düşerek 52,2 milyon TL'ye indi; bilanço açıklaması her zaman önemli türde olduğu için taban puan olan 80 verildi, şirket BIST 30/100 dışında ve küçük ölçekli olduğundan puan tabanda kaldı.",
+  "durum": "paylasildi",
+  "tweet": "ALTNY (Altınay Savunma) 9 ayda hasılatını 2,3 milyar TL'den 2,5 milyar TL'ye taşıdı (%12,8 artış).\n\nNet kâr 165,1 milyon TL'den 52,2 milyon TL'ye geriledi (%68,4 azalış).\n\nEsas faaliyet kârı %14,5 artışla 553,9 milyon TL oldu. Faaliyet kârı artarken net kâr düştü.",
+  "kart": {
+   "baslik": "9 aylık finansal sonuçlar",
+   "satirlar": [
+    [
+     "Hasılat",
+     "2,5 milyar TL"
+    ],
+    [
+     "Esas faaliyet kârı",
+     "553,9 milyon TL"
+    ],
+    [
+     "Net dönem kârı",
+     "52,2 milyon TL"
+    ],
+    [
+     "Net kâr değişimi",
+     "%68,4 azalış"
+    ],
+    [
+     "Özkaynaklar",
+     "5,9 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2119812399570072028",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "analiz-1695300",
+  "hisse": "ALTNY",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:20:36+00:00",
+  "mod": "canli",
+  "tur": "bilanço analizi",
+  "tweet": "ALTNY (Altınay Savunma Teknolojileri) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat 2,5 milyar TL\n• İşletme nakit akışı 263,6 milyon TL\n\nDikkat edilecekler\n• Net kâr %68,4 azaldı\n• Kâr parasal kazançtan geliyor\n• Net borç %51,6 arttı",
+  "kart": {
+   "tweet": "ALTNY (Altınay Savunma Teknolojileri) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Hasılat 2,5 milyar TL\n• İşletme nakit akışı 263,6 milyon TL\n\nDikkat edilecekler\n• Net kâr %68,4 azaldı\n• Kâr parasal kazançtan geliyor\n• Net borç %51,6 arttı",
+   "guclu": [
+    {
+     "ad": "Hasılat",
+     "deger": "2,5 milyar TL",
+     "not": "Geçen yıl 2,3 milyar TL, artış %12,8"
+    },
+    {
+     "ad": "İşletme nakit akışı",
+     "deger": "263,6 milyon TL",
+     "not": "Geçen yıl -277,0 milyon TL"
+    }
+   ],
+   "dikkat": [
+    {
+     "ad": "Net dönem kârı",
+     "deger": "52,2 milyon TL",
+     "not": "Geçen yıl 165,1 milyon TL"
+    },
+    {
+     "ad": "Net parasal kazanç",
+     "deger": "140,3 milyon TL",
+     "not": "Kâr parasal kazançtan geliyor"
+    },
+    {
+     "ad": "Net borç",
+     "deger": "3,0 milyar TL",
+     "not": "Yıl sonu 2,0 milyar TL, artış %51,6"
+    }
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "durum": "analiz_paylasildi",
+  "tweet_id": "2119812486207582294",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1695301",
+  "hisse": "KGYO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:20:56+00:00",
+  "mod": "golge",
+  "puan": 85,
+  "alt": {
+   "fin": 30,
+   "yenilik": 17,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "9 aylık finansal rapor, editör kuralı gereği en az 80 puan alır: hasılat 6,9 milyon TL'den 2,2 milyar TL'ye fırlarken brüt kâr zarara döndü, esas faaliyet kârı pozitife geçti, net zarar 147,9 milyon TL'ye büyüdü.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695307",
+  "hisse": "ALTNY",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:21:03+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695322",
+  "hisse": "KGYO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:21:04+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 25,
+   "yenilik": 12,
+   "kapsam": 14,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Hasılat %573,2 artsa da brüt kâr ve net dönem kârı zararda; bilanço açıklaması editör kuralı gereği en az 80 puan alır, silinen PAHOL satın alma özeti ise farklı bir türdür.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695323",
+  "hisse": "ALTNY",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:21:13+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695324",
+  "hisse": "GEDIK",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-09T15:21:13+00:00",
+  "mod": "golge",
+  "puan": 6,
+  "alt": {
+   "fin": 0,
+   "yenilik": 1,
+   "kapsam": 1,
+   "kesinlik": 2,
+   "ilgi": 2
+  },
+  "tur": "Şirket Genel Bilgi Formu (usulî güncelleme)",
+  "gerekce": "Hisse ve finansman bonosu kotasyon bilgilerini listeleyen rutin genel bilgi formu güncellemesi olup yeni bir finansal etki, sözleşme, temettü veya kesin bir gelişme içermiyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695331",
+  "hisse": "GRSEL",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:21:16+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 20,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "9 aylık finansal rapor editörün her zaman önemli saydığı türde; hasılat %2,7 ve esas faaliyet kârı %5,4 artarken net kâr %3,6 azaldığı için sonuçlar karışık, bu yüzden taban puana yakın tutuldu.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695341",
+  "hisse": "GRSEL",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:21:25+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695342",
+  "hisse": "KGYO",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:21:27+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695346",
+  "hisse": "GRSEL",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:21:30+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695356",
+  "hisse": "KGYO",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:21:30+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695361",
+  "hisse": "LXGYO",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:21:30+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695371",
+  "hisse": "KCHOL",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:21:30+00:00",
+  "mod": "golge",
+  "puan": 86,
+  "alt": {
+   "fin": 34,
+   "yenilik": 16,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Koç Holding'in 9 aylık net kârı 30,2 milyar TL'den 120,3 milyar TL'ye (%298,3 artış), esas faaliyet kârı %89,4 arttı; bilanço açıklaması her zaman önemli türden olup net kâr piyasa değerinin yaklaşık dörtte biri düzeyinde ve şirket BIST 30'da.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695372",
+  "hisse": "LXGYO",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:21:38+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 22,
+   "yenilik": 12,
+   "kapsam": 14,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Hasılat %35,4 düşüp brüt kâr zarara dönmüş, net zarar 224,1 milyon TL'den 148,8 milyon TL'ye gerilemiş, özkaynaklar %75,8 artmış; şirket küçük olsa da finansal sonuç bildirimi olduğu için en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
