@@ -10090,5 +10090,89 @@
   "tur": "Borçlanma aracı ihracı (tahvil)",
   "gerekce": "1,5 milyar TL'lik 728 gün vadeli kupon ödemeli tahvil ihracı, 124,5 milyar TL piyasa değerine göre küçük (yaklaşık %1,2) ve rutin bir finansman işlemi olduğundan düşük puan aldı; temettü, yeni sözleşme veya bilanço gibi her zaman önemli türlerden değil.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694887",
+  "hisse": "BMSTL",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-09T11:11:38+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 1,
+   "yenilik": 3,
+   "kapsam": 3,
+   "kesinlik": 4,
+   "ilgi": 1
+  },
+  "tur": "sürdürülebilirlik / karbon ayak izi doğrulama",
+  "gerekce": "Şirket, 2025 dönemi kurumsal karbon ayak izi hesaplamasının bağımsız kuruluşça ISO 14064-3 kapsamında doğrulandığını bildirdi; bu rutin bir sürdürülebilirlik bildirimidir ve finansal etkisi yoktur, editörün zorunlu önemli saydığı türlerin hiçbirine girmez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1694888",
+  "hisse": "ULKER",
+  "baslik": "Geleceğe Dönük Değerlendirmeler",
+  "t": "2026-11-09T11:11:43+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 28,
+   "yenilik": 16,
+   "kapsam": 17,
+   "kesinlik": 9,
+   "ilgi": 10
+  },
+  "tur": "yatırımcı sunumu / geleceğe dönük değerlendirme",
+  "gerekce": "2026 üçüncü çeyrek sonuçlarını ve revize yıl sonu beklentilerini içeren yatırımcı sunumu, editörün her zaman önemli saydığı türlerden olduğu için alt sınır olan 80 verildi; bildirimde rakam bulunmayıp yalnızca sunuma bağlantı verildiğinden puan üst banda çıkarılmadı.",
+  "durum": "paylasildi",
+  "tweet": "ULKER (Ülker Bisküvi) üçüncü çeyrek sonuçlarının özetini ve 2026 revize beklentilerini içeren yatırımcı sunumunu paylaştı.\n\nSon 4 çeyrekte hasılat 117,3 milyar TL, net kâr 2,5 milyar TL. Revize beklentiler, yönetimin yıl geneline bakışını güncelliyor.",
+  "kart": {
+   "baslik": "Üçüncü çeyrek yatırımcı sunumu",
+   "satirlar": [
+    [
+     "Hasılat, son 4 çeyrek",
+     "117,3 milyar TL"
+    ],
+    [
+     "Net kâr, son 4 çeyrek",
+     "2,5 milyar TL"
+    ],
+    [
+     "Piyasa değeri",
+     "30,8 milyar TL"
+    ],
+    [
+     "PD/DD",
+     "0,58x"
+    ],
+    [
+     "F/K",
+     "12,3x"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2119749845087129976",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1694890",
+  "hisse": "VAKBN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-09T11:12:02+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 8,
+   "yenilik": 3,
+   "kapsam": 3,
+   "kesinlik": 6,
+   "ilgi": 2
+  },
+  "tur": "Borçlanma aracı ihracı (finansman bonosu)",
+  "gerekce": "Nitelikli yatırımcıya 1,08 milyar TL'lik 91 gün vadeli finansman bonosu ihracı, 319,9 milyar TL piyasa değerine göre çok küçük ve bankanın rutin fonlama işlemi olduğundan düşük puan aldı.",
+  "durum": "dusuk"
  }
 ]
