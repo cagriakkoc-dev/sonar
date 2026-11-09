@@ -1,6 +1,133 @@
 {
- "zaman": "2026-11-09T15:48:13Z",
- "basarili": [],
- "atlandi": [],
- "hata": []
+ "zaman": "2026-11-09T17:34:07Z",
+ "basarili": [
+  {
+   "kod": "GTH",
+   "donem": "2026-10",
+   "hisse": 32,
+   "tutuyor": true,
+   "fark_yuzde": -0.0
+  },
+  {
+   "kod": "YLE",
+   "donem": "2026-10",
+   "hisse": 48,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  }
+ ],
+ "atlandi": [
+  {
+   "kod": "BDY",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "BDY",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "DAH",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "DAH",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "EID",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "EID",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "GIH",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "GIH",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "GTH",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "IHA",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "IHA",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "KHJ",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "KHJ",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "MHF",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "MHF",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "NPH",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "NPH",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "PHI",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "PHI",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "RPI",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "THF",
+   "donem": "2026-08"
+  },
+  {
+   "kod": "THF",
+   "donem": "2026-07"
+  },
+  {
+   "kod": "UPH",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "YLE",
+   "donem": "2026-09"
+  }
+ ],
+ "hata": [
+  {
+   "kod": "RPI",
+   "donem": "2026-10",
+   "hisse": 0,
+   "tutuyor": false,
+   "fark_yuzde": null
+  },
+  {
+   "kod": "UPH",
+   "donem": "2026-10",
+   "hisse": 0,
+   "tutuyor": false,
+   "fark_yuzde": null
+  }
+ ]
 }
