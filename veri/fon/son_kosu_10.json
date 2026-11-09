@@ -1,6 +1,139 @@
 {
- "zaman": "2026-11-09T15:48:05Z",
- "basarili": [],
- "atlandi": [],
- "hata": []
+ "zaman": "2026-11-09T17:34:03Z",
+ "basarili": [
+  {
+   "kod": "GIE",
+   "donem": "2026-10",
+   "hisse": 50,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "NNF",
+   "donem": "2026-10",
+   "hisse": 26,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "THD",
+   "donem": "2026-10",
+   "hisse": 26,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "YHZ",
+   "donem": "2026-10",
+   "hisse": 40,
+   "tutuyor": true,
+   "fark_yuzde": -0.0
+  }
+ ],
+ "atlandi": [
+  {
+   "kod": "BDS",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "BDS",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "BV1",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "BV1",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "EC2",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "EC2",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "GIE",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "GSP",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "GSP",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "IH1",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "IH1",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "KHC",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "KHC",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "MAC",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "MAC",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "NNF",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "PHE",
+   "donem": "2026-08"
+  },
+  {
+   "kod": "PHE",
+   "donem": "2026-07"
+  },
+  {
+   "kod": "RHS",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "THD",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "TZD",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "YHZ",
+   "donem": "2026-09"
+  }
+ ],
+ "hata": [
+  {
+   "kod": "RHS",
+   "donem": "2026-10",
+   "hisse": 0,
+   "tutuyor": false,
+   "fark_yuzde": null
+  },
+  {
+   "kod": "TZD",
+   "donem": "2026-10",
+   "hisse": 0,
+   "tutuyor": false,
+   "fark_yuzde": null
+  }
+ ]
 }
