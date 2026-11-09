@@ -1,59 +1,5 @@
 [
  {
-  "id": "kap-1692574",
-  "hisse": "MPARK",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-04T15:24:18+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1692578",
-  "hisse": "ISCTR",
-  "baslik": "İhraç Tavanına İlişkin Bildirim",
-  "t": "2026-11-04T15:24:20+00:00",
-  "mod": "golge",
-  "puan": 38,
-  "alt": {
-   "fin": 14,
-   "yenilik": 4,
-   "kapsam": 6,
-   "kesinlik": 6,
-   "ilgi": 8
-  },
-  "tur": "Borçlanma aracı ihraç tavanı / SPK başvurusu",
-  "gerekce": "İş Bankası'nın 30.10.2026'da duyurulan 135 milyar TL'lik borçlanma aracı ihraç kararı için SPK'ya başvurduğunu bildiren bu güncelleme, yeni bir bilgi içermeyen usulî bir adımdır; tutar piyasa değerinin yaklaşık %36'sı olsa da banka için rutin fonlama niteliği taşır ve onay henüz alınmamıştır.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1692580",
-  "hisse": "SEGYO",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-04T15:24:29+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1692581",
-  "hisse": "ISCTR",
-  "baslik": "İhraç Tavanına İlişkin Bildirim",
-  "t": "2026-11-04T15:24:29+00:00",
-  "mod": "golge",
-  "puan": 40,
-  "alt": {
-   "fin": 14,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 4,
-   "ilgi": 8
-  },
-  "tur": "Borçlanma aracı ihraç tavanı / SPK başvurusu",
-  "gerekce": "30 milyar TL'lik sermaye benzeri tahvil ihracı için SPK'ya başvuruldu (piyasa değerinin yaklaşık %8'i). Ancak bu, 30.10.2026 tarihli kararın usulî bir takibi; ihraç henüz kesinleşmedi ve SPK onayı bekleniyor. Bu nedenle puan orta-düşük seviyede kaldı.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1692585",
   "hisse": "MPARK",
   "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
@@ -10978,5 +10924,60 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695945",
+  "hisse": "CELHA",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T18:00:45+00:00",
+  "mod": "golge",
+  "puan": 84,
+  "alt": {
+   "fin": 30,
+   "yenilik": 12,
+   "kapsam": 17,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Finansal sonuç açıklaması editör kuralı gereği önemlidir; hasılat %8,7 azalıp 1,8 milyar TL olurken net zarar 689,5 milyon TL'ye (geçen yıl 878,5 milyon TL) geriledi, brüt zarar daraldı ancak esas faaliyet zararı sürdü ve özkaynaklar %12,9 azaldı.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695946",
+  "hisse": "CELHA",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T18:00:52+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695947",
+  "hisse": "CELHA",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T18:00:54+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695948",
+  "hisse": "SVGYO",
+  "baslik": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Değerlendirme Raporu",
+  "t": "2026-11-09T18:00:54+00:00",
+  "mod": "golge",
+  "puan": 32,
+  "alt": {
+   "fin": 5,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 7,
+   "ilgi": 4
+  },
+  "tur": "Halka arz varsayımları değerlendirme raporu",
+  "gerekce": "SPK Pay Tebliği'nin 29/5. maddesi gereği yayımlanan, halka arz fiyatı varsayımlarını değerlendiren düzenleyici bir rapordur; metinde yeni bir tutar, sözleşme, kâr payı veya rehberlik bilgisi yoktur, içerik ekte olduğundan editör kuralındaki zorunlu önemli türlere girmez.",
+  "durum": "dusuk"
  }
 ]
