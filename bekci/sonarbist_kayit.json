@@ -1,62 +1,5 @@
 [
  {
-  "id": "kap-1691942",
-  "hisse": "ANHYT",
-  "baslik": "Pay Alım Satım Bildirimi",
-  "t": "2026-11-03T16:55:01+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1691943",
-  "hisse": "GARAN",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-03T16:55:01+00:00",
-  "mod": "canli",
-  "puan": 80,
-  "alt": {
-   "fin": 26,
-   "yenilik": 16,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "Pay geri alım programı",
-  "gerekce": "GARAN, 3 yıllık program kapsamında azami 85 milyon TL nominal paya karşılık 11 milyar TL'ye kadar (piyasa değerinin yaklaşık %2,1'i) pay geri alacak; pay geri alımı editör kuralı gereği her zaman önemli sayılır ve PAHOL satın alma örneğinden farklı bir türdür.",
-  "durum": "paylasildi",
-  "tweet": "GARAN (Garanti Bankası) 4 Kasım'dan itibaren 3 yıllık pay geri alım programı başlatıyor.\n\n• Azami 85 milyon TL nominal pay\n• Fon üst sınırı 11,0 milyar TL\n\nAmaç, finansal yapıya duyulan güveni göstermek. Piyasa değeri 516,2 milyar TL, PD/DD 0,99x.",
-  "kart": {
-   "baslik": "Pay geri alım programı başladı",
-   "satirlar": [
-    [
-     "Yönetim kurulu kararı",
-     "03.11.2026"
-    ],
-    [
-     "Uygulama başlangıcı",
-     "04 Kasım 2026"
-    ],
-    [
-     "Program süresi",
-     "3 yıl"
-    ],
-    [
-     "Azami nominal pay",
-     "85.000.000 TL"
-    ],
-    [
-     "Azami fon",
-     "11,0 milyar TL"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2117661914020888594",
-  "x_gorsel_hata": null
- },
- {
   "id": "kap-1691950",
   "hisse": "AAGYO",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -11220,5 +11163,62 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695761",
+  "hisse": "KATMR",
+  "baslik": "Bağımsız Denetim Kuruluşunun Belirlenmesi",
+  "t": "2026-11-09T16:28:02+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695764",
+  "hisse": "GARAN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-09T16:28:02+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 14,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Garanti BBVA'nın 11 milyar TL azami tutarlı geri alım programı kapsamında 09.11.2026'da 2,64 milyon nominal pay (yaklaşık 389,7 milyon TL) alınmış, toplam geri alım sermayenin %0,27'sine ulaşmıştır; tutar piyasa değerine göre küçük olsa da geri alım bildirimleri editör kararıyla en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "GARAN (Garanti BBVA) 9 Kasım'da 2.635.128 lot pay geri aldı. Tutar 389.691.320,80 TL, ağırlıklı ortalama fiyat 147,8833 TL, sermayeye oranı %0,0627.\n\n3 Kasım'da başlayan programda toplam 11.259.918 lota (%0,2681) ulaşıldı. Tavan 11 milyar TL.",
+  "kart": {
+   "baslik": "Günlük pay geri alımı",
+   "satirlar": [
+    [
+     "Geri alınan pay",
+     "2.635.128 lot"
+    ],
+    [
+     "Toplam bedel",
+     "389.691.320,80 TL"
+    ],
+    [
+     "Ortalama fiyat",
+     "147,8833 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,0627"
+    ],
+    [
+     "Program toplamı",
+     "11.259.918 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2119829434735743006",
+  "x_gorsel_hata": null
  }
 ]
