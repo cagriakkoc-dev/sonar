@@ -1,70 +1,5 @@
 [
  {
-  "id": "kap-1692811",
-  "hisse": "TTKOM",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-04T17:05:55+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1692812",
-  "hisse": "TTKOM",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-04T17:05:55+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 28,
-   "yenilik": 16,
-   "kapsam": 19,
-   "kesinlik": 10,
-   "ilgi": 9
-  },
-  "tur": "finansal sonuç (3. çeyrek 2026)",
-  "gerekce": "Türk Telekom'un 2026 3. çeyrek konsolide finansal ve operasyonel sonuç bülteni ile yatırımcı sunumu duyurusu, finansal sonuç türü olduğu için en az 80 puan alır; editörün sildiği PAHOL satın alma özeti bu türle benzer olmadığından puan düşürülmedi.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "bist-bist-15636",
-  "hisse": "CVKMD",
-  "baslik": "BIST Geri Alım Endeksi Dönemsel Değişiklikleri",
-  "t": "2026-11-04T17:06:27+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 2,
-   "yenilik": 3,
-   "kapsam": 2,
-   "kesinlik": 3,
-   "ilgi": 2
-  },
-  "tur": "endeks dönemsel değişikliği",
-  "gerekce": "Borsa İstanbul'un BIST Geri Alım Endeksi'ne CVKMD'nin de aralarında olduğu çok sayıda payı eklediği rutin dönemsel endeks güncellemesidir; şirketin kendi geri alım kararı veya tutarı içermez, bu nedenle geri alım türüne girmez ve etkisi sınırlıdır.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1692814",
-  "hisse": "GARAN",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-04T17:17:11+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 14,
-   "yenilik": 15,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "GARAN'ın 11 milyar TL azami tutarlı geri alım programı kapsamında 04.11.2026'da 339,97 milyon TL'lik (sermayenin %0,0589'u) pay alınması günlük tutar olarak küçük olsa da, pay geri alımı her zaman önemli sayıldığından taban puan olan 80 uygulandı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1692827",
   "hisse": "KZGYO",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -10908,5 +10843,61 @@
   "tur": "Dava sonucu / lisans (güncelleme)",
   "gerekce": "Bağlı ortaklığın 21 MWm/15 MWe'lik güneş+depolama ön lisansına ilişkin davasında Danıştay temyizi reddetti ve karar kesinleşti; tutar belirtilmemiş, proje ENJSA'nın büyüklüğüne göre çok küçük ve olumsuz sonuç Ocak 2026'da zaten açıklanmıştı.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1696105",
+  "hisse": "ODAS",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T20:13:36+00:00",
+  "mod": "golge",
+  "puan": 88,
+  "alt": {
+   "fin": 36,
+   "yenilik": 16,
+   "kapsam": 18,
+   "kesinlik": 9,
+   "ilgi": 6
+  },
+  "tur": "Finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Finansal sonuç açıklaması editör kuralıyla en az 80 puan alır; ayrıca 9 aylık net zarar 5,2 milyar TL'ye çıkarak geçen yılın iki katından fazla olmuş, esas faaliyet kârı zarara dönmüş ve özkaynaklar %14,6 erimiş, bu da piyasa değerine (11,7 milyar TL) göre çok büyük bir olumsuz sürpriz.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1696106",
+  "hisse": "ODAS",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T20:13:43+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1696107",
+  "hisse": "ODAS",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T20:13:45+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1696108",
+  "hisse": "ODAS",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-09T20:13:45+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 32,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "Finansal sonuç açıklaması (9 aylık zarar kalemleri)",
+  "gerekce": "Şirket, 30.09.2026 dönemine ait 2,3 milyar TL ana ortaklık zararını (piyasa değerinin yaklaşık %20'si) enflasyon muhasebesi, ertelenmiş vergi, PDVSA alacağının kırdırılması ve amortisman kalemleriyle açıklıyor; bu finansal sonuç açıklaması olduğu için en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
