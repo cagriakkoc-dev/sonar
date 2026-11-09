@@ -1,5 +1,7 @@
 # Sonar otomatik akış · Claude görevi talimatı
 
+> **9 Kas 2026'dan beri kuyruk Mac'siz işleniyor:** özel depo sonar-site'taki `.github/workflows/otomatik.yml` (iki saatte bir, Türkiye 08:20–00:20) `bekci/araclar/genel/otomatik.py`'yi çalıştırır. Finansal rapor → rakam serileri (XBRL, fr_ids, dönem sonu fiyatı İş Yatırım'dan, donem_guncelle/amortisman/netborc/isletme/denetim) + dönem özeti (`genel/ozet_uret.py`, yayında) + temettü tahmini; Önemli → haber özeti (gizli; sonar-site'ta `ANTHROPIC_API_KEY` sırrı varsa Claude API ile, yoksa KAP metninden kısa taslak); kâr payı bildirimlerinde temettü tablosu elle; yatırımcı sunumu ve hayat/emeklilik şirketlerinin raporları elle (bildirim notu düşer). Kayıt 3 denemede işlenemezse "elle". "Sonar otomatik özet" zamanlanmış Claude görevi kapatıldı; aşağıdaki talimat elle çalışma için geçerli.
+
 Bu dosyayı zamanlanmış Claude görevi her çalıştığında izler. Kısa ve ucuz olmalı: iş yoksa hemen bitir.
 
 ## 0. İş var mı?
