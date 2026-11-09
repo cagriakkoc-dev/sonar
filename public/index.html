@@ -2014,14 +2014,14 @@ function summaryHTML(c){const S=c.summary;if(!S)return '';const n=S.kpis[0];
    <div class="ozt"><div><p class="ozt-h">${esc(S.headline)}</p><div class="ozt-k">${S.kpis.map(k=>`<div><span>${esc(gplain(k.k))}</span><b>${fmtMn(k.c)} TL</b><div class="dps">${dpill(k.y,k.c,'yıllık')}${dpill(k.q,k.c,'çeyreklik')}</div></div>`).join('')}</div></div>
    <button class="ozt-go" data-oz="${c.t}">Özeti aç<span>Grafikler, kalem kalem tablo, terimler${PUB?'':' ve X taslağı'} →</span></button></div></div>`}
 function bridgeSVG(B,W){
-  const rows=[{k:B.from+' net kâr',v:B.a,t:'total'},...B.steps.map(s=>({k:s[0],v:s[1],t:'d'})),{k:B.to+' net kâr',v:B.b,t:'total'}];
+  const rows=B.rows?B.rows.map(r=>({...r})):[{k:B.from+' net kâr',v:B.a,t:'total'},...B.steps.map(s=>({k:s[0],v:s[1],t:'d'})),{k:B.to+' net kâr',v:B.b,t:'total'}];
   let run=0;rows.forEach(r=>{if(r.t==='total'){r.x0=0;r.x1=r.v;run=r.v}else{r.x0=run;r.x1=run+r.v;run=r.x1}});
   const ext=rows.flatMap(r=>[r.x0,r.x1]);const tk=niceTicks(Math.min(0,...ext),Math.max(...ext),W<520?3:5);const t0=tk[0],t1=tk[tk.length-1];
-  const lw=W<520?128:190,rw=W<520?62:84,rh=W<520?30:34,mt=22,H=mt+rows.length*rh+6;const x=v=>lw+(v-t0)/(t1-t0)*(W-lw-rw);
+  const lw=B.rows?Math.min(W<520?150:300,Math.max(W<520?128:190,14+Math.max(...rows.map(r=>r.k.length))*(W<520?6.6:7.4))):W<520?128:190,rw=W<520?62:84,rh=W<520?30:34,mt=22,H=mt+rows.length*rh+6;const x=v=>lw+(v-t0)/(t1-t0)*(W-lw-rw);
   let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Net kâr değişim köprüsü">`;
   tk.forEach(t=>{s+=`<line class="gridline" x1="${x(t)}" x2="${x(t)}" y1="${mt-4}" y2="${H-4}"/><g class="axis"><text x="${x(t)}" y="${mt-8}" text-anchor="middle">${esc(fmtC(t))}</text></g>`});
   rows.forEach((r,i)=>{const y=mt+i*rh,bh=rh-12,a=Math.min(x(r.x0),x(r.x1)),w=Math.max(2,Math.abs(x(r.x1)-x(r.x0)));
-    const col=r.t==='total'?'var(--co-ui)':r.v>=0?'var(--up)':'var(--down)';
+    const col=r.sub?'color-mix(in srgb,var(--co-ui) 40%,#8a94a6)':r.t==='total'?'var(--co-ui)':r.v>=0?'var(--up)':'var(--down)';
     s+=`<text x="${lw-10}" y="${y+bh/2+10}" text-anchor="end" class="bl ${r.t==='total'?'bt':''}">${esc(r.k)}</text>`;
     s+=`<rect x="${a}" y="${y+6}" width="${w}" height="${bh}" rx="3" fill="${col}" ${r.t==='total'?'':'fill-opacity=".9"'}/>`;
     if(i<rows.length-1){const xe=x(r.x1);s+=`<line x1="${xe}" x2="${xe}" y1="${y+6+bh}" y2="${y+rh+6}" stroke="var(--muted)" stroke-dasharray="2 2"/>`}
@@ -2243,7 +2243,7 @@ function renderOzet(t,p){
     <div class="ozbasis"><span class="badge" style="color:var(--accent)">Claude ile özetlendi · ${esc(S.date)}</span><span><b>Yıllık</b> = geçen yılın aynı çeyreği (${QL(S.yago)})</span><span><b>Çeyreklik</b> = bir önceki çeyrek (${QL(S.prev)})</span><span>${esc(S.basis)}</span><span><b>Esas</b>: yıllık ${esasTag(YK)} · çeyreklik ${esasTag(QK)}${YK==='reel'?' — yıllık kıyasta iki dönem aynı fiyat esasında, enflasyon düşülmüş; çeyreklikte önceki çeyrek kendi fiyatında, enflasyon düşülmemiş.':T29(c)?' — tablolar her raporun kendi fiyat esasında; enflasyon düşülmemiş.':' — şirket TMS 29 uygulamıyor; tutarlar nominal.'}</span></div></div></section>
    <div class="ozkpis">${kp}</div>
    <div class="grid">
-    <div class="panel s12" id="ozbr"><div class="ph"><h2>Net kâr nereden geldi?</h2><div class="controls" role="group" aria-label="Karşılaştırma"><button class="chip" data-ozm="yoy">Yıllık · ${QS(S.yago)} → ${QS(S.p)}${esasTag(YK)}</button><button class="chip" data-ozm="qoq">Çeyreklik · ${QS(S.prev)} → ${QS(S.p)}${esasTag(QK)}</button></div></div>
+    <div class="panel s12" id="ozbr"><div class="ph"><h2>Net kâr nereden geldi?</h2><div class="controls" role="group" aria-label="Karşılaştırma"><button class="chip" data-ozm="yoy">Yıllık · ${QS(S.yago)} → ${QS(S.p)}${esasTag(YK)}</button><button class="chip" data-ozm="qoq">Çeyreklik · ${QS(S.prev)} → ${QS(S.p)}${esasTag(QK)}</button>${ozLvl(c,S)?`<button class="chip" data-ozm="lvl">Sıfırdan · ${QS(S.p)} hasılattan net kâra</button>`:''}</div></div>
      <div class="chart" id="ozbrc"></div><p class="oztake" id="oztake"></p><p class="note">Yeşil: kârı artıran, kırmızı: azaltan değişim (milyon TL). Kalemler gelir tablosundaki sırayla; toplamları iki net kâr arasındaki farka eşit.</p></div>
     <div class="panel s12"><div class="ph"><h2>Kalem kalem</h2><span class="sub">Altı çizili terimlere dokunun: kısa açıklama açılır.</span></div><div class="ozcards">${S.cards.map(card).join('')}</div></div>
     ${S.context?`<div class="panel s12 ozctx">${ico(S.context.icon||'globe','ic big')}<div><h2 style="margin:0 0 6px">Dönem koşulları</h2><p>${gtx(S.context.t)}</p><div class="src">Kaynak: ${lk(S.context.s)}</div></div></div>`:''}
@@ -2252,9 +2252,17 @@ function renderOzet(t,p){
   app.querySelectorAll('[data-back]').forEach(b=>b.onclick=()=>go(b.dataset.back));
   renderOzBridge(c);if(S.social)wireSocial(c);if(S.substack?.blocks)wireSubstack(c);
 }
-function renderOzBridge(c){const S=c.summary,m=state.ozm,el=$('#ozbrc');if(!el)return;
+function ozLvl(c,S){let st=bridgeSteps(c,S.p,'q');if(!st)return null;const rev=st[0]?.v;
+  const SK={'Faaliyet gider ve gelirleri (amortisman hariç)':'Faaliyet giderleri (net)','Faaliyet giderleri ve diğer faaliyet gelir/gideri':'Faaliyet giderleri (net)','Net parasal pozisyon kazancı (TMS 29)':'Parasal pozisyon','Net parasal pozisyon (TMS 29)':'Parasal pozisyon','Yatırım, finansman, vergi ve azınlık payları':'Yatırım, finansman, vergi','Diğer brüt kâr kalemleri':'Diğer brüt kâr','İştirakler, azınlık payları ve diğer':'İştirakler ve diğer','Net ücret ve komisyon gelirleri':'Ücret ve komisyon'};
+  const rows=[];let run=0;st=st.map(x=>({...x,k:SK[x.k]||x.k}));st.forEach(x=>{if(x.t==='sub'||x.t==='total'){rows.push({k:x.k,v:x.v,t:'total',sub:x.t==='sub'});run=x.v}else{rows.push({k:x.k,v:x.v,t:'d'});run+=x.v}});
+  const f=k=>st.find(x=>x.m===k)?.v,npv=st[st.length-1].v,mg=v=>v!=null&&rev>0?'%'+nf(v/rev*100,1):null;
+  const base=BANK(c)?'net faiz gelirinin':NL(c)?'kazanılmış primin':INS(c)?null:'hasılatın';
+  let tk=`${QL(S.p)} tek çeyrek: sıfırdan başlayıp gelir tablosu kalemleriyle ${fmtMn(npv)} TL net kâra.`;
+  if(base&&!BANK(c)&&!NL(c)){const g=mg(f('gross_profit')),o=mg(f('operating_profit')),n=mg(npv);if(g&&o&&n)tk+=` Marjlar: brüt kâr ${g}, esas faaliyet kârı ${o}, net kâr ${n}.`}
+  return {rows,take:tk}}
+function renderOzBridge(c){const S=c.summary,el=$('#ozbrc');if(!el)return;if(state.ozm==='lvl'&&!ozLvl(c,S))state.ozm='yoy';const m=state.ozm;
   document.querySelectorAll('[data-ozm]').forEach(b=>{b.setAttribute('aria-pressed',b.dataset.ozm===m);b.onclick=()=>{state.ozm=b.dataset.ozm;renderOzBridge(c)}});
-  el.innerHTML=bridgeSVG(S.bridge[m],Math.max(300,el.clientWidth||800));$('#oztake').innerHTML=gtx(S.bridge[m].take||'');}
+  const B=m==='lvl'?ozLvl(c,S):S.bridge[m];el.innerHTML=bridgeSVG(B,Math.max(300,el.clientWidth||800));$('#oztake').innerHTML=gtx(B.take||'');const nt=$('#ozbr .note');if(nt)nt.textContent=m==='lvl'?'Sıfırdan başlar: gelirler yeşil, giderler kırmızı; ara toplamlar (brüt kâr, esas faaliyet kârı) açık renkli, son çubuk net kâr. Milyon TL, tek çeyrek, raporlandığı fiyat esasında.':'Yeşil: kârı artıran, kırmızı: azaltan değişim (milyon TL). Kalemler gelir tablosundaki sırayla; toplamları iki net kâr arasındaki farka eşit.';}
 function subLink(c){const P=c.summary.substack&&c.summary.substack.published;return P?P.url.replace(/^https?:\/\//,''):'[Substack linki · yayından sonra]'}
 function seriReply(c,i){const L=subLink(c);return i===0?L:'Okumak için: '+L}
 function socialHTML(c){const T=c.summary.social.tweets;
