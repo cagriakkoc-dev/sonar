@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1692750",
-  "hisse": "OYAKC",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-04T16:21:08+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1692751",
-  "hisse": "OYAKC",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-04T16:21:10+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1692752",
   "hisse": "ALTNY",
   "baslik": "Yeni İş İlişkisi",
@@ -10985,6 +10967,43 @@
   },
   "tur": "Yatırımcı sunumu (3. çeyrek finansal sonuçlar)",
   "gerekce": "Şirketin 2026 3. çeyrek finansal sonuçlarına ilişkin yatırımcı sunumunun yayımlanması, editörün her zaman önemli saydığı yatırımcı sunumu ve finansal sonuç türlerine girdiği için en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1696048",
+  "hisse": "KGYO",
+  "baslik": "Portföy Sınırlamalarına Uyumun Kontrolü",
+  "t": "2026-11-09T19:28:05+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 3,
+   "yenilik": 2,
+   "kapsam": 4,
+   "kesinlik": 3,
+   "ilgi": 2
+  },
+  "tur": "Portföy sınırlamalarına uyum kontrolü (düzenleyici tablo)",
+  "gerekce": "KGYO'nun 30.09.2026 bağımsız denetim raporunda zaten yer alan portföy sınırlamaları tablosu SPK yükümlülüğü gereği usulî olarak yeniden bildirilmiş, yeni bir karar, tutar veya sürpriz içermiyor ve editörün her zaman önemli saydığı türlerden birine girmiyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1696052",
+  "hisse": "CVKMD",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-09T19:28:10+00:00",
+  "mod": "golge",
+  "puan": 84,
+  "alt": {
+   "fin": 22,
+   "yenilik": 12,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "Pay geri alımı (program sonu)",
+  "gerekce": "Bir aylık geri alım programı sona erdi: 19,58 milyon nominal pay (sermayenin %0,518'i) ortalama 12,257 TL'den toplam 239,96 milyon TL'ye (piyasa değerinin yaklaşık %0,5'i) geri alındı; adet düzeltmesi küçük olsa da pay geri alımı editör kararıyla her zaman önemli sayılır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
