@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1692827",
-  "hisse": "KZGYO",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-04T17:59:19+00:00",
-  "mod": "golge",
-  "puan": 18,
-  "alt": {
-   "fin": 6,
-   "yenilik": 2,
-   "kapsam": 3,
-   "kesinlik": 7,
-   "ilgi": 0
-  },
-  "tur": "bağlı ortaklık sermaye artırımı",
-  "gerekce": "%100 bağlı ortaklığın sermaye artırımına 19,95 milyon TL ile orantılı katılım, piyasa değerinin (4,5 milyar TL) yaklaşık %0,4'ü kadar olduğundan ve pay oranı değişmediğinden grup içi rutin bir işlemdir; temettü, sözleşme, bilanço veya geri alım gibi zorunlu yüksek puanlı türlere girmez.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1692831",
   "hisse": "TURSG",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -10897,6 +10879,25 @@
   },
   "tur": "Finansal sonuç açıklaması (9 aylık zarar kalemleri)",
   "gerekce": "Şirket, 30.09.2026 dönemine ait 2,3 milyar TL ana ortaklık zararını (piyasa değerinin yaklaşık %20'si) enflasyon muhasebesi, ertelenmiş vergi, PDVSA alacağının kırdırılması ve amortisman kalemleriyle açıklıyor; bu finansal sonuç açıklaması olduğu için en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "sunum-a257d2a090bf",
+  "hisse": "ISMEN",
+  "baslik": "Yatırımcı sunumu: Finansal sonuçlar sunumu · 30 Eylül 2026",
+  "t": "2026-11-09T22:08:05+00:00",
+  "mod": "golge",
+  "puan": 85,
+  "alt": {
+   "fin": 28,
+   "yenilik": 12,
+   "kapsam": 15,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "Yatırımcı sunumu / finansal sonuçlar",
+  "gerekce": "İş Yatırım'ın (BIST 100 üyesi) 2026/9 dönemi performans ve finansal sonuçlar yatırımcı sunumu, editör kuralı gereği sürekli önemli türdedir; sunumda Futurance Kripto satın alımı (SPK onayı bekleyen) ve makro göstergeler de yer alıyor.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
