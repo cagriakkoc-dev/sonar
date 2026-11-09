@@ -1,198 +1,5 @@
 [
  {
-  "id": "kap-1691624",
-  "hisse": "HEKTS",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-03T13:02:46+00:00",
-  "mod": "golge",
-  "durum": "hata",
-  "sebep": "RuntimeError('Claude API 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg3GTkDc8PtTSwyo8RmM\"}')"
- },
- {
-  "id": "kap-1691654",
-  "hisse": "EYGYO",
-  "baslik": "Genel Kurul İşlemlerine İlişkin Bildirim",
-  "t": "2026-11-03T13:13:21+00:00",
-  "mod": "golge",
-  "durum": "hata",
-  "sebep": "RuntimeError('Claude API 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg45PNMbu4HN6TxySZdD\"}')"
- },
- {
-  "id": "kap-1691662",
-  "hisse": "ISMEN",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-03T13:23:07+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1691690",
-  "hisse": "PAHOL",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-03T13:44:20+00:00",
-  "mod": "golge",
-  "durum": "hata",
-  "sebep": "RuntimeError('puanlama yanıtı çözülemedi: {\"puan\": 27,')"
- },
- {
-  "id": "kap-1691656",
-  "hisse": "EYGYO",
-  "baslik": "Kar Payı Dağıtım İşlemlerine İlişkin Bildirim",
-  "t": "2026-11-03T13:44:25+00:00",
-  "mod": "golge",
-  "durum": "hata",
-  "sebep": "RuntimeError('puanlama yanıtı çözülemedi: {\"puan\": 23, \"fin\": 0, \"yenilik\": 5, \"kapsam\": 10, \"kesinlik\": 6, \"ilgi\": 2, \"tur')"
- },
- {
-  "id": "kap-1691729",
-  "hisse": "OSMEN",
-  "baslik": "İhraç Tavanına İlişkin Bildirim",
-  "t": "2026-11-03T14:16:14+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "ozet-1691690-silindi",
-  "hisse": "PAHOL",
-  "baslik": "Pasifik Enerji ve Pasifik GSYO tarafından Egehidro Enerji Madencilik Sanayi ve Ticaret A.Ş'nin satın alınması hk.",
-  "t": "2026-11-03T14:33:39+00:00",
-  "mod": "canli",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "paylasildi",
-  "tweet": "Pasifik Holding grubu, Egehidro Enerji'nin tamamını 2,42 milyon dolara alıyor; %51'i Pasifik Yenilenebilir Enerji'ye, %49'u Pasifik GSYO'ya geçecek. İki hidroelektrik santralin kurulu gücü 45,7 MWe; izne bağlı 18 MWe güneş yatırımıyla hibrit yapı planlanıyor.",
-  "kap_ogesi": "toplam satışı bedeli 2.424.001 ,- Amerikan doları olarak belirlenmiştir",
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2117626345618375133",
-  "x_gorsel_hata": null,
-  "silindi": true
- },
- {
-  "id": "ozet-1691690",
-  "hisse": "PAHOL",
-  "baslik": "Pasifik Enerji ve Pasifik GSYO tarafından Egehidro Enerji Madencilik Sanayi ve Ticaret A.Ş'nin satın alınması hk.",
-  "t": "2026-11-03T14:47:01+00:00",
-  "mod": "canli",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "paylasildi",
-  "tweet": "PAHOL (Pasifik Holding), Egehidro Enerji'nin tamamını 2.424.001 dolara devralıyor; iki hidroelektrik santralin yıllık üretim kapasitesi yaklaşık 50 GWh. Tutar 16,6 milyar TL piyasa değerinin yanında sınırlı; alım yenilenebilir portföyü çeşitlendirmeyi amaçlıyor.",
-  "kap_ogesi": "toplam satışı bedeli 2.424.001 ,- Amerikan doları olarak belirlenmiştir",
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2117629702911189407",
-  "x_gorsel_hata": null
- },
- {
-  "id": "kap-1691805",
-  "hisse": "OZKGY",
-  "baslik": "Değerleme Raporu ",
-  "t": "2026-11-03T15:04:00+00:00",
-  "mod": "golge",
-  "puan": 25,
-  "alt": {
-   "fin": 7,
-   "yenilik": 5,
-   "kapsam": 5,
-   "kesinlik": 6,
-   "ilgi": 2
-  },
-  "tur": "Değerleme raporu",
-  "gerekce": "Hayat City Projesi'nin parseline ilişkin değerleme raporu bildirimi tutar veya değer içermiyor (rapor ekte), GYO'lar için rutin bir bildirim olduğundan ve editörün zorunlu önemli türlerine girmediğinden düşük puan aldı.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1691818",
-  "hisse": "OSMEN",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-03T15:14:40+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1691822",
-  "hisse": "A1CAP",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-03T15:14:40+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 2,
-   "yenilik": 3,
-   "kapsam": 2,
-   "kesinlik": 5,
-   "ilgi": 0
-  },
-  "tur": "irtibat bürosu kapatılması",
-  "gerekce": "Antalya irtibat bürosunun kapatılması ve müşteri hesaplarının genel müdürlüğe alınması, şirket büyüklüğüne oranla ihmal edilebilir bir idari/operasyonel değişikliktir; temettü, sözleşme, bilanço veya beklenti gibi her zaman önemli sayılan türlerden biri değildir.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1691823",
-  "hisse": "A1CAP",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-03T15:14:44+00:00",
-  "mod": "golge",
-  "puan": 4,
-  "alt": {
-   "fin": 0,
-   "yenilik": 1,
-   "kapsam": 1,
-   "kesinlik": 1,
-   "ilgi": 1
-  },
-  "tur": "Şirket Genel Bilgi Formu (şube/irtibat bürosu listesi)",
-  "gerekce": "Bildirim, şube ve irtibat bürolarının iletişim bilgilerini içeren usulî bir genel bilgi formu güncellemesidir; finansal etkisi, yeni bir gelişmesi veya editörce önemli sayılan bir türü yoktur.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1691852",
-  "hisse": "GWIND",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-03T15:30:18+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1691853",
-  "hisse": "GWIND",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-03T15:30:20+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1691857",
-  "hisse": "IZMDC",
-  "baslik": "Pay Alım Satım Bildirimi",
-  "t": "2026-11-03T15:30:27+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1691843",
   "hisse": "AKFGY",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -11507,5 +11314,459 @@
   "gerekce": "OSMEN 09.11.2026'da 4,99 TL fiyatla 50.000 nominal pay geri aldı ve programdaki toplam 2.538.745 adede (sermayenin %0,6325'i) ulaştı; günlük tutar küçük olsa da pay geri alımı editör kararıyla her zaman önemli türde olduğundan 80 taban puanı verildi.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695531",
+  "hisse": "DOAS",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:51:55+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695536",
+  "hisse": "OYYAT",
+  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
+  "t": "2026-11-09T15:51:56+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1695537",
+  "hisse": "AKFGY",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-09T15:51:57+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 14,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı (program tamamlandı)",
+  "gerekce": "AKFGY, 82 milyon adet (sermayenin %2,1026'sı, yaklaşık 180 milyon TL, piyasa değerinin yaklaşık %1,9'u) payı geri alarak programı azami adede ulaşıp sonlandırdı; pay geri alımı editörce her zaman önemli sayıldığından 80 puan tabanı uygulandı.",
+  "durum": "hata",
+  "sebep": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+ },
+ {
+  "id": "kap-1695537",
+  "hisse": "AKFGY",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-09T15:51:57+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 14,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı (program tamamlandı)",
+  "gerekce": "AKFGY, 82 milyon adet (sermayenin %2,1026'sı, yaklaşık 180 milyon TL, piyasa değerinin yaklaşık %1,9'u) payı geri alarak programı azami adede ulaşıp sonlandırdı; pay geri alımı editörce her zaman önemli sayıldığından 80 puan tabanı uygulandı.",
+  "durum": "hata",
+  "sebep": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+ },
+ {
+  "id": "kap-1695543",
+  "hisse": "DOAS",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-09T15:52:02+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 20,
+   "yenilik": 14,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 7
+  },
+  "tur": "kâr payı avansı kararı (dağıtılmama)",
+  "gerekce": "Yönetim Kurulu, genel kuruldan aldığı yetkiyle 2026'nın ilk 9 ayının ara dönem kârından kâr payı avansı dağıtmama kararı aldı; bu bir temettü kararı olduğu için taban puan olan 80 uygulandı, ancak yeni bir nakit çıkışı veya sürpriz içermediğinden puan tabanda kaldı.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695549",
+  "hisse": "LXGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-09T15:52:10+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 8,
+   "yenilik": 8,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Günlük alım küçük (50.000 TL nominal, yaklaşık %0,015 sermaye) olsa da toplam geri alım %1,69'a ulaştı ve pay geri alımı bildirimleri editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695552",
+  "hisse": "DOAS",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:17+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695563",
+  "hisse": "OBAMS",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:17+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "9 aylık finansal rapor editör kuralı gereği her zaman önemlidir; hasılat %8,5 azalıp 19,5 milyar TL olurken net zarar -1,5 milyar TL'den -672,8 milyon TL'ye daralmış, esas faaliyet kârı %37,9 düşmüştür.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695565",
+  "hisse": "GLRMK",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:25+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 33,
+   "yenilik": 17,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "Finansal sonuç açıklaması editörce her zaman önemli sayılan bir tür; hasılat %10,7 artarken net kârın %48,2 düşmesi sürpriz içeriyor, bu yüzden taban 80 puanın üzerinde değerlendirildi.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695570",
+  "hisse": "EUREN",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:31+00:00",
+  "mod": "golge",
+  "durum": "hata",
+  "sebep": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+ },
+ {
+  "id": "kap-1695572",
+  "hisse": "EUREN",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:35+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695586",
+  "hisse": "OBAMS",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:35+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695588",
+  "hisse": "EUREN",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:37+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695591",
+  "hisse": "GLRMK",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:38+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695596",
+  "hisse": "GLRMK",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:40+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695603",
+  "hisse": "TCELL",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:40+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 28,
+   "yenilik": 14,
+   "kapsam": 20,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "BIST 30 şirketi Turkcell'in 9 aylık bilançosunda hasılat %5,7 artarken esas faaliyet kârı %35,7 düştü ve net kâr yatay (%0,5 artış) kaldı; finansal sonuç bildirimleri editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695606",
+  "hisse": "TCELL",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:48+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695607",
+  "hisse": "YKSLN",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:50+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 33,
+   "yenilik": 18,
+   "kapsam": 17,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "finansal sonuç (9 aylık bilanço)",
+  "gerekce": "9 aylık finansal sonuç editör kuralı gereği en az 80 puan alır; hasılat %29,7 artarken esas faaliyet kârı ve net dönem kârı zarardan kâra geçti, ancak net kâr 1,5 milyon TL ile küçük ve şirket BIST 30/100 dışında.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695610",
+  "hisse": "TCELL",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:59+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695612",
+  "hisse": "YKSLN",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:52:59+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695613",
+  "hisse": "TCELL",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-09T15:53:01+00:00",
+  "mod": "golge",
+  "puan": 84,
+  "alt": {
+   "fin": 32,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "finansal sonuç (3. çeyrek 2026 basın bülteni)",
+  "gerekce": "Turkcell'in 2026 3. çeyrek UFRS finansal sonuçlarının basın bülteni olarak açıklanması, editör kuralı gereği her zaman önemli sayılan bilanço türüne girer ve BIST 30 şirketi olduğu için ilgisi yüksektir.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695614",
+  "hisse": "OBAMS",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:53:06+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695615",
+  "hisse": "YKSLN",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:53:06+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695616",
+  "hisse": "TCELL",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-09T15:53:06+00:00",
+  "mod": "golge",
+  "puan": 40,
+  "alt": {
+   "fin": 12,
+   "yenilik": 7,
+   "kapsam": 7,
+   "kesinlik": 5,
+   "ilgi": 9
+  },
+  "tur": "Borçlanma aracı ihracı (kira sertifikası/sukuk)",
+  "gerekce": "Tam sahip olunan bağlı ortaklık Superonline'ın 12 aya kadar vadeli, 8 milyar TL'ye kadar tahsisli sukuk ihracı için yönetim kurulu kararı; tutar piyasa değerinin yaklaşık %3'ü, kısa vadeli rutin finansman niteliğinde ve SPK onayına tabi olduğundan orta-düşük önemde.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695618",
+  "hisse": "YKSLN",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-09T15:53:11+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 20,
+   "yenilik": 12,
+   "kapsam": 15,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "finansal sonuç (9 aylık bilanço bülteni)",
+  "gerekce": "YKSLN'nin 01.01.2026-30.09.2026 dönemi finansal sonuç bülteni kesinleşmiş bir bilanço açıklaması olduğundan, şirket küçük ve son 4 çeyrek net kârı negatif olsa da editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695622",
+  "hisse": "TABGD",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-09T15:53:17+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 8,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "TABGD, 09.11.2026'da ortalama 203,12 TL'den 20.000 TL nominal (yaklaşık 4,06 milyon TL) pay geri aldı; toplam geri alınan 491.000 TL nominal ve sermayenin %0,1879'una ulaştı; tutar şirket büyüklüğüne göre küçük olsa da pay geri alımı her zaman önemli sayılan türler arasında olduğundan taban puan uygulandı.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695631",
+  "hisse": "AGHOL",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-09T15:53:20+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 5,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 3,
+   "ilgi": 1
+  },
+  "tur": "Finansman bonosu anapara ve kupon ödemesi",
+  "gerekce": "AGHOL'ün 700 milyon TL nominal, 364 gün vadeli finansman bonosunun anapara ve yaklaşık 282,7 milyon TL kupon ödemesi vadesinde yapıldı; şirketin 820,9 milyar TL hasılatına ve 76,7 milyar TL piyasa değerine göre küçük, rutin bir borç servisi işlemidir ve editörün zorunlu önemli saydığı türlerden biri değildir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695639",
+  "hisse": "EUREN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-09T15:53:22+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 4,
+   "yenilik": 10,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Bugünkü alım yaklaşık 4,8 milyon TL, programın toplamı ise yaklaşık 15 milyon TL ile piyasa değerinin (9,3 milyar TL) yaklaşık %0,16'sı kadar ve finansal etkisi küçük; ancak pay geri alımı bildirimleri editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695657",
+  "hisse": "DOKTA",
+  "baslik": "Finansal Rapor (2026 9 Aylık)",
+  "t": "2026-11-09T15:53:27+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 28,
+   "yenilik": 14,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Finansal sonuç (2026 9 aylık bilanço)",
+  "gerekce": "Hasılat %28 artışla 12,9 milyar TL'ye çıkarken net zarar 650,7 milyon TL'den 219,9 milyon TL'ye daralmış, esas faaliyet kârı %36,2 artmış; finansal sonuç bildirimi editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1695660",
+  "hisse": "RYGYO",
+  "baslik": "Portföy Sınırlamalarına Uyumun Kontrolü",
+  "t": "2026-11-09T15:53:32+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 3,
+   "yenilik": 2,
+   "kapsam": 3,
+   "kesinlik": 4,
+   "ilgi": 2
+  },
+  "tur": "Portföy sınırlamalarına uyum kontrolü (dönemsel usulî bildirim)",
+  "gerekce": "RYGYO'nun 30.09.2026 itibarıyla portföy sınırlamalarına uyum tablosu, GYO'lar için zorunlu dönemsel ve usulî bir bildirimdir; yeni bir karar, sözleşme veya temettü içermediğinden önemi düşüktür.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1695663",
+  "hisse": "DOKTA",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:53:37+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
+ },
+ {
+  "id": "kap-1695677",
+  "hisse": "DOKTA",
+  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:53:38+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1695680",
+  "hisse": "RYSAS",
+  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
+  "t": "2026-11-09T15:53:38+00:00",
+  "mod": "golge",
+  "durum": "fr_atlandi",
+  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
  }
 ]
