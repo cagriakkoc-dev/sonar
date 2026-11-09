@@ -1,6 +1,151 @@
 {
- "zaman": "2026-11-09T15:48:04Z",
- "basarili": [],
- "atlandi": [],
- "hata": []
+ "zaman": "2026-11-09T17:34:31Z",
+ "basarili": [
+  {
+   "kod": "BIG",
+   "donem": "2026-10",
+   "hisse": 27,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "HFO",
+   "donem": "2026-10",
+   "hisse": 18,
+   "tutuyor": true,
+   "fark_yuzde": 0.0
+  },
+  {
+   "kod": "YAS",
+   "donem": "2026-10",
+   "hisse": 15,
+   "tutuyor": true,
+   "fark_yuzde": -0.0
+  }
+ ],
+ "atlandi": [
+  {
+   "kod": "AHI",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "AHI",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "BIG",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "DMI",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "DMI",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "FUA",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "FUA",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "GMR",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "GMR",
+   "donem": "2026-08"
+  },
+  {
+   "kod": "HFO",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "HVZ",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "HVZ",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "IML",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "IML",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "KPU",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "KPU",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "MTK",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "MTK",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "OMG",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "OMG",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "PSH",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "PSH",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "TKF",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "TKF",
+   "donem": "2026-08"
+  },
+  {
+   "kod": "YAS",
+   "donem": "2026-09"
+  },
+  {
+   "kod": "ZJL",
+   "donem": "2026-09"
+  }
+ ],
+ "hata": [
+  {
+   "kod": "SRH",
+   "donem": "2025-11",
+   "neden": "RuntimeError('ek bulunamadı')"
+  },
+  {
+   "kod": "SRH",
+   "donem": "2025-10",
+   "neden": "RuntimeError('ek bulunamadı')"
+  },
+  {
+   "kod": "ZJL",
+   "donem": "2026-10",
+   "hisse": 18,
+   "tutuyor": false,
+   "fark_yuzde": -44.6224
+  }
+ ]
 }
