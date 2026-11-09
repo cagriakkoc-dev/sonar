@@ -1,0 +1,31 @@
+name: Sonar Tazelik
+# Veri tazeliği denetimi (yol haritası bölüm 13, adım 2): bekci/tazelik.py → bekci/tazelik.json; yeni bayat kalemler Telegram'a, pazartesi haftalık rapor.
+on:
+  schedule:
+    - cron: '40 5,15 * * *'   # Türkiye 08:40 ve 18:40
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: tazelik
+  cancel-in-progress: false
+jobs:
+  denetle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            bekci
+            public/index.html
+          sparse-checkout-cone-mode: false
+      - name: Denetle
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: python3 bekci/tazelik.py
+      - name: Kaydet
+        run: |
+          git config user.name "Sonar Tazelik"; git config user.email "bekci@users.noreply.github.com"
+          git add bekci/tazelik.json
+          git diff --cached --quiet || (git commit -q -m "Tazelik denetimi [skip render]" && for n in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done)
