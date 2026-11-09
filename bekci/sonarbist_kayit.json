@@ -1,43 +1,5 @@
 [
  {
-  "id": "kap-1692752",
-  "hisse": "ALTNY",
-  "baslik": "Yeni İş İlişkisi",
-  "t": "2026-11-04T16:21:10+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 20,
-   "yenilik": 10,
-   "kapsam": 6,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "Yeni iş ilişkisi / sipariş",
-  "gerekce": "Yurt içi müşteriyle 3,312 milyon EUR + KDV'lik (yaklaşık 150-160 milyon TL, son 4 çeyrek hasılatının yaklaşık %5'i) imzalı tedarik sözleşmesi, bileşenlere göre ~49 puan etse de yeni iş ilişkisi türü için 80 puan tabanı uygulandı; küçük ölçekli şirket ve tek sözleşme olduğundan tabanda bırakıldı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1692753",
-  "hisse": "OYAKC",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-04T16:21:17+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 28,
-   "yenilik": 14,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "finansal sonuç bülteni",
-  "gerekce": "OYAKC'ın 30 Eylül 2026 finansal sonuçlarına ilişkin bilgilendirme bülteni, bilanço açıklaması türünde olduğu için en az 80 puan alır; metinde rakam yer almıyor, bülten ekte.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1692754",
   "hisse": "OYAKC",
   "baslik": "Şirket Genel Bilgi Formu",
@@ -11004,6 +10966,44 @@
   },
   "tur": "Pay geri alımı (program sonu)",
   "gerekce": "Bir aylık geri alım programı sona erdi: 19,58 milyon nominal pay (sermayenin %0,518'i) ortalama 12,257 TL'den toplam 239,96 milyon TL'ye (piyasa değerinin yaklaşık %0,5'i) geri alındı; adet düzeltmesi küçük olsa da pay geri alımı editör kararıyla her zaman önemli sayılır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1696054",
+  "hisse": "GRSEL",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-09T19:39:08+00:00",
+  "mod": "golge",
+  "puan": 84,
+  "alt": {
+   "fin": 28,
+   "yenilik": 12,
+   "kapsam": 16,
+   "kesinlik": 9,
+   "ilgi": 5
+  },
+  "tur": "Finansal sonuç bilgilendirme notu",
+  "gerekce": "Şirket 2026/3. çeyrek finansal tablolarına ilişkin bilgilendirme notunu paylaştı; finansal sonuç açıklaması ve yatırımcı sunumu niteliğinde olduğundan en az 80 puan alan türler arasındadır, ancak metinde somut rakam yer almıyor.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1696056",
+  "hisse": "GRSEL",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-09T19:39:13+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 20,
+   "yenilik": 12,
+   "kapsam": 14,
+   "kesinlik": 9,
+   "ilgi": 4
+  },
+  "tur": "Yatırımcı sunumu (9 aylık finansal sonuçlar)",
+  "gerekce": "Şirket 01.01.2026-30.09.2026 dönemi finansal sonuçlarına ilişkin yatırımcı sunumunu paylaştı; yatırımcı sunumu editör kuralı gereği en az 80 puan alır, sunumun içeriği metinde yer almadığından puan alt sınıra yakın tutuldu.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
