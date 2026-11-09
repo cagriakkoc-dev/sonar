@@ -41,6 +41,7 @@
 <title>Sonar</title>
 <link rel="icon" href="/marka/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/marka/favicon.ico" sizes="any">
+<link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#0f1b33">
 <link rel="apple-touch-icon" href="/marka/apple-touch-icon.png">
 <meta name="theme-color" content="#0B2545">
 <meta property="og:title" content="Sonar">
@@ -172,7 +173,7 @@ body,button,select,table,svg text{font-variant-numeric:tabular-nums}
 .side .sec a{padding:5px 8px 5px 26px;font-size:12.5px;position:relative}
 .side .sec a::before{content:"";position:absolute;left:12px;top:50%;width:5px;height:5px;border-radius:50%;background:var(--line);transform:translateY(-50%)}
 .side .sec a.on{color:var(--fg)}.side .sec a.on::before{background:var(--co-ui)}
-.side .themebtn{margin-top:auto;align-self:flex-start}
+.side .themebtn{margin-top:auto;align-self:flex-start}.side .bellbtn{margin-top:auto;align-self:flex-start;margin-bottom:-4px}.side .bellbtn+.themebtn{margin-top:8px}
 .panel,.hero,.kpis,#macro{scroll-margin-top:72px}
 .themebtn{flex:none;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel2);color:var(--fg);padding:6px 10px;border-radius:999px;font:500 12px var(--f-body);cursor:pointer}
 .themebtn svg{width:15px;height:15px}
@@ -322,6 +323,12 @@ table.t th:first-child,table.t td:first-child{text-align:left}
 .eavg,.eact{position:absolute;top:-2px;bottom:-2px;width:0;border-left:2px dashed var(--muted)}.eact{border-left:2px solid var(--accent)}.estleg{display:flex;flex-wrap:wrap;gap:16px;font-size:12px;color:var(--muted);margin-top:8px}.estleg span{display:inline-flex;align-items:center;gap:6px}.estleg em{position:relative;display:inline-block;height:12px;top:0;bottom:auto}
 .estmini{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;color:var(--muted);margin-top:10px}.estmini b{color:var(--ink,inherit)}
 @media(max-width:560px){.estr{grid-template-columns:96px 1fr 92px;font-size:12px}}
+.pushui{display:none!important}html[data-push="1"] .pushui{display:inline-flex!important}
+.bellbtn{flex:none;position:relative;align-items:center;justify-content:center;border:1px solid var(--line);background:var(--panel2);color:var(--fg);width:34px;height:30px;border-radius:999px;cursor:pointer;margin-right:6px}.bellbtn svg{width:17px;height:17px}.bellbtn .bdot{position:absolute;top:4px;right:6px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.pushco{margin-left:12px;align-self:center;gap:6px}.pushco[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+dialog.pushdlg{border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--fg);padding:20px;max-width:440px;width:calc(100% - 32px)}dialog.pushdlg::backdrop{background:rgba(0,0,0,.45)}
+.pushdlg h2{margin:0 0 6px;font-size:19px}.pushdlg p{margin:0 0 12px;font-size:13.5px;color:var(--muted);line-height:1.5}.pushdlg label{display:flex;gap:10px;align-items:center;padding:6px 0;font-size:14px}.pushdlg fieldset{border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:0 0 12px}.pushdlg legend{font-size:12px;color:var(--muted);padding:0 4px}
+.pushdlg .ptk{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px}.pushdlg .ptk button{border:1px solid var(--line);background:var(--panel2);color:var(--fg);border-radius:999px;padding:3px 10px;font:600 12px var(--f-body);cursor:pointer}.pushdlg .pbtns{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap}.pushdlg .pst{min-height:18px;font-size:13px;margin:8px 0 0}
 .ozc{border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:12px;background:var(--panel);min-width:0}.ozc header{display:flex;gap:12px;align-items:center}.ozc h3{margin:0;font-size:17px}.ozc>p{margin:0;font-size:14.5px;line-height:1.65}
 .ozt-tb{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}.ozt-tb th{font-size:11px;font-weight:600;color:var(--muted);text-align:right;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:bottom;white-space:nowrap}.ozt-tb th small{display:block;font-weight:500;font-size:10px}.ozt-tb th:first-child,.ozt-tb td:first-child{text-align:left;white-space:normal;min-width:150px}.ozt-tb td{text-align:right;padding:7px 8px;border-bottom:1px solid color-mix(in srgb,var(--line) 60%,transparent);white-space:nowrap}.ozt-tb .cur{font-weight:700;background:color-mix(in srgb,var(--co-ui) 7%,transparent)}.ozt-tb tr.b td{font-weight:700;border-top:1.5px solid var(--line)}.ozt-tb .dp{flex-direction:row}
 .gx{font-size:10px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:2px;vertical-align:1px}
@@ -573,6 +580,7 @@ a.nava:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
     <div id="srchtop" class="srchhost"></div>
     <nav class="tickers" id="tickers" role="tablist" aria-label="Sayfalar"></nav>
     <button class="menubtn" id="menubtn" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="side"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+<button class="bellbtn pushui" id="bellbtn" type="button" aria-label="Bildirim ayarları" title="Bildirimler"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><i class="bdot" hidden></i></button>
     <button class="themebtn" id="themebtn" type="button" aria-label="Açık / koyu tema"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M5.2 18.8l1.6-1.6M17.2 6.8l1.6-1.6"/></g></svg><span id="themelbl">Açık tema</span></button>
   </div>
 </header>
@@ -956,7 +964,7 @@ function heroHTML(c,k){
   const tot=Object.values(k).reduce((a,b)=>a+b,0),filled=tot-k.na;const done=filled-k.pend;
   const P=c.periods;
   return `<section class="hero"><div><div class="eyebrow">${esc(c.t)} · ${esc(c.sector)} · ${QL(P[0])} – ${QL(P[P.length-1])}</div>
-  <div class="hname"><span class="logo"><img src="${LOGOS[c.t]}" alt="${esc(c.name)} logosu"></span><h1><span>${esc(c.name)}</span></h1></div><p class="intro">${esc(c.intro||'')}</p></div>
+  <div class="hname"><span class="logo"><img src="${LOGOS[c.t]}" alt="${esc(c.name)} logosu"></span><h1><span>${esc(c.name)}</span></h1><button class="chip pushui pushco" data-pushco="${c.t}" type="button"></button></div><p class="intro">${esc(c.intro||'')}</p></div>
   <div class="integrity dev"><h3>Veri bütünlüğü</h3><div class="big">${done}<small> / ${filled} hücre dolu · ${k.na} hücre kural gereği yok</small></div>
   <div class="pbar">${Object.keys(PROV).map(p=>k[p]?`<i style="width:${k[p]/tot*100}%;background:${p==='na'?'repeating-linear-gradient(45deg,var(--p-na) 0 2px,transparent 2px 4px)':PROV[p][1]}" title="${PROV[p][0]}: ${k[p]}"></i>`:'').join('')}</div>
   <div class="legend">${legendHTML(k)}</div></div></section>`;
@@ -2047,6 +2055,47 @@ function renderEst(c,S){const el=$('#ozestb');if(!el)return;const E=c.est[S.p],f
    <div class="estleg"><span><em class="eavg"></em>Ortalama</span>${act!=null?'<span><em class="eact"></em>Açıklanan</span><span>Sağdaki yüzde: açıklanan rakamın o kurumun tahminine göre farkı</span>':''}</div>`}
 function estMini(c,S){const E=c.est?.[S.p];if(!E?.np?.length)return '';const st=estStat(E.np),act=estAct(c,S.p,'np',S);if(!st)return '';const dv=estDev(act,st.avg);
   return `<div class="estmini"><span>Aracı kurum beklentisi (net kâr, ${st.n} kurum ortalaması): <b>${fmtMn(st.avg)} TL</b></span>${estPill(dv)}</div>`}
+
+/* ---------- tarayıcı bildirimleri (Web Push; worker/index.js, sw.js) ---------- */
+const PUSHOK=('serviceWorker' in navigator)&&('PushManager' in window)&&('Notification' in window);
+let PUSHCFG=null;
+const PKIND={ozet:'Yeni dönem özeti',haber:'Önemli KAP haberleri',temettu:'Temettü önerisi ve kararları',yazi:'Karşılaştırma ve analiz yazıları'};
+async function pushCfg(){if(PUSHCFG!==null)return PUSHCFG;try{const r=await fetch('/push.json',{cache:'no-cache'});PUSHCFG=r.ok?await r.json():false}catch(e){PUSHCFG=false}return PUSHCFG}
+function pushTop(){try{return JSON.parse(localStorage.getItem('sonar_bildirim')||'null')}catch(e){return null}}
+function pushTopSet(t){try{t?localStorage.setItem('sonar_bildirim',JSON.stringify(t)):localStorage.removeItem('sonar_bildirim')}catch(e){}}
+function pushU8(b){b=b.replace(/-/g,'+').replace(/_/g,'/');while(b.length%4)b+='=';const r=atob(b);return Uint8Array.from(r,c=>c.charCodeAt(0))}
+async function pushSave(t){const C=await pushCfg();if(!C||!C.api)return 'hata';
+  if(!t.all&&!t.tickers.length){await pushOff();return 'kapali'}
+  if(Notification.permission==='denied')return 'izin';
+  if(Notification.permission!=='granted'){const p=await Notification.requestPermission();if(p!=='granted')return 'izin'}
+  try{const reg=await navigator.serviceWorker.register('/sw.js');await navigator.serviceWorker.ready;let sub=await reg.pushManager.getSubscription();
+    if(!sub){const k=(await (await fetch(C.api+'/vapid')).json()).key;sub=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:pushU8(k)})}
+    const r=await fetch(C.api+'/abone',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sub:sub.toJSON(),topics:t})});if(!r.ok)return 'hata';
+    pushTopSet(t);pushSync();return 'ok'}catch(e){return 'hata'}}
+async function pushOff(){const C=await pushCfg();try{const reg=await navigator.serviceWorker.getRegistration('/sw.js');const sub=reg&&await reg.pushManager.getSubscription();
+  if(sub){try{await fetch(C.api+'/iptal',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({endpoint:sub.endpoint})})}catch(e){}await sub.unsubscribe()}}catch(e){}pushTopSet(null);pushSync()}
+const PMSG={izin:'Tarayıcı bildirim iznini engellemiş. Adres çubuğundaki site ayarlarından izin verip tekrar deneyin.',hata:'Kaydedilemedi; biraz sonra tekrar deneyin.',ok:'Kaydedildi. Bildirimler bu tarayıcıya gelecek.',kapali:'Bildirimler kapatıldı.'};
+function pushSync(){const T=pushTop(),on=!!T&&(T.all||T.tickers.length);const d=(window.__bell||document.getElementById('bellbtn'))?.querySelector('.bdot');if(d)d.hidden=!on;
+  document.querySelectorAll('[data-pushco]').forEach(b=>{const f=!!T&&T.tickers.includes(b.dataset.pushco);b.setAttribute('aria-pressed',f);b.innerHTML=(f?'🔔 Bildirimler açık':'🔔 Bildirim al');b.title=f?'Bu şirketin bildirimlerini kapat':'Bu şirketin dönem özeti, KAP haberi, temettü ve yazı bildirimlerini al'})}
+function pushDlg(){let d=$('#pushdlg');if(!d){d=document.createElement('dialog');d.id='pushdlg';d.className='pushdlg';document.body.appendChild(d)}
+  const T=pushTop()||{all:false,kinds:Object.keys(PKIND),tickers:[]},ios=/iP(hone|ad|od)/.test(navigator.userAgent)&&!matchMedia('(display-mode: standalone)').matches;
+  d.innerHTML=`<h2>Bildirimler</h2><p>Sonar'da yeni içerik yayımlanınca bu tarayıcıya bildirim gelir. Kişisel bilgi istenmez; abonelik yalnız bu tarayıcıyı tanır, istediğiniz an kapatabilirsiniz.</p>
+   ${ios?'<p><b>iPhone/iPad:</b> önce paylaş menüsünden "Ana Ekrana Ekle" ile Sonar\'ı ekleyin, sonra oradan açıp bildirimleri açın.</p>':''}
+   <fieldset><legend>Ne zaman?</legend>${Object.entries(PKIND).map(([k,l])=>`<label><input type="checkbox" data-pk="${k}" ${T.kinds.includes(k)?'checked':''}> ${l}</label>`).join('')}</fieldset>
+   <fieldset><legend>Hangi şirketler?</legend><label><input type="checkbox" id="pall" ${T.all?'checked':''}> Tüm şirketler</label><div style="font-size:12.5px;color:var(--muted);margin-top:4px">Ya da yalnız takip ettikleriniz (şirket sayfasındaki "Bildirim al" düğmesi):</div>
+   <div class="ptk">${T.tickers.length?T.tickers.map(t=>`<button type="button" data-prm="${t}" title="Çıkar">${t} ×</button>`).join(''):'<span style="font-size:12.5px;color:var(--muted)">Henüz şirket seçilmedi.</span>'}</div></fieldset>
+   <div class="pbtns"><button class="chip" id="pkapat" type="button">Bildirimleri kapat</button><span><button class="chip" id="pvazgec" type="button">Vazgeç</button> <button class="chip" id="pkaydet" type="button" style="border-color:var(--accent);color:var(--accent)">Kaydet</button></span></div><p class="pst" id="pst"></p>`;
+  const st=m=>{$('#pst').textContent=PMSG[m]||m};
+  d.querySelectorAll('[data-prm]').forEach(b=>b.onclick=()=>{T.tickers=T.tickers.filter(x=>x!==b.dataset.prm);b.remove()});
+  $('#pvazgec').onclick=()=>d.close();
+  $('#pkapat').onclick=async()=>{await pushOff();st('kapali')};
+  $('#pkaydet').onclick=async()=>{const t={all:$('#pall').checked,kinds:[...d.querySelectorAll('[data-pk]:checked')].map(x=>x.dataset.pk),tickers:T.tickers};
+    if(!t.kinds.length){st('En az bir bildirim türü seçin.');return}if(!t.all&&!t.tickers.length){st('"Tüm şirketler"i seçin ya da şirket sayfalarından takip edin.');return}st('Kaydediliyor…');st(await pushSave(t))};
+  d.showModal()}
+async function pushInit(){if(!PUSHOK)return;const C=await pushCfg();if(!C||!C.api)return;document.documentElement.dataset.push='1';pushSync();
+  const bb=window.__bell||(window.__bell=document.getElementById('bellbtn'));if(bb)bb.onclick=pushDlg;
+  document.addEventListener('click',async e=>{const b=e.target.closest&&e.target.closest('[data-pushco]');if(!b)return;const t0=b.dataset.pushco,T=pushTop()||{all:false,kinds:Object.keys(PKIND),tickers:[]};
+    const on=T.tickers.includes(t0);T.tickers=on?T.tickers.filter(x=>x!==t0):[...T.tickers,t0];b.textContent='…';const r=await pushSave(T);pushSync();if(r!=='ok'&&r!=='kapali'){b.title=PMSG[r]||'';if(r==='izin')pushDlg()}})}
 function bridgeSVG(B,W){
   const rows=B.rows?B.rows.map(r=>({...r})):[{k:B.from+' net kâr',v:B.a,t:'total'},...B.steps.map(s=>({k:s[0],v:s[1],t:'d'})),{k:B.to+' net kâr',v:B.b,t:'total'}];
   let run=0;rows.forEach(r=>{if(r.t==='total'){r.x0=0;r.x1=r.v;run=r.v}else{r.x0=run;r.x1=run+r.v;run=r.x1}});
@@ -2233,7 +2282,9 @@ function renderHakkinda(){document.documentElement.style.setProperty('--co','var
    <h2>Yasal uyarı</h2>
    <p class="yu">Burada yer alan yatırım bilgi, yorum ve tavsiyeleri yatırım danışmanlığı kapsamında değildir. Yatırım danışmanlığı hizmeti; aracı kurumlar, portföy yönetim şirketleri, mevduat kabul etmeyen bankalar ile müşteri arasında imzalanacak yatırım danışmanlığı sözleşmesi çerçevesinde sunulmaktadır. Burada yer alan yorum ve tavsiyeler, yorum ve tavsiyede bulunanların kişisel görüşlerine dayanmaktadır. Bu görüşler mali durumunuz ile risk ve getiri tercihlerinize uygun olmayabilir. Bu nedenle, sadece burada yer alan bilgilere dayanılarak yatırım kararı verilmesi beklentilerinize uygun sonuçlar doğurmayabilir.</p>
    <p>Veriler özenle derlenir ancak doğruluğu ve güncelliği garanti edilmez; resmî kaynak KAP'tır. Sonar, bu verilerin kullanımından doğabilecek zararlardan sorumlu tutulamaz.</p>
-   <h2>Çerezler ve iletişim</h2>
+   <h2>Bildirimler</h2>
+   <p>Bildirimleri yalnız siz açarsanız (zil düğmesi ya da şirket sayfasındaki "Bildirim al") tarayıcınız izin ister. Abonelik kaydında ad, e-posta gibi kişisel bilgi yoktur: yalnız tarayıcının bildirim adresi ve seçtiğiniz türler/şirketler Cloudflare üzerinde saklanır, yalnız Sonar bildirimleri için kullanılır. "Bildirimleri kapat" ile ya da tarayıcı ayarlarından izni kaldırarak kayıt silinir.</p>
+<h2>Çerezler ve iletişim</h2>
    <p>Site, yalnız onay verirseniz Google Analytics çerezleri kullanır; reklam ve kişiselleştirme yoktur. Tercihinizi sayfanın altındaki "Çerez tercihleri" bağlantısından değiştirebilirsiniz. Hatalı bir veri görürseniz <a href="https://x.com/SmartCuzdan" target="_blank" rel="noopener">X'te @SmartCuzdan</a> hesabına yazabilirsiniz.</p>
   </article>`}
 function renderOzetIndex(){COS.forEach(c=>setSum(c));
@@ -2472,14 +2523,14 @@ function renderSide(){
   <div><h5>Görünümler</h5><nav>${KARS.map(K=>`<button class="sl" data-v="KARS-${K.id}" aria-current="${v==='KARS-'+K.id}"><i class="dot" style="background:${BY[K.a].color}"></i>${K.a}–${K.b} ${K.p.slice(0,4)}/${+K.p.slice(5,7)}<small>yazı</small></button>`).join('')}<button class="sl" data-v="KARSILASTIR" aria-current="${v==='KARSILASTIR'}">Karşılaştır</button><button class="sl dev" data-v="DENETIM" aria-current="${v==='DENETIM'}">Veri denetimi</button></nav></div>
   <div><h5>Bu sayfada</h5><nav class="sec">${secs.map(([id,t])=>`<a href="#${id}" data-sec="${id}">${esc(t)}</a>`).join('')}</nav></div>`;
   if(!SRCH_SIDE)SRCH_SIDE=makeSearch();el.querySelector('.brand')?.after(SRCH_SIDE);{const inp=SRCH_SIDE.querySelector('input');if(inp&&!inp.dataset.sf){inp.dataset.sf=1;inp.addEventListener('input',()=>sideFilter(inp.value))}if(inp&&inp.value)sideFilter(inp.value)}
-  const tb=$('#themebtn');if(tb)el.appendChild(tb);const mc=$('#mclose');if(mc)mc.onclick=()=>menuSet(false);
+  const tb=window.__theme||(window.__theme=document.getElementById('themebtn'));if(tb)el.appendChild(tb);{const bb=window.__bell||(window.__bell=document.getElementById('bellbtn'));if(bb){tb?tb.before(bb):el.appendChild(bb)}}const mc=$('#mclose');if(mc)mc.onclick=()=>menuSet(false);
   el.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>go(b.dataset.v));
   el.querySelectorAll('[data-sec]').forEach(a=>a.onclick=e=>{e.preventDefault();menuSet(false);document.getElementById(a.dataset.sec)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})});
   spy();
 }
 function spy(){const links=[...document.querySelectorAll('#side [data-sec]')];if(!links.length)return;let cur=links[0].dataset.sec;for(const a of links){const t=document.getElementById(a.dataset.sec);if(t&&t.getBoundingClientRect().top<140)cur=a.dataset.sec}links.forEach(a=>a.classList.toggle('on',a.dataset.sec===cur))}
 addEventListener('scroll',()=>requestAnimationFrame(spy),{passive:true});
-addEventListener('resize',()=>{const tb=$('#themebtn'),side=$('#side'),rail=$('.rail .wrap');if(!tb)return;if(matchMedia('(min-width:1100px)').matches){if(tb.parentElement!==side)side.appendChild(tb)}else if(tb.parentElement!==rail)rail.appendChild(tb)});
+addEventListener('resize',()=>{const tb=$('#themebtn'),side=$('#side'),rail=$('.rail .wrap');if(!tb)return;if(matchMedia('(min-width:1100px)').matches){if(tb.parentElement!==side)side.appendChild(tb)}else if(tb.parentElement!==rail)rail.appendChild(tb);const bb=window.__bell||document.getElementById('bellbtn');if(bb&&bb.nextElementSibling!==tb)tb.before(bb)});
 /* ---------- ana sayfa filtresi ---------- */
 const HF=(()=>{let o={};try{o=JSON.parse(localStorage.getItem('sonar-hf')||'{}')}catch(e){}const u=new URLSearchParams(location.search);
   if(u.has('q')||u.has('sek')||u.has('fav')||u.has('son')||u.has('sira')||u.has('gor'))o={q:u.get('q')||'',sek:(u.get('sek')||'').split(',').filter(Boolean),fav:u.get('fav')==='1',son:u.get('son')==='1',sira:u.get('sira')||'sektor',gor:u.get('gor')||'kart'};
@@ -2747,10 +2798,11 @@ function fonKutu(t){if(!FONV){fonYukle();return}const L=FONV.hisse?.[t];if(!L||!
   el.querySelectorAll('[data-go]').forEach(b=>b.onclick=e=>{if(navKey(e))return;e.preventDefault();go(b.dataset.go)});
   app.appendChild(el)}
 
-function render(){fxOff();const v=state.view;const _mc=$('#macro');if(_mc)_mc.hidden=(v==='GIRIS'||v==='FON'||v.startsWith('FON-'));if(v==='GIRIS')renderGiris();else if(v==='HISSE')renderHome();else if(v==='FON')renderFonIndex();else if(v.startsWith('FON-'))renderFon(v.slice(4));else if(v==='HABERLER'||v.startsWith('HABERLER-'))renderHaberler(v.split('-')[1]||'');else if(v.startsWith('HABER-'))renderHaber(v.split('-')[1],v.split('-')[2]);else if(v==='OZET')renderOzetIndex();else if(v.startsWith('KARS-'))renderKars(v.slice(5));else if(v.startsWith('YAZI-'))renderYazi(v.slice(5));else if(v.startsWith('OZET-'))renderOzet(v.slice(5,v.length).split('-')[0],v.slice(5).split('-').slice(1).join('-'));else if(v==='KARSILASTIR')renderCompare();else if(v==='DUYURU')renderDuyurular();else if(v==='HAKKINDA')renderHakkinda();else if(v.startsWith('SEKTOR-'))renderSector(v.slice(7));else if(v==='DENETIM')(PUB?renderHome():renderAudit());else{renderCompany(BY[v]);fonKutu(v)}renderSide()}
+function render(){fxOff();const v=state.view;const _mc=$('#macro');if(_mc)_mc.hidden=(v==='GIRIS'||v==='FON'||v.startsWith('FON-'));if(v==='GIRIS')renderGiris();else if(v==='HISSE')renderHome();else if(v==='FON')renderFonIndex();else if(v.startsWith('FON-'))renderFon(v.slice(4));else if(v==='HABERLER'||v.startsWith('HABERLER-'))renderHaberler(v.split('-')[1]||'');else if(v.startsWith('HABER-'))renderHaber(v.split('-')[1],v.split('-')[2]);else if(v==='OZET')renderOzetIndex();else if(v.startsWith('KARS-'))renderKars(v.slice(5));else if(v.startsWith('YAZI-'))renderYazi(v.slice(5));else if(v.startsWith('OZET-'))renderOzet(v.slice(5,v.length).split('-')[0],v.slice(5).split('-').slice(1).join('-'));else if(v==='KARSILASTIR')renderCompare();else if(v==='DUYURU')renderDuyurular();else if(v==='HAKKINDA')renderHakkinda();else if(v.startsWith('SEKTOR-'))renderSector(v.slice(7));else if(v==='DENETIM')(PUB?renderHome():renderAudit());else{renderCompany(BY[v]);fonKutu(v)}renderSide();if(document.documentElement.dataset.push)pushSync()}
 /* mobilde kaydırırken adres çubuğu açılıp kapanınca yalnız yükseklik değişir: o durumda sayfa yeniden çizilmez (aksi halde içerik zıplıyordu). Yalnız genişlik değişince (döndürme, pencere) çizilir. */
 let rT,rW=innerWidth;addEventListener('resize',()=>{if(Math.abs(innerWidth-rW)<2)return;rW=innerWidth;clearTimeout(rT);rT=setTimeout(render,200)});
 document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('.brand'))go('GIRIS')});
+pushInit();
 (function themeInit(){const root=document.documentElement,btn=$('#themebtn'),lbl=$('#themelbl');
   const isDark=()=>root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
   const sync=()=>{lbl.textContent=isDark()?'Açık tema':'Koyu tema';btn.setAttribute('aria-pressed',String(!isDark()))};
