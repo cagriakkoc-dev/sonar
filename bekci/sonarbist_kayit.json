@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1693047",
-  "hisse": "ISMEN",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-05T09:26:35+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
   "id": "kap-1693067",
   "hisse": "ENJSA",
   "baslik": "Kredi Derecelendirmesi",
@@ -10977,5 +10968,24 @@
   "goruntu_hata": null,
   "tweet_id": "2120204558479622583",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1696751",
+  "hisse": "EKDMR",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-10T17:39:56+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 10,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "10.11.2026'da ortalama 24,06 TL'den 103.848 adet (sermayenin %0,03'ü, yaklaşık 2,5 milyon TL) geri alınmış, program toplamı 2.931.537 adede (%0,9161) ulaşmış; tutar piyasa değerine göre küçük olsa da pay geri alımı editör kararıyla en az 80 puan alan türdür.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
