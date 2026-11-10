@@ -1,14 +1,6 @@
 {
- "zaman": "2026-11-10T15:40:25Z",
- "basarili": [
-  {
-   "kod": "GMR",
-   "donem": "2026-10",
-   "hisse": 37,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  }
- ],
+ "zaman": "2026-11-10T21:50:12Z",
+ "basarili": [],
  "atlandi": [
   {
    "kod": "AHI",
@@ -41,6 +33,10 @@
   {
    "kod": "FUA",
    "donem": "2026-09"
+  },
+  {
+   "kod": "GMR",
+   "donem": "2026-10"
   },
   {
    "kod": "GMR",
@@ -131,11 +127,6 @@
   {
    "kod": "SRH",
    "donem": "2025-11",
-   "neden": "RuntimeError('ek bulunamadı')"
-  },
-  {
-   "kod": "SRH",
-   "donem": "2025-10",
    "neden": "RuntimeError('ek bulunamadı')"
   }
  ]
