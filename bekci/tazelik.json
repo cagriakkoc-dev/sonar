@@ -1,13 +1,14 @@
 {
- "zaman": "2026-11-10 16:46",
- "beklenen_donem": "2026-06",
+ "zaman": "2026-11-11 00:26",
+ "beklenen_donem": "2026-09",
  "ozet": {
   "sirket": 187,
-  "guncel": 187,
-  "bekleyen_kuyruk": 0,
+  "guncel": 178,
+  "bekleyen_kuyruk": 1,
   "elle": 0,
   "sorun": {
-   "gösterge": 25
+   "gösterge": 25,
+   "rakam": 9
   }
  },
  "sorunlar": [
@@ -40,6 +41,24 @@
    "tur": "gösterge",
    "t": "OYYAT",
    "metin": "OYYAT: 1 sektöre özgü gösterge 2026-06'de kaldı (Yönetilen portföy büyüklüğü)"
+  },
+  {
+   "k": "fin:TERA:2026-09",
+   "tur": "rakam",
+   "t": "TERA",
+   "metin": "TERA: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
+   "k": "fin:AYES:2026-09",
+   "tur": "rakam",
+   "t": "AYES",
+   "metin": "AYES: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
+   "k": "fin:DOGUB:2026-09",
+   "tur": "rakam",
+   "t": "DOGUB",
+   "metin": "DOGUB: son dönem 2026-06, beklenen 2026-09"
   },
   {
    "k": "kpi:AKFYE:2026-09",
@@ -84,6 +103,18 @@
    "metin": "CWENE: 2 sektöre özgü gösterge 2026-06'de kaldı (Güneş hücresi üretim kapasitesi, Güneş paneli üretim kapasitesi)"
   },
   {
+   "k": "fin:MRGYO:2026-09",
+   "tur": "rakam",
+   "t": "MRGYO",
+   "metin": "MRGYO: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
+   "k": "fin:PEKGY:2026-09",
+   "tur": "rakam",
+   "t": "PEKGY",
+   "metin": "PEKGY: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
    "k": "kpi:PGSUS:2026-09",
    "tur": "gösterge",
    "t": "PGSUS",
@@ -102,10 +133,22 @@
    "metin": "OTKAR: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi)"
   },
   {
+   "k": "fin:BFREN:2026-09",
+   "tur": "rakam",
+   "t": "BFREN",
+   "metin": "BFREN: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
    "k": "kpi:BIMAS:2026-09",
    "tur": "gösterge",
    "t": "BIMAS",
    "metin": "BIMAS: 4 sektöre özgü gösterge 2026-06'de kaldı (Benzer mağaza satış büyümesi · tek çeyrek, FİLE online satış payı, Mağaza sayısı (grup toplamı)…)"
+  },
+  {
+   "k": "fin:MAVI:2026-09",
+   "tur": "rakam",
+   "t": "MAVI",
+   "metin": "MAVI: son dönem 2026-06, beklenen 2026-09"
   },
   {
    "k": "kpi:MGROS:2026-09",
@@ -142,6 +185,18 @@
    "tur": "gösterge",
    "t": "TCELL",
    "metin": "TCELL: 5 sektöre özgü gösterge 2026-06'de kaldı (Fiber abone sayısı, Mobil ARPU (bileşik) · tek çeyrek, Mobil faturalı abone sayısı…)"
+  },
+  {
+   "k": "fin:BASCM:2026-09",
+   "tur": "rakam",
+   "t": "BASCM",
+   "metin": "BASCM: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
+   "k": "fin:BTCIM:2026-09",
+   "tur": "rakam",
+   "t": "BTCIM",
+   "metin": "BTCIM: son dönem 2026-06, beklenen 2026-09"
   },
   {
    "k": "kpi:ENKAI:2026-09",
@@ -2299,30 +2354,14 @@
   }
  ],
  "yeni": [
-  "kpi:GEDIK:2026-09",
-  "kpi:GLBMD:2026-09",
-  "kpi:INFO:2026-09",
-  "kpi:ISMEN:2026-09",
-  "kpi:OYYAT:2026-09",
-  "kpi:AKFYE:2026-09",
-  "kpi:AKSEN:2026-09",
-  "kpi:CANTE:2026-09",
-  "kpi:GWIND:2026-09",
-  "kpi:ODAS:2026-09",
-  "kpi:ASTOR:2026-09",
-  "kpi:CWENE:2026-09",
-  "kpi:PGSUS:2026-09",
-  "kpi:KCHOL:2026-09",
-  "kpi:OTKAR:2026-09",
-  "kpi:BIMAS:2026-09",
-  "kpi:MGROS:2026-09",
-  "kpi:SOKM:2026-09",
-  "kpi:AYGAZ:2026-09",
-  "kpi:PETKM:2026-09",
-  "kpi:ALTNY:2026-09",
-  "kpi:TCELL:2026-09",
-  "kpi:ENKAI:2026-09",
-  "kpi:GLRMK:2026-09",
-  "kpi:TKFEN:2026-09"
+  "fin:TERA:2026-09",
+  "fin:AYES:2026-09",
+  "fin:DOGUB:2026-09",
+  "fin:MRGYO:2026-09",
+  "fin:PEKGY:2026-09",
+  "fin:BFREN:2026-09",
+  "fin:MAVI:2026-09",
+  "fin:BASCM:2026-09",
+  "fin:BTCIM:2026-09"
  ]
 }
