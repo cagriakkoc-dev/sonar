@@ -1,21 +1,6 @@
 {
- "zaman": "2026-11-09T17:34:11Z",
- "basarili": [
-  {
-   "kod": "ENJ",
-   "donem": "2026-10",
-   "hisse": 27,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  },
-  {
-   "kod": "MPS",
-   "donem": "2026-10",
-   "hisse": 24,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  }
- ],
+ "zaman": "2026-11-10T00:15:30Z",
+ "basarili": [],
  "atlandi": [
   {
    "kod": "ADP",
@@ -43,6 +28,10 @@
   },
   {
    "kod": "ENJ",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "ENJ",
    "donem": "2026-09"
   },
   {
@@ -79,7 +68,15 @@
   },
   {
    "kod": "MPS",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "MPS",
    "donem": "2026-09"
+  },
+  {
+   "kod": "OHB",
+   "donem": "2026-10"
   },
   {
    "kod": "OHB",
@@ -126,13 +123,5 @@
    "donem": "2026-09"
   }
  ],
- "hata": [
-  {
-   "kod": "OHB",
-   "donem": "2026-10",
-   "hisse": 0,
-   "tutuyor": false,
-   "fark_yuzde": null
-  }
- ]
+ "hata": []
 }
