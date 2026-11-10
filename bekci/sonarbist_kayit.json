@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1693067",
-  "hisse": "ENJSA",
-  "baslik": "Kredi Derecelendirmesi",
-  "t": "2026-11-05T09:58:07+00:00",
-  "mod": "golge",
-  "puan": 22,
-  "alt": {
-   "fin": 2,
-   "yenilik": 3,
-   "kapsam": 5,
-   "kesinlik": 7,
-   "ilgi": 5
-  },
-  "tur": "kredi derecelendirmesi",
-  "gerekce": "Fitch'in Enerjisa'nın Ulusal Uzun Vadeli notunu A(tur) ve Stabil görünümle aynen koruduğu, yani değişiklik içermeyen rutin bir teyit bildirimi; editörün öncelikli türlerinden hiçbirine girmiyor.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1693068",
   "hisse": "EKGYO",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -10987,5 +10969,53 @@
   "gerekce": "10.11.2026'da ortalama 24,06 TL'den 103.848 adet (sermayenin %0,03'ü, yaklaşık 2,5 milyon TL) geri alınmış, program toplamı 2.931.537 adede (%0,9161) ulaşmış; tutar piyasa değerine göre küçük olsa da pay geri alımı editör kararıyla en az 80 puan alan türdür.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1696756",
+  "hisse": "LXGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-10T19:03:55+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "Pay geri alım programı kapsamında 10.11.2026'da 150.000 nominal pay yaklaşık 5,497 TL'den (yaklaşık 0,82 milyon TL) geri alındı, toplam geri alınan pay sermayenin %1,74'üne ulaştı; pay geri alımı editör kararıyla her zaman önemli türdendir.",
+  "durum": "paylasildi",
+  "tweet": "LXGYO (Luxera GYO) geri alım programını sürdürdü. 10 Kasım'da ortalama 5,497 TL'den 150.000 lot aldı (sermayenin %0,04545'i).\n\n22 Eylül kararıyla başlayan programda toplam geri alım sermayenin %1,74050'sine ulaştı. Piyasa değeri 2,3 milyar TL.",
+  "kart": {
+   "baslik": "10 Kasım pay geri alımı",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "150.000 lot"
+    ],
+    [
+     "Ağırlıklı ortalama fiyat",
+     "5,497 TL"
+    ],
+    [
+     "Günlük sermaye oranı",
+     "%0,04545"
+    ],
+    [
+     "Toplam sermaye oranı",
+     "%1,74050"
+    ],
+    [
+     "Program karar tarihi",
+     "22.09.2026"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120231100521849107",
+  "x_gorsel_hata": null
  }
 ]
