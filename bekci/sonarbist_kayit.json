@@ -1,41 +1,5 @@
 [
  {
-  "id": "kap-1692973",
-  "hisse": "ISMEN",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-05T08:12:59+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1692974",
-  "hisse": "ISMEN",
-  "baslik": "Yatırım Kuruluşu Varant - Sertifika - Senetlerine İlişkin Bildirim",
-  "t": "2026-11-05T08:12:59+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1693009",
-  "hisse": "KARSN",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-05T08:55:00+00:00",
-  "mod": "golge",
-  "puan": 8,
-  "alt": {
-   "fin": 2,
-   "yenilik": 1,
-   "kapsam": 1,
-   "kesinlik": 3,
-   "ilgi": 1
-  },
-  "tur": "Finansman bonosu kupon ödemesi",
-  "gerekce": "100 milyon TL nominalli finansman bonosunun 10,47 milyon TL'lik 3. kupon ödemesinin yapıldığını bildiren rutin bir bildirim; piyasa değerine göre küçük bir tutar ve sürpriz içermiyor, bu yüzden temettü gibi her zaman önemli sayılan türlere girmiyor.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1693046",
   "hisse": "ISMEN",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -10863,6 +10827,116 @@
   },
   "tur": "Bağlı ortaklık pay devri (finansal duran varlık satışı)",
   "gerekce": "Halkbank, %99,99 payına sahip olduğu Halk Katılım Bankası'nı BDDK izniyle TVF Katılım Finans Yatırımları A.Ş.'ye devretti ve işlem 10.11.2026'da tamamlandı; devir bedeli açıklanmadığından finansal etki belirsiz, ancak işlem kesinleşmiş ve BIST 30 şirketi için yapısal bir değişiklik.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1696736",
+  "hisse": "EUREN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-10T16:45:13+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "10.11.2026'da ortalama 2,507 TL fiyattan 1.001.001 nominal pay (yaklaşık 2,5 milyon TL) geri alındı; program başlangıcından bu yana toplam 7.601.001 nominal pay ve sermayenin %0,361'i geri alınmış olup tutar piyasa değerine göre küçük olsa da pay geri alımı bildirimleri editör kararıyla en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "EUREN (Europen Endüstri) 10 Kasım'da 1.001.001 lot pay geri aldı, ortalama fiyat 2,507 TL (sermayenin %0,04767'si).\n\n23 Ekim tarihli kararla başlayan programda toplam 7.601.001 lota ulaşıldı (%0,361).\n\nPiyasa değeri 5,8 milyar TL, PD/DD 0,45x.",
+  "kart": {
+   "baslik": "Pay geri alım özeti",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "10.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "1.001.001 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "2,507 TL"
+    ],
+    [
+     "Programdaki toplam",
+     "7.601.001 lot"
+    ],
+    [
+     "Sermayeye oran",
+     "%0,361"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120196147738452219",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1696737",
+  "hisse": "YKBNK",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-10T16:45:28+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "Sendikasyon kredisi sözleşmesi",
+  "gerekce": "Yapı Kredi, 18 ülkeden 40 kurumun katıldığı yaklaşık 933 milyon ABD Doları tutarında, imzalanmış ve kesinleşmiş bir sendikasyon kredisi anlaşmasını duyurdu; sözleşme türü editör kuralı gereği en az 80 puan alır ve tutar piyasa değerinin kabaca onda birinden fazlasıdır.",
+  "durum": "paylasildi",
+  "tweet": "YKBNK (Yapı Kredi) yaklaşık 933 milyon ABD Doları tutarında sendikasyon kredisi imzaladı. 18 ülkeden 40 finansal kurum katıldı.\n\n• 367 gün: SOFR + %1,25 ve Euribor + %1,00\n• 734 gün: SOFR + %1,75 ve Euribor + %1,45\n\nYabancı para fonlamasına katkı sağlıyor.",
+  "kart": {
+   "baslik": "Sendikasyon kredisi imzalandı",
+   "satirlar": [
+    [
+     "Toplam tutar",
+     "933 milyon ABD Doları"
+    ],
+    [
+     "Katılımcı",
+     "40 kurum, 18 ülke"
+    ],
+    [
+     "367 gün dolar maliyeti",
+     "SOFR + %1,25"
+    ],
+    [
+     "734 gün dolar maliyeti",
+     "SOFR + %1,75"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120196271290065292",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1696738",
+  "hisse": "PGSUS",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-10T16:45:58+00:00",
+  "mod": "golge",
+  "puan": 35,
+  "alt": {
+   "fin": 5,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 8,
+   "ilgi": 8
+  },
+  "tur": "Aylık trafik ve emisyon verisi",
+  "gerekce": "Ekim ayı yolcu trafiği ve karbon emisyonu istatistikleri düzenli yayımlanan operasyonel verilerdir; doğrudan finansal tutar içermez, rehberlik veya yeni sözleşme niteliği de taşımaz, yalnızca BIST'te tanınan bir şirket olduğu için orta-düşük puan almıştır.",
   "durum": "dusuk"
  }
 ]
