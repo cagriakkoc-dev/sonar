@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1693046",
-  "hisse": "ISMEN",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-05T09:26:35+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
   "id": "kap-1693047",
   "hisse": "ISMEN",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -10938,5 +10929,53 @@
   "tur": "Aylık trafik ve emisyon verisi",
   "gerekce": "Ekim ayı yolcu trafiği ve karbon emisyonu istatistikleri düzenli yayımlanan operasyonel verilerdir; doğrudan finansal tutar içermez, rehberlik veya yeni sözleşme niteliği de taşımaz, yalnızca BIST'te tanınan bir şirket olduğu için orta-düşük puan almıştır.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1696749",
+  "hisse": "GUBRF",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-10T17:18:22+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 4,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "GUBRF 10.11.2026'da ortalama 289,23 TL'den 50.000 TL nominal pay geri aldı (günlük tutar yaklaşık 14,5 milyon TL, piyasa değerinin çok küçük bir kısmı), program kapsamındaki toplam geri alım 3.778.932 TL nominal ve sermayenin %1,1314'üne ulaştı; tutar küçük olsa da pay geri alımı her zaman önemli sayıldığından taban puan olan 80 verildi.",
+  "durum": "paylasildi",
+  "tweet": "GUBRF (Gübre Fabrikaları) geri alım programında toplam 3.778.932 lota ulaştı, bu sermayenin %1,1314'ü.\n\n10 Kasım'da 50.000 lot, ağırlıklı ortalama 289,23 TL'den alındı.\n\nProgram 26 Ekim kararıyla başladı. Piyasa değeri 137,4 milyar TL.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "Alım tarihi",
+     "10.11.2026"
+    ],
+    [
+     "Alınan miktar",
+     "50.000 lot"
+    ],
+    [
+     "Ağırlıklı ortalama fiyat",
+     "289,23 TL"
+    ],
+    [
+     "Toplam geri alınan",
+     "3.778.932 lot"
+    ],
+    [
+     "Sermayeye oranı",
+     "%1,1314"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120204558479622583",
+  "x_gorsel_hata": null
  }
 ]
