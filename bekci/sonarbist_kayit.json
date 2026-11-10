@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1692832",
-  "hisse": "TURSG",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-04T18:41:35+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1692833",
   "hisse": "TURSG",
   "baslik": "Faaliyet Raporu (Konsolide Olmayan) (2026 9 Aylık)",
@@ -10929,6 +10920,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2120002036427301139",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1696217",
+  "hisse": "TAVHL",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-10T06:47:42+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 20,
+   "yenilik": 12,
+   "kapsam": 14,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "Yatırımcı bülteni/sunumu",
+  "gerekce": "Metinde tutar veya yeni bir gelişme yok, yalnızca aylık yatırımcı bülteni ekleniyor; ancak yatırımcı sunumu türü editör kuralı gereği en az 80 puan alıyor.",
+  "durum": "paylasildi",
+  "tweet": "TAVHL (TAV Havalimanları) Ekim 2026 Yatırımcı Bülteni'ni yatırımcılarla paylaştı.\n\nBülten, şirketin yatırımcıya dönük bilgilendirme setine ekleniyor. Son 4 çeyrekte hasılat 99,1 milyar TL, net kâr 8,4 milyar TL.\n\nPiyasa değeri 94,9 milyar TL, PD/DD 0,99x, F/K 11,3x.",
+  "kart": {
+   "baslik": "Ekim 2026 Yatırımcı Bülteni",
+   "satirlar": [
+    [
+     "Belge",
+     "Yatırımcı Bülteni"
+    ],
+    [
+     "Dönem",
+     "Ekim 2026"
+    ],
+    [
+     "Hasılat, son 4 çeyrek",
+     "99,1 milyar TL"
+    ],
+    [
+     "Net kâr, son 4 çeyrek",
+     "8,4 milyar TL"
+    ],
+    [
+     "PD/DD",
+     "0,99x"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120045799543591408",
   "x_gorsel_hata": null
  }
 ]
