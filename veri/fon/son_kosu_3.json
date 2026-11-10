@@ -1,35 +1,6 @@
 {
- "zaman": "2026-11-09T17:34:12Z",
- "basarili": [
-  {
-   "kod": "BID",
-   "donem": "2026-10",
-   "hisse": 22,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  },
-  {
-   "kod": "HBU",
-   "donem": "2026-10",
-   "hisse": 31,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  },
-  {
-   "kod": "HVS",
-   "donem": "2026-10",
-   "hisse": 25,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  },
-  {
-   "kod": "VPH",
-   "donem": "2026-10",
-   "hisse": 25,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  }
- ],
+ "zaman": "2026-11-10T00:15:26Z",
+ "basarili": [],
  "atlandi": [
   {
    "kod": "AEV",
@@ -41,6 +12,10 @@
   },
   {
    "kod": "BID",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "BID",
    "donem": "2026-09"
   },
   {
@@ -61,7 +36,15 @@
   },
   {
    "kod": "HBU",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "HBU",
    "donem": "2026-09"
+  },
+  {
+   "kod": "HVS",
+   "donem": "2026-10"
   },
   {
    "kod": "HVS",
@@ -93,6 +76,10 @@
   },
   {
    "kod": "OHK",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "OHK",
    "donem": "2026-09"
   },
   {
@@ -102,6 +89,10 @@
   {
    "kod": "PPH",
    "donem": "2026-09"
+  },
+  {
+   "kod": "SLG",
+   "donem": "2026-10"
   },
   {
    "kod": "SLG",
@@ -117,34 +108,20 @@
   },
   {
    "kod": "VPH",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "VPH",
    "donem": "2026-09"
+  },
+  {
+   "kod": "ZHH",
+   "donem": "2026-10"
   },
   {
    "kod": "ZHH",
    "donem": "2026-09"
   }
  ],
- "hata": [
-  {
-   "kod": "OHK",
-   "donem": "2026-10",
-   "hisse": 0,
-   "tutuyor": false,
-   "fark_yuzde": null
-  },
-  {
-   "kod": "SLG",
-   "donem": "2026-10",
-   "hisse": 22,
-   "tutuyor": false,
-   "fark_yuzde": -5.5405
-  },
-  {
-   "kod": "ZHH",
-   "donem": "2026-10",
-   "hisse": 0,
-   "tutuyor": false,
-   "fark_yuzde": null
-  }
- ]
+ "hata": []
 }
