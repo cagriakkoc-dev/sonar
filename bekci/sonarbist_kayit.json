@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1692831",
-  "hisse": "TURSG",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-04T18:41:30+00:00",
-  "mod": "golge",
-  "puan": 20,
-  "alt": {
-   "fin": 2,
-   "yenilik": 5,
-   "kapsam": 4,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "Üst düzey yönetici ayrılığı",
-  "gerekce": "Şirketin İç Sistemler Başkanının görevden ayrılması kesinleşmiş ancak tek bir alt düzey yönetici değişikliği olduğundan şirket geneline etkisi sınırlı ve finansal etkisi yoktur.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1692832",
   "hisse": "TURSG",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -10900,5 +10882,53 @@
   "gerekce": "İş Yatırım'ın (BIST 100 üyesi) 2026/9 dönemi performans ve finansal sonuçlar yatırımcı sunumu, editör kuralı gereği sürekli önemli türdedir; sunumda Futurance Kripto satın alımı (SPK onayı bekleyen) ve makro göstergeler de yer alıyor.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1696183",
+  "hisse": "TURSG",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-10T03:53:52+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 28,
+   "yenilik": 15,
+   "kapsam": 17,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "Türkiye Sigorta, 9.11.2026'da 3,46 TL fiyatla 100,6 milyon TL nominal (sermayenin %0,50'si, yaklaşık 348 milyon TL) pay geri aldı; tutar piyasa değerinin yaklaşık %0,3'ü olduğundan etkisi sınırlı, ancak pay geri alımı türü editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "TURSG (Türkiye Sigorta) 9 Kasım'da pay başına 3,46 TL fiyatla 100.649.033 lot pay geri aldı. Bu, sermayenin %0,50325'ine denk geliyor.\n\nProgram 19 Ekim tarihli yönetim kurulu kararıyla başladı, azami tutar 4 milyar TL. Piyasa değeri 108,0 milyar TL.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "09.11.2026"
+    ],
+    [
+     "Geri alınan pay",
+     "100.649.033 lot"
+    ],
+    [
+     "İşlem fiyatı",
+     "3,46 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,50325"
+    ],
+    [
+     "Azami tutar",
+     "4.000.000.000 TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120002036427301139",
+  "x_gorsel_hata": null
  }
 ]
