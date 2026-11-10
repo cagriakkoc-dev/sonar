@@ -1,35 +1,6 @@
 {
- "zaman": "2026-11-09T17:34:03Z",
- "basarili": [
-  {
-   "kod": "GIE",
-   "donem": "2026-10",
-   "hisse": 50,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  },
-  {
-   "kod": "NNF",
-   "donem": "2026-10",
-   "hisse": 26,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  },
-  {
-   "kod": "THD",
-   "donem": "2026-10",
-   "hisse": 26,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  },
-  {
-   "kod": "YHZ",
-   "donem": "2026-10",
-   "hisse": 40,
-   "tutuyor": true,
-   "fark_yuzde": -0.0
-  }
- ],
+ "zaman": "2026-11-10T00:15:36Z",
+ "basarili": [],
  "atlandi": [
   {
    "kod": "BDS",
@@ -57,6 +28,10 @@
   },
   {
    "kod": "GIE",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "GIE",
    "donem": "2026-09"
   },
   {
@@ -93,6 +68,10 @@
   },
   {
    "kod": "NNF",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "NNF",
    "donem": "2026-09"
   },
   {
@@ -105,7 +84,15 @@
   },
   {
    "kod": "RHS",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "RHS",
    "donem": "2026-09"
+  },
+  {
+   "kod": "THD",
+   "donem": "2026-10"
   },
   {
    "kod": "THD",
@@ -113,27 +100,20 @@
   },
   {
    "kod": "TZD",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "TZD",
    "donem": "2026-09"
+  },
+  {
+   "kod": "YHZ",
+   "donem": "2026-10"
   },
   {
    "kod": "YHZ",
    "donem": "2026-09"
   }
  ],
- "hata": [
-  {
-   "kod": "RHS",
-   "donem": "2026-10",
-   "hisse": 0,
-   "tutuyor": false,
-   "fark_yuzde": null
-  },
-  {
-   "kod": "TZD",
-   "donem": "2026-10",
-   "hisse": 0,
-   "tutuyor": false,
-   "fark_yuzde": null
-  }
- ]
+ "hata": []
 }
