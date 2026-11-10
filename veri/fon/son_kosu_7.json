@@ -1,28 +1,6 @@
 {
- "zaman": "2026-11-09T17:34:00Z",
- "basarili": [
-  {
-   "kod": "HIH",
-   "donem": "2026-10",
-   "hisse": 19,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  },
-  {
-   "kod": "NKM",
-   "donem": "2026-10",
-   "hisse": 21,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  },
-  {
-   "kod": "YHB",
-   "donem": "2026-10",
-   "hisse": 31,
-   "tutuyor": true,
-   "fark_yuzde": -0.0
-  }
- ],
+ "zaman": "2026-11-10T00:15:33Z",
+ "basarili": [],
  "atlandi": [
   {
    "kod": "ALC",
@@ -58,7 +36,15 @@
   },
   {
    "kod": "GO9",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "GO9",
    "donem": "2026-09"
+  },
+  {
+   "kod": "HIH",
+   "donem": "2026-10"
   },
   {
    "kod": "HIH",
@@ -90,6 +76,10 @@
   },
   {
    "kod": "NKM",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "NKM",
    "donem": "2026-09"
   },
   {
@@ -114,7 +104,15 @@
   },
   {
    "kod": "YHB",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "YHB",
    "donem": "2026-09"
+  },
+  {
+   "kod": "ZPE",
+   "donem": "2026-10"
   },
   {
    "kod": "ZPE",
@@ -123,23 +121,9 @@
  ],
  "hata": [
   {
-   "kod": "GO9",
-   "donem": "2026-10",
-   "hisse": 0,
-   "tutuyor": false,
-   "fark_yuzde": null
-  },
-  {
    "kod": "RBH",
    "donem": "2026-10",
    "neden": "RuntimeError('metin yok (taranmış PDF)')"
-  },
-  {
-   "kod": "ZPE",
-   "donem": "2026-10",
-   "hisse": 0,
-   "tutuyor": false,
-   "fark_yuzde": null
   }
  ]
 }
