@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1692838",
-  "hisse": "TURSG",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-04T18:44:56+00:00",
-  "mod": "golge",
-  "puan": 10,
-  "alt": {
-   "fin": 1,
-   "yenilik": 2,
-   "kapsam": 2,
-   "kesinlik": 2,
-   "ilgi": 3
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetici bilgileri)",
-  "gerekce": "Genel müdür yardımcılarının görev ve meslek bilgilerini içeren, yeni bir karar veya finansal etki taşımayan rutin bilgi formu güncellemesidir.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1692843",
   "hisse": "AEFES",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -10977,6 +10959,24 @@
   },
   "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
   "gerekce": "Yönetim kurulu üyeleri ve üst düzey yöneticilere ilişkin usulî bir form güncellemesi olup parasal bir etkisi yoktur; şirket BIST 30/100 dışındadır ve editörün her zaman önemli saydığı türlerden hiçbirine girmez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1696352",
+  "hisse": "HALKB",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-10T09:15:53+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 3,
+   "yenilik": 2,
+   "kapsam": 2,
+   "kesinlik": 10,
+   "ilgi": 7
+  },
+  "tur": "Kupon ödemesi (sermaye benzeri tahvil)",
+  "gerekce": "1 milyar TL nominalli sermaye benzeri tahvilin rutin kupon ödemesi, 316,8 milyar TL piyasa değerine göre küçük ve beklenen bir işlem; editör kararıyla zorunlu önemli türlerden (temettü, yeni sözleşme, bilanço vb.) biri değil.",
   "durum": "dusuk"
  }
 ]
