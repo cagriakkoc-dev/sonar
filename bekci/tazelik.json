@@ -1,0 +1,2328 @@
+{
+ "zaman": "2026-11-10 16:46",
+ "beklenen_donem": "2026-06",
+ "ozet": {
+  "sirket": 187,
+  "guncel": 187,
+  "bekleyen_kuyruk": 0,
+  "elle": 0,
+  "sorun": {
+   "gösterge": 25
+  }
+ },
+ "sorunlar": [
+  {
+   "k": "kpi:GEDIK:2026-09",
+   "tur": "gösterge",
+   "t": "GEDIK",
+   "metin": "GEDIK: 2 sektöre özgü gösterge 2026-06'de kaldı (Fonlama maliyeti (TL borçlanma faizi, yaklaşık), Pay kredisi (kredili işlem) bakiyesi)"
+  },
+  {
+   "k": "kpi:GLBMD:2026-09",
+   "tur": "gösterge",
+   "t": "GLBMD",
+   "metin": "GLBMD: 1 sektöre özgü gösterge 2026-06'de kaldı (Yönetilen portföy büyüklüğü (Global MD Portföy yatırım fonları))"
+  },
+  {
+   "k": "kpi:INFO:2026-09",
+   "tur": "gösterge",
+   "t": "INFO",
+   "metin": "INFO: 1 sektöre özgü gösterge 2026-06'de kaldı (Pay kredisi (kredili işlem) bakiyesi)"
+  },
+  {
+   "k": "kpi:ISMEN:2026-09",
+   "tur": "gösterge",
+   "t": "ISMEN",
+   "metin": "ISMEN: 3 sektöre özgü gösterge 2026-06'de kaldı (Fonlama maliyeti (TL borçlanma faizi, yaklaşık), Pay kredisi (kredili işlem) bakiyesi, İş Portföy yönetilen varlık büyüklüğü)"
+  },
+  {
+   "k": "kpi:OYYAT:2026-09",
+   "tur": "gösterge",
+   "t": "OYYAT",
+   "metin": "OYYAT: 1 sektöre özgü gösterge 2026-06'de kaldı (Yönetilen portföy büyüklüğü)"
+  },
+  {
+   "k": "kpi:AKFYE:2026-09",
+   "tur": "gösterge",
+   "t": "AKFYE",
+   "metin": "AKFYE: 1 sektöre özgü gösterge 2026-06'de kaldı (Kurulu güç)"
+  },
+  {
+   "k": "kpi:AKSEN:2026-09",
+   "tur": "gösterge",
+   "t": "AKSEN",
+   "metin": "AKSEN: 1 sektöre özgü gösterge 2026-06'de kaldı (Kurulu güç)"
+  },
+  {
+   "k": "kpi:CANTE:2026-09",
+   "tur": "gösterge",
+   "t": "CANTE",
+   "metin": "CANTE: 1 sektöre özgü gösterge 2026-06'de kaldı (Kurulu güç)"
+  },
+  {
+   "k": "kpi:GWIND:2026-09",
+   "tur": "gösterge",
+   "t": "GWIND",
+   "metin": "GWIND: 2 sektöre özgü gösterge 2026-06'de kaldı (Ortalama satış fiyatı (Sonar) · tek çeyrek, YEKDEM payı · hasılat (tek çeyrek))"
+  },
+  {
+   "k": "kpi:ODAS:2026-09",
+   "tur": "gösterge",
+   "t": "ODAS",
+   "metin": "ODAS: 1 sektöre özgü gösterge 2026-06'de kaldı (Kurulu güç · Çan-2 + Özbekistan (Sonar))"
+  },
+  {
+   "k": "kpi:ASTOR:2026-09",
+   "tur": "gösterge",
+   "t": "ASTOR",
+   "metin": "ASTOR: 3 sektöre özgü gösterge 2026-06'de kaldı (Dağıtım transformatörü üretim kapasitesi, Güç transformatörü üretim kapasitesi, Sipariş birikimi)"
+  },
+  {
+   "k": "kpi:CWENE:2026-09",
+   "tur": "gösterge",
+   "t": "CWENE",
+   "metin": "CWENE: 2 sektöre özgü gösterge 2026-06'de kaldı (Güneş hücresi üretim kapasitesi, Güneş paneli üretim kapasitesi)"
+  },
+  {
+   "k": "kpi:PGSUS:2026-09",
+   "tur": "gösterge",
+   "t": "PGSUS",
+   "metin": "PGSUS: 10 sektöre özgü gösterge 2026-06'de kaldı (Birim gelir (RASK), Birim kâr (RASK − CASK), Birim maliyet (CASK)…)"
+  },
+  {
+   "k": "kpi:KCHOL:2026-09",
+   "tur": "gösterge",
+   "t": "KCHOL",
+   "metin": "KCHOL: 1 sektöre özgü gösterge 2026-06'de kaldı (Net aktif değer iskontosu)"
+  },
+  {
+   "k": "kpi:OTKAR:2026-09",
+   "tur": "gösterge",
+   "t": "OTKAR",
+   "metin": "OTKAR: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi)"
+  },
+  {
+   "k": "kpi:BIMAS:2026-09",
+   "tur": "gösterge",
+   "t": "BIMAS",
+   "metin": "BIMAS: 4 sektöre özgü gösterge 2026-06'de kaldı (Benzer mağaza satış büyümesi · tek çeyrek, FİLE online satış payı, Mağaza sayısı (grup toplamı)…)"
+  },
+  {
+   "k": "kpi:MGROS:2026-09",
+   "tur": "gösterge",
+   "t": "MGROS",
+   "metin": "MGROS: 2 sektöre özgü gösterge 2026-06'de kaldı (Mağaza sayısı, Satış alanı)"
+  },
+  {
+   "k": "kpi:SOKM:2026-09",
+   "tur": "gösterge",
+   "t": "SOKM",
+   "metin": "SOKM: 1 sektöre özgü gösterge 2026-06'de kaldı (Mağaza sayısı)"
+  },
+  {
+   "k": "kpi:AYGAZ:2026-09",
+   "tur": "gösterge",
+   "t": "AYGAZ",
+   "metin": "AYGAZ: 2 sektöre özgü gösterge 2026-06'de kaldı (LPG satışları · tek çeyrek, SP stok kârı / zararı · tek çeyrek)"
+  },
+  {
+   "k": "kpi:PETKM:2026-09",
+   "tur": "gösterge",
+   "t": "PETKM",
+   "metin": "PETKM: 3 sektöre özgü gösterge 2026-06'de kaldı (Kapasite kullanım oranı · tek çeyrek, Petkim spread · tek çeyrek, Stok kârı / zararı · tek çeyrek)"
+  },
+  {
+   "k": "kpi:ALTNY:2026-09",
+   "tur": "gösterge",
+   "t": "ALTNY",
+   "metin": "ALTNY: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi)"
+  },
+  {
+   "k": "kpi:TCELL:2026-09",
+   "tur": "gösterge",
+   "t": "TCELL",
+   "metin": "TCELL: 5 sektöre özgü gösterge 2026-06'de kaldı (Fiber abone sayısı, Mobil ARPU (bileşik) · tek çeyrek, Mobil faturalı abone sayısı…)"
+  },
+  {
+   "k": "kpi:ENKAI:2026-09",
+   "tur": "gösterge",
+   "t": "ENKAI",
+   "metin": "ENKAI: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi)"
+  },
+  {
+   "k": "kpi:GLRMK:2026-09",
+   "tur": "gösterge",
+   "t": "GLRMK",
+   "metin": "GLRMK: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi)"
+  },
+  {
+   "k": "kpi:TKFEN:2026-09",
+   "tur": "gösterge",
+   "t": "TKFEN",
+   "metin": "TKFEN: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi · taahhüt)"
+  }
+ ],
+ "sirketler": [
+  {
+   "t": "A1CAP",
+   "grp": "Aracı kurum",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "GEDIK",
+   "grp": "Aracı kurum",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": [
+     "Fonlama maliyeti (TL borçlanma faizi, yaklaşık)",
+     "Pay kredisi (kredili işlem) bakiyesi"
+    ]
+   }
+  },
+  {
+   "t": "GLBMD",
+   "grp": "Aracı kurum",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": [
+     "Yönetilen portföy büyüklüğü (Global MD Portföy yatırım fonları)"
+    ]
+   }
+  },
+  {
+   "t": "INFO",
+   "grp": "Aracı kurum",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": [
+     "Pay kredisi (kredili işlem) bakiyesi"
+    ]
+   }
+  },
+  {
+   "t": "ISMEN",
+   "grp": "Aracı kurum",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 3,
+    "geride": [
+     "Fonlama maliyeti (TL borçlanma faizi, yaklaşık)",
+     "Pay kredisi (kredili işlem) bakiyesi",
+     "İş Portföy yönetilen varlık büyüklüğü"
+    ]
+   }
+  },
+  {
+   "t": "OSMEN",
+   "grp": "Aracı kurum",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "OYYAT",
+   "grp": "Aracı kurum",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 2,
+    "geride": [
+     "Yönetilen portföy büyüklüğü"
+    ]
+   }
+  },
+  {
+   "t": "TERA",
+   "grp": "Aracı kurum",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 1,
+    "geride": []
+   }
+  },
+  {
+   "t": "AKBNK",
+   "grp": "Bankacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "ALBRK",
+   "grp": "Bankacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "GARAN",
+   "grp": "Bankacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "HALKB",
+   "grp": "Bankacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "ISCTR",
+   "grp": "Bankacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "TSKB",
+   "grp": "Bankacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "VAKBN",
+   "grp": "Bankacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "YKBNK",
+   "grp": "Bankacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "SISE",
+   "grp": "Cam",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ARCLK",
+   "grp": "Dayanıklı tüketim",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VESTL",
+   "grp": "Dayanıklı tüketim",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AYES",
+   "grp": "Demir Çelik",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BMSCH",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BMSTL",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BRSAN",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BURCE",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "CELHA",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "CEMTS",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "DOGUB",
+   "grp": "Demir Çelik",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "EKDMR",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ERBOS",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ERCB",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "EREGL",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "EUREN",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ISDMR",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "IZMDC",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KCAER",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KOCMT",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KRDMD",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TCKRC",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YKSLN",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AHGAZ",
+   "grp": "Elektrik ve doğalgaz dağıtımı",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ENERY",
+   "grp": "Elektrik ve doğalgaz dağıtımı",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ENJSA",
+   "grp": "Elektrik ve doğalgaz dağıtımı",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": []
+   }
+  },
+  {
+   "t": "AKFYE",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": [
+     "Kurulu güç"
+    ]
+   }
+  },
+  {
+   "t": "AKSEN",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": [
+     "Kurulu güç"
+    ]
+   }
+  },
+  {
+   "t": "CANTE",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": [
+     "Kurulu güç"
+    ]
+   }
+  },
+  {
+   "t": "ENTRA",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": []
+   }
+  },
+  {
+   "t": "GWIND",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 4,
+    "geride": [
+     "Ortalama satış fiyatı (Sonar) · tek çeyrek",
+     "YEKDEM payı · hasılat (tek çeyrek)"
+    ]
+   }
+  },
+  {
+   "t": "ODAS",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": [
+     "Kurulu güç · Çan-2 + Özbekistan (Sonar)"
+    ]
+   }
+  },
+  {
+   "t": "TRENJ",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ZOREN",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "ASTOR",
+   "grp": "Enerji ekipmanları",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 3,
+    "geride": [
+     "Dağıtım transformatörü üretim kapasitesi",
+     "Güç transformatörü üretim kapasitesi",
+     "Sipariş birikimi"
+    ]
+   }
+  },
+  {
+   "t": "CWENE",
+   "grp": "Enerji ekipmanları",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": [
+     "Güneş hücresi üretim kapasitesi",
+     "Güneş paneli üretim kapasitesi"
+    ]
+   }
+  },
+  {
+   "t": "AAGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ADGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AHSGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AKFGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AKMGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AKSGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ALGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ASGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ATAGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AVGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AVPGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BASGZ",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BEGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BKRGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "DGGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "DZGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "EGEGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "EKGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "EYGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "FZLGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "HLGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "IDGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ISGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KLGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KRGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KZBGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KZGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "LXGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "MHRGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "MRGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": "2026-06",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "MSGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "NUGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "OZGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "OZKGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "PAGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "PEKGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "PSGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "RGYAS",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "RYGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SEGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SNGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SRVGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SURGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SVGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TDGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TRGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TSGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VKGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VRGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YGGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ZERGY",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ZGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ZRGYO",
+   "grp": "Gayrimenkul",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "EGGUB",
+   "grp": "Gübre ve tarım kimyasalları",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "GUBRF",
+   "grp": "Gübre ve tarım kimyasalları",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "HEKTS",
+   "grp": "Gübre ve tarım kimyasalları",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AEFES",
+   "grp": "Gıda ve içecek",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 3,
+    "geride": []
+   }
+  },
+  {
+   "t": "CCOLA",
+   "grp": "Gıda ve içecek",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 25,
+    "geride": []
+   }
+  },
+  {
+   "t": "OBAMS",
+   "grp": "Gıda ve içecek",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TABGD",
+   "grp": "Gıda ve içecek",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "TUKAS",
+   "grp": "Gıda ve içecek",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ULKER",
+   "grp": "Gıda ve içecek",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "PGSUS",
+   "grp": "Havacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 10,
+    "geride": [
+     "Birim gelir (RASK)",
+     "Birim kâr (RASK − CASK)",
+     "Birim maliyet (CASK)",
+     "Doluluk oranı",
+     "FAVÖK marjı (şirket tanımı)",
+     "Kapasite (AKK) · tek çeyrek",
+     "Ortalama filo",
+     "Yakıt hariç birim maliyet",
+     "Yolcu başı ek gelir",
+     "Yolcu sayısı · tek çeyrek"
+    ]
+   }
+  },
+  {
+   "t": "TAVHL",
+   "grp": "Havacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 5,
+    "geride": []
+   }
+  },
+  {
+   "t": "THYAO",
+   "grp": "Havacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 12,
+    "geride": []
+   }
+  },
+  {
+   "t": "ANSGR",
+   "grp": "Hayat dışı sigorta",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 1,
+    "geride": []
+   }
+  },
+  {
+   "t": "TURSG",
+   "grp": "Hayat dışı sigorta",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": []
+   }
+  },
+  {
+   "t": "AGHOL",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ALARK",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BINHO",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BRYAT",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "DOHOL",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": []
+   }
+  },
+  {
+   "t": "ECZYT",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "GLYHO",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KCHOL",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": [
+     "Net aktif değer iskontosu"
+    ]
+   }
+  },
+  {
+   "t": "PAHOL",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SAHOL",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": []
+   }
+  },
+  {
+   "t": "AKSA",
+   "grp": "Kimya",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KORDS",
+   "grp": "Kimya",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SASA",
+   "grp": "Kimya",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "CVKMD",
+   "grp": "Madencilik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TRALT",
+   "grp": "Madencilik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TRMET",
+   "grp": "Madencilik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ASUZU",
+   "grp": "Otomotiv",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "DOAS",
+   "grp": "Otomotiv",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "FROTO",
+   "grp": "Otomotiv",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 20,
+    "geride": []
+   }
+  },
+  {
+   "t": "KARSN",
+   "grp": "Otomotiv",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "OTKAR",
+   "grp": "Otomotiv",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": [
+     "Sipariş birikimi"
+    ]
+   }
+  },
+  {
+   "t": "TOASO",
+   "grp": "Otomotiv",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 5,
+    "geride": []
+   }
+  },
+  {
+   "t": "BFREN",
+   "grp": "Otomotiv yan sanayi",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BRISA",
+   "grp": "Otomotiv yan sanayi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "DITAS",
+   "grp": "Otomotiv yan sanayi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "DOKTA",
+   "grp": "Otomotiv yan sanayi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "EGEEN",
+   "grp": "Otomotiv yan sanayi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "FMIZP",
+   "grp": "Otomotiv yan sanayi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "GOODY",
+   "grp": "Otomotiv yan sanayi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "JANTS",
+   "grp": "Otomotiv yan sanayi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KATMR",
+   "grp": "Otomotiv yan sanayi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "PARSN",
+   "grp": "Otomotiv yan sanayi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BIMAS",
+   "grp": "Perakende",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 4,
+    "geride": [
+     "Benzer mağaza satış büyümesi · tek çeyrek",
+     "FİLE online satış payı",
+     "Mağaza sayısı (grup toplamı)",
+     "Mağaza sayısı · BİM Türkiye"
+    ]
+   }
+  },
+  {
+   "t": "MAVI",
+   "grp": "Perakende",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 1,
+    "geride": []
+   }
+  },
+  {
+   "t": "MGROS",
+   "grp": "Perakende",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 3,
+    "geride": [
+     "Mağaza sayısı",
+     "Satış alanı"
+    ]
+   }
+  },
+  {
+   "t": "SOKM",
+   "grp": "Perakende",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": [
+     "Mağaza sayısı"
+    ]
+   }
+  },
+  {
+   "t": "AYGAZ",
+   "grp": "Petrol ve petrokimya",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": [
+     "LPG satışları · tek çeyrek",
+     "SP stok kârı / zararı · tek çeyrek"
+    ]
+   }
+  },
+  {
+   "t": "PETKM",
+   "grp": "Petrol ve petrokimya",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 4,
+    "geride": [
+     "Kapasite kullanım oranı · tek çeyrek",
+     "Petkim spread · tek çeyrek",
+     "Stok kârı / zararı · tek çeyrek"
+    ]
+   }
+  },
+  {
+   "t": "TUPRS",
+   "grp": "Petrol ve petrokimya",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "ALTNY",
+   "grp": "Savunma",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": [
+     "Sipariş birikimi"
+    ]
+   }
+  },
+  {
+   "t": "ASELS",
+   "grp": "Savunma",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": []
+   }
+  },
+  {
+   "t": "ECILC",
+   "grp": "Sağlık ve ilaç",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "MPARK",
+   "grp": "Sağlık ve ilaç",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": []
+   }
+  },
+  {
+   "t": "AGESA",
+   "grp": "Sigorta",
+   "son": "2026-09",
+   "oran": null,
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 3,
+    "geride": []
+   }
+  },
+  {
+   "t": "ANHYT",
+   "grp": "Sigorta",
+   "son": "2026-09",
+   "oran": null,
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 3,
+    "geride": []
+   }
+  },
+  {
+   "t": "TTRAK",
+   "grp": "Tarım makineleri",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 3,
+    "geride": []
+   }
+  },
+  {
+   "t": "TCELL",
+   "grp": "Telekom",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 5,
+    "geride": [
+     "Fiber abone sayısı",
+     "Mobil ARPU (bileşik) · tek çeyrek",
+     "Mobil faturalı abone sayısı",
+     "Sabit bireysel ARPU · tek çeyrek",
+     "Toplam abone sayısı"
+    ]
+   }
+  },
+  {
+   "t": "TTKOM",
+   "grp": "Telekom",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 5,
+    "geride": []
+   }
+  },
+  {
+   "t": "GRSEL",
+   "grp": "Ulaştırma ve lojistik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 2,
+    "geride": []
+   }
+  },
+  {
+   "t": "RYSAS",
+   "grp": "Ulaştırma ve lojistik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AFYON",
+   "grp": "Çimento",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "AKCNS",
+   "grp": "Çimento",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BASCM",
+   "grp": "Çimento",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BSOKE",
+   "grp": "Çimento",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BTCIM",
+   "grp": "Çimento",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BUCIM",
+   "grp": "Çimento",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "CIMSA",
+   "grp": "Çimento",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "CMENT",
+   "grp": "Çimento",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "GOLTS",
+   "grp": "Çimento",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KONYA",
+   "grp": "Çimento",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "LMKDC",
+   "grp": "Çimento",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "NUHCM",
+   "grp": "Çimento",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "OYAKC",
+   "grp": "Çimento",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ENKAI",
+   "grp": "İnşaat ve taahhüt",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": [
+     "Sipariş birikimi"
+    ]
+   }
+  },
+  {
+   "t": "GLRMK",
+   "grp": "İnşaat ve taahhüt",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": [
+     "Sipariş birikimi"
+    ]
+   }
+  },
+  {
+   "t": "TKFEN",
+   "grp": "İnşaat ve taahhüt",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 1,
+    "geride": [
+     "Sipariş birikimi · taahhüt"
+    ]
+   }
+  }
+ ],
+ "yeni": [
+  "kpi:GEDIK:2026-09",
+  "kpi:GLBMD:2026-09",
+  "kpi:INFO:2026-09",
+  "kpi:ISMEN:2026-09",
+  "kpi:OYYAT:2026-09",
+  "kpi:AKFYE:2026-09",
+  "kpi:AKSEN:2026-09",
+  "kpi:CANTE:2026-09",
+  "kpi:GWIND:2026-09",
+  "kpi:ODAS:2026-09",
+  "kpi:ASTOR:2026-09",
+  "kpi:CWENE:2026-09",
+  "kpi:PGSUS:2026-09",
+  "kpi:KCHOL:2026-09",
+  "kpi:OTKAR:2026-09",
+  "kpi:BIMAS:2026-09",
+  "kpi:MGROS:2026-09",
+  "kpi:SOKM:2026-09",
+  "kpi:AYGAZ:2026-09",
+  "kpi:PETKM:2026-09",
+  "kpi:ALTNY:2026-09",
+  "kpi:TCELL:2026-09",
+  "kpi:ENKAI:2026-09",
+  "kpi:GLRMK:2026-09",
+  "kpi:TKFEN:2026-09"
+ ]
+}
