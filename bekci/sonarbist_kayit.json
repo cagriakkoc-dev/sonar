@@ -1,53 +1,5 @@
 [
  {
-  "id": "kap-1692858",
-  "hisse": "PETKM",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T04:27:40+00:00",
-  "mod": "canli",
-  "puan": 90,
-  "alt": {
-   "fin": 36,
-   "yenilik": 17,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 9
-  },
-  "tur": "Finansal sonuç (9 aylık bilanço)",
-  "gerekce": "PETKM'in 9 aylık bilançosunda net kâr zarardan 3,8 milyar TL kâra döndü, hasılat %22,0 arttı; finansal sonuç açıklamaları editör kararıyla her zaman önemli sayıldığı için puan 80'in üzerinde.",
-  "durum": "paylasildi",
-  "tweet": "PETKM (Petkim) dokuz ayda 100,9 milyar TL hasılat açıkladı, geçen yıl 82,7 milyar TL'ydi (%22,0 artış). Net dönem kârı 3,8 milyar TL, geçen yıl 6,2 milyar TL zarardı.\n\nBrüt kâr da zarardan kâra geçti. Esas faaliyet zararı 6,3 milyar TL'ye daraldı. PD/DD 0,64x.",
-  "kart": {
-   "baslik": "9 Aylık Finansal Sonuçlar",
-   "satirlar": [
-    [
-     "Hasılat",
-     "100,9 milyar TL"
-    ],
-    [
-     "Geçen yıl hasılat",
-     "82,7 milyar TL"
-    ],
-    [
-     "Net dönem kârı",
-     "3,8 milyar TL"
-    ],
-    [
-     "Brüt kâr",
-     "3,3 milyar TL"
-    ],
-    [
-     "Esas faaliyet kârı",
-     "-6,3 milyar TL"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2118198612756779513",
-  "x_gorsel_hata": null
- },
- {
   "id": "analiz-1692858",
   "hisse": "PETKM",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -10845,5 +10797,53 @@
   "tur": "Borçlanma aracı itfa ve kupon ödemesi",
   "gerekce": "TRFARCLK2629 finansman bonosunun 5 milyar TL anapara ve 665,55 milyon TL faiz ödemesi vadesinde yapıldı; tutar piyasa değerinin yaklaşık %10'u olsa da hasılatın yaklaşık %1'i ve ödeme rutin, beklenen bir borç yönetimi işlemi olduğundan etkisi sınırlı.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1696632",
+  "hisse": "OSMEN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-10T15:29:10+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 6,
+   "yenilik": 4,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 2
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "10.11.2026'da 5,27 TL fiyatla yaklaşık 74 bin TL'lik (14.080 adet) alım yapıldı, programdaki toplam 2.552.825 adet sermayenin %0,636'sına denk geliyor; tutar 2,0 milyar TL piyasa değerine göre küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "OSMEN (Osmanlı Yatırım Menkul Değerler) 10 Kasım'da pay başına 5,27 TL fiyatla 14.080 lot pay geri aldı. Bu, sermayenin %0,00351'ine denk geliyor.\n\n30 Eylül tarihli kararla başlayan programda toplam 2.552.825 lota ulaşıldı (%0,636). Piyasa değeri 2,0 milyar TL, PD/DD 0,58x.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "Alım tarihi",
+     "10.11.2026"
+    ],
+    [
+     "Günlük alım",
+     "14.080 lot"
+    ],
+    [
+     "Alım fiyatı",
+     "5,27 TL"
+    ],
+    [
+     "Günlük sermaye oranı",
+     "%0,00351"
+    ],
+    [
+     "Toplam geri alınan",
+     "2.552.825 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120177024279159064",
+  "x_gorsel_hata": null
  }
 ]
