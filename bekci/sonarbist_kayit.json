@@ -1,117 +1,5 @@
 [
  {
-  "id": "kap-1692855",
-  "hisse": "ZOREN",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T00:06:13+00:00",
-  "mod": "canli",
-  "puan": 80,
-  "alt": {
-   "fin": 34,
-   "yenilik": 14,
-   "kapsam": 17,
-   "kesinlik": 10,
-   "ilgi": 5
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "9 aylık finansal sonuç editör kuralıyla en az 80 puan alır; hasılat %31,1 düşüp 21,4 milyar TL'ye gerilemiş, net zarar 8,0 milyar TL'ye çıkmış ve bu zarar 13,8 milyar TL'lik piyasa değerine göre çok büyük.",
-  "durum": "paylasildi",
-  "tweet": "ZOREN (Zorlu Enerji) dokuz ayda 21,4 milyar TL hasılat açıkladı, geçen yıl 31,0 milyar TL'ydi (%31,1 azalış). Net zarar 5,8 milyar TL'den 8,0 milyar TL'ye çıktı.\n\nBrüt kâr 2,0 milyar TL'ye (%58,3 azalış), özkaynaklar 64,7 milyar TL'ye geriledi. PD/DD 0,22x.",
-  "kart": {
-   "baslik": "9 aylık finansal sonuç",
-   "satirlar": [
-    [
-     "Hasılat",
-     "21,4 milyar TL"
-    ],
-    [
-     "Brüt kâr",
-     "2,0 milyar TL"
-    ],
-    [
-     "Esas faaliyet kârı",
-     "1,9 milyar TL"
-    ],
-    [
-     "Net dönem kârı",
-     "-8,0 milyar TL"
-    ],
-    [
-     "Özkaynaklar",
-     "64,7 milyar TL"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2118132827971875239",
-  "x_gorsel_hata": null
- },
- {
-  "id": "analiz-1692855",
-  "hisse": "ZOREN",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T00:06:35+00:00",
-  "mod": "canli",
-  "tur": "bilanço analizi",
-  "tweet": "ZOREN (Zorlu Enerji) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Finansman gideri 18,4 milyar TL, %30,3 azaldı\n• İşletme nakit akışı 4,0 milyar TL\n\nDikkat edilecekler\n• Hasılat %31,1 azaldı\n• Net dönem kârı -8,0 milyar TL\n• Brüt kâr marjı %9,3 (geçen yıl %15,4)",
-  "kart": {
-   "tweet": "ZOREN (Zorlu Enerji) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Finansman gideri 18,4 milyar TL, %30,3 azaldı\n• İşletme nakit akışı 4,0 milyar TL\n\nDikkat edilecekler\n• Hasılat %31,1 azaldı\n• Net dönem kârı -8,0 milyar TL\n• Brüt kâr marjı %9,3 (geçen yıl %15,4)",
-   "guclu": [
-    {
-     "ad": "Finansman gideri",
-     "deger": "18,4 milyar TL",
-     "not": "Geçen yıl 26,4 milyar TL, azalış %30,3"
-    },
-    {
-     "ad": "İşletme nakit akışı",
-     "deger": "4,0 milyar TL",
-     "not": "Geçen yıl 1,4 milyar TL"
-    }
-   ],
-   "dikkat": [
-    {
-     "ad": "Hasılat",
-     "deger": "21,4 milyar TL",
-     "not": "Geçen yıl 31,0 milyar TL, azalış %31,1"
-    },
-    {
-     "ad": "Net dönem kârı",
-     "deger": "-8,0 milyar TL",
-     "not": "Geçen yıl -5,8 milyar TL"
-    },
-    {
-     "ad": "Brüt kâr marjı",
-     "deger": "%9,3",
-     "not": "Geçen yılın aynı dönemi %15,4"
-    }
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "durum": "analiz_paylasildi",
-  "tweet_id": "2118132899832885587",
-  "x_gorsel_hata": null
- },
- {
-  "id": "kap-1692856",
-  "hisse": "ZOREN",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T00:06:52+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1692857",
-  "hisse": "ZOREN",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T00:06:53+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1692858",
   "hisse": "PETKM",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -10893,6 +10781,69 @@
   },
   "tur": "Borçlanma aracı ihracı (yurtdışı GMTN, faiz içeren)",
   "gerekce": "Yapı Kredi'nin GMTN programı kapsamında ihraç ettiği 50,2 milyon USD'lik erken itfa opsiyonlu borçlanma aracı, 287,5 milyar TL piyasa değerine göre küçük bir tutar olup rutin bir fonlama işlemidir ve editörün zorunlu önemli saydığı türlerden biri değildir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1696596",
+  "hisse": "A1CAP",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-10T15:18:17+00:00",
+  "mod": "golge",
+  "puan": 8,
+  "alt": {
+   "fin": 1,
+   "yenilik": 2,
+   "kapsam": 3,
+   "kesinlik": 1,
+   "ilgi": 1
+  },
+  "tur": "Şirket Genel Bilgi Formu güncellemesi",
+  "gerekce": "Yalnızca imza yetkisine sahip yönetim kurulu üyelerinin listelendiği usulî bir form güncellemesi olup finansal etkisi, yeni bir gelişmesi veya editörün zorunlu önemli saydığı türlerden biri yoktur.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1696597",
+  "hisse": "ANHYT",
+  "baslik": "Pay Alım Satım Bildirimi",
+  "t": "2026-11-10T15:18:20+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1696601",
+  "hisse": "EREGL",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-10T15:18:20+00:00",
+  "mod": "golge",
+  "puan": 50,
+  "alt": {
+   "fin": 17,
+   "yenilik": 11,
+   "kapsam": 8,
+   "kesinlik": 5,
+   "ilgi": 9
+  },
+  "tur": "Maden kaynak tahmini güncellemesi (Alacahan Altın Projesi)",
+  "gerekce": "ERMADEN'in Alacahan projesinde güncellenen UMREK uyumlu tahmin 785 bin ons belirlenmiş ve 108 bin ons mümkün kaynak veriyor; bu, Kasım 2025 açıklamasının üzerine yeni veri ekliyor, ancak henüz rezerv veya yatırım kararı olmadığından ve proje EREGL'nin 251,6 milyar TL piyasa değerine göre sınırlı kaldığından orta puan aldı.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1696604",
+  "hisse": "ARCLK",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-10T15:18:27+00:00",
+  "mod": "golge",
+  "puan": 31,
+  "alt": {
+   "fin": 8,
+   "yenilik": 2,
+   "kapsam": 3,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "Borçlanma aracı itfa ve kupon ödemesi",
+  "gerekce": "TRFARCLK2629 finansman bonosunun 5 milyar TL anapara ve 665,55 milyon TL faiz ödemesi vadesinde yapıldı; tutar piyasa değerinin yaklaşık %10'u olsa da hasılatın yaklaşık %1'i ve ödeme rutin, beklenen bir borç yönetimi işlemi olduğundan etkisi sınırlı.",
   "durum": "dusuk"
  }
 ]
