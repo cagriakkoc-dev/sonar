@@ -1,28 +1,6 @@
 {
- "zaman": "2026-11-09T17:34:31Z",
- "basarili": [
-  {
-   "kod": "BIG",
-   "donem": "2026-10",
-   "hisse": 27,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  },
-  {
-   "kod": "HFO",
-   "donem": "2026-10",
-   "hisse": 18,
-   "tutuyor": true,
-   "fark_yuzde": 0.0
-  },
-  {
-   "kod": "YAS",
-   "donem": "2026-10",
-   "hisse": 15,
-   "tutuyor": true,
-   "fark_yuzde": -0.0
-  }
- ],
+ "zaman": "2026-11-10T00:15:47Z",
+ "basarili": [],
  "atlandi": [
   {
    "kod": "AHI",
@@ -34,6 +12,10 @@
   },
   {
    "kod": "BIG",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "BIG",
    "donem": "2026-09"
   },
   {
@@ -59,6 +41,10 @@
   {
    "kod": "GMR",
    "donem": "2026-08"
+  },
+  {
+   "kod": "HFO",
+   "donem": "2026-10"
   },
   {
    "kod": "HFO",
@@ -122,7 +108,15 @@
   },
   {
    "kod": "YAS",
+   "donem": "2026-10"
+  },
+  {
+   "kod": "YAS",
    "donem": "2026-09"
+  },
+  {
+   "kod": "ZJL",
+   "donem": "2026-10"
   },
   {
    "kod": "ZJL",
@@ -139,13 +133,6 @@
    "kod": "SRH",
    "donem": "2025-10",
    "neden": "RuntimeError('ek bulunamadı')"
-  },
-  {
-   "kod": "ZJL",
-   "donem": "2026-10",
-   "hisse": 18,
-   "tutuyor": false,
-   "fark_yuzde": -44.6224
   }
  ]
 }
