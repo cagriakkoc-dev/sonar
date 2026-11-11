@@ -1,59 +1,5 @@
 [
  {
-  "id": "kap-1693336",
-  "hisse": "ARCLK",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-05T15:25:58+00:00",
-  "mod": "golge",
-  "puan": 38,
-  "alt": {
-   "fin": 20,
-   "yenilik": 6,
-   "kapsam": 4,
-   "kesinlik": 9,
-   "ilgi": 8
-  },
-  "tur": "Borçlanma aracı ihracı (finansman bonosu)",
-  "gerekce": "4 milyar TL nominal tutarlı finansman bonosu ihracı, 538,7 milyar TL hasılatlı şirket için rutin bir kısa vadeli finansman işlemi olup 54,5 milyar TL piyasa değerine göre orta-küçük ölçekte kalıyor ve temettü, sipariş veya bilanço gibi her zaman önemli türlerden değil.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1693338",
-  "hisse": "ARCLK",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-05T15:26:01+00:00",
-  "mod": "golge",
-  "puan": 24,
-  "alt": {
-   "fin": 5,
-   "yenilik": 3,
-   "kapsam": 3,
-   "kesinlik": 8,
-   "ilgi": 5
-  },
-  "tur": "Finansman bonosu ihracı (faiz içeren borçlama aracı)",
-  "gerekce": "1 milyar TL nominal, 06.05.2027 vadeli rutin bir finansman bonosu ihracı; tutar piyasa değerinin yaklaşık %1,8'i, hasılatın ise %0,2'si kadar ve şirketin genelini etkileyen yeni bir gelişme içermiyor.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1693340",
-  "hisse": "EGGUB",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:26:06+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1693341",
-  "hisse": "SISE",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:26:06+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1693342",
   "hisse": "DOHOL",
   "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
@@ -11146,5 +11092,78 @@
   "tur": "Bağlı ortaklık iflas süreci / geçici koruma ve iflas yöneticisi ataması",
   "gerekce": "%100 bağlı ortaklıklar için Düsseldorf mahkemesinin geçici koruma tedbirleri ve geçici iflas yöneticisi ataması, şirketin hasılatı ve konsolide tabloları açısından yüksek sürpriz ve olası ağır etki taşıyor; ancak mali etki henüz değerlendirme aşamasında olduğu için kesinlik ve tutar belirsiz.",
   "durum": "dusuk_bildirildi"
+ },
+ {
+  "id": "kap-1697326",
+  "hisse": "INFO",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-11T16:25:43+00:00",
+  "mod": "golge",
+  "puan": 50,
+  "alt": {
+   "fin": 24,
+   "yenilik": 10,
+   "kapsam": 8,
+   "kesinlik": 6,
+   "ilgi": 2
+  },
+  "tur": "Finansman bonosu geri alımı",
+  "gerekce": "Yönetim kurulu, kendi ihraç ettiği finansman bonolarının geri alımı için 1 milyar TL ayırdı; bu tutar piyasa değerinin yaklaşık %67'si, hasılatın yaklaşık %5'i kadar, ancak işlem borç senedi geri alımı olduğu için pay geri alımı kuralı geçerli değil, alım henüz gerçekleşmediği için kesinlik ve ilgi düşük kalıyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697327",
+  "hisse": "KATMR",
+  "baslik": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
+  "t": "2026-11-11T16:25:48+00:00",
+  "mod": "golge",
+  "puan": 6,
+  "alt": {
+   "fin": 0,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 2,
+   "ilgi": 1
+  },
+  "tur": "Kurumsal Yönetim Bilgi Formu (güncelleme)",
+  "gerekce": "Yönetim kurulu toplantı sayısı, katılım oranı ve komite bilgilerine ilişkin rutin, usulî bir kurumsal yönetim formu güncellemesidir; finansal etkisi ve yeni bir gelişmesi yoktur.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697328",
+  "hisse": "BKRGY",
+  "baslik": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Değerlendirme Raporu",
+  "t": "2026-11-11T16:25:51+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 28,
+   "yenilik": 15,
+   "kapsam": 17,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "Halka arz varsayımları gerçekleşme/değerlendirme raporu (geleceğe ilişkin beklenti)",
+  "gerekce": "2026 üçüncü çeyrek için halka arz fiyatında esas alınan gelir ve kâr varsayımlarının gerçekleşmesini değerlendiren rapor, geleceğe ilişkin beklenti ve rehberlik grubuna girdiği için en az 80 puan aldı; bildirim metninde rakam yok, içerik ekteki rapordadır.",
+  "durum": "hata",
+  "sebep": "JSONDecodeError('Extra data: line 3 column 1 (char 75)')"
+ },
+ {
+  "id": "kap-1697329",
+  "hisse": "BKRGY",
+  "baslik": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
+  "t": "2026-11-11T16:26:04+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 8,
+   "yenilik": 4,
+   "kapsam": 6,
+   "kesinlik": 8,
+   "ilgi": 4
+  },
+  "tur": "Halka arz fon kullanım raporu",
+  "gerekce": "Üçüncü çeyrek halka arz gelirinin kullanım yerlerine ilişkin rutin, periyodik bir rapordur; metinde tutar veya yeni bir gelişme yer almaz, ayrıntılar ekteki rapordadır ve şirket orta ölçeklidir.",
+  "durum": "dusuk"
  }
 ]
