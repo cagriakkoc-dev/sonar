@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1693288",
-  "hisse": "ISCTR",
-  "baslik": "Sorumluluk Beyanı (Konsolide Olmayan) (2026 9 Aylık)",
-  "t": "2026-11-05T15:23:03+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1693291",
   "hisse": "A1CAP",
   "baslik": "Fiyat Tespit Raporuna İlişkin Analist Raporu (Halka Arza Aracılık Eden Kuruluş Tarafından Hazırlanan)",
@@ -11088,5 +11079,53 @@
   "tur": "tahvil kupon faiz ödemesi",
   "gerekce": "Daha önce ihraç edilmiş tahvilin 100,3 milyon TL'lik rutin 6. kupon ödemesi tamamlandı; tutar 124,5 milyar TL piyasa değerine göre çok küçük, sürpriz içermeyen usulî bir bildirim ve editörün zorunlu önemli saydığı türlerden biri değil.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697214",
+  "hisse": "TABGD",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T14:56:40+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 3,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "11.11.2026'da yaklaşık 3,96 milyon TL'lik (20.000 lot, ort. 198,08 TL) geri alım yapılmış ve toplam geri alınan pay sermayenin %0,1956'sına (511.000 TL nominal) ulaşmıştır; tutar piyasa değerine göre küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "TABGD (TAB Gıda) 11 Kasım'da ağırlıklı ortalama 198,08 TL fiyatla 20.000 lot pay geri aldı (sermayenin %0,00765'i).\n\nToplam geri alınan pay 511.000 lota, sermayenin %0,1956'sına ulaştı. İkinci dönem 10 Nisan 2025'te başlamıştı.\n\nPiyasa değeri 55,9 milyar TL.",
+  "kart": {
+   "baslik": "Pay geri alım özeti",
+   "satirlar": [
+    [
+     "Alım tarihi",
+     "11.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "20.000 lot"
+    ],
+    [
+     "Ağırlıklı ortalama",
+     "198,08 TL"
+    ],
+    [
+     "Toplam geri alınan",
+     "511.000 lot"
+    ],
+    [
+     "Sermayeye oran",
+     "%0,1956"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120531236430950576",
+  "x_gorsel_hata": null
  }
 ]
