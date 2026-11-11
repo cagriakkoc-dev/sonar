@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1693277",
-  "hisse": "AKFYE",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:22:50+00:00",
-  "mod": "golge",
-  "durum": "hata",
-  "sebep": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
- },
- {
   "id": "kap-1693280",
   "hisse": "ISCTR",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11031,5 +11022,53 @@
   "tur": "Gayrimenkul değerleme raporu",
   "gerekce": "GYO'nun portföyündeki Luxera Nevbahar Life projesinde bazı bağımsız bölümler için hazırlanan rutin değerleme raporu; değer tutarı bildirimde yer almıyor ve editörün zorunlu önemli türlerine girmiyor.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697148",
+  "hisse": "ODAS",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T14:03:34+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "ODAS, 11.11.2026'da 4,576 TL fiyatla 3 milyon adet (yaklaşık 13,7 milyon TL) pay geri aldı; toplam geri alım 23 milyon adede (sermayenin %1,643'ü) ulaştı. Tutar 800 milyon TL'lik fona ve 8,3 milyar TL piyasa değerine göre küçük olsa da pay geri alımı editör kararıyla her zaman önemli sayıldığı için en az 80 puan aldı.",
+  "durum": "paylasildi",
+  "tweet": "ODAS (Odaş Elektrik) paylarında 11 Kasım alımı 3.000.000 lot oldu, fiyat 4,576 TL. Sermayeye oranı %0,21429.\n\n6 Aralık 2023 kararıyla başlayan programda toplam 23.000.000 lota (%1,643) ulaşıldı.\n\nFon 800 milyon TL, piyasa değeri 8,3 milyar TL.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "11.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "3.000.000 lot"
+    ],
+    [
+     "İşlem fiyatı",
+     "4,576 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,21429"
+    ],
+    [
+     "Toplam geri alınan",
+     "23.000.000 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120517898544283908",
+  "x_gorsel_hata": null
  }
 ]
