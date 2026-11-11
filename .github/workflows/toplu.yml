@@ -1,0 +1,34 @@
+name: Tüm BIST veri toplama
+# bekci/araclar/toplu.py: KAP FR listeleri → dönem seçimi → XBRL → İş Yatırım fiyatları (bekci/toplu/). Saatte bir, kaldığı yerden.
+on:
+  schedule:
+    - cron: '25 * * * *'
+  push:
+    paths: ['bekci/toplu/tetik', 'bekci/araclar/toplu.py', 'bekci/toplu/liste.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: toplu
+  cancel-in-progress: false
+jobs:
+  topla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            bekci/araclar
+            bekci/toplu
+            bekci/xbrl
+          sparse-checkout-cone-mode: false
+      - name: Topla
+        env:
+          BUTCE_DK: '42'
+        run: python3 bekci/araclar/toplu.py
+      - name: Kaydet
+        run: |
+          git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
+          git add bekci/toplu bekci/xbrl
+          git diff --cached --quiet || (git commit -q -m "Tüm BIST veri toplama [skip render]" && for n in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep $((RANDOM % 10 + 3)); done)

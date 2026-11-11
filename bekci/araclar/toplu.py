@@ -1,0 +1,113 @@
+"""Tüm BIST'i Sonar'a ekleme · veri toplama (GitHub Actions: .github/workflows/toplu.yml) · 11 Kas 2026.
+Liste: bekci/toplu/liste.json {T: {oid, ad, grp, kap}}. Her çalıştırmada süre bütçesi içinde sırayla:
+  A) KAP FR listeleri: 25'erli oid grupları, yalnız FR sınıfı, 30 günlük pencereler (2023-01-01 → bugün) → bekci/toplu/fr/<T>.json
+  B) dönem başına bildirim seçimi (konu "Finansal Rapor", en büyük bildirim no; dönem sonundan 7 aydan geç olan yalnız başka yoksa) → bekci/toplu/ids.json
+  C) XBRL: seçilen bildirimlerin KAP sayfasından XBRL satırları → bekci/xbrl/<id>.json (xbrl_cek.rows)
+  D) Fiyat: İş Yatırım HisseTekil (2022-12-01 → bugün, kapanış ve piyasa değeri) → bekci/toplu/fiyat/<T>.json
+Durum: bekci/toplu/durum.json. Kaldığı yerden sürer; bitenler tekrar çekilmez."""
+import os, sys, json, time, datetime, urllib.request, concurrent.futures as cf
+sys.path.insert(0, os.path.dirname(__file__)); import xbrl_cek
+B = os.path.join(os.path.dirname(__file__), "..", "toplu"); X = os.path.join(os.path.dirname(__file__), "..", "xbrl")
+for d in ("fr", "fiyat"): os.makedirs(os.path.join(B, d), exist_ok=True)
+BUTCE = float(os.environ.get("BUTCE_DK", "40")) * 60; T0 = time.time()
+kalan = lambda: BUTCE - (time.time() - T0)
+UA = {"User-Agent": "Mozilla/5.0 Sonar-Bekci", "Accept": "application/json"}
+L = json.load(open(os.path.join(B, "liste.json"), encoding="utf-8"))
+DP = os.path.join(B, "durum.json"); D = json.load(open(DP)) if os.path.exists(DP) else {}
+def kaydet(): D["zaman"] = datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z"; json.dump(D, open(DP, "w"), ensure_ascii=False, indent=1)
+BUGUN = datetime.date.today()
+
+# ---------- A) FR listeleri ----------
+def kap(oids, a, b):
+    body = {"fromDate": a, "toDate": b, "memberType": "IGS", "mkkMemberOidList": oids, "inactiveCompanies": "N", "bdkMemberOidList": [],
+            "subjectList": [], "srcCategory": "", "index": "", "market": "", "isLate": "", "term": "", "ruleType": "", "period": "", "year": "", "disclosureClass": "FR"}
+    req = urllib.request.Request("https://www.kap.org.tr/tr/api/disclosure/members/byCriteria", json.dumps(body).encode(), {**UA, "Content-Type": "application/json"})
+    return json.loads(urllib.request.urlopen(req, timeout=60).read().decode("utf-8"))
+W = []; a = datetime.date(2023, 1, 1)
+while a <= BUGUN: e = min(a + datetime.timedelta(days=29), BUGUN); W.append((a.isoformat(), e.isoformat())); a = e + datetime.timedelta(days=1)
+TS = sorted(L); GR = [TS[i:i + 25] for i in range(0, len(TS), 25)]
+fr_bitti = D.setdefault("fr_bitti", {})   # "grup no" -> son pencere
+for gi, g in enumerate(GR):
+    if kalan() < 120: break
+    oid2t = {L[t]["oid"]: t for t in g}; son = fr_bitti.get(str(gi))
+    ws = [w for w in W if son is None or w[0] > son]
+    if not ws or (son and son >= W[-1][0] and son == W[-1][0]): continue
+    acc = {t: (json.load(open(os.path.join(B, "fr", f"{t}.json"))) if os.path.exists(os.path.join(B, "fr", f"{t}.json")) else []) for t in g}
+    for w in ws:
+        if kalan() < 90: break
+        for k in range(6):
+            try: R = kap(list(oid2t), *w); break
+            except Exception as ex:
+                print("FR", gi, w, repr(ex)[:100]); time.sleep(20 * (k + 1) if "429" in repr(ex) else 5); R = None
+        if R is None: break
+        for x in R:
+            if x.get("disclosureClass") != "FR": continue
+            for t in (x.get("stockCodes") or "").replace(" ", "").split(","):
+                if t in acc: acc[t].append({k_: x.get(k_) for k_ in ("disclosureIndex", "publishDate", "subject", "summary", "year", "period", "ruleType")})
+        fr_bitti[str(gi)] = w[0]; time.sleep(1.0)
+    for t, v in acc.items():
+        v = list({x["disclosureIndex"]: x for x in v}.values())
+        json.dump(v, open(os.path.join(B, "fr", f"{t}.json"), "w"), ensure_ascii=False)
+    print("FR grup", gi, "→", fr_bitti.get(str(gi))); kaydet()
+fr_tamam = all(fr_bitti.get(str(gi)) == W[-1][0] for gi in range(len(GR)))
+D["fr_tamam"] = fr_tamam
+
+# ---------- B) dönem seçimi ----------
+PER = {"3 Aylık": "03", "6 Aylık": "06", "9 Aylık": "09", "Yıllık": "12"}
+def secim(v):
+    c = {}
+    for x in v:
+        if not str(x.get("subject") or "").startswith("Finansal Rapor"): continue
+        p = PER.get(x.get("ruleType")); y = x.get("year")
+        if not p or not y: continue
+        key = f"{y}-{p}"
+        if key < "2022-12": continue
+        try: pub = datetime.datetime.strptime(x["publishDate"], "%d.%m.%Y %H:%M:%S").date()
+        except Exception: continue
+        ps = datetime.date(int(y), int(p), 28); gec = (pub - ps).days > 215
+        c.setdefault(key, []).append((gec, -x["disclosureIndex"], x["disclosureIndex"]))
+    return {k: sorted(v)[0][2] for k, v in sorted(c.items())}
+IDS = {}
+for t in TS:
+    f = os.path.join(B, "fr", f"{t}.json")
+    if os.path.exists(f): IDS[t] = secim(json.load(open(f)))
+json.dump(IDS, open(os.path.join(B, "ids.json"), "w"), ensure_ascii=False, indent=0)
+
+# ---------- C) XBRL ----------
+hata = D.setdefault("xbrl_hata", {})
+gerek = [i for t in TS for i in (IDS.get(t) or {}).values() if not os.path.exists(os.path.join(X, f"{i}.json")) and hata.get(str(i), 0) < 3]
+def cek(i):
+    try:
+        raw = urllib.request.urlopen(urllib.request.Request(f"https://www.kap.org.tr/tr/Bildirim/{i}", headers={"User-Agent": UA["User-Agent"]}), timeout=90).read().decode("utf-8", "ignore")
+        r = xbrl_cek.rows(raw)
+        if not r: return i, "satır yok"
+        json.dump({"id": int(i), "rows": r}, open(os.path.join(X, f"{i}.json"), "w"), ensure_ascii=False); return i, None
+    except Exception as ex: return i, repr(ex)[:80]
+n_ok = 0
+with cf.ThreadPoolExecutor(3) as ex:
+    for k in range(0, len(gerek), 12):
+        if kalan() < 300: break
+        for i, h in ex.map(cek, gerek[k:k + 12]):
+            if h: hata[str(i)] = hata.get(str(i), 0) + 1; print("XBRL", i, h)
+            else: n_ok += 1
+        time.sleep(1.0)
+print("XBRL indirilen", n_ok, "kalan", len(gerek) - n_ok); D["xbrl_kalan"] = len(gerek) - n_ok; kaydet()
+
+# ---------- D) fiyat ----------
+def fiyat(t):
+    u = f"https://www.isyatirim.com.tr/_layouts/15/Isyatirim.Website/Common/Data.aspx/HisseTekil?hisse={t}&startdate=01-12-2022&enddate={BUGUN:%d-%m-%Y}"
+    try:
+        d = json.loads(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 Sonar"}), timeout=60).read())
+        v = [[x["HGDG_TARIH"], x.get("HGDG_KAPANIS"), x.get("PD")] for x in d.get("value", []) if x.get("HGDG_KAPANIS")]
+        if not v: return t, "boş"
+        json.dump(v, open(os.path.join(B, "fiyat", f"{t}.json"), "w")); return t, None
+    except Exception as ex: return t, repr(ex)[:80]
+fy = [t for t in TS if not os.path.exists(os.path.join(B, "fiyat", f"{t}.json"))]
+with cf.ThreadPoolExecutor(4) as ex:
+    for k in range(0, len(fy), 8):
+        if kalan() < 60: break
+        for t, h in ex.map(fiyat, fy[k:k + 8]):
+            if h: print("fiyat", t, h)
+D["fiyat_kalan"] = len([t for t in TS if not os.path.exists(os.path.join(B, "fiyat", f"{t}.json"))])
+D["sirket"] = len(TS); D["ids_dolu"] = sum(1 for t in TS if IDS.get(t))
+kaydet(); print(json.dumps({k: v for k, v in D.items() if k not in ("xbrl_hata", "fr_bitti")}, ensure_ascii=False))
