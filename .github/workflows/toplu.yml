@@ -36,7 +36,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: [0, 1, 2, 3, 4, 5]
+        shard: [0, 1, 2]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -47,7 +47,7 @@ jobs:
           sparse-checkout-cone-mode: false
       - run: git pull -q --rebase || true
       - run: python3 bekci/araclar/toplu.py
-        env: { FAZ: veri, BUTCE_DK: '30', SHARD: '${{ matrix.shard }}', NSHARD: '6' }
+        env: { FAZ: veri, BUTCE_DK: '30', SHARD: '${{ matrix.shard }}', NSHARD: '3' }
       - run: |
           git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
           git add bekci/toplu bekci/xbrl

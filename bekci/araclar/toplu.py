@@ -119,14 +119,12 @@ def kart(t):
         tb = [x for x in re.findall(r"<table.*?</table>", h, re.S) if re.search(r"Dağıtma|Temettü Verimi|Brüt", x)]
         open(os.path.join(B, "kart", f"{t}.html"), "w", encoding="utf-8").write("\n".join(tb) or "<!-- tablo yok -->"); return t, None
     except Exception as ex: return t, repr(ex)[:80]
-def logo(t):
+def logo(t):   # KAP üye logosu (BIST 100 eklemesinde kullanılan adres)
     try:
-        h = urllib.request.urlopen(urllib.request.Request(f"https://www.kap.org.tr/tr/sirket-bilgileri/ozet/{L[t]['oid']}", headers={"User-Agent": UA["User-Agent"]}), timeout=60).read().decode("utf-8", "ignore")
-        m = re.search(r'(https?:)?(//|/)[^"\'\s]*?(logo|Logo)[^"\'\s]*?\.(png|jpe?g|svg)', h) or re.search(r'"(/[^"]*?/file/[^"]*?logo[^"]*)"', h, re.I)
-        if not m: open(os.path.join(B, "logo", f"{t}.yok"), "w").write(""); return t, "logo yok"
-        u = m.group(0).strip('"'); u = u if u.startswith("http") else ("https:" + u if u.startswith("//") else "https://www.kap.org.tr" + u)
-        b = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA["User-Agent"]}), timeout=60).read()
-        ext = "svg" if b[:5] in (b"<?xml", b"<svg ") or b"<svg" in b[:200] else "png" if b[:4] == b"\x89PNG" else "jpg"
+        b = urllib.request.urlopen(urllib.request.Request(f"https://www.kap.org.tr/tr/api/member/logo/{L[t]['oid']}", headers={"User-Agent": UA["User-Agent"]}), timeout=60).read()
+        if len(b) < 200: open(os.path.join(B, "logo", f"{t}.yok"), "w").write(""); return t, "logo yok"
+        ext = "svg" if b"<svg" in b[:400] else "png" if b[:4] == b"\x89PNG" else "jpg" if b[:2] == b"\xff\xd8" else "bin"
+        if ext == "bin": open(os.path.join(B, "logo", f"{t}.yok"), "w").write(""); return t, "logo biçimi tanınmadı"
         open(os.path.join(B, "logo", f"{t}.{ext}"), "wb").write(b); return t, None
     except Exception as ex: return t, repr(ex)[:80]
 for fn, d_, ext in ((kart, "kart", ("html",)), (logo, "logo", ("png", "svg", "jpg", "yok"))):
@@ -139,19 +137,21 @@ for fn, d_, ext in ((kart, "kart", ("html",)), (logo, "logo", ("png", "svg", "jp
 # ---------- C) XBRL ----------
 hata = D.setdefault("xbrl_hata", {})
 gerek = [i for t in TSH for i in (IDS.get(t) or {}).values() if not os.path.exists(os.path.join(X, f"{i}.json")) and hata.get(str(i), 0) < 3]
-def cek(i):
+def cek(i, k=0):
     try:
         raw = urllib.request.urlopen(urllib.request.Request(f"https://www.kap.org.tr/tr/Bildirim/{i}", headers={"User-Agent": UA["User-Agent"]}), timeout=90).read().decode("utf-8", "ignore")
         r = xbrl_cek.rows(raw)
         if not r: return i, "satır yok"
         json.dump({"id": int(i), "rows": r}, open(os.path.join(X, f"{i}.json"), "w"), ensure_ascii=False); return i, None
-    except Exception as ex: return i, repr(ex)[:80]
+    except Exception as ex:
+        if k < 2 and any(c in repr(ex) for c in ("429", "503", "502", "timed out", "Timeout")): time.sleep(25 * (k + 1)); return cek(i, k + 1)
+        return i, repr(ex)[:80]
 n_ok = 0
-with cf.ThreadPoolExecutor(4) as ex:
-    for k in range(0, len(gerek), 12):
+with cf.ThreadPoolExecutor(3) as ex:
+    for k in range(0, len(gerek), 9):
         if kalan() < 150: break
-        for i, h in ex.map(cek, gerek[k:k + 12]):
-            if h: hata[str(i)] = hata.get(str(i), 0) + 1; print("XBRL", i, h)
+        for i, h in ex.map(cek, gerek[k:k + 9]):
+            if h: hata[str(i)] = hata.get(str(i), 0) + 1; D.setdefault("son_hata", []).append(h); D["son_hata"] = D["son_hata"][-15:]; print("XBRL", i, h)
             else: n_ok += 1
         time.sleep(1.0)
 print("XBRL indirilen", n_ok, "kalan", len(gerek) - n_ok); D["xbrl_kalan"] = len(gerek) - n_ok; kaydet()
