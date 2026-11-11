@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1693335",
-  "hisse": "DOHOL",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T15:25:50+00:00",
-  "mod": "golge",
-  "puan": 88,
-  "alt": {
-   "fin": 34,
-   "yenilik": 18,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 8
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "9 aylık net kâr 7,3 milyar TL ile geçen yılki zarardan kâra geçti (piyasa değerinin yaklaşık %14'ü), hasılat %5,3 azalırken brüt kâr %37,2 arttı; finansal sonuç açıklaması olduğu için en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1693336",
   "hisse": "ARCLK",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -11147,5 +11128,23 @@
   "goruntu_hata": "kart: Error(\"BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/ch",
   "tweet_id": "2120548209198301214",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697323",
+  "hisse": "PEKGY",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-11T16:15:00+00:00",
+  "mod": "golge",
+  "puan": 78,
+  "alt": {
+   "fin": 28,
+   "yenilik": 18,
+   "kapsam": 16,
+   "kesinlik": 8,
+   "ilgi": 8
+  },
+  "tur": "Bağlı ortaklık iflas süreci / geçici koruma ve iflas yöneticisi ataması",
+  "gerekce": "%100 bağlı ortaklıklar için Düsseldorf mahkemesinin geçici koruma tedbirleri ve geçici iflas yöneticisi ataması, şirketin hasılatı ve konsolide tabloları açısından yüksek sürpriz ve olası ağır etki taşıyor; ancak mali etki henüz değerlendirme aşamasında olduğu için kesinlik ve tutar belirsiz.",
+  "durum": "dusuk_bildirildi"
  }
 ]
