@@ -1,41 +1,5 @@
 [
  {
-  "id": "kap-1693280",
-  "hisse": "ISCTR",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T15:22:53+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1693281",
-  "hisse": "AKFYE",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:22:56+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1693285",
-  "hisse": "GARAN",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-05T15:22:56+00:00",
-  "mod": "golge",
-  "puan": 43,
-  "alt": {
-   "fin": 12,
-   "yenilik": 7,
-   "kapsam": 6,
-   "kesinlik": 8,
-   "ilgi": 10
-  },
-  "tur": "iştirake sermaye artırımı katılımı",
-  "gerekce": "Yönetim kurulu, 17 milyar TL'lik pay ile iştiraki Garanti BBVA Leasing'in sermaye artırımına katılmaya karar verdi; tutar piyasa değerinin yaklaşık %3,3'ü, son 4 çeyrek net kârın yaklaşık %14'ü, ancak grup içi sermaye aktarımı olduğu için konsolide etkisi sınırlı ve bildirim zorunlu önemli türler arasında yer almıyor.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1693288",
   "hisse": "ISCTR",
   "baslik": "Sorumluluk Beyanı (Konsolide Olmayan) (2026 9 Aylık)",
@@ -11070,5 +11034,59 @@
   "goruntu_hata": null,
   "tweet_id": "2120517898544283908",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697192",
+  "hisse": "ENJSA",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-11T14:46:00+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 3,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 4,
+   "ilgi": 2
+  },
+  "tur": "Borçlanma aracı kupon faiz oranı bildirimi",
+  "gerekce": "Daha önce ihraç edilmiş TRSENSAK2629 tahvilinin 8. kupon faiz oranının %9,8955 olarak belirlendiği rutin bir bildirimdir; kupon ödemesi yaklaşık 66,3 milyon TL olup 124,5 milyar TL piyasa değerine göre çok küçüktür ve yeni bir borçlanma ya da bilgi içermez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697195",
+  "hisse": "ENJSA",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-11T14:46:03+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 3,
+   "yenilik": 2,
+   "kapsam": 1,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "Tahvil kupon faiz oranı bildirimi",
+  "gerekce": "Daha önce ihraç edilmiş TRSENSAK2611 tahvilinin 8. kupon faiz oranının belirlenmesine ilişkin rutin bildirim olup, yaklaşık 148 milyon TL'lik kupon ödemesi 124,5 milyar TL piyasa değerine kıyasla çok küçüktür ve 80 puan alan özel türlerden hiçbirine girmez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697205",
+  "hisse": "ENJSA",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-11T14:46:05+00:00",
+  "mod": "golge",
+  "puan": 8,
+  "alt": {
+   "fin": 2,
+   "yenilik": 0,
+   "kapsam": 1,
+   "kesinlik": 4,
+   "ilgi": 1
+  },
+  "tur": "tahvil kupon faiz ödemesi",
+  "gerekce": "Daha önce ihraç edilmiş tahvilin 100,3 milyon TL'lik rutin 6. kupon ödemesi tamamlandı; tutar 124,5 milyar TL piyasa değerine göre çok küçük, sürpriz içermeyen usulî bir bildirim ve editörün zorunlu önemli saydığı türlerden biri değil.",
+  "durum": "dusuk"
  }
 ]
