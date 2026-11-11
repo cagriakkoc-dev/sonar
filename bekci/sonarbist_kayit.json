@@ -1,118 +1,5 @@
 [
  {
-  "id": "kap-1693310",
-  "hisse": "CMENT",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T15:25:01+00:00",
-  "mod": "golge",
-  "puan": 85,
-  "alt": {
-   "fin": 35,
-   "yenilik": 17,
-   "kapsam": 17,
-   "kesinlik": 10,
-   "ilgi": 6
-  },
-  "tur": "finansal sonuç",
-  "gerekce": "9 aylık bilançoda hasılat %16,5, net kâr %91,4 düştü (102,6 milyon TL); finansal sonuç türü olduğu için en az 80 puan alır ve sert kâr düşüşü puanı destekler.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1693313",
-  "hisse": "CMENT",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:25:13+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1693315",
-  "hisse": "CMENT",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:25:16+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1693317",
-  "hisse": "SISE",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-05T15:25:16+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 28,
-   "yenilik": 14,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "finansal sonuç (ön bilgi)",
-  "gerekce": "Şişecam, ana ortak İş Bankası'nın 05.11.2026 tarihli açıklamasından önce 30.09.2026 dönemine ait denetimsiz ve TMS 29 uygulanmamış temel finansal kalemlerini (hasılat 187,8 milyar TL, cari dönem karı 569 milyon TL, önceki dönem karı 7,4 milyar TL) paylaştığı için finansal sonuç türünde en az 80 puan alır; rakamlar enflasyon muhasebesi uygulanmamış ön veri olduğundan puan alt sınırda tutuldu.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1693320",
-  "hisse": "EGGUB",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T15:25:24+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 28,
-   "yenilik": 15,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 9
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Hasılat yatay (%0,1 artış) kalırken brüt kâr %23,9 ve esas faaliyet kârı %30,7 arttı, net kâr ise %41,9 azalarak 318,2 milyon TL'ye düştü; finansal sonuç bildirimi olduğu için en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1693329",
-  "hisse": "SISE",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T15:25:34+00:00",
-  "mod": "golge",
-  "puan": 88,
-  "alt": {
-   "fin": 34,
-   "yenilik": 15,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 9
-  },
-  "tur": "Finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Şişecam'ın 2026 9 aylık bilançosunda hasılat %7,2, esas faaliyet kârı %79,4, net kâr %43,0 düşerken özkaynaklar da %8,3 geriledi; finansal sonuç açıklaması editör kuralı gereği her zaman önemlidir ve zayıf sonuçlar etkiyi artırıyor.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1693330",
-  "hisse": "ADGYO",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-05T15:25:40+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 3,
-   "yenilik": 8,
-   "kapsam": 10,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "Günlük alım (180.000 lot, yaklaşık 8 milyon TL) 29,8 milyar TL piyasa değerine göre çok küçük olsa da, pay geri alımı editör kuralı gereği en az 80 puan alır; şirketin elindeki toplam pay 25,2 milyon adede ulaştı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1693333",
   "hisse": "EGGUB",
   "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
@@ -11100,5 +10987,126 @@
   "gerekce": "Şirket 11.11.2026'da ağırlıklı ortalama 5,540 TL fiyatla 100.000 TL nominal pay geri almış, toplam geri alım sermayenin %1,77'sine ulaşmış; tutar küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1697308",
+  "hisse": "AHGAZ",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T15:40:39+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 17,
+   "kesinlik": 10,
+   "ilgi": 9
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "11.11.2026'da ağırlıklı ortalama 45,45 TL'den 160.127 adet (yaklaşık 7,3 milyon TL) pay geri alınmış ve toplam geri alınan pay 89,47 milyon adede (%3,44) ulaşmıştır; günlük tutar piyasa değerine göre küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1697309",
+  "hisse": "ENERY",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T15:40:45+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 12,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Şirket 11.11.2026'da ağırlıklı ortalama 13,87 TL fiyattan 1.450.000 adet (yaklaşık 20 milyon TL) pay geri aldı, toplam elindeki pay 428,9 milyon adede (%4,77) ulaştı; tutar piyasa değerine göre küçük olsa da pay geri alımı her zaman önemli türler arasında olduğundan taban puan uygulandı.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1697310",
+  "hisse": "OYYAT",
+  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
+  "t": "2026-11-11T15:40:49+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1697311",
+  "hisse": "KCAER",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-11T15:40:49+00:00",
+  "mod": "golge",
+  "puan": 84,
+  "alt": {
+   "fin": 24,
+   "yenilik": 14,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Santral tedarik sözleşmesi (yeni iş ilişkisi)",
+  "gerekce": "İştiraki Kocaer Enerji'nin 12,34 MWe'lik Kocaer-1 JES projesi için Exergy ile imzaladığı ORC santral ekipman tedarik sözleşmesi, yeni sözleşme türü olduğundan editör kuralı gereği en az 80 puan alır; sözleşme bedeli açıklanmamış olsa da imzalanmış ve projenin ilk fazını ilerletiyor.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1697312",
+  "hisse": "OSMEN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T15:40:51+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "OSMEN, 30.09.2026 tarihli YK kararıyla başlattığı programda 11.11.2026'da 250.000 lot (ortalama 5,56 TL, yaklaşık 1,39 milyon TL) geri aldı ve toplam geri alınan pay 2.802.825 adede (sermayenin %0,6982'si) ulaştı; pay geri alımı editör kararıyla her zaman önemli sayıldığından taban puan uygulandı.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1697316",
+  "hisse": "KATMR",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-11T15:40:54+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 0,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 6,
+   "ilgi": 2
+  },
+  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu güncellemesi)",
+  "gerekce": "Form, 09.11.2026'da yönetim kuruluna seçilen iki üyeyi (Furkan Katmerci ve bağımsız üye Mehmet Gökhan Çelik) yansıtan usulî bir bilgi güncellemesidir; finansal etkisi yoktur ve BIST 30/100 dışı küçük bir şirket için sınırlı önem taşır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697317",
+  "hisse": "KCAER",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-11T15:40:58+00:00",
+  "mod": "golge",
+  "puan": 4,
+  "alt": {
+   "fin": 0,
+   "yenilik": 1,
+   "kapsam": 1,
+   "kesinlik": 1,
+   "ilgi": 1
+  },
+  "tur": "Şirket Genel Bilgi Formu (iletişim bilgisi güncelleme)",
+  "gerekce": "Yatırımcı ilişkileri iletişim bilgilerine dair usulî bir güncelleme olup finansal etkisi, sürprizi veya şirket çapında bir sonucu yoktur.",
+  "durum": "dusuk"
  }
 ]
