@@ -1,15 +1,14 @@
 {
- "zaman": "2026-11-11 15:56",
+ "zaman": "2026-11-12 01:15",
  "beklenen_donem": "2026-09",
  "ozet": {
-  "sirket": 550,
-  "guncel": 515,
-  "bekleyen_kuyruk": 1,
+  "sirket": 616,
+  "guncel": 572,
+  "bekleyen_kuyruk": 0,
   "elle": 0,
   "sorun": {
    "gösterge": 25,
-   "otomasyon": 1,
-   "rakam": 35
+   "rakam": 44
   }
  },
  "sorunlar": [
@@ -188,6 +187,12 @@
    "metin": "ATSYH: son dönem 2026-06, beklenen 2026-09"
   },
   {
+   "k": "fin:INVES:2026-09",
+   "tur": "rakam",
+   "t": "INVES",
+   "metin": "INVES: son dönem 2023-03, beklenen 2026-09"
+  },
+  {
    "k": "fin:ISBIR:2026-09",
    "tur": "rakam",
    "t": "ISBIR",
@@ -200,6 +205,12 @@
    "metin": "KCHOL: 1 sektöre özgü gösterge 2026-06'de kaldı (Net aktif değer iskontosu)"
   },
   {
+   "k": "fin:METRO:2026-09",
+   "tur": "rakam",
+   "t": "METRO",
+   "metin": "METRO: son dönem 2023-03, beklenen 2026-09"
+  },
+  {
    "k": "fin:RALYH:2026-09",
    "tur": "rakam",
    "t": "RALYH",
@@ -210,6 +221,30 @@
    "tur": "rakam",
    "t": "TEHOL",
    "metin": "TEHOL: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
+   "k": "fin:TRHOL:2026-09",
+   "tur": "rakam",
+   "t": "TRHOL",
+   "metin": "TRHOL: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
+   "k": "fin:UMPAS:2026-09",
+   "tur": "rakam",
+   "t": "UMPAS",
+   "metin": "UMPAS: son dönem 2023-12, beklenen 2026-09"
+  },
+  {
+   "k": "fin:USHOL:2026-09",
+   "tur": "rakam",
+   "t": "USHOL",
+   "metin": "USHOL: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
+   "k": "fin:SAMAT:2026-09",
+   "tur": "rakam",
+   "t": "SAMAT",
+   "metin": "SAMAT: son dönem 2026-06, beklenen 2026-09"
   },
   {
    "k": "fin:SODSN:2026-09",
@@ -242,6 +277,12 @@
    "metin": "EMKEL: son dönem 2026-06, beklenen 2026-09"
   },
   {
+   "k": "fin:TMSN:2026-09",
+   "tur": "rakam",
+   "t": "TMSN",
+   "metin": "TMSN: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
    "k": "fin:ORMA:2026-09",
    "tur": "rakam",
    "t": "ORMA",
@@ -252,6 +293,12 @@
    "tur": "rakam",
    "t": "SUMAS",
    "metin": "SUMAS: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
+   "k": "fin:YONGA:2026-09",
+   "tur": "rakam",
+   "t": "YONGA",
+   "metin": "YONGA: son dönem 2026-06, beklenen 2026-09"
   },
   {
    "k": "kpi:OTKAR:2026-09",
@@ -314,6 +361,12 @@
    "metin": "LKMNH: son dönem 2026-06, beklenen 2026-09"
   },
   {
+   "k": "fin:YBTAS:2026-09",
+   "tur": "rakam",
+   "t": "YBTAS",
+   "metin": "YBTAS: son dönem 2026-06, beklenen 2026-09"
+  },
+  {
    "k": "fin:MEGAP:2026-09",
    "tur": "rakam",
    "t": "MEGAP",
@@ -372,12 +425,6 @@
    "tur": "gösterge",
    "t": "TKFEN",
    "metin": "TKFEN: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi · taahhüt)"
-  },
-  {
-   "k": "oto:2026-11-11",
-   "tur": "otomasyon",
-   "t": "-",
-   "metin": "Kuyrukta 6 saatten eski 1 kayıt var (en eskisi 10.11.2026 19:01:22); otomatik özetin son çalışması: 2026-11-11T12:49:07.526294Z"
   }
  ],
  "sirketler": [
@@ -469,6 +516,17 @@
     "geride": [
      "Yönetilen portföy büyüklüğü"
     ]
+   }
+  },
+  {
+   "t": "SKYMD",
+   "grp": "Aracı kurum",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -572,6 +630,17 @@
   },
   {
    "t": "QNBTR",
+   "grp": "Bankacılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SKBNK",
    "grp": "Bankacılık",
    "son": "2026-09",
    "oran": "2026-09",
@@ -879,6 +948,17 @@
    }
   },
   {
+   "t": "MCARD",
+   "grp": "Bilişim",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "MIATK",
    "grp": "Bilişim",
    "son": "2026-09",
@@ -1012,6 +1092,17 @@
   },
   {
    "t": "SMART",
+   "grp": "Bilişim",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VBTYZ",
    "grp": "Bilişim",
    "son": "2026-09",
    "oran": "2026-09",
@@ -1280,6 +1371,17 @@
    "son": "2026-09",
    "oran": "2026-09",
    "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KARCL",
+   "grp": "Demir Çelik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -1735,6 +1837,28 @@
    }
   },
   {
+   "t": "MASFN",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "METEN",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "MOGAN",
    "grp": "Elektrik üretimi",
    "son": "2026-09",
@@ -1792,6 +1916,17 @@
    }
   },
   {
+   "t": "SMRTG",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "TATEN",
    "grp": "Elektrik üretimi",
    "son": "2026-09",
@@ -1808,6 +1943,28 @@
    "son": "2026-09",
    "oran": "2026-09",
    "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VEYAS",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ZEDUR",
+   "grp": "Elektrik üretimi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -1954,6 +2111,39 @@
   },
   {
    "t": "SEKFK",
+   "grp": "Finansal kiralama ve faktoring",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ULUFA",
+   "grp": "Finansal kiralama ve faktoring",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VAKFA",
+   "grp": "Finansal kiralama ve faktoring",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VAKFN",
    "grp": "Finansal kiralama ve faktoring",
    "son": "2026-09",
    "oran": "2026-09",
@@ -2679,6 +2869,17 @@
    }
   },
   {
+   "t": "VERTU",
+   "grp": "Girişim sermayesi",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "EGGUB",
    "grp": "Gübre ve tarım kimyasalları",
    "son": "2026-09",
@@ -2965,6 +3166,17 @@
    }
   },
   {
+   "t": "GOLDA",
+   "grp": "Gıda ve içecek",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "GUNDG",
    "grp": "Gıda ve içecek",
    "son": "2026-06",
@@ -3240,6 +3452,28 @@
    }
   },
   {
+   "t": "VANGD",
+   "grp": "Gıda ve içecek",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YYLGD",
+   "grp": "Gıda ve içecek",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "PGSUS",
    "grp": "Havacılık",
    "son": "2026-09",
@@ -3302,6 +3536,17 @@
    "ozet": null,
    "gosterge": {
     "sayi": 1,
+    "geride": []
+   }
+  },
+  {
+   "t": "QUICK",
+   "grp": "Hayat dışı sigorta",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3603,6 +3848,17 @@
    }
   },
   {
+   "t": "INVES",
+   "grp": "Holding",
+   "son": "2023-03",
+   "oran": "2023-03",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "ISBIR",
    "grp": "Holding",
    "son": "2026-06",
@@ -3642,6 +3898,17 @@
    "grp": "Holding",
    "son": "2026-09",
    "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "METRO",
+   "grp": "Holding",
+   "son": "2023-03",
+   "oran": "2023-03",
    "ozet": null,
    "gosterge": {
     "sayi": 0,
@@ -3760,6 +4027,83 @@
   },
   {
    "t": "TRCAS",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TRHOL",
+   "grp": "Holding",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "UFUK",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "UMPAS",
+   "grp": "Holding",
+   "son": "2023-12",
+   "oran": "2023-12",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "UNLU",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "USHOL",
+   "grp": "Holding",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VERUS",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YESIL",
    "grp": "Holding",
    "son": "2026-09",
    "oran": "2026-09",
@@ -3891,7 +4235,29 @@
    }
   },
   {
+   "t": "SAMAT",
+   "grp": "Kağıt ve basım",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "TEZOL",
+   "grp": "Kağıt ve basım",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VKING",
    "grp": "Kağıt ve basım",
    "son": "2026-09",
    "oran": "2026-09",
@@ -4067,6 +4433,17 @@
    }
   },
   {
+   "t": "GENKM",
+   "grp": "Kimya",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "ISKPL",
    "grp": "Kimya",
    "son": "2026-09",
@@ -4127,6 +4504,17 @@
    "son": "2026-09",
    "oran": "2026-09",
    "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "KPEKS",
+   "grp": "Kimya",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -4199,6 +4587,17 @@
    }
   },
   {
+   "t": "ORZAX",
+   "grp": "Kimya",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "OZRDN",
    "grp": "Kimya",
    "son": "2026-09",
@@ -4233,6 +4632,17 @@
   },
   {
    "t": "RTALB",
+   "grp": "Kimya",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SANFM",
    "grp": "Kimya",
    "son": "2026-09",
    "oran": "2026-09",
@@ -4298,6 +4708,17 @@
    }
   },
   {
+   "t": "TKNKA",
+   "grp": "Kimya",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "TMPOL",
    "grp": "Kimya",
    "son": "2026-09",
@@ -4332,6 +4753,17 @@
   },
   {
    "t": "CEOEM",
+   "grp": "Kiralama ve destek hizmetleri",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "EKIM",
    "grp": "Kiralama ve destek hizmetleri",
    "son": "2026-09",
    "oran": "2026-09",
@@ -4446,6 +4878,17 @@
    "son": "2026-09",
    "oran": "2026-09",
    "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VSNMD",
+   "grp": "Madencilik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -4584,6 +5027,17 @@
    }
   },
   {
+   "t": "VKFYO",
+   "grp": "Menkul kıymet yatırım ortaklığı",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "KONTR",
    "grp": "Mesleki hizmetler",
    "son": "2026-06",
@@ -4607,6 +5061,17 @@
   },
   {
    "t": "SKYLP",
+   "grp": "Mesleki hizmetler",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YEOTK",
    "grp": "Mesleki hizmetler",
    "son": "2026-09",
    "oran": "2026-09",
@@ -4643,6 +5108,17 @@
    "grp": "Metal eşya ve makine",
    "son": "2026-06",
    "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "BETAE",
+   "grp": "Metal eşya ve makine",
+   "son": "2026-09",
+   "oran": "2026-09",
    "ozet": null,
    "gosterge": {
     "sayi": 0,
@@ -4815,6 +5291,28 @@
    }
   },
   {
+   "t": "SAFKR",
+   "grp": "Metal eşya ve makine",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SARAE",
+   "grp": "Metal eşya ve makine",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "SAYAS",
    "grp": "Metal eşya ve makine",
    "son": "2026-09",
@@ -4827,6 +5325,61 @@
   },
   {
    "t": "SILVR",
+   "grp": "Metal eşya ve makine",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SNICA",
+   "grp": "Metal eşya ve makine",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TMSN",
+   "grp": "Metal eşya ve makine",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ULUSE",
+   "grp": "Metal eşya ve makine",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VESBE",
+   "grp": "Metal eşya ve makine",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YIGIT",
    "grp": "Metal eşya ve makine",
    "son": "2026-09",
    "oran": "2026-09",
@@ -4882,6 +5435,17 @@
   },
   {
    "t": "SUMAS",
+   "grp": "Orman ürünleri ve mobilya",
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YONGA",
    "grp": "Orman ürünleri ve mobilya",
    "son": "2026-06",
    "oran": "2026-06",
@@ -5234,7 +5798,40 @@
    }
   },
   {
+   "t": "SSAAT",
+   "grp": "Perakende",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SUWEN",
+   "grp": "Perakende",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "TKNSA",
+   "grp": "Perakende",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "VAKKO",
    "grp": "Perakende",
    "son": "2026-09",
    "oran": "2026-09",
@@ -5474,6 +6071,28 @@
    }
   },
   {
+   "t": "YAPRK",
+   "grp": "Tarım ve hayvancılık",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ALBTN",
+   "grp": "Taş ve toprak",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "BIENY",
    "grp": "Taş ve toprak",
    "son": "2026-09",
@@ -5519,6 +6138,17 @@
   },
   {
    "t": "EGSER",
+   "grp": "Taş ve toprak",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "ISVEA",
    "grp": "Taş ve toprak",
    "son": "2026-09",
    "oran": "2026-09",
@@ -5599,6 +6229,28 @@
    "grp": "Taş ve toprak",
    "son": "2026-09",
    "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "USAK",
+   "grp": "Taş ve toprak",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YBTAS",
+   "grp": "Taş ve toprak",
+   "son": "2026-06",
+   "oran": "2026-06",
    "ozet": null,
    "gosterge": {
     "sayi": 0,
@@ -5815,7 +6467,51 @@
    }
   },
   {
+   "t": "SNPAM",
+   "grp": "Tekstil ve deri",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "SOHOE",
+   "grp": "Tekstil ve deri",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "SUNTK",
+   "grp": "Tekstil ve deri",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YATAS",
+   "grp": "Tekstil ve deri",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YUNSA",
    "grp": "Tekstil ve deri",
    "son": "2026-09",
    "oran": "2026-09",
@@ -5920,7 +6616,29 @@
    }
   },
   {
+   "t": "SANKO",
+   "grp": "Toptan ticaret",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
    "t": "SELEC",
+   "grp": "Toptan ticaret",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TGSAS",
    "grp": "Toptan ticaret",
    "son": "2026-09",
    "oran": "2026-09",
@@ -6113,7 +6831,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 0,
+    "sayi": 5,
     "geride": []
    }
   },
@@ -6178,6 +6896,28 @@
    "son": "2026-09",
    "oran": "2026-09",
    "ozet": "2026-09",
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TLMAN",
+   "grp": "Ulaştırma ve lojistik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "TUREX",
+   "grp": "Ulaştırma ve lojistik",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -6507,35 +7247,50 @@
     "sayi": 0,
     "geride": []
    }
+  },
+  {
+   "t": "UCAYM",
+   "grp": "İnşaat ve taahhüt",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YAYLA",
+   "grp": "İnşaat ve taahhüt",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "YYAPI",
+   "grp": "İnşaat ve taahhüt",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
   }
  ],
  "yeni": [
-  "fin:ARENA:2026-09",
-  "fin:INTEK:2026-09",
-  "fin:PAPIL:2026-09",
-  "fin:BURVA:2026-09",
-  "fin:KTLEV:2026-09",
-  "fin:BALSU:2026-09",
-  "fin:BORSK:2026-09",
-  "fin:GUNDG:2026-09",
-  "fin:KAYSE:2026-09",
-  "fin:MERKO:2026-09",
-  "fin:ATSYH:2026-09",
-  "fin:ISBIR:2026-09",
-  "fin:RALYH:2026-09",
-  "fin:TEHOL:2026-09",
-  "fin:SODSN:2026-09",
-  "fin:KONTR:2026-09",
-  "fin:ALVES:2026-09",
-  "fin:BALAT:2026-09",
-  "fin:EMKEL:2026-09",
-  "fin:ORMA:2026-09",
-  "fin:SUMAS:2026-09",
-  "fin:LKMNH:2026-09",
-  "fin:MEGAP:2026-09",
-  "fin:KSTUR:2026-09",
-  "fin:MARTI:2026-09",
-  "fin:KUYAS:2026-09",
-  "oto:2026-11-11"
+  "fin:INVES:2026-09",
+  "fin:METRO:2026-09",
+  "fin:TRHOL:2026-09",
+  "fin:UMPAS:2026-09",
+  "fin:USHOL:2026-09",
+  "fin:SAMAT:2026-09",
+  "fin:TMSN:2026-09",
+  "fin:YONGA:2026-09",
+  "fin:YBTAS:2026-09"
  ]
 }
