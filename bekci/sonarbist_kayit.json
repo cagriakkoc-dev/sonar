@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1693346",
-  "hisse": "GLBMD",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:38:35+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1693348",
   "hisse": "SISE",
   "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
@@ -11243,5 +11234,53 @@
   "gerekce": "EKDMR 11.11.2026'da ortalama 24,18 TL'den 50.000 adet (yaklaşık 1,2 milyon TL, sermayenin %0,016'sı) pay geri aldı ve programdaki toplam 2.981.537 adede (%0,9317) ulaştı; tutar piyasa değerine göre küçük olsa da pay geri alımı editör kararıyla en az 80 puan alan türlerdendir.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1697395",
+  "hisse": "EGEGY",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T18:01:49+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "EGEGY, 1 Eylül 2026 tarihli YK kararıyla başlattığı geri alım programı kapsamında 11 Kasım'da 200.000 pay aldı ve toplam geri alınan paylar sermayenin %3,90'ına ulaştı; pay geri alımı editör kararıyla her zaman önemli sayıldığı için puan en az 80 olarak verildi.",
+  "durum": "paylasildi",
+  "tweet": "EGEGY (Egeyapı Avrupa GYO) 11 Kasım'da 3.249.000 TL ödeyerek 200.000 lot pay geri aldı. Ortalama fiyat 16,245 TL, sermayenin %0,1'i.\n\n1 Eylül kararıyla başlayan programda toplam sermayenin %3,90441'ine ulaşıldı. Piyasa değeri 3,0 milyar TL, PD/DD 1,05x.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "200.000 lot"
+    ],
+    [
+     "Tutar",
+     "3.249.000 TL"
+    ],
+    [
+     "Ortalama fiyat",
+     "16,245 TL"
+    ],
+    [
+     "Alımın sermaye oranı",
+     "%0,1"
+    ],
+    [
+     "Programda toplam oran",
+     "%3,90441"
+    ]
+   ]
+  },
+  "goruntu": false,
+  "goruntu_hata": "kart: Error(\"BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/ch",
+  "tweet_id": "2120577867788812407",
+  "x_gorsel_hata": null
  }
 ]
