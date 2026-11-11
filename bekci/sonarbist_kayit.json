@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1693090",
-  "hisse": "TTRAK",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-05T11:33:23+00:00",
-  "mod": "golge",
-  "puan": 6,
-  "alt": {
-   "fin": 0,
-   "yenilik": 1,
-   "kapsam": 2,
-   "kesinlik": 1,
-   "ilgi": 2
-  },
-  "tur": "Şirket Genel Bilgi Formu (usulî güncelleme)",
-  "gerekce": "Yalnızca adres ve iletişim bilgilerini içeren rutin bir genel bilgi formu güncellemesi olup finansal etkisi, yeni bir gelişmesi ve ek dosyası yoktur.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1693098",
   "hisse": "EKGYO",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -11077,5 +11059,23 @@
   "goruntu_hata": null,
   "tweet_id": "2120386380681433475",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1696812",
+  "hisse": "A1CAP",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-11T06:35:06+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 11,
+   "yenilik": 2,
+   "kapsam": 3,
+   "kesinlik": 5,
+   "ilgi": 1
+  },
+  "tur": "Borçlanma aracı itfası (vade sonu anapara ve faiz ödemesi)",
+  "gerekce": "250 milyon TL nominal finansman bonosunun vade sonunda faiziyle (yaklaşık 53 milyon TL) ödendiği bildirilen rutin bir itfa işlemidir; piyasa değerine göre kayda değer bir tutar olsa da bu işlem yeni bir gelişme içermez, editörün zorunlu önem listesindeki türlerden biri de değildir.",
+  "durum": "dusuk"
  }
 ]
