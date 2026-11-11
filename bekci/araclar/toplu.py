@@ -97,26 +97,6 @@ if "liste" in FAZ:
 IDS = json.load(open(os.path.join(B, "ids.json"))) if os.path.exists(os.path.join(B, "ids.json")) else {}
 if "veri" not in FAZ: kaydet(); sys.exit(0)
 TSH = [t for i, t in enumerate(TS) if i % NSH == SH]
-# ---------- C) XBRL ----------
-hata = D.setdefault("xbrl_hata", {})
-gerek = [i for t in TSH for i in (IDS.get(t) or {}).values() if not os.path.exists(os.path.join(X, f"{i}.json")) and hata.get(str(i), 0) < 3]
-def cek(i):
-    try:
-        raw = urllib.request.urlopen(urllib.request.Request(f"https://www.kap.org.tr/tr/Bildirim/{i}", headers={"User-Agent": UA["User-Agent"]}), timeout=90).read().decode("utf-8", "ignore")
-        r = xbrl_cek.rows(raw)
-        if not r: return i, "satır yok"
-        json.dump({"id": int(i), "rows": r}, open(os.path.join(X, f"{i}.json"), "w"), ensure_ascii=False); return i, None
-    except Exception as ex: return i, repr(ex)[:80]
-n_ok = 0
-with cf.ThreadPoolExecutor(3) as ex:
-    for k in range(0, len(gerek), 12):
-        if kalan() < 420: break
-        for i, h in ex.map(cek, gerek[k:k + 12]):
-            if h: hata[str(i)] = hata.get(str(i), 0) + 1; print("XBRL", i, h)
-            else: n_ok += 1
-        time.sleep(1.0)
-print("XBRL indirilen", n_ok, "kalan", len(gerek) - n_ok); D["xbrl_kalan"] = len(gerek) - n_ok; kaydet()
-
 # ---------- D) fiyat ----------
 def fiyat(t):
     u = f"https://www.isyatirim.com.tr/_layouts/15/Isyatirim.Website/Common/Data.aspx/HisseTekil?hisse={t}&startdate=01-12-2022&enddate={BUGUN:%d-%m-%Y}"
@@ -129,7 +109,7 @@ def fiyat(t):
 fy = [t for t in TSH if not os.path.exists(os.path.join(B, "fiyat", f"{t}.json"))]
 with cf.ThreadPoolExecutor(4) as ex:
     for k in range(0, len(fy), 8):
-        if kalan() < 60: break
+        if kalan() < BUTCE * 0.6: break
         for t, h in ex.map(fiyat, fy[k:k + 8]):
             if h: print("fiyat", t, h)
 import re
@@ -153,9 +133,29 @@ for fn, d_, ext in ((kart, "kart", ("html",)), (logo, "logo", ("png", "svg", "jp
     yap = [t for t in TSH if not any(os.path.exists(os.path.join(B, d_, f"{t}.{e}")) for e in ext)]
     with cf.ThreadPoolExecutor(4) as ex:
         for k in range(0, len(yap), 8):
-            if kalan() < 45: break
+            if kalan() < BUTCE * 0.55: break   # XBRL'e süre kalsın
             for t, h in ex.map(fn, yap[k:k + 8]):
                 if h: print(d_, t, h)
+# ---------- C) XBRL ----------
+hata = D.setdefault("xbrl_hata", {})
+gerek = [i for t in TSH for i in (IDS.get(t) or {}).values() if not os.path.exists(os.path.join(X, f"{i}.json")) and hata.get(str(i), 0) < 3]
+def cek(i):
+    try:
+        raw = urllib.request.urlopen(urllib.request.Request(f"https://www.kap.org.tr/tr/Bildirim/{i}", headers={"User-Agent": UA["User-Agent"]}), timeout=90).read().decode("utf-8", "ignore")
+        r = xbrl_cek.rows(raw)
+        if not r: return i, "satır yok"
+        json.dump({"id": int(i), "rows": r}, open(os.path.join(X, f"{i}.json"), "w"), ensure_ascii=False); return i, None
+    except Exception as ex: return i, repr(ex)[:80]
+n_ok = 0
+with cf.ThreadPoolExecutor(4) as ex:
+    for k in range(0, len(gerek), 12):
+        if kalan() < 150: break
+        for i, h in ex.map(cek, gerek[k:k + 12]):
+            if h: hata[str(i)] = hata.get(str(i), 0) + 1; print("XBRL", i, h)
+            else: n_ok += 1
+        time.sleep(1.0)
+print("XBRL indirilen", n_ok, "kalan", len(gerek) - n_ok); D["xbrl_kalan"] = len(gerek) - n_ok; kaydet()
+
 D["fiyat_kalan"] = len([t for t in TS if not os.path.exists(os.path.join(B, "fiyat", f"{t}.json"))])
 D["sirket"] = len(TS); D["ids_dolu"] = sum(1 for t in TS if IDS.get(t))
 kaydet(); print(json.dumps({k: v for k, v in D.items() if k not in ("xbrl_hata", "fr_bitti")}, ensure_ascii=False))
