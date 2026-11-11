@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1693071",
-  "hisse": "ZOREN",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-05T10:19:20+00:00",
-  "mod": "golge",
-  "puan": 6,
-  "alt": {
-   "fin": 2,
-   "yenilik": 0,
-   "kapsam": 1,
-   "kesinlik": 3,
-   "ilgi": 0
-  },
-  "tur": "Tahvil kupon faiz ödemesi",
-  "gerekce": "84,78 milyon TL nominal tahvilin 3,35 milyon TL'lik rutin kupon faizi ödenmiş; piyasa değerinin on binde birkaçı kadar olan bu usulî bildirim yeni bir bilgi içermiyor ve editörün sildiği tweetlere benzer şekilde düşük puanlı.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1693090",
   "hisse": "TTRAK",
   "baslik": "Şirket Genel Bilgi Formu",
@@ -11046,6 +11028,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2120241783707770882",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1696781",
+  "hisse": "TCKRC",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T05:20:57+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 4,
+   "yenilik": 4,
+   "kapsam": 6,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "Şirket 10.11.2026'da ortalama 122,97 TL'den 7.152 adet pay daha geri aldı (yaklaşık 0,88 milyon TL) ve programdaki toplam 654.152 adede (sermayenin %0,3847'si, yaklaşık 65 milyon TL) ulaştı; tutar 20,5 milyar TL piyasa değerine göre küçük olsa da pay geri alımı her zaman önemli türlerden olduğu için 80 taban puanı uygulandı.",
+  "durum": "paylasildi",
+  "tweet": "TCKRC 10 Kasım'da ortalama 122,9699 TL fiyatla 7.152 lot pay geri aldı (sermayenin %0,00421'i).\n\nProgramdaki toplam 654.152 lota (%0,3847) ulaşıldı.\n\nAlım fiyatları 21 Ekim'den bu yana 96,316-122,969 TL aralığında. Piyasa değeri 20,5 milyar TL.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "10.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "7.152 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "122,9699 TL"
+    ],
+    [
+     "Programdaki toplam",
+     "654.152 lot"
+    ],
+    [
+     "Toplamın sermaye oranı",
+     "%0,3847"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120386380681433475",
   "x_gorsel_hata": null
  }
 ]
