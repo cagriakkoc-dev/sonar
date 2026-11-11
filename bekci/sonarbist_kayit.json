@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1693333",
-  "hisse": "EGGUB",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:25:48+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1693335",
   "hisse": "DOHOL",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11108,5 +11099,53 @@
   "tur": "Şirket Genel Bilgi Formu (iletişim bilgisi güncelleme)",
   "gerekce": "Yatırımcı ilişkileri iletişim bilgilerine dair usulî bir güncelleme olup finansal etkisi, sürprizi veya şirket çapında bir sonucu yoktur.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697320",
+  "hisse": "EUREN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T16:04:10+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 8,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "11.11.2026'da 1.198.999 lot ortalama 2,459 TL'den alındı (yaklaşık 2,9 milyon TL), program başından beri toplam 8,8 milyon nominal pay (sermayenin %0,419'u, yaklaşık 20 milyon TL) geri alındı; tutar 5,8 milyar TL piyasa değerine göre küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "EUREN (Europen Endüstri) geri alım programında 8.800.000 lota ulaştı, bu sermayenin %0,419'una denk geliyor.\n\n11 Kasım'da ortalama 2,459 TL'den 1.198.999 lot alındı (sermayenin %0,0571'i). Program 23 Ekim kararıyla başladı.\n\nPiyasa değeri 5,8 milyar TL, PD/DD 0,45x.",
+  "kart": {
+   "baslik": "Pay geri alımı, 11 Kasım",
+   "satirlar": [
+    [
+     "Alım tarihi",
+     "11 Kasım 2026"
+    ],
+    [
+     "Alınan pay",
+     "1.198.999 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "2,459 TL"
+    ],
+    [
+     "Toplam geri alım",
+     "8.800.000 lot"
+    ],
+    [
+     "Toplam sermaye oranı",
+     "%0,419"
+    ]
+   ]
+  },
+  "goruntu": false,
+  "goruntu_hata": "kart: Error(\"BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/ch",
+  "tweet_id": "2120548209198301214",
+  "x_gorsel_hata": null
  }
 ]
