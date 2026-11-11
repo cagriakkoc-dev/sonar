@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1693351",
-  "hisse": "EUREN",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-05T15:38:38+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 30,
-   "yenilik": 14,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 8
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "Günlük alımlar küçük (son işlem yaklaşık 1,2 milyon TL; toplam 3,5 milyon nominal, sermayenin %0,166'sı; program fonu 200 milyon TL, piyasa değerinin yaklaşık %2,2'si), ancak pay geri alımı editör kuralı gereği alt sınır olan 80 puanı alır; editörün sildiği PAHOL örneği satın alma özetiydi, bu yüzden bu türe uygulanmadı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1693353",
   "hisse": "SISE",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -11329,6 +11310,24 @@
   },
   "tur": "Özel durum açıklaması (Euronext Dublin duyurusu eki)",
   "gerekce": "Bildirim metni yalnızca Euronext Dublin'deki açıklamanın ekte paylaşıldığını belirtiyor ve içeriği ya da tutarı vermiyor; aynı konuda daha önce dört kez açıklama yapılması süren bir konuya (muhtemelen borç/tahvil) işaret ediyor, ancak yeni bir sürpriz yok ve zarar eden, piyasa değeri düşük bir şirket söz konusu olduğu için orta-alt puan verildi.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697411",
+  "hisse": "TTKOM",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-11T20:30:31+00:00",
+  "mod": "golge",
+  "puan": 38,
+  "alt": {
+   "fin": 2,
+   "yenilik": 8,
+   "kapsam": 12,
+   "kesinlik": 9,
+   "ilgi": 7
+  },
+  "tur": "Yönetim kurulu üyesi istifası",
+  "gerekce": "Yönetim kurulu üyesinin başka bir görev nedeniyle istifası yönetim yapısını etkiler ancak finansal etkisi yoktur, strateji değişikliği içermez ve editörün zorunlu önemli saydığı türlerden biri değildir.",
   "durum": "dusuk"
  }
 ]
