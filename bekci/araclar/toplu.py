@@ -8,12 +8,29 @@ Durum: bekci/toplu/durum.json. Kaldığı yerden sürer; bitenler tekrar çekilm
 import os, sys, json, time, datetime, urllib.request, concurrent.futures as cf
 sys.path.insert(0, os.path.dirname(__file__)); import xbrl_cek
 B = os.path.join(os.path.dirname(__file__), "..", "toplu"); X = os.path.join(os.path.dirname(__file__), "..", "xbrl")
-for d in ("fr", "fiyat"): os.makedirs(os.path.join(B, d), exist_ok=True)
+for d in ("fr", "fiyat", "kart", "logo"): os.makedirs(os.path.join(B, d), exist_ok=True)
 BUTCE = float(os.environ.get("BUTCE_DK", "40")) * 60; T0 = time.time()
+FAZ = os.environ.get("FAZ", "liste,veri").split(","); SH, NSH = int(os.environ.get("SHARD", "0")), int(os.environ.get("NSHARD", "1"))
 kalan = lambda: BUTCE - (time.time() - T0)
 UA = {"User-Agent": "Mozilla/5.0 Sonar-Bekci", "Accept": "application/json"}
 L = json.load(open(os.path.join(B, "liste.json"), encoding="utf-8"))
-DP = os.path.join(B, "durum.json"); D = json.load(open(DP)) if os.path.exists(DP) else {}
+EK = os.path.join(B, "eksik_oid.json")   # {T: {ad, grp, kap}}: oid'i kap_oid.json'da olmayan (bankalar vb.) → KAP şirket listesinden bulunur
+if "liste" in FAZ and os.path.exists(EK):
+    import re
+    eks = json.load(open(EK, encoding="utf-8")); bul = {}
+    for u in ("https://www.kap.org.tr/tr/bist-sirketler", "https://www.kap.org.tr/tr/sirketler/IGS"):
+        try:
+            h = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA["User-Agent"]}), timeout=60).read().decode("utf-8", "ignore").replace('\\"', '"')
+            for t in eks:
+                if t in bul: continue
+                m = re.search(r'"(?:mkkMemberOid|memberOid|oid)"\s*:\s*"([0-9a-f]{32})"[^{}]{0,400}?"(?:stockCode|stockCodes)"\s*:\s*"[^"]*\b' + t + r'\b', h) or re.search(r'"(?:stockCode|stockCodes)"\s*:\s*"[^"]*\b' + t + r'\b[^{}]{0,400}?"(?:mkkMemberOid|memberOid|oid)"\s*:\s*"([0-9a-f]{32})"', h) or re.search(r'ozet/([0-9a-f]{32})[^<]{0,200}?>\s*' + t + r'\b', h)
+                if m: bul[t] = m.group(1)
+        except Exception as ex: print("oid sayfası", u, repr(ex)[:80])
+    for t, o in bul.items(): L[t] = {"oid": o, **eks[t], "ek": 1}
+    if bul: json.dump(L, open(os.path.join(B, "liste.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    json.dump({t: v for t, v in eks.items() if t not in bul}, open(EK, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    print("eksik oid bulunan", sorted(bul))
+DP = os.path.join(B, "durum.json" if NSH == 1 or "liste" in os.environ.get("FAZ", "liste") else f"durum_{SH}.json"); D = json.load(open(DP)) if os.path.exists(DP) else {}
 def kaydet(): D["zaman"] = datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z"; json.dump(D, open(DP, "w"), ensure_ascii=False, indent=1)
 BUGUN = datetime.date.today()
 
@@ -23,59 +40,66 @@ def kap(oids, a, b):
             "subjectList": [], "srcCategory": "", "index": "", "market": "", "isLate": "", "term": "", "ruleType": "", "period": "", "year": "", "disclosureClass": "FR"}
     req = urllib.request.Request("https://www.kap.org.tr/tr/api/disclosure/members/byCriteria", json.dumps(body).encode(), {**UA, "Content-Type": "application/json"})
     return json.loads(urllib.request.urlopen(req, timeout=60).read().decode("utf-8"))
-W = []; a = datetime.date(2023, 1, 1)
-while a <= BUGUN: e = min(a + datetime.timedelta(days=29), BUGUN); W.append((a.isoformat(), e.isoformat())); a = e + datetime.timedelta(days=1)
-TS = sorted(L); GR = [TS[i:i + 25] for i in range(0, len(TS), 25)]
-fr_bitti = D.setdefault("fr_bitti", {})   # "grup no" -> son pencere
-for gi, g in enumerate(GR):
-    if kalan() < 120: break
-    oid2t = {L[t]["oid"]: t for t in g}; son = fr_bitti.get(str(gi))
-    ws = [w for w in W if son is None or w[0] > son]
-    if not ws or (son and son >= W[-1][0] and son == W[-1][0]): continue
-    acc = {t: (json.load(open(os.path.join(B, "fr", f"{t}.json"))) if os.path.exists(os.path.join(B, "fr", f"{t}.json")) else []) for t in g}
-    for w in ws:
-        if kalan() < 90: break
-        for k in range(6):
-            try: R = kap(list(oid2t), *w); break
-            except Exception as ex:
-                print("FR", gi, w, repr(ex)[:100]); time.sleep(20 * (k + 1) if "429" in repr(ex) else 5); R = None
-        if R is None: break
-        for x in R:
-            if x.get("disclosureClass") != "FR": continue
-            for t in (x.get("stockCodes") or "").replace(" ", "").split(","):
-                if t in acc: acc[t].append({k_: x.get(k_) for k_ in ("disclosureIndex", "publishDate", "subject", "summary", "year", "period", "ruleType")})
-        fr_bitti[str(gi)] = w[0]; time.sleep(1.0)
-    for t, v in acc.items():
-        v = list({x["disclosureIndex"]: x for x in v}.values())
-        json.dump(v, open(os.path.join(B, "fr", f"{t}.json"), "w"), ensure_ascii=False)
-    print("FR grup", gi, "→", fr_bitti.get(str(gi))); kaydet()
-fr_tamam = all(fr_bitti.get(str(gi)) == W[-1][0] for gi in range(len(GR)))
-D["fr_tamam"] = fr_tamam
+TS = sorted(L)
+if "liste" in FAZ:
+    W = []; a = datetime.date(2023, 1, 1)
+    while a <= BUGUN: e = min(a + datetime.timedelta(days=29), BUGUN); W.append((a.isoformat(), e.isoformat())); a = e + datetime.timedelta(days=1)
+    T1 = sorted(t for t in L if not L[t].get("ek")); T2 = sorted(t for t in L if L[t].get("ek"))   # ilk 430 şirketin grup sırası değişmesin
+    GR = [T1[i:i + 25] for i in range(0, len(T1), 25)] + [T2[i:i + 25] for i in range(0, len(T2), 25)]
+    fr_bitti = D.setdefault("fr_bitti", {})   # "grup no" -> son pencere
+    for gi, g in enumerate(GR):
+        if kalan() < 120: break
+        oid2t = {L[t]["oid"]: t for t in g}; son = fr_bitti.get(str(gi))
+        ws = [w for w in W if son is None or w[0] > son]
+        if not ws or (son and son >= W[-1][0] and son == W[-1][0]): continue
+        acc = {t: (json.load(open(os.path.join(B, "fr", f"{t}.json"))) if os.path.exists(os.path.join(B, "fr", f"{t}.json")) else []) for t in g}
+        for w in ws:
+            if kalan() < 90: break
+            for k in range(9):
+                try: R = kap(list(oid2t), *w); break
+                except Exception as ex:
+                    print("FR", gi, w, repr(ex)[:100]); time.sleep(20 * (k + 1) if "429" in repr(ex) else 5); R = None
+            if R is None: break
+            for x in R:
+                if x.get("disclosureClass") != "FR": continue
+                for t in (x.get("stockCodes") or "").replace(" ", "").split(","):
+                    if t in acc: acc[t].append({k_: x.get(k_) for k_ in ("disclosureIndex", "publishDate", "subject", "summary", "year", "period", "ruleType")})
+            fr_bitti[str(gi)] = w[0]; time.sleep(2.0)
+        for t, v in acc.items():
+            v = list({x["disclosureIndex"]: x for x in v}.values())
+            json.dump(v, open(os.path.join(B, "fr", f"{t}.json"), "w"), ensure_ascii=False)
+        print("FR grup", gi, "→", fr_bitti.get(str(gi))); kaydet()
+    fr_tamam = all(fr_bitti.get(str(gi)) == W[-1][0] for gi in range(len(GR)))
+    D["fr_tamam"] = fr_tamam
 
-# ---------- B) dönem seçimi ----------
-PER = {"3 Aylık": "03", "6 Aylık": "06", "9 Aylık": "09", "Yıllık": "12"}
-def secim(v):
-    c = {}
-    for x in v:
-        if not str(x.get("subject") or "").startswith("Finansal Rapor"): continue
-        p = PER.get(x.get("ruleType")); y = x.get("year")
-        if not p or not y: continue
-        key = f"{y}-{p}"
-        if key < "2022-12": continue
-        try: pub = datetime.datetime.strptime(x["publishDate"], "%d.%m.%Y %H:%M:%S").date()
-        except Exception: continue
-        ps = datetime.date(int(y), int(p), 28); gec = (pub - ps).days > 215
-        c.setdefault(key, []).append((gec, -x["disclosureIndex"], x["disclosureIndex"]))
-    return {k: sorted(v)[0][2] for k, v in sorted(c.items())}
-IDS = {}
-for t in TS:
-    f = os.path.join(B, "fr", f"{t}.json")
-    if os.path.exists(f): IDS[t] = secim(json.load(open(f)))
-json.dump(IDS, open(os.path.join(B, "ids.json"), "w"), ensure_ascii=False, indent=0)
+    # ---------- B) dönem seçimi ----------
+    PER = {"3 Aylık": "03", "6 Aylık": "06", "9 Aylık": "09", "Yıllık": "12"}
+    def secim(v):
+        c = {}
+        for x in v:
+            if not str(x.get("subject") or "").startswith("Finansal Rapor"): continue
+            p = PER.get(x.get("ruleType")); y = x.get("year")
+            if not p or not y: continue
+            key = f"{y}-{p}"
+            if key < "2022-12": continue
+            try: pub = datetime.datetime.strptime(x["publishDate"], "%d.%m.%Y %H:%M:%S").date()
+            except Exception: continue
+            ps = datetime.date(int(y), int(p), 28); gec = (pub - ps).days > 215
+            c.setdefault(key, []).append((gec, -x["disclosureIndex"], x["disclosureIndex"]))
+        return {k: sorted(v)[0][2] for k, v in sorted(c.items())}
+    IDS = {}
+    for t in TS:
+        f = os.path.join(B, "fr", f"{t}.json")
+        if os.path.exists(f): IDS[t] = secim(json.load(open(f)))
+    json.dump(IDS, open(os.path.join(B, "ids.json"), "w"), ensure_ascii=False, indent=0)
 
+
+IDS = json.load(open(os.path.join(B, "ids.json"))) if os.path.exists(os.path.join(B, "ids.json")) else {}
+if "veri" not in FAZ: kaydet(); sys.exit(0)
+TSH = [t for i, t in enumerate(TS) if i % NSH == SH]
 # ---------- C) XBRL ----------
 hata = D.setdefault("xbrl_hata", {})
-gerek = [i for t in TS for i in (IDS.get(t) or {}).values() if not os.path.exists(os.path.join(X, f"{i}.json")) and hata.get(str(i), 0) < 3]
+gerek = [i for t in TSH for i in (IDS.get(t) or {}).values() if not os.path.exists(os.path.join(X, f"{i}.json")) and hata.get(str(i), 0) < 3]
 def cek(i):
     try:
         raw = urllib.request.urlopen(urllib.request.Request(f"https://www.kap.org.tr/tr/Bildirim/{i}", headers={"User-Agent": UA["User-Agent"]}), timeout=90).read().decode("utf-8", "ignore")
@@ -86,7 +110,7 @@ def cek(i):
 n_ok = 0
 with cf.ThreadPoolExecutor(3) as ex:
     for k in range(0, len(gerek), 12):
-        if kalan() < 300: break
+        if kalan() < 420: break
         for i, h in ex.map(cek, gerek[k:k + 12]):
             if h: hata[str(i)] = hata.get(str(i), 0) + 1; print("XBRL", i, h)
             else: n_ok += 1
@@ -102,12 +126,36 @@ def fiyat(t):
         if not v: return t, "boş"
         json.dump(v, open(os.path.join(B, "fiyat", f"{t}.json"), "w")); return t, None
     except Exception as ex: return t, repr(ex)[:80]
-fy = [t for t in TS if not os.path.exists(os.path.join(B, "fiyat", f"{t}.json"))]
+fy = [t for t in TSH if not os.path.exists(os.path.join(B, "fiyat", f"{t}.json"))]
 with cf.ThreadPoolExecutor(4) as ex:
     for k in range(0, len(fy), 8):
         if kalan() < 60: break
         for t, h in ex.map(fiyat, fy[k:k + 8]):
             if h: print("fiyat", t, h)
+import re
+def kart(t):
+    try:
+        h = urllib.request.urlopen(urllib.request.Request("https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=" + t, headers={"User-Agent": "Mozilla/5.0 Sonar"}), timeout=60).read().decode("utf-8", "ignore")
+        tb = [x for x in re.findall(r"<table.*?</table>", h, re.S) if re.search(r"Dağıtma|Temettü Verimi|Brüt", x)]
+        open(os.path.join(B, "kart", f"{t}.html"), "w", encoding="utf-8").write("\n".join(tb) or "<!-- tablo yok -->"); return t, None
+    except Exception as ex: return t, repr(ex)[:80]
+def logo(t):
+    try:
+        h = urllib.request.urlopen(urllib.request.Request(f"https://www.kap.org.tr/tr/sirket-bilgileri/ozet/{L[t]['oid']}", headers={"User-Agent": UA["User-Agent"]}), timeout=60).read().decode("utf-8", "ignore")
+        m = re.search(r'(https?:)?(//|/)[^"\'\s]*?(logo|Logo)[^"\'\s]*?\.(png|jpe?g|svg)', h) or re.search(r'"(/[^"]*?/file/[^"]*?logo[^"]*)"', h, re.I)
+        if not m: open(os.path.join(B, "logo", f"{t}.yok"), "w").write(""); return t, "logo yok"
+        u = m.group(0).strip('"'); u = u if u.startswith("http") else ("https:" + u if u.startswith("//") else "https://www.kap.org.tr" + u)
+        b = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA["User-Agent"]}), timeout=60).read()
+        ext = "svg" if b[:5] in (b"<?xml", b"<svg ") or b"<svg" in b[:200] else "png" if b[:4] == b"\x89PNG" else "jpg"
+        open(os.path.join(B, "logo", f"{t}.{ext}"), "wb").write(b); return t, None
+    except Exception as ex: return t, repr(ex)[:80]
+for fn, d_, ext in ((kart, "kart", ("html",)), (logo, "logo", ("png", "svg", "jpg", "yok"))):
+    yap = [t for t in TSH if not any(os.path.exists(os.path.join(B, d_, f"{t}.{e}")) for e in ext)]
+    with cf.ThreadPoolExecutor(4) as ex:
+        for k in range(0, len(yap), 8):
+            if kalan() < 45: break
+            for t, h in ex.map(fn, yap[k:k + 8]):
+                if h: print(d_, t, h)
 D["fiyat_kalan"] = len([t for t in TS if not os.path.exists(os.path.join(B, "fiyat", f"{t}.json"))])
 D["sirket"] = len(TS); D["ids_dolu"] = sum(1 for t in TS if IDS.get(t))
 kaydet(); print(json.dumps({k: v for k, v in D.items() if k not in ("xbrl_hata", "fr_bitti")}, ensure_ascii=False))
