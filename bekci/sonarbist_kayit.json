@@ -9,15 +9,6 @@
   "sebep": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
  },
  {
-  "id": "kap-1693277",
-  "hisse": "AKFYE",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:22:50+00:00",
-  "mod": "golge",
-  "durum": "hata",
-  "sebep": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
- },
- {
   "id": "kap-1693280",
   "hisse": "ISCTR",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11021,6 +11012,24 @@
   },
   "tur": "Değerleme raporu",
   "gerekce": "GYO portföyündeki Luxera Topkapı projesinin bir kısım bağımsız bölümleri için hazırlanan rutin değerleme raporu bildirimi; tutar belirtilmemiş, editörün zorunlu önemli türlerinden birine girmiyor ve küçük ölçekli şirket olduğundan etkisi sınırlı.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697105",
+  "hisse": "LXGYO",
+  "baslik": "Değerleme Raporu ",
+  "t": "2026-11-11T13:53:00+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 10,
+   "yenilik": 5,
+   "kapsam": 5,
+   "kesinlik": 7,
+   "ilgi": 3
+  },
+  "tur": "Gayrimenkul değerleme raporu",
+  "gerekce": "GYO'nun portföyündeki Luxera Nevbahar Life projesinde bazı bağımsız bölümler için hazırlanan rutin değerleme raporu; değer tutarı bildirimde yer almıyor ve editörün zorunlu önemli türlerine girmiyor.",
   "durum": "dusuk"
  }
 ]
