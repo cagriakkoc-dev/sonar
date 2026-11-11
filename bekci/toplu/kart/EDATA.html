@@ -1,0 +1,201 @@
+<table class="dataTable hover nowrap excelexport" data-csvname="sermayeartirimlari">
+                        <thead>
+                            <tr>
+                                <th>Kod</th>
+                                <th class="text-right">Bölünme<br />Sonrası<br />Sermaye<br />(TL)</th>
+                                <th class="text-right">Tarih</th>
+                                <th class="text-right">Bedelli<br />Oran<br />(%)</th>
+                                <th class="text-right">Bedelli<br />Nom.<br />Tutar<br />(TL)</th>
+                                <th class="text-right">Diğer<br />(*)</th>
+                                <th class="text-right">Bedelsiz<br />IK<br />Oran<br />(%)</th>
+                                <th class="text-right">Bedelsiz<br />Temettü<br />Oran<br />(%)</th>
+                                <th class="text-right">Nakit<br />Tem.Brüt<br />(%)</th>
+                                <th class="text-right">Nakit<br />Temettü<br />(TL)</th>
+                                <th class="text-right">Hisse<br />Başı<br />Brüt<br />(TL)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="SermayeRows">
+                        </tbody>
+                        <tbody id="sermaye-artirimlari-not-found" style="display: none;">
+                            <tr>
+                                <td class="kayit-bulunamadi" data-class="kayit-bulunamadi" colspan="13">Kayıt bulunamadı.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+<table class="dataTable hover nowrap excelexport" data-csvname="temettugercek">
+                        <thead>
+                            <tr>
+                                <th>Kod</th>
+                                <th class="text-right">Dağ. Tarihi</th>
+                                <th class="text-right">Temettü Verim</th>
+                                <th class="text-right">Hisse Başı TL</th>
+                                <th class="text-right">Nakit Tem. Brüt Oran(%)</th>
+                                <th class="text-right">Nakit Tem. Net Oran(%)</th>
+                                <th class="text-right">Toplam Temettü (TL)</th>
+                                <th class="text-right">Dağıtma Oranı</th>
+                            </tr>
+                        </thead>
+                        <tbody class="temettugercekvarBody hepsi">
+                            <tr class="temettugercekvarrow "><td>EDATA</td><td class="text-right" data-order="">Açıklanmadı</td><td class="text-right">0,00</td><td class="text-right">0,0000</td><td class="text-right">0,00</td><td class="text-right">0,00</td>
+                                
+                                <td class="text-right">0</td>
+                                <td class="text-right">A/D</td>
+
+                                                                                     </tr>
+                        </tbody>
+                        <tbody class="temettugercekvarBody gercek">
+                            
+                        </tbody>
+                        <tbody class="temettugercekvarBody plan">
+                            <tr class="temettugercekvarrow "><td>EDATA</td><td class="text-right" data-order="">Açıklanmadı</td><td class="text-right">0,00</td><td class="text-right">0,0000</td><td class="text-right">0,00</td><td class="text-right">0,00</td><td class="text-right">0</td><td class="text-right">A/D</td></tr>
+                        </tbody>
+                        <tbody class="temettugercekvarBody not-found" style="display:none;">
+                            <tr>
+                                <td colspan="9" >
+                                    Kayıt bulunamadı.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+<table class="excelexport" data-csvname="malitablo">
+                <thead>
+                    <tr>
+                        <th style="width:50%;padding-left: 30px; font-size:14px;">
+							<i class="icon-info" style="color: gray; margin-left:5px; position: relative; top: 1px;"></i>
+							<span style="padding-left: 8px;">Sanayi şirketlerinde en son açıklanmış yıl sonu rakamları enflasyon düzeltmesiyle son finansal döneme çekilmektedir.</span>
+						</th>
+                        <th class="form-group"><select name="ctl00$ctl56$g_00f9bafa_387b_423c_b297_f8592de90819$ctl00$ddlMaliTabloDonem1" id="ddlMaliTabloDonem1" class="select">
+					<option selected="selected" value="2026/9">2026/9</option>
+					<option value="2026/6">2026/6</option>
+					<option value="2026/3">2026/3</option>
+					<option value="2025/12">2025/12</option>
+					<option value="2025/9">2025/9</option>
+					<option value="2025/6">2025/6</option>
+					<option value="2025/3">2025/3</option>
+					<option value="2024/12">2024/12</option>
+					<option value="2024/9">2024/9</option>
+					<option value="2024/6">2024/6</option>
+					<option value="2024/3">2024/3</option>
+					<option value="2023/12">2023/12</option>
+					<option value="2023/9">2023/9</option>
+					<option value="2023/6">2023/6</option>
+					<option value="2023/3">2023/3</option>
+					<option value="2022/12">2022/12</option>
+					<option value="2022/9">2022/9</option>
+					<option value="2022/6">2022/6</option>
+					<option value="2022/3">2022/3</option>
+					<option value="2021/12">2021/12</option>
+					<option value="2021/9">2021/9</option>
+					<option value="2021/6">2021/6</option>
+					<option value="2021/3">2021/3</option>
+					<option value="2020/12">2020/12</option>
+					<option value="2020/9">2020/9</option>
+					<option value="2020/6">2020/6</option>
+					<option value="2020/3">2020/3</option>
+					<option value="2019/12">2019/12</option>
+					<option value="2018/12">2018/12</option>
+
+				</select></th>
+                        <th class="form-group"><select name="ctl00$ctl56$g_00f9bafa_387b_423c_b297_f8592de90819$ctl00$ddlMaliTabloDonem2" id="ddlMaliTabloDonem2" class="select">
+					<option value="2026/9">2026/9</option>
+					<option selected="selected" value="2026/6">2026/6</option>
+					<option value="2026/3">2026/3</option>
+					<option value="2025/12">2025/12</option>
+					<option value="2025/9">2025/9</option>
+					<option value="2025/6">2025/6</option>
+					<option value="2025/3">2025/3</option>
+					<option value="2024/12">2024/12</option>
+					<option value="2024/9">2024/9</option>
+					<option value="2024/6">2024/6</option>
+					<option value="2024/3">2024/3</option>
+					<option value="2023/12">2023/12</option>
+					<option value="2023/9">2023/9</option>
+					<option value="2023/6">2023/6</option>
+					<option value="2023/3">2023/3</option>
+					<option value="2022/12">2022/12</option>
+					<option value="2022/9">2022/9</option>
+					<option value="2022/6">2022/6</option>
+					<option value="2022/3">2022/3</option>
+					<option value="2021/12">2021/12</option>
+					<option value="2021/9">2021/9</option>
+					<option value="2021/6">2021/6</option>
+					<option value="2021/3">2021/3</option>
+					<option value="2020/12">2020/12</option>
+					<option value="2020/9">2020/9</option>
+					<option value="2020/6">2020/6</option>
+					<option value="2020/3">2020/3</option>
+					<option value="2019/12">2019/12</option>
+					<option value="2018/12">2018/12</option>
+
+				</select></th>
+                        <th class="form-group"><select name="ctl00$ctl56$g_00f9bafa_387b_423c_b297_f8592de90819$ctl00$ddlMaliTabloDonem3" id="ddlMaliTabloDonem3" class="select">
+					<option value="2026/9">2026/9</option>
+					<option value="2026/6">2026/6</option>
+					<option selected="selected" value="2026/3">2026/3</option>
+					<option value="2025/12">2025/12</option>
+					<option value="2025/9">2025/9</option>
+					<option value="2025/6">2025/6</option>
+					<option value="2025/3">2025/3</option>
+					<option value="2024/12">2024/12</option>
+					<option value="2024/9">2024/9</option>
+					<option value="2024/6">2024/6</option>
+					<option value="2024/3">2024/3</option>
+					<option value="2023/12">2023/12</option>
+					<option value="2023/9">2023/9</option>
+					<option value="2023/6">2023/6</option>
+					<option value="2023/3">2023/3</option>
+					<option value="2022/12">2022/12</option>
+					<option value="2022/9">2022/9</option>
+					<option value="2022/6">2022/6</option>
+					<option value="2022/3">2022/3</option>
+					<option value="2021/12">2021/12</option>
+					<option value="2021/9">2021/9</option>
+					<option value="2021/6">2021/6</option>
+					<option value="2021/3">2021/3</option>
+					<option value="2020/12">2020/12</option>
+					<option value="2020/9">2020/9</option>
+					<option value="2020/6">2020/6</option>
+					<option value="2020/3">2020/3</option>
+					<option value="2019/12">2019/12</option>
+					<option value="2018/12">2018/12</option>
+
+				</select></th>
+                        <th class="form-group"><select name="ctl00$ctl56$g_00f9bafa_387b_423c_b297_f8592de90819$ctl00$ddlMaliTabloDonem4" id="ddlMaliTabloDonem4" class="select">
+					<option value="2026/9">2026/9</option>
+					<option value="2026/6">2026/6</option>
+					<option value="2026/3">2026/3</option>
+					<option selected="selected" value="2025/12">2025/12</option>
+					<option value="2025/9">2025/9</option>
+					<option value="2025/6">2025/6</option>
+					<option value="2025/3">2025/3</option>
+					<option value="2024/12">2024/12</option>
+					<option value="2024/9">2024/9</option>
+					<option value="2024/6">2024/6</option>
+					<option value="2024/3">2024/3</option>
+					<option value="2023/12">2023/12</option>
+					<option value="2023/9">2023/9</option>
+					<option value="2023/6">2023/6</option>
+					<option value="2023/3">2023/3</option>
+					<option value="2022/12">2022/12</option>
+					<option value="2022/9">2022/9</option>
+					<option value="2022/6">2022/6</option>
+					<option value="2022/3">2022/3</option>
+					<option value="2021/12">2021/12</option>
+					<option value="2021/9">2021/9</option>
+					<option value="2021/6">2021/6</option>
+					<option value="2021/3">2021/3</option>
+					<option value="2020/12">2020/12</option>
+					<option value="2020/9">2020/9</option>
+					<option value="2020/6">2020/6</option>
+					<option value="2020/3">2020/3</option>
+					<option value="2019/12">2019/12</option>
+					<option value="2018/12">2018/12</option>
+
+				</select></th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyMTablo">
+                    <tr class='arabaslik'><td colspan='5' class='sectorAverage'>Bilanço</td></tr><tr><td>Dönen Varlıklar</td><td>1.467.775.665</td><td>975.893.805</td><td>1.044.711.185</td><td>1.464.008.772</td></tr><tr><td>  Nakit ve Nakit Benzerleri</td><td>7.316.021</td><td>109.528.477</td><td>312.110.200</td><td>215.066.506</td></tr><tr><td>  Finansal Yatırımlar</td><td>0</td><td>51.504.470</td><td>10.197.396</td><td>18.230.273</td></tr><tr><td>  Ticari Alacaklar</td><td>858.377.733</td><td>536.615.734</td><td>448.680.848</td><td>953.965.225</td></tr><tr><td>  Finans Sektörü Faaliyetlerinden Alacaklar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Diğer Alacaklar</td><td>363.951</td><td>2.432.577</td><td>239.399</td><td>0</td></tr><tr><td>  Müşteri Sözleşmelerinden Doğan Varlıklar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Stoklar</td><td>338.893.873</td><td>253.961.660</td><td>226.297.907</td><td>140.980.849</td></tr><tr><td>  Canlı Varlıklar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Diğer Dönen Varlıklar</td><td>262.824.087</td><td>21.850.887</td><td>47.185.435</td><td>135.765.919</td></tr><tr><td>    (Ara Toplam)</td><td>1.467.775.665</td><td>975.893.805</td><td>1.044.711.185</td><td>1.464.008.772</td></tr><tr><td>  Satış Amacıyla Elde Tutulan Duran Varlıklar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Duran Varlıklar</td><td>292.007.396</td><td>268.367.113</td><td>249.411.411</td><td>288.178.856</td></tr><tr><td>  Ticari Alacaklar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Finans Sektörü Faaliyetlerinden Alacaklar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Diğer Alacaklar</td><td>114.243</td><td>114.244</td><td>114.243</td><td>425.476</td></tr><tr><td>  Müşteri Sözleşmelerinden Doğan Varlıklar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Finansal Yatırımlar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Özkaynak Yöntemiyle Değerlenen Yatırımlar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Canlı Varlıklar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Yatırım Amaçlı Gayrimenkuller</td><td>243.513.370</td><td>231.868.729</td><td>217.795.086</td><td>247.322.342</td></tr><tr><td>  Stoklar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Kullanım Hakkı Varlıkları</td><td>23.615.753</td><td>12.541.351</td><td>7.762.562</td><td>10.705.203</td></tr><tr><td>  Maddi Duran Varlıklar</td><td>22.625.844</td><td>23.123.126</td><td>23.101.448</td><td>28.992.060</td></tr><tr><td>  Şerefiye</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Maddi Olmayan Duran Varlıklar</td><td>346.472</td><td>72.019</td><td>479.916</td><td>733.775</td></tr><tr><td>  Ertelenmiş Vergi Varlığı</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Diğer Duran Varlıklar</td><td>1.791.714</td><td>647.644</td><td>158.156</td><td>0</td></tr><tr><td>TOPLAM VARLIKLAR</td><td>1.759.783.061</td><td>1.244.260.918</td><td>1.294.122.596</td><td>1.752.187.628</td></tr><tr><td>KAYNAKLAR</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Kısa Vadeli Yükümlülükler</td><td>679.621.795</td><td>247.837.524</td><td>329.226.757</td><td>596.582.200</td></tr><tr><td>  Finansal Borçlar</td><td>6.496.224</td><td>0</td><td>3.679.309</td><td>5.287.012</td></tr><tr><td>  Diğer Finansal Yükümlülükler</td><td>0</td><td>6.496.224</td><td>0</td><td>0</td></tr><tr><td>  Ticari Borçlar</td><td>275.637.955</td><td>173.572.930</td><td>281.969.713</td><td>505.078.620</td></tr><tr><td>  Diğer Borçlar</td><td>298.781.003</td><td>17.207.182</td><td>7.732.852</td><td>43.554.097</td></tr><tr><td>  Müşteri Söz. Doğan Yük.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Finans Sektörü Faaliyetlerinden Borçlar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Devlet Teşvik ve Yardımları</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Ertelenmiş Gelirler (Müşteri Söz. Doğan Yük. Dış.Kal.)</td><td>75.765.981</td><td>22.618.606</td><td>16.356.071</td><td>20.324.859</td></tr><tr><td>  Dönem Karı Vergi Yükümlülüğü</td><td>0</td><td>10.200.726</td><td>1.228.038</td><td>11.579.061</td></tr><tr><td>  Borç Karşılıkları</td><td>12.400.090</td><td>9.797.657</td><td>6.777.206</td><td>6.096.836</td></tr><tr><td>  Diğer Kısa Vadeli Yükümlülükler</td><td>10.540.542</td><td>7.944.199</td><td>11.483.568</td><td>4.661.715</td></tr><tr><td>    (Ara Toplam)</td><td>679.621.795</td><td>247.837.524</td><td>329.226.757</td><td>596.582.200</td></tr><tr><td>  Satış Amaçlı Elde Tutulan Duran Varlıklara İlişkin Yükümlülükler</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Uzun Vadeli Yükümlülükler</td><td>61.035.497</td><td>53.329.564</td><td>45.401.809</td><td>49.587.522</td></tr><tr><td>  Finansal Borçlar</td><td>10.999.463</td><td>0</td><td>3.732.758</td><td>5.206.099</td></tr><tr><td>  Diğer Finansal Yükümlülükler</td><td>0</td><td>10.999.463</td><td>0</td><td>0</td></tr><tr><td>  Ticari Borçlar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Diğer Borçlar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Müşteri Söz.Doğan Yük.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Finans Sektörü Faaliyetlerinden Borçlar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Devlet Teşvik ve Yardımları</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Ertelenmiş Gelirler (Müşteri Söz.Doğan Yük. Dış.Kal.)</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>    Uzun vadeli karşılıklar</td><td>16.387.331</td><td>0</td><td>15.518.240</td><td>13.955.077</td></tr><tr><td>  Çalışanlara Sağlanan Faydalara İliş.Karş.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Ertelenmiş Vergi Yükümlülüğü</td><td>33.648.703</td><td>26.453.019</td><td>26.150.811</td><td>30.426.345</td></tr><tr><td>  Diğer Uzun Vadeli Yükümlülükler</td><td>0</td><td>15.877.082</td><td>0</td><td>0</td></tr><tr><td>Özkaynaklar</td><td>1.019.125.769</td><td>943.093.830</td><td>919.494.030</td><td>1.106.017.906</td></tr><tr><td>  Ana Ortaklığa Ait Özkaynaklar</td><td>1.019.125.769</td><td>943.093.830</td><td>919.494.030</td><td>1.106.017.906</td></tr><tr><td>  Ödenmiş Sermaye</td><td>402.170.000</td><td>402.170.000</td><td>402.170.000</td><td>402.170.000</td></tr><tr><td>  Karşılıklı İştirak Sermayesi Düzeltmesi (-)</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Hisse Senedi İhraç Primleri</td><td>164.009.659</td><td>155.356.814</td><td>145.174.184</td><td>164.009.659</td></tr><tr><td>  Değer Artış Fonları</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Yabancı Para Çevrim Farkları</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>  Kardan Ayrılan Kısıtlanmış Yedekler</td><td>79.459.288</td><td>67.939.407</td><td>63.486.421</td><td>71.723.401</td></tr><tr><td>  Geçmiş Yıllar Kar/Zararları</td><td>27.915.730</td><td>33.770.704</td><td>31.557.253</td><td>52.559.215</td></tr><tr><td>  Dönem Net Kar/Zararı</td><td>-86.838.079</td><td>-103.308.309</td><td>-57.888.264</td><td>-16.907.603</td></tr><tr><td>  Diğer Özsermaye Kalemleri</td><td>432.409.171</td><td>387.165.214</td><td>334.994.436</td><td>334.666.684</td></tr><tr><td>  Azınlık Payları</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>TOPLAM KAYNAKLAR</td><td>1.759.783.061</td><td>1.244.260.918</td><td>1.294.122.596</td><td>1.752.187.628</td></tr><tr class='arabaslik'><td colspan='5' class='sectorAverage'>Gelir Tablosu</td></tr><tr><td>Sürdürülen Faaliyetler</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Satış Gelirleri</td><td>1.933.192.328</td><td>944.524.912</td><td>418.610.329</td><td>3.037.235.257</td></tr><tr><td>Satışların Maliyeti (-)</td><td>-1.668.628.501</td><td>-807.745.553</td><td>-353.748.954</td><td>-2.690.422.988</td></tr><tr><td>Ticari Faaliyetlerden Diğer Kar (Zarar)</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Ticari Faaliyetlerden Brüt Kar (Zarar)</td><td>264.563.827</td><td>136.779.359</td><td>64.861.375</td><td>346.812.268</td></tr><tr><td>Faiz, Ücret, Prim, Komisyon ve Diğer Gelirler</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Faiz, Ücret, Prim, Komisyon ve Diğer Giderler (-)</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Finans Sektörü Faaliyetlerinden Diğer Kar (Zarar)</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Finans Sektörü Faaliyetlerinden Brüt Kar (Zarar)</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Diğer Gelir ve Giderler</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>BRÜT KAR (ZARAR)</td><td>264.563.827</td><td>136.779.359</td><td>64.861.375</td><td>346.812.268</td></tr><tr><td>Pazarlama, Satış ve Dağıtım Giderleri (-)</td><td>-186.232.117</td><td>-110.910.130</td><td>-59.696.996</td><td>-211.879.839</td></tr><tr><td>Genel Yönetim Giderleri (-)</td><td>-50.078.825</td><td>-27.517.449</td><td>-13.892.650</td><td>-52.253.954</td></tr><tr><td>Araştırma ve Geliştirme Giderleri (-)</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Diğer Faaliyet Gelirleri</td><td>119.906.735</td><td>61.853.128</td><td>30.084.146</td><td>199.058.615</td></tr><tr><td>Diğer Faaliyet Giderleri (-)</td><td>-63.245.861</td><td>-36.925.610</td><td>-18.563.431</td><td>-4.459.603</td></tr><tr><td>Faaliyet Karı Öncesi Diğer Gelir ve Giderler</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>FAALİYET KARI (ZARARI)</td><td>84.913.759</td><td>23.279.298</td><td>2.792.444</td><td>277.277.487</td></tr><tr><td>Net Faaliyet Kar/Zararı</td><td>28.252.885</td><td>-1.648.220</td><td>-8.728.271</td><td>82.678.475</td></tr><tr><td>  Yatırım Faaliyetlerinden Gelirler</td><td>5.648.970</td><td>4.321.733</td><td>2.544.262</td><td>36.861.382</td></tr><tr><td>  Yatırım Faaliyetlerinden Giderler (-)</td><td>-239.235</td><td>-3.059.793</td><td>-570.884</td><td>-233.849</td></tr><tr><td>  Diğer Gelir ve Giderler</td><td>-9.380.180</td><td>-8.180.025</td><td>-2.891.989</td><td>-3.076</td></tr><tr><td>Özkaynak Yöntemiyle Değerlenen Yatırımların Kar/Zararlarındaki Paylar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Finansman Gideri Öncesi Faaliyet Karı/Zararı</td><td>80.943.314</td><td>16.361.213</td><td>1.873.833</td><td>313.901.944</td></tr><tr><td>(Esas Faaliyet Dışı) Finansal Gelirler</td><td>17.151.427</td><td>15.109.324</td><td>8.403.866</td><td>43.198.741</td></tr><tr><td>(Esas Faaliyet Dışı) Finansal Giderler (-)</td><td>-166.226.291</td><td>-121.040.935</td><td>-63.512.339</td><td>-309.144.629</td></tr><tr><td>Vergi Öncesi Diğer Gelir ve Giderler</td><td>-3.970.445</td><td>-6.918.085</td><td>-918.611</td><td>36.624.457</td></tr><tr><td>SÜRDÜRÜLEN FAALİYETLER VERGİ ÖNCESİ KARI (ZARARI)</td><td>-68.131.550</td><td>-89.570.398</td><td>-53.234.640</td><td>47.956.056</td></tr><tr><td>Sürdürülen Faaliyetler Vergi Geliri (Gideri)</td><td>-18.706.529</td><td>-13.737.911</td><td>-4.653.624</td><td>-64.863.659</td></tr><tr><td>  Dönem Vergi Geliri (Gideri)</td><td>-15.466.151</td><td>-15.684.560</td><td>-4.896.073</td><td>-51.639.110</td></tr><tr><td>  Ertelenmiş Vergi Geliri (Gideri)</td><td>-3.240.378</td><td>1.946.649</td><td>242.449</td><td>-13.224.549</td></tr><tr><td>  Diğer Vergi Geliri (Gideri)</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>SÜRDÜRÜLEN FAALİYETLER DÖNEM KARI/ZARARI</td><td>-86.838.079</td><td>-103.308.309</td><td>-57.888.264</td><td>-16.907.603</td></tr><tr><td>DURDURULAN FAALİYETLER</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Durdurulan Faaliyetler Vergi Sonrası Dönem Karı (Zararı)</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>DÖNEM KARI (ZARARI)</td><td>-86.838.079</td><td>-103.308.309</td><td>-57.888.264</td><td>-16.907.603</td></tr><tr><td>Dönem Kar/Zararının Dağılımı</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Azınlık Payları</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Ana Ortaklık Payları</td><td>-86.838.079</td><td>-103.308.309</td><td>-57.888.264</td><td>-16.907.603</td></tr><tr><td>Hisse Başına Kazanç</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Seyreltilmiş Hisse Başına Kazanç</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Sürdürülen Faaliyetlerden Hisse Başına Kazanç</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Sürdürülen Faaliyetlerden Seyreltilmiş Hisse Başına Kazanç</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr class='arabaslik'><td colspan='5' class='sectorAverage'>Dipnot</td></tr><tr><td>Amortisman Giderleri</td><td>26.502.010</td><td>14.889.361</td><td>5.567.707</td><td>21.624.725</td></tr><tr><td>Kıdem Tazminatı</td><td>5.307.821</td><td>0</td><td>1.378.403</td><td>3.295.442</td></tr><tr><td>Finansman Giderleri</td><td>-166.226.291</td><td>-121.040.935</td><td>-63.512.339</td><td>-309.144.629</td></tr><tr><td>Yurtiçi Satışlar</td><td>1.922.494.814</td><td>937.050.341</td><td>415.404.852</td><td>3.027.414.425</td></tr><tr><td>Yurtdışı Satışlar</td><td>37.263.540</td><td>21.927.130</td><td>32.780.120</td><td>47.145.431</td></tr><tr><td>Net Yabancı Para Pozisyonu</td><td>809.448.450</td><td>383.394.033</td><td>1.808.421.893</td><td>531.987.259</td></tr><tr><td>Parasal net yabancı para varlık/(yükümlülük) pozisyonu</td><td>569.371.452</td><td>383.394.033</td><td>2.673.389.351</td><td>531.987.259</td></tr><tr><td>Net YPP (Hedge Dahil)</td><td>809.448.450</td><td>383.394.033</td><td>1.808.421.893</td><td>531.987.259</td></tr><tr class='arabaslik'><td colspan='5' class='sectorAverage'>Nakit Akım Tablosu</td></tr><tr><td> İşletme Faaliyetlerinden Kaynaklanan Net Nakit</td><td>-176.291.551</td><td>-128.762.327</td><td>107.989.760</td><td>-32.346.390</td></tr><tr><td> Düzeltme Öncesi Kar</td><td>-86.838.079</td><td>-103.308.309</td><td>-57.888.265</td><td>-16.907.603</td></tr><tr><td> Düzeltmeler:</td><td>401.813.099</td><td>243.571.202</td><td>126.627.806</td><td>116.533.785</td></tr><tr><td>  Amortisman & İtfa Payları</td><td>26.502.010</td><td>14.889.361</td><td>5.567.707</td><td>21.624.725</td></tr><tr><td>  Karşılıklardaki Değişim</td><td>11.611.076</td><td>7.103.240</td><td>3.572.797</td><td>7.093.788</td></tr><tr><td>  Diğer Gelir/ Gider</td><td>20.231.018</td><td>10.310.853</td><td>1.148.348</td><td>58.249.170</td></tr><tr><td> İşletme Sermayesinde Değişikler Öncesi Faaliyet Karı (+)</td><td>314.975.020</td><td>140.262.893</td><td>68.739.541</td><td>99.626.183</td></tr><tr><td>  İşletme Sermayesindeki Değişiklikler</td><td>-485.812.182</td><td>-263.788.782</td><td>31.083.274</td><td>-90.283.483</td></tr><tr><td> Esas Faaliyet ile İlgili Oluşan Nakit (+)</td><td>-170.837.162</td><td>-123.525.889</td><td>99.822.815</td><td>9.342.700</td></tr><tr><td>  Diğer İşletme Faaliyetlerinden Nakit</td><td>-5.454.389</td><td>-5.236.438</td><td>8.166.945</td><td>-41.689.090</td></tr><tr><td>  Sabit Sermaye Yatırımları</td><td>-591.099</td><td>-137.159</td><td>0</td><td>-5.006.272</td></tr><tr><td>  Diğer Yatırım Faaliyetlerinden Nakit</td><td>17.151.427</td><td>15.109.324</td><td>0</td><td>132.556.031</td></tr><tr><td> Yatırım Faaliyetlerinden Kaynaklanan Nakit</td><td>16.560.328</td><td>14.972.165</td><td>0</td><td>127.549.759</td></tr><tr><td>Serbest Nakit Akım</td><td>-159.731.223</td><td>-113.790.162</td><td>107.989.760</td><td>95.203.369</td></tr><tr><td>Finansal Borçlardaki Değişim</td><td>-356.577</td><td>-356.577</td><td>0</td><td>0</td></tr><tr><td>Temettü Ödemeleri</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Sermaye Artırımı</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Diğer Finansman Faaliyetlerinden Nakit</td><td>-5.594.346</td><td>-10.766.612</td><td>-4.048.810</td><td>-1.691.240</td></tr><tr><td>Finansman Faaliyetlerden Kaynaklanan Nakit</td><td>-5.950.923</td><td>-11.123.189</td><td>-4.048.810</td><td>-1.691.240</td></tr><tr><td>Yab. Para Çev. Fark. Etk. Önc.Nak.Ve Nak. Benz. Net Artış/Azalış</td><td>-165.682.146</td><td>-124.913.351</td><td>103.940.950</td><td>93.512.129</td></tr><tr><td> Yab.ı Para Çevrim Fark. Nakit Ve Nakit Benz. Üzerindeki Etkisi</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td> Diğer Nakit Girişi/Çıkışı</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Nakit ve Benzerlerindeki Değişim</td><td>-165.682.146</td><td>-124.913.351</td><td>103.940.950</td><td>93.512.129</td></tr><tr><td>Diğer Nakit ve Nakit Benzerlerindeki Artış</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Dönem Başı Nakit Değerler</td><td>215.066.506</td><td>203.719.997</td><td>190.763.783</td><td>159.105.355</td></tr><tr><td>Dönem Sonu Nakit</td><td>7.316.021</td><td>109.528.476</td><td>312.110.200</td><td>215.066.506</td></tr>
+                </tbody>
+            </table>
