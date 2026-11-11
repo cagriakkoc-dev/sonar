@@ -1,42 +1,5 @@
 [
  {
-  "id": "kap-1693342",
-  "hisse": "DOHOL",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:38:16+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1693343",
-  "hisse": "GLBMD",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T15:38:18+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 20,
-   "yenilik": 10,
-   "kapsam": 15,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Hasılat yatay (%0,9 artış), esas faaliyet kârı %10,7 artmış ve net zarar -62,2 milyon TL'ye çıkmış, özkaynaklar %8,9 erimiş; küçük ve BIST 100 dışı bir şirket olsa da finansal sonuç açıklaması olduğu için en az 80 puan tabanı uygulandı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1693344",
-  "hisse": "DOHOL",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:38:30+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1693345",
   "hisse": "DOHOL",
   "baslik": "Geleceğe Dönük Değerlendirmeler",
@@ -11165,5 +11128,120 @@
   "tur": "Halka arz fon kullanım raporu",
   "gerekce": "Üçüncü çeyrek halka arz gelirinin kullanım yerlerine ilişkin rutin, periyodik bir rapordur; metinde tutar veya yeni bir gelişme yer almaz, ayrıntılar ekteki rapordadır ve şirket orta ölçeklidir.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697336",
+  "hisse": "OZGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T16:36:44+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 24,
+   "yenilik": 12,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "OZGYO 11.11.2026'da 1,41-1,42 TL fiyatla 1.342.438 TL nominal pay geri aldı; kümülatif geri alım %0,38'e ulaştı ve 70 milyon TL'lik fon programı sürüyor, pay geri alımı her zaman önemli türlerden olduğu için taban 80 uygulandı.",
+  "durum": "paylasildi",
+  "tweet": "OZGYO (Özderici GYO) 11 Kasım'da 1,41-1,42 TL aralığından 1.342.438 lot pay geri aldı.\n\n3 Kasım kararıyla başlayan programda toplam 3.789.819 lota ulaşıldı (sermayenin %0,38'i). Fon tutarı 70 milyon TL, piyasa değeri 1,5 milyar TL, PD/DD 0,20x.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "11 Kasım"
+    ],
+    [
+     "Alınan pay",
+     "1.342.438 lot"
+    ],
+    [
+     "Fiyat aralığı",
+     "1,41-1,42 TL"
+    ],
+    [
+     "Toplam geri alınan",
+     "3.789.819 lot"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,38"
+    ]
+   ]
+  },
+  "goruntu": false,
+  "goruntu_hata": "kart: Error(\"BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/ch",
+  "tweet_id": "2120556380663038085",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697343",
+  "hisse": "GUBRF",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T16:36:54+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 22,
+   "yenilik": 12,
+   "kapsam": 14,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "11.11.2026'da 100.000 TL nominal (yaklaşık 28,2 milyon TL) pay geri alındı; günlük tutar piyasa değerinin on binde ikisi kadar olsa da toplam geri alım %1,16 sermaye oranına (yaklaşık 1,1 milyar TL) ulaştığı ve pay geri alımı editör kuralıyla her zaman önemli sayıldığı için taban puan olan 80 verildi.",
+  "durum": "paylasildi",
+  "tweet": "GUBRF (Gübre Fabrikaları) 11 Kasım'da 100.000 lot pay geri aldı. Fiyat aralığı 282,00-282,75 TL, ağırlıklı ortalama 282,38 TL.\n\n26 Ekim kararıyla başlayan programda toplam 3.878.932 lota (%1,1614) ulaşıldı. Piyasa değeri 137,4 milyar TL.",
+  "kart": {
+   "baslik": "Pay geri alım özeti",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "11.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "100.000 lot"
+    ],
+    [
+     "Ağırlıklı ortalama",
+     "282,38 TL"
+    ],
+    [
+     "Programdaki toplam",
+     "3.878.932 lot"
+    ],
+    [
+     "Sermayeye oranı",
+     "%1,1614"
+    ]
+   ]
+  },
+  "goruntu": false,
+  "goruntu_hata": "kart: Error(\"BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/ch",
+  "tweet_id": "2120556444865249659",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697345",
+  "hisse": "GEDIK",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T16:37:09+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 10,
+   "yenilik": 12,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Şirket 18.09.2026 tarihli programı kapsamında 11.11.2026'da 4,82 TL'den 268.811 lot (yaklaşık 1,3 milyon TL) geri aldı; tutar 9,5 milyar TL piyasa değerine göre küçük olsa da pay geri alımı bildirimleri editör kararıyla en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
