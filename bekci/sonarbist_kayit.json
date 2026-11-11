@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1693348",
-  "hisse": "SISE",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:38:38+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1693349",
-  "hisse": "GLBMD",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:38:38+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1693351",
   "hisse": "EUREN",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -11282,5 +11264,71 @@
   "goruntu_hata": "kart: Error(\"BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/ch",
   "tweet_id": "2120577867788812407",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697399",
+  "hisse": "SVGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-11T18:33:55+00:00",
+  "mod": "canli",
+  "puan": 92,
+  "alt": {
+   "fin": 36,
+   "yenilik": 18,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "Şirket, piyasa değerinin yaklaşık %6'sına denk gelen 314 milyon TL'lik blok pay alımı için geri alım fonunu 349,8 milyon TL'ye yükseltti; kesinleşmiş karar ve gün içi geri alım işlemleri bildirildi, program alım sonrası sonlanacak.",
+  "durum": "paylasildi",
+  "tweet": "SVGYO (Savur GYO) geri alım fonunu 150 milyon TL'den 349.760.455 TL'ye çıkardı.\n\nİş Bankası'nın tasfiye yürüttüğü fonlardan 132.499.703 lot pay 2,37 TL'den, 314.024.296 TL karşılığı alınacak. Sonra program kapanacak.\n\nÖnceki alımlar: 15.348.564 lot, 35.736.159 TL.",
+  "kart": {
+   "baslik": "Geri alım fonu artırıldı",
+   "satirlar": [
+    [
+     "Yeni azami fon",
+     "349.760.455 TL"
+    ],
+    [
+     "Satın alınacak pay",
+     "132.499.703 lot"
+    ],
+    [
+     "Pay başına fiyat",
+     "2,37 TL"
+    ],
+    [
+     "Toplam bedel",
+     "314.024.296 TL"
+    ],
+    [
+     "Önceki alım",
+     "15.348.564 lot"
+    ]
+   ]
+  },
+  "goruntu": false,
+  "goruntu_hata": "kart: Error(\"BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/ch",
+  "tweet_id": "2120585913042624839",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697400",
+  "hisse": "VESTL",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-11T18:34:15+00:00",
+  "mod": "golge",
+  "puan": 33,
+  "alt": {
+   "fin": 8,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 4,
+   "ilgi": 5
+  },
+  "tur": "Özel durum açıklaması (Euronext Dublin duyurusu eki)",
+  "gerekce": "Bildirim metni yalnızca Euronext Dublin'deki açıklamanın ekte paylaşıldığını belirtiyor ve içeriği ya da tutarı vermiyor; aynı konuda daha önce dört kez açıklama yapılması süren bir konuya (muhtemelen borç/tahvil) işaret ediyor, ancak yeni bir sürpriz yok ve zarar eden, piyasa değeri düşük bir şirket söz konusu olduğu için orta-alt puan verildi.",
+  "durum": "dusuk"
  }
 ]
