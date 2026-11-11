@@ -1,43 +1,5 @@
 [
  {
-  "id": "kap-1693353",
-  "hisse": "SISE",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-05T15:38:46+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 30,
-   "yenilik": 14,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "finansal sonuç basın bülteni",
-  "gerekce": "Şirket 1 Ocak-30 Eylül 2026 dönemi faaliyet sonuçlarına ilişkin değerlendirmeleri içeren basın bültenini paylaştı; finansal sonuç açıklaması editör kuralı gereği en az 80 puan alır ve SISE BIST 30 içinde bilinen büyük bir şirkettir.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1693356",
-  "hisse": "LXGYO",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-05T15:38:53+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 6,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 2
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "Günlük 90.000 nominal (yaklaşık 0,5 milyon TL) geri alım piyasa değerine göre çok küçük olsa da, pay geri alımı editör kuralı gereği her zaman önemlidir; kümülatif geri alım sermayenin %1,63'üne ulaştı ve bu, taban puan olan 80'in verilmesini sağladı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1693361",
   "hisse": "KOCMT",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -11328,6 +11290,42 @@
   },
   "tur": "Yönetim kurulu üyesi istifası",
   "gerekce": "Yönetim kurulu üyesinin başka bir görev nedeniyle istifası yönetim yapısını etkiler ancak finansal etkisi yoktur, strateji değişikliği içermez ve editörün zorunlu önemli saydığı türlerden biri değildir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697413",
+  "hisse": "TTKOM",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-11T20:41:09+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 0,
+   "yenilik": 7,
+   "kapsam": 10,
+   "kesinlik": 6,
+   "ilgi": 7
+  },
+  "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
+  "gerekce": "Şirket Genel Bilgi Formu, yönetim kurulu üyeleri ve görevlerine ilişkin rutin bir bilgi güncellemesidir; parasal bir tutar içermez ve 80 puanlık editör kategorilerinden hiçbirine girmez, ancak TTKOM büyük bir şirket olduğu için yönetim bilgisi bir miktar ilgi görür.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697414",
+  "hisse": "TTKOM",
+  "baslik": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
+  "t": "2026-11-11T20:41:14+00:00",
+  "mod": "golge",
+  "puan": 4,
+  "alt": {
+   "fin": 0,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 0,
+   "ilgi": 1
+  },
+  "tur": "Kurumsal Yönetim Bilgi Formu güncellemesi",
+  "gerekce": "Yönetim kurulu toplantı sayısı, katılım oranı ve elektronik portal kullanımı gibi rutin bilgilerin usulî güncellemesi olup finansal etkisi ve yeni bir gelişme içermiyor.",
   "durum": "dusuk"
  }
 ]
