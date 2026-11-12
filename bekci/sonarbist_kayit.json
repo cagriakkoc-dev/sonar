@@ -1,89 +1,5 @@
 [
  {
-  "id": "kap-1693373",
-  "hisse": "FROTO",
-  "baslik": "Geleceğe Dönük Değerlendirmeler",
-  "t": "2026-11-05T15:39:41+00:00",
-  "mod": "golge",
-  "puan": 88,
-  "alt": {
-   "fin": 34,
-   "yenilik": 16,
-   "kapsam": 19,
-   "kesinlik": 9,
-   "ilgi": 10
-  },
-  "tur": "Finansal sonuç ve 2026 beklenti güncellemesi",
-  "gerekce": "BIST 30 şirketi Ford Otosan'ın 9 aylık finansal sonuçları ile güncellenmiş 2026 beklentilerini içeren bildirim, editörün her zaman önemli saydığı finansal sonuç ve rehberlik türlerine girer; örnekteki PAHOL satın alma özeti farklı bir türdür ve bu puanı düşürmez.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1693375",
-  "hisse": "OYYAT",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-05T15:39:48+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1693392",
-  "hisse": "OSMEN",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-05T15:51:04+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 3,
-   "yenilik": 5,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "Günlük alım yaklaşık 468 bin TL ile piyasa değerinin çok küçük bir kısmı, ancak pay geri alımı editör kuralı gereği her zaman önemli sayılır; program kapsamında toplam geri alım 2.228.786 adede (%0,5552) ulaştığı için taban puan olan 80 verildi.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1693404",
-  "hisse": "DZGYO",
-  "baslik": "Maddi Duran Varlık Satımı",
-  "t": "2026-11-05T15:51:09+00:00",
-  "mod": "golge",
-  "puan": 65,
-  "alt": {
-   "fin": 30,
-   "yenilik": 12,
-   "kapsam": 10,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "Maddi duran varlık satışı (otel binası)",
-  "gerekce": "Yaklaşık 979 milyon TL'lik otel satışı 2,6 milyar TL piyasa değerinin yaklaşık %38'ine denk geliyor ve ekspertiz değerinin biraz üzerinde, satış gerçekleşmiş, tahsilat tarihi belli; ancak şirket BIST 30/100 dışında ve bildirim sabit kıymet satışı olduğu için garantili önemli türlerden değil.",
-  "durum": "dusuk_bildirildi"
- },
- {
-  "id": "kap-1693405",
-  "hisse": "SOKM",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T15:51:18+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 30,
-   "yenilik": 12,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "SOKM'un 2026 9 aylık finansal raporunda hasılat %4,9 artışla 270,1 milyar TL olurken net zarar 665,2 milyon TL'den 437,3 milyon TL'ye geriledi; finansal sonuç bildirimleri editör kararıyla en az 80 puan aldığı için puan tabana oturtuldu.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1693406",
   "hisse": "ISMEN",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -11368,5 +11284,59 @@
   "durum": "dogrulama_hatasi",
   "sebep": "açılış son tweetlerle aynı",
   "tweet_red": "BASGZ (Kent Doğalgaz) 11 Kasım'da ortalama 36,327 TL fiyatla 20.000 lot pay geri aldı. Tutar 726.537,78 TL, sermayeye oranı %0,00286.\n\n3 Kasım kararıyla başlayan programın azami tutarı 1 milyar TL. Piyasa değeri 27,2 milyar TL, PD/DD 0,73x."
+ },
+ {
+  "id": "kap-1697644",
+  "hisse": "EYGYO",
+  "baslik": "Finansal Tablo ve-veya Dipnot Değişikliği",
+  "t": "2026-11-12T13:11:16+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 2,
+   "yenilik": 2,
+   "kapsam": 3,
+   "kesinlik": 4,
+   "ilgi": 1
+  },
+  "tur": "Finansal tablo düzeltmesi",
+  "gerekce": "Solo gelir tablosunda ertelenmiş vergi kaleminin yanlış başlık altına yazılması düzeltildi; net kâr/zarara etkisi yok, bu nedenle usulî ve düşük önemli bir bildirim.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697648",
+  "hisse": "ISMEN",
+  "baslik": "Yatırım Kuruluşu Varant - Sertifika - Senetlerine İlişkin Bildirim",
+  "t": "2026-11-12T13:11:19+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1697649",
+  "hisse": "ISMEN",
+  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
+  "t": "2026-11-12T13:11:19+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1697651",
+  "hisse": "ISMEN",
+  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
+  "t": "2026-11-12T13:11:19+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1697652",
+  "hisse": "ISMEN",
+  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
+  "t": "2026-11-12T13:11:19+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
  }
 ]
