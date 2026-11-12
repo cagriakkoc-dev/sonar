@@ -1,46 +1,5 @@
 [
  {
-  "id": "analiz-1693478",
-  "hisse": "TOASO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T17:40:28+00:00",
-  "mod": "canli",
-  "tur": "bilanço analizi",
-  "tweet": "TOASO (Tofaş) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net dönem kârı 11,0 milyar TL (%188,6 artış)\n• Hasılat 293,5 milyar TL (%19,4 artış)\n• Finansman gideri 3,2 milyar TL (%46,4 azalış)\n\nDikkat edilecekler\n• Net borç 51,4 milyar TL (%23,2 artış)",
-  "kart": {
-   "tweet": "TOASO (Tofaş) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net dönem kârı 11,0 milyar TL (%188,6 artış)\n• Hasılat 293,5 milyar TL (%19,4 artış)\n• Finansman gideri 3,2 milyar TL (%46,4 azalış)\n\nDikkat edilecekler\n• Net borç 51,4 milyar TL (%23,2 artış)",
-   "guclu": [
-    {
-     "ad": "Net dönem kârı",
-     "deger": "11,0 milyar TL",
-     "not": "Geçen yıl 3,8 milyar TL, %188,6 artış"
-    },
-    {
-     "ad": "Hasılat",
-     "deger": "293,5 milyar TL",
-     "not": "Geçen yıl 245,8 milyar TL, %19,4 artış"
-    },
-    {
-     "ad": "Finansman gideri",
-     "deger": "3,2 milyar TL",
-     "not": "Geçen yıl 5,9 milyar TL, %46,4 azalış"
-    }
-   ],
-   "dikkat": [
-    {
-     "ad": "Net borç",
-     "deger": "51,4 milyar TL",
-     "not": "Yıl sonu 41,7 milyar TL, %23,2 artış"
-    }
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "durum": "analiz_paylasildi",
-  "tweet_id": "2118398106295255528",
-  "x_gorsel_hata": null
- },
- {
   "id": "kap-1693479",
   "hisse": "TOASO",
   "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
@@ -11438,5 +11397,23 @@
   "goruntu_hata": null,
   "tweet_id": "2120927192523641129",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697808",
+  "hisse": "ARCLK",
+  "baslik": "Kredi Derecelendirmesi",
+  "t": "2026-11-12T17:21:03+00:00",
+  "mod": "golge",
+  "puan": 55,
+  "alt": {
+   "fin": 12,
+   "yenilik": 14,
+   "kapsam": 13,
+   "kesinlik": 8,
+   "ilgi": 8
+  },
+  "tur": "Kredi derecelendirmesi (not indirimi)",
+  "gerekce": "S&P Arçelik'in uzun vadeli notunu B+'dan B'ye düşürüp görünümü Negatif olarak teyit etti; doğrudan tutar içermeyen ama şirketin finansman maliyeti ve kredi riski açısından olumsuz, kesinleşmiş bir gelişme, editör zorunlu önem türlerinden biri değil.",
+  "durum": "dusuk"
  }
 ]
