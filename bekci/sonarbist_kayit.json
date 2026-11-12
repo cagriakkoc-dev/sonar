@@ -1,42 +1,5 @@
 [
  {
-  "id": "kap-1693370",
-  "hisse": "FROTO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T15:39:30+00:00",
-  "mod": "golge",
-  "puan": 88,
-  "alt": {
-   "fin": 34,
-   "yenilik": 18,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "Finansal sonuç (9 aylık bilanço)",
-  "gerekce": "FROTO'nun 2026 9 aylık bilançosunda hasılat %10,0 azalışla 679,8 milyar TL, net kâr %33,6 azalışla 19,3 milyar TL oldu; BIST 30 şirketinin bilançosu ve belirgin kâr düşüşü nedeniyle finansal sonuç türünün en az 80 puan kuralı uygulandı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1693371",
-  "hisse": "FROTO",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:39:39+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1693372",
-  "hisse": "FROTO",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:39:41+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1693373",
   "hisse": "FROTO",
   "baslik": "Geleceğe Dönük Değerlendirmeler",
@@ -11349,5 +11312,61 @@
   "goruntu_hata": null,
   "tweet_id": "2120806021958402176",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697630",
+  "hisse": "ENJSA",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-12T13:00:12+00:00",
+  "mod": "golge",
+  "puan": 24,
+  "alt": {
+   "fin": 5,
+   "yenilik": 1,
+   "kapsam": 3,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "Tahvil kupon ve itfa ödemesi",
+  "gerekce": "TRSENSAK2611 tahvilinin 148,4 milyon TL'lik 8. kupon ve 1,5 milyar TL'lik itfa ödemesi planlandığı gibi tamamlandı; tutar piyasa değerinin yaklaşık %1,3'ü olduğundan ve ödeme rutin, önceden bilinen bir borç ödemesi olduğundan etkisi sınırlıdır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697631",
+  "hisse": "ENJSA",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-12T13:00:16+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 5,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "Tahvil kupon ve itfa ödemesi",
+  "gerekce": "ENJSA'nın TRSENSAK2629 tahvili için 66,3 milyon TL kupon ve 670 milyon TL itfa ödemesi tamamlandı; toplam yaklaşık 736 milyon TL, 124,5 milyar TL piyasa değerine göre küçük ve önceden takvimlenmiş rutin bir borç ödemesidir, bu yüzden editör istisna gruplarına girmez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697633",
+  "hisse": "BASGZ",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-12T13:00:20+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 8,
+   "yenilik": 12,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Pay geri alım programı kapsamında 11.11.2026'da 20.000 nominal TL (yaklaşık 726,5 bin TL) pay alınmış olup tutar piyasa değerine göre çok küçüktür (program azami tutarı 1 milyar TL), ancak pay geri alımı editör kararıyla en az 80 puan alan bir türdür.",
+  "durum": "dogrulama_hatasi",
+  "sebep": "açılış son tweetlerle aynı",
+  "tweet_red": "BASGZ (Kent Doğalgaz) 11 Kasım'da ortalama 36,327 TL fiyatla 20.000 lot pay geri aldı. Tutar 726.537,78 TL, sermayeye oranı %0,00286.\n\n3 Kasım kararıyla başlayan programın azami tutarı 1 milyar TL. Piyasa değeri 27,2 milyar TL, PD/DD 0,73x."
  }
 ]
