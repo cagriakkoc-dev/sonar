@@ -1,53 +1,5 @@
 [
  {
-  "id": "kap-1693463",
-  "hisse": "YGGYO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T17:21:11+00:00",
-  "mod": "canli",
-  "puan": 82,
-  "alt": {
-   "fin": 33,
-   "yenilik": 16,
-   "kapsam": 17,
-   "kesinlik": 10,
-   "ilgi": 6
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Finansal sonuç bildirimi olduğu için en az 80 puan alır; hasılat %4,9 azalırken net kâr geçen yılın aynı dönemine göre %62,0 düşerek 1,5 milyar TL'ye geriledi, bu da dikkat çeken bir sapma.",
-  "durum": "paylasildi",
-  "tweet": "YGGYO (Yeni Gimat GYO) 9 aylık raporunu açıkladı. Hasılat %4,9 azalışla 2,8 milyar TL, net kâr %62,0 azalışla 1,5 milyar TL oldu.\n\nEsas faaliyet kârı %3,1 artışla 2,0 milyar TL'ye çıktı. Özkaynaklar %3,8 azalışla 30,7 milyar TL.",
-  "kart": {
-   "baslik": "9 aylık finansal sonuçlar",
-   "satirlar": [
-    [
-     "Hasılat",
-     "2,8 milyar TL"
-    ],
-    [
-     "Net dönem kârı",
-     "1,5 milyar TL"
-    ],
-    [
-     "Net kâr değişimi",
-     "%62,0 azalış"
-    ],
-    [
-     "Esas faaliyet kârı",
-     "2,0 milyar TL"
-    ],
-    [
-     "Özkaynaklar",
-     "30,7 milyar TL"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2118393357621956808",
-  "x_gorsel_hata": null
- },
- {
   "id": "analiz-1693463",
   "hisse": "YGGYO",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11438,5 +11390,24 @@
   "tur": "Kredi derecelendirmesi",
   "gerekce": "S&P, Anadolu Efes'in notunu BB ve görünümünü Negatif olarak korudu; değişiklik olmadığı için sürpriz düşük, beklentiler şirketin kendi rehberliği değil üçüncü taraf görüşü olduğundan zorunlu yüksek puan grubuna girmiyor, BIST 30 şirketi olması ilgiyi biraz artırıyor.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697782",
+  "hisse": "OZGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-12T16:16:26+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 14,
+   "yenilik": 12,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "OZGYO, 12.11.2026'da 1,45 TL fiyatla 1.831.994 TL nominal pay geri aldı (toplam 5.621.813 TL, sermayenin %0,56'sı); pay geri alımı editör kuralı gereği en az 80 puan alır, tutar ise piyasa değerine göre küçüktür (~2,7 milyon TL).",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
