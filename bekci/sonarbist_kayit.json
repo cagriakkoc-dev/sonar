@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1693407",
-  "hisse": "SOKM",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:51:36+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1693408",
-  "hisse": "SOKM",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T15:51:38+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1693409",
   "hisse": "DOHOL",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -11336,6 +11318,42 @@
   },
   "tur": "Haber ve söylentilere ilişkin açıklama (soruşturma yalanlaması)",
   "gerekce": "Şirket, basında geçen soruşturma iddialarına karşı Başsavcılığın 'soruşturma kaydı yok' yanıtını duyuruyor; doğrudan finansal etkisi yok, itibar ve algı riskini gideren bir yalanlama olduğu için orta-düşük puan aldı, editörün zorunlu önemli türlerinden hiçbirine girmiyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697720",
+  "hisse": "LXGYO",
+  "baslik": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Değerlendirme Raporu",
+  "t": "2026-11-12T15:00:27+00:00",
+  "mod": "golge",
+  "puan": 28,
+  "alt": {
+   "fin": 5,
+   "yenilik": 5,
+   "kapsam": 8,
+   "kesinlik": 7,
+   "ilgi": 3
+  },
+  "tur": "Halka arz fiyat varsayımları değerlendirme raporu",
+  "gerekce": "SPK Pay Tebliği'nin 29. maddesi uyarınca verilen, 01.01.2026–30.09.2026 dönemini geriye dönük değerlendiren periyodik bir uyum raporu; bildirim metni rakam veya yeni beklenti içermiyor, yalnızca ek rapora atıf yapıyor, bu yüzden rehberlik niteliği taşımıyor ve etkisi sınırlı kalıyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697724",
+  "hisse": "VAKBN",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-12T15:00:32+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 2,
+   "yenilik": 5,
+   "kapsam": 6,
+   "kesinlik": 4,
+   "ilgi": 5
+  },
+  "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
+  "gerekce": "Vakıfbank'ın yönetim kurulu üyelerini ve görevlerini listeleyen rutin bir güncellemedir; parasal etkisi yoktur, yalnızca Osman Arslan'ın 09.04.2026 tarihli murahhas üyelik bilgisi yeni görünmektedir, bu yüzden düşük puan almıştır.",
   "durum": "dusuk"
  }
 ]
