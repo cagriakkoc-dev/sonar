@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1693368",
-  "hisse": "ENERY",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-05T15:39:22+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 24,
-   "yenilik": 15,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 8
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "Günlük alım yalnızca yaklaşık 28,5 milyon TL (piyasa değerinin on binde 3'ü kadar) olsa da, 05.11.2026'da 2.050.000 adet pay geri alınmış ve toplam elde tutulan pay sermayenin %4,74'üne ulaşmıştır; pay geri alımı editör kuralı gereği en az 80 puan alır, silinen PAHOL satın alma örneği ise farklı bir türdür.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1693370",
   "hisse": "FROTO",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11324,5 +11305,49 @@
   "tur": "Şirket Genel Bilgi Formu (yönetim kurulu güncellemesi)",
   "gerekce": "Brisa'nın yönetim kurulu bileşimini güncelleyen Şirket Genel Bilgi Formu'nda Bridgestone EMEA'dan yeni üye (Jose Enrique Gonzalez Sanchez) ve birkaç üyenin görev tarihi yer alıyor; doğrudan finansal etkisi olmayan, büyük ölçüde usulî bir güncelleme.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697524",
+  "hisse": "TCKRC",
+  "baslik": "İhale Süreci / Sonucu",
+  "t": "2026-11-12T09:08:34+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 12,
+   "yenilik": 12,
+   "kapsam": 6,
+   "kesinlik": 8,
+   "ilgi": 4
+  },
+  "tur": "Yeni iş ilişkisi / ihale kazanımı",
+  "gerekce": "Karayolları 4. Bölge Müdürlüğü'nün 173 milyon TL'lik çelik otokorkuluk ihalesi (son 4 çeyrek hasılatın %2,85'i) TCKRC uhdesinde kaldı ve kesinleşme kararı geldi; tutar şirket büyüklüğüne göre orta-küçük olsa da yeni iş/sözleşme türü olduğu için taban puan 80 uygulandı.",
+  "durum": "paylasildi",
+  "tweet": "TCKRC, Karayolları 4. Bölge Müdürlüğü'nün 23 Ekim'deki çelik otokorkuluk ihalesini 173.000.000 TL bedelle üstlendi.\n\nBedel, son gelir tablosundaki brüt satış hasılatının %2,85'ine denk geliyor. Kesinleşme kararı ulaştı, sözleşme süreci ayrıca duyurulacak.",
+  "kart": {
+   "baslik": "Çelik otokorkuluk ihalesi",
+   "satirlar": [
+    [
+     "İhale bedeli",
+     "173.000.000 TL"
+    ],
+    [
+     "Ortaklık payı",
+     "%100"
+    ],
+    [
+     "Hasılata oranı",
+     "%2,85"
+    ],
+    [
+     "İhale tarihi",
+     "23.10.2026"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120806021958402176",
+  "x_gorsel_hata": null
  }
 ]
