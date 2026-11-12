@@ -1,62 +1,5 @@
 [
  {
-  "id": "kap-1693490",
-  "hisse": "MGROS",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T18:33:30+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1693491",
-  "hisse": "MGROS",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T18:33:30+00:00",
-  "mod": "canli",
-  "puan": 88,
-  "alt": {
-   "fin": 30,
-   "yenilik": 14,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Migros'un 2026 9 aylık bilançosunda hasılat %4,1 artarken net kâr %33,9 düşüp 4,8 milyar TL'ye geriledi; finansal sonuç açıklaması editör kuralı gereği en az 80 puan alır, BIST 30 şirketi olması ilgiyi artırır.",
-  "durum": "paylasildi",
-  "tweet": "MGROS (Migros) 2026'nın ilk dokuz ayını 398,0 milyar TL hasılatla kapattı, geçen yıl 382,5 milyar TL'ydi (%4,1 artış). Net dönem kârı 7,3 milyar TL'den 4,8 milyar TL'ye indi (%33,9 azalış).\n\nEsas faaliyet zararı 8,0 milyar TL'den 11,8 milyar TL'ye çıktı. F/K 21,2x.",
-  "kart": {
-   "baslik": "Dokuz aylık finansal sonuçlar",
-   "satirlar": [
-    [
-     "Hasılat",
-     "398,0 milyar TL"
-    ],
-    [
-     "Geçen yıl hasılat",
-     "382,5 milyar TL"
-    ],
-    [
-     "Net dönem kârı",
-     "4,8 milyar TL"
-    ],
-    [
-     "Geçen yıl net kâr",
-     "7,3 milyar TL"
-    ],
-    [
-     "Esas faaliyet kârı",
-     "-11,8 milyar TL"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2118411523890499996",
-  "x_gorsel_hata": null
- },
- {
   "id": "analiz-1693491",
   "hisse": "MGROS",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11483,5 +11426,41 @@
   "goruntu_hata": null,
   "tweet_id": "2120954430396739755",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697817",
+  "hisse": "INFO",
+  "baslik": "Pay Dışı Sermaye Piyasası Aracı Alım Satım Bildirimi",
+  "t": "2026-11-12T19:30:11+00:00",
+  "mod": "golge",
+  "puan": 46,
+  "alt": {
+   "fin": 18,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 2
+  },
+  "tur": "Borçlanma aracı geri alımı (finansman bonosu)",
+  "gerekce": "Şirket kendi ihraç ettiği 1 milyar TL nominal finansman bonosunu 1,0559 fiyatla (yaklaşık 1,056 milyar TL) geri aldı; tutar piyasa değerine göre büyük ancak hasılatın yaklaşık %5,5'i, işlem kesinleşmiş ama pay geri alımı değil, rutin borç/likidite yönetimi niteliğinde olduğundan orta puan aldı.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697818",
+  "hisse": "AKFGY",
+  "baslik": "Bölünme İşlemlerine İlişkin Bildirim",
+  "t": "2026-11-12T19:30:17+00:00",
+  "mod": "golge",
+  "puan": 38,
+  "alt": {
+   "fin": 10,
+   "yenilik": 6,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 2
+  },
+  "tur": "Kısmi bölünme tescili (grup içi)",
+  "gerekce": "Bodrum Loft üst hakkının %100 bağlı ortaklık Time-in Turizm'e kolaylaştırılmış usulde kısmi bölünmeyle devri tescil edildi; grup içi yeniden yapılanma olduğundan ve SPK onayı ile genel kurul kararı daha önce alındığından yeni etkisi sınırlı, kesinlik tam.",
+  "durum": "dusuk"
  }
 ]
