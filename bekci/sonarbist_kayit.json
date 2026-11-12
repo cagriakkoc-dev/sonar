@@ -1,43 +1,5 @@
 [
  {
-  "id": "kap-1693366",
-  "hisse": "DOAS",
-  "baslik": "Yeni İş İlişkisi",
-  "t": "2026-11-05T15:39:09+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 20,
-   "yenilik": 16,
-   "kapsam": 12,
-   "kesinlik": 4,
-   "ilgi": 8
-  },
-  "tur": "Yeni iş ilişkisi (niyet mektubu)",
-  "gerekce": "Doğuş Otomotiv, Skoda markalı binek otomobillerin Irak'taki satış ve satış sonrası hizmetleri için Skoda Auto A.S. ile niyet mektubu imzaladı; tutar ve bağlayıcı sözleşme henüz yok, bu yüzden bileşen puanları düşük kalsa da yeni iş ilişkisi türü için 80 taban puanı uygulandı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1693367",
-  "hisse": "AHGAZ",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-05T15:39:16+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 4,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 6
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "Günlük geri alım yaklaşık 24 milyon TL ile piyasa değerinin yaklaşık %0,02'si olduğundan etkisi küçüktür; ancak pay geri alımı bildirimleri editör kuralı gereği en az 80 puan alır (toplam elde tutulan pay 89,2 milyon adet, sermayenin %3,43'ü).",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1693368",
   "hisse": "ENERY",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -11325,6 +11287,42 @@
   },
   "tur": "Şirket Genel Bilgi Formu (yönetim kurulu bilgisi güncellemesi)",
   "gerekce": "Yönetim kurulu bilgilerini güncelleyen usulî bir form olup 9 Kasım 2026'da iki yeni üyenin (Furkan Katmerci ve bağımsız üye Mehmet Gökhan Çelik) seçildiğini yansıtıyor; finansal etkisi yoktur ve editörün her zaman önemli saydığı türlerden hiçbirine girmez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697495",
+  "hisse": "BRISA",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-12T07:34:26+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 2,
+   "yenilik": 7,
+   "kapsam": 11,
+   "kesinlik": 10,
+   "ilgi": 0
+  },
+  "tur": "Yönetim kurulu üyesi değişikliği",
+  "gerekce": "Bir yönetim kurulu üyesinin istifası kabul edilip yerine kesinleşmiş bir atama yapıldı (ilk genel kurul onayına tabi); doğrudan finansal etkisi olmayan, kapsamı sınırlı rutin bir yönetim değişikliğidir ve şirket bu bildirimde BIST 30/100 üyeliğiyle öne çıkmamaktadır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697496",
+  "hisse": "BRISA",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-12T07:34:31+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 3,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 9,
+   "ilgi": 0
+  },
+  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu güncellemesi)",
+  "gerekce": "Brisa'nın yönetim kurulu bileşimini güncelleyen Şirket Genel Bilgi Formu'nda Bridgestone EMEA'dan yeni üye (Jose Enrique Gonzalez Sanchez) ve birkaç üyenin görev tarihi yer alıyor; doğrudan finansal etkisi olmayan, büyük ölçüde usulî bir güncelleme.",
   "durum": "dusuk"
  }
 ]
