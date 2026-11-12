@@ -1,87 +1,5 @@
 [
  {
-  "id": "analiz-1693463",
-  "hisse": "YGGYO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T17:21:50+00:00",
-  "mod": "canli",
-  "tur": "bilanço analizi",
-  "tweet": "YGGYO (Yeni Gimat GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Esas faaliyet marjı %70,6\n• Net nakit 3,3 milyar TL\n• Finansman gideri %18,1 azaldı\n\nDikkat edilecekler\n• Net kâr 1,5 milyar TL, %62,0 azaldı\n• Özkaynaklar %3,8 azaldı",
-  "kart": {
-   "tweet": "YGGYO (Yeni Gimat GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Esas faaliyet marjı %70,6\n• Net nakit 3,3 milyar TL\n• Finansman gideri %18,1 azaldı\n\nDikkat edilecekler\n• Net kâr 1,5 milyar TL, %62,0 azaldı\n• Özkaynaklar %3,8 azaldı",
-   "guclu": [
-    {
-     "ad": "Esas faaliyet marjı",
-     "deger": "%70,6",
-     "not": "Geçen yıl %65,2 idi"
-    },
-    {
-     "ad": "Net nakit",
-     "deger": "3,3 milyar TL",
-     "not": "Nakit borçtan fazla"
-    },
-    {
-     "ad": "Finansman gideri",
-     "deger": "79,6 milyon TL",
-     "not": "Geçen yıla göre %18,1 azaldı"
-    }
-   ],
-   "dikkat": [
-    {
-     "ad": "Net dönem kârı",
-     "deger": "1,5 milyar TL",
-     "not": "Geçen yıl 4,0 milyar TL idi, %62,0 azaldı"
-    },
-    {
-     "ad": "Özkaynaklar",
-     "deger": "30,7 milyar TL",
-     "not": "Yıl sonuna göre %3,8 azaldı"
-    }
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "durum": "analiz_paylasildi",
-  "tweet_id": "2118393410772226436",
-  "x_gorsel_hata": null
- },
- {
-  "id": "kap-1693464",
-  "hisse": "YGGYO",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T17:22:03+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1693465",
-  "hisse": "YGGYO",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T17:22:05+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1693466",
-  "hisse": "YGGYO",
-  "baslik": "Portföy Sınırlamalarına Uyumun Kontrolü",
-  "t": "2026-11-05T17:22:05+00:00",
-  "mod": "golge",
-  "puan": 8,
-  "alt": {
-   "fin": 2,
-   "yenilik": 1,
-   "kapsam": 2,
-   "kesinlik": 2,
-   "ilgi": 1
-  },
-  "tur": "portföy sınırlamalarına uyum kontrolü (usulî)",
-  "gerekce": "GYO'ların dönemsel olarak yayımladığı rutin portföy sınırlamaları uyum tablosudur; yeni bir gelişme, sözleşme, temettü veya finansal sonuç içermediği için usulî bildirim olarak düşük puan alır.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1693477",
   "hisse": "TOASO",
   "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
@@ -11409,5 +11327,107 @@
   "gerekce": "OZGYO, 12.11.2026'da 1,45 TL fiyatla 1.831.994 TL nominal pay geri aldı (toplam 5.621.813 TL, sermayenin %0,56'sı); pay geri alımı editör kuralı gereği en az 80 puan alır, tutar ise piyasa değerine göre küçüktür (~2,7 milyon TL).",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1697789",
+  "hisse": "CCOLA",
+  "baslik": "Kredi Derecelendirmesi",
+  "t": "2026-11-12T16:37:39+00:00",
+  "mod": "golge",
+  "puan": 52,
+  "alt": {
+   "fin": 14,
+   "yenilik": 12,
+   "kapsam": 10,
+   "kesinlik": 8,
+   "ilgi": 8
+  },
+  "tur": "Kredi derecelendirmesi (görünüm yükseltme)",
+  "gerekce": "S&P, CCOLA'nın BB+ notunu teyit edip görünümü durağandan pozitife yükseltti; doğrudan nakit etkisi yok ancak finansman maliyetleri ve kredi algısı açısından olumlu, bilinen büyük bir şirket için orta düzeyde önemli bir gelişme.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697790",
+  "hisse": "GRSEL",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-12T16:37:41+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 2,
+   "yenilik": 5,
+   "kapsam": 6,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "12 Kasım'da yaklaşık 0,66 milyon TL'lik 2.674 pay alınmış, toplam elde tutulan pay 172.180 adede (%0,17) ulaşmıştır; tutar 28,3 milyar TL'lik piyasa değerine göre çok küçüktür, ancak pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "GRSEL (Gürsel Turizm) 12 Kasım'da 248 TL fiyatla 2.674 lot pay geri aldı (sermayenin %0,00262'si).\n\n14 Eylül kararıyla başlayan programda şirketin elindeki pay 172.180 lota, sermayenin %0,17'sine ulaştı.\n\nPiyasa değeri 28,3 milyar TL, PD/DD 1,86x.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "Alım tarihi",
+     "12 Kasım 2026"
+    ],
+    [
+     "Alınan pay",
+     "2.674 lot"
+    ],
+    [
+     "Fiyat",
+     "248 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,00262"
+    ],
+    [
+     "Toplam pay",
+     "172.180 lot (%0,17)"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120919020895338565",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697793",
+  "hisse": "ZOREN",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-12T16:37:55+00:00",
+  "mod": "golge",
+  "puan": 50,
+  "alt": {
+   "fin": 3,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "Yönetim kurulu başkanı ataması",
+  "gerekce": "Vefat eden YK Başkanı Ahmet Nazif Zorlu'nun yerine Selen Zorlu Melik'in atanması şirketin üst yönetimini ilgilendiren kesinleşmiş bir değişiklik; yenilenebilir enerji vurgusu ise rakam veya hedef içermeyen genel bir öncelik beyanı olduğundan rehberlik sayılmadı, doğrudan finansal etki de yok.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697794",
+  "hisse": "ZOREN",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-12T16:38:01+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 0,
+   "yenilik": 4,
+   "kapsam": 8,
+   "kesinlik": 7,
+   "ilgi": 3
+  },
+  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu bilgisi güncellemesi)",
+  "gerekce": "Yönetim kurulu üyelerinin bilgilerini içeren, yeni bir karar, atama veya parasal tutar içermeyen rutin bir form güncellemesidir; editörün her zaman önemli saydığı türlerden biri değildir ve etkisi sınırlıdır.",
+  "durum": "dusuk"
  }
 ]
