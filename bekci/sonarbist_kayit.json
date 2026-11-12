@@ -1,46 +1,5 @@
 [
  {
-  "id": "analiz-1693462",
-  "hisse": "YGGYO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T17:21:01+00:00",
-  "mod": "canli",
-  "tur": "bilanço analizi",
-  "tweet": "YGGYO (Yeni Gimat GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net nakit 3,2 milyar TL\n• Cari oran 8,59\n• Finansman gideri 1,2 milyon TL, azalış %37,2\n\nDikkat edilecekler\n• Net dönem kârı 1,8 milyar TL, %54,4 azaldı",
-  "kart": {
-   "tweet": "YGGYO (Yeni Gimat GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net nakit 3,2 milyar TL\n• Cari oran 8,59\n• Finansman gideri 1,2 milyon TL, azalış %37,2\n\nDikkat edilecekler\n• Net dönem kârı 1,8 milyar TL, %54,4 azaldı",
-   "guclu": [
-    {
-     "ad": "Net nakit",
-     "deger": "3,2 milyar TL",
-     "not": "Borçtan fazla nakit ve yatırım var"
-    },
-    {
-     "ad": "Cari oran",
-     "deger": "8,59",
-     "not": "Dönen varlık kısa vadeliyi aşıyor"
-    },
-    {
-     "ad": "Finansman gideri",
-     "deger": "1,2 milyon TL",
-     "not": "Geçen yıl 2,0 milyon TL, azalış %37,2"
-    }
-   ],
-   "dikkat": [
-    {
-     "ad": "Net dönem kârı",
-     "deger": "1,8 milyar TL",
-     "not": "Geçen yıl 4,0 milyar TL, %54,4 azalış"
-    }
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "durum": "analiz_paylasildi",
-  "tweet_id": "2118393193775657409",
-  "x_gorsel_hata": null
- },
- {
   "id": "kap-1693463",
   "hisse": "YGGYO",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11461,5 +11420,23 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1697775",
+  "hisse": "AEFES",
+  "baslik": "Kredi Derecelendirmesi",
+  "t": "2026-11-12T15:55:17+00:00",
+  "mod": "golge",
+  "puan": 34,
+  "alt": {
+   "fin": 5,
+   "yenilik": 4,
+   "kapsam": 10,
+   "kesinlik": 7,
+   "ilgi": 8
+  },
+  "tur": "Kredi derecelendirmesi",
+  "gerekce": "S&P, Anadolu Efes'in notunu BB ve görünümünü Negatif olarak korudu; değişiklik olmadığı için sürpriz düşük, beklentiler şirketin kendi rehberliği değil üçüncü taraf görüşü olduğundan zorunlu yüksek puan grubuna girmiyor, BIST 30 şirketi olması ilgiyi biraz artırıyor.",
+  "durum": "dusuk"
  }
 ]
