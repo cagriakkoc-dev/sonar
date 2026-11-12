@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1693406",
-  "hisse": "ISMEN",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-05T15:51:27+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 30,
-   "yenilik": 14,
-   "kapsam": 18,
-   "kesinlik": 8,
-   "ilgi": 10
-  },
-  "tur": "Finansal sonuç (ana ortak bankanın tablolarındaki ön veriler)",
-  "gerekce": "İş Yatırım'ın denetimsiz ve TMS 29 uygulanmamış 9 aylık net kârı 11,9 milyar TL (geçen yıl 11,6 milyar TL) olarak açıklandı; resmî SPK tabloları farklılaşabileceği için bu finansal sonuç bildirimi 80 puan tabanında tutuldu.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1693407",
   "hisse": "SOKM",
   "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
@@ -11338,5 +11319,23 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1697665",
+  "hisse": "CELHA",
+  "baslik": "Haber ve Söylentilere İlişkin Açıklama",
+  "t": "2026-11-12T13:42:50+00:00",
+  "mod": "golge",
+  "puan": 32,
+  "alt": {
+   "fin": 3,
+   "yenilik": 9,
+   "kapsam": 8,
+   "kesinlik": 7,
+   "ilgi": 5
+  },
+  "tur": "Haber ve söylentilere ilişkin açıklama (soruşturma yalanlaması)",
+  "gerekce": "Şirket, basında geçen soruşturma iddialarına karşı Başsavcılığın 'soruşturma kaydı yok' yanıtını duyuruyor; doğrudan finansal etkisi yok, itibar ve algı riskini gideren bir yalanlama olduğu için orta-düşük puan aldı, editörün zorunlu önemli türlerinden hiçbirine girmiyor.",
+  "durum": "dusuk"
  }
 ]
