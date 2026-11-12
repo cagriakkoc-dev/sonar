@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1693477",
-  "hisse": "TOASO",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-05T17:39:57+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1693478",
   "hisse": "TOASO",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11428,6 +11419,24 @@
   },
   "tur": "Şirket Genel Bilgi Formu (yönetim kurulu bilgisi güncellemesi)",
   "gerekce": "Yönetim kurulu üyelerinin bilgilerini içeren, yeni bir karar, atama veya parasal tutar içermeyen rutin bir form güncellemesidir; editörün her zaman önemli saydığı türlerden biri değildir ve etkisi sınırlıdır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697803",
+  "hisse": "AAGYO",
+  "baslik": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
+  "t": "2026-11-12T16:59:17+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 8,
+   "yenilik": 4,
+   "kapsam": 7,
+   "kesinlik": 8,
+   "ilgi": 3
+  },
+  "tur": "Fon kullanım raporu",
+  "gerekce": "Halka arzdan elde edilen fonun kullanımına ilişkin SPK mevzuatı gereği hazırlanan, daha önceki açıklamanın güncellemesi niteliğindeki rutin rapordur; yeni bir tutar, sözleşme veya kâr payı kararı içermediğinden sabit 80 puan kuralına girmez.",
   "durum": "dusuk"
  }
 ]
