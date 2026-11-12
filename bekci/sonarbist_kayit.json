@@ -1,76 +1,5 @@
 [
  {
-  "id": "kap-1693435",
-  "hisse": "ALBRK",
-  "baslik": "Sorumluluk Beyanı (Konsolide Olmayan) (2026 9 Aylık)",
-  "t": "2026-11-05T16:13:54+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1693437",
-  "hisse": "ALBRK",
-  "baslik": "Kayıtlı Sermaye Tavanı İşlemlerine İlişkin Bildirim",
-  "t": "2026-11-05T16:13:54+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 1,
-   "yenilik": 2,
-   "kapsam": 4,
-   "kesinlik": 3,
-   "ilgi": 2
-  },
-  "tur": "Kayıtlı sermaye tavanı süre güncellemesi",
-  "gerekce": "Kayıtlı sermaye tavanı 5 milyar TL olarak değişmiyor, yalnızca geçerlilik süresi 2031 sonuna uzatılıyor; SPK ve genel kurul onayı bekleyen usulî bir esas sözleşme düzenlemesi olduğu için etkisi düşük.",
-  "durum": "dusuk"
- },
- {
-  "id": "sunum-8a0a0afd118c",
-  "hisse": "AKSA",
-  "baslik": "Yatırımcı sunumu: Finansal Sonuçlar Sunumu 2026 Eylül",
-  "t": "2026-11-05T16:36:33+00:00",
-  "mod": "canli",
-  "puan": 82,
-  "alt": {
-   "fin": 30,
-   "yenilik": 16,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 8
-  },
-  "tur": "Yatırımcı sunumu / 3Ç 2026 finansal sonuçlar",
-  "gerekce": "Finansal sonuç sunumu editör kuralı gereği önemli grupta yer alır; 9 aylık hasılat %17 ve FAVÖK %44 artarken esas faaliyet kârı %52, net kâr %26 düşmüş, 3. çeyrek net kârı da yıllık bazda belirgin gerilemiştir.",
-  "durum": "paylasildi",
-  "tweet": "AKSA (Aksa Akrilik) 3Ç 2026 finansal sonuçlar sunumunu yayımladı. Dokuz ay hasılatı %17 artışla 781,2 milyon dolar, FAVÖK %44 artışla 132,7 milyon dolar oldu.\n\nNet kâr %26 azalışla 53,6 milyon dolara indi, esas faaliyet kârı %52 geriledi. PD/DD 1,03x, F/K 10,8x.",
-  "kart": {
-   "baslik": "Dokuz aylık finansal sonuçlar",
-   "satirlar": [
-    [
-     "Hasılat",
-     "781,2 milyon dolar"
-    ],
-    [
-     "FAVÖK",
-     "132,7 milyon dolar"
-    ],
-    [
-     "Net kâr",
-     "53,6 milyon dolar"
-    ],
-    [
-     "Net finansal borç / FAVÖK",
-     "2,84"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2118382370344907178",
-  "x_gorsel_hata": null
- },
- {
   "id": "kap-1693462",
   "hisse": "YGGYO",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11466,5 +11395,110 @@
   "tur": "Kendi Eurobond'unu geri satın alma (borç yönetimi)",
   "gerekce": "Şirket kendi ihraç ettiği 25 milyon USD nominal 2029 vadeli Eurobond'u yaklaşık 26,1 milyon USD ödeyerek geri aldı; tutar piyasa değerinin yaklaşık %0,6'sı kadar olduğundan etki sınırlı, işlem kesinleşmiş ve pay geri alımı değil borç yönetimi niteliğinde olduğundan zorunlu yüksek puan grubuna girmiyor.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697764",
+  "hisse": "AHGAZ",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-12T15:33:33+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 8,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "Günlük bildirimde 53.329 adet pay yaklaşık 2,5 milyon TL'ye alındı ve şirketin elindeki toplam pay 89,5 milyon adede (%3,44) ulaştı; tutar piyasa değerine göre küçük olsa da pay geri alımı editör kararıyla her zaman önemli türler arasında olduğundan en az 80 puan aldı.",
+  "durum": "paylasildi",
+  "tweet": "AHGAZ (Ahlatcı Doğal Gaz) 12 Kasım'da ağırlıklı ortalama 46,12 TL fiyatla 53.329 lot pay geri aldı (sermayenin %0,00205'i).\n\nÖnceki programlarla birlikte şirketin elindeki pay 89.528.222 lota (%3,4434) ulaştı.\n\nPiyasa değeri 112,6 milyar TL.",
+  "kart": {
+   "baslik": "Pay geri alımı, 12 Kasım",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "53.329 lot"
+    ],
+    [
+     "Ağırlıklı ortalama fiyat",
+     "46,12 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,00205"
+    ],
+    [
+     "Toplam elde tutulan",
+     "89.528.222 lot"
+    ],
+    [
+     "Toplam sermaye oranı",
+     "%3,4434"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120902890772394027",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697765",
+  "hisse": "ENERY",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-12T15:33:49+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 2,
+   "yenilik": 5,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "12.11.2026'da 200.000 adet pay yaklaşık 2,9 milyon TL'ye geri alındı (toplam elde tutulan pay 429.088.665 adet, sermayenin %4,77'si); tutar 119 milyar TL piyasa değerine göre çok küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "ENERY (Enerya Enerji) 12 Kasım'da ortalama 14,415 TL'den 200.000 lot pay geri aldı (sermayenin %0,00222'si).\n\nŞirketin elindeki toplam pay 429.088.665 lota (%4,7677) çıktı. Program 17 Eylül kararıyla başlamıştı.\n\nPiyasa değeri 119,0 milyar TL.",
+  "kart": {
+   "baslik": "Pay geri alımı 12 Kasım",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "200.000 lot"
+    ],
+    [
+     "Fiyat aralığı",
+     "14,40-14,43 TL"
+    ],
+    [
+     "Ağırlıklı ortalama",
+     "14,415 TL"
+    ],
+    [
+     "Toplam eldeki pay",
+     "429.088.665 lot"
+    ],
+    [
+     "Sermayeye oranı",
+     "%4,7677"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120902967167426796",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1697767",
+  "hisse": "OYYAT",
+  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
+  "t": "2026-11-12T15:34:07+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
  }
 ]
