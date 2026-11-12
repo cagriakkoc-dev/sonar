@@ -1,53 +1,5 @@
 [
  {
-  "id": "kap-1693478",
-  "hisse": "TOASO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-05T17:39:57+00:00",
-  "mod": "canli",
-  "puan": 88,
-  "alt": {
-   "fin": 34,
-   "yenilik": 17,
-   "kapsam": 17,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "finansal sonuç",
-  "gerekce": "TOASO'nun 9 aylık net kârı 11,0 milyar TL ile geçen yılın 3,8 milyar TL'sinin yaklaşık 3 katına çıktı, esas faaliyet kârı zarardan kâra döndü; bu rakamlar kesinleşmiş bir BIST 30 bilançosu olduğu için finansal sonuç türünün 80 puan tabanının üstünde kalıyor.",
-  "durum": "paylasildi",
-  "tweet": "TOASO (Tofaş) hasılatı geçen yılki 245,8 milyar TL'den 293,5 milyar TL'ye taşıdı (%19,4 artış). Net kâr 3,8 milyar TL'den 11,0 milyar TL'ye yükseldi.\n\nEsas faaliyet kârı zarardan 5,6 milyar TL kâra geçti. Özkaynaklar %2,5 azalışla 72,8 milyar TL. PD/DD 2,34x.",
-  "kart": {
-   "baslik": "9 aylık finansal sonuçlar",
-   "satirlar": [
-    [
-     "Hasılat",
-     "293,5 milyar TL"
-    ],
-    [
-     "Brüt kâr",
-     "22,8 milyar TL"
-    ],
-    [
-     "Esas faaliyet kârı",
-     "5,6 milyar TL"
-    ],
-    [
-     "Net dönem kârı",
-     "11,0 milyar TL"
-    ],
-    [
-     "Özkaynaklar",
-     "72,8 milyar TL"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2118398047394644414",
-  "x_gorsel_hata": null
- },
- {
   "id": "analiz-1693478",
   "hisse": "TOASO",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11438,5 +11390,53 @@
   "tur": "Fon kullanım raporu",
   "gerekce": "Halka arzdan elde edilen fonun kullanımına ilişkin SPK mevzuatı gereği hazırlanan, daha önceki açıklamanın güncellemesi niteliğindeki rutin rapordur; yeni bir tutar, sözleşme veya kâr payı kararı içermediğinden sabit 80 puan kuralına girmez.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697807",
+  "hisse": "EKDMR",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-12T17:09:53+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "EKDMR, 12.11.2026'da ortalama 23,90 TL fiyattan 30.166 adet (sermayenin %0,00943'ü) pay geri aldı; program kapsamındaki toplam geri alım 3.011.703 adede (%0,9411) ulaştı. Pay geri alımı editör kuralı gereği en az 80 puan alır, işlem tutarı piyasa değerine göre küçüktür.",
+  "durum": "paylasildi",
+  "tweet": "EKDMR (Ekinciler) geri alım programına 12 Kasım'da 30.166 lot ekledi. Ortalama fiyat 23,90 TL, sermayeye oranı %0,00943.\n\n22 Eylül kararıyla başlayan programda toplam 3.011.703 lota (%0,9411) ulaşıldı. Piyasa değeri 9,0 milyar TL, PD/DD 0,51x.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "12.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "30.166 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "23,90 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,00943"
+    ],
+    [
+     "Toplam geri alım",
+     "3.011.703 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2120927192523641129",
+  "x_gorsel_hata": null
  }
 ]
