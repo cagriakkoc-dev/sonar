@@ -1,77 +1,5 @@
 [
  {
-  "id": "kap-1693535",
-  "hisse": "VAKBN",
-  "baslik": "Kurumsal Yönetim İlkelerine Uyum Derecelendirmesi",
-  "t": "2026-11-06T06:45:47+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 0,
-   "yenilik": 2,
-   "kapsam": 4,
-   "kesinlik": 4,
-   "ilgi": 2
-  },
-  "tur": "Kurumsal yönetim derecelendirme sözleşmesi yenilemesi",
-  "gerekce": "VakıfBank'ın JCR Avrasya ile kurumsal yönetim derecelendirme sözleşmesini 1 yıllığına yenilemesi rutin ve usulî bir bildirimdir; finansal etkisi yoktur ve yeni bir not açıklanmamıştır.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1693539",
-  "hisse": "BTCIM",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-06T06:45:49+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 1,
-   "yenilik": 3,
-   "kapsam": 4,
-   "kesinlik": 3,
-   "ilgi": 1
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu bilgisi güncellemesi)",
-  "gerekce": "Yönetim kurulu üyelerinin listelendiği, yeni bağımsız üye Rengin Akıllıoğlu'nun 05.11.2026'da seçildiğini gösteren rutin bir form güncellemesidir; finansal etkisi yoktur ve editörün öncelikli saydığı türlerden birine girmez.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1693541",
-  "hisse": "BSOKE",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-06T06:56:28+00:00",
-  "mod": "golge",
-  "puan": 22,
-  "alt": {
-   "fin": 2,
-   "yenilik": 6,
-   "kapsam": 9,
-   "kesinlik": 3,
-   "ilgi": 2
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu bilgisi güncellemesi)",
-  "gerekce": "Yönetim kurulu üyelerine ilişkin rutin bilgi formu güncellemesi olup yeni bir bağımsız üye (Rengin Akıllıoğlu, 05.11.2026) dışında önemli bir gelişme yok, finansal etkisi bulunmuyor ve editörün önemli saydığı türlerden hiçbirine girmiyor.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1693543",
-  "hisse": "BSOKE",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-06T06:56:33+00:00",
-  "mod": "golge",
-  "puan": 18,
-  "alt": {
-   "fin": 1,
-   "yenilik": 4,
-   "kapsam": 6,
-   "kesinlik": 3,
-   "ilgi": 4
-  },
-  "tur": "Yönetim kurulu bağımsız üye atama başvurusu",
-  "gerekce": "Ayrılan bağımsız yönetim kurulu üyesinin yerine atanacak kişi için SPK'ya uygun görüş başvurusu yapıldığı bildiriliyor; usulî bir adım olup finansal etkisi yok, atama da henüz kesinleşmedi.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1693544",
   "hisse": "BTCIM",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -11348,5 +11276,107 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1698115",
+  "hisse": "SASA",
+  "baslik": "İhraç Tavanına İlişkin Bildirim",
+  "t": "2026-11-13T15:21:14+00:00",
+  "mod": "golge",
+  "puan": 62,
+  "alt": {
+   "fin": 27,
+   "yenilik": 10,
+   "kapsam": 11,
+   "kesinlik": 5,
+   "ilgi": 9
+  },
+  "tur": "Borçlanma aracı ihraç tavanı artışı",
+  "gerekce": "Yönetim kurulu, yurt dışı borçlanma aracı ihraç tavanını 350 milyon USD'den 500 milyon USD'ye (yaklaşık 21 milyar TL, piyasa değerinin kabaca beşte biri) çıkarma kararı aldı; ancak SPK onayı yok, ihraç yapılmadı ve süreç yeni başlıyor, dolayısıyla kesinlik düşük.",
+  "durum": "dusuk_bildirildi"
+ },
+ {
+  "id": "kap-1698118",
+  "hisse": "BASGZ",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-13T15:21:20+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 15,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "Günlük alım küçük (13.11'de 20.000 TL nominal, 728 bin TL; programda şu ana kadar toplam 40.000 TL nominal, sermayenin %0,0057'si), ancak 1 milyar TL'lik azami tutar piyasa değerinin yaklaşık %3,7'sine denk geliyor ve pay geri alımları editör kuralı gereği en az 80 puan alıyor.",
+  "durum": "paylasildi",
+  "tweet": "BASGZ (Başkent Doğalgaz) 13 Kasım'da 36,42 TL fiyatla 20.000 lot pay geri aldı (sermayenin %0,00286'sı).\n\n3 Kasım kararıyla başlayan programda toplam 40.000 lota (%0,00572) ulaşıldı. Fon tavanı 1 milyar TL.\n\nPiyasa değeri 27,2 milyar TL, PD/DD 0,73x.",
+  "kart": {
+   "baslik": "Pay geri alım güncellemesi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "13.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "20.000 lot"
+    ],
+    [
+     "İşlem fiyatı",
+     "36,42 TL"
+    ],
+    [
+     "Toplam bedel",
+     "728.320 TL"
+    ],
+    [
+     "Program toplamı",
+     "40.000 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2121262221095239997",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1698121",
+  "hisse": "DZGYO",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-13T15:21:40+00:00",
+  "mod": "golge",
+  "puan": 47,
+  "alt": {
+   "fin": 20,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Varlık satışı tahsilat bildirimi",
+  "gerekce": "5 Kasım 2026'da duyurulan Bodrum otel satışının bedelinin tamamı tahsil edilmiş ve alacak kalmamış olup işlem kesinleşmiştir. Ancak bu yeni bir sözleşme değil mevcut satışın takibidir, tutar da metinde yer almadığından etki orta düzeyde değerlendirilmiştir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1698129",
+  "hisse": "ZGYO",
+  "baslik": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Değerlendirme Raporu",
+  "t": "2026-11-13T15:21:46+00:00",
+  "mod": "golge",
+  "puan": 45,
+  "alt": {
+   "fin": 15,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 6,
+   "ilgi": 6
+  },
+  "tur": "Halka arz fiyat değerlendirme raporu",
+  "gerekce": "SPK Pay Tebliği uyarınca halka arz fiyatının varsayımlarını açıklayan ekli bir rapor olup tutar veya yeni karar içermiyor, bu nedenle zorunlu yüksek puanlı türlere girmeyen, düzenleyici nitelikte orta düzey bir bildirim.",
+  "durum": "dusuk"
  }
 ]
