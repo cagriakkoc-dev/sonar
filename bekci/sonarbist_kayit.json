@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1694070",
-  "hisse": "AGYO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-06T15:22:02+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 22,
-   "yenilik": 10,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Hasılat %1,9 ve esas faaliyet kârı %24,4 düşerken net zarar 305,1 milyon TL'den 226,0 milyon TL'ye daraldı; şirket küçük olsa da finansal sonuç bildirimi olduğu için 80 puan tabanı uygulandı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1694072",
   "hisse": "AGYO",
   "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
@@ -11332,6 +11313,24 @@
   },
   "tur": "Şirket Genel Bilgi Formu (bağlı ortaklık ve iştirak listesi güncellemesi)",
   "gerekce": "Bağlı ortaklık, iştirak ve finansal yatırım listesini içeren rutin bir genel bilgi formu güncellemesi olup yeni bir işlem, tutar veya iş ilişkisi içermediği için düşük puan alır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1698204",
+  "hisse": "ZOREN",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-13T17:31:59+00:00",
+  "mod": "golge",
+  "puan": 58,
+  "alt": {
+   "fin": 18,
+   "yenilik": 10,
+   "kapsam": 14,
+   "kesinlik": 7,
+   "ilgi": 9
+  },
+  "tur": "Eurobond muvafakat talebi güncellemesi",
+  "gerekce": "Şirketin yurt dışı tahvillerine ilişkin muvafakat talebi teklifinde değişiklik yapılarak geç muvafakat ücreti %0,40'a çıkarıldı ve geçici kısıtlamalar düzenlendi; borç yapısını ilgilendiren, zayıf bilançolu (net zarar, PD/DD 0,14x) şirket için orta-yüksek önemde bir gelişme olsa da süreç henüz sonuçlanmamış, tutar belirtilmemiş ve bu bir güncelleme niteliğinde.",
   "durum": "dusuk"
  }
 ]
