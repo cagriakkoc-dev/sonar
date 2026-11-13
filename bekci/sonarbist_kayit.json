@@ -1,53 +1,5 @@
 [
  {
-  "id": "kap-1693493",
-  "hisse": "MGROS",
-  "baslik": "Kar Payı Avansı Ödemesi İşlemlerine İlişkin Bildirim",
-  "t": "2026-11-05T18:55:18+00:00",
-  "mod": "canli",
-  "puan": 82,
-  "alt": {
-   "fin": 22,
-   "yenilik": 14,
-   "kapsam": 17,
-   "kesinlik": 10,
-   "ilgi": 9
-  },
-  "tur": "kâr payı avansı ödemesi",
-  "gerekce": "Yönetim kurulu 1,175 milyar TL nakit kâr payı avansı dağıtımına karar verdi (hisse başı brüt 6,49 TL, ödeme 11 Kasım 2026); tutar piyasa değerinin yaklaşık %1'i ve son 4 çeyrek net kârının yaklaşık beşte biri olsa da temettü ödemesi editör kuralı gereği en az 80 puan alır.",
-  "durum": "paylasildi",
-  "tweet": "MGROS (Migros) pay sahiplerine toplam 1.175.000.000 TL nakit kâr payı avansı dağıtacak. Ödemeler 11 Kasım 2026'da başlıyor.\n\n1 TL nominal pay başına brüt 6,4897682 TL, %15 stopajla net 5,5163030 TL.\n\nDayanak, 9 aylık 4.593.208.000 TL net dönem kârı.",
-  "kart": {
-   "baslik": "Kâr payı avansı kararı",
-   "satirlar": [
-    [
-     "Toplam avans",
-     "1.175.000.000 TL"
-    ],
-    [
-     "Brüt pay başına",
-     "6,4897682 TL"
-    ],
-    [
-     "Net (%15 stopaj)",
-     "5,5163030 TL"
-    ],
-    [
-     "Ödeme başlangıcı",
-     "11 Kasım 2026"
-    ],
-    [
-     "Ara dönem",
-     "01.01-30.09.2026"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2118417045263978752",
-  "x_gorsel_hata": null
- },
- {
   "id": "kap-1693496",
   "hisse": "MGROS",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -11437,6 +11389,24 @@
   },
   "tur": "Şirket Genel Bilgi Formu (yönetim bilgileri güncellemesi)",
   "gerekce": "THYAO'nun yönetim kurulu üyeleri ve görevlerini içeren rutin Şirket Genel Bilgi Formu güncellemesidir; finansal tutar içermez, yeni bir karar veya sürpriz barındırmaz, yalnızca BIST 30 şirketi olması nedeniyle ilgi puanı almıştır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1697989",
+  "hisse": "INFO",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-13T12:17:40+00:00",
+  "mod": "golge",
+  "puan": 48,
+  "alt": {
+   "fin": 20,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 2
+  },
+  "tur": "Borç aracı erken itfa",
+  "gerekce": "1,056 milyar TL'lik finansman bonosu erken itfası piyasa değerinin yaklaşık %70'i, son 4 çeyrek hasılatının yaklaşık %5,5'i kadar olduğundan orta düzeyde önemlidir; ancak işlem tamamlanmış bir borç yönetimi adımıdır, kâr veya zarar yaratmaz ve şirket BIST 30/100 dışında küçük bir şirkettir.",
   "durum": "dusuk"
  }
 ]
