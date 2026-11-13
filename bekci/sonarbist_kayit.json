@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1694055",
-  "hisse": "ZRGYO",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-06T15:21:40+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1694057",
   "hisse": "RYSAS",
   "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
@@ -11307,5 +11298,23 @@
   "gerekce": "Pay geri alımı editör kuralı gereği en az 80 puan alır; 13.11.2026'da 1,45 TL'den 15.467 TL nominal pay alınmış, programdaki toplam geri alım 5.637.280 TL nominale (sermayenin %0,56'sı) ulaşmış, tutar piyasa değerine göre küçüktür (yaklaşık 8 milyon TL, %0,5).",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1698189",
+  "hisse": "EGEGY",
+  "baslik": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Değerlendirme Raporu",
+  "t": "2026-11-13T16:17:41+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 5,
+   "yenilik": 5,
+   "kapsam": 9,
+   "kesinlik": 7,
+   "ilgi": 4
+  },
+  "tur": "Halka arz varsayımları değerlendirme raporu (periyodik/usulî)",
+  "gerekce": "SPK Pay Tebliği 29/5 uyarınca verilen, güncelleme niteliğindeki dönemsel bir rapordur; bildirim metni yeni bir rehberlik, hedef veya tutar içermiyor, ayrıntılar ekte olduğundan rutin uyum bildirimi sayılıp 80 puanlık gruba alınmadı.",
+  "durum": "dusuk"
  }
 ]
