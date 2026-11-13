@@ -1,72 +1,5 @@
 [
  {
-  "id": "kap-1693497",
-  "hisse": "MGROS",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-05T19:17:00+00:00",
-  "mod": "golge",
-  "puan": 85,
-  "alt": {
-   "fin": 32,
-   "yenilik": 15,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "yatırımcı sunumu / finansal sonuç / 2026 beklenti güncellemesi",
-  "gerekce": "Migros'un 9 aylık operasyonel ve finansal sonuçlarını içeren yatırımcı sunumu ve bilgilendirme notu yayımlandı, 2026 beklentileri de güncellendi; bu türler editör kararıyla her zaman önemli sayıldığı için puan en az 80'dir.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1693506",
-  "hisse": "SASA",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-06T04:51:20+00:00",
-  "mod": "canli",
-  "puan": 83,
-  "alt": {
-   "fin": 32,
-   "yenilik": 15,
-   "kapsam": 17,
-   "kesinlik": 10,
-   "ilgi": 9
-  },
-  "tur": "Finansal sonuç (9 aylık bilanço)",
-  "gerekce": "SASA'nın 9 aylık hasılatı %32,2 artışla 66,3 milyar TL'ye çıktı, net zarar 13,1 milyar TL'den 1,4 milyar TL'ye geriledi ve esas faaliyet kârı %186,5 arttı; finansal sonuç bildirimi olduğu için 80 puan alt sınırının üzerinde tutuldu.",
-  "durum": "paylasildi",
-  "tweet": "SASA (Sasa Polyester) dokuz ayda net zararını 13,1 milyar TL'den 1,4 milyar TL'ye indirdi. Hasılat %32,2 artışla 66,3 milyar TL oldu.\n\nEsas faaliyet kârı 1,7 milyar TL'den 4,8 milyar TL'ye çıktı. Son 4 çeyrek net kârı -11,7 milyar TL, PD/DD 0,60x.",
-  "kart": {
-   "baslik": "9 Aylık Finansal Sonuçlar",
-   "satirlar": [
-    [
-     "Hasılat",
-     "66,3 milyar TL"
-    ],
-    [
-     "Brüt kâr",
-     "8,3 milyar TL"
-    ],
-    [
-     "Esas faaliyet kârı",
-     "4,8 milyar TL"
-    ],
-    [
-     "Net dönem kârı",
-     "-1,4 milyar TL"
-    ],
-    [
-     "Özkaynaklar",
-     "215,1 milyar TL"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2118566962334998822",
-  "x_gorsel_hata": null
- },
- {
   "id": "analiz-1693506",
   "hisse": "SASA",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11399,5 +11332,41 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1698037",
+  "hisse": "YKBNK",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-13T13:25:03+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 3,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 5,
+   "ilgi": 1
+  },
+  "tur": "Borçlanma aracı itfası (rutin)",
+  "gerekce": "Yurtdışında ihraç edilmiş 10 milyon GBP'lik (yaklaşık 500 milyon TL) borçlanma aracının vadesinde itfa edilmesi, 287,5 milyar TL piyasa değerine göre çok küçük bir tutar olup rutin bir ödeme bildirimidir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1698038",
+  "hisse": "KARSN",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-13T13:25:04+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 0,
+   "yenilik": 3,
+   "kapsam": 4,
+   "kesinlik": 3,
+   "ilgi": 2
+  },
+  "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
+  "gerekce": "Yönetimde söz sahibi personelin görev ve özgeçmiş bilgilerini içeren rutin bir genel bilgi formu güncellemesi olup finansal etkisi ve belirgin bir yeniliği yoktur.",
+  "durum": "dusuk"
  }
 ]
