@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1694045",
-  "hisse": "ZRGYO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-06T15:21:32+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 30,
-   "yenilik": 16,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 6
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Hasılat %46,6 artışla 3,5 milyar TL'ye çıktı, net dönem kârı ise %58,5 düşüşle 1,4 milyar TL'ye geriledi; finansal sonuç açıklaması olduğu için en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1694055",
   "hisse": "ZRGYO",
   "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
@@ -11307,5 +11288,24 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1698182",
+  "hisse": "OZGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-13T16:07:04+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 6,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "Pay geri alımı editör kuralı gereği en az 80 puan alır; 13.11.2026'da 1,45 TL'den 15.467 TL nominal pay alınmış, programdaki toplam geri alım 5.637.280 TL nominale (sermayenin %0,56'sı) ulaşmış, tutar piyasa değerine göre küçüktür (yaklaşık 8 milyon TL, %0,5).",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
