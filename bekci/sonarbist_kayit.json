@@ -1,33 +1,5 @@
 [
  {
-  "id": "kap-1694057",
-  "hisse": "RYSAS",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-06T15:21:42+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1694060",
-  "hisse": "AGYO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-06T15:21:42+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 24,
-   "yenilik": 12,
-   "kapsam": 17,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Hasılat %3,5 ve esas faaliyet kârı %32,6 azalırken net zarar 303,3 milyon TL'den 234,0 milyon TL'ye daralmış; şirket küçük olsa da finansal sonuç bildirimleri için 80 puan tabanı uygulandı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1694063",
   "hisse": "ZRGYO",
   "baslik": "Portföy Sınırlamalarına Uyumun Kontrolü",
@@ -11315,6 +11287,42 @@
   },
   "tur": "Halka arz varsayımları değerlendirme raporu (periyodik/usulî)",
   "gerekce": "SPK Pay Tebliği 29/5 uyarınca verilen, güncelleme niteliğindeki dönemsel bir rapordur; bildirim metni yeni bir rehberlik, hedef veya tutar içermiyor, ayrıntılar ekte olduğundan rutin uyum bildirimi sayılıp 80 puanlık gruba alınmadı.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1698194",
+  "hisse": "HEKTS",
+  "baslik": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
+  "t": "2026-11-13T16:38:58+00:00",
+  "mod": "golge",
+  "puan": 38,
+  "alt": {
+   "fin": 12,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 8,
+   "ilgi": 4
+  },
+  "tur": "Sermaye artırımı fon kullanım raporu",
+  "gerekce": "Tahsisli sermaye artırımından elde edilen fonun kullanımına ilişkin SPK Pay Tebliği kapsamındaki usulî rapor; metinde tutar veya yeni bilgi yok (ayrıntılar ekte), bu yüzden orta-düşük puan, ancak zarar eden şirkette sermaye kullanımı bir ölçüde izlenmeye değer.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1698196",
+  "hisse": "ENTRA",
+  "baslik": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
+  "t": "2026-11-13T16:39:00+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 8,
+   "yenilik": 4,
+   "kapsam": 8,
+   "kesinlik": 8,
+   "ilgi": 2
+  },
+  "tur": "Sermaye artırımı fon kullanım raporu",
+  "gerekce": "Pay Tebliği 33. madde kapsamında hazırlanan rutin ve usulî bir fon kullanım raporu olup bildirim metninde tutar veya yeni bir gelişme belirtilmediği için etki sınırlıdır; rapor içeriği ekte yer aldığından puan düşük tutuldu.",
   "durum": "dusuk"
  }
 ]
