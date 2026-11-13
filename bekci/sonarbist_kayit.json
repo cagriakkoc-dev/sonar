@@ -1,50 +1,5 @@
 [
  {
-  "id": "kap-1694063",
-  "hisse": "ZRGYO",
-  "baslik": "Portföy Sınırlamalarına Uyumun Kontrolü",
-  "t": "2026-11-06T15:21:51+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 1,
-   "yenilik": 1,
-   "kapsam": 3,
-   "kesinlik": 4,
-   "ilgi": 3
-  },
-  "tur": "Portföy sınırlamalarına uyum tablosu (usulî bildirim)",
-  "gerekce": "30.09.2026 tarihli bağımsız denetim raporunda zaten yer alan portföy sınırlaması tablosunun SPK şablonuyla yeniden sunulduğu, yeni bilgi veya sürpriz içermeyen rutin bir düzenleyici bildirimdir; bilanço açıklaması sayılmaz.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1694067",
-  "hisse": "ZRGYO",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-06T15:21:57+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1694069",
-  "hisse": "TTKOM",
-  "baslik": "Finansal Tablo ve-veya Dipnot Değişikliği",
-  "t": "2026-11-06T15:21:57+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 1,
-   "yenilik": 2,
-   "kapsam": 2,
-   "kesinlik": 4,
-   "ilgi": 3
-  },
-  "tur": "finansal tablo düzeltmesi (usulî)",
-  "gerekce": "Nakit akış tablosunda maddi ve maddi olmayan duran varlık alımı satırları arasındaki sehven alt kırılım uyumsuzluğu düzeltiliyor; toplam tutar doğru, net kâr ve açıklanan finansal sonuçlar değişmiyor, bu nedenle bilanço açıklaması sayılmayan usulî bir düzeltmedir.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1694070",
   "hisse": "AGYO",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11323,6 +11278,60 @@
   },
   "tur": "Sermaye artırımı fon kullanım raporu",
   "gerekce": "Pay Tebliği 33. madde kapsamında hazırlanan rutin ve usulî bir fon kullanım raporu olup bildirim metninde tutar veya yeni bir gelişme belirtilmediği için etki sınırlıdır; rapor içeriği ekte yer aldığından puan düşük tutuldu.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1698200",
+  "hisse": "TURSG",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-13T17:10:39+00:00",
+  "mod": "golge",
+  "puan": 63,
+  "alt": {
+   "fin": 20,
+   "yenilik": 16,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 9
+  },
+  "tur": "Tasfiyeli fonlardan elde edilen kazancın TMSF'ye iadesi",
+  "gerekce": "Şirket, tasfiyeye konu fonlardaki yatırımlardan elde ettiği kazançtan 1,6 milyar TL'yi gönüllü olarak iade etti ve tutarı bugün TMSF hesabına yatırdı; bu tutar son 4 çeyrek net kârın yaklaşık %12'sine, piyasa değerinin yaklaşık %1,5'ine denk geliyor, ödeme kesinleşmiş ve başka yükümlülük beklenmiyor, ancak bildirim editörün her zaman önemli saydığı türlerden birine girmiyor.",
+  "durum": "dusuk_bildirildi"
+ },
+ {
+  "id": "kap-1698201",
+  "hisse": "TAVHL",
+  "baslik": "Finansal Duran Varlık Edinimi",
+  "t": "2026-11-13T17:10:44+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 2,
+   "yenilik": 5,
+   "kapsam": 5,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "Finansal duran varlık edinimi (iştirak payı alımı)",
+  "gerekce": "TAV Batum'daki %24'lük azınlık payı yaklaşık 3,0 milyon ABD doları karşılığında alınıp ortaklık oranı %100'e çıktı; tutar 94,9 milyar TL'lik piyasa değerinin binde birkaçı kadar olduğundan etki sınırlı, işlem ise kesinleşmiş ve BIST'in tanınan bir şirketine ait.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1698202",
+  "hisse": "TAVHL",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-13T17:10:53+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 2,
+   "yenilik": 1,
+   "kapsam": 4,
+   "kesinlik": 2,
+   "ilgi": 3
+  },
+  "tur": "Şirket Genel Bilgi Formu (bağlı ortaklık ve iştirak listesi güncellemesi)",
+  "gerekce": "Bağlı ortaklık, iştirak ve finansal yatırım listesini içeren rutin bir genel bilgi formu güncellemesi olup yeni bir işlem, tutar veya iş ilişkisi içermediği için düşük puan alır.",
   "durum": "dusuk"
  }
 ]
