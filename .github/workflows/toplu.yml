@@ -2,7 +2,7 @@ name: Tüm BIST veri toplama
 # bekci/araclar/toplu.py. liste: KAP FR listeleri + dönem seçimi; veri: 4 parçada paralel XBRL, fiyat, İş Yatırım temettü tablosu, KAP logosu.
 on:
   schedule:
-    - cron: '5,35 * * * *'
+    - cron: '23 */3 * * *'   # GitHub yoğunlukta yarım saatlik zamanlamayı seyreltiyordu (günde ~4 çalışma); 3 saatte bir yeter: yeni dönem raporlarını toplar
   push:
     paths: ['bekci/toplu/tetik', 'bekci/araclar/toplu.py']
   workflow_dispatch:
