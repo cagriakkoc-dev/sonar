@@ -69,6 +69,33 @@ if "liste" in FAZ:
             v = list({x["disclosureIndex"]: x for x in v}.values())
             json.dump(v, open(os.path.join(B, "fr", f"{t}.json"), "w"), ensure_ascii=False)
         print("FR grup", gi, "→", fr_bitti.get(str(gi))); kaydet()
+    # 2021–2022 dönemleri (14 Kas 2026): geçmiş pencereler ayrı izlenir, aynı fr/<T>.json'a eklenir
+    W2 = []; a = datetime.date(2021, 1, 1)
+    while a < datetime.date(2023, 1, 1): e = min(a + datetime.timedelta(days=29), datetime.date(2022, 12, 31)); W2.append((a.isoformat(), e.isoformat())); a = e + datetime.timedelta(days=1)
+    fr_g = D.setdefault("fr_gecmis", {})
+    for gi, g in enumerate(GR):
+        if kalan() < 120: break
+        son = fr_g.get(str(gi)); ws = [w for w in W2 if son is None or w[0] > son]
+        if not ws: continue
+        oid2t = {L[t]["oid"]: t for t in g}
+        acc = {t: (json.load(open(os.path.join(B, "fr", f"{t}.json"))) if os.path.exists(os.path.join(B, "fr", f"{t}.json")) else []) for t in g}
+        for w in ws:
+            if kalan() < 90: break
+            for k in range(9):
+                try: R = kap(list(oid2t), *w); break
+                except Exception as ex:
+                    print("FR2", gi, w, repr(ex)[:100]); time.sleep(20 * (k + 1) if "429" in repr(ex) else 5); R = None
+            if R is None: break
+            for x in R:
+                if x.get("disclosureClass") != "FR": continue
+                for t in (x.get("stockCodes") or "").replace(" ", "").split(","):
+                    if t in acc: acc[t].append({k_: x.get(k_) for k_ in ("disclosureIndex", "publishDate", "subject", "summary", "year", "period", "ruleType")})
+            fr_g[str(gi)] = w[0]; time.sleep(2.0)
+        for t, v in acc.items():
+            v = list({x["disclosureIndex"]: x for x in v}.values())
+            json.dump(v, open(os.path.join(B, "fr", f"{t}.json"), "w"), ensure_ascii=False)
+        print("FR2 grup", gi, "→", fr_g.get(str(gi))); kaydet()
+    D["fr_gecmis_tamam"] = all(fr_g.get(str(gi)) == W2[-1][0] for gi in range(len(GR)))
     fr_tamam = all(fr_bitti.get(str(gi)) == W[-1][0] for gi in range(len(GR)))
     D["fr_tamam"] = fr_tamam
 
@@ -81,7 +108,7 @@ if "liste" in FAZ:
             p = PER.get(x.get("ruleType")); y = x.get("year")
             if not p or not y: continue
             key = f"{y}-{p}"
-            if key < "2022-12": continue
+            if key < "2021-03": continue
             try: pub = datetime.datetime.strptime(x["publishDate"], "%d.%m.%Y %H:%M:%S").date()
             except Exception: continue
             ps = datetime.date(int(y), int(p), 28); gec = (pub - ps).days > 215
@@ -112,6 +139,22 @@ with cf.ThreadPoolExecutor(4) as ex:
         if kalan() < BUTCE * 0.6: break
         for t, h in ex.map(fiyat, fy[k:k + 8]):
             if h: print("fiyat", t, h)
+# 2021–2022 fiyatları (14 Kas 2026): fiyat_eski/<T>.json (yeni halka arzlarda boş → .yok)
+os.makedirs(os.path.join(B, "fiyat_eski"), exist_ok=True)
+def fiyat_eski(t):
+    u = f"https://www.isyatirim.com.tr/_layouts/15/Isyatirim.Website/Common/Data.aspx/HisseTekil?hisse={t}&startdate=01-01-2021&enddate=30-11-2022"
+    try:
+        d = json.loads(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 Sonar"}), timeout=60).read())
+        v = [[x["HGDG_TARIH"], x.get("HGDG_KAPANIS"), x.get("PD")] for x in d.get("value", []) if x.get("HGDG_KAPANIS")]
+        if not v: open(os.path.join(B, "fiyat_eski", f"{t}.yok"), "w").close(); return t, "boş"
+        json.dump(v, open(os.path.join(B, "fiyat_eski", f"{t}.json"), "w")); return t, None
+    except Exception as ex: return t, repr(ex)[:80]
+fy2 = [t for t in TSH if not any(os.path.exists(os.path.join(B, "fiyat_eski", f"{t}.{e}")) for e in ("json", "yok"))]
+with cf.ThreadPoolExecutor(4) as ex:
+    for k in range(0, len(fy2), 8):
+        if kalan() < BUTCE * 0.6: break
+        for t, h in ex.map(fiyat_eski, fy2[k:k + 8]):
+            if h and h != "boş": print("fiyat_eski", t, h)
 import re
 def kart(t):
     try:
