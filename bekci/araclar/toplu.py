@@ -199,6 +199,52 @@ with cf.ThreadPoolExecutor(3) as ex:
         time.sleep(1.0)
 print("XBRL indirilen", n_ok, "kalan", len(gerek) - n_ok); D["xbrl_kalan"] = len(gerek) - n_ok; kaydet()
 
+# ---------- F) Faaliyet raporu sayfaları (14 Kas 2026; "nasıl izlenir" verileri) ----------
+# Son 5 dönemin faaliyet raporu PDF'inden anahtar kelime geçen sayfaların metni → bekci/toplu/fa/<T>/<dönem>.json
+import re, subprocess, tempfile
+FAK = re.compile(r"kapasite|kurulu g[üu]ç|\bMW\b|GWh|mağaza|sipariş|backlog|\bton\b|tonaj|sermaye yeterlili|takipteki|satış hacmi|satış miktar|üretim miktar|hasta|yönetilen portföy|komisyon|doluluk|ihracat|abone|yolcu|ünite|adet", re.I)
+PERF = {"3 Aylık": "03", "6 Aylık": "06", "9 Aylık": "09", "Yıllık": "12"}
+fah = D.setdefault("fa_hata", {})
+def fa_liste(t):
+    f = os.path.join(B, "fr", f"{t}.json")
+    if not os.path.exists(f): return []
+    c = {}
+    for x in json.load(open(f)):
+        if "Faaliyet Raporu" not in str(x.get("subject") or ""): continue
+        p = PERF.get(x.get("ruleType")); y = x.get("year")
+        if not p or not y: continue
+        k = f"{y}-{p}"
+        if k >= "2025-09": c[k] = max(c.get(k, 0), x["disclosureIndex"])
+    return [(t, k, i) for k, i in sorted(c.items())]
+def fa_cek(a):
+    t, p, i = a; o = os.path.join(B, "fa", t, f"{p}.json")
+    try:
+        h = urllib.request.urlopen(urllib.request.Request(f"https://www.kap.org.tr/tr/Bildirim/{i}", headers={"User-Agent": UA["User-Agent"]}), timeout=90).read()
+        oids = list(dict.fromkeys(x.decode() for x in re.findall(rb"file/download/([0-9a-f]{32})", h)))[:2]
+        out = {"id": i, "ekler": []}
+        for oid in oids:
+            b = urllib.request.urlopen(urllib.request.Request(f"https://www.kap.org.tr/tr/api/file/download/{oid}", headers={"User-Agent": UA["User-Agent"]}), timeout=180).read()
+            k = b.find(b"%PDF", 0, 400)
+            if k > 0: b = b[k:]
+            if b[:4] != b"%PDF": continue
+            with tempfile.NamedTemporaryFile(suffix=".pdf") as tf:
+                tf.write(b); tf.flush()
+                txt = subprocess.run(["pdftotext", "-layout", tf.name, "-"], capture_output=True, text=True, timeout=120).stdout
+            pg = txt.split("\f"); hit = {str(n + 1): x for n, x in enumerate(pg) if FAK.search(x)}
+            out["ekler"].append({"oid": oid, "sayfa_sayisi": len(pg), "sayfalar": dict(list(hit.items())[:40])})
+        os.makedirs(os.path.dirname(o), exist_ok=True); json.dump(out, open(o, "w"), ensure_ascii=False); return a, None
+    except Exception as ex: return a, repr(ex)[:80]
+fa_gerek = [a for t in TSH for a in fa_liste(t) if not os.path.exists(os.path.join(B, "fa", a[0], f"{a[1]}.json")) and fah.get(str(a[2]), 0) < 3]
+n_fa = 0
+with cf.ThreadPoolExecutor(2) as ex:
+    for k in range(0, len(fa_gerek), 4):
+        if kalan() < 200: break
+        for a, h in ex.map(fa_cek, fa_gerek[k:k + 4]):
+            if h: fah[str(a[2])] = fah.get(str(a[2]), 0) + 1; print("FA", a, h)
+            else: n_fa += 1
+        time.sleep(1.5)
+D["fa_kalan"] = len(fa_gerek) - n_fa; print("FA indirilen", n_fa, "kalan", D["fa_kalan"])
+
 D["fiyat_kalan"] = len([t for t in TS if not os.path.exists(os.path.join(B, "fiyat", f"{t}.json"))])
 D["sirket"] = len(TS); D["ids_dolu"] = sum(1 for t in TS if IDS.get(t))
 kaydet(); print(json.dumps({k: v for k, v in D.items() if k not in ("xbrl_hata", "fr_bitti")}, ensure_ascii=False))
