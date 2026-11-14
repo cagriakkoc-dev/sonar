@@ -1,13 +1,13 @@
 {
- "zaman": "2026-11-14 15:30",
+ "zaman": "2026-11-14 23:05",
  "beklenen_donem": "2026-09",
  "ozet": {
-  "sirket": 616,
-  "guncel": 573,
+  "sirket": 618,
+  "guncel": 575,
   "bekleyen_kuyruk": 0,
   "elle": 0,
   "sorun": {
-   "gösterge": 25,
+   "gösterge": 23,
    "rakam": 43
   }
  },
@@ -169,12 +169,6 @@
    "metin": "MERKO: son dönem 2026-03, beklenen 2026-09"
   },
   {
-   "k": "kpi:PGSUS:2026-09",
-   "tur": "gösterge",
-   "t": "PGSUS",
-   "metin": "PGSUS: 10 sektöre özgü gösterge 2026-06'de kaldı (Birim gelir (RASK), Birim kâr (RASK − CASK), Birim maliyet (CASK)…)"
-  },
-  {
    "k": "fin:ATSYH:2026-09",
    "tur": "rakam",
    "t": "ATSYH",
@@ -191,12 +185,6 @@
    "tur": "rakam",
    "t": "ISBIR",
    "metin": "ISBIR: son dönem 2026-06, beklenen 2026-09"
-  },
-  {
-   "k": "kpi:KCHOL:2026-09",
-   "tur": "gösterge",
-   "t": "KCHOL",
-   "metin": "KCHOL: 1 sektöre özgü gösterge 2026-06'de kaldı (Net aktif değer iskontosu)"
   },
   {
    "k": "fin:METRO:2026-09",
@@ -3475,18 +3463,7 @@
    "ozet": "2026-09",
    "gosterge": {
     "sayi": 10,
-    "geride": [
-     "Birim gelir (RASK)",
-     "Birim kâr (RASK − CASK)",
-     "Birim maliyet (CASK)",
-     "Doluluk oranı",
-     "FAVÖK marjı (şirket tanımı)",
-     "Kapasite (AKK) · tek çeyrek",
-     "Ortalama filo",
-     "Yakıt hariç birim maliyet",
-     "Yolcu başı ek gelir",
-     "Yolcu sayısı · tek çeyrek"
-    ]
+    "geride": []
    }
   },
   {
@@ -3871,9 +3848,7 @@
    "ozet": "2026-09",
    "gosterge": {
     "sayi": 1,
-    "geride": [
-     "Net aktif değer iskontosu"
-    ]
+    "geride": []
    }
   },
   {
@@ -3889,6 +3864,28 @@
   },
   {
    "t": "KLRHO",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "LRSHO",
+   "grp": "Holding",
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": null,
+   "gosterge": {
+    "sayi": 0,
+    "geride": []
+   }
+  },
+  {
+   "t": "LYDHO",
    "grp": "Holding",
    "son": "2026-09",
    "oran": "2026-09",
