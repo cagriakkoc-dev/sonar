@@ -108,6 +108,23 @@ def ayristir(metin):
             if mk and len(NP[i]) >= k + 2:
                 x = kalem.setdefault(mk.group(1), {"isin": None, "kod": mk.group(1), "deger": 0.0, "satir": 0})
                 x["deger"] += NP[i][-(k + 1)][1]; x["satir"] += 1
+    if not kalem:   # Ekim 2026 KAP şablonu: ISIN sütununda hisse kodu ("TRY ANADOLU EFES  0  AEFES  0.00 … değer"), satırlar girintili
+        def sablon(kk):
+            out, bolum = {}, False
+            for i, s in enumerate(L):
+                u = ust(s)
+                if re.match(r"^\s*([A-ZÇ0-9]{1,3}[.)\-]+\s*)?(HİSSE|PAY)", u) and len(u.strip()) < 70 and not NP[i]: bolum = True; continue
+                if bolum and (re.match(r"^\s*(ANA\s+)?(GRUP\s+)?TOPLAM", u) or re.match(r"^\s*[B-Z][.)]\s+\S", s)): bolum = False; continue
+                if not bolum: continue
+                mk = re.search(r"\s([A-Z][A-Z0-9]{2,5})(?:\.E)?((?:\s+[-%\d.,/]+){5,})\s*$", s)
+                if mk and len(NP[i]) >= kk + 2:
+                    x = out.setdefault(mk.group(1), {"isin": None, "kod": mk.group(1), "deger": 0.0, "satir": 0})
+                    x["deger"] += NP[i][-(kk + 1)][1]; x["satir"] += 1
+            return out
+        for kk in [k] + [x for x in range(4) if x != k]:   # değer sütunu: TOPLAM satırıyla tutan ilk aday
+            aday = sablon(kk); hs_ = sum(x["deger"] for x in aday.values())
+            if not kalem: kalem = aday
+            if hs_ and top and min(abs(t - hs_) / t for t in top) <= 0.002: kalem, k = aday, kk; break
     H = sorted(kalem.values(), key=lambda x: -x["deger"])
     hs = sum(x["deger"] for x in H)
     eslesen = min(top, key=lambda t: abs(t - hs)) if top and hs else None
