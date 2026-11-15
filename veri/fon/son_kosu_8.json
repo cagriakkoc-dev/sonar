@@ -1,5 +1,5 @@
 {
- "zaman": "2026-11-14T20:42:37Z",
+ "zaman": "2026-11-15T15:16:34Z",
  "basarili": [],
  "atlandi": [
   {
@@ -11,12 +11,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "ASJ",
+   "donem": "2026-08"
+  },
+  {
    "kod": "BTZ",
    "donem": "2026-10"
   },
   {
    "kod": "BTZ",
    "donem": "2026-09"
+  },
+  {
+   "kod": "BTZ",
+   "donem": "2026-08"
   },
   {
    "kod": "DXP",
@@ -27,12 +35,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "DXP",
+   "donem": "2026-08"
+  },
+  {
    "kod": "GHS",
    "donem": "2026-10"
   },
   {
    "kod": "GHS",
    "donem": "2026-09"
+  },
+  {
+   "kod": "GHS",
+   "donem": "2026-08"
   },
   {
    "kod": "GOH",
@@ -43,6 +59,10 @@
    "donem": "2026-09"
   },
   {
+   "kod": "GOH",
+   "donem": "2026-08"
+  },
+  {
    "kod": "HKH",
    "donem": "2026-10"
   },
@@ -51,12 +71,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "HKH",
+   "donem": "2026-08"
+  },
+  {
    "kod": "IDI",
    "donem": "2026-10"
   },
   {
    "kod": "IDI",
    "donem": "2026-09"
+  },
+  {
+   "kod": "IDI",
+   "donem": "2026-08"
   },
   {
    "kod": "KHA",
@@ -67,12 +95,20 @@
    "donem": "2026-08"
   },
   {
+   "kod": "KHA",
+   "donem": "2026-07"
+  },
+  {
    "kod": "KYA",
    "donem": "2026-10"
   },
   {
    "kod": "KYA",
    "donem": "2026-09"
+  },
+  {
+   "kod": "KYA",
+   "donem": "2026-08"
   },
   {
    "kod": "NKT",
@@ -99,6 +135,10 @@
    "donem": "2026-09"
   },
   {
+   "kod": "TTE",
+   "donem": "2026-08"
+  },
+  {
    "kod": "YHK",
    "donem": "2026-10"
   },
@@ -107,13 +147,32 @@
    "donem": "2026-09"
   },
   {
+   "kod": "YHK",
+   "donem": "2026-08"
+  },
+  {
    "kod": "ZTV",
    "donem": "2026-10"
   },
   {
    "kod": "ZTV",
    "donem": "2026-09"
+  },
+  {
+   "kod": "ZTV",
+   "donem": "2026-08"
   }
  ],
- "hata": []
+ "hata": [
+  {
+   "kod": "NKT",
+   "donem": "2026-08",
+   "neden": "RuntimeError('metin yok (taranmış PDF)')"
+  },
+  {
+   "kod": "SUR",
+   "donem": "2026-08",
+   "neden": "RuntimeError('metin yok (taranmış PDF)')"
+  }
+ ]
 }
