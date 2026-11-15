@@ -1,5 +1,5 @@
 {
-"guncel": "2026-11-15 15:33 UTC",
+"guncel": "2026-11-15 15:51 UTC",
 "gruplar": [
 {
 "ad": "Muhteşem 7 (Magnificent 7)",
@@ -21,8 +21,12 @@
 "g_rev": 11.72,
 "g_ni": 11.81,
 "opm": 33.01,
-"fiyat": null,
-"fiyat_t": null
+"fiyat": 356.27,
+"fiyat_t": "2026-11-13",
+"pd": 5177379.8,
+"fk": 39.17,
+"pddd": 46.19,
+"pdsat": 10.81
 },
 {
 "t": "MSFT",
@@ -37,8 +41,12 @@
 "g_rev": 18.8,
 "g_ni": 32.01,
 "opm": 47.1,
-"fiyat": null,
-"fiyat_t": null
+"fiyat": 523.88,
+"fiyat_t": "2026-11-13",
+"pd": 3890432.4,
+"fk": 27.28,
+"pddd": 8.27,
+"pdsat": 11.23
 },
 {
 "t": "GOOGL",
@@ -53,8 +61,12 @@
 "g_rev": 24.65,
 "g_ni": -24.33,
 "opm": 33.32,
-"fiyat": null,
-"fiyat_t": null
+"fiyat": 295.77,
+"fiyat_t": "2026-11-13",
+"pd": 3658083.4,
+"fk": 15.52,
+"pddd": 5.4,
+"pdsat": 7.77
 },
 {
 "t": "AMZN",
@@ -69,8 +81,12 @@
 "g_rev": 12.09,
 "g_ni": -2.37,
 "opm": 13.09,
-"fiyat": null,
-"fiyat_t": null
+"fiyat": 266.66,
+"fiyat_t": "2026-11-13",
+"pd": 2883431.9,
+"fk": 21.39,
+"pddd": 4.7,
+"pdsat": 3.62
 },
 {
 "t": "NVDA",
@@ -85,8 +101,12 @@
 "g_rev": 105.85,
 "g_ni": 125.9,
 "opm": 65.21,
-"fiyat": null,
-"fiyat_t": null
+"fiyat": 162.85,
+"fiyat_t": "2026-11-13",
+"pd": 3924685.0,
+"fk": 20.35,
+"pddd": 17.14,
+"pdsat": 12.95
 },
 {
 "t": "META",
@@ -101,8 +121,12 @@
 "g_rev": 26.07,
 "g_ni": 263.97,
 "opm": 32.86,
-"fiyat": null,
-"fiyat_t": null
+"fiyat": 641.69,
+"fiyat_t": "2026-11-13",
+"pd": 1651068.4,
+"fk": 21.94,
+"pddd": 6.06,
+"pdsat": 6.83
 },
 {
 "t": "TSLA",
@@ -117,9 +141,22 @@
 "g_rev": -0.17,
 "g_ni": -42.68,
 "opm": 3.35,
-"fiyat": null,
-"fiyat_t": null
+"fiyat": 390.22,
+"fiyat_t": "2026-11-13",
+"pd": 1542446.0,
+"fk": 479.32,
+"pddd": 17.27,
+"pdsat": 14.89
 }
 ],
-"hata": []
+"hata": [],
+"fiyat_kaynak": {
+"AAPL": "Nasdaq",
+"MSFT": "Nasdaq",
+"GOOGL": "Nasdaq",
+"AMZN": "Nasdaq",
+"NVDA": "Nasdaq",
+"META": "Nasdaq",
+"TSLA": "Nasdaq"
+}
 }
