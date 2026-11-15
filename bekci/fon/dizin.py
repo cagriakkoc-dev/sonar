@@ -14,12 +14,12 @@ def main():
     GEC = {}
     for d in sorted(glob.glob(os.path.join(VERI, "pdr", "*"))):
         P = [json.load(open(p)) for p in sorted(glob.glob(os.path.join(d, "*.json")))]
-        P = [a for a in P if a.get("dogrulama", {}).get("tutuyor")]   # yalnız doğrulaması tutan raporlar
+        BU = datetime.date.today().strftime("%Y-%m")
+        P = [a for a in P if a.get("dogrulama", {}).get("tutuyor") and str(a.get("donem", "")) <= BU]   # yalnız doğrulaması tutan raporlar (geleceğe tarihli hatalı dönemler atılır)
         if P: GEC[os.path.basename(d)] = P
     KODLAR = {x["kod"] for P in GEC.values() for a in P for x in a["hisseler"] if x.get("kod")}
     TP = os.path.join(VERI, "tasfiye.json"); TAS = set(json.load(open(TP))) if os.path.exists(TP) else set()   # tasfiye kapsamındaki fonlar (elle tutulan liste)
-    EN = max(P[-1]["donem"] for P in GEC.values()) if GEC else "0000-00"
-    y, m = divmod(int(EN[:4]) * 12 + int(EN[5:7]) - 1 - 12, 12); ESIK = "%04d-%02d" % (y, m + 1)   # son 12 ayda geçerli raporu olmayan fon listelenmez
+    _b = datetime.date.today(); y, m = divmod(_b.year * 12 + _b.month - 1 - 13, 12); ESIK = "%04d-%02d" % (y, m + 1)   # son ~12 ayda (bugünden 13 ay geriye) geçerli raporu olmayan fon listelenmez
     for kod, P in GEC.items():
         son = P[-1]; onc = P[-2] if len(P) > 1 else None
         if son["donem"] < ESIK: continue
