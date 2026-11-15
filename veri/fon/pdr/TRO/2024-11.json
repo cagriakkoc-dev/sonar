@@ -1,0 +1,62 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 7126057.26,
+ "fon_portfoy_degeri": 7047603.22,
+ "kalemler": [
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 6133500.0,
+   "agirlik": 86.0714
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 652663.22,
+   "agirlik": 9.1588
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 261440.0,
+   "agirlik": 3.6688
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": "Altın",
+   "deger": 100.0,
+   "agirlik": 0.0014
+  }
+ ],
+ "km_agirligi": 89.7416,
+ "maden_dagilimi": {
+  "Altın": 89.74,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 7047703.22,
+  "portfoy_degeri": 7047603.22,
+  "fark_yuzde": 0.0014,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "TRO",
+ "donem": "2024-11",
+ "bildirim": 1363570,
+ "yayin": "06.12.2024 17:07:59",
+ "ekler": [
+  "4028328d9373bab001939c2e6ed32d4a"
+ ]
+}

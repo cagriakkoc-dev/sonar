@@ -1,0 +1,69 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 6900576.21,
+ "fon_portfoy_degeri": 7789703.35,
+ "kalemler": [
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 3797973.0,
+   "agirlik": 55.0385
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 2183732.8,
+   "agirlik": 31.6457
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 953513.7,
+   "agirlik": 13.8179
+  },
+  {
+   "ad": "Altın fonları",
+   "tur": "fon",
+   "maden": "Altın",
+   "deger": 853797.66,
+   "agirlik": 12.3728
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 686.19,
+   "agirlik": 0.0099
+  }
+ ],
+ "km_agirligi": 99.057,
+ "maden_dagilimi": {
+  "Altın": 99.06,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 7789703.35,
+  "portfoy_degeri": 7789703.35,
+  "fark_yuzde": 0.0,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "TRO",
+ "donem": "2025-01",
+ "bildirim": 1390743,
+ "yayin": "07.02.2025 17:21:17",
+ "ekler": [
+  "4028328c949953a00194e09218d26328"
+ ]
+}

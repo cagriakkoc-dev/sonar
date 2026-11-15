@@ -1,0 +1,83 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 424338712.45,
+ "fon_portfoy_degeri": 426865223.88,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 231859362.3,
+   "agirlik": 54.6402
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 193171184.0,
+   "agirlik": 45.5229
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 56577817.8,
+   "agirlik": 13.3332
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 51202954.77,
+   "agirlik": 12.0665
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 51197232.61,
+   "agirlik": 12.0652
+  },
+  {
+   "ad": "Hisse senedi",
+   "tur": "hisse",
+   "maden": null,
+   "deger": 14139000.0,
+   "agirlik": 3.332
+  },
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 1326000.0,
+   "agirlik": 0.3125
+  }
+ ],
+ "km_agirligi": 100.4755,
+ "maden_dagilimi": {
+  "Altın": 100.16,
+  "Gümüş": 0.31,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 599473551.48,
+  "portfoy_degeri": 426865223.88,
+  "fark_yuzde": 40.4363,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "BLT",
+ "donem": "2026-03",
+ "bildirim": 1583709,
+ "yayin": "03.04.2026 16:51:11",
+ "ekler": [
+  "4028328d9d4a0485019d538da30e7c86"
+ ]
+}
