@@ -216,7 +216,7 @@ def fa_liste(t):
         k = f"{y}-{p}"
         if k >= "2025-09": c[k] = max(c.get(k, 0), x["disclosureIndex"])
     return [(t, k, i) for k, i in sorted(c.items())]
-def fa_cek(a):
+def fa_cek(a, k=0):
     t, p, i = a; o = os.path.join(B, "fa", t, f"{p}.json")
     try:
         h = urllib.request.urlopen(urllib.request.Request(f"https://www.kap.org.tr/tr/Bildirim/{i}", headers={"User-Agent": UA["User-Agent"]}), timeout=90).read()
@@ -233,16 +233,19 @@ def fa_cek(a):
             pg = txt.split("\f"); hit = {str(n + 1): x for n, x in enumerate(pg) if FAK.search(x)}
             out["ekler"].append({"oid": oid, "sayfa_sayisi": len(pg), "sayfalar": dict(list(hit.items())[:40])})
         os.makedirs(os.path.dirname(o), exist_ok=True); json.dump(out, open(o, "w"), ensure_ascii=False); return a, None
-    except Exception as ex: return a, repr(ex)[:80]
+    except Exception as ex:
+        if k < 3 and any(c in repr(ex) for c in ("429", "503", "502", "timed out", "Timeout", "reset")): time.sleep(30 * (k + 1)); return fa_cek(a, k + 1)
+        return a, repr(ex)[:80]
+if D.get("fa_hata_sifir") != 1: fah.clear(); D["fa_hata_sifir"] = 1   # 15 Kas: ilk turdaki 429 hataları sıfırlandı
 fa_gerek = [a for t in TSH for a in fa_liste(t) if not os.path.exists(os.path.join(B, "fa", a[0], f"{a[1]}.json")) and fah.get(str(a[2]), 0) < 3]
 n_fa = 0
 with cf.ThreadPoolExecutor(2) as ex:
     for k in range(0, len(fa_gerek), 4):
         if kalan() < 200: break
         for a, h in ex.map(fa_cek, fa_gerek[k:k + 4]):
-            if h: fah[str(a[2])] = fah.get(str(a[2]), 0) + 1; print("FA", a, h)
+            if h: fah[str(a[2])] = fah.get(str(a[2]), 0) + 1; print("FA", a, h); D.setdefault("fa_son_hata", []).append(h); D["fa_son_hata"] = D["fa_son_hata"][-10:]
             else: n_fa += 1
-        time.sleep(1.5)
+        time.sleep(3.0)
 D["fa_kalan"] = len(fa_gerek) - n_fa; print("FA indirilen", n_fa, "kalan", D["fa_kalan"])
 
 D["fiyat_kalan"] = len([t for t in TS if not os.path.exists(os.path.join(B, "fiyat", f"{t}.json"))])
