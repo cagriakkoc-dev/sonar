@@ -1,6 +1,12 @@
 {
- "zaman": "2026-11-15T15:37:58Z",
+ "zaman": "2026-11-15T15:53:40Z",
  "basarili": [],
  "atlandi": [],
- "hata": []
+ "hata": [
+  {
+   "kod": "EPK",
+   "donem": "2026-10",
+   "neden": "RuntimeError('metin yok (taranmış PDF)')"
+  }
+ ]
 }
