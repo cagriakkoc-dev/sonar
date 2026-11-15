@@ -1,5 +1,5 @@
 {
-"guncel": "2026-11-15 15:18 UTC",
+"guncel": "2026-11-15 15:33 UTC",
 "gruplar": [
 {
 "ad": "Muhteşem 7 (Magnificent 7)",
@@ -7,35 +7,119 @@
 "aciklama": "ABD borsalarının en büyük teknoloji şirketleri: Apple, Microsoft, Alphabet, Amazon, Nvidia, Meta ve Tesla."
 }
 ],
-"sirketler": [],
-"hata": [
-[
-"AAPL",
-"<HTTPError 403: 'Forbidden'>"
+"sirketler": [
+{
+"t": "AAPL",
+"ad": "Apple Inc.",
+"grup": "mag7",
+"sektor": "Tüketici elektroniği ve hizmetler",
+"renk": "#8e8e93",
+"p": "2026Q4",
+"son": "2026-09-26",
+"rev4": 478834.0,
+"ni4": 132175.0,
+"g_rev": 11.72,
+"g_ni": 11.81,
+"opm": 33.01,
+"fiyat": null,
+"fiyat_t": null
+},
+{
+"t": "MSFT",
+"ad": "Microsoft Corporation",
+"grup": "mag7",
+"sektor": "Yazılım ve bulut",
+"renk": "#00a4ef",
+"p": "2027Q1",
+"son": "2026-09-30",
+"rev4": 346445.0,
+"ni4": 142631.0,
+"g_rev": 18.8,
+"g_ni": 32.01,
+"opm": 47.1,
+"fiyat": null,
+"fiyat_t": null
+},
+{
+"t": "GOOGL",
+"ad": "Alphabet Inc.",
+"grup": "mag7",
+"sektor": "İnternet reklamcılığı ve bulut",
+"renk": "#4285f4",
+"p": "2026Q3",
+"son": "2026-09-30",
+"rev4": 471098.0,
+"ni4": 235694.0,
+"g_rev": 24.65,
+"g_ni": -24.33,
+"opm": 33.32,
+"fiyat": null,
+"fiyat_t": null
+},
+{
+"t": "AMZN",
+"ad": "Amazon.com, Inc.",
+"grup": "mag7",
+"sektor": "E-ticaret ve bulut",
+"renk": "#ff9900",
+"p": "2026Q3",
+"son": "2026-09-30",
+"rev4": 797455.0,
+"ni4": 134779.0,
+"g_rev": 12.09,
+"g_ni": -2.37,
+"opm": 13.09,
+"fiyat": null,
+"fiyat_t": null
+},
+{
+"t": "NVDA",
+"ad": "NVIDIA Corporation",
+"grup": "mag7",
+"sektor": "Yarı iletken",
+"renk": "#76b900",
+"p": "2027Q2",
+"son": "2026-07-26",
+"rev4": 302969.0,
+"ni4": 192879.0,
+"g_rev": 105.85,
+"g_ni": 125.9,
+"opm": 65.21,
+"fiyat": null,
+"fiyat_t": null
+},
+{
+"t": "META",
+"ad": "Meta Platforms, Inc.",
+"grup": "mag7",
+"sektor": "Sosyal medya ve reklam",
+"renk": "#0866ff",
+"p": "2026Q3",
+"son": "2026-09-30",
+"rev4": 241606.0,
+"ni4": 75249.0,
+"g_rev": 26.07,
+"g_ni": 263.97,
+"opm": 32.86,
+"fiyat": null,
+"fiyat_t": null
+},
+{
+"t": "TSLA",
+"ad": "Tesla, Inc.",
+"grup": "mag7",
+"sektor": "Elektrikli araç ve enerji",
+"renk": "#e82127",
+"p": "2026Q3",
+"son": "2026-09-30",
+"rev4": 103570.0,
+"ni4": 3218.0,
+"g_rev": -0.17,
+"g_ni": -42.68,
+"opm": 3.35,
+"fiyat": null,
+"fiyat_t": null
+}
 ],
-[
-"MSFT",
-"<HTTPError 403: 'Forbidden'>"
-],
-[
-"GOOGL",
-"<HTTPError 403: 'Forbidden'>"
-],
-[
-"AMZN",
-"<HTTPError 403: 'Forbidden'>"
-],
-[
-"NVDA",
-"<HTTPError 403: 'Forbidden'>"
-],
-[
-"META",
-"<HTTPError 403: 'Forbidden'>"
-],
-[
-"TSLA",
-"<HTTPError 403: 'Forbidden'>"
-]
-]
+"hata": []
 }
