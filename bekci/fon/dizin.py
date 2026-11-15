@@ -17,8 +17,11 @@ def main():
         P = [a for a in P if a.get("dogrulama", {}).get("tutuyor")]   # yalnız doğrulaması tutan raporlar
         if P: GEC[os.path.basename(d)] = P
     KODLAR = {x["kod"] for P in GEC.values() for a in P for x in a["hisseler"] if x.get("kod")}
+    EN = max(P[-1]["donem"] for P in GEC.values()) if GEC else "0000-00"
+    y, m = divmod(int(EN[:4]) * 12 + int(EN[5:7]) - 1 - 12, 12); ESIK = "%04d-%02d" % (y, m + 1)   # son 12 ayda geçerli raporu olmayan fon listelenmez
     for kod, P in GEC.items():
         son = P[-1]; onc = P[-2] if len(P) > 1 else None
+        if son["donem"] < ESIK: continue
         ag = lambda a: {x["kod"] or x["isin"]: x.get("agirlik") or 0 for x in a["hisseler"]}
         A = ag(son); deg = None
         if onc:
