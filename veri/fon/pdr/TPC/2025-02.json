@@ -1,0 +1,83 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 364198103.26,
+ "fon_portfoy_degeri": 362855865.01,
+ "kalemler": [
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 265388213.0,
+   "agirlik": 72.8692
+  },
+  {
+   "ad": "Platin BYF",
+   "tur": "byf",
+   "maden": "Platin",
+   "deger": 102931564.67,
+   "agirlik": 28.2625
+  },
+  {
+   "ad": "Hisse senedi",
+   "tur": "hisse",
+   "maden": null,
+   "deger": 51492934.29,
+   "agirlik": 14.1387
+  },
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 35549250.0,
+   "agirlik": 9.761
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 19069883.56,
+   "agirlik": 5.2361
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 2553680.63,
+   "agirlik": 0.7012
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 100.0,
+   "agirlik": 0.0
+  }
+ ],
+ "km_agirligi": 38.0235,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 9.76,
+  "Platin": 28.26
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 476985626.15,
+  "portfoy_degeri": 362855865.01,
+  "fark_yuzde": 31.4532,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "TPC",
+ "donem": "2025-02",
+ "bildirim": 1400859,
+ "yayin": "05.03.2025 17:10:05",
+ "ekler": [
+  "4028328c950ba8c60195662b81803dca"
+ ]
+}

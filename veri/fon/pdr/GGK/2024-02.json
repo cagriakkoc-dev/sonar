@@ -1,0 +1,97 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 1076290723.35,
+ "fon_portfoy_degeri": 1076276983.21,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 612563094.03,
+   "agirlik": 56.9143
+  },
+  {
+   "ad": "Altın tahvili",
+   "tur": "tahvil",
+   "maden": "Altın",
+   "deger": 218899721.63,
+   "agirlik": 20.3383
+  },
+  {
+   "ad": "Kira sertifikası",
+   "tur": "kira",
+   "maden": null,
+   "deger": 218899721.63,
+   "agirlik": 20.3383
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 54730789.76,
+   "agirlik": 5.0851
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 45685986.5,
+   "agirlik": 4.2448
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 10168406.0,
+   "agirlik": 0.9448
+  },
+  {
+   "ad": "Hisse senedi",
+   "tur": "hisse",
+   "maden": null,
+   "deger": 4061340.0,
+   "agirlik": 0.3773
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 356323.66,
+   "agirlik": 0.0331
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 27268.17,
+   "agirlik": 0.0025
+  }
+ ],
+ "km_agirligi": 78.1974,
+ "maden_dagilimi": {
+  "Altın": 78.2,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 1165392651.38,
+  "portfoy_degeri": 1076276983.21,
+  "fark_yuzde": 8.28,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "GGK",
+ "donem": "2024-02",
+ "bildirim": 1256328,
+ "yayin": "07.03.2024 14:19:12",
+ "ekler": [
+  "4028328d8df5d28f018e188b93b31d1b"
+ ]
+}

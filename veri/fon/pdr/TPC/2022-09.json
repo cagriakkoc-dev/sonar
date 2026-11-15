@@ -1,0 +1,76 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 575675265.78,
+ "fon_portfoy_degeri": 579787461.63,
+ "kalemler": [
+  {
+   "ad": "Gümüş fonları",
+   "tur": "fon",
+   "maden": "Gümüş",
+   "deger": 1086935041.0,
+   "agirlik": 188.8104
+  },
+  {
+   "ad": "Borsa yatırım fonları",
+   "tur": "byf",
+   "maden": null,
+   "deger": 254743052.02,
+   "agirlik": 44.2512
+  },
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 101788800.0,
+   "agirlik": 17.6816
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 2804292.05,
+   "agirlik": 0.4871
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 324273.38,
+   "agirlik": 0.0563
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 100.0,
+   "agirlik": 0.0
+  }
+ ],
+ "km_agirligi": 206.4921,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 206.49,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 1446595558.45,
+  "portfoy_degeri": 579787461.63,
+  "fark_yuzde": 149.5045,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "TPC",
+ "donem": "2022-09",
+ "bildirim": 1069008,
+ "yayin": "07.10.2022 17:02:34",
+ "ekler": [
+  "4028328d838f7dce0183b2aff8ce490a"
+ ]
+}

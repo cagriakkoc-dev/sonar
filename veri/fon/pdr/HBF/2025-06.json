@@ -1,0 +1,83 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 2761299729.93,
+ "fon_portfoy_degeri": 2760104076.52,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 1899910867.66,
+   "agirlik": 68.8049
+  },
+  {
+   "ad": "Altın tahvili",
+   "tur": "tahvil",
+   "maden": "Altın",
+   "deger": 394222785.88,
+   "agirlik": 14.2767
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": "Altın",
+   "deger": 300103241.61,
+   "agirlik": 10.8682
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 269555917.7,
+   "agirlik": 9.7619
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 111608487.91,
+   "agirlik": 4.0419
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 20631295.03,
+   "agirlik": 0.7472
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 100.0,
+   "agirlik": 0.0
+  }
+ ],
+ "km_agirligi": 103.7118,
+ "maden_dagilimi": {
+  "Altın": 103.71,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 2996032695.79,
+  "portfoy_degeri": 2760104076.52,
+  "fark_yuzde": 8.5478,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "HBF",
+ "donem": "2025-06",
+ "bildirim": 1458877,
+ "yayin": "08.07.2025 10:28:43",
+ "ekler": [
+  "4028328c976d29880197e402822a3b54"
+ ]
+}

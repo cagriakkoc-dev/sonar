@@ -1,0 +1,83 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 496260883.02,
+ "fon_portfoy_degeri": 488782385.31,
+ "kalemler": [
+  {
+   "ad": "Gümüş fonları",
+   "tur": "fon",
+   "maden": "Gümüş",
+   "deger": 840639855.0,
+   "agirlik": 169.3947
+  },
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 287367125.79,
+   "agirlik": 57.9065
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 9998000.0,
+   "agirlik": 2.0147
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 6351913.7,
+   "agirlik": 1.28
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 20757.3,
+   "agirlik": 0.0042
+  },
+  {
+   "ad": "Devlet tahvili / bono",
+   "tur": "tahvil",
+   "maden": null,
+   "deger": 100.0,
+   "agirlik": 0.0
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 100.0,
+   "agirlik": 0.0
+  }
+ ],
+ "km_agirligi": 229.3159,
+ "maden_dagilimi": {
+  "Altın": 2.01,
+  "Gümüş": 227.3,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 1144377851.79,
+  "portfoy_degeri": 488782385.31,
+  "fark_yuzde": 134.1283,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "TPC",
+ "donem": "2023-02",
+ "bildirim": 1121098,
+ "yayin": "07.03.2023 16:47:25",
+ "ekler": [
+  "4028328d868461840186bc3e8291628d"
+ ]
+}

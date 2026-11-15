@@ -1,0 +1,90 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 5248576619.79,
+ "fon_portfoy_degeri": 5207186090.13,
+ "kalemler": [
+  {
+   "ad": "Platin BYF",
+   "tur": "byf",
+   "maden": "Platin",
+   "deger": 2547395651.51,
+   "agirlik": 48.535
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 1407983130.0,
+   "agirlik": 26.826
+  },
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 972400500.0,
+   "agirlik": 18.5269
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 94495227.62,
+   "agirlik": 1.8004
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 89462500.0,
+   "agirlik": 1.7045
+  },
+  {
+   "ad": "Hisse senedi",
+   "tur": "hisse",
+   "maden": null,
+   "deger": 54543926.53,
+   "agirlik": 1.0392
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 41290853.51,
+   "agirlik": 0.7867
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 40905654.47,
+   "agirlik": 0.7794
+  }
+ ],
+ "km_agirligi": 68.7664,
+ "maden_dagilimi": {
+  "Altın": 1.7,
+  "Gümüş": 18.53,
+  "Platin": 48.53
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 5248477443.64,
+  "portfoy_degeri": 5207186090.13,
+  "fark_yuzde": 0.793,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "TPC",
+ "donem": "2026-09",
+ "bildirim": 1675609,
+ "yayin": "08.10.2026 09:56:58",
+ "ekler": [
+  "4028328ca0b8418601a11696d49b7b75"
+ ]
+}

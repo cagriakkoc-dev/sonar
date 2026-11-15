@@ -1,0 +1,83 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 62171800.35,
+ "fon_portfoy_degeri": 62237838.58,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 56316080.03,
+   "agirlik": 90.5814
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 5886867.23,
+   "agirlik": 9.4687
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 2501437.81,
+   "agirlik": 4.0234
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 1569016.44,
+   "agirlik": 2.5237
+  },
+  {
+   "ad": "Devlet tahvili / bono",
+   "tur": "tahvil",
+   "maden": null,
+   "deger": 947567.66,
+   "agirlik": 1.5241
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 31357.41,
+   "agirlik": 0.0504
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 569.53,
+   "agirlik": 0.0009
+  }
+ ],
+ "km_agirligi": 100.0501,
+ "maden_dagilimi": {
+  "Altın": 100.05,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 67252896.11,
+  "portfoy_degeri": 62237838.58,
+  "fark_yuzde": 8.0579,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "GGK",
+ "donem": "2023-02",
+ "bildirim": 1121532,
+ "yayin": "08.03.2023 13:37:23",
+ "ekler": [
+  "4028328d868461830186a77577ef4d51"
+ ]
+}
