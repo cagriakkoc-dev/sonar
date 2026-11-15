@@ -9,6 +9,7 @@ Kullanım: python3 bekci/abd/edgar.py [AAPL,MSFT,...]
 SEC kuralı: tanımlayıcı User-Agent, saniyede en çok 10 istek.
 """
 import json, os, sys, time, datetime as dt, urllib.request, csv, io
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 KOK = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CIKTI = os.path.join(KOK, "public", "veri", "abd")
@@ -27,6 +28,18 @@ def al(url, tekrar=4, json_mu=True):
             time.sleep(0.15)
             return json.loads(b) if json_mu else b.decode("utf-8", "replace")
         except Exception as e:
+            if n == tekrar - 1:
+                raise
+            time.sleep(2 * (n + 1))
+
+
+def al_bayt(url, tekrar=4):
+    for n in range(tekrar):
+        try:
+            b = urllib.request.urlopen(urllib.request.Request(url, headers={k: v for k, v in UA.items() if v}), timeout=90).read()
+            time.sleep(0.15)
+            return b
+        except Exception:
             if n == tekrar - 1:
                 raise
             time.sleep(2 * (n + 1))
@@ -337,6 +350,16 @@ def isle(S):
                     r["g_" + k] = round(100 * (a - b) / abs(b), 2)
         p["r"] = r
 
+    # kırılımlar ve sektöre özgü göstergeler (XBRL boyutlu veri + 10-Q/10-K metni)
+    mix, kpi = {}, {}
+    try:
+        import segment
+        olgu, metin = segment.topla(al, al_bayt, t, cik, sub)
+        mix, kpi = segment.kur(t, olgu, metin, periods, ceyrek_seri)
+        kpi = segment.tureve(t, mix, kpi, periods)
+    except Exception as e:
+        import traceback; traceback.print_exc()
+        print("kırılım hatası", t, repr(e))
     son_f = F[-1] if F else None
     out = {
         "t": t, "ad": S["ad"], "ad_tr": S.get("ad_tr", S["ad"]), "cik": cik, "borsa": S.get("borsa", ""),
@@ -345,7 +368,7 @@ def isle(S):
         "fiyat": {"son": son_f[1] if son_f else None, "t": son_f[0] if son_f else None, "kaynak": fkaynak,
                   "gunluk": [[d, round(c, 2)] for d, c in F if d >= (dt.date.today() - dt.timedelta(days=5 * 366)).isoformat()][::1]},
         "sec": f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={cik}&type=10-&dateb=&owner=include&count=40",
-        "guncel": dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
+        "guncel": dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"), "mix": mix, "kpi": kpi,
     }
     # son başvurular (8-K kazanç duyurusu, 10-Q, 10-K)
     rc = sub.get("filings", {}).get("recent", {})
