@@ -1,5 +1,5 @@
 {
- "zaman": "2026-11-15T15:16:39Z",
+ "zaman": "2026-11-15T15:30:05Z",
  "basarili": [],
  "atlandi": [
   {
@@ -11,20 +11,12 @@
    "donem": "2026-09"
   },
   {
-   "kod": "ACC",
-   "donem": "2026-08"
-  },
-  {
    "kod": "BGR",
    "donem": "2026-10"
   },
   {
    "kod": "BGR",
    "donem": "2026-09"
-  },
-  {
-   "kod": "BGR",
-   "donem": "2026-08"
   },
   {
    "kod": "DHJ",
@@ -35,20 +27,12 @@
    "donem": "2026-09"
   },
   {
-   "kod": "DHJ",
-   "donem": "2026-08"
-  },
-  {
    "kod": "ELZ",
    "donem": "2026-10"
   },
   {
    "kod": "ELZ",
    "donem": "2026-09"
-  },
-  {
-   "kod": "ELZ",
-   "donem": "2026-08"
   },
   {
    "kod": "GKV",
@@ -59,20 +43,12 @@
    "donem": "2026-09"
   },
   {
-   "kod": "GKV",
-   "donem": "2026-08"
-  },
-  {
    "kod": "GZR",
    "donem": "2026-10"
   },
   {
    "kod": "GZR",
    "donem": "2026-09"
-  },
-  {
-   "kod": "GZR",
-   "donem": "2026-08"
   },
   {
    "kod": "IHT",
@@ -83,20 +59,12 @@
    "donem": "2026-09"
   },
   {
-   "kod": "IHT",
-   "donem": "2026-08"
-  },
-  {
    "kod": "KPA",
    "donem": "2026-10"
   },
   {
    "kod": "KPA",
    "donem": "2026-09"
-  },
-  {
-   "kod": "KPA",
-   "donem": "2026-08"
   },
   {
    "kod": "MMH",
@@ -107,10 +75,6 @@
    "donem": "2026-09"
   },
   {
-   "kod": "MMH",
-   "donem": "2026-08"
-  },
-  {
    "kod": "NUH",
    "donem": "2026-10"
   },
@@ -119,20 +83,12 @@
    "donem": "2026-09"
   },
   {
-   "kod": "NUH",
-   "donem": "2026-08"
-  },
-  {
    "kod": "PMG",
    "donem": "2026-10"
   },
   {
    "kod": "PMG",
    "donem": "2026-09"
-  },
-  {
-   "kod": "PMG",
-   "donem": "2026-08"
   },
   {
    "kod": "SHC",
@@ -151,10 +107,6 @@
    "donem": "2026-09"
   },
   {
-   "kod": "TI3",
-   "donem": "2026-08"
-  },
-  {
    "kod": "VHK",
    "donem": "2026-10"
   },
@@ -169,17 +121,7 @@
   {
    "kod": "YPR",
    "donem": "2026-09"
-  },
-  {
-   "kod": "YPR",
-   "donem": "2026-08"
   }
  ],
- "hata": [
-  {
-   "kod": "SHC",
-   "donem": "2026-08",
-   "neden": "RuntimeError('metin yok (taranmış PDF)')"
-  }
- ]
+ "hata": []
 }
