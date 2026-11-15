@@ -1,0 +1,12 @@
+{
+  "gruplar": [{"ad": "Muhteşem 7 (Magnificent 7)", "id": "mag7", "aciklama": "ABD borsalarının en büyük teknoloji şirketleri: Apple, Microsoft, Alphabet, Amazon, Nvidia, Meta ve Tesla."}],
+  "sirketler": [
+    {"t": "AAPL", "cik": 320193, "ad": "Apple Inc.", "grup": "mag7", "borsa": "Nasdaq", "sektor": "Tüketici elektroniği ve hizmetler", "renk": "#8e8e93", "mali_yil": "Eylül sonu", "intro": "iPhone, Mac, iPad ve giyilebilir cihazlar üretir; App Store, iCloud, Apple Music ve ödeme gibi hizmetlerden de büyüyen bir gelir elde eder."},
+    {"t": "MSFT", "cik": 789019, "ad": "Microsoft Corporation", "grup": "mag7", "borsa": "Nasdaq", "sektor": "Yazılım ve bulut", "renk": "#00a4ef", "mali_yil": "Haziran sonu", "intro": "Azure bulut altyapısı, Office/Microsoft 365, Windows, LinkedIn ve Xbox ile kurumsal ve bireysel yazılım pazarının en büyük oyuncularından."},
+    {"t": "GOOGL", "cik": 1652044, "ad": "Alphabet Inc.", "grup": "mag7", "borsa": "Nasdaq", "sektor": "İnternet reklamcılığı ve bulut", "renk": "#4285f4", "mali_yil": "Aralık sonu", "intro": "Google arama, YouTube ve reklam ağından gelir elde eder; Google Cloud ve Waymo gibi yeni işleri büyütür."},
+    {"t": "AMZN", "cik": 1018724, "ad": "Amazon.com, Inc.", "grup": "mag7", "borsa": "Nasdaq", "sektor": "E-ticaret ve bulut", "renk": "#ff9900", "mali_yil": "Aralık sonu", "intro": "Dünyanın en büyük e-ticaret şirketi; kârının büyük kısmını AWS bulut hizmetleri ve reklam işi getirir."},
+    {"t": "NVDA", "cik": 1045810, "ad": "NVIDIA Corporation", "grup": "mag7", "borsa": "Nasdaq", "sektor": "Yarı iletken", "renk": "#76b900", "mali_yil": "Ocak sonu", "intro": "Veri merkezleri için yapay zekâ hızlandırıcıları (GPU) ve ağ ürünleri, oyun ekran kartları ve otomotiv yongaları tasarlar."},
+    {"t": "META", "cik": 1326801, "ad": "Meta Platforms, Inc.", "grup": "mag7", "borsa": "Nasdaq", "sektor": "Sosyal medya ve reklam", "renk": "#0866ff", "mali_yil": "Aralık sonu", "intro": "Facebook, Instagram, WhatsApp ve Messenger'dan reklam geliri elde eder; Reality Labs ile sanal/artırılmış gerçekliğe yatırım yapar."},
+    {"t": "TSLA", "cik": 1318605, "ad": "Tesla, Inc.", "grup": "mag7", "borsa": "Nasdaq", "sektor": "Elektrikli araç ve enerji", "renk": "#e82127", "mali_yil": "Aralık sonu", "intro": "Elektrikli otomobil üretir ve satar; enerji depolama (Megapack, Powerwall) ve güneş enerjisi işleri büyüyor."}
+  ]
+}

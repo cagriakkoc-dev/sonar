@@ -1,0 +1,45 @@
+name: Sonar ABD (SEC EDGAR)
+# Yeni 10-Q / 10-K / önemli 8-K takibi (Telegram) ve şirket verisi. Günde bir tam yenileme (fiyatlar dahil).
+on:
+  workflow_dispatch:
+    inputs:
+      tam:
+        description: 'Tüm şirketleri yeniden üret (1)'
+        required: false
+        default: '1'
+  push:
+    paths: ['bekci/abd/tetik']
+  schedule:
+    - cron: '37 */2 * * *'
+    - cron: '17 22 * * 1-5'   # ABD kapanışından sonra tam yenileme
+permissions:
+  contents: write
+concurrency:
+  group: abd
+  cancel-in-progress: false
+jobs:
+  abd:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            bekci/abd
+            bekci/state.json
+            public/veri/abd
+            .github
+          sparse-checkout-cone-mode: false
+      - name: Bekçi ve veri
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: |
+          ARG=""
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.tam }}" = "1" ] || [ "${{ github.event.schedule }}" = "17 22 * * 1-5" ]; then ARG="--tam"; fi
+          python3 -u bekci/abd/bekci_abd.py $ARG
+      - name: Kaydet
+        run: |
+          git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
+          git add bekci/abd public/veri/abd
+          if git diff --cached --name-only | grep -q "^public/veri/abd/"; then M="ABD verisi"; else M="ABD bekçi durumu [skip render]"; fi
+          git diff --cached --quiet || (git commit -q -m "$M" && for n in 1 2 3 4 5 6; do git pull -q --rebase && git push -q && break; sleep $((RANDOM % 8 + 3)); done)
