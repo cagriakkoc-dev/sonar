@@ -274,12 +274,16 @@ def isle(S):
                 v = I[k].get(e)
                 if v is not None:
                     p[k] = round(v[0] / 1e6, 2)
+        fy_shd = [v for (b_, e_), v in O["shd"].items() if e_ == e and (gun(e_) - gun(b_)).days > 300]
         if "shd" in (p.get("fark") or []):
-            p.pop("shd", None)
-        if "eps" in (p.get("fark") or []) and p.get("ni") is not None:
-            fy_shd = [v for (b_, e_), v in O["shd"].items() if e_ == e and (gun(e_) - gun(b_)).days > 300]
+            # ağırlıklı ortalama pay farkla türetilmez: 4. çeyrekte yıllık ağırlıklı ortalama kullanılır
             if fy_shd:
-                p["eps"] = round(p["ni"] / (fy_shd[0][0] / 1e6), 2)
+                p["shd"] = round(fy_shd[0][0] / 1e6, 2)
+            else:
+                p.pop("shd", None)
+            p["fark"] = [k for k in p["fark"] if k != "shd"]
+        if "eps" in (p.get("fark") or []) and p.get("ni") is not None and fy_shd:
+            p["eps"] = round(p["ni"] / (fy_shd[0][0] / 1e6), 2)
         if "gp" not in p and "rev" in p and "cogs" in p:
             p["gp"] = round(p["rev"] - p["cogs"], 2)
         # kaynak dosyalama (10-Q/10-K) — hasılatın geldiği başvuru
@@ -293,7 +297,7 @@ def isle(S):
             p["pay"] = round(sonra[0] / 1e6, 2)
         elif yakin and abs((gun(yakin[0][0]) - gun(e)).days) < 200:
             p["pay"] = round(yakin[0][1] / 1e6, 2)
-        elif p.get("shd") and "shd" not in (p.get("fark") or []):
+        elif p.get("shd"):
             p["pay"] = p["shd"]
         kp = kapanis(F, e) if F else None
         if kp:
