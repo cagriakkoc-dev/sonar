@@ -47,7 +47,7 @@ def main():
         for x in son["hisseler"]:
             if x.get("kod"): H.setdefault(x["kod"], []).append([kod, x.get("agirlik"), son["donem"]])
     for k in H: H[k].sort(key=lambda r: -(r[1] or 0))
-    out = {"guncel": datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds") + "Z", "fonlar": sorted(F, key=lambda f: -(f["toplam"] or 0)), "hisse": H}
+    out = {"guncel": datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds") + "Z", "fonlar": sorted([f for f in F if f.get("tur") != "km"], key=lambda f: -(f["toplam"] or 0)), "km": sorted([f for f in F if f.get("tur") == "km"], key=lambda f: -(f["toplam"] or 0)), "hisse": H}   # km = kıymetli maden fonları (site ayrı sekmede gösterir)
     for p in (os.path.join(VERI, "fonlar.json"), os.path.join(KOK, "public", "veri", "fon", "fonlar.json")):
         os.makedirs(os.path.dirname(p), exist_ok=True)
         json.dump(out, open(p, "w"), ensure_ascii=False, separators=(",", ":"))

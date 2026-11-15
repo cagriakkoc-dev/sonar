@@ -24,7 +24,7 @@ def yaz(kod, d):
     open(os.path.join(OUT, kod + ".json"), "w").write(s)
 def main():
     p = os.path.join(KOK, "veri", "fon", "fonlar.json")
-    kodlar = [f["kod"] for f in json.load(open(p))["fonlar"]] if os.path.exists(p) else []
+    J = json.load(open(p)) if os.path.exists(p) else {}; kodlar = [f["kod"] for f in J.get("fonlar", []) + J.get("km", [])]   # hisse yoğun + kıymetli maden
     kodlar.sort(key=lambda k: (oku(k).get("tam", 0), oku(k).get("guncel", "")))   # önce 5 yılı eksik olanlar
     bitis = time.time() + 60 * float(os.environ.get("FIYAT_SURE") or 20)
     oturum(); tamam = hata = ard = 0; simdi = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes")
