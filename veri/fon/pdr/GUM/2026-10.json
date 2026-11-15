@@ -1,21 +1,78 @@
 {
+ "tur": "km",
  "fon_toplam_deger": 4912244680.17,
  "fon_portfoy_degeri": 4933670985.81,
+ "kalemler": [
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 4055216181.89,
+   "agirlik": 82.5532
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 658975074.36,
+   "agirlik": 13.4149
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 115338289.03,
+   "agirlik": 2.348
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 96896392.96,
+   "agirlik": 1.9725
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 6344233.87,
+   "agirlik": 0.1292
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 3894618.84,
+   "agirlik": 0.0793
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 900813.7,
+   "agirlik": 0.0183
+  }
+ ],
+ "km_agirligi": 96.0973,
+ "maden_dagilimi": {
+  "Altın": 0.13,
+  "Gümüş": 95.97,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "yuzde_sutun": 3,
+  "kalem_toplami": 4937565604.65,
+  "portfoy_degeri": 4933670985.81,
+  "fark_yuzde": 0.0789,
   "bicim": "tr",
-  "tutuyor": false
+  "tutuyor": true
  },
- "hisseler": [],
  "bildirim": 1692895,
  "yayin": "05.11.2026 09:26:47",
  "ekler": [

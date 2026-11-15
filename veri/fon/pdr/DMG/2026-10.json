@@ -1,35 +1,78 @@
 {
+ "tur": "km",
  "fon_toplam_deger": 2234111714.01,
  "fon_portfoy_degeri": 2239263574.41,
- "islemler": {
-  "alis": [],
-  "satis": [
-   [
-    "GMSTR",
-    14313750.0,
-    2
-   ]
-  ]
- },
- "hisse_sayisi": 1,
- "hisse_agirligi": 3.2389,
- "dogrulama": {
-  "hisse_satir_toplami": 72361387.7,
-  "hisse_grup_toplami": 75216191.3,
-  "fark_yuzde": -3.7955,
-  "yuzde_sutun": 3,
-  "bicim": "tr",
-  "tutuyor": false
- },
- "hisseler": [
+ "kalemler": [
   {
-   "isin": "TRAXIST04519",
-   "kod": "GÜMÜS",
-   "deger": 72361387.7,
-   "satir": 1,
-   "agirlik": 3.2389
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 1941432354.16,
+   "agirlik": 86.8995
+  },
+  {
+   "ad": "Gümüş fonları",
+   "tur": "fon",
+   "maden": "Gümüş",
+   "deger": 115885881.58,
+   "agirlik": 5.1871
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 92667293.31,
+   "agirlik": 4.1478
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 75216191.3,
+   "agirlik": 3.3667
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 10091110.0,
+   "agirlik": 0.4517
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 3970744.06,
+   "agirlik": 0.1777
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 59189.75,
+   "agirlik": 0.0026
   }
  ],
+ "km_agirligi": 96.2345,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 96.23,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 2239322764.16,
+  "portfoy_degeri": 2239263574.41,
+  "fark_yuzde": 0.0026,
+  "bicim": "tr",
+  "tutuyor": true
+ },
  "bildirim": 1691011,
  "yayin": "02.11.2026 17:24:27",
  "ekler": [

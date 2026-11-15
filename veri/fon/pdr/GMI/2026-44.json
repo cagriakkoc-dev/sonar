@@ -1,21 +1,57 @@
 {
+ "tur": "km",
  "fon_toplam_deger": 499121333.06,
  "fon_portfoy_degeri": 499050380.08,
+ "kalemler": [
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 485538045.85,
+   "agirlik": 97.2786
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 8023579.18,
+   "agirlik": 1.6075
+  },
+  {
+   "ad": "Altın fonları",
+   "tur": "fon",
+   "maden": "Altın",
+   "deger": 5488755.05,
+   "agirlik": 1.0997
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 1135267.13,
+   "agirlik": 0.2275
+  }
+ ],
+ "km_agirligi": 98.3782,
+ "maden_dagilimi": {
+  "Altın": 1.1,
+  "Gümüş": 97.28,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "yuzde_sutun": 3,
+  "kalem_toplami": 500185647.21,
+  "portfoy_degeri": 499050380.08,
+  "fark_yuzde": 0.2275,
   "bicim": "tr",
-  "tutuyor": false
+  "tutuyor": true
  },
- "hisseler": [],
  "bildirim": 1696212,
  "yayin": "10.11.2026 09:33:30",
  "ekler": [

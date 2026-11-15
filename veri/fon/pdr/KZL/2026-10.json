@@ -1,21 +1,50 @@
 {
+ "tur": "km",
  "fon_toplam_deger": 79043317432.44,
  "fon_portfoy_degeri": 79022938648.52,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 78986291417.5,
+   "agirlik": 99.9279
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 31593205.48,
+   "agirlik": 0.04
+  },
+  {
+   "ad": "Altın fonları",
+   "tur": "fon",
+   "maden": "Altın",
+   "deger": 9152083.41,
+   "agirlik": 0.0116
+  }
+ ],
+ "km_agirligi": 99.9394,
+ "maden_dagilimi": {
+  "Altın": 99.94,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "yuzde_sutun": 3,
+  "kalem_toplami": 79027036706.39,
+  "portfoy_degeri": 79022938648.52,
+  "fark_yuzde": 0.0052,
   "bicim": "tr",
-  "tutuyor": false
+  "tutuyor": true
  },
- "hisseler": [],
  "bildirim": 1693002,
  "yayin": "05.11.2026 11:47:08",
  "ekler": [

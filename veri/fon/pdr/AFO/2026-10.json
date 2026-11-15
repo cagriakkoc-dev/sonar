@@ -1,21 +1,71 @@
 {
+ "tur": "km",
  "fon_toplam_deger": 17266241877.57,
  "fon_portfoy_degeri": 17286649111.76,
+ "kalemler": [
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 9027191979.39,
+   "agirlik": 52.2823
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 7575015246.4,
+   "agirlik": 43.8718
+  },
+  {
+   "ad": "Altın fonları",
+   "tur": "fon",
+   "maden": "Altın",
+   "deger": 528644960.29,
+   "agirlik": 3.0617
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 129021763.35,
+   "agirlik": 0.7472
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 26775162.33,
+   "agirlik": 0.1551
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 12387402.21,
+   "agirlik": 0.0717
+  }
+ ],
+ "km_agirligi": 99.9631,
+ "maden_dagilimi": {
+  "Altın": 99.96,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "yuzde_sutun": 3,
+  "kalem_toplami": 17299036513.97,
+  "portfoy_degeri": 17286649111.76,
+  "fark_yuzde": 0.0717,
   "bicim": "tr",
-  "tutuyor": false
+  "tutuyor": true
  },
- "hisseler": [],
  "bildirim": 1692453,
  "yayin": "04.11.2026 17:12:15",
  "ekler": [

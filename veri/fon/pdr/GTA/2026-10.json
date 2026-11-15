@@ -1,21 +1,64 @@
 {
+ "tur": "km",
  "fon_toplam_deger": 22157045407.16,
  "fon_portfoy_degeri": 22198178404.94,
+ "kalemler": [
+  {
+   "ad": "Kira sertifikası",
+   "tur": "kira",
+   "maden": null,
+   "deger": 11556739522.28,
+   "agirlik": 52.1583
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 9992168421.24,
+   "agirlik": 45.097
+  },
+  {
+   "ad": "Devlet tahvili / bono",
+   "tur": "tahvil",
+   "maden": null,
+   "deger": 636831046.29,
+   "agirlik": 2.8742
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 9929179.23,
+   "agirlik": 0.0448
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 2510235.9,
+   "agirlik": 0.0113
+  }
+ ],
+ "km_agirligi": 45.097,
+ "maden_dagilimi": {
+  "Altın": 45.1,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "yuzde_sutun": 0,
+  "kalem_toplami": 22198178404.94,
+  "portfoy_degeri": 22198178404.94,
+  "fark_yuzde": 0.0,
   "bicim": "us",
-  "tutuyor": false
+  "tutuyor": true
  },
- "hisseler": [],
  "bildirim": 1695721,
  "yayin": "09.11.2026 19:07:15",
  "ekler": [

@@ -1,21 +1,50 @@
 {
+ "tur": "km",
  "fon_toplam_deger": 25593734.35,
  "fon_portfoy_degeri": 25553171.06,
+ "kalemler": [
+  {
+   "ad": "Altın fonları",
+   "tur": "fon",
+   "maden": "Altın",
+   "deger": 23548268.8,
+   "agirlik": 92.0079
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 1994106.0,
+   "agirlik": 7.7914
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 10796.26,
+   "agirlik": 0.0422
+  }
+ ],
+ "km_agirligi": 99.7993,
+ "maden_dagilimi": {
+  "Altın": 99.8,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
  "islemler": {
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
-  "yuzde_sutun": 3,
+  "kalem_toplami": 25553171.06,
+  "portfoy_degeri": 25553171.06,
+  "fark_yuzde": 0.0,
   "bicim": "tr",
-  "tutuyor": false
+  "tutuyor": true
  },
- "hisseler": [],
  "bildirim": 1694618,
  "yayin": "09.11.2026 09:17:22",
  "ekler": [
