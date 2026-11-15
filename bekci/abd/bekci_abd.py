@@ -42,6 +42,7 @@ def main():
     tam = "--tam" in sys.argv
     yenile = set(s["t"] for s in S) if tam else set()
     mesaj = []
+    basari = 0
     for s in S:
         cik = int(s["cik"])
         try:
@@ -49,6 +50,7 @@ def main():
         except Exception as e:
             print("submissions hatası", s["t"], e)
             continue
+        basari += 1
         rc = sub.get("filings", {}).get("recent", {})
         gor = set(du["gorulen"].get(s["t"], []))
         for i in range(min(len(rc.get("form", [])), 40)):
@@ -77,13 +79,17 @@ def main():
             pass
         if not tam and not ilk:
             mesaj.append("Sonar ABD verisi yenilendi: " + ", ".join(sorted(yenile)) + "\nhttps://sonar.smartcuzdan.io/abd/")
-    if ilk:
+    if ilk and du.get("mesaj"):
+        mesaj = []
+    elif ilk and basari:
+        du["mesaj"] = True
         mesaj = [f"🇺🇸 Sonar ABD bekçisi başladı · {len(S)} şirket (Muhteşem 7): " + ", ".join(s['t'] for s in S) +
                  ".\nSEC EDGAR'da yeni 10-Q, 10-K ve önemli 8-K'ler (kazanç duyurusu, önemli sözleşme, yönetici değişikliği…) buraya gelecek."]
     for m in mesaj:
         tg(m)
         time.sleep(1)
-    du["ilk"] = False
+    if basari:
+        du["ilk"] = False
     du["son"] = dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     json.dump(du, open(DURUM, "w"), ensure_ascii=False, indent=0)
 

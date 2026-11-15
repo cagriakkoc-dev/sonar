@@ -13,14 +13,17 @@ import json, os, sys, time, datetime as dt, urllib.request, csv, io
 KOK = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CIKTI = os.path.join(KOK, "public", "veri", "abd")
 SIRKET_DOSYA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sirketler.json")
-UA = {"User-Agent": os.environ.get("SEC_UA", "Sonar Bekci sonar-bekci@users.noreply.github.com"), "Accept-Encoding": "identity"}
+UA = {"User-Agent": os.environ.get("SEC_UA", "Sonar sonar@smartcuzdan.io"), "Accept-Encoding": "identity", "Host": None}
 BASLANGIC = dt.date(2020, 10, 1)
 
 
 def al(url, tekrar=4, json_mu=True):
     for n in range(tekrar):
         try:
-            b = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60).read()
+            h = {k: v for k, v in UA.items() if v}
+            if "sec.gov" not in url:
+                h["User-Agent"] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+            b = urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=60).read()
             time.sleep(0.15)
             return json.loads(b) if json_mu else b.decode("utf-8", "replace")
         except Exception as e:
