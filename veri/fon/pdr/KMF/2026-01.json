@@ -1,0 +1,90 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 2127315773.81,
+ "fon_portfoy_degeri": 2038489103.44,
+ "kalemler": [
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 674853399.48,
+   "agirlik": 31.7232
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 537681735.49,
+   "agirlik": 25.2751
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 307856924.62,
+   "agirlik": 14.4716
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 298720085.25,
+   "agirlik": 14.0421
+  },
+  {
+   "ad": "Hisse senedi",
+   "tur": "hisse",
+   "maden": null,
+   "deger": 116699000.0,
+   "agirlik": 5.4857
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 102423841.98,
+   "agirlik": 4.8147
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 27800687.01,
+   "agirlik": 1.3068
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 254116.62,
+   "agirlik": 0.0119
+  }
+ ],
+ "km_agirligi": 71.0405,
+ "maden_dagilimi": {
+  "Altın": 71.04,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 2066289790.45,
+  "portfoy_degeri": 2038489103.44,
+  "fark_yuzde": 1.3638,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "KMF",
+ "donem": "2026-01",
+ "bildirim": 1553925,
+ "yayin": "06.02.2026 18:01:20",
+ "ekler": [
+  "4028328d9b827483019c32487d383466"
+ ]
+}

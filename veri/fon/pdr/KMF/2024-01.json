@@ -1,0 +1,83 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 215694808.83,
+ "fon_portfoy_degeri": 214266203.84,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 109089140.7,
+   "agirlik": 50.5757
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 60257200.22,
+   "agirlik": 27.9363
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 34935062.0,
+   "agirlik": 16.1965
+  },
+  {
+   "ad": "Hisse senedi",
+   "tur": "hisse",
+   "maden": null,
+   "deger": 7269690.0,
+   "agirlik": 3.3704
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 6015168.82,
+   "agirlik": 2.7887
+  },
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 1855360.0,
+   "agirlik": 0.8602
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 1491912.87,
+   "agirlik": 0.6917
+  }
+ ],
+ "km_agirligi": 79.3722,
+ "maden_dagilimi": {
+  "Altın": 78.51,
+  "Gümüş": 0.86,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 220913534.61,
+  "portfoy_degeri": 214266203.84,
+  "fark_yuzde": 3.1024,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "KMF",
+ "donem": "2024-01",
+ "bildirim": 1252331,
+ "yayin": "27.02.2024 17:00:21",
+ "ekler": [
+  "4028328c8d6db291018deadafb456924"
+ ]
+}
