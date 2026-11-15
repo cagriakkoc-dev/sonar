@@ -140,24 +140,51 @@ def ceyrek_seri(O, uclar):
     return res
 
 
+FIYAT_TANI = {}
+
+
 def fiyatlar(t):
-    """Günlük kapanış: [(tarih, kapanış)], kaynak."""
+    """Günlük kapanış: [(tarih, kapanış)], kaynak. Sıra: Nasdaq, Stooq, Yahoo (hepsi ücretsiz, gecikmeli)."""
+    tani = []
+    try:
+        bas = (dt.date.today() - dt.timedelta(days=6 * 366)).isoformat()
+        req = urllib.request.Request(f"https://api.nasdaq.com/api/quote/{t}/historical?assetclass=stocks&fromdate={bas}&todate={dt.date.today().isoformat()}&limit=9999",
+                                     headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36",
+                                              "Accept": "application/json, text/plain, */*", "Origin": "https://www.nasdaq.com", "Referer": "https://www.nasdaq.com/"})
+        j = json.loads(urllib.request.urlopen(req, timeout=40).read())
+        rows = ((j.get("data") or {}).get("tradesTable") or {}).get("rows") or []
+        R = []
+        for r in rows:
+            m, d, y = r["date"].split("/")
+            R.append((f"{y}-{m}-{d}", float(r["close"].replace("$", "").replace(",", ""))))
+        R.sort()
+        if len(R) > 200:
+            FIYAT_TANI[t] = "Nasdaq"
+            return R, "Nasdaq"
+        tani.append(f"nasdaq {len(R)} satır")
+    except Exception as e:
+        tani.append("nasdaq " + repr(e)[:120])
     try:
         s = al(f"https://stooq.com/q/d/l/?s={t.lower()}.us&i=d", json_mu=False)
         R = [(r["Date"], float(r["Close"])) for r in csv.DictReader(io.StringIO(s)) if r.get("Close") not in (None, "", "N/D")]
         if len(R) > 200:
+            FIYAT_TANI[t] = "Stooq"
             return R, "Stooq"
-    except Exception:
-        pass
+        tani.append("stooq " + s[:80].replace("\n", " "))
+    except Exception as e:
+        tani.append("stooq " + repr(e)[:120])
     try:
         j = al(f"https://query1.finance.yahoo.com/v8/finance/chart/{t}?range=10y&interval=1d")
         r = j["chart"]["result"][0]
         ts, cl = r["timestamp"], r["indicators"]["quote"][0]["close"]
         R = [(dt.datetime.utcfromtimestamp(a).date().isoformat(), c) for a, c in zip(ts, cl) if c]
+        FIYAT_TANI[t] = "Yahoo"
         return R, "Yahoo Finance"
     except Exception as e:
-        print("fiyat yok", t, e)
-        return [], None
+        tani.append("yahoo " + repr(e)[:120])
+    FIYAT_TANI[t] = tani
+    print("fiyat yok", t, tani)
+    return [], None
 
 
 def kapanis(F, tarih):
@@ -227,7 +254,7 @@ def isle(S):
             if tur == "d":
                 v = Q[k].get(e)
                 if v is not None:
-                    p[k] = round(v[0] / 1e6, 2) if k not in ("eps", "dps") and k != "shd" else (round(v[0] / 1e6, 2) if k == "shd" else v[0])
+                    p[k] = round(v[0] / 1e6, 2) if k not in ("eps", "dps") and k != "shd" else (round(v[0] / 1e6, 2) if k == "shd" else round(v[0], 2))
                     if v[1] == "fark":
                         p.setdefault("fark", []).append(k)
             else:
@@ -373,7 +400,7 @@ def main():
         print("tamam", s["t"], len(d["periods"]), "dönem; son", L.get("p"), L.get("son"))
     sira = [s["t"] for s in S["sirketler"]]
     liste = {"guncel": dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"), "gruplar": S.get("gruplar", []),
-             "sirketler": [by[t] for t in sira if t in by], "hata": hata}
+             "sirketler": [by[t] for t in sira if t in by], "hata": hata, "fiyat_kaynak": FIYAT_TANI}
     json.dump(liste, open(liste_yol, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     if hata and len(hata) == len([s for s in S["sirketler"] if not sec or s["t"] in sec]):
         sys.exit(1)
