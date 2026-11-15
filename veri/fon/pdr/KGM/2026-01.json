@@ -1,0 +1,76 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 6312970128.12,
+ "fon_portfoy_degeri": 6057726955.22,
+ "kalemler": [
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 5030690102.31,
+   "agirlik": 79.6882
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 623055387.83,
+   "agirlik": 9.8694
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 301994633.71,
+   "agirlik": 4.7837
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 241508040.29,
+   "agirlik": 3.8256
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": "Gümüş",
+   "deger": 72464841.67,
+   "agirlik": 1.1479
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 29521989.7,
+   "agirlik": 0.4676
+  }
+ ],
+ "km_agirligi": 90.7055,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 90.71,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 6299234995.51,
+  "portfoy_degeri": 6057726955.22,
+  "fark_yuzde": 3.9868,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "KGM",
+ "donem": "2026-01",
+ "bildirim": 1554706,
+ "yayin": "09.02.2026 14:19:44",
+ "ekler": [
+  "4028328c9b82727a019c41b8e7080f79"
+ ]
+}
