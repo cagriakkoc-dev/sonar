@@ -2591,7 +2591,7 @@ function renderHome(){
    Veri: /veri/fon/fonlar.json (açık depoda bekci/fon/dizin.py yazar; aylık KAP Portföy Dağılım Raporları).
    Görünümler: GIRIS (iki büyük düğme), HISSE (eski ana sayfa), FON (fon listesi), FON-<KOD> (fon sayfası). */
 let FONV=null,FONY=null;
-function fonYukle(){if(FONV||FONY)return FONY;FONY=fetch('/veri/fon/fonlar.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null).then(d=>{FONV=d||{fonlar:[],hisse:{}};FONY=null;
+function fonYukle(){if(FONV||FONY)return FONY;FONY=fetch('/veri/fon/fonlar.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null).then(d=>{FONV=d||{fonlar:[],hisse:{}};if(FONV.km)FONV.fonlar=FONV.fonlar.concat(FONV.km);FONY=null;
     const v=state.view;if(v==='GIRIS'||v==='FON'||v.startsWith('FON-')||BY[v])render();return FONV});return FONY}
 const FONBY=k=>(FONV?.fonlar||[]).find(f=>f.kod===k);
 const fonTL=v=>v==null?'—':Math.abs(v)>=1e9?nf(v/1e9,2)+' milyar TL':nf(v/1e6,1)+' milyon TL';
@@ -2627,80 +2627,121 @@ function renderGiris(){document.documentElement.style.setProperty('--co','var(--
   const nF=FONV?.fonlar?.length,ico=(p)=>`<span class="gi"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${p}</svg></span>`;
   app.innerHTML=`<section class="giris"><div><div class="eyebrow">Sonar · Borsa İstanbul ve ABD</div><h1>Ne incelemek istersin?</h1></div>
   <div class="gbtn g3"><a class="gb" href="/hisse/" data-go="HISSE" aria-label="Hisse bölümünü aç">${ico('<path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/>')}<div><b>Hisse</b><span class="d">${COS.length} Borsa İstanbul şirketinin finansal tabloları, oranları, temettüleri ve dönem özetleri.</span></div><span class="go">Hisselere git →</span></a>
-  <a class="gb" href="/fon/" data-go="FON" aria-label="Fon bölümünü aç">${ico('<circle cx="12" cy="12" r="9"/><path d="M12 3v9l6.5 6.2"/>')}<div><b>Fon</b><span class="d">${nF?nF+' hisse senedi yoğun fonun':'Hisse senedi yoğun fonların'} içindeki hisseler ve ağırlıkları; aylık değişim, alış ve satışlar.</span></div><span class="go">Fonlara git →</span></a>
+  <a class="gb" href="/fon/" data-go="FON" aria-label="Fon bölümünü aç">${ico('<circle cx="12" cy="12" r="9"/><path d="M12 3v9l6.5 6.2"/>')}<div><b>Fon</b><span class="d">${nF?nF+' fonun':'Fonların'} içinde ne var: hisse yoğun fonlarda hisseler, kıymetli maden fonlarında altın ve gümüş; aylık dağılım ve değişim.</span></div><span class="go">Fonlara git →</span></a>
   <a class="gb" href="/abd/" data-go="ABD" aria-label="ABD bölümünü aç">${ico('<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/>')}<div><b>ABD</b><span class="d">${ABDV?.sirketler?.length||7} ABD şirketinin (ilk grup: Muhteşem 7) SEC raporlarından finansalları, marjları, değerlemesi ve hissedara dönüşü.</span></div><span class="go">ABD hisselerine git →</span></a></div>
   <p class="note" style="margin:0">Veriler KAP'tan ve SEC EDGAR'dan derlenir. Yatırım tavsiyesi değildir.</p></section>`;
   app.querySelectorAll('[data-go]').forEach(b=>b.onclick=e=>{if(navKey(e))return;e.preventDefault();go(b.dataset.go)})}
 function renderFonIndex(){document.documentElement.style.setProperty('--co','var(--accent)');
   if(!FONV){app.innerHTML='<section class="home-hero"><h1>Fonlar</h1><p>Yükleniyor…</p></section>';fonYukle();return}
-  const L=FONV.fonlar||[],q=(state.fonq||'').toLocaleUpperCase('tr');
-  const row=f=>`<tr data-go="FON-${f.kod}"><td class="fk">${f.kod}</td><td>${esc(fonAd(f.ad))}<div class="note" style="margin:2px 0 0">${esc(f.kurucu||'')}</div></td><td>${fonTL(f.toplam)}</td><td>%${nf(f.hisse_ag,1)}</td><td>${f.n??'—'}</td><td style="text-align:left">${(f.h||[]).slice(0,3).map(h=>`${h[0]} %${nf(h[1],1)}`).join(', ')}</td><td>${fonGet(f.getiri?.['1a'])}</td><td>${fonGet(f.getiri?.['1y'])}</td><td>${fonDon(f.donem)}</td></tr>`;
-  const F=L.filter(f=>!q||f.kod.includes(q)||fonAd(f.ad).toLocaleUpperCase('tr').includes(q)||(f.kurucu||'').toLocaleUpperCase('tr').includes(q)||(f.h||[]).some(h=>h[0]===q));
-  app.innerHTML=`<section class="home-hero"><div class="eyebrow">Sonar · Fon</div><h1>Fonların içinde<br><em>ne var?</em></h1><p>TEFAS'ta işlem gören ${L.length} hisse senedi yoğun fonun portföyündeki hisseler ve ağırlıkları. Kaynak: fonların KAP'ta yayımladığı aylık Portföy Dağılım Raporları; ay sonundan ~6 iş günü sonra güncellenir.</p></section>
-  <p><input class="fon-ara" id="fonara" type="search" placeholder="Fon kodu, adı, kurucu ya da hisse kodu (ör. THYAO)" value="${esc(state.fonq||'')}"></p>
-  <div class="fonwrap"><table class="fontab"><thead><tr><th>Kod</th><th>Fon</th><th>Büyüklük</th><th>Hisse payı</th><th>Hisse sayısı</th><th style="text-align:left">En büyük 3 hisse</th><th>1 ay</th><th>1 yıl</th><th>Rapor</th></tr></thead><tbody>${F.map(row).join('')||'<tr><td colspan="9">Eşleşen fon yok.</td></tr>'}</tbody></table></div>
-  <p class="note">Ağırlık = hissenin piyasa değeri ÷ fon toplam değeri (rapor tarihindeki). Getiriler TEFAS'tan. Yatırım tavsiyesi değildir.</p>`;
+  const TUM=FONV.fonlar||[],q=(state.fonq||'').toLocaleUpperCase('tr'),tur=state.fontur==='km'?'km':'hisse';
+  const AKT=TUM.filter(f=>!f.tasfiye),TAS=TUM.filter(f=>f.tasfiye),HS=AKT.filter(f=>f.tur!=='km'),KM=AKT.filter(f=>f.tur==='km'),L=tur==='km'?KM:HS;
+  const ara=f=>!q||f.kod.includes(q)||fonAd(f.ad).toLocaleUpperCase('tr').includes(q)||(f.kurucu||'').toLocaleUpperCase('tr').includes(q)||(f.h||[]).some(h=>String(h[0]).toLocaleUpperCase('tr')===q);
+  const fad=f=>`<td class="fk">${f.kod}</td><td>${esc(fonAd(f.ad))}<div class="note" style="margin:2px 0 0">${esc(f.kurucu||'')}</div></td><td>${fonTL(f.toplam)}</td>`;
+  const son=f=>`<td>${fonGet(f.getiri?.['1a'])}</td><td>${fonGet(f.getiri?.['1y'])}</td><td>${fonDon(f.donem)}</td>`;
+  const rowH=f=>`<tr data-go="FON-${f.kod}">${fad(f)}<td>%${nf(f.hisse_ag,1)}</td><td>${f.n??'—'}</td><td style="text-align:left">${(f.h||[]).slice(0,3).map(h=>`${h[0]} %${nf(h[1],1)}`).join(', ')}</td>${son(f)}</tr>`;
+  const md=(f,m)=>f.maden&&f.maden[m]>0.05?'%'+nf(f.maden[m],1):'—';
+  const rowK=f=>`<tr data-go="FON-${f.kod}">${fad(f)}<td>%${nf(f.km_ag,1)}</td><td>${md(f,'Altın')}</td><td>${md(f,'Gümüş')}</td><td style="text-align:left">${(f.h||[]).slice(0,2).map(h=>`${esc(h[0])} %${nf(h[1],1)}`).join(', ')}</td>${son(f)}</tr>`;
+  const thH='<th>Kod</th><th>Fon</th><th>Büyüklük</th><th>Hisse payı</th><th>Hisse sayısı</th><th style="text-align:left">En büyük 3 hisse</th><th>1 ay</th><th>1 yıl</th><th>Rapor</th>';
+  const thK='<th>Kod</th><th>Fon</th><th>Büyüklük</th><th>Maden payı</th><th>Altın</th><th>Gümüş</th><th style="text-align:left">En büyük 2 kalem</th><th>1 ay</th><th>1 yıl</th><th>Rapor</th>';
+  const F=L.filter(ara),T=TAS.filter(ara),row=tur==='km'?rowK:rowH,th=tur==='km'?thK:thH,nc=tur==='km'?10:9;
+  const acik=tur==='km'?`TEFAS'ta ve KAP'ta raporlanan ${KM.length} kıymetli maden fonunun (altın, gümüş, fon sepeti, katılım) varlık dağılımı: fiziki maden, altına dayalı kira sertifikası, BYF, fon payları ve nakit.`:`TEFAS'ta işlem gören ${HS.length} hisse senedi yoğun fonun portföyündeki hisseler ve ağırlıkları.`;
+  app.innerHTML=`<section class="home-hero"><div class="eyebrow">Sonar · Fon</div><h1>Fonların içinde<br><em>ne var?</em></h1><p>${acik} Kaynak: fonların KAP'ta yayımladığı aylık Portföy Dağılım Raporları; ay sonundan ~6 iş günü sonra güncellenir.</p></section>
+  <div class="fsek" role="tablist"><button role="tab" data-tur="hisse" aria-selected="${tur==='hisse'}">Hisse yoğun <span>${HS.length}</span></button><button role="tab" data-tur="km" aria-selected="${tur==='km'}">Kıymetli maden <span>${KM.length}</span></button></div>
+  <p><input class="fon-ara" id="fonara" type="search" placeholder="${tur==='km'?'Fon kodu, adı ya da kurucu (ör. altın, gümüş)':'Fon kodu, adı, kurucu ya da hisse kodu (ör. THYAO)'}" value="${esc(state.fonq||'')}"></p>
+  <div class="fonwrap"><table class="fontab"><thead><tr>${th}</tr></thead><tbody>${F.map(row).join('')||`<tr><td colspan="${nc}">Eşleşen fon yok.</td></tr>`}</tbody></table></div>
+  <p class="note">${tur==='km'?'Maden payı = fiziki altın/gümüş, madene dayalı kira sertifikası ve tahvil, maden BYF ve fonlarının toplamı ÷ fon toplam değeri.':'Ağırlık = hissenin piyasa değeri ÷ fon toplam değeri (rapor tarihindeki).'} Getiriler TEFAS'tan. Yatırım tavsiyesi değildir.</p>
+  ${TAS.length?`<section class="fpan panel ftas"><h3>Tasfiye kapsamındaki fonlar</h3><p class="note" style="margin-top:0">Bu fonlar ana listede gösterilmez; son yayımlanan raporları aşağıdadır.</p><div class="fonwrap"><table class="fontab"><thead><tr><th>Kod</th><th>Fon</th><th>Büyüklük</th><th>Son rapor</th></tr></thead><tbody>${(T.length?T:TAS).map(f=>`<tr data-go="FON-${f.kod}">${fad(f)}<td>${fonDon(f.donem)}</td></tr>`).join('')}</tbody></table></div></section>`:''}`;
   app.querySelectorAll('tr[data-go]').forEach(t=>t.onclick=()=>go(t.dataset.go));
+  app.querySelectorAll('[data-tur]').forEach(b=>b.onclick=()=>{state.fontur=b.dataset.tur;renderFonIndex()});
   const i=$('#fonara');i.oninput=()=>{state.fonq=i.value;const p=i.selectionStart;renderFonIndex();const j=$('#fonara');j.focus();try{j.setSelectionRange(p,p)}catch(e){}}}
 function renderFon(k){document.documentElement.style.setProperty('--co','var(--accent)');
   if(!FONV){app.innerHTML=`<section class="home-hero"><h1>${esc(k)}</h1><p>Yükleniyor…</p></section>`;fonYukle();return}
   const f=FONBY(k);if(!f){app.innerHTML=`<section class="home-hero"><h1>${esc(k)}</h1><p>Bu fonun portföy verisi henüz yok.</p><p><a href="/fon/" data-go="FON">← Fonlar</a></p></section>`;app.querySelector('[data-go]').onclick=e=>{e.preventDefault();go('FON')};return}
-  const mx=Math.max(...f.h.map(h=>h[1]||0),1),hl=t=>BY[t]?`<a href="/sirket/${t.toLowerCase()}/" data-go="${t}">${t}</a>`:`<b>${esc(t)}</b>`;
+  const km=f.tur==='km',mx=Math.max(...f.h.map(h=>h[1]||0),1),hl=t=>BY[t]?`<a href="/sirket/${t.toLowerCase()}/" data-go="${t}">${t}</a>`:`<b>${esc(t)}</b>`;
   const bars=f.h.map(h=>`<div class="fbar">${hl(h[0])}<span class="t"><i style="width:${(100*(h[1]||0)/mx).toFixed(1)}%"></i></span><span class="p">%${nf(h[1],2)}</span></div>`).join('');
   const D=f.degisim,lst=(a,s)=>a&&a.length?a.map(x=>`<span class="ftag">${hl(x[0])} ${s?`<span class="${x[1]>=0?'up':'down'}">${x[1]>=0?'+':'−'}${nf(Math.abs(x[1]),2)} puan</span>`:''}</span>`).join(''):'<span class="note">—</span>';
   const isl=(a)=>a&&a.length?'<ul>'+a.map(x=>`<li>${hl(x[0])} · ${fonTL(x[1])}</li>`).join('')+'</ul>':'<p class="note">Bu ay yok.</p>';
-  app.innerHTML=`<section class="home-hero"><div class="eyebrow"><a href="/fon/" data-go="FON">Fonlar</a> · ${esc(f.kurucu||'')}</div><h1>${f.kod}</h1><p>${esc(fonAd(f.ad))}</p></section>
-  <div class="fstat"><div><span>Fon büyüklüğü</span><b>${fonTL(f.toplam)}</b></div><div><span>Hisse payı</span><b>%${nf(f.hisse_ag,1)}</b></div><div><span>Hisse sayısı</span><b>${f.n}</b></div><div><span>Getiri · 1 ay / 1 yıl</span><b style="font-size:17px">${fonGet(f.getiri?.['1a'])} <span class="note">·</span> ${fonGet(f.getiri?.['1y'])}</b></div><div><span>Rapor dönemi</span><b>${fonDon(f.donem)}</b></div></div>
-  <div class="fgrid">${fonDonut(f)}<section class="fpan panel" id="fonalan"><h3>Son 1 yıl · pay fiyatı</h3><p class="note">Yükleniyor…</p></section></div>
+  const md=m=>f.maden&&f.maden[m]>0.05?'%'+nf(f.maden[m],1):'—';
+  const stat=km?`<div><span>Fon büyüklüğü</span><b>${fonTL(f.toplam)}</b></div><div><span>Maden payı</span><b>%${nf(f.km_ag,1)}</b></div><div><span>Altın · Gümüş</span><b style="font-size:17px">${md('Altın')} <span class="note">·</span> ${md('Gümüş')}</b></div><div><span>Getiri · 1 ay / 1 yıl</span><b style="font-size:17px">${fonGet(f.getiri?.['1a'])} <span class="note">·</span> ${fonGet(f.getiri?.['1y'])}</b></div><div><span>Rapor dönemi</span><b>${fonDon(f.donem)}</b></div>`
+    :`<div><span>Fon büyüklüğü</span><b>${fonTL(f.toplam)}</b></div><div><span>Hisse payı</span><b>%${nf(f.hisse_ag,1)}</b></div><div><span>Hisse sayısı</span><b>${f.n}</b></div><div><span>Getiri · 1 ay / 1 yıl</span><b style="font-size:17px">${fonGet(f.getiri?.['1a'])} <span class="note">·</span> ${fonGet(f.getiri?.['1y'])}</b></div><div><span>Rapor dönemi</span><b>${fonDon(f.donem)}</b></div>`;
+  app.innerHTML=`<section class="home-hero"><div class="eyebrow"><a href="/fon/" data-go="FON">Fonlar</a> · ${km?'Kıymetli maden · ':''}${esc(f.kurucu||'')}</div><h1>${f.kod}</h1><p>${esc(fonAd(f.ad))}</p>${f.tasfiye?'<p class="ftasrozet">Tasfiye kapsamında</p>':''}</section>
+  <div class="fstat">${stat}</div>
+  <div class="fgrid">${fonDonut(f)}<section class="fpan panel" id="fonalan"><h3>Pay fiyatı</h3><p class="note">Yükleniyor…</p></section></div>
   ${fonYigin(f)}
-  <section class="fpan panel"><h3>Tüm hisseler · ${fonDon(f.donem)} sonu</h3>${bars}<p class="note">Ağırlık = hissenin değeri ÷ fon toplam değeri. Kaynak: <a href="https://www.kap.org.tr/tr/Bildirim/${f.bildirim}" target="_blank" rel="noopener">KAP Portföy Dağılım Raporu</a>.</p></section>
-  ${D?`<section class="fpan panel"><h3>${fonDon(D.onceki)} → ${fonDon(f.donem)} değişim</h3><div class="fgrid"><div><p><b>Portföye girenler</b><br>${lst(D.eklenen.map(x=>[x]))}</p><p><b>Portföyden çıkanlar</b><br>${lst(D.cikan.map(x=>[x]))}</p></div><div><p><b>Ağırlığı en çok artanlar</b><br>${lst(D.artan,1)}</p><p><b>Ağırlığı en çok azalanlar</b><br>${lst(D.azalan,1)}</p></div></div></section>`:''}
-  <div class="fgrid"><section class="fpan panel"><h3>${fonDon(f.donem)} içinde alışlar</h3>${isl(f.alis)}</section><section class="fpan panel"><h3>${fonDon(f.donem)} içinde satışlar</h3>${isl(f.satis)}</section></div>
-  <p class="note">Hisse bazında içerik aylık açıklanır; ay içindeki değişimler bir sonraki raporda görünür. Yatırım tavsiyesi değildir.</p>`;
+  <section class="fpan panel"><h3>${km?'Tüm varlık kalemleri':'Tüm hisseler'} · ${fonDon(f.donem)} sonu</h3>${bars}<p class="note">Ağırlık = ${km?'kalemin':'hissenin'} değeri ÷ fon toplam değeri. Kaynak: <a href="https://www.kap.org.tr/tr/Bildirim/${f.bildirim}" target="_blank" rel="noopener">KAP Portföy Dağılım Raporu</a>.</p></section>
+  ${D?`<section class="fpan panel"><h3>${fonDon(D.onceki)} → ${fonDon(f.donem)} değişim</h3><div class="fgrid"><div><p><b>${km?'Yeni kalemler':'Portföye girenler'}</b><br>${lst(D.eklenen.map(x=>[x]))}</p><p><b>${km?'Çıkan kalemler':'Portföyden çıkanlar'}</b><br>${lst(D.cikan.map(x=>[x]))}</p></div><div><p><b>Ağırlığı en çok artanlar</b><br>${lst(D.artan,1)}</p><p><b>Ağırlığı en çok azalanlar</b><br>${lst(D.azalan,1)}</p></div></div></section>`:''}
+  ${km?'':`<div class="fgrid"><section class="fpan panel"><h3>${fonDon(f.donem)} içinde alışlar</h3>${isl(f.alis)}</section><section class="fpan panel"><h3>${fonDon(f.donem)} içinde satışlar</h3>${isl(f.satis)}</section></div>`}
+  <p class="note">${km?'Varlık dağılımı':'Hisse bazında içerik'} aylık açıklanır; ay içindeki değişimler bir sonraki raporda görünür. Yatırım tavsiyesi değildir.</p>`;
   app.querySelectorAll('[data-go]').forEach(b=>b.onclick=e=>{if(navKey(e))return;e.preventDefault();go(b.dataset.go)});fonAlan(f.kod)}
-/* fon sayfası grafikleri: portföy dağılımı (halka/daire) ve son 1 yıl pay fiyatı (alan grafiği). Fiyat: /veri/fon/fiyat/<KOD>.json (TEFAS). */
-const FONPAL=['#2f6fde','#e8833a','#2fa37a','#d94f5c','#8a63d2','#c9a227','#1fa2b8','#b8578f','#6d8f3c','#7b8794'];
+(function(){if(document.getElementById('fonsekstil'))return;document.head.insertAdjacentHTML('beforeend',`<style id="fonsekstil">
+.fsek{display:inline-flex;gap:2px;padding:4px;border-radius:12px;background:color-mix(in srgb,var(--fg) 6%,transparent);margin:4px 0 12px}
+.fsek button{all:unset;cursor:pointer;font-size:14px;font-weight:600;padding:8px 14px;border-radius:9px;color:var(--muted)}.fsek button:hover{color:var(--fg)}
+.fsek button[aria-selected="true"]{background:var(--panel);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.2)}.fsek button span{font-weight:500;font-size:12px;margin-left:4px;opacity:.7}
+.ftas{margin-top:22px}.ftas h3{margin-bottom:6px}.ftasrozet{display:inline-block;margin-top:8px;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700;background:color-mix(in srgb,#e66767 18%,transparent);color:#e66767}</style>`)})();
+/* fon sayfası grafikleri: portföy dağılımı (halka) ve pay fiyatı (çizgi + alan). Fiyat: /veri/fon/fiyat/<KOD>.json (TEFAS). Görünüm aylık dağılım grafiğiyle aynı dilde. */
+const FONPAL=['#3987e5','#d95926','#199e70','#c98500','#d55181','#2f9a2f','#9085e9','#e66767','#86b6ef','#f0a07a'];
 function fonDonut(f){
-  const H=(f.h||[]).filter(h=>h[1]>0),top=H.slice(0,8),rest=H.slice(8).reduce((s,h)=>s+(h[1]||0),0),dis=Math.max(0,100-(f.hisse_ag||0));
-  const S=top.map((h,i)=>[h[0],h[1],FONPAL[i]]);if(rest>0.005)S.push(['Diğer '+(H.length-8)+' hisse',rest,'#9aa5b4']);if(dis>0.005)S.push(['Hisse dışı (nakit, repo vb.)',dis,'#d5dbe3']);
-  const T=Math.max(100,S.reduce((s,x)=>s+x[1],0)),R=80,C=2*Math.PI*R;let off=0;
-  const arcs=S.map(([k,v,c])=>{const L=C*v/T,a=`<circle r="${R}" cx="110" cy="110" fill="none" stroke="${c}" stroke-width="36" stroke-dasharray="${L.toFixed(2)} ${(C-L).toFixed(2)}" stroke-dashoffset="${(-off).toFixed(2)}" transform="rotate(-90 110 110)"><title>${esc(k)} %${nf(v,2)}</title></circle>`;off+=L;return a}).join('');
-  const leg=S.map(([k,v,c])=>`<li><i style="background:${c}"></i><span>${BY[k]?`<a href="/sirket/${k.toLowerCase()}/" data-go="${k}">${k}</a>`:/^(Diğer|Hisse dışı)/.test(k)?esc(k):`<b>${esc(k)}</b>`}</span><b>%${nf(v,1)}</b></li>`).join('');
-  return `<section class="fpan panel"><h3>Portföy dağılımı · ${fonDon(f.donem)} sonu</h3><div class="fdon"><svg viewBox="0 0 220 220" role="img" aria-label="${f.kod} portföy dağılımı daire grafiği">${arcs}<text x="110" y="104" text-anchor="middle" class="fdon-v">%${nf(f.hisse_ag,1)}</text><text x="110" y="126" text-anchor="middle" class="fdon-l">hisse senedi</text></svg><ul class="fleg">${leg}</ul></div></section>`}
+  const km=f.tur==='km',H=(f.h||[]).filter(h=>h[1]>0),top=H.slice(0,8),rest=H.slice(8).reduce((s,h)=>s+(h[1]||0),0),ana=km?(f.km_ag||0):(f.hisse_ag||0),dis=km?0:Math.max(0,100-ana);
+  const S=top.map((h,i)=>[h[0],h[1],FONPAL[i],'h']);if(rest>0.005)S.push([km?'Diğer kalemler':'Diğer '+(H.length-8)+' hisse',rest,'','d']);if(dis>0.005)S.push(['Hisse dışı (nakit, repo vb.)',dis,'','x']);
+  const T=Math.max(100,S.reduce((s,x)=>s+x[1],0)),R=78,C=2*Math.PI*R,gap=S.length>1?2.2:0;let off=0;
+  const arcs=S.map(([k,v,c,tur],j)=>{const L=Math.max(0.6,C*v/T-gap),a=`<circle data-j="${j}" class="fdk-${tur}" r="${R}" cx="110" cy="110" fill="none"${c?` stroke="${c}"`:''} stroke-width="24" stroke-dasharray="${L.toFixed(2)} ${(C-L).toFixed(2)}" stroke-dashoffset="${(-off).toFixed(2)}" transform="rotate(-90 110 110)"></circle>`;off+=C*v/T;return a}).join('');
+  const leg=S.map(([k,v,c,tur],j)=>`<li data-j="${j}"><i class="fdk-${tur}"${c?` style="background:${c}"`:''}></i><span>${BY[k]?`<a href="/sirket/${k.toLowerCase()}/" data-go="${k}">${k}</a>`:/^(Diğer|Hisse dışı)/.test(k)?esc(k):`<b>${esc(k)}</b>`}</span><b>%${nf(v,1)}</b></li>`).join('');
+  setTimeout(()=>{const el=document.getElementById('fondon');if(!el)return;const sv=el.querySelector('svg'),v=el.querySelector('.fdon-v'),l=el.querySelector('.fdon-l'),v0=v.textContent,l0=l.textContent;
+    const odak=j=>{el.classList.toggle('fdodak',j>=0);el.querySelectorAll('[data-j]').forEach(x=>x.classList.toggle('on',+x.dataset.j===j));if(j>=0){v.textContent='%'+nf(S[j][1],1);l.textContent=S[j][0].length>18?S[j][0].slice(0,17)+'…':S[j][0]}else{v.textContent=v0;l.textContent=l0}};
+    el.querySelectorAll('[data-j]').forEach(x=>{x.addEventListener('mouseenter',()=>odak(+x.dataset.j));x.addEventListener('mouseleave',()=>odak(-1))})},0);
+  return `<section class="fpan panel" id="fondon"><h3>Portföy dağılımı · ${fonDon(f.donem)} sonu</h3><div class="fdon"><svg viewBox="0 0 220 220" role="img" aria-label="${f.kod} portföy dağılımı halka grafiği">${arcs}<text x="110" y="108" text-anchor="middle" class="fdon-v">%${nf(ana,1)}</text><text x="110" y="128" text-anchor="middle" class="fdon-l">${km?'kıymetli maden':'hisse senedi'}</text></svg><ul class="fleg">${leg}</ul></div></section>`}
 function fonAlan(kod){const el=document.getElementById('fonalan');if(!el)return;
   fetch('/veri/fon/fiyat/'+kod+'.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null).then(d=>{const el=document.getElementById('fonalan');if(!el)return;
     const T=(d&&d.f||[]).filter(x=>x[1]>0);if(T.length<5){el.innerHTML='<h3>Pay fiyatı</h3><p class="note">Fiyat verisi henüz yok.</p>';return}
     /* TEFAS'taki dönemler: Haftalık, Aylık, 3 Aylık, 6 Aylık, 1 Yıllık, 3 Yıllık, 5 Yıllık (son fiyat tarihinden geriye) */
-    const DON=[['1H','Haftalık',0,7],['1A','Aylık',1],['3A','3 Aylık',3],['6A','6 Aylık',6],['1Y','1 Yıllık',12],['3Y','3 Yıllık',36],['5Y','5 Yıllık',60]];
-    const son=new Date(T.at(-1)[0]+'T00:00:00'),bas=([,, ay,gun])=>{const t=new Date(son);if(gun)t.setDate(t.getDate()-gun);else t.setMonth(t.getMonth()-ay);return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0')};
+    const DON=[['1H','1H','Haftalık',0,7],['1A','1A','Aylık',1],['3A','3A','3 aylık',3],['6A','6A','6 aylık',6],['1Y','1Y','1 yıllık',12],['3Y','3Y','3 yıllık',36],['5Y','5Y','5 yıllık',60]];
+    const son=new Date(T.at(-1)[0]+'T00:00:00'),bas=([,,, ay,gun])=>{const t=new Date(son);if(gun)t.setDate(t.getDate()-gun);else t.setMonth(t.getMonth()-ay);return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0')};
     const ilk=T[0][0],eksik=x=>(new Date(ilk)-new Date(bas(x)))/864e5>7;window.__fonDon=window.__fonDon||'1Y';
-    const AY=['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'],lbl=s=>+s.slice(8)+' '+AY[+s.slice(5,7)-1]+' '+s.slice(2,4);
+    const AY=['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'],lbl=s=>+s.slice(8)+' '+AY[+s.slice(5,7)-1]+' '+s.slice(2,4),lblK=(s,uz)=>uz?AY[+s.slice(5,7)-1]+' '+s.slice(2,4):+s.slice(8)+' '+AY[+s.slice(5,7)-1];
+    const adim=(a,b,n)=>{const r=(b-a)/n,p=Math.pow(10,Math.floor(Math.log10(r))),m=r/p,s=(m<1.5?1:m<3?2:m<7?5:10)*p;return s};
+    el.innerHTML=`<div class="fyb"><h3>Pay fiyatı <span class="fpd"></span></h3><div class="fyz" role="group" aria-label="Dönem">${DON.map(x=>`<button data-fd="${x[0]}"${eksik(x)&&x!==DON.find(eksik)?' disabled title="Bu dönem için fiyat geçmişi yok"':''}>${x[1]}</button>`).join('')}</div></div>
+     <div class="fal2"><svg role="img"></svg><div class="fyt" hidden></div></div><p class="fynot"></p>`;
+    const svg=el.querySelector('svg'),tt=el.querySelector('.fyt'),kut=el.querySelector('.fal2'),pd=el.querySelector('.fpd'),not=el.querySelector('.fynot');let S=null;
     const ciz=()=>{const D=DON.find(x=>x[0]===window.__fonDon)||DON[4],b0=bas(D),P0=T.filter(x=>x[0]>=b0),P=P0.length>=2?P0:T.slice(-2),kisa=eksik(D);
-      const W=600,Hh=230,pl=8,pr=8,pt=14,pb=26,ys=P.map(x=>x[1]),mn=Math.min(...ys),mx=Math.max(...ys),pad=(mx-mn)*0.08||mx*0.02,lo=mn-pad,hi=mx+pad;
-      const X=i=>pl+(W-pl-pr)*i/(P.length-1),Y=v=>pt+(Hh-pt-pb)*(1-(v-lo)/(hi-lo));
-      const line=P.map((p,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(p[1]).toFixed(1)).join(''),area=line+`L${X(P.length-1).toFixed(1)} ${Hh-pb}L${X(0).toFixed(1)} ${Hh-pb}Z`;
-      const ch=100*(P.at(-1)[1]/P[0][1]-1),col=ch>=0?'var(--up)':'var(--down)';
-      const xi=P.length<4?[0,P.length-1]:[0,Math.round((P.length-1)/3),Math.round(2*(P.length-1)/3),P.length-1];
-      const xt=xi.map((i,j)=>`<text x="${X(i).toFixed(1)}" y="${Hh-8}" text-anchor="${j===0?'start':j===xi.length-1?'end':'middle'}" class="fal-x">${lbl(P[i][0])}</text>`).join('');
-      const gy=[mn,(mn+mx)/2,mx].map(v=>`<line x1="${pl}" x2="${W-pr}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}" class="fal-g"/><text x="${W-pr}" y="${(Y(v)-4).toFixed(1)}" text-anchor="end" class="fal-x">${nf(v,4)}</text>`).join('');
-      const btn=DON.map(x=>`<button class="chip" data-fd="${x[0]}" aria-pressed="${x[0]===D[0]}"${eksik(x)&&x!==DON.find(eksik)?' disabled title="Bu dönem için fiyat geçmişi yok"':''}>${x[1]}</button>`).join('');
-      el.innerHTML=`<h3>Pay fiyatı · ${D[1].toLowerCase()} <span style="color:${col};font-weight:700">${ch>=0?'+':'−'}%${nf(Math.abs(ch),2)}</span></h3>
-       <div class="fdbt">${btn}</div>
-       <div class="fal"><svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="${kod} pay fiyatı alan grafiği, ${D[1]}"><defs><linearGradient id="falg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".35"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>${gy}<path d="${area}" fill="url(#falg)"/><path d="${line}" fill="none" stroke="${col}" stroke-width="2"/>${xt}<line class="fal-c" x1="0" x2="0" y1="${pt}" y2="${Hh-pb}" visibility="hidden"/><circle class="fal-d" r="4" fill="${col}" visibility="hidden"/><rect x="0" y="0" width="${W}" height="${Hh}" fill="transparent"/></svg><div class="fal-t" hidden></div></div>
-       <p class="note">Günlük pay fiyatı, kaynak TEFAS. ${lbl(P[0][0])} – ${lbl(P.at(-1)[0])}${kisa?' (fonun fiyat geçmişi daha kısa)':''}.</p>`;
-      el.querySelectorAll('[data-fd]').forEach(b=>b.onclick=()=>{window.__fonDon=b.dataset.fd;ciz()});
-      const svg=el.querySelector('svg'),c=el.querySelector('.fal-c'),dt=el.querySelector('.fal-d'),tt=el.querySelector('.fal-t');
-      const mv=e=>{const b=svg.getBoundingClientRect(),cx=((e.touches?e.touches[0].clientX:e.clientX)-b.left)*W/b.width;let i=Math.round((cx-pl)/(W-pl-pr)*(P.length-1));i=Math.max(0,Math.min(P.length-1,i));
-        c.setAttribute('x1',X(i));c.setAttribute('x2',X(i));c.setAttribute('visibility','visible');dt.setAttribute('cx',X(i));dt.setAttribute('cy',Y(P[i][1]));dt.setAttribute('visibility','visible');
-        tt.hidden=false;tt.textContent=lbl(P[i][0])+' · '+nf(P[i][1],6);tt.style.left=Math.min(b.width-130,Math.max(0,X(i)*b.width/W-60))+'px'};
-      svg.addEventListener('mousemove',mv);svg.addEventListener('touchmove',mv,{passive:true});svg.addEventListener('mouseleave',()=>{c.setAttribute('visibility','hidden');dt.setAttribute('visibility','hidden');tt.hidden=true})};
+      const W=Math.max(300,Math.round(kut.clientWidth||640)),dar=W<560,H=dar?220:260,pr=12,pt=14,pb=28;
+      const ys=P.map(x=>x[1]),mn=Math.min(...ys),mx=Math.max(...ys),st=adim(mn,mx,4)||mx*0.01,lo=Math.floor(mn/st)*st,hi=Math.ceil(mx/st)*st||mx*1.01;
+      const dec=Math.max(0,Math.min(6,-Math.floor(Math.log10(st))+(st/Math.pow(10,Math.floor(Math.log10(st)))<1.5?0:0))),tick=[];for(let v=lo;v<=hi+st/2;v+=st)tick.push(+v.toFixed(8));
+      const pl=Math.max(...tick.map(v=>nf(v,dec).length))*6.4+12;
+      const X=i=>pl+(W-pl-pr)*i/(P.length-1),Y=v=>pt+(H-pt-pb)*(1-(v-lo)/((hi-lo)||1));
+      const line=P.map((p,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(p[1]).toFixed(1)).join(''),area=line+`L${X(P.length-1).toFixed(1)} ${H-pb}L${X(0).toFixed(1)} ${H-pb}Z`;
+      const ch=100*(P.at(-1)[1]/P[0][1]-1),up=ch>=0,col=up?'var(--up,#2fae6b)':'var(--down,#e66767)';
+      const gun=(new Date(P.at(-1)[0])-new Date(P[0][0]))/864e5,uz=gun>200,nx=dar?3:5,xi=[...new Set(Array.from({length:nx},(_,j)=>Math.round(j*(P.length-1)/(nx-1))))];
+      const xt=xi.map((i,j)=>`<text x="${X(i).toFixed(1)}" y="${H-8}" text-anchor="${j===0?'start':j===xi.length-1?'end':'middle'}" class="fy-x">${lblK(P[i][0],uz)}</text>`).join('');
+      const gy=tick.map(v=>`<line x1="${pl}" x2="${W-pr}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}" class="fy-g${v===tick[0]?' fy-g0':''}"/><text x="${pl-8}" y="${(Y(v)+4).toFixed(1)}" text-anchor="end" class="fy-x">${nf(v,dec)}</text>`).join('');
+      const iMx=ys.indexOf(mx),iMn=ys.indexOf(mn),isr=(i,v,ust)=>`<circle cx="${X(i).toFixed(1)}" cy="${Y(v).toFixed(1)}" r="2.5" class="fp-m"/><text x="${(X(i)+(X(i)>W/2?-7:7)).toFixed(1)}" y="${(Y(v)+(ust?4:0)).toFixed(1)}" text-anchor="${X(i)>W/2?'end':'start'}" class="fp-mt">${ust?'en yüksek ':'en düşük '}${nf(v,4)}</text>`;
+      svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.setAttribute('height',H);svg.setAttribute('aria-label',`${kod} pay fiyatı, ${D[2]}`);
+      svg.innerHTML=`<defs><linearGradient id="falg2" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${up?'#2fae6b':'#e66767'}" stop-opacity=".22"/><stop offset="1" stop-color="${up?'#2fae6b':'#e66767'}" stop-opacity="0"/></linearGradient></defs>${gy}<path d="${area}" fill="url(#falg2)"/><line x1="${pl}" x2="${W-pr}" y1="${Y(P[0][1]).toFixed(1)}" y2="${Y(P[0][1]).toFixed(1)}" class="fp-b"/><path d="${line}" fill="none" stroke="${col}" stroke-width="1.75" stroke-linejoin="round" stroke-linecap="round"/>${P.length>8?isr(iMx,mx,true)+(iMn!==iMx?isr(iMn,mn,false):''):''}${xt}<line class="fy-c" x1="0" x2="0" y1="${pt}" y2="${H-pb}" visibility="hidden"/><circle class="fy-d" r="4" visibility="hidden" style="stroke:${col}"/><rect x="0" y="0" width="${W}" height="${H}" fill="transparent"/>`;
+      pd.innerHTML=`${D[2]} <b class="${up?'art':'az'}">${up?'+':'−'}%${nf(Math.abs(ch),2)}</b>`;
+      not.textContent=`Günlük pay fiyatı, kaynak TEFAS. ${lbl(P[0][0])} – ${lbl(P.at(-1)[0])}${kisa?' (fonun fiyat geçmişi daha kısa)':''}. Kesikli çizgi dönem başı fiyatı.`;
+      el.querySelectorAll('[data-fd]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.fd===D[0])));S={P,X,Y,W,H,pl,col}};
+    el.querySelectorAll('[data-fd]').forEach(b=>b.onclick=()=>{window.__fonDon=b.dataset.fd;ciz()});
+    const mv=e=>{if(!S)return;const b=svg.getBoundingClientRect(),cx=((e.touches?e.touches[0].clientX:e.clientX)-b.left)*S.W/b.width;let i=Math.round((cx-S.pl)/(S.W-S.pl-12)*(S.P.length-1));i=Math.max(0,Math.min(S.P.length-1,i));
+      const c=svg.querySelector('.fy-c'),dt=svg.querySelector('.fy-d'),x=S.X(i),y=S.Y(S.P[i][1]);c.setAttribute('x1',x);c.setAttribute('x2',x);c.setAttribute('visibility','visible');dt.setAttribute('cx',x);dt.setAttribute('cy',y);dt.setAttribute('visibility','visible');
+      const fk=100*(S.P[i][1]/S.P[0][1]-1);tt.hidden=false;tt.innerHTML=`<div class="fyt-a">${lbl(S.P[i][0])}</div><div class="fyt-k"><span>Fiyat</span><b>${nf(S.P[i][1],6)}</b></div><div class="fyt-f ${fk>=0?'art':'az'}">${fk>=0?'+':'−'}%${nf(Math.abs(fk),2)} dönem başından</div>`;
+      const px=x*b.width/S.W,py=y*b.height/S.H;tt.style.top=Math.max(0,Math.min(b.height-tt.offsetHeight,py-tt.offsetHeight-12))+'px';tt.style.left=(px>b.width/2?Math.max(0,px-tt.offsetWidth-14):px+14)+'px'};
+    svg.addEventListener('pointermove',mv);svg.addEventListener('touchmove',mv,{passive:true});svg.addEventListener('pointerleave',()=>{svg.querySelector('.fy-c')?.setAttribute('visibility','hidden');svg.querySelector('.fy-d')?.setAttribute('visibility','hidden');tt.hidden=true});
+    if(window.ResizeObserver){let gw=0;new ResizeObserver(()=>{const w=Math.round(kut.clientWidth);if(w&&w!==gw){gw=w;ciz()}}).observe(kut)}
     ciz()})}
-(function(){if(document.getElementById('fondonstil'))return;document.head.insertAdjacentHTML('beforeend',`<style id="fondonstil">.fdbt{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.fdbt .chip[disabled]{opacity:.35;cursor:default}</style>`)})();
-(function(){if(document.getElementById('fongrafstil'))return;document.head.insertAdjacentHTML('beforeend',`<style id="fongrafstil">
-.fdon{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.fdon svg{width:210px;height:210px;flex:none}.fdon-v{font:800 26px var(--f-display);fill:var(--fg)}.fdon-l{font:500 12px var(--f-body);fill:var(--muted)}
-.fleg{list-style:none;margin:0;padding:0;flex:1;min-width:180px;font-size:14px}.fleg li{display:grid;grid-template-columns:12px 1fr auto;gap:8px;align-items:center;padding:3px 0}.fleg i{width:12px;height:12px;border-radius:3px}.fleg a{color:var(--fg);font-weight:700;text-decoration:none}.fleg a:hover{color:var(--accent)}.fleg b{font-variant-numeric:tabular-nums}
-.fal{position:relative}.fal svg{width:100%;height:auto;display:block;touch-action:pan-y}.fal-g{stroke:var(--line);stroke-dasharray:3 4}.fal-x{font:11px var(--f-body);fill:var(--muted)}.fal-c{stroke:var(--muted);stroke-dasharray:3 3}
-.fal-t{position:absolute;top:0;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:3px 8px;font-size:12px;white-space:nowrap;pointer-events:none}</style>`)})();
+(function(){if(document.getElementById('fongrafstil2'))return;document.head.insertAdjacentHTML('beforeend',`<style id="fongrafstil2">
+#fonalan,#fondon{--fy-ink:var(--fg);--fy-mut:var(--muted);--fy-yuz:var(--panel)}
+#fonalan .fyb{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;margin-bottom:10px}#fonalan .fyb h3{margin:0}
+.fpd{font-weight:500;color:var(--fy-mut);font-size:13px;margin-left:6px}.fpd b{font-variant-numeric:tabular-nums}.fpd b.art,.fyt-f.art{color:#2fae6b}.fpd b.az,.fyt-f.az{color:#e66767}
+#fonalan .fyz button[disabled]{opacity:.35;cursor:default}
+.fal2{position:relative}.fal2 svg{display:block;width:100%;cursor:crosshair;touch-action:pan-y;user-select:none}
+.fp-b{stroke:color-mix(in srgb,var(--fy-ink) 30%,transparent);stroke-dasharray:2 4;stroke-width:1}.fp-m{fill:var(--fy-yuz);stroke:color-mix(in srgb,var(--fy-ink) 55%,transparent);stroke-width:1.5}.fp-mt{font-size:10.5px;fill:var(--fy-mut);font-variant-numeric:tabular-nums}
+.fdon{display:flex;gap:22px;align-items:center;flex-wrap:wrap}.fdon svg{width:200px;height:200px;flex:none}.fdon svg circle{transition:opacity .15s,stroke-width .15s}
+.fdon-v{font:700 26px var(--f-display,inherit);fill:var(--fy-ink);font-variant-numeric:tabular-nums}.fdon-l{font:500 12px var(--f-body,inherit);fill:var(--fy-mut)}
+circle.fdk-d{stroke:color-mix(in srgb,var(--fy-ink) 20%,var(--fy-yuz))}circle.fdk-x{stroke:color-mix(in srgb,var(--fy-ink) 8%,var(--fy-yuz))}
+.fleg i.fdk-d{background:color-mix(in srgb,var(--fy-ink) 20%,var(--fy-yuz))}.fleg i.fdk-x{background:color-mix(in srgb,var(--fy-ink) 8%,var(--fy-yuz));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--fy-ink) 20%,transparent)}
+.fleg{list-style:none;margin:0;padding:0;flex:1;min-width:190px;font-size:13px}.fleg li{display:grid;grid-template-columns:8px 1fr auto;gap:10px;align-items:center;padding:5px 0;border-bottom:1px solid color-mix(in srgb,var(--fy-ink) 6%,transparent);transition:opacity .15s;cursor:default}.fleg li:last-child{border-bottom:0}
+.fleg i{width:8px;height:8px;border-radius:50%}.fleg a{color:var(--fy-ink);font-weight:600;text-decoration:none}.fleg a:hover{text-decoration:underline}.fleg b{font-variant-numeric:tabular-nums;font-weight:600}.fleg span{color:var(--fy-mut)}
+#fondon.fdodak svg circle{opacity:.25}#fondon.fdodak svg circle.on{opacity:1;stroke-width:28}#fondon.fdodak .fleg li{opacity:.4}#fondon.fdodak .fleg li.on{opacity:1}
+@media(max-width:560px){.fdon{justify-content:center}.fdon svg{width:180px;height:180px}}</style>`)})();
 
 /* aylara göre portföy dağılımı: yığılmış alan grafiği, 5 yıla kadar; tekerlekle yakınlaştırma, sürükleyerek kaydırma, üzerine gelinen hisse vurgulanır.
    Veri: /veri/fon/gecmis/<KOD>.json {ay:[YYYY-MM], h:{hisse:[% her ay]}, disi:[%]}. Görünen aralıkta ortalama ağırlığı en yüksek K hisse ayrı katman (K: 8–12). */
@@ -2730,7 +2771,7 @@ function fonYiginYukle(kod){fetch('/veri/fon/gecmis/'+kod+'.json',{cache:'no-cac
     const ust=K0.map(k=>[k,om(k)]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,K).map(x=>x[0]);
     const diger=G.ay.map((_,i)=>K0.reduce((s,k)=>s+(ust.includes(k)?0:G.h[k][i]),0));
     const kul=new Set(),rk=ust.map(k=>{let c=renk[k];if(kul.has(c))c=FONRENK.find(x=>!kul.has(x))||c;kul.add(c);return c});
-    const L=[...ust.map((k,j)=>[k,G.h[k],rk[j],'h']),['Diğer hisseler',diger,'','d'],['Hisse dışı',G.disi,'','x']];
+    const L=[...ust.map((k,j)=>[k,G.h[k],rk[j],'h']),[G.tur==='km'?'Diğer kalemler':'Diğer hisseler',diger,'','d'],...(G.disi.some(v=>v>0)?[['Hisse dışı',G.disi,'','x']]:[])];
     const tot=G.ay.map((_,i)=>Math.max(100,L.reduce((s,l)=>s+(l[1][i]||0),0)));let alt=G.ay.map(()=>0);
     const B=[];const kat=L.map(([k,v,c,tur],j)=>{const u=alt.map((a,i)=>a+100*(v[i]||0)/tot[i]);B.push([alt,u]);
       const ust_=idx.map(i=>[X(O[i]),Y(u[i])]),alt_=[...idx].reverse().map(i=>[X(O[i]),Y(alt[i])]);
