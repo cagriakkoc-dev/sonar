@@ -317,17 +317,30 @@
    ]
   ]
  },
- "hisse_sayisi": 0,
+ "hisse_sayisi": 2,
  "hisse_agirligi": null,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 1106.0,
+  "hisse_grup_toplami": 10000.0,
+  "fark_yuzde": -88.94,
   "yuzde_sutun": 2,
   "bicim": "tr",
   "tutuyor": false
  },
- "hisseler": [],
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "NKUL",
+   "deger": 690.0,
+   "satir": 1
+  },
+  {
+   "isin": null,
+   "kod": "PETROL",
+   "deger": 416.0,
+   "satir": 1
+  }
+ ],
  "bildirim": 1422808,
  "yayin": "09.04.2025 21:04:35",
  "ekler": [

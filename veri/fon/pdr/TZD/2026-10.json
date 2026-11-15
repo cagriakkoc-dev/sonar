@@ -5,17 +5,46 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 4,
+ "hisse_agirligi": 0.0011,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 1119.0,
+  "hisse_grup_toplami": 4112.0,
+  "fark_yuzde": -72.787,
   "yuzde_sutun": 1,
   "bicim": "us",
   "tutuyor": false
  },
- "hisseler": [],
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "ALTIN",
+   "deger": 448.0,
+   "satir": 1,
+   "agirlik": 0.0004
+  },
+  {
+   "isin": null,
+   "kod": "TAS",
+   "deger": 263.0,
+   "satir": 1,
+   "agirlik": 0.0003
+  },
+  {
+   "isin": null,
+   "kod": "GMYO",
+   "deger": 209.0,
+   "satir": 1,
+   "agirlik": 0.0002
+  },
+  {
+   "isin": null,
+   "kod": "HAVA",
+   "deger": 199.0,
+   "satir": 1,
+   "agirlik": 0.0002
+  }
+ ],
  "bildirim": 1694660,
  "yayin": "09.11.2026 10:11:59",
  "ekler": [

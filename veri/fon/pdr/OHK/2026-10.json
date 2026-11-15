@@ -5,17 +5,137 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 17,
+ "hisse_agirligi": 73.8543,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 21924648.0,
+  "hisse_grup_toplami": 21924648.0,
+  "fark_yuzde": 0.0,
   "yuzde_sutun": 1,
   "bicim": "us",
-  "tutuyor": false
+  "tutuyor": true
  },
- "hisseler": [],
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "ASELS",
+   "deger": 2862750.0,
+   "satir": 1,
+   "agirlik": 9.6433
+  },
+  {
+   "isin": null,
+   "kod": "TUPRS",
+   "deger": 2662125.0,
+   "satir": 1,
+   "agirlik": 8.9675
+  },
+  {
+   "isin": null,
+   "kod": "BIMAS",
+   "deger": 2606250.0,
+   "satir": 1,
+   "agirlik": 8.7793
+  },
+  {
+   "isin": null,
+   "kod": "CIMSA",
+   "deger": 1402560.0,
+   "satir": 1,
+   "agirlik": 4.7246
+  },
+  {
+   "isin": null,
+   "kod": "MPARK",
+   "deger": 1326500.0,
+   "satir": 1,
+   "agirlik": 4.4684
+  },
+  {
+   "isin": null,
+   "kod": "EKGYO",
+   "deger": 1295200.0,
+   "satir": 1,
+   "agirlik": 4.3629
+  },
+  {
+   "isin": null,
+   "kod": "EREGL",
+   "deger": 1260550.0,
+   "satir": 1,
+   "agirlik": 4.2462
+  },
+  {
+   "isin": null,
+   "kod": "LOGO",
+   "deger": 1258400.0,
+   "satir": 1,
+   "agirlik": 4.239
+  },
+  {
+   "isin": null,
+   "kod": "GLRMK",
+   "deger": 1237200.0,
+   "satir": 1,
+   "agirlik": 4.1676
+  },
+  {
+   "isin": null,
+   "kod": "GRSEL",
+   "deger": 1207500.0,
+   "satir": 1,
+   "agirlik": 4.0675
+  },
+  {
+   "isin": null,
+   "kod": "ENJSA",
+   "deger": 1055000.0,
+   "satir": 1,
+   "agirlik": 3.5538
+  },
+  {
+   "isin": null,
+   "kod": "KCAER",
+   "deger": 987503.0,
+   "satir": 1,
+   "agirlik": 3.3265
+  },
+  {
+   "isin": null,
+   "kod": "MAVI",
+   "deger": 752850.0,
+   "satir": 1,
+   "agirlik": 2.536
+  },
+  {
+   "isin": null,
+   "kod": "GUBRF",
+   "deger": 650650.0,
+   "satir": 1,
+   "agirlik": 2.1917
+  },
+  {
+   "isin": null,
+   "kod": "PETKM",
+   "deger": 568400.0,
+   "satir": 1,
+   "agirlik": 1.9147
+  },
+  {
+   "isin": null,
+   "kod": "DYOBY",
+   "deger": 441210.0,
+   "satir": 1,
+   "agirlik": 1.4862
+  },
+  {
+   "isin": null,
+   "kod": "OBAMS",
+   "deger": 350000.0,
+   "satir": 1,
+   "agirlik": 1.179
+  }
+ ],
  "bildirim": 1695789,
  "yayin": "09.11.2026 19:25:07",
  "ekler": [

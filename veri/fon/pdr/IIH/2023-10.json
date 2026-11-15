@@ -322,17 +322,39 @@
    ]
   ]
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 3,
+ "hisse_agirligi": 12.9522,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 60413857.3,
+  "hisse_grup_toplami": 60962803.4,
+  "fark_yuzde": -0.9005,
   "yuzde_sutun": 3,
   "bicim": "us",
   "tutuyor": false
  },
- "hisseler": [],
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "NLARI",
+   "deger": 24824652.0,
+   "satir": 1,
+   "agirlik": 5.3222
+  },
+  {
+   "isin": null,
+   "kod": "PETROL",
+   "deger": 19691746.8,
+   "satir": 1,
+   "agirlik": 4.2217
+  },
+  {
+   "isin": null,
+   "kod": "NKUL",
+   "deger": 15897458.5,
+   "satir": 1,
+   "agirlik": 3.4083
+  }
+ ],
  "bildirim": 1214715,
  "yayin": "06.11.2023 22:04:44",
  "ekler": [

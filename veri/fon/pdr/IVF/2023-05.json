@@ -367,17 +367,25 @@
    ]
   ]
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 1,
+ "hisse_agirligi": 3.2636,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 1043917.0,
+  "hisse_grup_toplami": 3200614.58,
+  "fark_yuzde": -67.3839,
   "yuzde_sutun": 3,
   "bicim": "us",
   "tutuyor": false
  },
- "hisseler": [],
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "KORD",
+   "deger": 1043917.0,
+   "satir": 1,
+   "agirlik": 3.2636
+  }
+ ],
  "bildirim": 1156771,
  "yayin": "07.06.2023 16:31:33",
  "ekler": [

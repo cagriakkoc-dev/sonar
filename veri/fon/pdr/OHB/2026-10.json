@@ -5,17 +5,277 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 37,
+ "hisse_agirligi": 86.665,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 996451647.91,
+  "hisse_grup_toplami": 996451647.91,
+  "fark_yuzde": 0.0,
   "yuzde_sutun": 1,
   "bicim": "us",
-  "tutuyor": false
+  "tutuyor": true
  },
- "hisseler": [],
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "ASELS",
+   "deger": 98895000.0,
+   "satir": 1,
+   "agirlik": 8.6013
+  },
+  {
+   "isin": null,
+   "kod": "BIMAS",
+   "deger": 87743750.0,
+   "satir": 1,
+   "agirlik": 7.6314
+  },
+  {
+   "isin": null,
+   "kod": "TUPRS",
+   "deger": 84157500.0,
+   "satir": 1,
+   "agirlik": 7.3195
+  },
+  {
+   "isin": null,
+   "kod": "GARAN",
+   "deger": 67295000.0,
+   "satir": 1,
+   "agirlik": 5.8529
+  },
+  {
+   "isin": null,
+   "kod": "KCHOL",
+   "deger": 56394000.0,
+   "satir": 1,
+   "agirlik": 4.9048
+  },
+  {
+   "isin": null,
+   "kod": "AKBNK",
+   "deger": 51765000.0,
+   "satir": 1,
+   "agirlik": 4.5022
+  },
+  {
+   "isin": null,
+   "kod": "SAHOL",
+   "deger": 49065500.0,
+   "satir": 1,
+   "agirlik": 4.2674
+  },
+  {
+   "isin": null,
+   "kod": "THYAO",
+   "deger": 41174000.0,
+   "satir": 1,
+   "agirlik": 3.5811
+  },
+  {
+   "isin": null,
+   "kod": "YKBNK",
+   "deger": 37356000.0,
+   "satir": 1,
+   "agirlik": 3.249
+  },
+  {
+   "isin": null,
+   "kod": "TCELL",
+   "deger": 35364250.0,
+   "satir": 1,
+   "agirlik": 3.0758
+  },
+  {
+   "isin": null,
+   "kod": "ISCTR",
+   "deger": 34076250.0,
+   "satir": 1,
+   "agirlik": 2.9637
+  },
+  {
+   "isin": null,
+   "kod": "MPARK",
+   "deger": 29372500.0,
+   "satir": 1,
+   "agirlik": 2.5546
+  },
+  {
+   "isin": null,
+   "kod": "KRDMD",
+   "deger": 27391200.0,
+   "satir": 1,
+   "agirlik": 2.3823
+  },
+  {
+   "isin": null,
+   "kod": "EKGYO",
+   "deger": 22463625.0,
+   "satir": 1,
+   "agirlik": 1.9537
+  },
+  {
+   "isin": null,
+   "kod": "TTKOM",
+   "deger": 21695200.0,
+   "satir": 1,
+   "agirlik": 1.8869
+  },
+  {
+   "isin": null,
+   "kod": "ENKAI",
+   "deger": 20695500.0,
+   "satir": 1,
+   "agirlik": 1.8
+  },
+  {
+   "isin": null,
+   "kod": "GLRMK",
+   "deger": 20362250.0,
+   "satir": 1,
+   "agirlik": 1.771
+  },
+  {
+   "isin": null,
+   "kod": "TAVHL",
+   "deger": 19375000.0,
+   "satir": 1,
+   "agirlik": 1.6851
+  },
+  {
+   "isin": null,
+   "kod": "DOHOL",
+   "deger": 19257750.0,
+   "satir": 1,
+   "agirlik": 1.6749
+  },
+  {
+   "isin": null,
+   "kod": "MGROS",
+   "deger": 17160250.0,
+   "satir": 1,
+   "agirlik": 1.4925
+  },
+  {
+   "isin": null,
+   "kod": "TRMET",
+   "deger": 17000572.05,
+   "satir": 1,
+   "agirlik": 1.4786
+  },
+  {
+   "isin": null,
+   "kod": "TRALT",
+   "deger": 16210000.0,
+   "satir": 1,
+   "agirlik": 1.4098
+  },
+  {
+   "isin": null,
+   "kod": "ASTOR",
+   "deger": 13506500.0,
+   "satir": 1,
+   "agirlik": 1.1747
+  },
+  {
+   "isin": null,
+   "kod": "ISDMR",
+   "deger": 12911600.0,
+   "satir": 1,
+   "agirlik": 1.123
+  },
+  {
+   "isin": null,
+   "kod": "SASA",
+   "deger": 12325000.0,
+   "satir": 1,
+   "agirlik": 1.072
+  },
+  {
+   "isin": null,
+   "kod": "GUBRF",
+   "deger": 11886875.0,
+   "satir": 1,
+   "agirlik": 1.0338
+  },
+  {
+   "isin": null,
+   "kod": "SOKM",
+   "deger": 10629250.0,
+   "satir": 1,
+   "agirlik": 0.9245
+  },
+  {
+   "isin": null,
+   "kod": "TOASO",
+   "deger": 10560000.0,
+   "satir": 1,
+   "agirlik": 0.9184
+  },
+  {
+   "isin": null,
+   "kod": "TURSG",
+   "deger": 9047500.0,
+   "satir": 1,
+   "agirlik": 0.7869
+  },
+  {
+   "isin": null,
+   "kod": "OYAKC",
+   "deger": 8940000.0,
+   "satir": 1,
+   "agirlik": 0.7775
+  },
+  {
+   "isin": null,
+   "kod": "TABGD",
+   "deger": 8308500.0,
+   "satir": 1,
+   "agirlik": 0.7226
+  },
+  {
+   "isin": null,
+   "kod": "HEKTS",
+   "deger": 6400000.0,
+   "satir": 1,
+   "agirlik": 0.5566
+  },
+  {
+   "isin": null,
+   "kod": "EREGL",
+   "deger": 5932000.0,
+   "satir": 1,
+   "agirlik": 0.5159
+  },
+  {
+   "isin": null,
+   "kod": "TRCAS",
+   "deger": 5212800.0,
+   "satir": 1,
+   "agirlik": 0.4534
+  },
+  {
+   "isin": null,
+   "kod": "ANHYT",
+   "deger": 4397500.0,
+   "satir": 1,
+   "agirlik": 0.3825
+  },
+  {
+   "isin": null,
+   "kod": "KMPUR",
+   "deger": 1084508.88,
+   "satir": 1,
+   "agirlik": 0.0943
+  },
+  {
+   "isin": null,
+   "kod": "LILAK",
+   "deger": 1039516.98,
+   "satir": 1,
+   "agirlik": 0.0904
+  }
+ ],
  "bildirim": 1695788,
  "yayin": "09.11.2026 19:25:07",
  "ekler": [

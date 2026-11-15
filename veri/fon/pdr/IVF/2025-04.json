@@ -352,17 +352,30 @@
    ]
   ]
  },
- "hisse_sayisi": 0,
+ "hisse_sayisi": 2,
  "hisse_agirligi": null,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 545.0,
+  "hisse_grup_toplami": 10000.0,
+  "fark_yuzde": -94.55,
   "yuzde_sutun": 2,
   "bicim": "tr",
   "tutuyor": false
  },
- "hisseler": [],
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "MYA",
+   "deger": 330.0,
+   "satir": 2
+  },
+  {
+   "isin": null,
+   "kod": "NKUL",
+   "deger": 215.0,
+   "satir": 2
+  }
+ ],
  "bildirim": 1436198,
  "yayin": "09.05.2025 13:04:04",
  "ekler": [

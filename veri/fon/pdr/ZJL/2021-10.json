@@ -5,17 +5,25 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 1,
+ "hisse_agirligi": 99.3971,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 4350822.78,
+  "hisse_grup_toplami": 4350822.78,
+  "fark_yuzde": -0.0,
   "yuzde_sutun": 3,
   "bicim": "tr",
-  "tutuyor": false
+  "tutuyor": true
  },
- "hisseler": [],
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "TRY",
+   "deger": 4350822.78,
+   "satir": 35,
+   "agirlik": 99.3971
+  }
+ ],
  "bildirim": 974363,
  "yayin": "03.11.2021 13:52:07",
  "ekler": [

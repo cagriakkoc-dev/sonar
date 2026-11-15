@@ -5,17 +5,137 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 17,
+ "hisse_agirligi": 82.5526,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 9655185.81,
+  "hisse_grup_toplami": 9655185.81,
+  "fark_yuzde": 0.0,
   "yuzde_sutun": 1,
   "bicim": "us",
-  "tutuyor": false
+  "tutuyor": true
  },
- "hisseler": [],
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "TUPRS",
+   "deger": 1037026.5,
+   "satir": 1,
+   "agirlik": 8.8667
+  },
+  {
+   "isin": null,
+   "kod": "BIMAS",
+   "deger": 1019565.0,
+   "satir": 1,
+   "agirlik": 8.7174
+  },
+  {
+   "isin": null,
+   "kod": "EKGYO",
+   "deger": 938259.07,
+   "satir": 1,
+   "agirlik": 8.0222
+  },
+  {
+   "isin": null,
+   "kod": "MPARK",
+   "deger": 766717.0,
+   "satir": 1,
+   "agirlik": 6.5555
+  },
+  {
+   "isin": null,
+   "kod": "ISDMR",
+   "deger": 558178.4,
+   "satir": 1,
+   "agirlik": 4.7725
+  },
+  {
+   "isin": null,
+   "kod": "ASELS",
+   "deger": 553465.0,
+   "satir": 1,
+   "agirlik": 4.7322
+  },
+  {
+   "isin": null,
+   "kod": "ALBRK",
+   "deger": 548564.8,
+   "satir": 1,
+   "agirlik": 4.6903
+  },
+  {
+   "isin": null,
+   "kod": "MAVI",
+   "deger": 539241.36,
+   "satir": 1,
+   "agirlik": 4.6106
+  },
+  {
+   "isin": null,
+   "kod": "CIMSA",
+   "deger": 520077.04,
+   "satir": 1,
+   "agirlik": 4.4467
+  },
+  {
+   "isin": null,
+   "kod": "AKFYE",
+   "deger": 509796.27,
+   "satir": 1,
+   "agirlik": 4.3588
+  },
+  {
+   "isin": null,
+   "kod": "AVPGY",
+   "deger": 504322.0,
+   "satir": 1,
+   "agirlik": 4.312
+  },
+  {
+   "isin": null,
+   "kod": "ENJSA",
+   "deger": 493634.5,
+   "satir": 1,
+   "agirlik": 4.2206
+  },
+  {
+   "isin": null,
+   "kod": "EREGL",
+   "deger": 420282.2,
+   "satir": 1,
+   "agirlik": 3.5934
+  },
+  {
+   "isin": null,
+   "kod": "LOGO",
+   "deger": 374660.0,
+   "satir": 1,
+   "agirlik": 3.2034
+  },
+  {
+   "isin": null,
+   "kod": "KCAER",
+   "deger": 322553.55,
+   "satir": 1,
+   "agirlik": 2.7579
+  },
+  {
+   "isin": null,
+   "kod": "GOKNR",
+   "deger": 319373.04,
+   "satir": 1,
+   "agirlik": 2.7307
+  },
+  {
+   "isin": null,
+   "kod": "KOTON",
+   "deger": 229470.08,
+   "satir": 1,
+   "agirlik": 1.962
+  }
+ ],
  "bildirim": 1695133,
  "yayin": "09.11.2026 16:46:00",
  "ekler": [

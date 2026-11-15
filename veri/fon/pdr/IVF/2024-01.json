@@ -347,17 +347,32 @@
    ]
   ]
  },
- "hisse_sayisi": 0,
- "hisse_agirligi": 0.0,
+ "hisse_sayisi": 2,
+ "hisse_agirligi": 8.3249,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 6372168.0,
+  "hisse_grup_toplami": 4104706.04,
+  "fark_yuzde": 55.2405,
   "yuzde_sutun": 3,
   "bicim": "us",
   "tutuyor": false
  },
- "hisseler": [],
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "PETROL",
+   "deger": 5091000.0,
+   "satir": 1,
+   "agirlik": 6.6511
+  },
+  {
+   "isin": null,
+   "kod": "BORU",
+   "deger": 1281168.0,
+   "satir": 1,
+   "agirlik": 1.6738
+  }
+ ],
  "bildirim": 1247750,
  "yayin": "07.02.2024 18:14:39",
  "ekler": [

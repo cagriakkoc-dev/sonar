@@ -5,17 +5,25 @@
   "alis": [],
   "satis": []
  },
- "hisse_sayisi": 0,
+ "hisse_sayisi": 1,
  "hisse_agirligi": 0.0,
  "dogrulama": {
-  "hisse_satir_toplami": 0,
-  "hisse_grup_toplami": null,
-  "fark_yuzde": null,
+  "hisse_satir_toplami": 58.0,
+  "hisse_grup_toplami": 984740389.33,
+  "fark_yuzde": -100.0,
   "yuzde_sutun": 0,
   "bicim": "tr",
   "tutuyor": false
  },
- "hisseler": [],
+ "hisseler": [
+  {
+   "isin": null,
+   "kod": "LDGT1",
+   "deger": 58.0,
+   "satir": 1,
+   "agirlik": 0.0
+  }
+ ],
  "bildirim": 1376027,
  "yayin": "09.01.2025 11:55:40",
  "ekler": [
