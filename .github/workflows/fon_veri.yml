@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       kod:
-        description: 'Fon kodu (virgülle) · HSY = tüm hisse yoğun fonlar · PILOT = ilk 15'
+        description: 'Fon kodu (virgülle) · HSY = hisse yoğun fonlar · KM = kıymetli maden fonları · PILOT = ilk 15'
         required: false
-        default: 'HSY'
+        default: 'HSY,KM'
       limit:
         description: 'Fon başına son kaç rapor (geçmiş için 60 = 5 yıl)'
         required: false
@@ -47,7 +47,7 @@ jobs:
           ref: main
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - env:
-          FON_KOD: ${{ inputs.kod || 'HSY' }}
+          FON_KOD: ${{ inputs.kod || 'HSY,KM' }}
           FON_LIMIT: ${{ inputs.limit || '2' }}
           YENIDEN: ${{ inputs.yeniden }}
           FON_KAYNAK: ${{ runner.temp }}
