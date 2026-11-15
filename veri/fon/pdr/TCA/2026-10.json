@@ -1,0 +1,48 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 100000000.0,
+ "fon_portfoy_degeri": 99891013.0,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 29999.0,
+   "agirlik": 0.03
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 10304.17,
+   "agirlik": 0.0103
+  }
+ ],
+ "km_agirligi": 0.03,
+ "maden_dagilimi": {
+  "Altın": 0.03,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 40303.17,
+  "portfoy_degeri": 99891013.0,
+  "fark_yuzde": -99.9597,
+  "bicim": "us",
+  "tutuyor": false
+ },
+ "kod": "TCA",
+ "donem": "2026-10",
+ "bildirim": 1694657,
+ "yayin": "09.11.2026 10:11:59",
+ "ekler": [
+  "4028328da17e515d01a1bf2160d40e92"
+ ]
+}

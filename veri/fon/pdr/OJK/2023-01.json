@@ -1,0 +1,62 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 1312686914.4,
+ "fon_portfoy_degeri": 1305081389.01,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 893956670.37,
+   "agirlik": 68.1013
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 382136096.22,
+   "agirlik": 29.111
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 28988622.42,
+   "agirlik": 2.2083
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 9699962.09,
+   "agirlik": 0.7389
+  }
+ ],
+ "km_agirligi": 97.2123,
+ "maden_dagilimi": {
+  "Altın": 97.21,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 1314781351.1,
+  "portfoy_degeri": 1305081389.01,
+  "fark_yuzde": 0.7432,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "OJK",
+ "donem": "2023-01",
+ "bildirim": 1108638,
+ "yayin": "02.02.2023 10:37:18",
+ "ekler": [
+  "4028328d8588f3000186110b45070011"
+ ]
+}

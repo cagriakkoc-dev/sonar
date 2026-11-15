@@ -1,0 +1,97 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 52033520225.71,
+ "fon_portfoy_degeri": 52041939179.92,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 20065467731.77,
+   "agirlik": 38.5626
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 16818030878.32,
+   "agirlik": 32.3215
+  },
+  {
+   "ad": "Altın tahvili",
+   "tur": "tahvil",
+   "maden": "Altın",
+   "deger": 8318135103.54,
+   "agirlik": 15.9861
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": "Altın",
+   "deger": 3944744562.05,
+   "agirlik": 7.5812
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 3510360016.9,
+   "agirlik": 6.7463
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 2625535553.24,
+   "agirlik": 5.0459
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 1838526477.18,
+   "agirlik": 3.5334
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 187425351.0,
+   "agirlik": 0.3602
+  },
+  {
+   "ad": "Hisse senedi",
+   "tur": "hisse",
+   "maden": null,
+   "deger": 82600000.0,
+   "agirlik": 0.1587
+  }
+ ],
+ "km_agirligi": 94.4514,
+ "maden_dagilimi": {
+  "Altın": 94.45,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 57390825674.0,
+  "portfoy_degeri": 52041939179.92,
+  "fark_yuzde": 10.278,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "OJK",
+ "donem": "2026-01",
+ "bildirim": 1553522,
+ "yayin": "06.02.2026 14:35:16",
+ "ekler": [
+  "4028328c9b82727b019c3264b3ad135f"
+ ]
+}

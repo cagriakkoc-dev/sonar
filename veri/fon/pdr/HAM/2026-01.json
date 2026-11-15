@@ -1,0 +1,69 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 2053943919.45,
+ "fon_portfoy_degeri": 2056250757.34,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 1924464055.43,
+   "agirlik": 93.696
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": "Altın",
+   "deger": 80977897.57,
+   "agirlik": 3.9426
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 37229993.49,
+   "agirlik": 1.8126
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 13578810.85,
+   "agirlik": 0.6611
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 29.04,
+   "agirlik": 0.0
+  }
+ ],
+ "km_agirligi": 99.4512,
+ "maden_dagilimi": {
+  "Altın": 99.45,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 2056250786.38,
+  "portfoy_degeri": 2056250757.34,
+  "fark_yuzde": 0.0,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "HAM",
+ "donem": "2026-01",
+ "bildirim": 1553881,
+ "yayin": "06.02.2026 17:46:23",
+ "ekler": [
+  "4028328d9b827483019c32fbdb2f4404"
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 23475858.95,
+ "fon_portfoy_degeri": 23770175.26,
+ "kalemler": [
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 21151131.21,
+   "agirlik": 90.0974
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 2153634.14,
+   "agirlik": 9.1738
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 465409.91,
+   "agirlik": 1.9825
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 105.08,
+   "agirlik": 0.0004
+  }
+ ],
+ "km_agirligi": 90.0974,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 90.1,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 23770280.34,
+  "portfoy_degeri": 23770175.26,
+  "fark_yuzde": 0.0004,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "FPG",
+ "donem": "2025-05",
+ "bildirim": 1446497,
+ "yayin": "10.06.2025 13:01:24",
+ "ekler": [
+  "4028328d969f295601975948c4455450"
+ ]
+}

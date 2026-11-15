@@ -1,0 +1,62 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 49713954.19,
+ "fon_portfoy_degeri": 49800190.94,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 68362271.34,
+   "agirlik": 137.5112
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 2576170.1,
+   "agirlik": 5.182
+  },
+  {
+   "ad": "Hisse senedi",
+   "tur": "hisse",
+   "maden": null,
+   "deger": 215000.0,
+   "agirlik": 0.4325
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 207235.92,
+   "agirlik": 0.4169
+  }
+ ],
+ "km_agirligi": 137.5112,
+ "maden_dagilimi": {
+  "Altın": 137.51,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 71360677.36,
+  "portfoy_degeri": 49800190.94,
+  "fark_yuzde": 43.294,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "AU1",
+ "donem": "2026-06",
+ "bildirim": 1622987,
+ "yayin": "02.07.2026 15:30:18",
+ "ekler": [
+  "4028328c9f0a0859019f22cc90ef2a05"
+ ]
+}
