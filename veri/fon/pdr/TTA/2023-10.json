@@ -1,0 +1,97 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 5813419010.61,
+ "fon_portfoy_degeri": 5742717317.35,
+ "kalemler": [
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 3261391696.31,
+   "agirlik": 56.1011
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 1995044429.45,
+   "agirlik": 34.3179
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 550896571.96,
+   "agirlik": 9.4763
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 525761304.73,
+   "agirlik": 9.0439
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 176376717.19,
+   "agirlik": 3.034
+  },
+  {
+   "ad": "Altın tahvili",
+   "tur": "tahvil",
+   "maden": "Altın",
+   "deger": 105320096.38,
+   "agirlik": 1.8117
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 104814259.2,
+   "agirlik": 1.803
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 79890474.37,
+   "agirlik": 1.3742
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 50816590.76,
+   "agirlik": 0.8741
+  }
+ ],
+ "km_agirligi": 103.5099,
+ "maden_dagilimi": {
+  "Altın": 101.71,
+  "Gümüş": 1.8,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 6850312140.35,
+  "portfoy_degeri": 5742717317.35,
+  "fark_yuzde": 19.2869,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "TTA",
+ "donem": "2023-10",
+ "bildirim": 1214785,
+ "yayin": "07.11.2023 09:58:43",
+ "ekler": [
+  "4028328c8b2fcee8018ba4d9ac261974"
+ ]
+}

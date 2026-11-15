@@ -1,0 +1,63 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 241434781.14,
+ "fon_portfoy_degeri": 231896117.87,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 118706668.83,
+   "agirlik": 49.1672
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 117563118.24,
+   "agirlik": 48.6935
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 4506657.53,
+   "agirlik": 1.8666
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 1147458.62,
+   "agirlik": 0.4753
+  }
+ ],
+ "km_agirligi": 97.8607,
+ "maden_dagilimi": {
+  "Altın": 97.86,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 241923903.22,
+  "portfoy_degeri": 231896117.87,
+  "fark_yuzde": 4.3243,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "DBA",
+ "donem": "2021-12",
+ "bildirim": 991056,
+ "yayin": "10.01.2022 02:01:36",
+ "ekler": [
+  "4028328d7da7e96d017e3f0c682905f0",
+  "4028328d7da7e96d017e3f0c684305f1"
+ ]
+}

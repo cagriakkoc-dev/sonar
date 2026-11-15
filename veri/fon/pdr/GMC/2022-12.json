@@ -1,0 +1,69 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 128792464.15,
+ "fon_portfoy_degeri": 135832466.99,
+ "kalemler": [
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 120609868.76,
+   "agirlik": 93.6467
+  },
+  {
+   "ad": "Gümüş fonları",
+   "tur": "fon",
+   "maden": "Gümüş",
+   "deger": 10117484.26,
+   "agirlik": 7.8556
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 5105113.97,
+   "agirlik": 3.9638
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 2050124.49,
+   "agirlik": 1.5918
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 100.0,
+   "agirlik": 0.0001
+  }
+ ],
+ "km_agirligi": 101.5023,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 101.5,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 137882691.48,
+  "portfoy_degeri": 135832466.99,
+  "fark_yuzde": 1.5094,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "GMC",
+ "donem": "2022-12",
+ "bildirim": 1095229,
+ "yayin": "06.01.2023 15:53:32",
+ "ekler": [
+  "4028328c8563fcce0185819c0d572dc4"
+ ]
+}

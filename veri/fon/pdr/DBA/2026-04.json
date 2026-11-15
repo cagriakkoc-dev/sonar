@@ -1,0 +1,98 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 11147033687.05,
+ "fon_portfoy_degeri": 11168254700.01,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 5690481471.71,
+   "agirlik": 51.0493
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 2506017381.54,
+   "agirlik": 22.4815
+  },
+  {
+   "ad": "Altın tahvili",
+   "tur": "tahvil",
+   "maden": "Altın",
+   "deger": 2371649344.26,
+   "agirlik": 21.2761
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 444941432.33,
+   "agirlik": 3.9916
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 88204694.57,
+   "agirlik": 0.7913
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 61824149.84,
+   "agirlik": 0.5546
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 4312240.88,
+   "agirlik": 0.0387
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 823984.88,
+   "agirlik": 0.0074
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 365923.67,
+   "agirlik": 0.0033
+  }
+ ],
+ "km_agirligi": 94.8455,
+ "maden_dagilimi": {
+  "Altın": 94.85,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 11168620623.68,
+  "portfoy_degeri": 11168254700.01,
+  "fark_yuzde": 0.0033,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "DBA",
+ "donem": "2026-04",
+ "bildirim": 1601718,
+ "yayin": "06.05.2026 14:22:28",
+ "ekler": [
+  "4028328d9d7b24c9019dfbede8d31b1c",
+  "4028328d9d7b24c9019dfbede8e71b1d"
+ ]
+}

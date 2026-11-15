@@ -1,0 +1,62 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 182437577.95,
+ "fon_portfoy_degeri": 181710456.22,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 166974948.9,
+   "agirlik": 91.5244
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 28121282.2,
+   "agirlik": 15.4142
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 674866.22,
+   "agirlik": 0.3699
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 100.0,
+   "agirlik": 0.0001
+  }
+ ],
+ "km_agirligi": 91.5244,
+ "maden_dagilimi": {
+  "Altın": 91.52,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 195771197.32,
+  "portfoy_degeri": 181710456.22,
+  "fark_yuzde": 7.738,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "PAF",
+ "donem": "2024-03",
+ "bildirim": 1270375,
+ "yayin": "08.04.2024 15:40:22",
+ "ekler": [
+  "4028328d8e21d0ec018ebc5b37db6ee7"
+ ]
+}

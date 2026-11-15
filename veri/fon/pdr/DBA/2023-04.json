@@ -1,0 +1,77 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 812511780.26,
+ "fon_portfoy_degeri": 628202956.96,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 500819514.04,
+   "agirlik": 61.6384
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 185127502.96,
+   "agirlik": 22.7846
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 100480000.0,
+   "agirlik": 12.3666
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 10033331.51,
+   "agirlik": 1.2349
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 9760567.91,
+   "agirlik": 1.2013
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 7064300.0,
+   "agirlik": 0.8694
+  }
+ ],
+ "km_agirligi": 97.9909,
+ "maden_dagilimi": {
+  "Altın": 96.79,
+  "Gümüş": 1.2,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 813285216.42,
+  "portfoy_degeri": 628202956.96,
+  "fark_yuzde": 29.4622,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "DBA",
+ "donem": "2023-04",
+ "bildirim": 1147773,
+ "yayin": "07.05.2023 23:30:59",
+ "ekler": [
+  "4028328c86d231ff0187f246a5bc4c89",
+  "4028328c86d231ff0187f246a56c4c88"
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 234250992.53,
+ "fon_portfoy_degeri": 225425213.22,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 118370535.85,
+   "agirlik": 50.5315
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 115548326.38,
+   "agirlik": 49.3267
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 737151.67,
+   "agirlik": 0.3147
+  }
+ ],
+ "km_agirligi": 99.8582,
+ "maden_dagilimi": {
+  "Altın": 99.86,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 234656013.9,
+  "portfoy_degeri": 225425213.22,
+  "fark_yuzde": 4.0948,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "DBA",
+ "donem": "2022-01",
+ "bildirim": 1000131,
+ "yayin": "08.02.2022 09:51:19",
+ "ekler": [
+  "4028328c7da7e73b017ed38d39d74bdd",
+  "4028328c7da7e73b017ed38d39f84bde"
+ ]
+}

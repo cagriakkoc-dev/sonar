@@ -1,0 +1,77 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 5056900803.71,
+ "fon_portfoy_degeri": 4564441088.27,
+ "kalemler": [
+  {
+   "ad": "Altın tahvili",
+   "tur": "tahvil",
+   "maden": "Altın",
+   "deger": 2684123220.33,
+   "agirlik": 53.0784
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 2032076559.34,
+   "agirlik": 40.1842
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 277296529.98,
+   "agirlik": 5.4835
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 70657908.19,
+   "agirlik": 1.3973
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 717892.46,
+   "agirlik": 0.0142
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 625969.73,
+   "agirlik": 0.0124
+  }
+ ],
+ "km_agirligi": 98.7462,
+ "maden_dagilimi": {
+  "Altın": 98.75,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 5065498080.03,
+  "portfoy_degeri": 4564441088.27,
+  "fark_yuzde": 10.9774,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "DBA",
+ "donem": "2025-05",
+ "bildirim": 1446339,
+ "yayin": "10.06.2025 09:38:17",
+ "ekler": [
+  "4028328d969f295401974ad451967d74",
+  "4028328d969f295401974ad451c37d75"
+ ]
+}

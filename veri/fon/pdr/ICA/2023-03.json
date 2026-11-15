@@ -1,0 +1,62 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 195732495.56,
+ "fon_portfoy_degeri": 196082526.74,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 174564747.33,
+   "agirlik": 89.1854
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 17773782.49,
+   "agirlik": 9.0806
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 2930509.25,
+   "agirlik": 1.4972
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 813487.67,
+   "agirlik": 0.4156
+  }
+ ],
+ "km_agirligi": 98.266,
+ "maden_dagilimi": {
+  "Altın": 98.27,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 196082526.74,
+  "portfoy_degeri": 196082526.74,
+  "fark_yuzde": 0.0,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "ICA",
+ "donem": "2023-03",
+ "bildirim": 1131455,
+ "yayin": "04.04.2023 14:05:55",
+ "ekler": [
+  "4028328d86d233bf01874b63c550306c"
+ ]
+}
