@@ -76,3 +76,6 @@ Finansal rapor işlenirken şirketin `kalem` alanına son dönemin dipnot kırı
 - Ton: sohbet havasında, birinci tekil, kısa cümleler; "Neyi takip edeceğim?"/"Son söz" gibi kişisel kısımlar kullanıcıya bırakılır.
 - X: her tweet ≤280 karakter. Dönem özetinde ikili seri (yukarıda), sıra numarası yok. Haber özetinde şimdilik kısa zincir, (n/N) ile biter.
 - Substack/X'te ASLA paylaşım yapma; yalnız taslak.
+
+## Aylık prim üretimi (15 Kas 2026)
+- ANHYT'nin "prim üretimi" bildirimleri bekçide "Prim üretimi" türüyle kuyruğa girer (bildirim.html indirilir). sonar-site otomatik.py metindeki "dd.mm.yyyy-dd.mm.yyyy dönemine ait brüt prim üretimi, hayat dalı …, hayat dışı …, toplam …" cümlesinden yılbaşından birikimli tutarı okur ve c.mon'a ekler (aylık = birikimli farkı; önceki aylar eksikse yalnız birikimli).

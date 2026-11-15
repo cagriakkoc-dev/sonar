@@ -300,8 +300,9 @@ def main():
             rutin = not fr and t in RUTIN and RUTIN[t].search(metin)
             if t in AD: metin = AD[t].sub(" ", metin)  # şirket adındaki "Yatırım" Önemli sayılmasın
             etiket = "Finansal rapor" if fr else ("Önemli" if not rutin and ONEMLI.search(metin) else "Bildirim")
+            if not fr and t == "ANHYT" and re.search(r"prim üretim", metin, re.I): etiket = "Prim üretimi"   # 15 Kas: aylık prim → otomatik.py c.mon'a işler
             donem = f" · {d['year']} {d['ruleType']}" if fr and d.get("year") else ""
-            if etiket in ("Finansal rapor", "Önemli") and "Sorumluluk Beyan" not in (d.get("summary") or ""):
+            if etiket in ("Finansal rapor", "Önemli", "Prim üretimi") and "Sorumluluk Beyan" not in (d.get("summary") or ""):
                 try:
                     dosyalar = indir(d["disclosureIndex"])
                 except Exception as e:
