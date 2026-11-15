@@ -63,7 +63,7 @@ KALEM = [
     ("liab", "i", ["Liabilities"]),
     ("eq", "i", ["StockholdersEquity", "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"]),
     ("cash", "i", ["CashAndCashEquivalentsAtCarryingValue", "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents"]),
-    ("sti", "i", ["MarketableSecuritiesCurrent", "ShortTermInvestments", "AvailableForSaleSecuritiesDebtSecuritiesCurrent", "CashCashEquivalentsAndShortTermInvestments"]),
+    ("sti", "i", ["MarketableSecuritiesCurrent", "ShortTermInvestments", "AvailableForSaleSecuritiesDebtSecuritiesCurrent", "DebtSecuritiesCurrent"]),
     ("ltd", "i", ["LongTermDebtNoncurrent", "LongTermDebtAndCapitalLeaseObligations", "LongTermDebt"]),
     ("std", "i", ["LongTermDebtCurrent", "DebtCurrent", "LongTermDebtAndCapitalLeaseObligationsCurrent"]),
     ("cp", "i", ["CommercialPaper", "ShortTermBorrowings"]),
