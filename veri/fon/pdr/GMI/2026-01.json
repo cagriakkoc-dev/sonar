@@ -1,0 +1,76 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 890727614.52,
+ "fon_portfoy_degeri": 917140858.1,
+ "kalemler": [
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 514161121.23,
+   "agirlik": 57.7237
+  },
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 309984661.24,
+   "agirlik": 34.8013
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 84254140.27,
+   "agirlik": 9.459
+  },
+  {
+   "ad": "Gümüş fonları",
+   "tur": "fon",
+   "maden": "Gümüş",
+   "deger": 6288720.29,
+   "agirlik": 0.706
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 2452215.07,
+   "agirlik": 0.2753
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 1347386.45,
+   "agirlik": 0.1513
+  }
+ ],
+ "km_agirligi": 93.231,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 93.23,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 918488244.55,
+  "portfoy_degeri": 917140858.1,
+  "fark_yuzde": 0.1469,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "GMI",
+ "donem": "2026-01",
+ "bildirim": 1552875,
+ "yayin": "05.02.2026 12:12:34",
+ "ekler": [
+  "4028328c9b82727a019c2ce4a2064640"
+ ]
+}

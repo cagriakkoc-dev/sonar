@@ -1,0 +1,91 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 454973364.06,
+ "fon_portfoy_degeri": 420779742.29,
+ "kalemler": [
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 346806867.86,
+   "agirlik": 76.2258
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 42864384.94,
+   "agirlik": 9.4213
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 33457447.97,
+   "agirlik": 7.3537
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 25031849.32,
+   "agirlik": 5.5018
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 6180115.14,
+   "agirlik": 1.3583
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 2725081.92,
+   "agirlik": 0.599
+  },
+  {
+   "ad": "Hisse senedi",
+   "tur": "hisse",
+   "maden": null,
+   "deger": 381300.0,
+   "agirlik": 0.0838
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 180664.0,
+   "agirlik": 0.0397
+  }
+ ],
+ "km_agirligi": 86.246,
+ "maden_dagilimi": {
+  "Altın": 0.6,
+  "Gümüş": 85.65,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 457627711.15,
+  "portfoy_degeri": 420779742.29,
+  "fark_yuzde": 8.7571,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "DMG",
+ "donem": "2024-07",
+ "bildirim": 1321408,
+ "yayin": "06.08.2024 14:30:22",
+ "ekler": [
+  "4028328d90f00045019119013baa4c47",
+  "4028328d90f00045019119013bd34c48"
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 1090357890.0,
+ "fon_portfoy_degeri": 1091859313.13,
+ "kalemler": [
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 601069107.05,
+   "agirlik": 55.1259
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 283878951.89,
+   "agirlik": 26.0354
+  },
+  {
+   "ad": "Altın tahvili",
+   "tur": "tahvil",
+   "maden": "Altın",
+   "deger": 72880587.06,
+   "agirlik": 6.6841
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 40480112.29,
+   "agirlik": 3.7126
+  },
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 32475000.0,
+   "agirlik": 2.9784
+  },
+  {
+   "ad": "Hisse senedi",
+   "tur": "hisse",
+   "maden": null,
+   "deger": 30777500.0,
+   "agirlik": 2.8227
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 18073380.82,
+   "agirlik": 1.6576
+  },
+  {
+   "ad": "Kira sertifikası",
+   "tur": "kira",
+   "maden": null,
+   "deger": 12224674.02,
+   "agirlik": 1.1212
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 17805.89,
+   "agirlik": 0.0016
+  }
+ ],
+ "km_agirligi": 90.8237,
+ "maden_dagilimi": {
+  "Altın": 87.85,
+  "Gümüş": 2.98,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 1091877119.02,
+  "portfoy_degeri": 1091859313.13,
+  "fark_yuzde": 0.0016,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "MKG",
+ "donem": "2024-11",
+ "bildirim": 1364073,
+ "yayin": "09.12.2024 15:38:35",
+ "ekler": [
+  "4028328c9373b8ac0193a0abf938689e"
+ ]
+}

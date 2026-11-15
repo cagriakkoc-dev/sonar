@@ -1,0 +1,70 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 8782095.89,
+ "fon_portfoy_degeri": 8539866.27,
+ "kalemler": [
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 4846201.68,
+   "agirlik": 55.1827
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 1531688.77,
+   "agirlik": 17.441
+  },
+  {
+   "ad": "Gümüş fonları",
+   "tur": "fon",
+   "maden": "Gümüş",
+   "deger": 1161595.0,
+   "agirlik": 13.2269
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 1000380.82,
+   "agirlik": 11.3911
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 374001.74,
+   "agirlik": 4.2587
+  }
+ ],
+ "km_agirligi": 68.4096,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 68.41,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 8913868.01,
+  "portfoy_degeri": 8539866.27,
+  "fark_yuzde": 4.3795,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "DMG",
+ "donem": "2022-03",
+ "bildirim": 1018448,
+ "yayin": "08.04.2022 17:29:49",
+ "ekler": [
+  "4028328d7fd4339b018009903d947224",
+  "4028328d7fd4339b018009903dc57225"
+ ]
+}

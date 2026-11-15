@@ -1,0 +1,63 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 13448908.31,
+ "fon_portfoy_degeri": 13603763.4,
+ "kalemler": [
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 11655206.09,
+   "agirlik": 86.6628
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 1133182.54,
+   "agirlik": 8.4258
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 815374.77,
+   "agirlik": 6.0628
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 19343.92,
+   "agirlik": 0.1438
+  }
+ ],
+ "km_agirligi": 95.0887,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 95.09,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 13623107.32,
+  "portfoy_degeri": 13603763.4,
+  "fark_yuzde": 0.1422,
+  "bicim": "us",
+  "tutuyor": true
+ },
+ "kod": "DMG",
+ "donem": "2022-05",
+ "bildirim": 1035772,
+ "yayin": "08.06.2022 15:49:27",
+ "ekler": [
+  "4028328d812b6aea01813e7818b04f32",
+  "4028328d812b6aea01813e7818ec4f33"
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 274525038.71,
+ "fon_portfoy_degeri": 270254285.51,
+ "kalemler": [
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 213166446.48,
+   "agirlik": 77.6492
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 14919908.19,
+   "agirlik": 5.4348
+  },
+  {
+   "ad": "Devlet tahvili / bono",
+   "tur": "tahvil",
+   "maden": null,
+   "deger": 14743331.53,
+   "agirlik": 5.3705
+  },
+  {
+   "ad": "Kira sertifikası",
+   "tur": "kira",
+   "maden": null,
+   "deger": 13203130.02,
+   "agirlik": 4.8094
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 7425127.8,
+   "agirlik": 2.7047
+  },
+  {
+   "ad": "Gümüş fonları",
+   "tur": "fon",
+   "maden": "Gümüş",
+   "deger": 6180496.14,
+   "agirlik": 2.2513
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 906746.1,
+   "agirlik": 0.3303
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 134001.26,
+   "agirlik": 0.0488
+  }
+ ],
+ "km_agirligi": 85.3353,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 85.34,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 270679187.52,
+  "portfoy_degeri": 270254285.51,
+  "fark_yuzde": 0.1572,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "DMG",
+ "donem": "2023-11",
+ "bildirim": 1223574,
+ "yayin": "07.12.2023 14:16:09",
+ "ekler": [
+  "4028328c8b2fcee7018c40d3d9f46e5a",
+  "4028328c8b2fcee7018c40d3da306e5b"
+ ]
+}

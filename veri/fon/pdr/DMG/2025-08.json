@@ -1,0 +1,77 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 954668637.89,
+ "fon_portfoy_degeri": 882846186.21,
+ "kalemler": [
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 745791118.29,
+   "agirlik": 78.1204
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 117633427.28,
+   "agirlik": 12.3219
+  },
+  {
+   "ad": "Gümüş fonları",
+   "tur": "fon",
+   "maden": "Gümüş",
+   "deger": 46670566.7,
+   "agirlik": 4.8887
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 27093415.16,
+   "agirlik": 2.838
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 20765300.4,
+   "agirlik": 2.1751
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 917065.89,
+   "agirlik": 0.0961
+  }
+ ],
+ "km_agirligi": 95.331,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 95.33,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 958870893.72,
+  "portfoy_degeri": 882846186.21,
+  "fark_yuzde": 8.6113,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "DMG",
+ "donem": "2025-08",
+ "bildirim": 1486964,
+ "yayin": "05.09.2025 16:00:56",
+ "ekler": [
+  "4028328c98f754d101991917710b2db2",
+  "4028328c98f754d10199191771412db3"
+ ]
+}
