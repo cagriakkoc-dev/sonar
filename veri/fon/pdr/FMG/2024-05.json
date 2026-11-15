@@ -1,0 +1,69 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 196170532.94,
+ "fon_portfoy_degeri": 204972170.96,
+ "kalemler": [
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 168806443.04,
+   "agirlik": 86.0509
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 42963580.12,
+   "agirlik": 21.9011
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 10210316.34,
+   "agirlik": 5.2048
+  },
+  {
+   "ad": "Hisse senedi",
+   "tur": "hisse",
+   "maden": null,
+   "deger": 83700.0,
+   "agirlik": 0.0427
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 52740.0,
+   "agirlik": 0.0269
+  }
+ ],
+ "km_agirligi": 86.0778,
+ "maden_dagilimi": {
+  "Altın": 0.03,
+  "Gümüş": 86.05,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 222116779.5,
+  "portfoy_degeri": 204972170.96,
+  "fark_yuzde": 8.3644,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "FMG",
+ "donem": "2024-05",
+ "bildirim": 1293712,
+ "yayin": "03.06.2024 16:42:45",
+ "ekler": [
+  "4028328d8f3f7793018fddf32e1a3427"
+ ]
+}

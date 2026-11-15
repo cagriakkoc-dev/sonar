@@ -1,0 +1,69 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 2332943043.1,
+ "fon_portfoy_degeri": 2335764251.89,
+ "kalemler": [
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 1409119626.84,
+   "agirlik": 60.4009
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 911166138.26,
+   "agirlik": 39.0565
+  },
+  {
+   "ad": "Kira sertifikası",
+   "tur": "kira",
+   "maden": null,
+   "deger": 10477459.39,
+   "agirlik": 0.4491
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 5001027.4,
+   "agirlik": 0.2144
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 805819.51,
+   "agirlik": 0.0345
+  }
+ ],
+ "km_agirligi": 99.4575,
+ "maden_dagilimi": {
+  "Altın": 99.46,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 2336570071.4,
+  "portfoy_degeri": 2335764251.89,
+  "fark_yuzde": 0.0345,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "AFO",
+ "donem": "2022-11",
+ "bildirim": 1086095,
+ "yayin": "08.12.2022 18:30:21",
+ "ekler": [
+  "4028328d84686d110184f21fb42a0f47"
+ ]
+}

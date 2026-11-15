@@ -1,0 +1,62 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 12455176008.3,
+ "fon_portfoy_degeri": 12492329980.95,
+ "kalemler": [
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 12602460015.13,
+   "agirlik": 101.1825
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 113782704.85,
+   "agirlik": 0.9135
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 78379260.97,
+   "agirlik": 0.6293
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 5432002.13,
+   "agirlik": 0.0436
+  }
+ ],
+ "km_agirligi": 101.1825,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 101.18,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 12800053983.08,
+  "portfoy_degeri": 12492329980.95,
+  "fark_yuzde": 2.4633,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "FMG",
+ "donem": "2026-37",
+ "bildirim": 1667447,
+ "yayin": "23.09.2026 23:28:25",
+ "ekler": [
+  "4028328da0b8438901a0cfe4e16a0450"
+ ]
+}

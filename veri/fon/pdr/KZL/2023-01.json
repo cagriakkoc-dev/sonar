@@ -1,0 +1,62 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 3073847925.99,
+ "fon_portfoy_degeri": 3080009694.77,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 3052923932.07,
+   "agirlik": 99.3193
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 26466553.89,
+   "agirlik": 0.861
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 850232.88,
+   "agirlik": 0.0277
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 200109.97,
+   "agirlik": 0.0065
+  }
+ ],
+ "km_agirligi": 100.1803,
+ "maden_dagilimi": {
+  "Altın": 100.18,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 3080440828.81,
+  "portfoy_degeri": 3080009694.77,
+  "fark_yuzde": 0.014,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "KZL",
+ "donem": "2023-01",
+ "bildirim": 1111539,
+ "yayin": "08.02.2023 18:03:06",
+ "ekler": [
+  "4028328c861839b20186318a2b5a759a"
+ ]
+}
