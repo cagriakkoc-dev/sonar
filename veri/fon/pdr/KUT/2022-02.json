@@ -1,0 +1,62 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 117501975.45,
+ "fon_portfoy_degeri": 117565146.62,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 68801512.21,
+   "agirlik": 58.5535
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 33932044.56,
+   "agirlik": 28.8779
+  },
+  {
+   "ad": "Kira sertifikası",
+   "tur": "kira",
+   "maden": null,
+   "deger": 15291921.48,
+   "agirlik": 13.0142
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 14371258.22,
+   "agirlik": 12.2307
+  }
+ ],
+ "km_agirligi": 99.662,
+ "maden_dagilimi": {
+  "Altın": 70.78,
+  "Gümüş": 28.88,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 132396736.47,
+  "portfoy_degeri": 117565146.62,
+  "fark_yuzde": 12.6156,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "KUT",
+ "donem": "2022-02",
+ "bildirim": 1008298,
+ "yayin": "08.03.2022 15:50:43",
+ "ekler": [
+  "4028328d7da7e96d017f6925b70b199e"
+ ]
+}

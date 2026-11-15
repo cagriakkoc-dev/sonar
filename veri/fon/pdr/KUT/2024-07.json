@@ -1,0 +1,83 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 994481015.56,
+ "fon_portfoy_degeri": 996040332.79,
+ "kalemler": [
+  {
+   "ad": "Kıymetli maden",
+   "tur": "maden",
+   "maden": null,
+   "deger": 901688636.56,
+   "agirlik": 90.6693
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 367450473.58,
+   "agirlik": 36.949
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 364937377.62,
+   "agirlik": 36.6963
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 94351696.23,
+   "agirlik": 9.4875
+  },
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 81950760.0,
+   "agirlik": 8.2406
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 45773650.0,
+   "agirlik": 4.6028
+  },
+  {
+   "ad": "Fon payları",
+   "tur": "fon",
+   "maden": null,
+   "deger": 41576375.36,
+   "agirlik": 4.1807
+  }
+ ],
+ "km_agirligi": 95.9761,
+ "maden_dagilimi": {
+  "Altın": 50.79,
+  "Gümüş": 45.19,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 1897728969.35,
+  "portfoy_degeri": 996040332.79,
+  "fark_yuzde": 90.5273,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "KUT",
+ "donem": "2024-07",
+ "bildirim": 1321346,
+ "yayin": "06.08.2024 12:07:11",
+ "ekler": [
+  "4028328d90f00045019126d017b040df"
+ ]
+}

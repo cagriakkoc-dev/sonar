@@ -1,0 +1,76 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 295667016.49,
+ "fon_portfoy_degeri": 295969451.84,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 196550674.45,
+   "agirlik": 66.477
+  },
+  {
+   "ad": "Altın tahvili",
+   "tur": "tahvil",
+   "maden": "Altın",
+   "deger": 59636839.73,
+   "agirlik": 20.1703
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 43227807.34,
+   "agirlik": 14.6204
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": "Altın",
+   "deger": 12348830.27,
+   "agirlik": 4.1766
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 4300571.15,
+   "agirlik": 1.4545
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 692128.9,
+   "agirlik": 0.2341
+  }
+ ],
+ "km_agirligi": 105.4443,
+ "maden_dagilimi": {
+  "Altın": 105.44,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 316756851.84,
+  "portfoy_degeri": 295969451.84,
+  "fark_yuzde": 7.0235,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "FIB",
+ "donem": "2022-09",
+ "bildirim": 1067074,
+ "yayin": "04.10.2022 17:21:40",
+ "ekler": [
+  "4028328d838f7dce0183a35e8bf53212"
+ ]
+}

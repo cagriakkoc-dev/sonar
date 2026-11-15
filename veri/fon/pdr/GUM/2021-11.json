@@ -1,0 +1,69 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 175756331.68,
+ "fon_portfoy_degeri": 181732978.63,
+ "kalemler": [
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 135891871.27,
+   "agirlik": 77.3183
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 34557702.44,
+   "agirlik": 19.6623
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 8233562.57,
+   "agirlik": 4.6846
+  },
+  {
+   "ad": "Gümüş fonları",
+   "tur": "fon",
+   "maden": "Gümüş",
+   "deger": 3049842.35,
+   "agirlik": 1.7353
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 510940.26,
+   "agirlik": 0.2907
+  }
+ ],
+ "km_agirligi": 98.7159,
+ "maden_dagilimi": {
+  "Altın": 0.0,
+  "Gümüş": 98.72,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 182243918.89,
+  "portfoy_degeri": 181732978.63,
+  "fark_yuzde": 0.2811,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "GUM",
+ "donem": "2021-11",
+ "bildirim": 981821,
+ "yayin": "08.12.2021 10:24:45",
+ "ekler": [
+  "4028328d7d3c303f017d96fbee383cd0"
+ ]
+}

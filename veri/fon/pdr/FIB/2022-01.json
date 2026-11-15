@@ -1,0 +1,69 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 203594665.7,
+ "fon_portfoy_degeri": 203797590.51,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 134843001.06,
+   "agirlik": 66.2311
+  },
+  {
+   "ad": "Devlet tahvili / bono",
+   "tur": "tahvil",
+   "maden": null,
+   "deger": 46187835.03,
+   "agirlik": 22.6862
+  },
+  {
+   "ad": "Kira sertifikası",
+   "tur": "kira",
+   "maden": null,
+   "deger": 30899533.07,
+   "agirlik": 15.177
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 4503532.8,
+   "agirlik": 2.212
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 3075288.55,
+   "agirlik": 1.5105
+  }
+ ],
+ "km_agirligi": 66.2311,
+ "maden_dagilimi": {
+  "Altın": 66.23,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 219509190.51,
+  "portfoy_degeri": 203797590.51,
+  "fark_yuzde": 7.7094,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "FIB",
+ "donem": "2022-01",
+ "bildirim": 999883,
+ "yayin": "07.02.2022 17:27:45",
+ "ekler": [
+  "4028328d7da7e96d017ed395cfc200f9"
+ ]
+}

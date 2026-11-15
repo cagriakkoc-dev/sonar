@@ -1,0 +1,97 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 11915743376.0,
+ "fon_portfoy_degeri": 11951064277.73,
+ "kalemler": [
+  {
+   "ad": "Gümüş BYF",
+   "tur": "byf",
+   "maden": "Gümüş",
+   "deger": 8325823520.57,
+   "agirlik": 69.8725
+  },
+  {
+   "ad": "Fiziki gümüş",
+   "tur": "maden",
+   "maden": "Gümüş",
+   "deger": 1473687157.32,
+   "agirlik": 12.3676
+  },
+  {
+   "ad": "Gümüş fonları",
+   "tur": "fon",
+   "maden": "Gümüş",
+   "deger": 1181142745.87,
+   "agirlik": 9.9125
+  },
+  {
+   "ad": "Borsa yatırım fonları",
+   "tur": "byf",
+   "maden": null,
+   "deger": 548311866.28,
+   "agirlik": 4.6016
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 411240446.58,
+   "agirlik": 3.4512
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 156846922.87,
+   "agirlik": 1.3163
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 7355376.73,
+   "agirlik": 0.0617
+  },
+  {
+   "ad": "Mevduat / katılım hesabı",
+   "tur": "mevduat",
+   "maden": null,
+   "deger": 3503164.38,
+   "agirlik": 0.0294
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 100.0,
+   "agirlik": 0.0
+  }
+ ],
+ "km_agirligi": 92.2142,
+ "maden_dagilimi": {
+  "Altın": 0.06,
+  "Gümüş": 92.15,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 12107911300.6,
+  "portfoy_degeri": 11951064277.73,
+  "fark_yuzde": 1.3124,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "GUM",
+ "donem": "2026-01",
+ "bildirim": 1552876,
+ "yayin": "05.02.2026 12:12:34",
+ "ekler": [
+  "4028328c9b82727a019c2ce4a303464a"
+ ]
+}

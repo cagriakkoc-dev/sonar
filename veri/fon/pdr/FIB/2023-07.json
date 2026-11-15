@@ -1,0 +1,69 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 835137558.1,
+ "fon_portfoy_degeri": 835897537.43,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 660570404.83,
+   "agirlik": 79.0972
+  },
+  {
+   "ad": "Altın tahvili",
+   "tur": "tahvil",
+   "maden": "Altın",
+   "deger": 103068702.26,
+   "agirlik": 12.3415
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 72898552.88,
+   "agirlik": 8.7289
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 19963693.24,
+   "agirlik": 2.3905
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 14350984.22,
+   "agirlik": 1.7184
+  }
+ ],
+ "km_agirligi": 100.1676,
+ "maden_dagilimi": {
+  "Altın": 100.17,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 870852337.43,
+  "portfoy_degeri": 835897537.43,
+  "fark_yuzde": 4.1817,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "FIB",
+ "donem": "2023-07",
+ "bildirim": 1181744,
+ "yayin": "07.08.2023 19:26:45",
+ "ekler": [
+  "4028328c89555ba90189d0cdb02c44b4"
+ ]
+}

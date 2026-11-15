@@ -1,0 +1,62 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 2087451691.96,
+ "fon_portfoy_degeri": 2090623089.95,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 1223586119.39,
+   "agirlik": 58.6163
+  },
+  {
+   "ad": "Altın tahvili",
+   "tur": "tahvil",
+   "maden": "Altın",
+   "deger": 853831429.02,
+   "agirlik": 40.9031
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 13125066.9,
+   "agirlik": 0.6288
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 80474.64,
+   "agirlik": 0.0039
+  }
+ ],
+ "km_agirligi": 99.5193,
+ "maden_dagilimi": {
+  "Altın": 99.52,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 2090623089.95,
+  "portfoy_degeri": 2090623089.95,
+  "fark_yuzde": -0.0,
+  "bicim": "tr",
+  "tutuyor": true
+ },
+ "kod": "FIB",
+ "donem": "2024-12",
+ "bildirim": 1373290,
+ "yayin": "07.01.2025 12:41:03",
+ "ekler": [
+  "4028328c93c3b40d01943f94699d166a"
+ ]
+}
