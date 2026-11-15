@@ -1,5 +1,5 @@
 {
- "zaman": "2026-11-14T20:42:43Z",
+ "zaman": "2026-11-15T15:16:45Z",
  "basarili": [],
  "atlandi": [
   {
@@ -11,12 +11,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "AYA",
+   "donem": "2026-08"
+  },
+  {
    "kod": "BUY",
    "donem": "2026-10"
   },
   {
    "kod": "BUY",
    "donem": "2026-09"
+  },
+  {
+   "kod": "BUY",
+   "donem": "2026-08"
   },
   {
    "kod": "DZE",
@@ -27,12 +35,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "DZE",
+   "donem": "2026-08"
+  },
+  {
    "kod": "GID",
    "donem": "2026-10"
   },
   {
    "kod": "GID",
    "donem": "2026-09"
+  },
+  {
+   "kod": "GID",
+   "donem": "2026-08"
   },
   {
    "kod": "GRT",
@@ -43,12 +59,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "GRT",
+   "donem": "2026-08"
+  },
+  {
    "kod": "HMS",
    "donem": "2026-10"
   },
   {
    "kod": "HMS",
    "donem": "2026-09"
+  },
+  {
+   "kod": "HMS",
+   "donem": "2026-08"
   },
   {
    "kod": "IFN",
@@ -59,6 +83,10 @@
    "donem": "2026-09"
   },
   {
+   "kod": "IFN",
+   "donem": "2026-08"
+  },
+  {
    "kod": "KHB",
    "donem": "2026-10"
   },
@@ -67,12 +95,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "KHB",
+   "donem": "2026-08"
+  },
+  {
    "kod": "LTL",
    "donem": "2026-10"
   },
   {
    "kod": "LTL",
    "donem": "2026-09"
+  },
+  {
+   "kod": "LTL",
+   "donem": "2026-08"
   },
   {
    "kod": "NLE",
@@ -91,12 +127,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "PGS",
+   "donem": "2026-08"
+  },
+  {
    "kod": "RHI",
    "donem": "2026-10"
   },
   {
    "kod": "RHI",
    "donem": "2026-09"
+  },
+  {
+   "kod": "RHI",
+   "donem": "2026-08"
   },
   {
    "kod": "TAU",
@@ -107,6 +151,10 @@
    "donem": "2026-09"
   },
   {
+   "kod": "TAU",
+   "donem": "2026-08"
+  },
+  {
    "kod": "TYH",
    "donem": "2026-10"
   },
@@ -115,13 +163,27 @@
    "donem": "2026-09"
   },
   {
+   "kod": "TYH",
+   "donem": "2026-08"
+  },
+  {
    "kod": "YHS",
    "donem": "2026-10"
   },
   {
    "kod": "YHS",
    "donem": "2026-09"
+  },
+  {
+   "kod": "YHS",
+   "donem": "2026-08"
   }
  ],
- "hata": []
+ "hata": [
+  {
+   "kod": "NLE",
+   "donem": "2026-08",
+   "neden": "RuntimeError('metin yok (taranmış PDF)')"
+  }
+ ]
 }
