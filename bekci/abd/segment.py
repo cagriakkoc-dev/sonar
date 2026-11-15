@@ -484,7 +484,7 @@ def tureve(t, mix, kpi, periods):
             tutar(r["AutomotiveRegulatoryCreditsMember"]["seri"], "kredi", "Karbon kredisi geliri", "Diğer üreticilere satılan düzenleyici kredilerden gelir; maliyeti yok denecek kadar az, doğrudan kâra yazılır.")
         if "teslimat" in kpi and "AutomotiveSalesMember" in r:
             s = {p: round(1000 * r["AutomotiveSalesMember"]["seri"][p] / kpi["teslimat"]["seri"][p], 1) for p in P if p in kpi["teslimat"]["seri"] and kpi["teslimat"]["seri"][p] and p in r["AutomotiveSalesMember"]["seri"]}
-            tutar(s, "arac_basi", "Araç başı satış geliri", "Otomotiv satış geliri ÷ teslimat (yaklaşık; teslimat yuvarlanmış).", "bin $")
+            tutar(s, "arac_basi", "Araç başı satış geliri", "Otomotiv satış geliri ÷ teslimat (yaklaşık; teslimat yuvarlanmış).", "$")
     if t == "AMZN":
         r = mix.get("rev:urun", {}).get("kalem", {})
         for u, k_, a_ in (("AdvertisingServicesMember", "reklam_pay", "Reklamın hasılat payı"), ("AmazonWebServicesMember", "aws_pay", "AWS'nin hasılat payı"), ("SubscriptionServicesMember", "abone_pay", "Aboneliklerin hasılat payı")):

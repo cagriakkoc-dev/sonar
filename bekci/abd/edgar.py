@@ -274,6 +274,12 @@ def isle(S):
                 v = I[k].get(e)
                 if v is not None:
                     p[k] = round(v[0] / 1e6, 2)
+        if "shd" in (p.get("fark") or []):
+            p.pop("shd", None)
+        if "eps" in (p.get("fark") or []) and p.get("ni") is not None:
+            fy_shd = [v for (b_, e_), v in O["shd"].items() if e_ == e and (gun(e_) - gun(b_)).days > 300]
+            if fy_shd:
+                p["eps"] = round(p["ni"] / (fy_shd[0][0] / 1e6), 2)
         if "gp" not in p and "rev" in p and "cogs" in p:
             p["gp"] = round(p["rev"] - p["cogs"], 2)
         # kaynak dosyalama (10-Q/10-K) — hasılatın geldiği başvuru
@@ -282,9 +288,12 @@ def isle(S):
             p["accn"] = r[2]
         # dönem sonuna en yakın sonraki kapak sayfasındaki pay sayısı (milyon)
         sonra = [v for d_, v in kapak_l if gun(d_) >= gun(e) and (gun(d_) - gun(e)).days < 120]
+        yakin = sorted(kapak_l, key=lambda z: abs((gun(z[0]) - gun(e)).days))
         if sonra:
             p["pay"] = round(sonra[0] / 1e6, 2)
-        elif p.get("shd"):
+        elif yakin and abs((gun(yakin[0][0]) - gun(e)).days) < 200:
+            p["pay"] = round(yakin[0][1] / 1e6, 2)
+        elif p.get("shd") and "shd" not in (p.get("fark") or []):
             p["pay"] = p["shd"]
         kp = kapanis(F, e) if F else None
         if kp:
