@@ -5,6 +5,7 @@ Fon bildirimleri: GET /tr/api/disclosure/filter/FILTERYFBF/<fonOid>/ALL/365 (fon
 import os, re, json, time, subprocess, tempfile, urllib.request, datetime, sys, gzip
 sys.path.insert(0, os.path.dirname(__file__))
 from pdr_ayristir import ayristir
+from km_ayristir import ayristir_km, kiymetli
 
 KOK = os.path.join(os.path.dirname(__file__), "..", "..")
 VERI = os.path.join(KOK, "veri", "fon")
@@ -15,6 +16,7 @@ LISTE = json.load(open(_LP)).get("fonlar", []) if os.path.exists(_LP) else []
 OIDS.update({f["kod"]: f["oid"] for f in LISTE})
 KAYNAK = os.environ.get("FON_KAYNAK") or tempfile.mkdtemp()
 LIMIT = int(os.environ.get("FON_LIMIT") or 2)
+KMS = {f["kod"] for f in LISTE if kiymetli(f.get("ad"))}
 
 def get(u, t=90):
     for k in range(4):
@@ -65,8 +67,9 @@ def pdf_metin(bid):
 def main():
     kodlar = [k.strip().upper() for k in (os.environ.get("FON_KOD") or "MAC").split(",") if k.strip()]
     HSY = [f["kod"] for f in LISTE if f.get("hisse_yogun") and not f.get("serbest")]
-    if kodlar == ["HSY"]: kodlar = HSY                      # tüm hisse yoğun (serbest olmayan) fonlar
-    elif kodlar == ["PILOT"]: kodlar = (["MAC"] + [k for k in HSY if k != "MAC"])[:15]
+    KM = [f["kod"] for f in LISTE if kiymetli(f.get("ad"))]   # kıymetli maden fonları (serbest dahil)
+    GRUP = {"HSY": HSY, "KM": KM, "PILOT": (["MAC"] + [k for k in HSY if k != "MAC"])[:15]}
+    kodlar = list(dict.fromkeys(k_ for k in kodlar for k_ in GRUP.get(k, [k])))   # HSY = hisse yoğun (serbest olmayan), KM = kıymetli maden; virgülle birleştirilebilir
     parca = os.environ.get("FON_PARCA")             # "i/n": paralel koşuda bu işin payı
     if parca:
         pi, pn = map(int, parca.split("/")); kodlar = kodlar[pi::pn]
@@ -86,7 +89,7 @@ def main():
             try:
                 metin, ekler = pdf_metin(r["id"])
                 if len(metin.strip()) < 200: raise RuntimeError("metin yok (taranmış PDF)")
-                a = ayristir(metin)
+                a = ayristir_km(metin) if kod in KMS else ayristir(metin)
                 if not a["dogrulama"]["tutuyor"] or os.environ.get("HAM"):  # ham metin yalnız tutmayan raporlarda saklanır (hata ayıklama)
                     os.makedirs(os.path.join(VERI, "ham", kod), exist_ok=True)
                     with gzip.open(os.path.join(VERI, "ham", kod, f"{r['donem']}.txt.gz"), "wt", encoding="utf-8") as g: g.write(metin)
@@ -94,7 +97,7 @@ def main():
                 os.makedirs(os.path.dirname(hedef), exist_ok=True)
                 json.dump(a, open(hedef, "w"), ensure_ascii=False, indent=1)
                 d = a["dogrulama"]
-                ozet = {"kod": kod, "donem": r["donem"], "hisse": a["hisse_sayisi"], "tutuyor": d["tutuyor"], "fark_yuzde": d["fark_yuzde"]}
+                ozet = {"kod": kod, "donem": r["donem"], "hisse": a["hisse_sayisi"] or len(a.get("kalemler", [])), "tutuyor": d["tutuyor"], "fark_yuzde": d["fark_yuzde"]}
                 (kosu["basarili"] if d["tutuyor"] else kosu["hata"]).append(ozet)
                 print(ozet, flush=True)
             except Exception as e:

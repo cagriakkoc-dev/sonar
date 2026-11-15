@@ -17,12 +17,14 @@ def main():
         P = [a for a in P if a.get("dogrulama", {}).get("tutuyor")]   # yalnız doğrulaması tutan raporlar
         if P: GEC[os.path.basename(d)] = P
     KODLAR = {x["kod"] for P in GEC.values() for a in P for x in a["hisseler"] if x.get("kod")}
+    TP = os.path.join(VERI, "tasfiye.json"); TAS = set(json.load(open(TP))) if os.path.exists(TP) else set()   # tasfiye kapsamındaki fonlar (elle tutulan liste)
     EN = max(P[-1]["donem"] for P in GEC.values()) if GEC else "0000-00"
     y, m = divmod(int(EN[:4]) * 12 + int(EN[5:7]) - 1 - 12, 12); ESIK = "%04d-%02d" % (y, m + 1)   # son 12 ayda geçerli raporu olmayan fon listelenmez
     for kod, P in GEC.items():
         son = P[-1]; onc = P[-2] if len(P) > 1 else None
         if son["donem"] < ESIK: continue
-        ag = lambda a: {x["kod"] or x["isin"]: x.get("agirlik") or 0 for x in a["hisseler"]}
+        km = son.get("tur") == "km"
+        ag = lambda a: {x["ad"]: x.get("agirlik") or 0 for x in a.get("kalemler", [])} if a.get("tur") == "km" else {x["kod"] or x["isin"]: x.get("agirlik") or 0 for x in a["hisseler"]}
         A = ag(son); deg = None
         if onc:
             B = ag(onc)
@@ -31,15 +33,17 @@ def main():
                    "artan": [list(x) for x in fark if x[1] > 0 and x[0] in B][:5], "azalan": [list(x) for x in fark if x[1] < 0 and x[0] in A][:5]}
         # aylara göre dağılım: tüm geçerli aylar, tüm hisseler (fon sayfası ayrı dosyadan okur; yakınlaştırma istemcide)
         AG = [ag(a) for a in P]; tum = sorted({k_ for d in AG for k_ in d}, key=lambda k_: -max(d.get(k_, 0) for d in AG))
-        G = {"kod": kod, "ay": [a["donem"] for a in P], "h": {k_: [round(d.get(k_, 0), 2) for d in AG] for k_ in tum if max(d.get(k_, 0) for d in AG) >= 0.05},
-             "disi": [round(max(0, 100 - (a.get("hisse_agirligi") or 0)), 2) for a in P]}
+        G = {"kod": kod, "tur": "km" if km else "hisse", "ay": [a["donem"] for a in P], "h": {k_: [round(d.get(k_, 0), 2) for d in AG] for k_ in tum if max(d.get(k_, 0) for d in AG) >= 0.05},
+             "disi": [0 if a.get("tur") == "km" else round(max(0, 100 - (a.get("hisse_agirligi") or 0)), 2) for a in P]}
         os.makedirs(GDIR, exist_ok=True); json.dump(G, open(os.path.join(GDIR, kod + ".json"), "w"), ensure_ascii=False, separators=(",", ":"))
         L = liste.get(kod, {})
         isl = son.get("islemler") or {}
         F.append({"kod": kod, "ad": L.get("ad") or kod, "kurucu": L.get("kurucu", ""), "donem": son["donem"], "toplam": son.get("fon_toplam_deger"),
                   "hisse_ag": son.get("hisse_agirligi"), "n": son.get("hisse_sayisi"), "getiri": L.get("getiri"), "bildirim": son.get("bildirim"),
-                  "h": [[x["kod"] or x["isin"], x.get("agirlik"), x["deger"]] for x in son["hisseler"]], "degisim": deg,
+                  "h": [[x["ad"], x.get("agirlik"), x["deger"]] for x in son.get("kalemler", [])] if km else [[x["kod"] or x["isin"], x.get("agirlik"), x["deger"]] for x in son["hisseler"]], "degisim": deg,
                   "alis": [x[:2] for x in (isl.get("alis") or []) if x[0] in KODLAR][:10], "satis": [x[:2] for x in (isl.get("satis") or []) if x[0] in KODLAR][:10], "ay_sayisi": len(P)})
+        if km: F[-1].update(tur="km", km_ag=son.get("km_agirligi"), maden=son.get("maden_dagilimi"), n=len(son.get("kalemler", [])))
+        if kod in TAS: F[-1]["tasfiye"] = True
         for x in son["hisseler"]:
             if x.get("kod"): H.setdefault(x["kod"], []).append([kod, x.get("agirlik"), son["donem"]])
     for k in H: H[k].sort(key=lambda r: -(r[1] or 0))
