@@ -311,6 +311,14 @@ def isle(S):
                     r[k + "m"] = round(100 * r[k + "4"] / r["rev4"], 2)
             if r.get("rnd4") is not None:
                 r["rndm"] = round(100 * r["rnd4"] / r["rev4"], 2)
+        if r.get("rev4"):
+            if r.get("capex4") is not None:
+                r["capex_s"] = round(100 * r["capex4"] / r["rev4"], 2)
+            if r.get("sbc4") is not None:
+                r["sbc_s"] = round(100 * r["sbc4"] / r["rev4"], 2)
+        c4 = ttm(i, "cogs")
+        if c4 and p.get("inv") is not None:
+            r["inv_gun"] = round(p["inv"] / (c4 / 365), 1)
         if r.get("ocf4") is not None and r.get("capex4") is not None:
             r["fcf4"] = round(r["ocf4"] - r["capex4"], 2)
         if r.get("op4") is not None and r.get("da4") is not None:
@@ -363,7 +371,7 @@ def isle(S):
     son_f = F[-1] if F else None
     out = {
         "t": t, "ad": S["ad"], "ad_tr": S.get("ad_tr", S["ad"]), "cik": cik, "borsa": S.get("borsa", ""),
-        "sektor": S.get("sektor", ""), "intro": S.get("intro", ""), "renk": S.get("renk", ""),
+        "sektor": S.get("sektor", ""), "intro": S.get("intro", ""), "izle": S.get("izle", []), "renk": S.get("renk", ""),
         "fye": fye, "mali_yil": S.get("mali_yil", ""), "periods": periods,
         "fiyat": {"son": son_f[1] if son_f else None, "t": son_f[0] if son_f else None, "kaynak": fkaynak,
                   "gunluk": [[d, round(c, 2)] for d, c in F if d >= (dt.date.today() - dt.timedelta(days=5 * 366)).isoformat()][::1]},

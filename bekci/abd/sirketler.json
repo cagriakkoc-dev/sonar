@@ -1,12 +1,372 @@
 {
-  "gruplar": [{"ad": "Muhteşem 7 (Magnificent 7)", "id": "mag7", "aciklama": "ABD borsalarının en büyük teknoloji şirketleri: Apple, Microsoft, Alphabet, Amazon, Nvidia, Meta ve Tesla."}],
-  "sirketler": [
-    {"t": "AAPL", "cik": 320193, "ad": "Apple Inc.", "grup": "mag7", "borsa": "Nasdaq", "sektor": "Tüketici elektroniği ve hizmetler", "renk": "#8e8e93", "mali_yil": "Eylül sonu", "intro": "iPhone, Mac, iPad ve giyilebilir cihazlar üretir; App Store, iCloud, Apple Music ve ödeme gibi hizmetlerden de büyüyen bir gelir elde eder."},
-    {"t": "MSFT", "cik": 789019, "ad": "Microsoft Corporation", "grup": "mag7", "borsa": "Nasdaq", "sektor": "Yazılım ve bulut", "renk": "#00a4ef", "mali_yil": "Haziran sonu", "intro": "Azure bulut altyapısı, Office/Microsoft 365, Windows, LinkedIn ve Xbox ile kurumsal ve bireysel yazılım pazarının en büyük oyuncularından."},
-    {"t": "GOOGL", "cik": 1652044, "ad": "Alphabet Inc.", "grup": "mag7", "borsa": "Nasdaq", "sektor": "İnternet reklamcılığı ve bulut", "renk": "#4285f4", "mali_yil": "Aralık sonu", "intro": "Google arama, YouTube ve reklam ağından gelir elde eder; Google Cloud ve Waymo gibi yeni işleri büyütür."},
-    {"t": "AMZN", "cik": 1018724, "ad": "Amazon.com, Inc.", "grup": "mag7", "borsa": "Nasdaq", "sektor": "E-ticaret ve bulut", "renk": "#ff9900", "mali_yil": "Aralık sonu", "intro": "Dünyanın en büyük e-ticaret şirketi; kârının büyük kısmını AWS bulut hizmetleri ve reklam işi getirir."},
-    {"t": "NVDA", "cik": 1045810, "ad": "NVIDIA Corporation", "grup": "mag7", "borsa": "Nasdaq", "sektor": "Yarı iletken", "renk": "#76b900", "mali_yil": "Ocak sonu", "intro": "Veri merkezleri için yapay zekâ hızlandırıcıları (GPU) ve ağ ürünleri, oyun ekran kartları ve otomotiv yongaları tasarlar."},
-    {"t": "META", "cik": 1326801, "ad": "Meta Platforms, Inc.", "grup": "mag7", "borsa": "Nasdaq", "sektor": "Sosyal medya ve reklam", "renk": "#0866ff", "mali_yil": "Aralık sonu", "intro": "Facebook, Instagram, WhatsApp ve Messenger'dan reklam geliri elde eder; Reality Labs ile sanal/artırılmış gerçekliğe yatırım yapar."},
-    {"t": "TSLA", "cik": 1318605, "ad": "Tesla, Inc.", "grup": "mag7", "borsa": "Nasdaq", "sektor": "Elektrikli araç ve enerji", "renk": "#e82127", "mali_yil": "Aralık sonu", "intro": "Elektrikli otomobil üretir ve satar; enerji depolama (Megapack, Powerwall) ve güneş enerjisi işleri büyüyor."}
-  ]
+ "gruplar": [
+  {
+   "ad": "Muhteşem 7 (Magnificent 7)",
+   "id": "mag7",
+   "aciklama": "ABD borsalarının en büyük teknoloji şirketleri: Apple, Microsoft, Alphabet, Amazon, Nvidia, Meta ve Tesla."
+  }
+ ],
+ "sirketler": [
+  {
+   "t": "AAPL",
+   "cik": 320193,
+   "ad": "Apple Inc.",
+   "grup": "mag7",
+   "borsa": "Nasdaq",
+   "sektor": "Tüketici elektroniği ve hizmetler",
+   "renk": "#8e8e93",
+   "mali_yil": "Eylül sonu",
+   "intro": "iPhone, Mac, iPad ve giyilebilir cihazlar üretir; App Store, iCloud, Apple Music ve ödeme gibi hizmetlerden de büyüyen bir gelir elde eder.",
+   "izle": [
+    {
+     "b": "iPhone döngüsü",
+     "m": "Hasılatın yarısı iPhone'dan gelir; yeni model yılı (Eylül lansmanı) ve yükseltme oranı ilk mali çeyreği (Ekim–Aralık) belirler.",
+     "o": [
+      "iphone_pay",
+      "g:rev"
+     ]
+    },
+    {
+     "b": "Hizmetlerin büyümesi ve marjı",
+     "m": "App Store, iCloud, reklam ve ödeme hizmetleri ürünlerin yaklaşık iki katı brüt marjla çalışır; payı arttıkça şirketin toplam marjı yükselir.",
+     "o": [
+      "hizmet_pay",
+      "hizmet_bm",
+      "urun_bm"
+     ]
+    },
+    {
+     "b": "Toplam brüt marj",
+     "m": "Bileşen maliyeti, gümrük vergileri ve ürün/hizmet karması brüt marjı belirler.",
+     "o": [
+      "r:gpm",
+      "r:opm"
+     ]
+    },
+    {
+     "b": "Çin",
+     "m": "Büyük Çin hem satış pazarı hem üretim üssü; talep ve jeopolitik risk buradan izlenir.",
+     "o": [
+      "cin_pay"
+     ]
+    },
+    {
+     "b": "Hissedara dönüş",
+     "m": "Apple serbest nakit akışının büyük kısmını geri alım ve temettüyle dağıtır; pay sayısı her yıl azalır.",
+     "o": [
+      "r:gav",
+      "r:fcfv",
+      "pay"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "MSFT",
+   "cik": 789019,
+   "ad": "Microsoft Corporation",
+   "grup": "mag7",
+   "borsa": "Nasdaq",
+   "sektor": "Yazılım ve bulut",
+   "renk": "#00a4ef",
+   "mali_yil": "Haziran sonu",
+   "intro": "Azure bulut altyapısı, Office/Microsoft 365, Windows, LinkedIn ve Xbox ile kurumsal ve bireysel yazılım pazarının en büyük oyuncularından.",
+   "izle": [
+    {
+     "b": "Azure",
+     "m": "Bulut altyapısı (Azure) şirketin büyüme motoru; yapay zekâ iş yüklerinin kapasiteye dönüşmesi buradan izlenir.",
+     "o": [
+      "azure",
+      "azure_g",
+      "mcloud_g"
+     ]
+    },
+    {
+     "b": "Microsoft Cloud ve sipariş birikimi",
+     "m": "Ticari müşterilerle imzalanan uzun vadeli sözleşmeler (RPO) gelecekteki geliri gösterir.",
+     "o": [
+      "mcloud",
+      "ticari_rpo"
+     ]
+    },
+    {
+     "b": "Bölüm kârlılığı",
+     "m": "Faaliyet bölümlerinin marjları; mali yıl 2027'de bölümler yeniden düzenlendi.",
+     "o": [
+      "marj_AgentsAndInfraMember",
+      "marj_DevicesAndConsumerMember",
+      "r:opm"
+     ]
+    },
+    {
+     "b": "Yatırım harcaması",
+     "m": "Veri merkezi ve GPU yatırımları serbest nakit akışını ve gelecekteki amortismanı etkiler.",
+     "o": [
+      "r:capex_s",
+      "r:fcfv"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "GOOGL",
+   "cik": 1652044,
+   "ad": "Alphabet Inc.",
+   "grup": "mag7",
+   "borsa": "Nasdaq",
+   "sektor": "İnternet reklamcılığı ve bulut",
+   "renk": "#4285f4",
+   "mali_yil": "Aralık sonu",
+   "intro": "Google arama, YouTube ve reklam ağından gelir elde eder; Google Cloud ve Waymo gibi yeni işleri büyütür.",
+   "izle": [
+    {
+     "b": "Arama reklamları",
+     "m": "Google arama gelirini ücretli tıklama sayısı ve tıklama başı maliyet belirler; yapay zekâ destekli aramanın etkisi buradan okunur.",
+     "o": [
+      "tiklama_g",
+      "tbm_g"
+     ]
+    },
+    {
+     "b": "YouTube ve abonelikler",
+     "m": "YouTube reklamları ile YouTube Premium, Google One gibi aboneliklerin büyümesi.",
+     "o": [
+      "yt_pay"
+     ]
+    },
+    {
+     "b": "Google Cloud",
+     "m": "Bulutun hasılat payı, kârlılığı ve sipariş birikimi.",
+     "o": [
+      "cloud_pay",
+      "marj_GoogleCloudMember",
+      "cloud_rpo"
+     ]
+    },
+    {
+     "b": "Diğer girişimler",
+     "m": "Waymo ve diğer girişimlerin faaliyet zararı toplam kârı aşağı çeker.",
+     "o": [
+      "marj_AllOtherSegmentsMember"
+     ]
+    },
+    {
+     "b": "Yatırım harcaması ve geri alım",
+     "m": "Yapay zekâ altyapısı yatırımı ile geri alım/temettü arasındaki denge.",
+     "o": [
+      "r:capex_s",
+      "r:gav"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "AMZN",
+   "cik": 1018724,
+   "ad": "Amazon.com, Inc.",
+   "grup": "mag7",
+   "borsa": "Nasdaq",
+   "sektor": "E-ticaret ve bulut",
+   "renk": "#ff9900",
+   "mali_yil": "Aralık sonu",
+   "intro": "Dünyanın en büyük e-ticaret şirketi; kârının büyük kısmını AWS bulut hizmetleri ve reklam işi getirir.",
+   "izle": [
+    {
+     "b": "AWS",
+     "m": "Bulut işi kârın çoğunu üretir; büyüme hızı ve faaliyet marjı en kritik gösterge.",
+     "o": [
+      "marj_AmazonWebServicesSegmentMember",
+      "aws_pay",
+      "aws_kar_pay"
+     ]
+    },
+    {
+     "b": "Reklam",
+     "m": "Yüksek marjlı reklam geliri perakende kârlılığını taşıyor.",
+     "o": [
+      "reklam_pay"
+     ]
+    },
+    {
+     "b": "Perakende kârlılığı",
+     "m": "Kuzey Amerika ve Uluslararası bölümlerin faaliyet marjı; lojistik verimliliği burada görünür.",
+     "o": [
+      "marj_NorthAmericaSegmentMember",
+      "marj_InternationalSegmentMember"
+     ]
+    },
+    {
+     "b": "Abonelikler",
+     "m": "Prime ve diğer aboneliklerin payı.",
+     "o": [
+      "abone_pay"
+     ]
+    },
+    {
+     "b": "Yatırım harcaması",
+     "m": "Veri merkezi ve lojistik yatırımları serbest nakit akışını belirler.",
+     "o": [
+      "r:capex_s",
+      "r:fcfv"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "NVDA",
+   "cik": 1045810,
+   "ad": "NVIDIA Corporation",
+   "grup": "mag7",
+   "borsa": "Nasdaq",
+   "sektor": "Yarı iletken",
+   "renk": "#76b900",
+   "mali_yil": "Ocak sonu",
+   "intro": "Veri merkezleri için yapay zekâ hızlandırıcıları (GPU) ve ağ ürünleri, oyun ekran kartları ve otomotiv yongaları tasarlar.",
+   "izle": [
+    {
+     "b": "Veri merkezi",
+     "m": "Yapay zekâ hızlandırıcıları ve ağ ürünleri hasılatın büyük çoğunluğunu oluşturur.",
+     "o": [
+      "dc_pay",
+      "g:rev"
+     ]
+    },
+    {
+     "b": "Brüt marj",
+     "m": "Yeni nesil (Blackwell/Rubin) geçişleri ve ürün karması brüt marjı belirler.",
+     "o": [
+      "r:gpm",
+      "r:opm"
+     ]
+    },
+    {
+     "b": "Bölüm kârlılığı",
+     "m": "Hesaplama-ağ ve grafik bölümlerinin faaliyet marjı.",
+     "o": [
+      "marj_ComputeAndNetworkingSegmentMember",
+      "marj_GraphicsSegmentMember"
+     ]
+    },
+    {
+     "b": "Çin ve ihracat kısıtları",
+     "m": "ABD ihracat kuralları Çin satışlarını doğrudan etkiliyor.",
+     "o": [
+      "cin_pay"
+     ]
+    },
+    {
+     "b": "Stok ve tedarik",
+     "m": "Stoklar ve satın alma yükümlülükleri talep görünürlüğünü gösterir.",
+     "o": [
+      "r:inv_gun"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "META",
+   "cik": 1326801,
+   "ad": "Meta Platforms, Inc.",
+   "grup": "mag7",
+   "borsa": "Nasdaq",
+   "sektor": "Sosyal medya ve reklam",
+   "renk": "#0866ff",
+   "mali_yil": "Aralık sonu",
+   "intro": "Facebook, Instagram, WhatsApp ve Messenger'dan reklam geliri elde eder; Reality Labs ile sanal/artırılmış gerçekliğe yatırım yapar.",
+   "izle": [
+    {
+     "b": "Kullanıcılar",
+     "m": "Uygulama ailesinde günlük aktif kişi sayısı.",
+     "o": [
+      "dap"
+     ]
+    },
+    {
+     "b": "Reklam fiyatı ve hacmi",
+     "m": "Gelir = gösterim sayısı × reklam başı fiyat; kişi başı gelir (ARPP) ikisinin sonucu.",
+     "o": [
+      "imp_g",
+      "ppa_g",
+      "arpp"
+     ]
+    },
+    {
+     "b": "Uygulama ailesi kârlılığı",
+     "m": "Facebook, Instagram, WhatsApp ve Messenger'ın faaliyet marjı.",
+     "o": [
+      "marj_FamilyOfAppsMember",
+      "r:opm"
+     ]
+    },
+    {
+     "b": "Reality Labs",
+     "m": "Sanal/artırılmış gerçeklik yatırımının çeyreklik zararı.",
+     "o": [
+      "rl_zarar"
+     ]
+    },
+    {
+     "b": "Yatırım harcaması ve çalışan",
+     "m": "Yapay zekâ altyapısı yatırımı ve maliyet disiplini.",
+     "o": [
+      "r:capex_s",
+      "calisan"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "TSLA",
+   "cik": 1318605,
+   "ad": "Tesla, Inc.",
+   "grup": "mag7",
+   "borsa": "Nasdaq",
+   "sektor": "Elektrikli araç ve enerji",
+   "renk": "#e82127",
+   "mali_yil": "Aralık sonu",
+   "intro": "Elektrikli otomobil üretir ve satar; enerji depolama (Megapack, Powerwall) ve güneş enerjisi işleri büyüyor.",
+   "izle": [
+    {
+     "b": "Teslimatlar",
+     "m": "Çeyreklik araç teslimatı talebin en doğrudan göstergesi.",
+     "o": [
+      "teslimat",
+      "uretim"
+     ]
+    },
+    {
+     "b": "Otomotiv brüt marjı",
+     "m": "Fiyat indirimleri ve maliyet düşüşünün net etkisi; karbon kredisi hariç marj asıl kârlılığı gösterir.",
+     "o": [
+      "oto_bm",
+      "oto_bm_top",
+      "arac_basi"
+     ]
+    },
+    {
+     "b": "Karbon kredileri",
+     "m": "Neredeyse maliyetsiz gelir; azalması kârı doğrudan etkiler.",
+     "o": [
+      "kredi"
+     ]
+    },
+    {
+     "b": "Enerji depolama",
+     "m": "Megapack ve Powerwall kurulumları ve enerji işinin marjı hızla büyüyor.",
+     "o": [
+      "depolama",
+      "enerji_bm"
+     ]
+    },
+    {
+     "b": "Değerleme",
+     "m": "Kâra göre çok yüksek F/K; piyasa otonom sürüş ve robotik beklentisini fiyatlıyor.",
+     "o": [
+      "r:fk",
+      "r:opm"
+     ]
+    }
+   ]
+  }
+ ]
 }

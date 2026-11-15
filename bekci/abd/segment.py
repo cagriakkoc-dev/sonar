@@ -11,7 +11,7 @@ edgar.isle() bu modülü çağırır ve şirket JSON'una "mix" ve "kpi" alanlar�
 import json, os, re, html, datetime as dt, xml.etree.ElementTree as ET
 
 BURA = os.path.dirname(os.path.abspath(__file__))
-SURUM_X, SURUM_M = 3, 4   # ayrıştırma kuralı değişince artır → önbellek yenilenir
+SURUM_X, SURUM_M = 3, 5   # ayrıştırma kuralı değişince artır → önbellek yenilenir
 
 KAVRAM = {  # XBRL kavramı → ölçü
     "RevenueFromContractWithCustomerExcludingAssessedTax": "rev", "Revenues": "rev", "SalesRevenueNet": "rev",
@@ -57,8 +57,13 @@ AD = {  # üye → Türkçe ad
     "AutomotiveRevenuesMember": "Otomotiv (toplam)", "EnergyGenerationAndStorageMember": "Enerji üretimi ve depolama",
     "ServicesAndOtherMember": "Hizmet ve diğer", "AutomotiveSegmentMember": "Otomotiv", "EnergyGenerationAndStorageSegmentMember": "Enerji üretimi ve depolama",
     "EnergyGenerationAndStorageSalesMember": "Enerji satışları", "EnergyGenerationAndStorageLeasingMember": "Enerji kiralama",
-    "SalesAndServicesMember": "Satış ve hizmet", "CommercialCustomersMember": "Ticari müşteriler",
+    "SalesAndServicesMember": "Satış ve hizmet",
+    "ChinaIncludingHongKongMember": "Çin (Hong Kong dahil)", "AutomobilesMember": "Otomobil", "HedgingGainsLossesMember": "Riskten korunma kazanç/kaybı",
+ "CommercialCustomersMember": "Ticari müşteriler",
 }
+ES = {"GoogleServicesSegmentMember": "GoogleServicesMember", "GoogleCloudSegmentMember": "GoogleCloudMember",
+      "GraphicsMember": "GraphicsSegmentMember", "ComputeAndNetworkingMember": "ComputeAndNetworkingSegmentMember",
+      "AmericasMember": "AmericasSegmentMember", "EuropeMember_": "EuropeSegmentMember"}
 GRUP_AD = {"urun": "Ürün / hizmet", "segment": "Faaliyet bölümü", "bolge": "Coğrafya", "urun2": "İkincil kategori"}
 OLCU_AD = {"rev": "Hasılat", "op": "Faaliyet kârı", "cogs": "Satışların maliyeti", "gider": "Toplam gider", "rpo": "Kalan edim yükümlülüğü (sipariş birikimi)"}
 
@@ -128,6 +133,15 @@ def _sayi(s):
     return float(s.replace(",", ""))
 
 
+def _ps(s):
+    return -_sayi(s.strip("()")) if s.startswith("(") else _sayi(s)
+
+
+def _adet(m):
+    v, b = _sayi(m.group(1)), (m.group(2) or "").strip()
+    return round(v * 1000 if b == "million" else v if b == "thousand" else v / 1000, 1)
+
+
 def _yon(s):
     return -1 if re.search(r"decreas|declin", s, re.I) else 1
 
@@ -141,8 +155,8 @@ KURAL = {
         ("calisan", r"Headcount was ([\d,]+) as of", lambda m: _sayi(m.group(1)), "d"),
     ],
     "TSLA": [
-        ("uretim_ytd", r"we produced approximately ([\d.]+) (million|thousand)? ?(?:consumer )?vehicles", lambda m: _sayi(m.group(1)) * (1000 if (m.group(2) or "").startswith("million") else 1), "ytd"),
-        ("teslimat_ytd", r"delivered approximately ([\d.]+) (million|thousand)? ?(?:consumer )?vehicles", lambda m: _sayi(m.group(1)) * (1000 if (m.group(2) or "").startswith("million") else 1), "ytd"),
+        ("uretim_ytd", r"we produced (?:approximately )?([\d.,]+) (million |thousand )?(?:consumer )?vehicles", _adet, "ytd"),
+        ("teslimat_ytd", r"(?:and )?delivered (?:approximately )?([\d.,]+) (million |thousand )?(?:consumer )?vehicles", _adet, "ytd"),
         ("depolama_ytd", r"we deployed ([\d.]+) GWh of energy storage products", lambda m: _sayi(m.group(1)), "ytd"),
     ],
     "MSFT": [
@@ -151,10 +165,11 @@ KURAL = {
         ("m365c_g", r"Microsoft 365 Commercial cloud revenue (?:increased|grew) (\d+)%", lambda m: _sayi(m.group(1)), "q"),
     ],
     "GOOGL": [
-        ("tiklama_g", r"[Pp]aid clicks increased (\d+)%", lambda m: _sayi(m.group(1)), "q"),
-        ("tbm_g", r"[Cc]ost-per-click (increased|decreased) (\d+)%", lambda m: _yon(m.group(1)) * _sayi(m.group(2)), "q"),
-        ("gosterim_g", r"[Ii]mpressions increased (\d+)%", lambda m: _sayi(m.group(1)), "q"),
-        ("tbg_g", r"[Cc]ost-per-impression (increased|decreased) (\d+)%", lambda m: _yon(m.group(1)) * _sayi(m.group(2)), "q"),
+        ("tiklama_g", r"Paid clicks change\s*(\(?\d+\)?)\s*%", lambda m: _ps(m.group(1)), "q"),
+        ("tbm_g", r"Cost-per-click change\s*(\(?\d+\)?)\s*%", lambda m: _ps(m.group(1)), "q"),
+        ("gosterim_g", r"Impressions change\s*(\(?\d+\)?)\s*%", lambda m: _ps(m.group(1)), "q"),
+        ("tbg_g", r"Cost-per-impression change\s*(\(?\d+\)?)\s*%", lambda m: _ps(m.group(1)), "q"),
+        ("tac_oran", r"TAC rate (?:increased|decreased|remained).{0,40}?to ([\d.]+)% from the three months", lambda m: _sayi(m.group(1)), "q"),
         ("calisan", r"[Ww]e had ([\d,]+) employees", lambda m: _sayi(m.group(1)), "d"),
     ],
     "AMZN": [
@@ -273,6 +288,7 @@ def kur(t, olgu, metin, periods, ceyrek_seri):
                 continue
             if olc != "rpo" and bas is None:
                 continue
+            uye = ES.get(uye, uye)
             k = (olc, grup, uye)
             anahtar = (bas, u) if olc != "rpo" else (None, u)
             eski = S.setdefault(k, {}).get(anahtar)
@@ -302,31 +318,48 @@ def kur(t, olgu, metin, periods, ceyrek_seri):
         if len(canli) < 2:
             mix.pop(key)
             continue
-    # parçalar: toplamı şirket hasılatına eşit olan en ince kalem kümesi (toplam/alt kalem çift sayımını önler)
+    # parçalar: her dönem için toplamı şirket hasılatına eşit olan en ince kalem kümesi (toplam/alt kalem çift sayımını önler).
+    # Ürün kırılımı tek başına toplamı vermiyorsa (ör. GOOGL, META) bölüm kalemleri tamamlayıcı aday olur (Cloud, Reality Labs).
     import itertools
     totp = {p["p"]: p.get("rev") for p in periods}
+    seg = mix.get("rev:segment", {}).get("kalem", {})
     for key, g in mix.items():
         K = g["kalem"]
         if g["olcu"] != "rev":
             g["parca"] = list(K)
             continue
-        en_iyi = None
-        for p in reversed([p["p"] for p in periods[-8:]]):
+        aday = dict(K)
+        if g["grup"] == "urun":
+            for u, k in seg.items():
+                if u not in aday:
+                    aday[u] = k
+        pp = {}
+        for p in [p["p"] for p in periods]:
             T = totp.get(p)
-            uy = [u for u in K if p in K[u]["seri"]]
-            if not T or len(uy) < 2 or len(uy) > 14:
+            uy = [u for u in aday if p in aday[u]["seri"]]
+            if not T or len(uy) < 2 or len(uy) > 16:
                 continue
+            bul = None
             for n in range(len(uy), 1, -1):
                 for c in itertools.combinations(uy, n):
-                    if abs(sum(K[u]["seri"][p] for u in c) - T) <= 0.006 * abs(T):
-                        en_iyi = list(c)
+                    if abs(sum(aday[u]["seri"][p] for u in c) - T) <= 0.006 * abs(T):
+                        bul = list(c)
                         break
-                if en_iyi:
+                if bul:
                     break
-            if en_iyi:
-                break
-        g["parca"] = en_iyi or []
-        g["tam"] = bool(en_iyi)
+            if bul:
+                pp[p] = bul
+        sira = []
+        for p in sorted(pp, key=lambda x: [q["p"] for q in periods].index(x), reverse=True):
+            for u in pp[p]:
+                if u not in sira:
+                    sira.append(u)
+        for u in sira:
+            if u not in K:
+                K[u] = dict(aday[u], ek=1)
+        g["parca"] = sira
+        g["parca_p"] = pp
+        g["tam"] = bool(pp)
     # ---------------- metin göstergeleri
     kpi = {}
     for m in metin:
@@ -371,6 +404,7 @@ KPI_AD = {  # anahtar: (ad, birim, açıklama)
     "tbm_g": ("Tıklama başı maliyet · yıllık değişim", "%", "Reklamverenin tıklama başına ödediği ortalama tutar."),
     "gosterim_g": ("Network gösterimleri · yıllık değişim", "%", ""),
     "tbg_g": ("Gösterim başı maliyet · yıllık değişim", "%", ""),
+    "tac_oran": ("Trafik edinme maliyeti (TAC) oranı", "%", "Dağıtım ve Network ortaklarına ödenen payın reklam gelirine oranı; düşmesi kârlılığa olumlu."),
 }
 
 
@@ -403,6 +437,10 @@ def tureve(t, mix, kpi, periods):
     # her faaliyet bölümü için faaliyet marjı
     segr, sego = mix.get("rev:segment", {}).get("kalem", {}), mix.get("op:segment", {}).get("kalem", {})
     for u, k in sego.items():
+        if u in segr and any(abs(k["seri"].get(p, 0) / segr[u]["seri"][p]) > 1 for p in segr[u]["seri"] if segr[u]["seri"][p]):
+            if t != "META":
+                tutar(k["seri"], "sonuc_" + u, f"{k['ad']} · faaliyet sonucu", f"{k['ad']} bölümünün çeyreklik faaliyet kârı/zararı; hasılatı küçük olduğu için marj anlamlı değil.")
+            continue
         if u in segr:
             oran(k["seri"], segr[u]["seri"], "marj_" + u, f"{k['ad']} · faaliyet marjı", f"{k['ad']} bölümünün faaliyet kârı ÷ bölüm hasılatı (tek çeyrek).")
     if t == "AAPL":
