@@ -58,7 +58,11 @@ AD = {  # üye → Türkçe ad
     "ServicesAndOtherMember": "Hizmet ve diğer", "AutomotiveSegmentMember": "Otomotiv", "EnergyGenerationAndStorageSegmentMember": "Enerji üretimi ve depolama",
     "EnergyGenerationAndStorageSalesMember": "Enerji satışları", "EnergyGenerationAndStorageLeasingMember": "Enerji kiralama",
     "SalesAndServicesMember": "Satış ve hizmet",
-    "ChinaIncludingHongKongMember": "Çin (Hong Kong dahil)", "AutomobilesMember": "Otomobil", "HedgingGainsLossesMember": "Riskten korunma kazanç/kaybı",
+    "ChinaIncludingHongKongMember": "Çin (Hong Kong dahil)", "SG": "Singapur", "OtherAsiaPacificMember": "Diğer Asya-Pasifik",
+    "AllOtherCountriesNotSeparatelyDisclosedMember": "Diğer ülkeler", "OtherRevenuesMember": "Diğer gelirler",
+    "MicrosoftThreeSixFiveCommercialProductsAndCloudServicesMember": "Microsoft 365 ticari", "MicrosoftThreeSixFiveConsumerProductsAndCloudServicesMember": "Microsoft 365 bireysel",
+    "SearchAdvertisingMember": "Arama reklamları", "WindowsMember": "Windows", "DevicesMember": "Cihazlar",
+    "AutomotiveSalesWithoutResaleValueGuaranteeMember": "Otomotiv satışları (geri alım garantisiz)", "AutomotiveSalesWithResaleValueGuaranteeMember": "Otomotiv satışları (geri alım garantili)", "AutomobilesMember": "Otomobil", "HedgingGainsLossesMember": "Riskten korunma kazanç/kaybı",
  "CommercialCustomersMember": "Ticari müşteriler",
 }
 ES = {"GoogleServicesSegmentMember": "GoogleServicesMember", "GoogleCloudSegmentMember": "GoogleCloudMember",
@@ -334,21 +338,34 @@ def kur(t, olgu, metin, periods, ceyrek_seri):
                 if u not in aday:
                     aday[u] = k
         pp = {}
-        for p in [p["p"] for p in periods]:
+        onceki = None
+        for p in reversed([p["p"] for p in periods]):
             T = totp.get(p)
-            uy = [u for u in aday if p in aday[u]["seri"]]
-            if not T or len(uy) < 2 or len(uy) > 16:
+            if not T:
                 continue
             bul = None
-            for n in range(len(uy), 1, -1):
-                for c in itertools.combinations(uy, n):
-                    if abs(sum(aday[u]["seri"][p] for u in c) - T) <= 0.006 * abs(T):
-                        bul = list(c)
+            for havuz in ([K, aday] if g["grup"] == "urun" else [K]):
+                uy = [u for u in havuz if p in havuz[u]["seri"]]
+                if len(uy) > 18:
+                    uy = sorted(uy, key=lambda u: -len(havuz[u]["seri"]))[:18]
+                if len(uy) < 2:
+                    continue
+                tol = max(2.0, 0.0005 * abs(T))
+                en = None
+                for n in range(len(uy), 1, -1):
+                    for c in itertools.combinations(uy, n):
+                        if abs(sum(havuz[u]["seri"][p] for u in c) - T) <= tol:
+                            skor = (len(set(c) & set(onceki or [])), n)
+                            if en is None or skor > en[0]:
+                                en = (skor, list(c))
+                    if en and onceki is None:
                         break
-                if bul:
+                if en:
+                    bul = en[1]
                     break
             if bul:
                 pp[p] = bul
+                onceki = bul
         sira = []
         for p in sorted(pp, key=lambda x: [q["p"] for q in periods].index(x), reverse=True):
             for u in pp[p]:
