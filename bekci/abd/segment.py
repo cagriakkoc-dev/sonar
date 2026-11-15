@@ -344,13 +344,13 @@ def kur(t, olgu, metin, periods, ceyrek_seri):
             if not T:
                 continue
             bul = None
-            for havuz in ([K, aday] if g["grup"] == "urun" else [K]):
+            for havuz, tolo in ([(K, 0.0005), (aday, 0.0005), (K, 0.004), (aday, 0.004)] if g["grup"] == "urun" else [(K, 0.0005), (K, 0.004)]):
                 uy = [u for u in havuz if p in havuz[u]["seri"]]
                 if len(uy) > 18:
                     uy = sorted(uy, key=lambda u: -len(havuz[u]["seri"]))[:18]
                 if len(uy) < 2:
                     continue
-                tol = max(2.0, 0.0005 * abs(T))
+                tol = max(2.0, tolo * abs(T))
                 en = None
                 for n in range(len(uy), 1, -1):
                     for c in itertools.combinations(uy, n):
