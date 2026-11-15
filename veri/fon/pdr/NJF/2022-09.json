@@ -1,0 +1,83 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 6740380.98,
+ "fon_portfoy_degeri": 6558309.73,
+ "kalemler": [
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 3234662.77,
+   "agirlik": 47.9893
+  },
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 2064910.83,
+   "agirlik": 30.6349
+  },
+  {
+   "ad": "Altın BYF",
+   "tur": "byf",
+   "maden": "Altın",
+   "deger": 1050651.0,
+   "agirlik": 15.5874
+  },
+  {
+   "ad": "Döviz",
+   "tur": "doviz",
+   "maden": null,
+   "deger": 663857.63,
+   "agirlik": 9.849
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 435643.56,
+   "agirlik": 6.4632
+  },
+  {
+   "ad": "VİOP teminatı",
+   "tur": "viop",
+   "maden": null,
+   "deger": 188000.76,
+   "agirlik": 2.7892
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 188.81,
+   "agirlik": 0.0028
+  }
+ ],
+ "km_agirligi": 94.2117,
+ "maden_dagilimi": {
+  "Altın": 94.21,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 7637915.36,
+  "portfoy_degeri": 6558309.73,
+  "fark_yuzde": 16.4616,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "NJF",
+ "donem": "2022-09",
+ "bildirim": 1070130,
+ "yayin": "10.10.2022 17:05:46",
+ "ekler": [
+  "4028328d838f7dcd0183c236f20006e2"
+ ]
+}

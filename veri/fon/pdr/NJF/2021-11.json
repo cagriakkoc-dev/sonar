@@ -1,0 +1,62 @@
+{
+ "tur": "km",
+ "fon_toplam_deger": 1082123.45,
+ "fon_portfoy_degeri": 1099542.28,
+ "kalemler": [
+  {
+   "ad": "Altına dayalı kira sertifikası",
+   "tur": "kira",
+   "maden": "Altın",
+   "deger": 744865.53,
+   "agirlik": 68.8337
+  },
+  {
+   "ad": "Fiziki altın",
+   "tur": "maden",
+   "maden": "Altın",
+   "deger": 215320.0,
+   "agirlik": 19.8979
+  },
+  {
+   "ad": "Repo / Takasbank para piyasası",
+   "tur": "repo",
+   "maden": null,
+   "deger": 102044.86,
+   "agirlik": 9.4301
+  },
+  {
+   "ad": "Diğer",
+   "tur": "diger",
+   "maden": null,
+   "deger": 90000.0,
+   "agirlik": 8.317
+  }
+ ],
+ "km_agirligi": 88.7316,
+ "maden_dagilimi": {
+  "Altın": 88.73,
+  "Gümüş": 0.0,
+  "Platin": 0.0
+ },
+ "hisse_sayisi": 0,
+ "hisse_agirligi": null,
+ "hisseler": [],
+ "islemler": {
+  "alis": [],
+  "satis": []
+ },
+ "dogrulama": {
+  "kalem_toplami": 1152230.39,
+  "portfoy_degeri": 1099542.28,
+  "fark_yuzde": 4.7918,
+  "bicim": "tr",
+  "tutuyor": false
+ },
+ "kod": "NJF",
+ "donem": "2021-11",
+ "bildirim": 981040,
+ "yayin": "04.12.2021 11:31:32",
+ "ekler": [
+  "4028328d7d3c3041017d849158ee6838"
+ ]
+}
