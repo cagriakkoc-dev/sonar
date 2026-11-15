@@ -1,5 +1,5 @@
 {
- "zaman": "2026-11-14T20:42:31Z",
+ "zaman": "2026-11-15T15:16:32Z",
  "basarili": [],
  "atlandi": [
   {
@@ -11,12 +11,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "AKU",
+   "donem": "2026-08"
+  },
+  {
    "kod": "BIO",
    "donem": "2026-10"
   },
   {
    "kod": "BIO",
    "donem": "2026-09"
+  },
+  {
+   "kod": "BIO",
+   "donem": "2026-08"
   },
   {
    "kod": "DTH",
@@ -35,12 +43,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "GAE",
+   "donem": "2026-08"
+  },
+  {
    "kod": "GNS",
    "donem": "2026-10"
   },
   {
    "kod": "GNS",
    "donem": "2026-09"
+  },
+  {
+   "kod": "GNS",
+   "donem": "2026-08"
   },
   {
    "kod": "HGM",
@@ -51,12 +67,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "HGM",
+   "donem": "2026-08"
+  },
+  {
    "kod": "ICZ",
    "donem": "2026-10"
   },
   {
    "kod": "ICZ",
    "donem": "2026-09"
+  },
+  {
+   "kod": "ICZ",
+   "donem": "2026-08"
   },
   {
    "kod": "IVF",
@@ -67,12 +91,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "IVF",
+   "donem": "2026-08"
+  },
+  {
    "kod": "KTI",
    "donem": "2026-10"
   },
   {
    "kod": "KTI",
    "donem": "2026-09"
+  },
+  {
+   "kod": "KTI",
+   "donem": "2026-08"
   },
   {
    "kod": "NKC",
@@ -83,12 +115,20 @@
    "donem": "2026-09"
   },
   {
+   "kod": "NKC",
+   "donem": "2026-08"
+  },
+  {
    "kod": "OPI",
    "donem": "2026-10"
   },
   {
    "kod": "OPI",
    "donem": "2026-09"
+  },
+  {
+   "kod": "OPI",
+   "donem": "2026-08"
   },
   {
    "kod": "PUK",
@@ -99,12 +139,20 @@
    "donem": "2026-07"
   },
   {
+   "kod": "PUK",
+   "donem": "2026-06"
+  },
+  {
    "kod": "SSS",
    "donem": "2026-10"
   },
   {
    "kod": "SSS",
    "donem": "2026-09"
+  },
+  {
+   "kod": "SSS",
+   "donem": "2026-08"
   },
   {
    "kod": "TLZ",
@@ -115,6 +163,10 @@
    "donem": "2026-09"
   },
   {
+   "kod": "TLZ",
+   "donem": "2026-08"
+  },
+  {
    "kod": "YEF",
    "donem": "2026-10"
   },
@@ -123,13 +175,27 @@
    "donem": "2026-09"
   },
   {
+   "kod": "YEF",
+   "donem": "2026-08"
+  },
+  {
    "kod": "ZLH",
    "donem": "2026-10"
   },
   {
    "kod": "ZLH",
    "donem": "2026-09"
+  },
+  {
+   "kod": "ZLH",
+   "donem": "2026-08"
   }
  ],
- "hata": []
+ "hata": [
+  {
+   "kod": "DTH",
+   "donem": "2026-08",
+   "neden": "RuntimeError('metin yok (taranmış PDF)')"
+  }
+ ]
 }
