@@ -1,5 +1,5 @@
 {
- "zaman": "2026-11-15T15:16:27Z",
+ "zaman": "2026-11-15T15:30:17Z",
  "basarili": [],
  "atlandi": [
   {
@@ -11,20 +11,12 @@
    "donem": "2026-09"
   },
   {
-   "kod": "ALC",
-   "donem": "2026-08"
-  },
-  {
    "kod": "BIY",
    "donem": "2026-10"
   },
   {
    "kod": "BIY",
    "donem": "2026-09"
-  },
-  {
-   "kod": "BIY",
-   "donem": "2026-08"
   },
   {
    "kod": "DTL",
@@ -35,20 +27,12 @@
    "donem": "2026-09"
   },
   {
-   "kod": "DTL",
-   "donem": "2026-08"
-  },
-  {
    "kod": "GAF",
    "donem": "2026-10"
   },
   {
    "kod": "GAF",
    "donem": "2026-09"
-  },
-  {
-   "kod": "GAF",
-   "donem": "2026-08"
   },
   {
    "kod": "GO9",
@@ -59,20 +43,12 @@
    "donem": "2026-09"
   },
   {
-   "kod": "GO9",
-   "donem": "2026-08"
-  },
-  {
    "kod": "HIH",
    "donem": "2026-10"
   },
   {
    "kod": "HIH",
    "donem": "2026-09"
-  },
-  {
-   "kod": "HIH",
-   "donem": "2026-08"
   },
   {
    "kod": "IDH",
@@ -83,20 +59,12 @@
    "donem": "2026-09"
   },
   {
-   "kod": "IDH",
-   "donem": "2026-08"
-  },
-  {
    "kod": "KH1",
    "donem": "2026-10"
   },
   {
    "kod": "KH1",
    "donem": "2026-09"
-  },
-  {
-   "kod": "KH1",
-   "donem": "2026-08"
   },
   {
    "kod": "KVT",
@@ -107,28 +75,16 @@
    "donem": "2026-09"
   },
   {
-   "kod": "KVT",
-   "donem": "2026-08"
-  },
-  {
    "kod": "NKM",
    "donem": "2026-10"
   },
   {
    "kod": "NKM",
    "donem": "2026-09"
-  },
-  {
-   "kod": "NKM",
-   "donem": "2026-08"
   },
   {
    "kod": "RBH",
    "donem": "2026-09"
-  },
-  {
-   "kod": "RBH",
-   "donem": "2026-08"
   },
   {
    "kod": "ST1",
@@ -147,10 +103,6 @@
    "donem": "2026-09"
   },
   {
-   "kod": "TPR",
-   "donem": "2026-08"
-  },
-  {
    "kod": "YHB",
    "donem": "2026-10"
   },
@@ -159,31 +111,18 @@
    "donem": "2026-09"
   },
   {
-   "kod": "YHB",
-   "donem": "2026-08"
-  },
-  {
    "kod": "ZPE",
    "donem": "2026-10"
   },
   {
    "kod": "ZPE",
    "donem": "2026-09"
-  },
-  {
-   "kod": "ZPE",
-   "donem": "2026-08"
   }
  ],
  "hata": [
   {
    "kod": "RBH",
    "donem": "2026-10",
-   "neden": "RuntimeError('metin yok (taranmış PDF)')"
-  },
-  {
-   "kod": "ST1",
-   "donem": "2026-08",
    "neden": "RuntimeError('metin yok (taranmış PDF)')"
   }
  ]
