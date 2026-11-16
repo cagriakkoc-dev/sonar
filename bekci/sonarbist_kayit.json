@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1694105",
-  "hisse": "GEDIK",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-06T15:22:13+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 6,
-   "yenilik": 8,
-   "kapsam": 10,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "Günlük alımlar küçük (06.11'de 50.000 lot, yaklaşık 0,25 milyon TL; toplam geri alım programı payı %1,32), ancak pay geri alımı editör kuralı gereği her zaman önemli sayıldığından taban puan olan 80 verildi.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1694106",
   "hisse": "AGYO",
   "baslik": "Portföy Sınırlamalarına Uyumun Kontrolü",
@@ -11350,5 +11331,53 @@
   "tur": "Açıklama güncellemesi / isim benzerliği netleştirmesi",
   "gerekce": "KRDMD, SPK bülteninde yer alan Kardemir Çelik Sanayi A.Ş. (KARCL) kararlarının kendi paylarıyla ve şirketiyle ilgisi olmadığını belirten bir netleştirme yaptı; mali etkisi veya yeni bir gelişme yok, yalnızca bilgilendirme niteliğinde.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1698252",
+  "hisse": "CVKMD",
+  "baslik": "Yatırımcı Raporu",
+  "t": "2026-11-16T06:24:14+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 28,
+   "yenilik": 12,
+   "kapsam": 14,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "Yatırımcı sunumu (2026 3. çeyrek konsolide sonuçlar)",
+  "gerekce": "Şirket 2026 3. çeyrek konsolide finansal sonuçlarını değerlendiren yatırımcı sunumunu yayımladığı için bu tür editör kararıyla en az 80 puan alır; sunum, yeni bir tutar veya karar içermeyen bilgilendirme niteliğinde olsa da şirketin tamamını kapsar.",
+  "durum": "paylasildi",
+  "tweet": "CVKMD (CVK Madencilik) 2026 3. çeyrek konsolide sonuçlarını ele alan yatırımcı sunumunu yayımladı.\n\nSon 4 çeyrekte hasılat 6,2 milyar TL, net kâr 1,6 milyar TL. Piyasa değeri 45,8 milyar TL, PD/DD 3,05x, F/K 28,6x.\n\nSonuçlar şirketin kendi anlatımıyla sunuluyor.",
+  "kart": {
+   "baslik": "3. Çeyrek Yatırımcı Sunumu",
+   "satirlar": [
+    [
+     "Dönem",
+     "2026 3. çeyrek"
+    ],
+    [
+     "Hasılat (son 4 çeyrek)",
+     "6,2 milyar TL"
+    ],
+    [
+     "Net kâr (son 4 çeyrek)",
+     "1,6 milyar TL"
+    ],
+    [
+     "Piyasa değeri",
+     "45,8 milyar TL"
+    ],
+    [
+     "F/K",
+     "28,6x"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122214226320052387",
+  "x_gorsel_hata": null
  }
 ]
