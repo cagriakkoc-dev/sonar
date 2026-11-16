@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1694254",
-  "hisse": "ADGYO",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-06T15:38:19+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 4,
-   "yenilik": 8,
-   "kapsam": 10,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "06.11.2026'da 60.000 adet pay daha geri alındı (toplam yaklaşık 2,7 milyon TL, piyasa değerinin çok küçük bir kısmı), ancak pay geri alımı editör kuralı gereği her zaman önemli sayıldığından 80 taban puanı verildi; PAHOL'daki satın alma örneği farklı bir türdür ve bu bildirimi düşürmez.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1694255",
   "hisse": "TUKAS",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -11585,5 +11566,53 @@
   "gerekce": "Garanti BBVA'nın 11 milyar TL azami tutarlı geri alım programı kapsamında 16.11.2026'da 1.885.000 TL nominal (yaklaşık 282 milyon TL) pay alındı ve program başından beri toplam alım sermayenin %0,3130'una ulaştı; pay geri alımı editör kuralı gereği en az 80 puan alır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1698662",
+  "hisse": "GRSEL",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-16T16:16:59+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 8,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "GRSEL 16 Kasım 2026'da 5.000 adet (yaklaşık 1,26 milyon TL) pay geri aldı ve elindeki toplam pay 177.180 adede (%0,17) çıktı; tutar 28,3 milyar TL piyasa değerine göre çok küçük olsa da pay geri alımı editör kararıyla en az 80 puan alan türdendir.",
+  "durum": "paylasildi",
+  "tweet": "GRSEL (Gürsel Turizm) geri alım programına 16 Kasım'da 5.000 lot ekledi. Fiyat 252 TL, sermayeye oranı %0,0049.\n\n14 Eylül kararıyla başlayan programda şirketin elindeki pay sermayenin %0,17'sine ulaştı.\n\nPiyasa değeri 28,3 milyar TL, PD/DD 1,86x.",
+  "kart": {
+   "baslik": "Gürsel Turizm geri alım",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "16 Kasım 2026"
+    ],
+    [
+     "Alınan pay",
+     "5.000 lot"
+    ],
+    [
+     "Fiyat",
+     "252 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,0049"
+    ],
+    [
+     "Toplam oran",
+     "%0,17"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122363373685711302",
+  "x_gorsel_hata": null
  }
 ]
