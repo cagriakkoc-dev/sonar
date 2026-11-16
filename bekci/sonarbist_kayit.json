@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1694221",
-  "hisse": "OSMEN",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-06T15:37:31+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1694222",
   "hisse": "HLGYO",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11568,5 +11559,14 @@
   "gerekce": "Pegasus yönetim kurulu, 24 ay sürecek, sermayenin %3'üne (15 milyon nominal TL) ve 3 milyar TL'ye kadar olan bir pay geri alım programını onayladı; tutar piyasa değerinin yaklaşık %4,4'üne denk geliyor ve pay geri alımı her zaman önemli türler arasında olduğundan 80 puan alt sınırı uygulandı.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "sunum-7e66bd78bb7a",
+  "hisse": "FROTO",
+  "baslik": "Yatırımcı sunumu: Yatırımcı Sunumu Kasım 2026",
+  "t": "2026-11-16T15:23:50+00:00",
+  "mod": "golge",
+  "durum": "hata",
+  "sebep": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)'))"
  }
 ]
