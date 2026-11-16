@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1694255",
-  "hisse": "TUKAS",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-06T15:38:27+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 3,
-   "yenilik": 1,
-   "kapsam": 2,
-   "kesinlik": 4,
-   "ilgi": 2
-  },
-  "tur": "Tahvil kupon faiz oranı bildirimi",
-  "gerekce": "Mevcut bir tahvilin 5. kupon faiz oranının belirlenmesi, 27,7 milyon TL'lik ihraç için rutin ve usulî bir bildirimdir; piyasa değerine oranı çok küçüktür ve editörün zorunlu önemli saydığı türlerden biri değildir.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1694256",
   "hisse": "DGGYO",
   "baslik": "Portföy Sınırlamalarına Uyumun Kontrolü",
@@ -11613,6 +11595,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2122363373685711302",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1698666",
+  "hisse": "MAVI",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-16T16:27:42+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "16.11.2026'da ortalama 36,06 TL'den 250.000 lot (yaklaşık 9 milyon TL) geri alındı ve toplam geri alım 22,47 milyon adede (sermayenin yaklaşık %2,83'ü) ulaştı; günlük tutar piyasa değerine göre küçük olsa da pay geri alımı her zaman önemli türlerden olduğu için taban puan uygulandı.",
+  "durum": "paylasildi",
+  "tweet": "MAVI (Mavi Giyim) 16 Kasım'da geri alım kapsamında 250.000 lot pay aldı. Ortalama fiyat 36,06 TL, sermayeye oranı %0,03147.\n\n16 Eylül kararıyla başlayan programda toplam 22.469.223 lota, sermayenin yaklaşık %2,83'üne ulaşıldı.\n\nPiyasa değeri 29,9 milyar TL, PD/DD 1,96x.",
+  "kart": {
+   "baslik": "Geri alım güncellemesi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "16.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "250.000 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "36,06 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,03147"
+    ],
+    [
+     "Toplam geri alınan",
+     "22.469.223 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122366070761648299",
   "x_gorsel_hata": null
  }
 ]
