@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1694183",
-  "hisse": "IZMDC",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-06T15:23:04+00:00",
-  "mod": "golge",
-  "puan": 6,
-  "alt": {
-   "fin": 0,
-   "yenilik": 1,
-   "kapsam": 2,
-   "kesinlik": 2,
-   "ilgi": 1
-  },
-  "tur": "Şirket Genel Bilgi Formu (usulî güncelleme)",
-  "gerekce": "Bağlı ortaklık ve iştirak listesinin rutin güncellemesi olup yeni bir işlem, tutar veya karar içermiyor; editörün gereksiz bulduğu bildirimlere benzediği için puan düşük.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1694184",
   "hisse": "HALKB",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11394,5 +11376,23 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1698548",
+  "hisse": "ISGYO",
+  "baslik": "İlişkili Taraf İşlemleri",
+  "t": "2026-11-16T14:34:54+00:00",
+  "mod": "golge",
+  "puan": 46,
+  "alt": {
+   "fin": 15,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 7
+  },
+  "tur": "İlişkili taraf işlemi / taşınmaz alımı tapu devri",
+  "gerekce": "Kadıköy'deki taşınmazın %45 hissesinin tapu devri tamamlanarak işlem kesinleşti, ancak bu daha önce duyurulan işlemin güncellemesi; tutar belirtilmediği için şirketin 22,8 milyar TL'lik piyasa değerine oranı belirsiz ve etkisi orta düzeyde.",
+  "durum": "dusuk"
  }
 ]
