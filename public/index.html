@@ -2875,6 +2875,14 @@ function besYigin(G){if(!G||G.length<2)return '';const ad=[...new Set(G.flatMap(
     if(G.length<=14||i%2===0)s+=`<text x="${(L+i*bw+bw/2).toFixed(1)}" y="${Hh-8}" text-anchor="middle" font-size="10" fill="var(--muted)">${g.d.slice(2).replace('-','/')}</text>`});
   for(let k=0;k<=4;k++){const y=10+(Hh-B-10)*(1-k/4);s+=`<text x="${L-6}" y="${y+4}" text-anchor="end" font-size="10" fill="var(--muted)">%${k*25}</text>`}
   return `<section class="fpan panel"><h3>Varlık dağılımı · aylık</h3><svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Aylık varlık dağılımı">${s}</svg><div class="besleg2">${ad.map((a,j)=>`<span><i style="background:${BESPAL[j%BESPAL.length]}"></i>${esc(a)}</span>`).join('')}</div><p class="note">TEFAS varlık dağılımı; her ayın son kaydı. Geçmiş, Kasım 2026'dan itibaren alınan kayıtlarla birikir.</p></section>`}
+function besKap(f){const K=f.kap||[];if(!K.length)return `<section class="fpan panel"><h3>Hisseler</h3><p class="note">Bu fonun KAP raporlarında hisse bazında portföy tablosu bulunamadı.</p></section>`;
+  const k=K.find(x=>x.d===state.besKapD)||K[K.length-1];
+  const lst=(L,yurt)=>{if(!L.length)return '<p class="note">Yok.</p>';const mx=Math.max(...L.map(x=>x[1]),1);return L.slice(0,state.besKapTum?999:20).map(x=>`<div class="fbar besbar2"><b>${yurt&&BY[x[0]]?`<a href="#${x[0].toLowerCase()}" data-go="${x[0]}">${x[0]}</a>`:esc(x[0])}</b><span class="t"><i style="width:${(100*x[1]/mx).toFixed(1)}%"></i></span><span class="p">%${nf(x[1],2)}</span></div>`).join('')};
+  const top=(L)=>nf(L.reduce((s,x)=>s+x[1],0),1);const cok=k.yi.length>20||k.yd.length>20;
+  return `<section class="fpan panel" id="beskap"><h3>Hisseler · ${besAy(k.d)} sonu</h3><div class="fsek" role="tablist">${K.map(x=>`<button role="tab" data-beskd="${x.d}" aria-selected="${x.d===k.d}">${x.d.slice(0,4)}/${x.d.slice(5)==='06'?'6':'12'}</button>`).join('')}</div>
+  <div class="fgrid"><div><p><b>Yurt içi hisseler</b> · ${k.yi.length} hisse · toplam %${top(k.yi)}</p>${lst(k.yi,1)}</div><div><p><b>Yabancı menkul kıymetler</b> · ${k.yd.length} kalem · toplam %${top(k.yd)}</p>${lst(k.yd,0)}</div></div>
+  ${cok?`<p><button class="besdaha" data-bestum="1">${state.besKapTum?'İlk 20\'yi göster':'Tümünü göster'}</button></p>`:''}
+  <p class="note">Oran = fon toplam değerine (raporun ait olduğu gün). Kaynak: fonun KAP'ta yayımladığı 6 aylık / yıllık rapor ekindeki portföy değeri tablosu (<a href="https://www.kap.org.tr/tr/Bildirim/${k.b}" target="_blank" rel="noopener">bildirim</a>). Emeklilik fonları hisse bazında dağılımı yalnız bu raporlarda, yılda iki kez açıklıyor; aradaki alım satımlar görünmez. Yabancı kalemlerde hisse dışında borsa yatırım fonu da olabilir.</p></section>`}
 function renderBes(){document.documentElement.style.setProperty('--co','var(--accent)');
   if(!BESOK()){app.innerHTML='<section class="home-hero"><h1>BES fonlarım</h1><p>Veri henüz yok.</p></section>';return}
   const B=DATA.bes,FL=B.fonlar,sel=FL.find(f=>f.kod===state.besSel)||FL[0];state.besSel=sel.kod;const ar=state.besAr||'1Y',arK=state.besArK||'1Y';
@@ -2895,6 +2903,7 @@ function renderBes(){document.documentElement.style.setProperty('--co','var(--ac
   <div class="fgrid"><section class="fpan panel"><h3>Varlık dağılımı${D?' · '+besTar(D.d):''}</h3>${dagH}${D?`<p class="note">Kaynak: TEFAS fon sayfası, Fon Varlık Dağılımı (portföy değerine oran).</p>`:''}</section>
   <section class="fpan panel"><h3>Varlık türleri${D?' · '+besTar(D.d):''}</h3>${kal||'<p class="note">—</p>'}</section></div>
   ${besYigin(sel.dagG)}
+  ${besKap(sel)}
   <section class="fpan panel"><h3>Fon bilgileri</h3><div class="besinfo"><div><span>ISIN</span><b>${esc(P.isinKodu||'—')}</b></div><div><span>İşlem saatleri</span><b>${esc((P.basIsSaat||'')+'–'+(P.sonIsSaat||''))}</b></div><div><span>Alış / satış valörü</span><b>${P.fonSatisValor??'—'} / ${P.fonGeriAlisValor??'—'} gün</b></div><div><span>Faiz içeriği</span><b>${esc(P.faizIcerigi||'—')}</b></div><div><span>Pazar payı</span><b>${sel.pazar!=null?'%'+nf(sel.pazar,2):'—'}</b></div><div><span>KAP</span><b>${P.kapLink?`<a href="${esc(P.kapLink)}" target="_blank" rel="noopener">Fon sayfası ↗</a>`:'—'}</b></div></div></section>
   <p class="note">Bu sayfa yalnız yönetim panelinde görünür; açık sitede yoktur. Yatırım tavsiyesi değildir.</p>`;
   const set=(k,v)=>{state[k]=v;renderBes()};
@@ -2902,6 +2911,8 @@ function renderBes(){document.documentElement.style.setProperty('--co','var(--ac
   app.querySelectorAll('[data-besf]').forEach(b=>b.onclick=()=>set('besSel',b.dataset.besf));
   app.querySelectorAll('[data-besar]').forEach(b=>b.onclick=()=>set('besAr',b.dataset.besar));
   app.querySelectorAll('[data-besark]').forEach(b=>b.onclick=()=>set('besArK',b.dataset.besark));
+  app.querySelectorAll('[data-beskd]').forEach(b=>b.onclick=()=>set('besKapD',b.dataset.beskd));
+  app.querySelectorAll('[data-bestum]').forEach(b=>b.onclick=()=>set('besKapTum',!state.besKapTum));
   app.querySelectorAll('[data-go]').forEach(b=>b.onclick=e=>{e.preventDefault();go(b.dataset.go)})}
 (function(){if(document.getElementById('besstil'))return;document.head.insertAdjacentHTML('beforeend',`<style id="besstil">
 .besgr{position:relative}.besgr svg{width:100%;height:auto;display:block}.bestip{position:absolute;top:8px;display:none;pointer-events:none;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:12px;min-width:150px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
@@ -2909,7 +2920,7 @@ function renderBes(){document.documentElement.style.setProperty('--co','var(--ac
 .beshalka{display:grid;grid-template-columns:200px 1fr;gap:16px;align-items:center}.beshalka svg{width:200px;height:200px}.besleg{display:grid;grid-template-columns:14px 1fr auto;gap:8px;align-items:center;font-size:13px;padding:3px 0}
 .besleg2{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted);margin-top:6px}.besleg2 span{display:inline-flex;gap:6px;align-items:center}
 .bestbl{width:100%;border-collapse:collapse;font-size:13px}.bestbl th{color:var(--muted);font-weight:600;padding:8px;border-bottom:1px solid var(--line);text-align:right}.bestbl td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:right}.bestbl tr[data-bes]{cursor:pointer}.bestbl tr.sec td{background:color-mix(in srgb,var(--accent) 10%,transparent)}
-.besinfo{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.besinfo span{display:block;color:var(--muted);font-size:12px}.besbar{grid-template-columns:150px 1fr 64px}
+.besinfo{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.besinfo span{display:block;color:var(--muted);font-size:12px}.besbar{grid-template-columns:150px 1fr 64px}.besbar2{grid-template-columns:76px 1fr 60px}.besdaha{all:unset;cursor:pointer;color:var(--accent);font-weight:600;font-size:13px}
 @media(max-width:640px){.beshalka{grid-template-columns:1fr}.beshalka svg{margin:auto}.besbar{grid-template-columns:96px 1fr 56px}}</style>`)})();
 
 /* ---------- ABD bölümü (Sonar ABD · SEC EDGAR) ----------
