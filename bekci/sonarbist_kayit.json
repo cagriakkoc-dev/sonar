@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1694259",
-  "hisse": "OYYAT",
-  "baslik": "Likidite Sağlayıcılık Kapsamındaki İşlemler",
-  "t": "2026-11-06T15:38:34+00:00",
-  "mod": "golge",
-  "puan": 8,
-  "alt": {
-   "fin": 1,
-   "yenilik": 1,
-   "kapsam": 1,
-   "kesinlik": 3,
-   "ilgi": 2
-  },
-  "tur": "likidite sağlayıcılık işlemleri",
-  "gerekce": "OYA aracı kurumunun MPARK paylarında 26.10-06.11.2026 döneminde yaptığı rutin likidite sağlayıcılık işlemlerinin dönemlik bildirimi; şirketin kendi pay geri alımı değildir, tutar ve etki belirtilmemiştir.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1694263",
   "hisse": "TTKOM",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11644,5 +11626,23 @@
   "tur": "Kira sertifikası ödeme temerrüdü",
   "gerekce": "TRDTERVK2618 kodlu kira sertifikasının kâr payı ve anapara ödemesi vadesinde yapılamadı; bu kesinleşmiş bir temerrüt olup şirketin borç ödeme kabiliyeti ve kredibilitesi açısından ciddi bir olumsuz sürprizdir, ancak ihraç tutarı bildirimde belirtilmemiştir.",
   "durum": "dusuk_bildirildi"
+ },
+ {
+  "id": "kap-1698707",
+  "hisse": "ISMEN",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-17T06:08:48+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 0,
+   "yenilik": 3,
+   "kapsam": 4,
+   "kesinlik": 3,
+   "ilgi": 2
+  },
+  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu bilgisi güncellemesi)",
+  "gerekce": "Yönetim kurulu üyelerinin bilgilerini içeren rutin bir genel bilgi formu güncellemesidir; yeni bir karar, tutar veya yönetim değişikliği içermediği için finansal etkisi yoktur ve önemi düşüktür.",
+  "durum": "dusuk"
  }
 ]
