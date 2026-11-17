@@ -1,52 +1,5 @@
 [
  {
-  "id": "kap-1695906",
-  "hisse": "AVGYO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-09T17:38:07+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 28,
-   "yenilik": 14,
-   "kapsam": 16,
-   "kesinlik": 9,
-   "ilgi": 3
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Finansal sonuç açıklaması editör kuralı gereği en az 80 puan alır; hasılat %13,3 artarken net zarar 96,6 milyon TL'den 6,8 milyon TL'ye gerilemiş, ancak şirket küçük ve BIST 30/100 dışında.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1695908",
-  "hisse": "MAVI",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-09T17:38:14+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 4,
-   "yenilik": 8,
-   "kapsam": 10,
-   "kesinlik": 10,
-   "ilgi": 7
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "09.11.2026'da yaklaşık 10,4 milyon TL'lik (290.095 nominal, ortalama 35,89 TL) geri alım, piyasa değerinin on binde 4'ü gibi küçük bir tutar olsa da pay geri alımı bildirimleri editör kuralı gereği en az 80 puan alır; toplam geri alım sermayenin yaklaşık %2,75'ine ulaştı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1695909",
-  "hisse": "AVGYO",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-09T17:38:18+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1695912",
   "hisse": "AVGYO",
   "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
@@ -11881,5 +11834,115 @@
   "goruntu_hata": null,
   "tweet_id": "2122766553833955350",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1699305",
+  "hisse": "AKFGY",
+  "baslik": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
+  "t": "2026-11-17T19:21:02+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 32,
+   "yenilik": 18,
+   "kapsam": 17,
+   "kesinlik": 6,
+   "ilgi": 7
+  },
+  "tur": "Fon kullanım yeri değişikliği / yatırım planı",
+  "gerekce": "Halka arz fonundan kalan yaklaşık 598 milyon TL (piyasa değerinin yaklaşık %6'sı), planlanan üç otel/turizm projesinden Gebze lojistik depo yatırımına kaydırılıyor; bu bir yatırım planı değişikliği olduğu için en az 80 puan kuralı uygulandı, SPK onayı ise henüz alınmadığından kesinlik sınırlı.",
+  "durum": "paylasildi",
+  "tweet": "AKFGY (Akfen GYO) fon kullanım raporunu değiştirmek için 13 Kasım'da SPK'ya başvurdu.\n\nKıyıkışlacık, Tuzla ve Esenboğa otel projelerinde kalan yaklaşık 207,27, 343,76 ve 47,45 milyon TL, Gebze'de lojistik depoya gidecek.\n\nGerekçe artan maliyetler, onay SPK'da.",
+  "kart": {
+   "baslik": "Fon kullanım yeri değişikliği",
+   "satirlar": [
+    [
+     "Yönetim kurulu kararı",
+     "13.11.2026"
+    ],
+    [
+     "Kıyıkışlacık kalan fon",
+     "207,27 milyon TL"
+    ],
+    [
+     "Tuzla 2. Otel kalan fon",
+     "343,76 milyon TL"
+    ],
+    [
+     "Esenboğa 2. Otel kalan fon",
+     "47,45 milyon TL"
+    ],
+    [
+     "Yeni kullanım",
+     "Gebze lojistik depo"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122772113493004304",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1699306",
+  "hisse": "ODAS",
+  "baslik": "Kar Payı Dağıtım İşlemlerine İlişkin Bildirim",
+  "t": "2026-11-17T19:21:27+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 28,
+   "yenilik": 16,
+   "kapsam": 20,
+   "kesinlik": 9,
+   "ilgi": 7
+  },
+  "tur": "Kâr payı dağıtım kararı (dağıtım yapılmaması)",
+  "gerekce": "2025 dönemi için dağıtılabilir kâr oluşmadığından temettü dağıtılmaması önerisi genel kurula sunulacak; kâr payı kararı olduğu için editör kuralıyla en az 80 puan alır, ancak nakit ödeme olmadığından içerik beklenen yönde ve etkisi sınırlıdır.",
+  "durum": "paylasildi",
+  "tweet": "ODAS (Odaş Elektrik) 2025 için kâr dağıtılmamasını ilk Olağan Genel Kurul'a önerecek.\n\nSPK'ya göre net dönem kârı 93.226.510 TL, yasal kayıtlarda ise geçmiş yıl zararları sonrası net dağıtılabilir dönem sonucu -12.327.281 TL. Dağıtılabilir kâr oluşmadı.",
+  "kart": {
+   "baslik": "2025 kâr payı dağıtılmayacak",
+   "satirlar": [
+    [
+     "Nakit kâr payı",
+     "0 TL"
+    ],
+    [
+     "SPK net dönem kârı",
+     "93.226.510 TL"
+    ],
+    [
+     "Yasal net dağıtılabilir",
+     "-12.327.281 TL"
+    ],
+    [
+     "Ödenmiş sermaye",
+     "1.400.000.000 TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122772244397170851",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1699307",
+  "hisse": "ODAS",
+  "baslik": "Genel Kurul İşlemlerine İlişkin Bildirim",
+  "t": "2026-11-17T19:21:58+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 2,
+   "yenilik": 3,
+   "kapsam": 8,
+   "kesinlik": 6,
+   "ilgi": 3
+  },
+  "tur": "Genel kurul çağrısı",
+  "gerekce": "Olağan genel kurul toplantısına çağrı ve gündem maddeleri usulî bir bildirimdir; kâr dağıtımı yalnızca gündem maddesi olarak yer alıyor, karar veya tutar içermediği için editör istisnası kapsamına girmez.",
+  "durum": "dusuk"
  }
 ]
