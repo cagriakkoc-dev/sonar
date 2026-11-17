@@ -1,51 +1,5 @@
 [
  {
-  "id": "analiz-1695905",
-  "hisse": "AVGYO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-09T17:37:49+00:00",
-  "mod": "canli",
-  "tur": "bilanço analizi",
-  "tweet": "AVGYO (Avrasya GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net kâr 162,1 milyon TL, zarardan kâra geçti\n• Esas faaliyet kâr marjı %658,1\n\nDikkat edilecekler\n• İşletme nakit akışı eksi 61,9 milyon TL\n• Özkaynaklar 2,3 milyar TL, %9,1 azaldı\n• Cari oran 0,84",
-  "kart": {
-   "tweet": "AVGYO (Avrasya GYO) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Net kâr 162,1 milyon TL, zarardan kâra geçti\n• Esas faaliyet kâr marjı %658,1\n\nDikkat edilecekler\n• İşletme nakit akışı eksi 61,9 milyon TL\n• Özkaynaklar 2,3 milyar TL, %9,1 azaldı\n• Cari oran 0,84",
-   "guclu": [
-    {
-     "ad": "Net dönem kârı",
-     "deger": "162,1 milyon TL",
-     "not": "Geçen yıl -225,8 milyon TL idi"
-    },
-    {
-     "ad": "Esas faaliyet kâr marjı",
-     "deger": "%658,1",
-     "not": "Geçen yıl %134,4 idi"
-    }
-   ],
-   "dikkat": [
-    {
-     "ad": "İşletme nakit akışı",
-     "deger": "eksi 61,9 milyon TL",
-     "not": "Geçen yıl 68,2 milyon TL idi"
-    },
-    {
-     "ad": "Özkaynaklar",
-     "deger": "2,3 milyar TL",
-     "not": "Yıl sonuna göre azalış %9,1"
-    },
-    {
-     "ad": "Cari oran",
-     "deger": "0,84",
-     "not": "Dönen varlıklar kısa borcun altında"
-    }
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "durum": "analiz_paylasildi",
-  "tweet_id": "2119847006692671643",
-  "x_gorsel_hata": null
- },
- {
   "id": "kap-1695906",
   "hisse": "AVGYO",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11879,5 +11833,53 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1699304",
+  "hisse": "TABGD",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-17T18:58:48+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 8,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "TABGD, 17.11.2026'da ortalama 188,08 TL fiyattan 10.000 TL nominal (yaklaşık 1,88 milyon TL) pay geri aldı ve toplam geri alınan pay 551.000 TL nominale (%0,2109) ulaştı; tutar piyasa değerine göre çok küçük olsa da pay geri alımı her zaman önemli türlerden olduğu için taban puan uygulandı.",
+  "durum": "paylasildi",
+  "tweet": "TABGD (TAB Gıda) için 17 Kasım'da 10.000 lotluk geri alım bildirildi. Ağırlıklı ortalama fiyat 188,08 TL, sermaye oranı %0,00383.\n\nİkinci dönemde geri alınan paylar 551.000 TL nominale, sermayenin %0,2109'una ulaştı. Piyasa değeri 55,9 milyar TL, PD/DD 1,94x.",
+  "kart": {
+   "baslik": "Pay geri alım bildirimi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "17.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "10.000 lot"
+    ],
+    [
+     "Ağırlıklı ortalama fiyat",
+     "188,08 TL"
+    ],
+    [
+     "İşlemin sermaye oranı",
+     "%0,00383"
+    ],
+    [
+     "Toplam sermaye oranı",
+     "%0,2109"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122766553833955350",
+  "x_gorsel_hata": null
  }
 ]
