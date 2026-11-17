@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1694279",
-  "hisse": "PAGYO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-06T15:40:05+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 28,
-   "yenilik": 14,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Finansal sonuç açıklaması editör kuralı gereği en az 80 puan alır; hasılat %5,2 artışla 913,0 milyon TL, net dönem kârı %3,0 artışla 681,9 milyon TL olduğu için sürpriz sınırlı ve puan alt sınırda kalır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1694280",
   "hisse": "ENKAI",
   "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
@@ -11692,6 +11673,24 @@
   },
   "tur": "Sermaye artırımı fon kullanım raporu",
   "gerekce": "Tahsisli sermaye artırımından elde edilecek fonun kullanımına ilişkin SPK Pay Tebliği kapsamındaki rapor, daha önce duyurulan karara bağlı usulî bir takip bildirimi olup tutar metinde yer almıyor, ancak sermaye yapısını etkileyen bir süreç olduğu için orta puan aldı.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1699145",
+  "hisse": "AKSGY",
+  "baslik": "Herhangi Bir Otoriteye Mali Tablo Verilmesi",
+  "t": "2026-11-17T14:31:52+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 4,
+   "yenilik": 5,
+   "kapsam": 4,
+   "kesinlik": 7,
+   "ilgi": 2
+  },
+  "tur": "Vergi dairesine mali tablo verilmesi (usulî)",
+  "gerekce": "Bildirim, 3. dönem geçici vergi beyannamesi ekinde Üsküdar Vergi Dairesi'ne sunulan ve SPK mevzuatına göre düzenlenmemiş gelir tablosuna ilişkindir; kamuya açıklanan resmî finansal sonuç niteliği taşımayan rutin bir vergi bildirimidir ve yeni bir bilgi içermez.",
   "durum": "dusuk"
  }
 ]
