@@ -1,14 +1,15 @@
 {
- "zaman": "2026-11-17 02:50",
+ "zaman": "2026-11-17 17:52",
  "beklenen_donem": "2026-09",
  "ozet": {
   "sirket": 618,
-  "guncel": 575,
-  "bekleyen_kuyruk": 0,
+  "guncel": 576,
+  "bekleyen_kuyruk": 1,
   "elle": 0,
   "sorun": {
    "gösterge": 24,
-   "rakam": 43
+   "otomasyon": 1,
+   "rakam": 42
   }
  },
  "sorunlar": [
@@ -295,12 +296,6 @@
    "metin": "OTKAR: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi)"
   },
   {
-   "k": "fin:BFREN:2026-09",
-   "tur": "rakam",
-   "t": "BFREN",
-   "metin": "BFREN: son dönem 2026-06, beklenen 2026-09"
-  },
-  {
    "k": "kpi:BIMAS:2026-09",
    "tur": "gösterge",
    "t": "BIMAS",
@@ -413,6 +408,12 @@
    "tur": "gösterge",
    "t": "TKFEN",
    "metin": "TKFEN: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi · taahhüt)"
+  },
+  {
+   "k": "oto:2026-11-17",
+   "tur": "otomasyon",
+   "t": "-",
+   "metin": "Kuyrukta 6 saatten eski 1 kayıt var (en eskisi 17.11.2026 11:50:57); otomatik özetin son çalışması: 2026-11-17T14:39:43.695497Z"
   }
  ],
  "sirketler": [
@@ -5525,9 +5526,9 @@
   {
    "t": "BFREN",
    "grp": "Otomotiv yan sanayi",
-   "son": "2026-06",
-   "oran": "2026-06",
-   "ozet": null,
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -7281,5 +7282,7 @@
    }
   }
  ],
- "yeni": []
+ "yeni": [
+  "oto:2026-11-17"
+ ]
 }
