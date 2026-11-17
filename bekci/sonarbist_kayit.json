@@ -1,33 +1,5 @@
 [
  {
-  "id": "kap-1694467",
-  "hisse": "BRSAN",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-06T18:25:31+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1694468",
-  "hisse": "BRSAN",
-  "baslik": "Geleceğe Dönük Değerlendirmeler",
-  "t": "2026-11-06T18:25:31+00:00",
-  "mod": "golge",
-  "puan": 85,
-  "alt": {
-   "fin": 32,
-   "yenilik": 17,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 8
-  },
-  "tur": "Finansal sonuç, yatırımcı sunumu ve 2026 beklentileri",
-  "gerekce": "BRSAN'ın 2026 üçüncü çeyrek finansal sonuçlarını ve 2026 beklentilerini içeren yatırımcı sunumu, editörün her zaman önemli saydığı bilanço, sunum ve rehberlik türlerine girdiği için en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1694485",
   "hisse": "BRYAT",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11674,5 +11646,71 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1699264",
+  "hisse": "MAVI",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-17T16:03:11+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 4,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 7
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "17.11.2026'da yaklaşık 9,8 milyon TL'lik (272.654 adet, ortalama 35,93 TL) geri alım yapıldı ve toplam geri alınan pay sermayenin yaklaşık %2,86'sına ulaştı; tutar piyasa değerinin yaklaşık %0,03'ü kadar küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "MAVI (Mavi Giyim) 17 Kasım'da ortalama 35,93 TL'den 272.654 lot pay geri aldı. Sermaye oranı %0,03432.\n\n16 Eylül kararıyla başlayan programda toplam 22.741.877 lot, sermayenin yaklaşık %2,86'sı.\n\nPiyasa değeri 29,9 milyar TL, PD/DD 1,96x.",
+  "kart": {
+   "baslik": "Geri alım 17 Kasım",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "272.654 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "35,93 TL"
+    ],
+    [
+     "Günlük sermaye oranı",
+     "%0,03432"
+    ],
+    [
+     "Program toplamı",
+     "22.741.877 lot"
+    ],
+    [
+     "Toplam sermaye oranı",
+     "%2,86"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122722294191751331",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1699266",
+  "hisse": "HEKTS",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-17T16:03:29+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 0,
+   "yenilik": 3,
+   "kapsam": 5,
+   "kesinlik": 4,
+   "ilgi": 2
+  },
+  "tur": "Bağımsız yönetim kurulu üyesi ataması (SPK olumlu görüşü)",
+  "gerekce": "SPK'nın bağımsız yönetim kurulu üyesi adayı hakkında olumsuz görüş bildirmemesi, daha önce duyurulan değişikliğin usulî bir devamıdır; finansal etkisi yoktur ve editörün zorunlu önemli sayılan türlerinden biri değildir.",
+  "durum": "dusuk"
  }
 ]
