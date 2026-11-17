@@ -1,48 +1,17 @@
 {
- "zaman": "2026-11-17 17:52",
+ "zaman": "2026-11-18 02:08",
  "beklenen_donem": "2026-09",
  "ozet": {
   "sirket": 618,
-  "guncel": 576,
-  "bekleyen_kuyruk": 1,
-  "elle": 0,
+  "guncel": 577,
+  "bekleyen_kuyruk": 0,
+  "elle": 4,
   "sorun": {
-   "gösterge": 24,
-   "otomasyon": 1,
-   "rakam": 42
+   "elle": 1,
+   "rakam": 41
   }
  },
  "sorunlar": [
-  {
-   "k": "kpi:GEDIK:2026-09",
-   "tur": "gösterge",
-   "t": "GEDIK",
-   "metin": "GEDIK: 2 sektöre özgü gösterge 2026-06'de kaldı (Fonlama maliyeti (TL borçlanma faizi, yaklaşık), Pay kredisi (kredili işlem) bakiyesi)"
-  },
-  {
-   "k": "kpi:GLBMD:2026-09",
-   "tur": "gösterge",
-   "t": "GLBMD",
-   "metin": "GLBMD: 1 sektöre özgü gösterge 2026-06'de kaldı (Yönetilen portföy büyüklüğü (Global MD Portföy yatırım fonları))"
-  },
-  {
-   "k": "kpi:INFO:2026-09",
-   "tur": "gösterge",
-   "t": "INFO",
-   "metin": "INFO: 1 sektöre özgü gösterge 2026-06'de kaldı (Pay kredisi (kredili işlem) bakiyesi)"
-  },
-  {
-   "k": "kpi:ISMEN:2026-09",
-   "tur": "gösterge",
-   "t": "ISMEN",
-   "metin": "ISMEN: 3 sektöre özgü gösterge 2026-06'de kaldı (Fonlama maliyeti (TL borçlanma faizi, yaklaşık), Pay kredisi (kredili işlem) bakiyesi, İş Portföy yönetilen varlık büyüklüğü)"
-  },
-  {
-   "k": "kpi:OYYAT:2026-09",
-   "tur": "gösterge",
-   "t": "OYYAT",
-   "metin": "OYYAT: 1 sektöre özgü gösterge 2026-06'de kaldı (Yönetilen portföy büyüklüğü)"
-  },
   {
    "k": "fin:TERA:2026-09",
    "tur": "rakam",
@@ -78,48 +47,6 @@
    "tur": "rakam",
    "t": "BURVA",
    "metin": "BURVA: son dönem 2026-06, beklenen 2026-09"
-  },
-  {
-   "k": "kpi:AKFYE:2026-09",
-   "tur": "gösterge",
-   "t": "AKFYE",
-   "metin": "AKFYE: 1 sektöre özgü gösterge 2026-06'de kaldı (Kurulu güç)"
-  },
-  {
-   "k": "kpi:AKSEN:2026-09",
-   "tur": "gösterge",
-   "t": "AKSEN",
-   "metin": "AKSEN: 1 sektöre özgü gösterge 2026-06'de kaldı (Kurulu güç)"
-  },
-  {
-   "k": "kpi:CANTE:2026-09",
-   "tur": "gösterge",
-   "t": "CANTE",
-   "metin": "CANTE: 1 sektöre özgü gösterge 2026-06'de kaldı (Kurulu güç)"
-  },
-  {
-   "k": "kpi:GWIND:2026-09",
-   "tur": "gösterge",
-   "t": "GWIND",
-   "metin": "GWIND: 2 sektöre özgü gösterge 2026-06'de kaldı (Ortalama satış fiyatı (Sonar) · tek çeyrek, YEKDEM payı · hasılat (tek çeyrek))"
-  },
-  {
-   "k": "kpi:ODAS:2026-09",
-   "tur": "gösterge",
-   "t": "ODAS",
-   "metin": "ODAS: 1 sektöre özgü gösterge 2026-06'de kaldı (Kurulu güç · Çan-2 + Özbekistan (Sonar))"
-  },
-  {
-   "k": "kpi:ASTOR:2026-09",
-   "tur": "gösterge",
-   "t": "ASTOR",
-   "metin": "ASTOR: 3 sektöre özgü gösterge 2026-06'de kaldı (Dağıtım transformatörü üretim kapasitesi, Güç transformatörü üretim kapasitesi, Sipariş birikimi)"
-  },
-  {
-   "k": "kpi:CWENE:2026-09",
-   "tur": "gösterge",
-   "t": "CWENE",
-   "metin": "CWENE: 2 sektöre özgü gösterge 2026-06'de kaldı (Güneş hücresi üretim kapasitesi, Güneş paneli üretim kapasitesi)"
   },
   {
    "k": "fin:KTLEV:2026-09",
@@ -236,12 +163,6 @@
    "metin": "SODSN: son dönem 2026-06, beklenen 2026-09"
   },
   {
-   "k": "kpi:LIDER:2026-09",
-   "tur": "gösterge",
-   "t": "LIDER",
-   "metin": "LIDER: 1 sektöre özgü gösterge 2026-06'de kaldı (Filo büyüklüğü (araç))"
-  },
-  {
    "k": "fin:KONTR:2026-09",
    "tur": "rakam",
    "t": "KONTR",
@@ -266,12 +187,6 @@
    "metin": "EMKEL: son dönem 2026-06, beklenen 2026-09"
   },
   {
-   "k": "fin:TMSN:2026-09",
-   "tur": "rakam",
-   "t": "TMSN",
-   "metin": "TMSN: son dönem 2026-06, beklenen 2026-09"
-  },
-  {
    "k": "fin:ORMA:2026-09",
    "tur": "rakam",
    "t": "ORMA",
@@ -290,52 +205,10 @@
    "metin": "YONGA: son dönem 2026-06, beklenen 2026-09"
   },
   {
-   "k": "kpi:OTKAR:2026-09",
-   "tur": "gösterge",
-   "t": "OTKAR",
-   "metin": "OTKAR: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi)"
-  },
-  {
-   "k": "kpi:BIMAS:2026-09",
-   "tur": "gösterge",
-   "t": "BIMAS",
-   "metin": "BIMAS: 4 sektöre özgü gösterge 2026-06'de kaldı (Benzer mağaza satış büyümesi · tek çeyrek, FİLE online satış payı, Mağaza sayısı (grup toplamı)…)"
-  },
-  {
    "k": "fin:MAVI:2026-09",
    "tur": "rakam",
    "t": "MAVI",
    "metin": "MAVI: son dönem 2026-06, beklenen 2026-09"
-  },
-  {
-   "k": "kpi:MGROS:2026-09",
-   "tur": "gösterge",
-   "t": "MGROS",
-   "metin": "MGROS: 2 sektöre özgü gösterge 2026-06'de kaldı (Mağaza sayısı, Satış alanı)"
-  },
-  {
-   "k": "kpi:SOKM:2026-09",
-   "tur": "gösterge",
-   "t": "SOKM",
-   "metin": "SOKM: 1 sektöre özgü gösterge 2026-06'de kaldı (Mağaza sayısı)"
-  },
-  {
-   "k": "kpi:AYGAZ:2026-09",
-   "tur": "gösterge",
-   "t": "AYGAZ",
-   "metin": "AYGAZ: 2 sektöre özgü gösterge 2026-06'de kaldı (LPG satışları · tek çeyrek, SP stok kârı / zararı · tek çeyrek)"
-  },
-  {
-   "k": "kpi:PETKM:2026-09",
-   "tur": "gösterge",
-   "t": "PETKM",
-   "metin": "PETKM: 3 sektöre özgü gösterge 2026-06'de kaldı (Kapasite kullanım oranı · tek çeyrek, Petkim spread · tek çeyrek, Stok kârı / zararı · tek çeyrek)"
-  },
-  {
-   "k": "kpi:ALTNY:2026-09",
-   "tur": "gösterge",
-   "t": "ALTNY",
-   "metin": "ALTNY: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi)"
   },
   {
    "k": "fin:LKMNH:2026-09",
@@ -354,12 +227,6 @@
    "tur": "rakam",
    "t": "MEGAP",
    "metin": "MEGAP: son dönem 2026-03, beklenen 2026-09"
-  },
-  {
-   "k": "kpi:TCELL:2026-09",
-   "tur": "gösterge",
-   "t": "TCELL",
-   "metin": "TCELL: 5 sektöre özgü gösterge 2026-06'de kaldı (Fiber abone sayısı, Mobil ARPU (bileşik) · tek çeyrek, Mobil faturalı abone sayısı…)"
   },
   {
    "k": "fin:KSTUR:2026-09",
@@ -386,34 +253,16 @@
    "metin": "BTCIM: son dönem 2026-06, beklenen 2026-09"
   },
   {
-   "k": "kpi:ENKAI:2026-09",
-   "tur": "gösterge",
-   "t": "ENKAI",
-   "metin": "ENKAI: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi)"
-  },
-  {
-   "k": "kpi:GLRMK:2026-09",
-   "tur": "gösterge",
-   "t": "GLRMK",
-   "metin": "GLRMK: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi)"
-  },
-  {
    "k": "fin:KUYAS:2026-09",
    "tur": "rakam",
    "t": "KUYAS",
    "metin": "KUYAS: son dönem 2026-06, beklenen 2026-09"
   },
   {
-   "k": "kpi:TKFEN:2026-09",
-   "tur": "gösterge",
-   "t": "TKFEN",
-   "metin": "TKFEN: 1 sektöre özgü gösterge 2026-06'de kaldı (Sipariş birikimi · taahhüt)"
-  },
-  {
-   "k": "oto:2026-11-17",
-   "tur": "otomasyon",
+   "k": "elle:4",
+   "tur": "elle",
    "t": "-",
-   "metin": "Kuyrukta 6 saatten eski 1 kayıt var (en eskisi 17.11.2026 11:50:57); otomatik özetin son çalışması: 2026-11-17T14:39:43.695497Z"
+   "metin": "Kuyrukta elle bakılacak 4 kayıt: ENJSA 1698936, KOCMT 1699236, GARAN 1699270, KLYPV 1699289"
   }
  ],
  "sirketler": [
@@ -424,7 +273,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -435,11 +284,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
-    "geride": [
-     "Fonlama maliyeti (TL borçlanma faizi, yaklaşık)",
-     "Pay kredisi (kredili işlem) bakiyesi"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -449,10 +295,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
-    "geride": [
-     "Yönetilen portföy büyüklüğü (Global MD Portföy yatırım fonları)"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -462,10 +306,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
-    "geride": [
-     "Pay kredisi (kredili işlem) bakiyesi"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -475,12 +317,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 3,
-    "geride": [
-     "Fonlama maliyeti (TL borçlanma faizi, yaklaşık)",
-     "Pay kredisi (kredili işlem) bakiyesi",
-     "İş Portföy yönetilen varlık büyüklüğü"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -490,7 +328,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -501,10 +339,8 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 2,
-    "geride": [
-     "Yönetilen portföy büyüklüğü"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -525,7 +361,7 @@
    "oran": "2026-06",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -536,7 +372,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -547,7 +383,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -558,7 +394,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -569,7 +405,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -580,7 +416,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -591,7 +427,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -602,7 +438,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -624,7 +460,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -646,7 +482,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -657,7 +493,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -668,7 +504,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -789,7 +625,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1328,7 +1164,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1350,7 +1186,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1526,7 +1362,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1537,7 +1373,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1548,7 +1384,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1559,10 +1395,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
-    "geride": [
-     "Kurulu güç"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -1572,10 +1406,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
-    "geride": [
-     "Kurulu güç"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -1585,7 +1417,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1618,7 +1450,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1629,7 +1461,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1640,7 +1472,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1673,7 +1505,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1684,10 +1516,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
-    "geride": [
-     "Kurulu güç"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -1697,7 +1527,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1708,7 +1538,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1719,7 +1549,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1730,7 +1560,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1741,7 +1571,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1763,11 +1593,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 4,
-    "geride": [
-     "Ortalama satış fiyatı (Sonar) · tek çeyrek",
-     "YEKDEM payı · hasılat (tek çeyrek)"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -1777,7 +1604,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1788,7 +1615,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1810,7 +1637,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1832,7 +1659,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1854,7 +1681,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1887,10 +1714,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
-    "geride": [
-     "Kurulu güç · Çan-2 + Özbekistan (Sonar)"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -1900,7 +1725,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1922,7 +1747,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1955,7 +1780,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -1966,12 +1791,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 3,
-    "geride": [
-     "Dağıtım transformatörü üretim kapasitesi",
-     "Güç transformatörü üretim kapasitesi",
-     "Sipariş birikimi"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -1981,11 +1802,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
-    "geride": [
-     "Güneş hücresi üretim kapasitesi",
-     "Güneş paneli üretim kapasitesi"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -2028,7 +1846,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -2039,7 +1857,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -2072,7 +1890,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -2094,7 +1912,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -2743,7 +2561,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -2897,7 +2715,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 3,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3007,7 +2825,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 25,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3370,7 +3188,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3458,7 +3276,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 10,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3469,7 +3287,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 5,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3480,7 +3298,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 12,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3491,7 +3309,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3502,7 +3320,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3524,7 +3342,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3535,7 +3353,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3678,7 +3496,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3744,7 +3562,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3843,7 +3661,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -3997,7 +3815,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -4019,7 +3837,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -4085,7 +3903,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -4800,10 +4618,8 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
-    "geride": [
-     "Filo büyüklüğü (araç)"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -5077,7 +4893,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5348,9 +5164,9 @@
   {
    "t": "TMSN",
    "grp": "Metal eşya ve makine",
-   "son": "2026-06",
-   "oran": "2026-06",
-   "ozet": null,
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -5484,7 +5300,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 20,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5506,10 +5322,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
-    "geride": [
-     "Sipariş birikimi"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -5519,7 +5333,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 5,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5640,13 +5454,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 4,
-    "geride": [
-     "Benzer mağaza satış büyümesi · tek çeyrek",
-     "FİLE online satış payı",
-     "Mağaza sayısı (grup toplamı)",
-     "Mağaza sayısı · BİM Türkiye"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -5656,7 +5465,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5678,7 +5487,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5700,7 +5509,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5722,7 +5531,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5733,7 +5542,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5744,7 +5553,7 @@
    "oran": "2026-06",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5766,11 +5575,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 3,
-    "geride": [
-     "Mağaza sayısı",
-     "Satış alanı"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -5780,7 +5586,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5791,10 +5597,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
-    "geride": [
-     "Mağaza sayısı"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -5804,7 +5608,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5815,7 +5619,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5848,11 +5652,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
-    "geride": [
-     "LPG satışları · tek çeyrek",
-     "SP stok kârı / zararı · tek çeyrek"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -5862,12 +5663,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 4,
-    "geride": [
-     "Kapasite kullanım oranı · tek çeyrek",
-     "Petkim spread · tek çeyrek",
-     "Stok kârı / zararı · tek çeyrek"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -5877,7 +5674,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5888,10 +5685,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
-    "geride": [
-     "Sipariş birikimi"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -5901,7 +5696,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -5978,7 +5773,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -6000,7 +5795,7 @@
    "oran": null,
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 3,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -6011,7 +5806,7 @@
    "oran": null,
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 3,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -6022,7 +5817,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 3,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -6506,7 +6301,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 1,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -6528,14 +6323,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 5,
-    "geride": [
-     "Fiber abone sayısı",
-     "Mobil ARPU (bileşik) · tek çeyrek",
-     "Mobil faturalı abone sayısı",
-     "Sabit bireysel ARPU · tek çeyrek",
-     "Toplam abone sayısı"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -6545,7 +6334,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 5,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -6831,7 +6620,7 @@
    "oran": "2026-09",
    "ozet": null,
    "gosterge": {
-    "sayi": 5,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -6842,7 +6631,7 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 2,
+    "sayi": 0,
     "geride": []
    }
   },
@@ -7161,10 +6950,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
-    "geride": [
-     "Sipariş birikimi"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -7185,10 +6972,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
-    "geride": [
-     "Sipariş birikimi"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -7231,10 +7016,8 @@
    "oran": "2026-09",
    "ozet": "2026-09",
    "gosterge": {
-    "sayi": 1,
-    "geride": [
-     "Sipariş birikimi · taahhüt"
-    ]
+    "sayi": 0,
+    "geride": []
    }
   },
   {
@@ -7283,6 +7066,6 @@
   }
  ],
  "yeni": [
-  "oto:2026-11-17"
+  "elle:4"
  ]
 }
