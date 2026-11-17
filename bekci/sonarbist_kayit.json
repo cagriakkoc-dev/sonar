@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1694280",
-  "hisse": "ENKAI",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-06T15:40:15+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1694281",
   "hisse": "ENERY",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11692,5 +11683,53 @@
   "tur": "Vergi dairesine mali tablo verilmesi (usulî)",
   "gerekce": "Bildirim, 3. dönem geçici vergi beyannamesi ekinde Üsküdar Vergi Dairesi'ne sunulan ve SPK mevzuatına göre düzenlenmemiş gelir tablosuna ilişkindir; kamuya açıklanan resmî finansal sonuç niteliği taşımayan rutin bir vergi bildirimidir ve yeni bir bilgi içermez.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1699161",
+  "hisse": "AYES",
+  "baslik": "Herhangi Bir Otoriteye Mali Tablo Verilmesi",
+  "t": "2026-11-17T14:53:26+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 32,
+   "yenilik": 15,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "finansal sonuç (vergi dairesine verilen mali tablo)",
+  "gerekce": "Şirketin 9 aylık konsolide olmayan gelir tablosu, SPK mevzuatına göre düzenlenmemiş olsa da kâr verisi içeren bir finansal sonuç açıklaması sayıldığı için en düşük sınır olan 80 puan verildi.",
+  "durum": "paylasildi",
+  "tweet": "AYES (Ayes Çelik) 1 Ocak-30 Eylül 2026 dönemi konsolide edilmemiş gelir tablosunu, geçici vergi beyannamesi ekinde 17 Kasım'da Merter Vergi Dairesi'ne verdi.\n\nTablo SPK mevzuatına göre düzenlenmedi. Son 4 çeyrekte hasılat 20,3 milyar TL, net kâr 1,8 milyar TL.",
+  "kart": {
+   "baslik": "Vergi Dairesine Gelir Tablosu",
+   "satirlar": [
+    [
+     "Hesap dönemi",
+     "01.01-30.09.2026"
+    ],
+    [
+     "Verilme tarihi",
+     "17/11/2026"
+    ],
+    [
+     "Otorite",
+     "Merter Vergi Dairesi"
+    ],
+    [
+     "Verilme nedeni",
+     "Kurum Geçici Vergi"
+    ],
+    [
+     "Son 4 çeyrek net kâr",
+     "1,8 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122704782221865383",
+  "x_gorsel_hata": null
  }
 ]
