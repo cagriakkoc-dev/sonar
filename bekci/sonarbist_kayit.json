@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1695912",
-  "hisse": "AVGYO",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-09T17:38:20+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1695914",
   "hisse": "AVGYO",
   "baslik": "Portföy Sınırlamalarına Uyumun Kontrolü",
@@ -11944,5 +11935,53 @@
   "tur": "Genel kurul çağrısı",
   "gerekce": "Olağan genel kurul toplantısına çağrı ve gündem maddeleri usulî bir bildirimdir; kâr dağıtımı yalnızca gündem maddesi olarak yer alıyor, karar veya tutar içermediği için editör istisnası kapsamına girmez.",
   "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1699308",
+  "hisse": "SANFM",
+  "baslik": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-17T21:05:06+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "SANFM (Sanifoam) 17 Kasım'da 5,25 TL fiyatla 100.000 lot pay geri aldı. İşlem sermayenin %0,02667'si.\n\n23 Ekim kararıyla başlayan programda toplam 700.000 lota ulaşıldı. İlk alım 9 Kasım'da 4,23 TL'den yapılmıştı.\n\nPiyasa değeri 1,4 milyar TL, PD/DD 1,97x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "17.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "100.000 lot"
+    ],
+    [
+     "Fiyat",
+     "5,25 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,02667"
+    ],
+    [
+     "Programda toplam",
+     "700.000 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122798285781954989",
+  "x_gorsel_hata": null
  }
 ]
