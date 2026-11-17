@@ -1,33 +1,5 @@
 [
  {
-  "id": "kap-1695861",
-  "hisse": "PSGYO",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-09T16:53:53+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1695865",
-  "hisse": "EYGYO",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-09T16:53:53+00:00",
-  "mod": "golge",
-  "puan": 84,
-  "alt": {
-   "fin": 30,
-   "yenilik": 14,
-   "kapsam": 14,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "EYGYO'nun 2026 9 aylık finansal raporunda hasılat %11,7 artışla 706,9 milyon TL'ye çıkarken brüt kâr zarardan kâra döndü, net zarar 241,6 milyon TL'ye daralsa da sürdü; finansal sonuç türü olduğu için en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1695866",
   "hisse": "EYGYO",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -11865,6 +11837,44 @@
   "hisse": "ZOREN",
   "baslik": "TRSZORN42717 ISIN Kodlu Tahvilin 7. Kupon Dönemine İlişkin Faiz Ödemesi Hakkında",
   "t": "2026-11-17T17:22:22+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1699290",
+  "hisse": "EUREN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-17T17:33:22+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 14,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Pay geri alım programı kapsamında 17.11.2026'da ortalama 2,507 TL fiyattan 697.285 nominal pay alınmış, toplam geri alınan 10.947.285 TL nominal (sermayenin %0,521'i) olmuş; tutar piyasa değerine göre küçük olsa da pay geri alımı her zaman önemli türlerden olduğundan taban puan uygulanmıştır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1699287",
+  "hisse": "PETUN",
+  "baslik": "Yaşar Birleşik Pazarlama, Dağıtım, Turizm ve Ticaret A.Ş Sermaye Artışına İştirak edilmesi hk.",
+  "t": "2026-11-17T17:33:25+00:00",
   "mod": "golge",
   "puan": 100,
   "alt": {
