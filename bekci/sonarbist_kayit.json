@@ -1,25 +1,5 @@
 [
  {
-  "id": "kap-1694485",
-  "hisse": "BRYAT",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-06T19:50:04+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 26,
-   "yenilik": 16,
-   "kapsam": 20,
-   "kesinlik": 10,
-   "ilgi": 8
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "9 aylık finansal rapor editör kuralı gereği en az 80 puan alır; hasılat %107,9 artıp esas faaliyet kârı zarardan kâra geçerken net kâr %47,7 azaldı.",
-  "durum": "dogrulama_hatasi",
-  "sebep": "açılış son tweetlerle aynı",
-  "tweet_red": "BRYAT (Borusan Yatırım) 9 aylık hasılatı 89,7 milyon TL'den 186,4 milyon TL'ye çıkardı (%107,9 artış). Net dönem kârı 1,2 milyar TL'den 614,8 milyon TL'ye indi (%47,7 azalış).\n\nEsas faaliyet kârı zarardan 29,0 milyon TL kâra geçti. Net kâr hasılatın üzerinde kaldı."
- },
- {
   "id": "kap-1694486",
   "hisse": "BRYAT",
   "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
@@ -11712,5 +11692,24 @@
   "tur": "Bağımsız yönetim kurulu üyesi ataması (SPK olumlu görüşü)",
   "gerekce": "SPK'nın bağımsız yönetim kurulu üyesi adayı hakkında olumsuz görüş bildirmemesi, daha önce duyurulan değişikliğin usulî bir devamıdır; finansal etkisi yoktur ve editörün zorunlu önemli sayılan türlerinden biri değildir.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1699270",
+  "hisse": "GARAN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-17T16:14:25+00:00",
+  "mod": "golge",
+  "puan": 84,
+  "alt": {
+   "fin": 22,
+   "yenilik": 12,
+   "kapsam": 14,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "GARAN, 11 milyar TL'ye kadar olan geri alım programı kapsamında 17.11.2026'da yaklaşık 296,2 milyon TL'lik pay aldı ve programın toplamı sermayenin %0,36'sına ulaştı; pay geri alımı editör kararıyla her zaman önemli sayıldığı için en az 80 puan aldı.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
