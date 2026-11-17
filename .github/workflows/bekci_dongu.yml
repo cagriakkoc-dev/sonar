@@ -31,6 +31,7 @@ jobs:
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
           SONARBIST_MOD: canli
+          SONAR_SITE_TETIK: ${{ secrets.SONAR_SITE_TETIK }}   # sonar-site'ta yalnız Actions çalıştırma yetkili token (yoksa tetik atlanır)
         run: |
           git config user.name "Sonar Bekçi"; git config user.email "bekci@users.noreply.github.com"
           BITIS=$(( $(date +%s) + 340*60 ))
@@ -43,6 +44,15 @@ jobs:
             if [ "$FILES" -gt 0 ] || [ "$ADDED" -gt 2 ]; then
               if git diff --cached --name-only | grep -q "^public/veri/"; then git commit -q -m "Bekçi durumu · site verisi"; else git commit -q -m "Bekçi durumu [skip render]"; fi
               for n in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+              # kuyruğa yeni kayıt girdiyse otomatik özeti hemen başlat (zamanlanmış çalıştırma saatlerce gecikebiliyor)
+              if [ -f /tmp/sonar_kuyruk_yeni ]; then
+                rm -f /tmp/sonar_kuyruk_yeni
+                if [ -n "${SONAR_SITE_TETIK:-}" ]; then
+                  curl -sf -m 30 -X POST -H "Authorization: Bearer $SONAR_SITE_TETIK" -H "Accept: application/vnd.github+json" \
+                    https://api.github.com/repos/cagriakkoc-dev/sonar-site/actions/workflows/otomatik.yml/dispatches -d '{"ref":"main"}' \
+                    && echo "otomatik özet tetiklendi" || echo "otomatik özet tetiklenemedi"
+                fi
+              fi
             else
               git reset -q; git checkout -q -- bekci/state.json 2>/dev/null || true
             fi

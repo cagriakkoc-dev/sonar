@@ -194,6 +194,13 @@ SIRKETLER = {
 }
 ONEMLI = re.compile(r"yatırım|sözleşme|ihale|temettü|kar pay|kâr pay|sermaye|geri alım|birleşme|devral|satın al|kapasite|genel müdür|finansal takvim|beklenti|yeni iş|teşvik|dava|derecelendirme|ortaklık yapısı|pay satış|bedelsiz|bedelli", re.I)
 STATE = os.path.join(os.path.dirname(__file__), "state.json")
+# 17 Kas 2026 (Cagri): bekçi tüm BIST'i izler. SIRKETLER (bugünkü liste) için davranış aynı; listede olmayan şirketler
+# KAP'a tek şirket filtresiz istekle sorulur; yalnız "Finansal rapor" ve "Önemli" bildirimleri Telegram'a gider,
+# otomatik özet kuyruğuna yalnız sitede sayfası olanlar (public/sirket/<kod>/) girer; SonarBIST'e gönderilmez.
+# Kapatmak için ortamda BEKCI_TUM=0.
+TUM_BIST = os.environ.get("BEKCI_TUM", "1") == "1"
+SITE_SIRKET = os.path.join(os.path.dirname(__file__), "..", "public", "sirket")
+KUYRUK_YENI = "/tmp/sonar_kuyruk_yeni"   # bu çalışmada kuyruğa kayıt eklendiyse yazılır (döngü otomatik özeti tetikler)
 TOKEN = os.environ.get("TELEGRAM_TOKEN", "").strip()
 
 # Rutin bildirimler: Telegram'a "Bildirim" olarak gider, özet kuyruğuna girmez
@@ -274,6 +281,25 @@ def main():
                 if t in izlenen: yeni.append((t, d))
         izlenen.update(grup)
         time.sleep(2)
+    # tüm BIST: listede olmayan şirketler (şirket filtresiz tek istek, son 2 gün)
+    yeni_ek = []
+    if TUM_BIST:
+        try:
+            R = kap([], gun=2)
+            tum_ilk = not st.get("tum_bist")
+            for d in R:
+                kods = [k.strip() for k in (d.get("stockCodes") or "").split(",") if k.strip()]
+                if not kods or any(k in SIRKETLER for k in kods):
+                    continue
+                i = d["disclosureIndex"]
+                if i in seen:
+                    continue
+                seen.add(i)
+                if not tum_ilk:
+                    yeni_ek.append((kods[0], d))
+            st["tum_bist"] = True
+        except Exception as e:
+            print("KAP tüm BIST isteği hatası:", repr(e)[:150]); hata["TUM"] = "filtresiz istek başarısız"
     st["izlenen"] = sorted(izlenen)
     st["kap_hata"] = {"n": len(hata), "ornek": dict(list(hata.items())[:5]), "izlenmeyen": sorted(set(SIRKETLER) - izlenen)}
     if TOKEN and not st.get("chat_id"):
@@ -289,6 +315,7 @@ def main():
             print("Telegram getUpdates hatası:", repr(e)[:200])
     mesajlar = []
     kuyruk = json.load(open(KUYRUK)) if os.path.exists(KUYRUK) else []
+    eski_kuyruk = {str(k.get("id")) for k in kuyruk}
     bekleyen_bildirim = json.load(open(BILDIR)) if os.path.exists(BILDIR) else []
     if TOKEN and st.get("chat_id") and not st.get("welcomed"):
         mesajlar.append("Sonar Bekçi çalışmaya başladı. " + ", ".join(SIRKETLER) + " için KAP bildirimlerini izliyorum. Yeni bildirim geldiğinde buraya yazacağım.")
@@ -303,6 +330,26 @@ def main():
             if not fr and t == "ANHYT" and re.search(r"prim üretim", metin, re.I): etiket = "Prim üretimi"   # 15 Kas: aylık prim → otomatik.py c.mon'a işler
             donem = f" · {d['year']} {d['ruleType']}" if fr and d.get("year") else ""
             if etiket in ("Finansal rapor", "Önemli", "Prim üretimi") and "Sorumluluk Beyan" not in (d.get("summary") or ""):
+                try:
+                    dosyalar = indir(d["disclosureIndex"])
+                except Exception as e:
+                    dosyalar = []; print("indirme hatası", d["disclosureIndex"], repr(e)[:150])
+                kuyruk.append({"id": d["disclosureIndex"], "hisse": t, "tur": etiket, "ozet": d.get("summary") or d.get("subject"),
+                               "tarih": d.get("publishDate"), "yil": d.get("year"), "donem": d.get("ruleType"), "durum": "bekliyor", "dosyalar": dosyalar})
+            mesajlar.append(f"{t} · {etiket}{donem}\n{d.get('summary') or d.get('subject')}\n{d.get('publishDate','')}\nhttps://www.kap.org.tr/tr/Bildirim/{d['disclosureIndex']}")
+    kuyruk_once = len(kuyruk)
+    if not ilk:
+        for t, d in sorted(yeni_ek, key=lambda x: x[1]["disclosureIndex"]):
+            fr = d.get("disclosureClass") == "FR"
+            metin = (d.get("summary") or "") + " " + (d.get("subject") or "")
+            if not fr and (re.search(r"varant|sertifika|piyasa yapıcılı|ihraç belgesi|borçlanma aracı|faiz oranı|kupon", metin, re.I)
+                           or "Sorumluluk Beyan" in metin):
+                continue
+            etiket = "Finansal rapor" if fr else ("Önemli" if ONEMLI.search(metin) else None)
+            if not etiket:
+                continue   # listede olmayan şirketlerde yalnız finansal rapor ve önemli bildirim
+            donem = f" · {d['year']} {d['ruleType']}" if fr and d.get("year") else ""
+            if os.path.exists(os.path.join(SITE_SIRKET, t.lower(), "index.html")):
                 try:
                     dosyalar = indir(d["disclosureIndex"])
                 except Exception as e:
@@ -414,7 +461,10 @@ def main():
     except Exception as e:
         print("kuyruk birleştirme hatası:", repr(e)[:120])
     json.dump(kuyruk, open(KUYRUK, "w"), ensure_ascii=False, indent=1)
-    st["seen"] = sorted(seen)[-1500:]
+    if any(k.get("durum") == "bekliyor" for k in kuyruk[kuyruk_once:]) or any(
+            k.get("durum") == "bekliyor" and str(k.get("id")) not in eski_kuyruk for k in kuyruk):
+        open(KUYRUK_YENI, "w").write("1")
+    st["seen"] = sorted(seen)[-6000:]   # tüm BIST: 2 günlük pencerede bilanço sezonunda ~1.000 bildirim
     st["last_run"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     json.dump(st, open(STATE, "w"), ensure_ascii=False, indent=1)
 
