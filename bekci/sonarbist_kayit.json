@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1694272",
-  "hisse": "AYGAZ",
-  "baslik": "Geleceğe Dönük Değerlendirmeler",
-  "t": "2026-11-06T15:39:23+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 30,
-   "yenilik": 15,
-   "kapsam": 18,
-   "kesinlik": 9,
-   "ilgi": 8
-  },
-  "tur": "Finansal sonuç ve 2026 beklentileri",
-  "gerekce": "Bildirim 9 aylık konsolide finansal sonuçları ve 2026 beklentilerini içeren Kar Duyurusu Raporu'na yönlendirdiği için editörün her zaman önemli saydığı finansal sonuç ile geleceğe ilişkin değerlendirme türlerine girer; metinde rakam yer almadığından puan alt sınırda kalır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1694273",
   "hisse": "AKMGY",
   "baslik": "Portföy Sınırlamalarına Uyumun Kontrolü",
@@ -11658,5 +11639,53 @@
   "tur": "Genel kurul sonuç ve tescil bildirimi",
   "gerekce": "Olağan genel kurulun yapıldığı ve kararların tescil edildiği bildiriliyor; kâr payı maddesi yalnızca 'görüşüldü' olarak geçiyor, dağıtım kararı veya tutarı yok (şirket son 4 çeyrekte zararda), bu yüzden usulî bildirim sayılıp düşük puan aldı.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1698995",
+  "hisse": "TCKRC",
+  "baslik": "İhale Süreci / Sonucu",
+  "t": "2026-11-17T11:16:16+00:00",
+  "mod": "canli",
+  "puan": 84,
+  "alt": {
+   "fin": 22,
+   "yenilik": 12,
+   "kapsam": 8,
+   "kesinlik": 8,
+   "ilgi": 5
+  },
+  "tur": "İhale sonucu / yeni sözleşme",
+  "gerekce": "212 milyon TL'lik Karayolları otokorkuluk ihalesi şirket uhdesinde kaldı ve kesinleşme kararı geldi (son 12 ay hasılatın yaklaşık %3,5'i); yeni iş ilişkisi/sözleşme türü editör kuralı gereği en az 80 puan alır, nihai sözleşme henüz imzalanmadı.",
+  "durum": "paylasildi",
+  "tweet": "TCKRC, Karayolları 12. Bölge Müdürlüğü'nün 12 Kasım'da yaptığı otokorkuluk ihalesini 212.000.000 TL bedelle uhdesine aldı. Kesinleşme kararı şirkete ulaştı.\n\nTutar, son gelir tablosundaki brüt satış hasılatının %3,49'una denk geliyor. Nihai sözleşme süreci ayrıca duyurulacak.",
+  "kart": {
+   "baslik": "Otokorkuluk ihalesi şirkette kaldı",
+   "satirlar": [
+    [
+     "İhale bedeli",
+     "212.000.000 TL"
+    ],
+    [
+     "Şirket payı",
+     "%100"
+    ],
+    [
+     "Brüt hasılata oranı",
+     "%3,49"
+    ],
+    [
+     "İhale tarihi",
+     "12.11.2026"
+    ],
+    [
+     "İdare",
+     "Karayolları 12. Bölge"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122650091525730310",
+  "x_gorsel_hata": null
  }
 ]
