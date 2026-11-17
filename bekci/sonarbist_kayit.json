@@ -1,32 +1,5 @@
 [
  {
-  "id": "kap-1695869",
-  "hisse": "EYGYO",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-09T16:54:09+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1695896",
-  "hisse": "DZGYO",
-  "baslik": "Maddi Duran Varlık Satımı",
-  "t": "2026-11-09T17:25:57+00:00",
-  "mod": "golge",
-  "puan": 40,
-  "alt": {
-   "fin": 14,
-   "yenilik": 8,
-   "kapsam": 5,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "Maddi duran varlık (gayrimenkul) satışı",
-  "gerekce": "Tarabya'daki tek bir meskenin 49,0 milyon TL'ye satışı tamamlandı; tutar piyasa değerinin yaklaşık %1,9'u ve son 4 çeyrek hasılatının yaklaşık %19'u, satış bedeli ekspertiz değerinin (41 milyon TL) yaklaşık 8 milyon TL üzerinde, ancak tek bağımsız bölüm satışı şirketin tamamını etkilemeyen sınırlı bir işlemdir.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1695900",
   "hisse": "CWENE",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -11899,5 +11872,41 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1699299",
+  "hisse": "VESTL",
+  "baslik": "Kredi Derecelendirmesi",
+  "t": "2026-11-17T18:05:40+00:00",
+  "mod": "golge",
+  "puan": 70,
+  "alt": {
+   "fin": 24,
+   "yenilik": 14,
+   "kapsam": 16,
+   "kesinlik": 9,
+   "ilgi": 7
+  },
+  "tur": "Kredi derecelendirmesi (not indirimi)",
+  "gerekce": "Fitch, şirketin uzun vadeli notunu CCC-'den C'ye, Eurobond notunu CC'den C'ye indirdi; bu, temerrüdün yakın olduğuna işaret ediyor ve zarar eden, piyasa değeri defter değerinin çok altındaki şirketin borçlanma ve refinansman riskini artırıyor. Bildirim bir güncelleme olduğu için yenilik puanı sınırlı kaldı.",
+  "durum": "dusuk_bildirildi"
+ },
+ {
+  "id": "kap-1699300",
+  "hisse": "AVPGY",
+  "baslik": "Maddi Duran Varlık Alımı",
+  "t": "2026-11-17T18:05:46+00:00",
+  "mod": "golge",
+  "puan": 44,
+  "alt": {
+   "fin": 16,
+   "yenilik": 10,
+   "kapsam": 8,
+   "kesinlik": 7,
+   "ilgi": 3
+  },
+  "tur": "Maddi duran varlık alımı (gayrimenkul)",
+  "gerekce": "Şirket, kira geliri elde etmek için 7 ofis ve 8 dükkanı 400 milyon TL'ye peşin satın almaya karar verdi; tutar piyasa değerinin yaklaşık %2'si, hasılatın yaklaşık %7'si olduğundan orta düzeyde etkilidir. Değerleme raporu bedeli destekliyor, ancak işlem yalnızca yönetim kurulu kararı aşamasında ve şirket BIST 30/100 dışında.",
+  "durum": "dusuk"
  }
 ]
