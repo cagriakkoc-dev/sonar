@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1694486",
-  "hisse": "BRYAT",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-06T19:50:39+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1694487",
   "hisse": "BRYAT",
   "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
@@ -11711,5 +11702,23 @@
   "gerekce": "GARAN, 11 milyar TL'ye kadar olan geri alım programı kapsamında 17.11.2026'da yaklaşık 296,2 milyon TL'lik pay aldı ve programın toplamı sermayenin %0,36'sına ulaştı; pay geri alımı editör kararıyla her zaman önemli sayıldığı için en az 80 puan aldı.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1699286",
+  "hisse": "ULKER",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-17T17:08:13+00:00",
+  "mod": "golge",
+  "puan": 28,
+  "alt": {
+   "fin": 1,
+   "yenilik": 7,
+   "kapsam": 3,
+   "kesinlik": 10,
+   "ilgi": 7
+  },
+  "tur": "Yönetici pay alımı (içeriden işlem)",
+  "gerekce": "CEO'nun yaklaşık 5 milyon TL'lik (67.337 adet) gönüllü olarak duyurulan pay alımı, 30,8 milyar TL piyasa değerine göre çok küçüktür; işlem kesinleşmiş ve CEO alımı olumlu sinyal sayılabilir, ancak şirketin kendi pay geri alımı olmadığı için öncelikli türlerden değildir.",
+  "durum": "dusuk"
  }
 ]
