@@ -1,8 +1,9 @@
 name: Sonar Fon Verisi
 on:
-  schedule:
-    - cron: '15 7 1-14 * *'   # TR 10:15
-    - cron: '15 16 1-14 * *'  # TR 19:15
+  # PASİF (17 Kas 2026: fon ve ABD geçici olarak pasif). Zamanlama kapalı; elle çalıştırma duruyor. Açmak için aşağıdaki satırların başındaki "# " kaldırılır.
+  # schedule:
+  # - cron: '15 7 1-14 * *'   # TR 10:15
+  # - cron: '15 16 1-14 * *'  # TR 19:15
   workflow_dispatch:
     inputs:
       kod:

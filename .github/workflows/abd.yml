@@ -9,9 +9,10 @@ on:
         default: '1'
   push:
     paths: ['bekci/abd/tetik']
-  schedule:
-    - cron: '37 */2 * * *'
-    - cron: '17 22 * * 1-5'   # ABD kapanışından sonra tam yenileme
+  # PASİF (17 Kas 2026: fon ve ABD geçici olarak pasif). Zamanlama kapalı; elle çalıştırma duruyor. Açmak için aşağıdaki satırların başındaki "# " kaldırılır.
+  # schedule:
+  # - cron: '37 */2 * * *'
+  # - cron: '17 22 * * 1-5'   # ABD kapanışından sonra tam yenileme
 permissions:
   contents: write
 concurrency:

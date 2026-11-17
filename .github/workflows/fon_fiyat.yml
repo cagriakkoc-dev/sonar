@@ -1,9 +1,10 @@
 name: Sonar Fon Fiyatları
 on:
-  schedule:
-    # GitHub zamanlanmış işleri saatlerce geciktirebiliyor ya da atlayabiliyor; bu yüzden birden çok tur var (her tur yalnız son 1 ayı çeker, ucuz)
-    - cron: '17 15,17,19 * * 1-5'   # TR 18:17, 20:17, 22:17 (iş günleri): o günün fiyatı
-    - cron: '17 4,7 * * 2-6'        # TR 07:17, 10:17 (ertesi sabah): geç açıklanan fiyatlar
+  # PASİF (17 Kas 2026: fon ve ABD geçici olarak pasif). Zamanlama kapalı; elle çalıştırma duruyor. Açmak için aşağıdaki satırların başındaki "# " kaldırılır.
+  # schedule:
+  # # GitHub zamanlanmış işleri saatlerce geciktirebiliyor ya da atlayabiliyor; bu yüzden birden çok tur var (her tur yalnız son 1 ayı çeker, ucuz)
+  # - cron: '17 15,17,19 * * 1-5'   # TR 18:17, 20:17, 22:17 (iş günleri): o günün fiyatı
+  # - cron: '17 4,7 * * 2-6'        # TR 07:17, 10:17 (ertesi sabah): geç açıklanan fiyatlar
   workflow_dispatch:
 permissions:
   contents: write
