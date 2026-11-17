@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1694269",
-  "hisse": "AYGAZ",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-06T15:39:13+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1694270",
-  "hisse": "AKMGY",
-  "baslik": "Sorumluluk Beyanı (Konsolide Olmayan) (2026 9 Aylık)",
-  "t": "2026-11-06T15:39:13+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1694271",
   "hisse": "TUKAS",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -11640,6 +11622,42 @@
   },
   "tur": "Şirket Genel Bilgi Formu (usulî güncelleme)",
   "gerekce": "Bildirim yalnızca şube iletişim bilgilerini içeren rutin bir genel bilgi formu güncellemesidir; finansal etkisi, yeniliği veya editörün zorunlu önemli saydığı türlerden biri yoktur.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1698936",
+  "hisse": "ENJSA",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-17T08:59:22+00:00",
+  "mod": "golge",
+  "puan": 33,
+  "alt": {
+   "fin": 7,
+   "yenilik": 4,
+   "kapsam": 5,
+   "kesinlik": 9,
+   "ilgi": 8
+  },
+  "tur": "Borçlanma aracı ihracı (tahvil, faizli)",
+  "gerekce": "1,7 milyar TL'lik 728 gün vadeli tahvil ihracı tamamlanmış ve kesinleşmiş, ancak tutar piyasa değerinin yaklaşık %1,4'ü olduğu için rutin bir finansman işlemi sayılır ve etkisi sınırlıdır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1698946",
+  "hisse": "MPARK",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-17T08:59:27+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 0,
+   "yenilik": 3,
+   "kapsam": 4,
+   "kesinlik": 3,
+   "ilgi": 4
+  },
+  "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
+  "gerekce": "MPARK, yönetimde söz sahibi personelin görev ve meslek bilgilerini içeren rutin bir Şirket Genel Bilgi Formu güncellemesi yayımladı; yeni bir atama, ayrılık veya parasal etki bildirilmediği için önemi düşüktür.",
   "durum": "dusuk"
  }
 ]
