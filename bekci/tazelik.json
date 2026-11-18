@@ -1,11 +1,11 @@
 {
- "zaman": "2026-11-18 17:31",
+ "zaman": "2026-11-19 01:42",
  "beklenen_donem": "2026-09",
  "ozet": {
   "sirket": 618,
   "guncel": 577,
   "bekleyen_kuyruk": 0,
-  "elle": 4,
+  "elle": 8,
   "sorun": {
    "elle": 1,
    "rakam": 41
@@ -22,7 +22,7 @@
    "k": "fin:ARENA:2026-09",
    "tur": "rakam",
    "t": "ARENA",
-   "metin": "ARENA: son dönem 2026-03, beklenen 2026-09"
+   "metin": "ARENA: son dönem 2026-06, beklenen 2026-09"
   },
   {
    "k": "fin:INTEK:2026-09",
@@ -259,10 +259,10 @@
    "metin": "KUYAS: son dönem 2026-06, beklenen 2026-09"
   },
   {
-   "k": "elle:4",
+   "k": "elle:8",
    "tur": "elle",
    "t": "-",
-   "metin": "Kuyrukta elle bakılacak 4 kayıt: ENJSA 1698936, KOCMT 1699236, GARAN 1699270, KLYPV 1699289"
+   "metin": "Kuyrukta elle bakılacak 8 kayıt: ENJSA 1698936, KOCMT 1699236, GARAN 1699270, KLYPV 1699289, KOCMT 1699979, YYLGD 1699974"
   }
  ],
  "sirketler": [
@@ -533,9 +533,9 @@
   {
    "t": "ARENA",
    "grp": "Bilişim",
-   "son": "2026-03",
-   "oran": "2026-03",
-   "ozet": null,
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": "2026-06",
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -7065,5 +7065,7 @@
    }
   }
  ],
- "yeni": []
+ "yeni": [
+  "elle:8"
+ ]
 }
