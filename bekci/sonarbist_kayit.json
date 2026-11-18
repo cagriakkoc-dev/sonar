@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1695921",
-  "hisse": "ALARK",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-09T17:49:28+00:00",
-  "mod": "golge",
-  "puan": 88,
-  "alt": {
-   "fin": 34,
-   "yenilik": 18,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 8
-  },
-  "tur": "Finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Hasılat %332,1 artarken net kâr geçen yılki zarardan kâra döndü; bildirimdeki rakamlar \"milyon TL\" olarak verilse de son 4 çeyrek net kârıyla (6,6 milyar TL) uyumlu olduğundan milyar TL ölçeğinde değerlendirildi, finansal sonuç bildirimi olduğu için de en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1695923",
   "hisse": "ALARK",
   "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
@@ -12003,5 +11984,53 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "ozet-1699325",
+  "hisse": "ARDYZ",
+  "baslik": "17.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+  "t": "2026-11-18T06:40:43+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ARDYZ (ARD Grup Bilişim) 17 Kasım'da ortalama 50,850 TL fiyatla 5.000 lot pay geri aldı (sermayenin %0,00155'i).\n\n30 Eylül kararıyla başlayan programda geri alınan paylar sermayenin %0,092'sine ulaştı. Piyasa değeri 18,1 milyar TL, PD/DD 2,39x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "17.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "5.000 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "50,850 TL"
+    ],
+    [
+     "İşlemin sermaye oranı",
+     "%0,00155"
+    ],
+    [
+     "Programda toplam oran",
+     "%0,092"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122943506453037259",
+  "x_gorsel_hata": null
  }
 ]
