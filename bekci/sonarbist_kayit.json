@@ -1,100 +1,5 @@
 [
  {
-  "id": "kap-1696107",
-  "hisse": "ODAS",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-09T20:13:45+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1696108",
-  "hisse": "ODAS",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-09T20:13:45+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 32,
-   "yenilik": 14,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 6
-  },
-  "tur": "Finansal sonuç açıklaması (9 aylık zarar kalemleri)",
-  "gerekce": "Şirket, 30.09.2026 dönemine ait 2,3 milyar TL ana ortaklık zararını (piyasa değerinin yaklaşık %20'si) enflasyon muhasebesi, ertelenmiş vergi, PDVSA alacağının kırdırılması ve amortisman kalemleriyle açıklıyor; bu finansal sonuç açıklaması olduğu için en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "sunum-a257d2a090bf",
-  "hisse": "ISMEN",
-  "baslik": "Yatırımcı sunumu: Finansal sonuçlar sunumu · 30 Eylül 2026",
-  "t": "2026-11-09T22:08:05+00:00",
-  "mod": "golge",
-  "puan": 85,
-  "alt": {
-   "fin": 28,
-   "yenilik": 12,
-   "kapsam": 15,
-   "kesinlik": 10,
-   "ilgi": 8
-  },
-  "tur": "Yatırımcı sunumu / finansal sonuçlar",
-  "gerekce": "İş Yatırım'ın (BIST 100 üyesi) 2026/9 dönemi performans ve finansal sonuçlar yatırımcı sunumu, editör kuralı gereği sürekli önemli türdedir; sunumda Futurance Kripto satın alımı (SPK onayı bekleyen) ve makro göstergeler de yer alıyor.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1696183",
-  "hisse": "TURSG",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-10T03:53:52+00:00",
-  "mod": "canli",
-  "puan": 80,
-  "alt": {
-   "fin": 28,
-   "yenilik": 15,
-   "kapsam": 17,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "Türkiye Sigorta, 9.11.2026'da 3,46 TL fiyatla 100,6 milyon TL nominal (sermayenin %0,50'si, yaklaşık 348 milyon TL) pay geri aldı; tutar piyasa değerinin yaklaşık %0,3'ü olduğundan etkisi sınırlı, ancak pay geri alımı türü editör kuralı gereği en az 80 puan alır.",
-  "durum": "paylasildi",
-  "tweet": "TURSG (Türkiye Sigorta) 9 Kasım'da pay başına 3,46 TL fiyatla 100.649.033 lot pay geri aldı. Bu, sermayenin %0,50325'ine denk geliyor.\n\nProgram 19 Ekim tarihli yönetim kurulu kararıyla başladı, azami tutar 4 milyar TL. Piyasa değeri 108,0 milyar TL.",
-  "kart": {
-   "baslik": "Pay geri alım bildirimi",
-   "satirlar": [
-    [
-     "İşlem tarihi",
-     "09.11.2026"
-    ],
-    [
-     "Geri alınan pay",
-     "100.649.033 lot"
-    ],
-    [
-     "İşlem fiyatı",
-     "3,46 TL"
-    ],
-    [
-     "Sermayeye oranı",
-     "%0,50325"
-    ],
-    [
-     "Azami tutar",
-     "4.000.000.000 TL"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2120002036427301139",
-  "x_gorsel_hata": null
- },
- {
   "id": "kap-1696217",
   "hisse": "TAVHL",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12530,6 +12435,82 @@
   "hisse": "ULUUN",
   "baslik": "18.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
   "t": "2026-11-18T16:31:21+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700047",
+  "hisse": "EKDMR",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-18T16:41:58+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "EKDMR 18.11.2026'da ortalama 23,41 TL'den 93.610 adet (sermayenin %0,029'u) pay geri aldı; program kapsamındaki toplam 3,1 milyon adet (%0,97) ile geri alım bildirimleri editör kararıyla en az 80 puan alır, tutar piyasa değerine göre küçüktür.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700045",
+  "hisse": "HEKTS",
+  "baslik": "Paylarda İmtiyaz Oluşturulması İşleminin Gerçekleştirilmemesi Nedeniyle Esas Sözleşme Tadilinin İptali",
+  "t": "2026-11-18T16:42:01+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700044",
+  "hisse": "IZENR",
+  "baslik": "18.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+  "t": "2026-11-18T16:42:01+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700024",
+  "hisse": "SOKE",
+  "baslik": "18.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+  "t": "2026-11-18T16:42:01+00:00",
   "mod": "golge",
   "puan": 100,
   "alt": {
