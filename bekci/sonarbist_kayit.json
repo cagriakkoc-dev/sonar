@@ -1,70 +1,5 @@
 [
  {
-  "id": "kap-1696081",
-  "hisse": "CANTE",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-09T20:02:30+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 34,
-   "yenilik": 14,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "Finansal sonuç açıklaması (dönem zararı gerekçesi)",
-  "gerekce": "30.09.2026 finansal tablolarındaki 3,79 milyar TL ana ortaklık zararı (piyasa değerinin yaklaşık %28'i) ile bunu doğuran enflasyon muhasebesi, ertelenmiş vergi, PDVSA alacağı ve amortisman giderleri açıklandığı için finansal sonuç grubunda sayılıp en az 80 puan aldı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1696086",
-  "hisse": "ENJSA",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-09T20:02:37+00:00",
-  "mod": "golge",
-  "puan": 14,
-  "alt": {
-   "fin": 3,
-   "yenilik": 3,
-   "kapsam": 2,
-   "kesinlik": 4,
-   "ilgi": 2
-  },
-  "tur": "Dava sonucu / lisans (güncelleme)",
-  "gerekce": "Bağlı ortaklığın 21 MWm/15 MWe'lik güneş+depolama ön lisansına ilişkin davasında Danıştay temyizi reddetti ve karar kesinleşti; tutar belirtilmemiş, proje ENJSA'nın büyüklüğüne göre çok küçük ve olumsuz sonuç Ocak 2026'da zaten açıklanmıştı.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1696105",
-  "hisse": "ODAS",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-09T20:13:36+00:00",
-  "mod": "golge",
-  "puan": 88,
-  "alt": {
-   "fin": 36,
-   "yenilik": 16,
-   "kapsam": 18,
-   "kesinlik": 9,
-   "ilgi": 6
-  },
-  "tur": "Finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Finansal sonuç açıklaması editör kuralıyla en az 80 puan alır; ayrıca 9 aylık net zarar 5,2 milyar TL'ye çıkarak geçen yılın iki katından fazla olmuş, esas faaliyet kârı zarara dönmüş ve özkaynaklar %14,6 erimiş, bu da piyasa değerine (11,7 milyar TL) göre çok büyük bir olumsuz sürpriz.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1696106",
-  "hisse": "ODAS",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-09T20:13:43+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1696107",
   "hisse": "ODAS",
   "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
@@ -12521,6 +12456,80 @@
   "hisse": "KRPLS",
   "baslik": "Aksan Kozmetik ile yapılan stratejik iş birliği hk.",
   "t": "2026-11-18T16:20:37+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700045",
+  "hisse": "HEKTS",
+  "baslik": "Esas Sözleşme Tadili",
+  "t": "2026-11-18T16:31:15+00:00",
+  "mod": "golge",
+  "puan": 45,
+  "alt": {
+   "fin": 3,
+   "yenilik": 12,
+   "kapsam": 16,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Esas sözleşme tadilinden vazgeçilmesi (SPK başvurusunun geri çekilmesi)",
+  "gerekce": "Pay imtiyazı ve yönetim kurulu yapısını değiştirecek esas sözleşme tadilinin SPK onayıyla geri çekildiği, değişikliklerin yapılmayacağı kesinleşti; doğrudan finansal etkisi yok, ancak kurumsal yönetim ve kontrol yapısı açısından kapsamı geniş ve mevcut yapının korunduğunu gösteriyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700046",
+  "hisse": "HEKTS",
+  "baslik": "Hak Kullanım Süreç İptal Bildirimi",
+  "t": "2026-11-18T16:31:17+00:00",
+  "mod": "golge",
+  "puan": 45,
+  "alt": {
+   "fin": 8,
+   "yenilik": 12,
+   "kapsam": 14,
+   "kesinlik": 9,
+   "ilgi": 2
+  },
+  "tur": "Ayrılma hakkı sürecinin iptali (imtiyazlı pay işlemi vazgeçildi)",
+  "gerekce": "Şirket paylarında imtiyaz yaratılması işleminden vazgeçilmesi nedeniyle ayrılma hakkı süreci iptal edildi; doğrudan parasal etkisi yok, ancak sermaye yapısına ilişkin planlanan bir işlemin durması orta düzeyde önem taşıyor ve bu tür editör kuralına girmiyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1700019",
+  "hisse": "NETCD",
+  "baslik": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-18T16:31:21+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700020",
+  "hisse": "ULUUN",
+  "baslik": "18.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+  "t": "2026-11-18T16:31:21+00:00",
   "mod": "golge",
   "puan": 100,
   "alt": {
