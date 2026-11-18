@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1696567",
-  "hisse": "YKBNK",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-10T14:57:05+00:00",
-  "mod": "golge",
-  "puan": 30,
-  "alt": {
-   "fin": 6,
-   "yenilik": 5,
-   "kapsam": 6,
-   "kesinlik": 8,
-   "ilgi": 5
-  },
-  "tur": "Borçlanma aracı ihracı (yurtdışı GMTN, faiz içeren)",
-  "gerekce": "Yapı Kredi'nin GMTN programı kapsamında ihraç ettiği 50,2 milyon USD'lik erken itfa opsiyonlu borçlanma aracı, 287,5 milyar TL piyasa değerine göre küçük bir tutar olup rutin bir fonlama işlemidir ve editörün zorunlu önemli saydığı türlerden biri değildir.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1696596",
   "hisse": "A1CAP",
   "baslik": "Şirket Genel Bilgi Formu",
@@ -12528,6 +12510,25 @@
   },
   "tur": "pay geri alımı",
   "gerekce": "18.11.2026'da 20.000 TL nominal (yaklaşık 3,7 milyon TL) pay geri alınmış, toplam geri alınan 571.000 TL nominale (%0,2185) ulaşmıştır; günlük tutar piyasa değerine göre çok küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700084",
+  "hisse": "TABGD",
+  "baslik": "Pay Geri Alım İşlemleri",
+  "t": "2026-11-18T19:52:20+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
