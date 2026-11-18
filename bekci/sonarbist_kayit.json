@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1696566",
-  "hisse": "YKBNK",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-10T14:57:03+00:00",
-  "mod": "golge",
-  "puan": 22,
-  "alt": {
-   "fin": 4,
-   "yenilik": 4,
-   "kapsam": 4,
-   "kesinlik": 120,
-   "ilgi": 8
-  },
-  "tur": "Borçlanma aracı ihracı (yurtdışı GMTN, faiz içeren)",
-  "gerekce": "Yapı Kredi'nin GMTN programı kapsamındaki 50,2 milyon USD'lik yurtdışı borçlanma aracı ihracı, 287,5 milyar TL piyasa değerine kıyasla çok küçük ve rutin fonlama işlemidir; kesinleşmiş olsa da etkisi sınırlıdır.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1696567",
   "hisse": "YKBNK",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -12527,6 +12509,25 @@
   },
   "tur": "yayınlanan özet",
   "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700084",
+  "hisse": "TABGD",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-18T19:41:27+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 28,
+   "yenilik": 15,
+   "kapsam": 17,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "18.11.2026'da 20.000 TL nominal (yaklaşık 3,7 milyon TL) pay geri alınmış, toplam geri alınan 571.000 TL nominale (%0,2185) ulaşmıştır; günlük tutar piyasa değerine göre çok küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
