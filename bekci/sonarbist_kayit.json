@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1696352",
-  "hisse": "HALKB",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-10T09:15:53+00:00",
-  "mod": "golge",
-  "puan": 14,
-  "alt": {
-   "fin": 3,
-   "yenilik": 2,
-   "kapsam": 2,
-   "kesinlik": 10,
-   "ilgi": 7
-  },
-  "tur": "Kupon ödemesi (sermaye benzeri tahvil)",
-  "gerekce": "1 milyar TL nominalli sermaye benzeri tahvilin rutin kupon ödemesi, 316,8 milyar TL piyasa değerine göre küçük ve beklenen bir işlem; editör kararıyla zorunlu önemli türlerden (temettü, yeni sözleşme, bilanço vb.) biri değil.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1696358",
   "hisse": "ISMEN",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -12535,5 +12517,23 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700068",
+  "hisse": "SISE",
+  "baslik": "Kredi Derecelendirmesi",
+  "t": "2026-11-18T17:34:52+00:00",
+  "mod": "golge",
+  "puan": 57,
+  "alt": {
+   "fin": 14,
+   "yenilik": 12,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 9
+  },
+  "tur": "Kredi derecelendirme güncellemesi (not indirimi)",
+  "gerekce": "Moody's, Şişecam'ın kredi notunu B2'den B3'e düşürüp görünümü Negatif'ten Durağan'a çevirdi; not indirimi finansman maliyeti ve borçlanma koşulları açısından şirketin tamamını etkiliyor ve kesinleşmiş, ancak doğrudan bir tutar etkisi yok ve görünümün durağana dönmesi etkiyi sınırlıyor.",
+  "durum": "dusuk"
  }
 ]
