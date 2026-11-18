@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1695923",
-  "hisse": "ALARK",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-09T17:49:37+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1695924",
   "hisse": "ALARK",
   "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
@@ -12031,6 +12022,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2122943506453037259",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1699338",
+  "hisse": "GARFA",
+  "baslik": "Bono İhracının Tamamlanması",
+  "t": "2026-11-18T07:03:44+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "GARFA (Garanti Faktoring) nitelikli yatırımcılara 610.000.000 TL nominal, 183 gün vadeli borçlanma aracı ihraç etti. Vade 18 Kasım 2026'da başlıyor, 20 Mayıs 2027'de bitiyor.\n\nPiyasa değeri 8,7 milyar TL, son 4 çeyrek net kârı 3,0 milyar TL.",
+  "kart": {
+   "baslik": "Nitelikli yatırımcıya borçlanma aracı ihracı",
+   "satirlar": [
+    [
+     "Nominal tutar",
+     "610.000.000 TL"
+    ],
+    [
+     "Vade",
+     "183 gün"
+    ],
+    [
+     "Talep toplama",
+     "17 Kasım 2026"
+    ],
+    [
+     "Vade başlangıcı",
+     "18 Kasım 2026"
+    ],
+    [
+     "Vade bitişi",
+     "20 Mayıs 2027"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122949310627426501",
   "x_gorsel_hata": null
  }
 ]
