@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1695925",
-  "hisse": "ALARK",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-09T17:49:39+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 30,
-   "yenilik": 12,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "Kâr payı avansı kararı (dağıtılmama)",
-  "gerekce": "Yönetim Kurulu 01.01-30.09.2026 dönemi için kâr payı avansı dağıtılmamasına kesin olarak karar verdi; bu bir temettü dağıtım kararı olduğundan editör kuralı gereği en az 80 puan alır, ancak avans dağıtımı zaten nadir olduğu için sürpriz etkisi sınırlıdır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1695930",
   "hisse": "BSOKE",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -12109,6 +12090,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2122957748941857110",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1699438",
+  "hisse": "HTTBT",
+  "baslik": "Kurumsal Yönetim Derecelendirme Sözleşmesinin Yenilenmesi",
+  "t": "2026-11-18T08:00:15+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "HTTBT (Hitit Bilgisayar) Kobirate ile bir yıllık yeni kurumsal yönetim derecelendirme sözleşmesi imzaladı. Sözleşme 18 Kasım 2026'da başlıyor.\n\nSPK Kurumsal Yönetim İlkelerine uyum notu yeni dönem için bu sözleşmeyle alınacak. Piyasa değeri 9,4 milyar TL.",
+  "kart": {
+   "baslik": "Kurumsal yönetim derecelendirme sözleşmesi",
+   "satirlar": [
+    [
+     "Sözleşme süresi",
+     "1 yıl"
+    ],
+    [
+     "Başlangıç",
+     "18/11/2026"
+    ],
+    [
+     "Bitiş",
+     "18/11/2027"
+    ],
+    [
+     "Not geçerlilik başlangıcı",
+     "06/04/2026"
+    ],
+    [
+     "Piyasa değeri",
+     "9,4 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122963541351153902",
   "x_gorsel_hata": null
  }
 ]
