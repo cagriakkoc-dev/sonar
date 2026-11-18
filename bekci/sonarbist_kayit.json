@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1696596",
-  "hisse": "A1CAP",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-10T15:18:17+00:00",
-  "mod": "golge",
-  "puan": 8,
-  "alt": {
-   "fin": 1,
-   "yenilik": 2,
-   "kapsam": 3,
-   "kesinlik": 1,
-   "ilgi": 1
-  },
-  "tur": "Şirket Genel Bilgi Formu güncellemesi",
-  "gerekce": "Yalnızca imza yetkisine sahip yönetim kurulu üyelerinin listelendiği usulî bir form güncellemesi olup finansal etkisi, yeni bir gelişmesi veya editörün zorunlu önemli saydığı türlerden biri yoktur.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1696597",
   "hisse": "ANHYT",
   "baslik": "Pay Alım Satım Bildirimi",
@@ -12518,6 +12500,25 @@
   "hisse": "TABGD",
   "baslik": "Pay Geri Alım İşlemleri",
   "t": "2026-11-18T19:52:20+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700085",
+  "hisse": "RNPOL",
+  "baslik": "Pay Geri Alım25",
+  "t": "2026-11-18T20:56:00+00:00",
   "mod": "golge",
   "puan": 100,
   "alt": {
