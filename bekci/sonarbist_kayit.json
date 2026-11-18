@@ -1,71 +1,5 @@
 [
  {
-  "id": "kap-1696359",
-  "hisse": "SOKM",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-10T10:08:34+00:00",
-  "mod": "golge",
-  "puan": 8,
-  "alt": {
-   "fin": 1,
-   "yenilik": 1,
-   "kapsam": 2,
-   "kesinlik": 1,
-   "ilgi": 3
-  },
-  "tur": "Şirket Genel Bilgi Formu (usulî güncelleme)",
-  "gerekce": "Bildirim, bağlı ortaklık bilgilerinin rutin güncellemesidir; yeni bir işlem, tutar veya sürpriz içermediği ve editörün zorunlu önemli saydığı türlere girmediği için düşük puan almıştır.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1696368",
-  "hisse": "AKSEN",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-10T10:40:14+00:00",
-  "mod": "canli",
-  "puan": 84,
-  "alt": {
-   "fin": 26,
-   "yenilik": 13,
-   "kapsam": 12,
-   "kesinlik": 9,
-   "ilgi": 8
-  },
-  "tur": "Yeni iş ilişkisi / sözleşme genişlemesi (Gabon elektrik santrali ek protokolü)",
-  "gerekce": "Aksa Enerji'nin Gabon'daki SEEG ile imzaladığı ek protokolle Libreville'e 80 MW ilave kapasite (toplam 225 MW) eklendi ve sözleşme süresi 10 yıldan 15 yıla çıkarıldı; imzalı bir sözleşme genişlemesi olduğundan yeni iş ilişkisi kategorisinde en az 80 puan alır.",
-  "durum": "paylasildi",
-  "tweet": "AKSEN (Aksa Enerji) Gabon'daki anlaşmasını büyüttü. SEEG ile ek protokol imzalandı: Libreville'e 80 MW eklenecek, kentteki kurulu güç 180 MW'a çıkacak, süre 10 yıldan 15 yıla uzadı.\n\nPlanlama: 145 MW'lık santraller 2026, ilave 80 MW 2028 sonunda devrede.",
-  "kart": {
-   "baslik": "Gabon anlaşması genişledi",
-   "satirlar": [
-    [
-     "İlave kapasite",
-     "80 MW"
-    ],
-    [
-     "Libreville toplam güç",
-     "180 MW"
-    ],
-    [
-     "Anlaşma süresi",
-     "10 yıl → 15 yıl"
-    ],
-    [
-     "145 MW devreye alım",
-     "2026 sonu"
-    ],
-    [
-     "İlave 80 MW tamamlanma",
-     "2028 sonu"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2120104327310438751",
-  "x_gorsel_hata": null
- },
- {
   "id": "kap-1696440",
   "hisse": "ANSGR",
   "baslik": "Kurumsal Yönetim İlkelerine Uyum Derecelendirmesi",
@@ -12532,6 +12466,43 @@
   "hisse": "SISE",
   "baslik": "Kredi Derecelendirme Notu",
   "t": "2026-11-18T17:45:32+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700079",
+  "hisse": "EKGYO",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-18T17:56:15+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 1,
+   "yenilik": 2,
+   "kapsam": 2,
+   "kesinlik": 5,
+   "ilgi": 2
+  },
+  "tur": "Değerleme kuruluşu güncellemesi",
+  "gerekce": "2026 yılında portföye alınacak varlıkların değerlemesini yapacak kuruluşların (Yetkin ve Terra) SPK onayıyla güncellenmesi usulî ve rutin bir bildirimdir; finansal etkisi yoktur ve editörün her zaman önemli saydığı türlerden biri değildir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1700077",
+  "hisse": "KLYPV",
+  "baslik": "Pay Geri Alım İşlemleri",
+  "t": "2026-11-18T17:56:18+00:00",
   "mod": "golge",
   "puan": 100,
   "alt": {
