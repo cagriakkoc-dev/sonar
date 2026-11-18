@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1696358",
-  "hisse": "ISMEN",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-10T10:08:34+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
   "id": "kap-1696359",
   "hisse": "SOKM",
   "baslik": "Şirket Genel Bilgi Formu",
@@ -12535,5 +12526,24 @@
   "tur": "Kredi derecelendirme güncellemesi (not indirimi)",
   "gerekce": "Moody's, Şişecam'ın kredi notunu B2'den B3'e düşürüp görünümü Negatif'ten Durağan'a çevirdi; not indirimi finansman maliyeti ve borçlanma koşulları açısından şirketin tamamını etkiliyor ve kesinleşmiş, ancak doğrudan bir tutar etkisi yok ve görünümün durağana dönmesi etkiyi sınırlıyor.",
   "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1700068",
+  "hisse": "SISE",
+  "baslik": "Kredi Derecelendirme Notu",
+  "t": "2026-11-18T17:45:32+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
