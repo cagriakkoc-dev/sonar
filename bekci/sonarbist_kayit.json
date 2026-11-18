@@ -1,33 +1,5 @@
 [
  {
-  "id": "kap-1695930",
-  "hisse": "BSOKE",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-09T17:49:45+00:00",
-  "mod": "golge",
-  "puan": 84,
-  "alt": {
-   "fin": 28,
-   "yenilik": 14,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 5
-  },
-  "tur": "finansal sonuç (9 aylık bilanço)",
-  "gerekce": "9 aylık bilanço editör kuralı gereği önemlidir; brüt kârda %157,8 artış ve esas faaliyet zararında daralma olumlu olsa da net zarar -456,9 milyon TL'ye büyümüş ve özkaynaklar %7,1 düşmüştür.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1695931",
-  "hisse": "KATMR",
-  "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-09T17:49:51+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1695933",
   "hisse": "BSOKE",
   "baslik": "Faaliyet Raporu (Konsolide) (2026 9 Aylık)",
@@ -12138,6 +12110,102 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2122963541351153902",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1699493",
+  "hisse": "ONRYT",
+  "baslik": "Ticaret Bakanlığı Onayı",
+  "t": "2026-11-18T08:54:56+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ONRYT (Onur Yüksek Teknoloji) kayıtlı sermaye tavanını 375.000.000 TL'den 10.000.000.000 TL'ye çıkaran Esas Sözleşme tadiline Ticaret Bakanlığı onayı geldi.\n\nTavan 2030 sonuna kadar geçerli. Değişiklik ilk genel kurulda pay sahiplerine sunulacak.",
+  "kart": {
+   "baslik": "Kayıtlı sermaye tavanı onayı",
+   "satirlar": [
+    [
+     "Mevcut tavan",
+     "375.000.000 TL"
+    ],
+    [
+     "Yeni tavan",
+     "10.000.000.000 TL"
+    ],
+    [
+     "Geçerlilik sonu",
+     "31.12.2030"
+    ],
+    [
+     "SPK onay tarihi",
+     "27.10.2026"
+    ],
+    [
+     "Tadil edilen madde",
+     "6"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122977307413336135",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1699392",
+  "hisse": "QNBFK",
+  "baslik": "TRFQFKRK2728 ISIN KODLU FİNANSMAN BONOSU İHRACININ TAMAMLANMASI",
+  "t": "2026-11-18T08:56:49+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "QNBFK (QNB Finansfaktoring) 615.000.000 TL nominal, 364 gün vadeli finansman bonosunu nitelikli yatırımcıya sattı. Takas 18 Kasım'da tamamlandı.\n\nBono 6,5 milyar TL'lik ihraç tavanı kapsamında. Vade 17 Kasım 2027, piyasa değeri 86,9 milyar TL.",
+  "kart": {
+   "baslik": "Finansman bonosu ihracı tamamlandı",
+   "satirlar": [
+    [
+     "Nominal tutar",
+     "615.000.000 TL"
+    ],
+    [
+     "Vade",
+     "364 gün"
+    ],
+    [
+     "İhraç tavanı",
+     "6.500.000.000 TL"
+    ],
+    [
+     "Takas tarihi",
+     "18.11.2026"
+    ],
+    [
+     "Anapara ödemesi",
+     "17.11.2027"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122977748893176246",
   "x_gorsel_hata": null
  }
 ]
