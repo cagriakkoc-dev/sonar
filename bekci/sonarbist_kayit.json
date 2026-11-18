@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1695924",
-  "hisse": "ALARK",
-  "baslik": "Sorumluluk Beyanı (Konsolide) (2026 9 Aylık)",
-  "t": "2026-11-09T17:49:39+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1695925",
   "hisse": "ALARK",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12070,6 +12061,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2122949310627426501",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1699337",
+  "hisse": "MNDRS",
+  "baslik": "17 Kasım 2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+  "t": "2026-11-18T07:37:08+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "MNDRS (Menderes Tekstil) programın ikinci alım gününde, 17 Kasım'da ortalama 9,13 TL'den 205.000 lot pay aldı (sermayenin %0,07393'ü).\n\n12 Kasım kararıyla başlayan programda toplam 393.222 lot, yani %0,14181.\n\nPiyasa değeri 2,5 milyar TL, PD/DD 0,13x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "17.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "205.000 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "9,13 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,07393"
+    ],
+    [
+     "Toplam geri alınan",
+     "393.222 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2122957748941857110",
   "x_gorsel_hata": null
  }
 ]
