@@ -1,32 +1,5 @@
 [
  {
-  "id": "kap-1696597",
-  "hisse": "ANHYT",
-  "baslik": "Pay Alım Satım Bildirimi",
-  "t": "2026-11-10T15:18:20+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1696601",
-  "hisse": "EREGL",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-10T15:18:20+00:00",
-  "mod": "golge",
-  "puan": 50,
-  "alt": {
-   "fin": 17,
-   "yenilik": 11,
-   "kapsam": 8,
-   "kesinlik": 5,
-   "ilgi": 9
-  },
-  "tur": "Maden kaynak tahmini güncellemesi (Alacahan Altın Projesi)",
-  "gerekce": "ERMADEN'in Alacahan projesinde güncellenen UMREK uyumlu tahmin 785 bin ons belirlenmiş ve 108 bin ons mümkün kaynak veriyor; bu, Kasım 2025 açıklamasının üzerine yeni veri ekliyor, ancak henüz rezerv veya yatırım kararı olmadığından ve proje EREGL'nin 251,6 milyar TL piyasa değerine göre sınırlı kaldığından orta puan aldı.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1696604",
   "hisse": "ARCLK",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -12532,5 +12505,41 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700086",
+  "hisse": "PSGYO",
+  "baslik": "Haber ve Söylentilere İlişkin Açıklama",
+  "t": "2026-11-19T00:08:23+00:00",
+  "mod": "golge",
+  "puan": 38,
+  "alt": {
+   "fin": 5,
+   "yenilik": 10,
+   "kapsam": 10,
+   "kesinlik": 5,
+   "ilgi": 8
+  },
+  "tur": "Haber ve söylentilere ilişkin açıklama",
+  "gerekce": "PSGYO, bir milletvekilinin Pasifik Grubu işlemlerine yönelik iddialarını asılsız bulup ayrıntılı bir basın açıklaması yayımlamış; bildirimde yeni bir finansal tutar, sözleşme veya karar yok, ancak itibar ve yönetişim açısından kısmen dikkat çekici.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700087",
+  "hisse": "PAHOL",
+  "baslik": "Haber ve Söylentilere İlişkin Açıklama",
+  "t": "2026-11-19T00:08:27+00:00",
+  "mod": "golge",
+  "puan": 42,
+  "alt": {
+   "fin": 5,
+   "yenilik": 12,
+   "kapsam": 12,
+   "kesinlik": 4,
+   "ilgi": 9
+  },
+  "tur": "Haber ve söylentilere ilişkin açıklama",
+  "gerekce": "PAHOL, bir milletvekilinin Pasifik Grubu şirketleri, hâkim ortaklar ve yatırım fonlarıyla ilgili işlemlere yönelik iddialarını asılsız bularak ayrıntılı bir basın açıklamasıyla yanıtlıyor; yeni bir mali tutar veya kesinleşmiş işlem bildirilmediği için finansal etki sınırlı, itibar ve yönetişim boyutu nedeniyle orta düzeyde önemli.",
+  "durum": "dusuk"
  }
 ]
