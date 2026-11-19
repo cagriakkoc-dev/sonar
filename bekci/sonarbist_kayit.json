@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1696706",
-  "hisse": "TRALT",
-  "baslik": "Pay Alım Satım Bildirimi",
-  "t": "2026-11-10T16:02:31+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1696708",
   "hisse": "DOKTA",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12603,6 +12594,50 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2123318008307138837",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1700160",
+  "hisse": "ZOREN",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-19T08:23:18+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 25,
+   "yenilik": 12,
+   "kapsam": 14,
+   "kesinlik": 9,
+   "ilgi": 4
+  },
+  "tur": "yatırımcı sunumu (eurobond ihracı webcast)",
+  "gerekce": "Zorlu Enerji'nin eurobond ihracına ilişkin 19 Kasım 2026 tarihli yatırımcı canlı sunumu ve sunum dokümanı duyurulduğu için, editör kuralı gereği yatırımcı sunumu türünde en az 80 puan verildi.",
+  "durum": "paylasildi",
+  "tweet": "ZOREN (Zorlu Enerji) yatırımcılarına yönelik İngilizce canlı sunumu 19 Kasım'da saat 16.00'da (Türkiye saati) yapacak. Sunum dokümanı yayımlandı.\n\nSon 4 çeyrekte hasılat 31,5 milyar TL, net kâr -17,5 milyar TL. Piyasa değeri 9,3 milyar TL.",
+  "kart": {
+   "baslik": "Yatırımcı canlı sunumu",
+   "satirlar": [
+    [
+     "Tarih",
+     "19 Kasım 2026"
+    ],
+    [
+     "Saat",
+     "16.00 (Türkiye saati)"
+    ],
+    [
+     "Dil",
+     "İngilizce"
+    ],
+    [
+     "Piyasa değeri",
+     "9,3 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123331342884643294",
   "x_gorsel_hata": null
  }
 ]
