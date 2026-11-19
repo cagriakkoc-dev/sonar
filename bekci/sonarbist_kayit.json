@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1697414",
-  "hisse": "TTKOM",
-  "baslik": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
-  "t": "2026-11-11T20:41:14+00:00",
-  "mod": "golge",
-  "puan": 4,
-  "alt": {
-   "fin": 0,
-   "yenilik": 1,
-   "kapsam": 2,
-   "kesinlik": 0,
-   "ilgi": 1
-  },
-  "tur": "Kurumsal Yönetim Bilgi Formu güncellemesi",
-  "gerekce": "Yönetim kurulu toplantı sayısı, katılım oranı ve elektronik portal kullanımı gibi rutin bilgilerin usulî güncellemesi olup finansal etkisi ve yeni bir gelişme içermiyor.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697454",
   "hisse": "KATMR",
   "baslik": "Şirket Genel Bilgi Formu",
@@ -12332,6 +12314,25 @@
   },
   "tur": "yayınlanan özet",
   "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700436",
+  "hisse": "GRSEL",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-19T17:11:25+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 2,
+   "yenilik": 6,
+   "kapsam": 6,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "19 Kasım 2026'da yaklaşık 2 milyon TL'lik (8.320 adet, ortalama ~243 TL) alım yapıldı ve toplam geri alınan pay 193.000 adede (sermayenin %0,19'u) çıktı; tutar 28,3 milyar TL piyasa değerine göre çok küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
