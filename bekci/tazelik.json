@@ -1,14 +1,14 @@
 {
- "zaman": "2026-11-19 17:40",
+ "zaman": "2026-11-20 01:46",
  "beklenen_donem": "2026-09",
  "ozet": {
   "sirket": 618,
-  "guncel": 577,
+  "guncel": 579,
   "bekleyen_kuyruk": 0,
-  "elle": 11,
+  "elle": 14,
   "sorun": {
    "elle": 1,
-   "rakam": 41
+   "rakam": 39
   }
  },
  "sorunlar": [
@@ -145,18 +145,6 @@
    "metin": "UMPAS: son dönem 2023-12, beklenen 2026-09"
   },
   {
-   "k": "fin:USHOL:2026-09",
-   "tur": "rakam",
-   "t": "USHOL",
-   "metin": "USHOL: son dönem 2026-06, beklenen 2026-09"
-  },
-  {
-   "k": "fin:SAMAT:2026-09",
-   "tur": "rakam",
-   "t": "SAMAT",
-   "metin": "SAMAT: son dönem 2026-06, beklenen 2026-09"
-  },
-  {
    "k": "fin:SODSN:2026-09",
    "tur": "rakam",
    "t": "SODSN",
@@ -238,7 +226,7 @@
    "k": "fin:MARTI:2026-09",
    "tur": "rakam",
    "t": "MARTI",
-   "metin": "MARTI: son dönem 2026-03, beklenen 2026-09"
+   "metin": "MARTI: son dönem 2026-06, beklenen 2026-09"
   },
   {
    "k": "fin:BASCM:2026-09",
@@ -259,10 +247,10 @@
    "metin": "KUYAS: son dönem 2026-06, beklenen 2026-09"
   },
   {
-   "k": "elle:11",
+   "k": "elle:14",
    "tur": "elle",
    "t": "-",
-   "metin": "Kuyrukta elle bakılacak 11 kayıt: ENJSA 1698936, KOCMT 1699236, GARAN 1699270, KLYPV 1699289, KOCMT 1699979, YYLGD 1699974"
+   "metin": "Kuyrukta elle bakılacak 14 kayıt: ENJSA 1698936, KOCMT 1699236, GARAN 1699270, KLYPV 1699289, KOCMT 1699979, YYLGD 1699974"
   }
  ],
  "sirketler": [
@@ -3888,9 +3876,9 @@
   {
    "t": "USHOL",
    "grp": "Holding",
-   "son": "2026-06",
-   "oran": "2026-06",
-   "ozet": null,
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -4042,9 +4030,9 @@
   {
    "t": "SAMAT",
    "grp": "Kağıt ve basım",
-   "son": "2026-06",
-   "oran": "2026-06",
-   "ozet": null,
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -6550,9 +6538,9 @@
   {
    "t": "MARTI",
    "grp": "Turizm ve eğlence",
-   "son": "2026-03",
-   "oran": "2026-03",
-   "ozet": null,
+   "son": "2026-06",
+   "oran": "2026-06",
+   "ozet": "2026-06",
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -7066,6 +7054,6 @@
   }
  ],
  "yeni": [
-  "elle:11"
+  "elle:14"
  ]
 }
