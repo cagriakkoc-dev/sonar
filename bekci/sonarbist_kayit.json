@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1697454",
-  "hisse": "KATMR",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-12T07:02:50+00:00",
-  "mod": "golge",
-  "puan": 22,
-  "alt": {
-   "fin": 2,
-   "yenilik": 6,
-   "kapsam": 7,
-   "kesinlik": 5,
-   "ilgi": 2
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu bilgisi güncellemesi)",
-  "gerekce": "Yönetim kurulu bilgilerini güncelleyen usulî bir form olup 9 Kasım 2026'da iki yeni üyenin (Furkan Katmerci ve bağımsız üye Mehmet Gökhan Çelik) seçildiğini yansıtıyor; finansal etkisi yoktur ve editörün her zaman önemli saydığı türlerden hiçbirine girmez.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697495",
   "hisse": "BRISA",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12333,6 +12315,25 @@
   },
   "tur": "Pay geri alımı",
   "gerekce": "19 Kasım 2026'da yaklaşık 2 milyon TL'lik (8.320 adet, ortalama ~243 TL) alım yapıldı ve toplam geri alınan pay 193.000 adede (sermayenin %0,19'u) çıktı; tutar 28,3 milyar TL piyasa değerine göre çok küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700436",
+  "hisse": "GRSEL",
+  "baslik": "19.11.2026 tarihindeki pay geri alım işlemleri.",
+  "t": "2026-11-19T17:22:18+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
