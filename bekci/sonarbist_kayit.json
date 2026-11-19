@@ -1,90 +1,5 @@
 [
  {
-  "id": "kap-1696738",
-  "hisse": "PGSUS",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-10T16:45:58+00:00",
-  "mod": "golge",
-  "puan": 35,
-  "alt": {
-   "fin": 5,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 8,
-   "ilgi": 8
-  },
-  "tur": "Aylık trafik ve emisyon verisi",
-  "gerekce": "Ekim ayı yolcu trafiği ve karbon emisyonu istatistikleri düzenli yayımlanan operasyonel verilerdir; doğrudan finansal tutar içermez, rehberlik veya yeni sözleşme niteliği de taşımaz, yalnızca BIST'te tanınan bir şirket olduğu için orta-düşük puan almıştır.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1696749",
-  "hisse": "GUBRF",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-10T17:18:22+00:00",
-  "mod": "canli",
-  "puan": 80,
-  "alt": {
-   "fin": 4,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 8
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "GUBRF 10.11.2026'da ortalama 289,23 TL'den 50.000 TL nominal pay geri aldı (günlük tutar yaklaşık 14,5 milyon TL, piyasa değerinin çok küçük bir kısmı), program kapsamındaki toplam geri alım 3.778.932 TL nominal ve sermayenin %1,1314'üne ulaştı; tutar küçük olsa da pay geri alımı her zaman önemli sayıldığından taban puan olan 80 verildi.",
-  "durum": "paylasildi",
-  "tweet": "GUBRF (Gübre Fabrikaları) geri alım programında toplam 3.778.932 lota ulaştı, bu sermayenin %1,1314'ü.\n\n10 Kasım'da 50.000 lot, ağırlıklı ortalama 289,23 TL'den alındı.\n\nProgram 26 Ekim kararıyla başladı. Piyasa değeri 137,4 milyar TL.",
-  "kart": {
-   "baslik": "Pay geri alım bildirimi",
-   "satirlar": [
-    [
-     "Alım tarihi",
-     "10.11.2026"
-    ],
-    [
-     "Alınan miktar",
-     "50.000 lot"
-    ],
-    [
-     "Ağırlıklı ortalama fiyat",
-     "289,23 TL"
-    ],
-    [
-     "Toplam geri alınan",
-     "3.778.932 lot"
-    ],
-    [
-     "Sermayeye oranı",
-     "%1,1314"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2120204558479622583",
-  "x_gorsel_hata": null
- },
- {
-  "id": "kap-1696751",
-  "hisse": "EKDMR",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-10T17:39:56+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 10,
-   "yenilik": 8,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 6
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "10.11.2026'da ortalama 24,06 TL'den 103.848 adet (sermayenin %0,03'ü, yaklaşık 2,5 milyon TL) geri alınmış, program toplamı 2.931.537 adede (%0,9161) ulaşmış; tutar piyasa değerine göre küçük olsa da pay geri alımı editör kararıyla en az 80 puan alan türdür.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1696756",
   "hisse": "LXGYO",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12567,5 +12482,59 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1700245",
+  "hisse": "ZOREN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-19T11:24:59+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 3,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 6,
+   "ilgi": 2
+  },
+  "tur": "Borçlanma aracı faiz ve anapara ödemesi",
+  "gerekce": "182 gün vadeli 58,46 milyon TL'lik bononun vadesinde yapılan toplam yaklaşık 72,7 milyon TL'lik anapara ve kupon ödemesi, piyasa değerinin yaklaşık %0,8'i kadar olduğundan rutin ve düşük etkili bir bildirimdir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700246",
+  "hisse": "ZOREN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-19T11:25:03+00:00",
+  "mod": "golge",
+  "puan": 23,
+  "alt": {
+   "fin": 5,
+   "yenilik": 2,
+   "kapsam": 3,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Tahvil kupon ve anapara ödemesi",
+  "gerekce": "378 gün vadeli 162,75 milyon TL'lik tahvilin vadesinde yapılan anapara ve 21,8 milyon TL kupon ödemesi, 9,3 milyar TL piyasa değerinin yaklaşık %2'si tutarında ve rutin bir borç servisi olduğundan düşük önemlidir; ödeme gerçekleşmiş olduğu için kesinlik puanı tamdır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700247",
+  "hisse": "ZOREN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-19T11:25:07+00:00",
+  "mod": "golge",
+  "puan": 26,
+  "alt": {
+   "fin": 8,
+   "yenilik": 2,
+   "kapsam": 3,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Borçlanma aracı anapara ve faiz ödemesi",
+  "gerekce": "140 gün vadeli bononun 273,9 milyon TL anaparası ve 51,5 milyon TL faizi vadesinde ödendi; toplam piyasa değerinin yaklaşık %3,5'i olan bu tutar rutin bir geri ödeme olduğu için ve yeni bir gelişme içermediğinden puan düşük kaldı.",
+  "durum": "dusuk"
  }
 ]
