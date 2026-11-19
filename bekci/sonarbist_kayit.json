@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1697101",
-  "hisse": "LXGYO",
-  "baslik": "Değerleme Raporu ",
-  "t": "2026-11-11T13:42:24+00:00",
-  "mod": "golge",
-  "puan": 30,
-  "alt": {
-   "fin": 10,
-   "yenilik": 6,
-   "kapsam": 5,
-   "kesinlik": 6,
-   "ilgi": 3
-  },
-  "tur": "Değerleme raporu",
-  "gerekce": "GYO portföyündeki Luxera Topkapı projesinin bir kısım bağımsız bölümleri için hazırlanan rutin değerleme raporu bildirimi; tutar belirtilmemiş, editörün zorunlu önemli türlerinden birine girmiyor ve küçük ölçekli şirket olduğundan etkisi sınırlı.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697105",
   "hisse": "LXGYO",
   "baslik": "Değerleme Raporu ",
@@ -12568,5 +12550,23 @@
   "gerekce": "Zorlu Enerji'nin 9 aylık sonuçlarını ve 2026 yıl sonu beklentilerini içeren yatırımcı sunumu yayımlandığından, editör kuralı gereği bu tür en az 80 puan alır; şirket zarar etse de piyasa değeri düşüktür (PD/DD 0,14x).",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700274",
+  "hisse": "CANTE",
+  "baslik": "Genel Kurul İşlemlerine İlişkin Bildirim",
+  "t": "2026-11-19T13:12:47+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 0,
+   "yenilik": 2,
+   "kapsam": 5,
+   "kesinlik": 3,
+   "ilgi": 2
+  },
+  "tur": "Genel kurul çağrısı",
+  "gerekce": "2025 yılı olağan genel kurul toplantısının çağrısı ve gündemi usulî bir bildirimdir; gündemdeki kâr dağıtımı maddesi yalnızca öneri niteliğindedir, şirket zarar ettiği için somut bir temettü kararı içermemektedir.",
+  "durum": "dusuk"
  }
 ]
