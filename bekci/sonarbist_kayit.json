@@ -1,71 +1,5 @@
 [
  {
-  "id": "kap-1697148",
-  "hisse": "ODAS",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-11T14:03:34+00:00",
-  "mod": "canli",
-  "puan": 82,
-  "alt": {
-   "fin": 12,
-   "yenilik": 8,
-   "kapsam": 10,
-   "kesinlik": 10,
-   "ilgi": 5
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "ODAS, 11.11.2026'da 4,576 TL fiyatla 3 milyon adet (yaklaşık 13,7 milyon TL) pay geri aldı; toplam geri alım 23 milyon adede (sermayenin %1,643'ü) ulaştı. Tutar 800 milyon TL'lik fona ve 8,3 milyar TL piyasa değerine göre küçük olsa da pay geri alımı editör kararıyla her zaman önemli sayıldığı için en az 80 puan aldı.",
-  "durum": "paylasildi",
-  "tweet": "ODAS (Odaş Elektrik) paylarında 11 Kasım alımı 3.000.000 lot oldu, fiyat 4,576 TL. Sermayeye oranı %0,21429.\n\n6 Aralık 2023 kararıyla başlayan programda toplam 23.000.000 lota (%1,643) ulaşıldı.\n\nFon 800 milyon TL, piyasa değeri 8,3 milyar TL.",
-  "kart": {
-   "baslik": "Pay geri alım işlemi",
-   "satirlar": [
-    [
-     "İşlem tarihi",
-     "11.11.2026"
-    ],
-    [
-     "Alınan pay",
-     "3.000.000 lot"
-    ],
-    [
-     "İşlem fiyatı",
-     "4,576 TL"
-    ],
-    [
-     "Sermayeye oranı",
-     "%0,21429"
-    ],
-    [
-     "Toplam geri alınan",
-     "23.000.000 lot"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2120517898544283908",
-  "x_gorsel_hata": null
- },
- {
-  "id": "kap-1697192",
-  "hisse": "ENJSA",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-11T14:46:00+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 3,
-   "yenilik": 1,
-   "kapsam": 2,
-   "kesinlik": 4,
-   "ilgi": 2
-  },
-  "tur": "Borçlanma aracı kupon faiz oranı bildirimi",
-  "gerekce": "Daha önce ihraç edilmiş TRSENSAK2629 tahvilinin 8. kupon faiz oranının %9,8955 olarak belirlendiği rutin bir bildirimdir; kupon ödemesi yaklaşık 66,3 milyon TL olup 124,5 milyar TL piyasa değerine göre çok küçüktür ve yeni bir borçlanma ya da bilgi içermez.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697195",
   "hisse": "ENJSA",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -12598,5 +12532,32 @@
   "goruntu_hata": null,
   "tweet_id": "2123406874032926914",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1700293",
+  "hisse": "ZOREN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-19T13:34:34+00:00",
+  "mod": "golge",
+  "puan": 17,
+  "alt": {
+   "fin": 2,
+   "yenilik": 2,
+   "kapsam": 2,
+   "kesinlik": 8,
+   "ilgi": 3
+  },
+  "tur": "Borçlanma aracı kupon faiz oranı bildirimi",
+  "gerekce": "38,47 milyon TL nominalli, nitelikli yatırımcılara ihraç edilmiş tahvilin 4. kupon faiz oranının (%14,7261) kesinleşmesi, 9,3 milyar TL piyasa değerine göre çok küçük ve rutin bir bildirimdir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1700288",
+  "hisse": "KOPOL",
+  "baslik": "Yatırımcı İlişkileri Bölümü Yöneticisinin Görevden Ayrılması / Ataması",
+  "t": "2026-11-19T13:34:38+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "rutin bildirim"
  }
 ]
