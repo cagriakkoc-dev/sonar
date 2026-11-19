@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1696692",
-  "hisse": "MAVI",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-10T16:02:25+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 8,
-   "yenilik": 10,
-   "kapsam": 14,
-   "kesinlik": 10,
-   "ilgi": 8
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "Günlük 350.000 lotluk (yaklaşık 12,3 milyon TL, piyasa değerinin yaklaşık %0,04'ü) geri alım tutar olarak küçük olsa da, 16/09/2026 kararıyla başlayan programda toplam geri alım sermayenin yaklaşık %2,80'ine (22,2 milyon adet) ulaştığı için pay geri alımı türüne tanınan 80 puan alt sınırı uygulandı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1696706",
   "hisse": "TRALT",
   "baslik": "Pay Alım Satım Bildirimi",
@@ -12578,6 +12559,50 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2123309562241376416",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1700131",
+  "hisse": "ONRYT",
+  "baslik": "Alınan Siparişler",
+  "t": "2026-11-19T07:28:48+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ONRYT (Onur Yüksek Teknoloji) yurtiçi bir müşteriden toplam 1.518.790 USD'lik 2 sipariş aldı.\n\nSiparişler, daha önce teslim edilen hava trafik kontrolü ses haberleşme ve kayıt sistemlerinin yaygınlaştırılması için. Şirket finansallara olumlu etki bekliyor.",
+  "kart": {
+   "baslik": "Yurtiçi Müşteriden Yeni Sipariş",
+   "satirlar": [
+    [
+     "Toplam tutar",
+     "1.518.790 USD"
+    ],
+    [
+     "Sipariş adedi",
+     "2 adet"
+    ],
+    [
+     "İş ilişkisi başlangıcı",
+     "19/11/2026"
+    ],
+    [
+     "Piyasa değeri",
+     "2,4 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123318008307138837",
   "x_gorsel_hata": null
  }
 ]
