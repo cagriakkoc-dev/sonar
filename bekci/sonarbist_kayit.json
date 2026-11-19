@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1696930",
-  "hisse": "EKGYO",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-11T10:53:58+00:00",
-  "mod": "golge",
-  "puan": 37,
-  "alt": {
-   "fin": 9,
-   "yenilik": 7,
-   "kapsam": 6,
-   "kesinlik": 9,
-   "ilgi": 6
-  },
-  "tur": "Yapı ruhsatı alımı (proje ilerleme)",
-  "gerekce": "Esenler Oruçreis 2. Etap projesinde 315 bağımsız bölüm için yapı ruhsatı alındı; bu kesinleşmiş bir proje aşaması ama tutar belirtilmemiş, yeni sözleşme veya sipariş niteliği yok ve hasılata oranla etkisi sınırlı.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1696949",
   "hisse": "CANTE",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12567,5 +12549,53 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700270",
+  "hisse": "CANTE",
+  "baslik": "Kar Payı Dağıtım İşlemlerine İlişkin Bildirim",
+  "t": "2026-11-19T12:50:58+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 5,
+   "yenilik": 8,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Kâr payı dağıtım kararı (dağıtım yapılmaması)",
+  "gerekce": "Şirket, 2025 döneminde SPK'ya göre 1,66 milyar TL, yasal kayıtlara göre 825 milyon TL net dönem zararı nedeniyle dağıtılabilir kâr oluşmadığını bildirip kâr payı dağıtılmamasını genel kurula önerme kararı aldı; içerik olarak sınırlı etkili olsa da kâr payı dağıtım kararı türü editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "CANTE (Çan2 Termik) 2025 dönemi için kâr payı dağıtılmamasını ilk olağan genel kurula önerecek. Yönetim kurulu 16 Kasım'da karar aldı, dağıtılabilir kâr oluşmadı.\n\nSPK'ya göre net dönem zararı 1.660.000.460 TL.\n\nPiyasa değeri 10,2 milyar TL, PD/DD 0,31x.",
+  "kart": {
+   "baslik": "2025 kâr payı dağıtılmayacak",
+   "satirlar": [
+    [
+     "Karar tarihi",
+     "16.11.2026"
+    ],
+    [
+     "Nakit kâr payı",
+     "Ödenmeyecek"
+    ],
+    [
+     "Pay biçiminde kâr payı",
+     "Ödenmeyecek"
+    ],
+    [
+     "Net dönem zararı (SPK)",
+     "-1.660.000.460 TL"
+    ],
+    [
+     "Ödenmiş sermaye",
+     "7.000.000.000 TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123398713230127583",
+  "x_gorsel_hata": null
  }
 ]
