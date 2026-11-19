@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1697495",
-  "hisse": "BRISA",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-12T07:34:26+00:00",
-  "mod": "golge",
-  "puan": 30,
-  "alt": {
-   "fin": 2,
-   "yenilik": 7,
-   "kapsam": 11,
-   "kesinlik": 10,
-   "ilgi": 0
-  },
-  "tur": "Yönetim kurulu üyesi değişikliği",
-  "gerekce": "Bir yönetim kurulu üyesinin istifası kabul edilip yerine kesinleşmiş bir atama yapıldı (ilk genel kurul onayına tabi); doğrudan finansal etkisi olmayan, kapsamı sınırlı rutin bir yönetim değişikliğidir ve şirket bu bildirimde BIST 30/100 üyeliğiyle öne çıkmamaktadır.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697496",
   "hisse": "BRISA",
   "baslik": "Şirket Genel Bilgi Formu",
@@ -12334,6 +12316,25 @@
   },
   "tur": "yayınlanan özet",
   "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700441",
+  "hisse": "EUREN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-19T17:44:05+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 4,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 2
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "19.11.2026'da 441.853 adet pay yaklaşık 1,08 milyon TL'ye geri alındı; toplam geri alım 12,29 milyon nominal ve sermayenin %0,585'i olup piyasa değerine oranı küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
