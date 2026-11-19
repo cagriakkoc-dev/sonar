@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1696640",
-  "hisse": "GLYHO",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-10T15:41:09+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 12,
-   "yenilik": 12,
-   "kapsam": 14,
-   "kesinlik": 10,
-   "ilgi": 6
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "GLYHO, 10.11.2026'da 15,80 TL fiyattan 150.000 adet payı geri aldı ve toplam payı 38.990.259 adede (sermayenin %1,9995'i) ulaştı; tutar piyasa değerine göre küçük olsa da pay geri alımı bildirimleri en az 80 puan alan türler arasında olduğu için puan 80'in üzerinde verildi.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1696692",
   "hisse": "MAVI",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12550,5 +12531,53 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700120",
+  "hisse": "MIATK",
+  "baslik": "MİA Teknoloji ile Gürbağ Savunma Arasında TSK Bulut Bilişim Veri Merkezi Projesi Faz 2 Kapsamında 2,38 Milyon USD Sözleşme İmzalanması Hak.",
+  "t": "2026-11-19T06:55:15+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "MIATK (MİA Teknoloji) 18 Kasım'da Gürbağ Savunma ile TSK Bulut Bilişim Veri Merkezi Projesi Faz 2 için 2.388.000 ABD Doları (KDV dahil) tutarında sözleşme imzaladı.\n\nKarşılığı 120.461.227,20 TL. Şirketin son 4 çeyrek hasılatı 2,2 milyar TL.",
+  "kart": {
+   "baslik": "Veri merkezi sözleşmesi imzalandı",
+   "satirlar": [
+    [
+     "İmza tarihi",
+     "18.11.2026"
+    ],
+    [
+     "Tutar (KDV dahil)",
+     "2.388.000 ABD Doları"
+    ],
+    [
+     "TL karşılığı",
+     "120.461.227,20 TL"
+    ],
+    [
+     "Proje aşaması",
+     "Faz 2"
+    ],
+    [
+     "Son 4 çeyrek hasılat",
+     "2,2 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123309562241376416",
+  "x_gorsel_hata": null
  }
 ]
