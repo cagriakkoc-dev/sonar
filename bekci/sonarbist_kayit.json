@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1697105",
-  "hisse": "LXGYO",
-  "baslik": "Değerleme Raporu ",
-  "t": "2026-11-11T13:53:00+00:00",
-  "mod": "golge",
-  "puan": 30,
-  "alt": {
-   "fin": 10,
-   "yenilik": 5,
-   "kapsam": 5,
-   "kesinlik": 7,
-   "ilgi": 3
-  },
-  "tur": "Gayrimenkul değerleme raporu",
-  "gerekce": "GYO'nun portföyündeki Luxera Nevbahar Life projesinde bazı bağımsız bölümler için hazırlanan rutin değerleme raporu; değer tutarı bildirimde yer almıyor ve editörün zorunlu önemli türlerine girmiyor.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697148",
   "hisse": "ODAS",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12568,5 +12550,53 @@
   "tur": "Genel kurul çağrısı",
   "gerekce": "2025 yılı olağan genel kurul toplantısının çağrısı ve gündemi usulî bir bildirimdir; gündemdeki kâr dağıtımı maddesi yalnızca öneri niteliğindedir, şirket zarar ettiği için somut bir temettü kararı içermemektedir.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700277",
+  "hisse": "AYES",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-19T13:23:31+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 8,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Geri alım programı kapsamında 18.11.2026'da 25.559 adet pay yaklaşık 169 bin TL'ye alındı (toplam geri alınan 12,5 milyon nominal, sermayenin yaklaşık %2,5'i); tutar küçük olsa da pay geri alımı editör kararıyla en az 80 puan alan türlerdendir.",
+  "durum": "paylasildi",
+  "tweet": "AYES (Çelik Hasır ve Çit) 18 Kasım'da ortalama 6,61 TL'den 25.559 lot pay geri aldı. İşlemin tutarı 168.944,99 TL, sermaye oranı %0,00511.\n\n14 Ekim kararıyla başlayan programda toplam 12.525.559 lot, yani %2,50511. Piyasa değeri 5,6 milyar TL, PD/DD 1,34x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "25.559 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "6,61 TL"
+    ],
+    [
+     "İşlem tutarı",
+     "168.944,99 TL"
+    ],
+    [
+     "Toplam geri alınan",
+     "12.525.559 lot"
+    ],
+    [
+     "Toplam sermaye oranı",
+     "%2,50511"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123406874032926914",
+  "x_gorsel_hata": null
  }
 ]
