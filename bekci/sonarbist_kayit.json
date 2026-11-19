@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1697195",
-  "hisse": "ENJSA",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-11T14:46:03+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 3,
-   "yenilik": 2,
-   "kapsam": 1,
-   "kesinlik": 10,
-   "ilgi": 6
-  },
-  "tur": "Tahvil kupon faiz oranı bildirimi",
-  "gerekce": "Daha önce ihraç edilmiş TRSENSAK2611 tahvilinin 8. kupon faiz oranının belirlenmesine ilişkin rutin bildirim olup, yaklaşık 148 milyon TL'lik kupon ödemesi 124,5 milyar TL piyasa değerine kıyasla çok küçüktür ve 80 puan alan özel türlerden hiçbirine girmez.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697205",
   "hisse": "ENJSA",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -12559,5 +12541,24 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "rutin bildirim"
+ },
+ {
+  "id": "ozet-1700293",
+  "hisse": "ZOREN",
+  "baslik": "TRSZORN32718 ISIN Kodlu Tahvilin 4. Kupon Dönemine İlişkin Faiz Oranı Hakkında",
+  "t": "2026-11-19T13:45:23+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
