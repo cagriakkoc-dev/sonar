@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1697496",
-  "hisse": "BRISA",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-12T07:34:31+00:00",
-  "mod": "golge",
-  "puan": 30,
-  "alt": {
-   "fin": 3,
-   "yenilik": 8,
-   "kapsam": 10,
-   "kesinlik": 9,
-   "ilgi": 0
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu güncellemesi)",
-  "gerekce": "Brisa'nın yönetim kurulu bileşimini güncelleyen Şirket Genel Bilgi Formu'nda Bridgestone EMEA'dan yeni üye (Jose Enrique Gonzalez Sanchez) ve birkaç üyenin görev tarihi yer alıyor; doğrudan finansal etkisi olmayan, büyük ölçüde usulî bir güncelleme.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697524",
   "hisse": "TCKRC",
   "baslik": "İhale Süreci / Sonucu",
@@ -12335,6 +12317,25 @@
   },
   "tur": "Pay geri alımı",
   "gerekce": "19.11.2026'da 441.853 adet pay yaklaşık 1,08 milyon TL'ye geri alındı; toplam geri alım 12,29 milyon nominal ve sermayenin %0,585'i olup piyasa değerine oranı küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700441",
+  "hisse": "EUREN",
+  "baslik": "19.11.2026 Pay geri alım işlemleri",
+  "t": "2026-11-19T17:54:51+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
