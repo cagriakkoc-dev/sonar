@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1696638",
-  "hisse": "ENERY",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-10T15:41:07+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 12,
-   "yenilik": 12,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 6
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "Pay geri alım programı kapsamında 10.11.2026'da 300.000 adet pay yaklaşık 4,2 milyon TL'ye geri alındı (toplam elde tutulan pay %4,7493); tutar 119 milyar TL piyasa değerine göre çok küçük olsa da pay geri alımı bildirimleri editör kararıyla en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1696639",
   "hisse": "OYYAT",
   "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
@@ -12510,6 +12491,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2123297095641632826",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1700111",
+  "hisse": "MNDRS",
+  "baslik": "18 Kasım 2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+  "t": "2026-11-19T06:31:54+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "MNDRS (Menderes Tekstil) geri alımda üçüncü günde 240.000 lot aldı. Ortalama fiyat 9,21 TL, sermaye oranı %0,08655.\n\nToplam 633.222 lot, yani %0,22836. Program 110.000.000 TL fonla 2 yıl sürecek.\n\nPiyasa değeri 2,5 milyar TL, PD/DD 0,13x.",
+  "kart": {
+   "baslik": "18 Kasım pay geri alımı",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "240.000 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "9,21 TL"
+    ],
+    [
+     "Sermaye oranı",
+     "%0,08655"
+    ],
+    [
+     "Toplam alınan",
+     "633.222 lot"
+    ],
+    [
+     "Toplam oran",
+     "%0,22836"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123303737053638845",
   "x_gorsel_hata": null
  }
 ]
