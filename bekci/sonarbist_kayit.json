@@ -1,25 +1,5 @@
 [
  {
-  "id": "kap-1697633",
-  "hisse": "BASGZ",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-12T13:00:20+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 8,
-   "yenilik": 12,
-   "kapsam": 10,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "Pay geri alım programı kapsamında 11.11.2026'da 20.000 nominal TL (yaklaşık 726,5 bin TL) pay alınmış olup tutar piyasa değerine göre çok küçüktür (program azami tutarı 1 milyar TL), ancak pay geri alımı editör kararıyla en az 80 puan alan bir türdür.",
-  "durum": "dogrulama_hatasi",
-  "sebep": "açılış son tweetlerle aynı",
-  "tweet_red": "BASGZ (Kent Doğalgaz) 11 Kasım'da ortalama 36,327 TL fiyatla 20.000 lot pay geri aldı. Tutar 726.537,78 TL, sermayeye oranı %0,00286.\n\n3 Kasım kararıyla başlayan programın azami tutarı 1 milyar TL. Piyasa değeri 27,2 milyar TL, PD/DD 0,73x."
- },
- {
   "id": "kap-1697644",
   "hisse": "EYGYO",
   "baslik": "Finansal Tablo ve-veya Dipnot Değişikliği",
@@ -12313,6 +12293,25 @@
   },
   "tur": "yatırımcı sunumu",
   "gerekce": "Şirket, 30.09.2026 dönemine ait yatırımcı sunumunu web sitesinde yayımladı; yatırımcı sunumu editör kararıyla her zaman önemli türlerden olduğundan en az 80 puan aldı, içerik bildirimde yer almadığı için alt puanlar orta düzeyde kaldı.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700446",
+  "hisse": "ALTNY",
+  "baslik": "Şirketimiz 30.09.2026 Yatırımcı Sunumunun Yayımlanması Hakkında",
+  "t": "2026-11-19T19:30:29+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
