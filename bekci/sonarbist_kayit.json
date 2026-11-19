@@ -1,89 +1,5 @@
 [
  {
-  "id": "kap-1697399",
-  "hisse": "SVGYO",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-11T18:33:55+00:00",
-  "mod": "canli",
-  "puan": 92,
-  "alt": {
-   "fin": 36,
-   "yenilik": 18,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "Şirket, piyasa değerinin yaklaşık %6'sına denk gelen 314 milyon TL'lik blok pay alımı için geri alım fonunu 349,8 milyon TL'ye yükseltti; kesinleşmiş karar ve gün içi geri alım işlemleri bildirildi, program alım sonrası sonlanacak.",
-  "durum": "paylasildi",
-  "tweet": "SVGYO (Savur GYO) geri alım fonunu 150 milyon TL'den 349.760.455 TL'ye çıkardı.\n\nİş Bankası'nın tasfiye yürüttüğü fonlardan 132.499.703 lot pay 2,37 TL'den, 314.024.296 TL karşılığı alınacak. Sonra program kapanacak.\n\nÖnceki alımlar: 15.348.564 lot, 35.736.159 TL.",
-  "kart": {
-   "baslik": "Geri alım fonu artırıldı",
-   "satirlar": [
-    [
-     "Yeni azami fon",
-     "349.760.455 TL"
-    ],
-    [
-     "Satın alınacak pay",
-     "132.499.703 lot"
-    ],
-    [
-     "Pay başına fiyat",
-     "2,37 TL"
-    ],
-    [
-     "Toplam bedel",
-     "314.024.296 TL"
-    ],
-    [
-     "Önceki alım",
-     "15.348.564 lot"
-    ]
-   ]
-  },
-  "goruntu": false,
-  "goruntu_hata": "kart: Error(\"BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/ch",
-  "tweet_id": "2120585913042624839",
-  "x_gorsel_hata": null
- },
- {
-  "id": "kap-1697400",
-  "hisse": "VESTL",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-11T18:34:15+00:00",
-  "mod": "golge",
-  "puan": 33,
-  "alt": {
-   "fin": 8,
-   "yenilik": 8,
-   "kapsam": 8,
-   "kesinlik": 4,
-   "ilgi": 5
-  },
-  "tur": "Özel durum açıklaması (Euronext Dublin duyurusu eki)",
-  "gerekce": "Bildirim metni yalnızca Euronext Dublin'deki açıklamanın ekte paylaşıldığını belirtiyor ve içeriği ya da tutarı vermiyor; aynı konuda daha önce dört kez açıklama yapılması süren bir konuya (muhtemelen borç/tahvil) işaret ediyor, ancak yeni bir sürpriz yok ve zarar eden, piyasa değeri düşük bir şirket söz konusu olduğu için orta-alt puan verildi.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1697411",
-  "hisse": "TTKOM",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-11T20:30:31+00:00",
-  "mod": "golge",
-  "puan": 38,
-  "alt": {
-   "fin": 2,
-   "yenilik": 8,
-   "kapsam": 12,
-   "kesinlik": 9,
-   "ilgi": 7
-  },
-  "tur": "Yönetim kurulu üyesi istifası",
-  "gerekce": "Yönetim kurulu üyesinin başka bir görev nedeniyle istifası yönetim yapısını etkiler ancak finansal etkisi yoktur, strateji değişikliği içermez ve editörün zorunlu önemli saydığı türlerden biri değildir.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697413",
   "hisse": "TTKOM",
   "baslik": "Şirket Genel Bilgi Formu",
@@ -12347,6 +12263,63 @@
   "hisse": "MAVI",
   "baslik": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
   "t": "2026-11-19T16:17:39+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700428",
+  "hisse": "GUBRF",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-19T16:28:29+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 2,
+   "yenilik": 5,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 7
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "19.11.2026'da yaklaşık 53,4 milyon TL'lik (194.124 TL nominal, ortalama 275,34 TL) geri alım yapıldı ve toplam geri alınan pay sermayenin %1,2644'üne ulaştı; tutar piyasa değerinin yaklaşık %0,04'ü kadar küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700421",
+  "hisse": "DAGI",
+  "baslik": "19 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-19T16:28:37+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700424",
+  "hisse": "GARAN",
+  "baslik": "Yurtdışı Piyasalara Tahvil İhracı SPK Onayı",
+  "t": "2026-11-19T16:28:38+00:00",
   "mod": "golge",
   "puan": 100,
   "alt": {
