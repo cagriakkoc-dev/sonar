@@ -1,32 +1,5 @@
 [
  {
-  "id": "kap-1696857",
-  "hisse": "ISMEN",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-11T07:59:05+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1696858",
-  "hisse": "ISMEN",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-11T08:09:37+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1696861",
-  "hisse": "ISMEN",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-11T08:09:37+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
   "id": "kap-1696930",
   "hisse": "EKGYO",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12525,6 +12498,62 @@
   "hisse": "MEKAG",
   "baslik": "Bayilik(Distribütörlük) Sözleşmesi",
   "t": "2026-11-19T12:17:51+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700266",
+  "hisse": "LXGYO",
+  "baslik": "Değerleme Raporu ",
+  "t": "2026-11-19T12:29:33+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 10,
+   "yenilik": 5,
+   "kapsam": 6,
+   "kesinlik": 6,
+   "ilgi": 3
+  },
+  "tur": "Değerleme raporu (GYO portföy)",
+  "gerekce": "Luxera Towers projesindeki bağımsız bölümlerin bir kısmı için hazırlanan rutin değerleme raporu bildirimi; değer tutarı metinde yer almıyor, editör tarafından zorunlu önemli sayılan türlerden biri değil, GYO için periyodik bir bildirim.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1700260",
+  "hisse": "OYAKC",
+  "baslik": "Kurumsal Yönetim Derecelendirme Not Bildirimi",
+  "t": "2026-11-19T12:29:37+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700262",
+  "hisse": "TARKM",
+  "baslik": "Turgutlu Yeni Fabrika Yatırımı Hakkında",
+  "t": "2026-11-19T12:29:37+00:00",
   "mod": "golge",
   "puan": 100,
   "alt": {
