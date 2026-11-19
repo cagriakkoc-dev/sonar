@@ -1,108 +1,5 @@
 [
  {
-  "id": "kap-1697327",
-  "hisse": "KATMR",
-  "baslik": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
-  "t": "2026-11-11T16:25:48+00:00",
-  "mod": "golge",
-  "puan": 6,
-  "alt": {
-   "fin": 0,
-   "yenilik": 1,
-   "kapsam": 2,
-   "kesinlik": 2,
-   "ilgi": 1
-  },
-  "tur": "Kurumsal Yönetim Bilgi Formu (güncelleme)",
-  "gerekce": "Yönetim kurulu toplantı sayısı, katılım oranı ve komite bilgilerine ilişkin rutin, usulî bir kurumsal yönetim formu güncellemesidir; finansal etkisi ve yeni bir gelişmesi yoktur.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1697328",
-  "hisse": "BKRGY",
-  "baslik": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Değerlendirme Raporu",
-  "t": "2026-11-11T16:25:51+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 28,
-   "yenilik": 15,
-   "kapsam": 17,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "Halka arz varsayımları gerçekleşme/değerlendirme raporu (geleceğe ilişkin beklenti)",
-  "gerekce": "2026 üçüncü çeyrek için halka arz fiyatında esas alınan gelir ve kâr varsayımlarının gerçekleşmesini değerlendiren rapor, geleceğe ilişkin beklenti ve rehberlik grubuna girdiği için en az 80 puan aldı; bildirim metninde rakam yok, içerik ekteki rapordadır.",
-  "durum": "hata",
-  "sebep": "JSONDecodeError('Extra data: line 3 column 1 (char 75)')"
- },
- {
-  "id": "kap-1697329",
-  "hisse": "BKRGY",
-  "baslik": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
-  "t": "2026-11-11T16:26:04+00:00",
-  "mod": "golge",
-  "puan": 30,
-  "alt": {
-   "fin": 8,
-   "yenilik": 4,
-   "kapsam": 6,
-   "kesinlik": 8,
-   "ilgi": 4
-  },
-  "tur": "Halka arz fon kullanım raporu",
-  "gerekce": "Üçüncü çeyrek halka arz gelirinin kullanım yerlerine ilişkin rutin, periyodik bir rapordur; metinde tutar veya yeni bir gelişme yer almaz, ayrıntılar ekteki rapordadır ve şirket orta ölçeklidir.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1697336",
-  "hisse": "OZGYO",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-11T16:36:44+00:00",
-  "mod": "canli",
-  "puan": 82,
-  "alt": {
-   "fin": 24,
-   "yenilik": 12,
-   "kapsam": 12,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "OZGYO 11.11.2026'da 1,41-1,42 TL fiyatla 1.342.438 TL nominal pay geri aldı; kümülatif geri alım %0,38'e ulaştı ve 70 milyon TL'lik fon programı sürüyor, pay geri alımı her zaman önemli türlerden olduğu için taban 80 uygulandı.",
-  "durum": "paylasildi",
-  "tweet": "OZGYO (Özderici GYO) 11 Kasım'da 1,41-1,42 TL aralığından 1.342.438 lot pay geri aldı.\n\n3 Kasım kararıyla başlayan programda toplam 3.789.819 lota ulaşıldı (sermayenin %0,38'i). Fon tutarı 70 milyon TL, piyasa değeri 1,5 milyar TL, PD/DD 0,20x.",
-  "kart": {
-   "baslik": "Pay geri alım bildirimi",
-   "satirlar": [
-    [
-     "İşlem tarihi",
-     "11 Kasım"
-    ],
-    [
-     "Alınan pay",
-     "1.342.438 lot"
-    ],
-    [
-     "Fiyat aralığı",
-     "1,41-1,42 TL"
-    ],
-    [
-     "Toplam geri alınan",
-     "3.789.819 lot"
-    ],
-    [
-     "Sermayeye oranı",
-     "%0,38"
-    ]
-   ]
-  },
-  "goruntu": false,
-  "goruntu_hata": "kart: Error(\"BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/ch",
-  "tweet_id": "2120556380663038085",
-  "x_gorsel_hata": null
- },
- {
   "id": "kap-1697343",
   "hisse": "GUBRF",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12442,6 +12339,82 @@
   "hisse": "GRTHO",
   "baslik": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
   "t": "2026-11-19T15:44:40+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700415",
+  "hisse": "GARAN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-19T16:06:28+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "GARAN'ın 19.11.2026'da yaklaşık 278,4 milyon TL'ye 1.893.000 TL nominal pay geri alması (programda toplam %0,4566); tutar 516 milyar TL piyasa değerine göre küçük olsa da pay geri alımı editör kararıyla her zaman önemli türdür, bu yüzden taban puan uygulandı.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700419",
+  "hisse": "MAVI",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-19T16:06:30+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 28,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "Günlük alım (343.977 lot, yaklaşık 11,9 milyon TL) piyasa değerine göre çok küçük olsa da, pay geri alımı editör kararıyla her zaman önemli sayılır ve en az 80 puan alır; geri alımın başladığı günden beri toplamı 23,38 milyon lota (sermayenin yaklaşık %2,94'ü) ulaşmıştır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700413",
+  "hisse": "TUREX",
+  "baslik": "Pay Geri Alım İşlemleri",
+  "t": "2026-11-19T16:06:36+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700414",
+  "hisse": "ULUUN",
+  "baslik": "19.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+  "t": "2026-11-19T16:06:37+00:00",
   "mod": "golge",
   "puan": 100,
   "alt": {
