@@ -1,41 +1,5 @@
 [
  {
-  "id": "kap-1697794",
-  "hisse": "ZOREN",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-12T16:38:01+00:00",
-  "mod": "golge",
-  "puan": 22,
-  "alt": {
-   "fin": 0,
-   "yenilik": 4,
-   "kapsam": 8,
-   "kesinlik": 7,
-   "ilgi": 3
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu bilgisi güncellemesi)",
-  "gerekce": "Yönetim kurulu üyelerinin bilgilerini içeren, yeni bir karar, atama veya parasal tutar içermeyen rutin bir form güncellemesidir; editörün her zaman önemli saydığı türlerden biri değildir ve etkisi sınırlıdır.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1697803",
-  "hisse": "AAGYO",
-  "baslik": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
-  "t": "2026-11-12T16:59:17+00:00",
-  "mod": "golge",
-  "puan": 30,
-  "alt": {
-   "fin": 8,
-   "yenilik": 4,
-   "kapsam": 7,
-   "kesinlik": 8,
-   "ilgi": 3
-  },
-  "tur": "Fon kullanım raporu",
-  "gerekce": "Halka arzdan elde edilen fonun kullanımına ilişkin SPK mevzuatı gereği hazırlanan, daha önceki açıklamanın güncellemesi niteliğindeki rutin rapordur; yeni bir tutar, sözleşme veya kâr payı kararı içermediğinden sabit 80 puan kuralına girmez.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697807",
   "hisse": "EKDMR",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12462,6 +12426,98 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2123760517542265116",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1700682",
+  "hisse": "ARMGD",
+  "baslik": "Armada-3 Yatırımı Kapsamında Makine ve Ekipman Alımına İlişkin Mutabakat",
+  "t": "2026-11-20T12:59:44+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ARMGD (Armada Gıda) Armada-3 yatırımı için AKY Teknoloji ile KDV hariç 610.000 ABD doları tutarında makine ve ekipman alımında mutabakata vardı.\n\nAlım eleme ve boylama makineleri, taşıma sistemleri, silolar ve montajı kapsıyor. Piyasa değeri 34,3 milyar TL.",
+  "kart": {
+   "baslik": "Armada-3 makine ekipman mutabakatı",
+   "satirlar": [
+    [
+     "Tutar (KDV hariç)",
+     "610.000 USD"
+    ],
+    [
+     "Proforma tarihi",
+     "20.11.2026"
+    ],
+    [
+     "Proje",
+     "Armada-3"
+    ],
+    [
+     "Piyasa değeri",
+     "34,3 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123763677941928075",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1700681",
+  "hisse": "ERCB",
+  "baslik": "TRFERCYK2612 ISIN Kodlu Finansman Bonosu İtfası",
+  "t": "2026-11-20T13:01:34+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ERCB (Erciyas Çelik Boru) 133 gün vadeli TRFERCYK2612 finansman bonosunu itfa etti. 115.000.000 TL anapara ve 20.113.960 TL faiz 20 Kasım'da ödendi.\n\nBono yıllık %48 basit faizliydi. Piyasa değeri 2,7 milyar TL, son 4 çeyrek net kârı -858,9 milyon TL.",
+  "kart": {
+   "baslik": "Finansman bonosu itfası",
+   "satirlar": [
+    [
+     "Anapara",
+     "115.000.000 TL"
+    ],
+    [
+     "Faiz ödemesi",
+     "20.113.960 TL"
+    ],
+    [
+     "Vade",
+     "133 gün"
+    ],
+    [
+     "Yıllık basit faiz",
+     "%48"
+    ],
+    [
+     "Ödeme tarihi",
+     "20.11.2026"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123764128225632708",
   "x_gorsel_hata": null
  }
 ]
