@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1697724",
-  "hisse": "VAKBN",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-12T15:00:32+00:00",
-  "mod": "golge",
-  "puan": 22,
-  "alt": {
-   "fin": 2,
-   "yenilik": 5,
-   "kapsam": 6,
-   "kesinlik": 4,
-   "ilgi": 5
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
-  "gerekce": "Vakıfbank'ın yönetim kurulu üyelerini ve görevlerini listeleyen rutin bir güncellemedir; parasal etkisi yoktur, yalnızca Osman Arslan'ın 09.04.2026 tarihli murahhas üyelik bilgisi yeni görünmektedir, bu yüzden düşük puan almıştır.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697725",
   "hisse": "VAKBN",
   "baslik": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
@@ -12414,6 +12396,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2123660421072626073",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1700482",
+  "hisse": "ARDYZ",
+  "baslik": "19.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+  "t": "2026-11-20T06:21:54+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ARDYZ (ARD Grup Bilişim) 19 Kasım'da ortalama 49,30 TL fiyatla 5.000 lot pay geri aldı.\n\n30 Eylül kararıyla başlayan programda geri alınan paylar 302.204 lota, sermayenin %0,094'üne ulaştı.\n\nPiyasa değeri 18,1 milyar TL, PD/DD 2,39x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "19.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "5.000 lot"
+    ],
+    [
+     "Ağırlıklı ortalama fiyat",
+     "49,30 TL"
+    ],
+    [
+     "Toplam geri alınan",
+     "302.204 lot"
+    ],
+    [
+     "Sermaye oranı",
+     "%0,094"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123663544382009456",
   "x_gorsel_hata": null
  }
 ]
