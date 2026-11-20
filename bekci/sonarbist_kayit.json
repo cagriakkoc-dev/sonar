@@ -1,71 +1,5 @@
 [
  {
-  "id": "kap-1697756",
-  "hisse": "TTKOM",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-12T15:22:47+00:00",
-  "mod": "golge",
-  "puan": 33,
-  "alt": {
-   "fin": 6,
-   "yenilik": 5,
-   "kapsam": 4,
-   "kesinlik": 10,
-   "ilgi": 8
-  },
-  "tur": "Kendi Eurobond'unu geri satın alma (borç yönetimi)",
-  "gerekce": "Şirket kendi ihraç ettiği 25 milyon USD nominal 2029 vadeli Eurobond'u yaklaşık 26,1 milyon USD ödeyerek geri aldı; tutar piyasa değerinin yaklaşık %0,6'sı kadar olduğundan etki sınırlı, işlem kesinleşmiş ve pay geri alımı değil borç yönetimi niteliğinde olduğundan zorunlu yüksek puan grubuna girmiyor.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1697764",
-  "hisse": "AHGAZ",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-12T15:33:33+00:00",
-  "mod": "canli",
-  "puan": 82,
-  "alt": {
-   "fin": 8,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 5
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "Günlük bildirimde 53.329 adet pay yaklaşık 2,5 milyon TL'ye alındı ve şirketin elindeki toplam pay 89,5 milyon adede (%3,44) ulaştı; tutar piyasa değerine göre küçük olsa da pay geri alımı editör kararıyla her zaman önemli türler arasında olduğundan en az 80 puan aldı.",
-  "durum": "paylasildi",
-  "tweet": "AHGAZ (Ahlatcı Doğal Gaz) 12 Kasım'da ağırlıklı ortalama 46,12 TL fiyatla 53.329 lot pay geri aldı (sermayenin %0,00205'i).\n\nÖnceki programlarla birlikte şirketin elindeki pay 89.528.222 lota (%3,4434) ulaştı.\n\nPiyasa değeri 112,6 milyar TL.",
-  "kart": {
-   "baslik": "Pay geri alımı, 12 Kasım",
-   "satirlar": [
-    [
-     "Alınan pay",
-     "53.329 lot"
-    ],
-    [
-     "Ağırlıklı ortalama fiyat",
-     "46,12 TL"
-    ],
-    [
-     "Sermayeye oranı",
-     "%0,00205"
-    ],
-    [
-     "Toplam elde tutulan",
-     "89.528.222 lot"
-    ],
-    [
-     "Toplam sermaye oranı",
-     "%3,4434"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2120902890772394027",
-  "x_gorsel_hata": null
- },
- {
   "id": "kap-1697765",
   "hisse": "ENERY",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12488,5 +12422,71 @@
   "goruntu_hata": null,
   "tweet_id": "2123702248354021503",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1700618",
+  "hisse": "TCKRC",
+  "baslik": "İhale Süreci / Sonucu",
+  "t": "2026-11-20T09:08:03+00:00",
+  "mod": "canli",
+  "puan": 84,
+  "alt": {
+   "fin": 22,
+   "yenilik": 12,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 5
+  },
+  "tur": "Yeni iş ilişkisi / ihale sözleşmesi",
+  "gerekce": "Karayolları 4. Bölge Müdürlüğü ile 173 milyon TL'lik çelik otokorkuluk işinin sözleşmesi imzalandı (hasılatın %2,85'i); yeni sözleşme/sipariş türü editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "TCKRC (Tüm Çelik Korkuluk) Karayolları 4. Bölge Müdürlüğü'nün çelik otokorkuluk işi için 173.000.000 TL bedelli sözleşmeyi imzaladı.\n\nTutar, son gelir tablosundaki brüt satış hasılatının %2,85'ine denk geliyor. Son 4 çeyrek hasılat 7,0 milyar TL.",
+  "kart": {
+   "baslik": "Otokorkuluk ihalesi sözleşmesi imzalandı",
+   "satirlar": [
+    [
+     "İhale bedeli",
+     "173.000.000 TL"
+    ],
+    [
+     "Ortaklık payı",
+     "%100"
+    ],
+    [
+     "Hasılata oranı",
+     "%2,85"
+    ],
+    [
+     "Teklif tarihi",
+     "23.10.2026"
+    ],
+    [
+     "Sonuç tarihi",
+     "12.11.2026"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123705013083976092",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1700619",
+  "hisse": "VAKBN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-20T09:08:27+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 2,
+   "yenilik": 2,
+   "kapsam": 2,
+   "kesinlik": 4,
+   "ilgi": 4
+  },
+  "tur": "Borçlanma aracı (finansman bonosu) ihracı",
+  "gerekce": "200 milyon TL'lik 91 gün vadeli finansman bonosu ihracı, 319,9 milyar TL piyasa değerine göre çok küçük ve bankanın rutin fonlama işlemi olduğundan düşük önem taşıyor.",
+  "durum": "dusuk"
  }
 ]
