@@ -1,71 +1,5 @@
 [
  {
-  "id": "kap-1697808",
-  "hisse": "ARCLK",
-  "baslik": "Kredi Derecelendirmesi",
-  "t": "2026-11-12T17:21:03+00:00",
-  "mod": "golge",
-  "puan": 55,
-  "alt": {
-   "fin": 12,
-   "yenilik": 14,
-   "kapsam": 13,
-   "kesinlik": 8,
-   "ilgi": 8
-  },
-  "tur": "Kredi derecelendirmesi (not indirimi)",
-  "gerekce": "S&P Arçelik'in uzun vadeli notunu B+'dan B'ye düşürüp görünümü Negatif olarak teyit etti; doğrudan tutar içermeyen ama şirketin finansman maliyeti ve kredi riski açısından olumsuz, kesinleşmiş bir gelişme, editör zorunlu önem türlerinden biri değil.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1697814",
-  "hisse": "SVGYO",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-12T18:56:58+00:00",
-  "mod": "canli",
-  "puan": 92,
-  "alt": {
-   "fin": 36,
-   "yenilik": 16,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "Pay geri alımı (program sona erdi)",
-  "gerekce": "Şirket, geri alım programını 349,8 milyon TL maliyetle (sermayenin %13,65'i) tamamladı; son gün İş Bankası'na bağlı tasfiyedeki fonlardan 132,5 milyon adet payı 314 milyon TL'ye (yaklaşık 5,3 milyar TL piyasa değerinin %6'sı) satın aldı, bu da kesinleşmiş ve büyük bir pay geri alımıdır.",
-  "durum": "paylasildi",
-  "tweet": "SVGYO (Savur GYO) 12 Kasım'da İş Bankası'nın tasfiyedeki fonlarından 132.499.703 lot pay 2,37 TL'den alarak geri alım programını kapattı.\n\nProgram toplamı 147.848.267 lot, 349.760.455 TL. Ortalama 2,366 TL, sermaye oranı %13,6517.\n\nPiyasa değeri 5,3 milyar TL.",
-  "kart": {
-   "baslik": "Geri alım programı tamamlandı",
-   "satirlar": [
-    [
-     "Son alım",
-     "132.499.703 lot"
-    ],
-    [
-     "Son alım fiyatı",
-     "2,37 TL"
-    ],
-    [
-     "Toplam geri alım",
-     "147.848.267 lot"
-    ],
-    [
-     "Toplam tutar",
-     "349.760.455 TL"
-    ],
-    [
-     "Sermayeye oranı",
-     "%13,6517"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2120954111721865471",
-  "x_gorsel_hata": null
- },
- {
   "id": "sunum-b52d47dac3f1",
   "hisse": "AKSA",
   "baslik": "Yatırımcı sunumu: Yatırımcı sunumu · Eylül 2026",
@@ -12490,5 +12424,41 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700727",
+  "hisse": "VAKBN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-20T14:07:17+00:00",
+  "mod": "golge",
+  "puan": 38,
+  "alt": {
+   "fin": 10,
+   "yenilik": 6,
+   "kapsam": 6,
+   "kesinlik": 8,
+   "ilgi": 8
+  },
+  "tur": "Borçlanma aracı ihracı (GMTN, EUR)",
+  "gerekce": "Vakıfbank'ın GMTN programı kapsamındaki EUR cinsi, tek kuponlu ve 29.11.2027 vadeli ihracının SPK onaylı detayları bildiriliyor; tutar metinde görünmüyor, bankalar için rutin bir fonlama işlemi olduğundan ve piyasa değerine oranı küçük kalacağından orta-düşük puan verildi.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700729",
+  "hisse": "AKMGY",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-20T14:07:21+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 2,
+   "yenilik": 2,
+   "kapsam": 4,
+   "kesinlik": 6,
+   "ilgi": 0
+  },
+  "tur": "Yönetici sorumluluk sigortası",
+  "gerekce": "Kurumsal yönetim ilkesi gereği imzalanan 2 milyon USD limitli 1 yıllık yönetici sorumluluk sigortası rutin ve usulî bir uyum bildirimidir; şirketin 7,8 milyar TL piyasa değerine göre finansal etkisi yok denecek kadar azdır ve editörün her zaman önemli saydığı türlerden birine girmez.",
+  "durum": "dusuk"
  }
 ]
