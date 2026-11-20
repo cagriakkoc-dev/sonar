@@ -1,78 +1,5 @@
 [
  {
-  "id": "kap-1698607",
-  "hisse": "ZOREN",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-16T15:18:56+00:00",
-  "mod": "golge",
-  "puan": 14,
-  "alt": {
-   "fin": 0,
-   "yenilik": 3,
-   "kapsam": 5,
-   "kesinlik": 3,
-   "ilgi": 3
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
-  "gerekce": "Yönetim kurulu üyelerine ilişkin rutin bilgi formu güncellemesi olup finansal etkisi ve belirgin bir yeni gelişme içermediğinden düşük puan almıştır.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1698610",
-  "hisse": "KATMR",
-  "baslik": "Genel Kurul İşlemlerine İlişkin Bildirim",
-  "t": "2026-11-16T15:18:58+00:00",
-  "mod": "golge",
-  "puan": 22,
-  "alt": {
-   "fin": 3,
-   "yenilik": 3,
-   "kapsam": 7,
-   "kesinlik": 7,
-   "ilgi": 2
-  },
-  "tur": "Genel kurul sonuç ve tescil bildirimi",
-  "gerekce": "Bildirim, 09.11.2026 tarihli olağan genel kurul kararlarının tescil edildiğini bildiren usulî bir açıklamadır; kâr payı maddesi yalnızca 'görüşüldü' olarak geçmekte, dağıtım kararı veya tutarı yer almadığından editör kuralı kapsamına girmez.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1698613",
-  "hisse": "KATMR",
-  "baslik": "Bağımsız Denetim Kuruluşunun Belirlenmesi",
-  "t": "2026-11-16T15:19:03+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
-  "id": "kap-1698617",
-  "hisse": "PGSUS",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-16T15:19:03+00:00",
-  "mod": "golge",
-  "puan": 86,
-  "alt": {
-   "fin": 28,
-   "yenilik": 16,
-   "kapsam": 16,
-   "kesinlik": 8,
-   "ilgi": 9
-  },
-  "tur": "Pay geri alım programı",
-  "gerekce": "Pegasus yönetim kurulu, 24 ay sürecek, sermayenin %3'üne (15 milyon nominal TL) ve 3 milyar TL'ye kadar olan bir pay geri alım programını onayladı; tutar piyasa değerinin yaklaşık %4,4'üne denk geliyor ve pay geri alımı her zaman önemli türler arasında olduğundan 80 puan alt sınırı uygulandı.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "sunum-7e66bd78bb7a",
-  "hisse": "FROTO",
-  "baslik": "Yatırımcı sunumu: Yatırımcı Sunumu Kasım 2026",
-  "t": "2026-11-16T15:23:50+00:00",
-  "mod": "golge",
-  "durum": "hata",
-  "sebep": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)'))"
- },
- {
   "id": "kap-1698628",
   "hisse": "BFREN",
   "baslik": "Finansal Rapor (2026 9 Aylık)",
@@ -12332,5 +12259,95 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700871",
+  "hisse": "TTKOM",
+  "baslik": "Finansal Duran Varlık Edinimi",
+  "t": "2026-11-20T16:43:55+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 4,
+   "yenilik": 7,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 9
+  },
+  "tur": "Bağlı ortaklık kuruluşu (varlık kiralama şirketi)",
+  "gerekce": "Türk Telekom'un %100 bağlı ortaklığı olan Varlık Kiralama A.Ş.'nin kuruluşu tamamlandı; sermaye tutarı belirtilmemiş, daha önce duyurulan bir adımın kesinleşmesi olduğundan ve muhtemelen sukuk/borçlanma ihracı için bir araç olduğundan etkisi sınırlı, ancak kesinleşmiş ve büyük şirket olduğu için orta-düşük puan.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700872",
+  "hisse": "TTKOM",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-20T16:43:59+00:00",
+  "mod": "golge",
+  "puan": 14,
+  "alt": {
+   "fin": 3,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 6,
+   "ilgi": 2
+  },
+  "tur": "Borçlanma aracı kupon ödemesi bildirimi",
+  "gerekce": "Mevcut sürdürülebilir tahvilin rutin kupon ödemesinin gerçekleştiğini bildiren, tutarı şirket büyüklüğüne göre küçük ve yeni bilgi içermeyen usulî bir bildirimdir; editörün zorunlu önemli sayılan türlerinden (temettü, sözleşme, bilanço, geri alım, rehberlik) hiçbirine girmez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700874",
+  "hisse": "SAHOL",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-20T16:44:02+00:00",
+  "mod": "golge",
+  "puan": 34,
+  "alt": {
+   "fin": 2,
+   "yenilik": 6,
+   "kapsam": 10,
+   "kesinlik": 7,
+   "ilgi": 9
+  },
+  "tur": "Bağımsız yönetim kurulu üyesi ataması",
+  "gerekce": "Sabancı Holding'de istifa eden bağımsız yönetim kurulu üyesinin yerine yeni üye atanması, SPK uygun görüşüne ve genel kurul onayına tabi, kısmen kesinleşmiş yönetimsel bir değişiklik olup finansal etkisi yoktur ve yeni iş, temettü ya da bilanço gibi her zaman önemli türlere girmez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700875",
+  "hisse": "SAHOL",
+  "baslik": "Yönetim Kurulu Komiteleri",
+  "t": "2026-11-20T16:44:06+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 0,
+   "yenilik": 6,
+   "kapsam": 10,
+   "kesinlik": 7,
+   "ilgi": 7
+  },
+  "tur": "Yönetim kurulu komite ataması",
+  "gerekce": "Sabancı Holding'de bir bağımsız üyenin Denetimden Sorumlu Komite üyeliğine, Riskin Erken Saptanması Komitesi başkanlığına ve Sürdürülebilirlik Komitesi üyeliğine atanması, finansal etkisi olmayan ve önceki açıklamayı güncelleyen bir kurumsal yönetim düzenlemesidir; bağımsız üyelik için SPK görüşü de ayrıca alınmaktadır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700876",
+  "hisse": "SAHOL",
+  "baslik": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
+  "t": "2026-11-20T16:44:10+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 0,
+   "yenilik": 3,
+   "kapsam": 4,
+   "kesinlik": 3,
+   "ilgi": 2
+  },
+  "tur": "Kurumsal Yönetim Bilgi Formu güncellemesi",
+  "gerekce": "Sabancı Holding'in Kurumsal Yönetim Bilgi Formu'ndaki komite üyeleri bilgisinin güncellenmesi usulî bir bildirimdir; finansal etkisi yoktur ve editörün her zaman önemli saydığı türlerden hiçbirine girmez.",
+  "durum": "dusuk"
  }
 ]
