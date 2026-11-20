@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1698642",
-  "hisse": "ANHYT",
-  "baslik": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-1",
-  "t": "2026-11-16T15:45:31+00:00",
-  "mod": "golge",
-  "puan": 8,
-  "alt": {
-   "fin": 0,
-   "yenilik": 2,
-   "kapsam": 3,
-   "kesinlik": 1,
-   "ilgi": 2
-  },
-  "tur": "Kurumsal Yönetim Bilgi Formu güncellemesi (Yönetim Kurulu-1)",
-  "gerekce": "Yönetim kurulu faaliyet esaslarına ilişkin usulî bir form güncellemesidir; yeni bir karar, mali tutar veya önemli bir gelişme içermediğinden önemi düşüktür ve editör tarafından her zaman önemli sayılan türlerden hiçbirine girmez.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1698644",
   "hisse": "OYYAT",
   "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
@@ -12367,6 +12349,25 @@
   },
   "tur": "yayınlanan özet",
   "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700886",
+  "hisse": "EUREN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-20T18:09:25+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "EUREN'in 23.10.2026 tarihli YK kararıyla başlattığı geri alım programında 20.11.2026'ya kadar toplam 13,1 milyon TL nominal (%0,623 sermaye) pay geri alınmış; günlük alımlar yaklaşık 2,4-2,5 TL fiyattan yapılıyor, geri alım türü editör kuralı gereği en az 80 puan alır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
