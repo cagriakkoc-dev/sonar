@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1698675",
-  "hisse": "PEKGY",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-16T16:59:13+00:00",
-  "mod": "golge",
-  "puan": 78,
-  "alt": {
-   "fin": 28,
-   "yenilik": 18,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 6
-  },
-  "tur": "Kira sertifikası ödeme temerrüdü",
-  "gerekce": "TRDTERVK2618 kodlu kira sertifikasının kâr payı ve anapara ödemesi vadesinde yapılamadı; bu kesinleşmiş bir temerrüt olup şirketin borç ödeme kabiliyeti ve kredibilitesi açısından ciddi bir olumsuz sürprizdir, ancak ihraç tutarı bildirimde belirtilmemiştir.",
-  "durum": "dusuk_bildirildi"
- },
- {
   "id": "kap-1698707",
   "hisse": "ISMEN",
   "baslik": "Şirket Genel Bilgi Formu",
@@ -12319,6 +12301,25 @@
   },
   "tur": "yayınlanan özet",
   "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700896",
+  "hisse": "KZGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-20T20:59:04+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 12,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "20.11.2026'da ağırlıklı ortalama 15,87 TL fiyatla 200.000 adet (yaklaşık 3,2 milyon TL) pay geri alınmış, şirketin elindeki toplam pay 3.186.247 adete (sermayenin %1,59'u) ulaşmış; tutar piyasa değerine göre küçük olsa da pay geri alımı bildirimleri editör kararıyla en az 80 puan alır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
