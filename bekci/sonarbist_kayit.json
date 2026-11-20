@@ -1,318 +1,5 @@
 [
  {
-  "id": "kap-1698064",
-  "hisse": "ISMEN",
-  "baslik": "Yatırım Kuruluşu Varant - Sertifika - Senetlerine İlişkin Bildirim",
-  "t": "2026-11-13T14:18:02+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1698066",
-  "hisse": "ISMEN",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-13T14:18:02+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1698067",
-  "hisse": "ISMEN",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-13T14:18:02+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1698070",
-  "hisse": "ISMEN",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-13T14:18:02+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1698115",
-  "hisse": "SASA",
-  "baslik": "İhraç Tavanına İlişkin Bildirim",
-  "t": "2026-11-13T15:21:14+00:00",
-  "mod": "golge",
-  "puan": 62,
-  "alt": {
-   "fin": 27,
-   "yenilik": 10,
-   "kapsam": 11,
-   "kesinlik": 5,
-   "ilgi": 9
-  },
-  "tur": "Borçlanma aracı ihraç tavanı artışı",
-  "gerekce": "Yönetim kurulu, yurt dışı borçlanma aracı ihraç tavanını 350 milyon USD'den 500 milyon USD'ye (yaklaşık 21 milyar TL, piyasa değerinin kabaca beşte biri) çıkarma kararı aldı; ancak SPK onayı yok, ihraç yapılmadı ve süreç yeni başlıyor, dolayısıyla kesinlik düşük.",
-  "durum": "dusuk_bildirildi"
- },
- {
-  "id": "kap-1698118",
-  "hisse": "BASGZ",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-13T15:21:20+00:00",
-  "mod": "canli",
-  "puan": 80,
-  "alt": {
-   "fin": 15,
-   "yenilik": 8,
-   "kapsam": 10,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "Günlük alım küçük (13.11'de 20.000 TL nominal, 728 bin TL; programda şu ana kadar toplam 40.000 TL nominal, sermayenin %0,0057'si), ancak 1 milyar TL'lik azami tutar piyasa değerinin yaklaşık %3,7'sine denk geliyor ve pay geri alımları editör kuralı gereği en az 80 puan alıyor.",
-  "durum": "paylasildi",
-  "tweet": "BASGZ (Başkent Doğalgaz) 13 Kasım'da 36,42 TL fiyatla 20.000 lot pay geri aldı (sermayenin %0,00286'sı).\n\n3 Kasım kararıyla başlayan programda toplam 40.000 lota (%0,00572) ulaşıldı. Fon tavanı 1 milyar TL.\n\nPiyasa değeri 27,2 milyar TL, PD/DD 0,73x.",
-  "kart": {
-   "baslik": "Pay geri alım güncellemesi",
-   "satirlar": [
-    [
-     "İşlem tarihi",
-     "13.11.2026"
-    ],
-    [
-     "Alınan pay",
-     "20.000 lot"
-    ],
-    [
-     "İşlem fiyatı",
-     "36,42 TL"
-    ],
-    [
-     "Toplam bedel",
-     "728.320 TL"
-    ],
-    [
-     "Program toplamı",
-     "40.000 lot"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2121262221095239997",
-  "x_gorsel_hata": null
- },
- {
-  "id": "kap-1698121",
-  "hisse": "DZGYO",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-13T15:21:40+00:00",
-  "mod": "golge",
-  "puan": 47,
-  "alt": {
-   "fin": 20,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "Varlık satışı tahsilat bildirimi",
-  "gerekce": "5 Kasım 2026'da duyurulan Bodrum otel satışının bedelinin tamamı tahsil edilmiş ve alacak kalmamış olup işlem kesinleşmiştir. Ancak bu yeni bir sözleşme değil mevcut satışın takibidir, tutar da metinde yer almadığından etki orta düzeyde değerlendirilmiştir.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1698129",
-  "hisse": "ZGYO",
-  "baslik": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Değerlendirme Raporu",
-  "t": "2026-11-13T15:21:46+00:00",
-  "mod": "golge",
-  "puan": 45,
-  "alt": {
-   "fin": 15,
-   "yenilik": 8,
-   "kapsam": 10,
-   "kesinlik": 6,
-   "ilgi": 6
-  },
-  "tur": "Halka arz fiyat değerlendirme raporu",
-  "gerekce": "SPK Pay Tebliği uyarınca halka arz fiyatının varsayımlarını açıklayan ekli bir rapor olup tutar veya yeni karar içermiyor, bu nedenle zorunlu yüksek puanlı türlere girmeyen, düzenleyici nitelikte orta düzey bir bildirim.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1698133",
-  "hisse": "DOGUB",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-13T15:32:34+00:00",
-  "mod": "golge",
-  "puan": 22,
-  "alt": {
-   "fin": 2,
-   "yenilik": 5,
-   "kapsam": 8,
-   "kesinlik": 7,
-   "ilgi": 0
-  },
-  "tur": "Bağımsız yönetim kurulu üyesi ataması",
-  "gerekce": "İstifa eden bağımsız üyenin yerine kalan görev süresi için Burak Alkan'ın atanması ve tescilin ilan edilmesi, doğrudan finansal etkisi olmayan, kesinleşmiş rutin bir yönetim değişikliğidir.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1698134",
-  "hisse": "DOGUB",
-  "baslik": "Yönetim Kurulu Komiteleri",
-  "t": "2026-11-13T15:32:37+00:00",
-  "mod": "golge",
-  "puan": 24,
-  "alt": {
-   "fin": 0,
-   "yenilik": 5,
-   "kapsam": 10,
-   "kesinlik": 8,
-   "ilgi": 1
-  },
-  "tur": "Yönetim kurulu komite değişikliği",
-  "gerekce": "Yönetim kurulu üye değişimleri sonrası komite üyelikleri oy birliğiyle yeniden belirlendi; finansal etkisi olmayan, kurumsal yönetim kapsamında rutin bir güncelleme olduğu için puan düşüktür.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1698135",
-  "hisse": "DOGUB",
-  "baslik": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
-  "t": "2026-11-13T15:32:40+00:00",
-  "mod": "golge",
-  "puan": 5,
-  "alt": {
-   "fin": 0,
-   "yenilik": 1,
-   "kapsam": 2,
-   "kesinlik": 1,
-   "ilgi": 1
-  },
-  "tur": "Kurumsal Yönetim Bilgi Formu güncellemesi",
-  "gerekce": "Yönetim kurulu toplantı şekli ve komitelere ilişkin usulî form güncellemesidir; finansal etkisi ve yeni bir bilgisi yoktur, rutin bir bildirimdir.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1698139",
-  "hisse": "DOGUB",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-13T15:32:43+00:00",
-  "mod": "golge",
-  "puan": 22,
-  "alt": {
-   "fin": 0,
-   "yenilik": 5,
-   "kapsam": 10,
-   "kesinlik": 4,
-   "ilgi": 3
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu bilgileri)",
-  "gerekce": "Yönetim kurulu bileşimini listeleyen usulî bir güncelleme olup parasal etkisi yoktur; yeni bir karar veya önemli bir değişiklik bildirmez, küçük ölçekli ve zarar eden bir şirkete aittir.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1698140",
-  "hisse": "DOGUB",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-13T15:32:46+00:00",
-  "mod": "canli",
-  "puan": 82,
-  "alt": {
-   "fin": 24,
-   "yenilik": 12,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "Finansal sonuç (2026 9 aylık bilanço)",
-  "gerekce": "Finansal sonuç açıklaması editör kuralı gereği en az 80 puan alır; hasılat %59,5 düşüp 24,6 milyon TL'ye gerilerken net zarar 46,9 milyondan 15,9 milyon TL'ye daralmış, özkaynaklar %22,9 azalarak 57,3 milyon TL'ye inmiştir.",
-  "durum": "paylasildi",
-  "tweet": "DOGUB (Doğusan) 9 aylık hasılatı 24,6 milyon TL oldu, geçen yıl 60,8 milyon TL idi (%59,5 azalış). Net dönem zararı 15,9 milyon TL, geçen yıl 46,9 milyon TL.\n\nÖzkaynaklar 57,3 milyon TL'ye indi (%22,9 azalış). Piyasa değeri 3,5 milyar TL.",
-  "kart": {
-   "baslik": "9 aylık finansal sonuç",
-   "satirlar": [
-    [
-     "Hasılat",
-     "24,6 milyon TL"
-    ],
-    [
-     "Geçen yıl hasılat",
-     "60,8 milyon TL"
-    ],
-    [
-     "Net dönem kârı",
-     "-15,9 milyon TL"
-    ],
-    [
-     "Geçen yıl net kâr",
-     "-46,9 milyon TL"
-    ],
-    [
-     "Özkaynaklar",
-     "57,3 milyon TL"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2121265093648207933",
-  "x_gorsel_hata": null
- },
- {
-  "id": "analiz-1698140",
-  "hisse": "DOGUB",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-13T15:33:05+00:00",
-  "mod": "canli",
-  "tur": "bilanço analizi",
-  "tweet": "DOGUB (Doğusan) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Brüt kâr marjı %10,2\n• Net dönem kârı -15,9 milyon TL\n\nDikkat edilecekler\n• Hasılat 24,6 milyon TL, %59,5 azaldı\n• İşletme nakit akışı eksi 4,6 milyon TL\n• Özkaynaklar 57,3 milyon TL, %22,9 azaldı",
-  "kart": {
-   "tweet": "DOGUB (Doğusan) bilançosunda öne çıkanlar.\n\nGüçlü yönler\n• Brüt kâr marjı %10,2\n• Net dönem kârı -15,9 milyon TL\n\nDikkat edilecekler\n• Hasılat 24,6 milyon TL, %59,5 azaldı\n• İşletme nakit akışı eksi 4,6 milyon TL\n• Özkaynaklar 57,3 milyon TL, %22,9 azaldı",
-   "guclu": [
-    {
-     "ad": "Brüt kâr marjı",
-     "deger": "%10,2",
-     "not": "Geçen yılın aynı dönemi %15,5"
-    },
-    {
-     "ad": "Net dönem kârı",
-     "deger": "-15,9 milyon TL",
-     "not": "Geçen yıl -46,9 milyon TL"
-    }
-   ],
-   "dikkat": [
-    {
-     "ad": "Hasılat",
-     "deger": "24,6 milyon TL",
-     "not": "Geçen yıl 60,8 milyon TL, azalış %59,5"
-    },
-    {
-     "ad": "İşletme nakit akışı",
-     "deger": "eksi 4,6 milyon TL",
-     "not": "Geçen yıl 12,0 milyon TL"
-    },
-    {
-     "ad": "Özkaynaklar",
-     "deger": "57,3 milyon TL",
-     "not": "Önceki yıl sonu 74,2 milyon TL"
-    }
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "durum": "analiz_paylasildi",
-  "tweet_id": "2121265160522170692",
-  "x_gorsel_hata": null
- },
- {
-  "id": "kap-1698142",
-  "hisse": "DOGUB",
-  "baslik": "Faaliyet Raporu (Konsolide Olmayan) (2026 9 Aylık)",
-  "t": "2026-11-13T15:33:21+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
   "id": "kap-1698143",
   "hisse": "EUREN",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12382,5 +12069,339 @@
   "tur": "Yönetim kurulu komite değişikliği",
   "gerekce": "Bir yönetim kurulu üyesinin istifası sonrası Kurumsal Yönetim ve Riskin Erken Saptanması komitelerindeki görevinin sona ermesi, doğrudan finansal etkisi olmayan usulî bir yönetişim bildirimidir.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700787",
+  "hisse": "A1CAP",
+  "baslik": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
+  "t": "2026-11-20T15:22:41+00:00",
+  "mod": "golge",
+  "puan": 6,
+  "alt": {
+   "fin": 0,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 2,
+   "ilgi": 1
+  },
+  "tur": "Kurumsal Yönetim Bilgi Formu güncellemesi",
+  "gerekce": "Yönetim kurulu toplantı şekli ve komitelere ilişkin usulî form güncellemesidir; finansal tutar, yeni karar veya sürpriz içermez, alanların çoğu boştur.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700791",
+  "hisse": "INFO",
+  "baslik": "Pay Dışı Sermaye Piyasası Aracı Alım Satım Bildirimi",
+  "t": "2026-11-20T15:22:44+00:00",
+  "mod": "golge",
+  "puan": 46,
+  "alt": {
+   "fin": 18,
+   "yenilik": 8,
+   "kapsam": 7,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Borç aracı geri alımı (finansman bonosu)",
+  "gerekce": "Şirket kendi ihraç ettiği finansman bonosundan 321,1 milyon TL nominal (yaklaşık 349 milyon TL) geri aldı; tutar piyasa değerinin yaklaşık %23'üne denk gelse de bu bir pay geri alımı değil borç yönetimi işlemi olduğundan, kesinleşmiş ama orta düzeyde etkili sayıldı.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700799",
+  "hisse": "FZLGY",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-20T15:22:49+00:00",
+  "mod": "golge",
+  "puan": 52,
+  "alt": {
+   "fin": 24,
+   "yenilik": 10,
+   "kapsam": 12,
+   "kesinlik": 4,
+   "ilgi": 2
+  },
+  "tur": "Borçlanma aracı (kira sertifikası) ihracı kararı",
+  "gerekce": "3 milyar TL'lik ihraç tavanı piyasa değerinin yaklaşık yarısı ve hasılatın yarısından fazla olduğu için finansal ağırlığı yüksek; ancak bu yalnızca yönetim kurulu kararı, SPK onayı bekleniyor, tutar tavan niteliğinde, kullanımı belirsiz ve şirket BIST 30/100 dışında, bu yüzden orta puan aldı.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700804",
+  "hisse": "BASGZ",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-20T15:22:56+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 12,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Pay geri alım programı kapsamında 20.11.2026'da 50.000 TL nominal (yaklaşık 1,75 milyon TL) pay alınmış, program toplamı 110.000 TL nominale (sermayenin %0,01572'si) ulaşmıştır; tutar 1 milyar TL'lik azami limite ve 27,2 milyar TL piyasa değerine göre küçük olsa da pay geri alımı editör kararıyla her zaman önemli türdür.",
+  "durum": "paylasildi",
+  "tweet": "BASGZ (Başkent Doğalgaz) 20 Kasım'da 34,60-35,54 TL aralığında 50.000 TL nominal pay geri aldı. Tutar 1.754.672,78 TL, sermaye oranı %0,00714.\n\n3 Kasım programında toplam 110.000 TL nominal, sermayenin %0,01572'si. Piyasa değeri 27,2 milyar TL, PD/DD 0,73x.",
+  "kart": {
+   "baslik": "Pay geri alımı, 20 Kasım",
+   "satirlar": [
+    [
+     "Geri alınan pay",
+     "50.000 TL nominal"
+    ],
+    [
+     "Fiyat aralığı",
+     "34,60-35,54 TL"
+    ],
+    [
+     "İşlem tutarı",
+     "1.754.672,78 TL"
+    ],
+    [
+     "Sermaye oranı",
+     "%0,00714"
+    ],
+    [
+     "Toplam oran",
+     "%0,01572"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123799327118413978",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1700806",
+  "hisse": "TOASO",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-20T15:23:13+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 1,
+   "yenilik": 5,
+   "kapsam": 6,
+   "kesinlik": 8,
+   "ilgi": 2
+  },
+  "tur": "Üst düzey yönetici değişikliği",
+  "gerekce": "Fabrika ve Kalite Direktörlerinin emeklilik nedeniyle ayrılması ve yerlerine iç atamalar yapılması planlı bir halefiyet olup doğrudan finansal etkisi yoktur; editörün her zaman önemli saydığı türlerden de değildir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700807",
+  "hisse": "IDGYO",
+  "baslik": "Olağan Dışı Fiyat ve Miktar Hareketleri",
+  "t": "2026-11-20T15:23:18+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 0,
+   "yenilik": 3,
+   "kapsam": 2,
+   "kesinlik": 5,
+   "ilgi": 2
+  },
+  "tur": "Olağan dışı fiyat/miktar hareketi yanıtı",
+  "gerekce": "Borsa İstanbul'un talebi üzerine şirket, kamuya açıklanmamış bir özel durumu olmadığını bildiriyor; finansal etkisi olmayan, standart ve usulî bir yanıt.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700809",
+  "hisse": "YKBNK",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-20T15:23:22+00:00",
+  "mod": "golge",
+  "puan": 28,
+  "alt": {
+   "fin": 6,
+   "yenilik": 3,
+   "kapsam": 2,
+   "kesinlik": 9,
+   "ilgi": 8
+  },
+  "tur": "Borçlanma aracı ihracı (nitelikli yatırımcıya bono/tahvil satışı)",
+  "gerekce": "Banka, 80 milyar TL'lik onaylı ihraç limiti kapsamında nitelikli yatırımcılara 368 gün vadeli 4,07 milyar TL'lik borçlanma aracı sattı; tutar piyasa değerinin yaklaşık %1,4'ü olup bankalar için rutin bir fonlama işlemidir, editörün her zaman önemli saydığı türlerden biri de değildir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700810",
+  "hisse": "GEDIK",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-20T15:23:26+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 30,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "20.11.2026'da yaklaşık 3,1 milyon TL'lik (654.195 lot, ort. 4,748 TL) alım, 9,5 milyar TL'lik piyasa değerine göre çok küçüktür; ancak pay geri alımı editör kuralı gereği en az 80 puan alır (programdaki toplam pay %1,39, tüm geri alımlarla birlikte %5,11).",
+  "durum": "paylasildi",
+  "tweet": "GEDIK (Gedik Yatırım) 20 Kasım'da 4,73-4,75 TL aralığından, ortalama 4,748 TL ile 654.195 lot pay geri aldı. İşlem sermayenin %0,03271'ine denk geliyor.\n\n18 Eylül programında toplam 27.860.697 lot, sermayenin %1,3930'u. Piyasa değeri 9,5 milyar TL.",
+  "kart": {
+   "baslik": "Pay geri alımı: 20 Kasım",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "654.195 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "4,748 TL"
+    ],
+    [
+     "İşlem sermaye oranı",
+     "%0,03271"
+    ],
+    [
+     "Program toplamı",
+     "27.860.697 lot"
+    ],
+    [
+     "Program sermaye oranı",
+     "%1,3930"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123799456147787811",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1700811",
+  "hisse": "YKBNK",
+  "baslik": "İhraç Tavanına İlişkin Bildirim",
+  "t": "2026-11-20T15:23:44+00:00",
+  "mod": "golge",
+  "puan": 45,
+  "alt": {
+   "fin": 15,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 4,
+   "ilgi": 10
+  },
+  "tur": "Borçlanma aracı ihraç tavanı",
+  "gerekce": "Yapı Kredi yönetim kurulu, yurt dışında 7 milyar USD'ye kadar borçlanma aracı ihracı (2 milyar USD'sine kadar sermaye benzeri araç dahil) için yetki verdi; tutar piyasa değeriyle kıyaslanabilir büyüklükte ama bir limit/yetki kararı olduğundan fiili ihraç kesinleşmedi ve bankalar için bu tür limitler büyük ölçüde rutin finansman yönetimi sayılır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700812",
+  "hisse": "YKBNK",
+  "baslik": "İhraç Tavanına İlişkin Bildirim",
+  "t": "2026-11-20T15:23:50+00:00",
+  "mod": "golge",
+  "puan": 47,
+  "alt": {
+   "fin": 15,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 6,
+   "ilgi": 10
+  },
+  "tur": "Borçlanma aracı ihraç tavanı",
+  "gerekce": "100 milyar TL'lik yurt içi bono/tahvil ihraç tavanı piyasa değerinin yaklaşık üçte biri kadar olsa da bankalarda rutin bir fonlama yetkisidir, bu aşamada kesinleşmiş bir ihraç veya tutar yoktur, yalnızca yönetim kurulu yetkisi verilmiştir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700813",
+  "hisse": "YKBNK",
+  "baslik": "İhraç Tavanına İlişkin Bildirim",
+  "t": "2026-11-20T15:23:55+00:00",
+  "mod": "golge",
+  "puan": 27,
+  "alt": {
+   "fin": 8,
+   "yenilik": 4,
+   "kapsam": 5,
+   "kesinlik": 4,
+   "ilgi": 6
+  },
+  "tur": "İhraç tavanı (yapılandırılmış borçlanma aracı)",
+  "gerekce": "Yapı Kredi'nin 10 milyar TL'lik yurt içi, nitelikli yatırımcıya yönelik yapılandırılmış borçlanma aracı ihraç tavanı kararı, bankanın rutin fonlama faaliyetidir ve 287,5 milyar TL piyasa değerine göre küçük bir tutardır. Editörün her zaman önemli saydığı türlerden hiçbirine girmez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1700771",
+  "hisse": "DOFRB",
+  "baslik": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-20T15:23:58+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700790",
+  "hisse": "EUHOL",
+  "baslik": "Davaya İlişkin Gelişmeler Hk",
+  "t": "2026-11-20T15:23:59+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700776",
+  "hisse": "KPEKS",
+  "baslik": "Sermaye Artırımından Elde Edilen Fonun Kullanımına İlişkin Rapor",
+  "t": "2026-11-20T15:23:59+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700780",
+  "hisse": "SANKO",
+  "baslik": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-20T15:23:59+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
