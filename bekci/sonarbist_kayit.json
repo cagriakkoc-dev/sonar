@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1698566",
-  "hisse": "EYGYO",
-  "baslik": "Genel Kurul İşlemlerine İlişkin Bildirim",
-  "t": "2026-11-16T15:07:17+00:00",
-  "mod": "golge",
-  "puan": 18,
-  "alt": {
-   "fin": 2,
-   "yenilik": 3,
-   "kapsam": 6,
-   "kesinlik": 5,
-   "ilgi": 2
-  },
-  "tur": "Genel kurul sonuç bildirimi",
-  "gerekce": "Olağan genel kurulun yapıldığı ve tescil edildiği bildiriliyor; kâr payı gündemi yalnızca 'görüşüldü' olarak geçiyor, dağıtım kararı veya tutarı yok (şirket son 4 çeyrekte zararda), bu yüzden usulî bildirim sayılıp düşük puan aldı.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1698595",
   "hisse": "ADGYO",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12386,6 +12368,25 @@
   },
   "tur": "yayınlanan özet",
   "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700865",
+  "hisse": "MAVI",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-20T16:22:26+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 28,
+   "yenilik": 16,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 8
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "20/11/2026'da günlük yaklaşık 10,4 milyon TL'lik (310.000 lot, ort. 33,47 TL) geri alım piyasa değerinin çok küçük bir kısmıdır; ancak 16/09/2026 kararıyla başlayan programda toplam 23,69 milyon pay (sermayenin yaklaşık %2,98'i) alınmıştır ve pay geri alımı editör kararıyla en az 80 puan alan bir türdür.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
