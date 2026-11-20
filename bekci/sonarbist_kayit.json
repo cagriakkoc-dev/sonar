@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1697743",
-  "hisse": "TRALT",
-  "baslik": "Pay Alım Satım Bildirimi",
-  "t": "2026-11-12T15:22:34+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1697746",
   "hisse": "TRALT",
   "baslik": "Pay Alım Satım Bildirimi",
@@ -12419,5 +12410,23 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1700511",
+  "hisse": "A1CAP",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-20T07:18:29+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 10,
+   "yenilik": 2,
+   "kapsam": 3,
+   "kesinlik": 7,
+   "ilgi": 0
+  },
+  "tur": "Borçlanma aracı itfası (anapara ve faiz ödemesi)",
+  "gerekce": "400 milyon TL nominal tutarlı finansman bonosunun vadesinde itfa edilmesi ve 40,9 milyon TL faiz ödenmesi rutin bir işlemdir; tutar piyasa değerinin yaklaşık %14'üne denk gelse de hasılata göre küçüktür ve sürpriz içermez.",
+  "durum": "dusuk"
  }
 ]
