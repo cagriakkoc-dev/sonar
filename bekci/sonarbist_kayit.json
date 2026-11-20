@@ -1,42 +1,5 @@
 [
  {
-  "id": "kap-1698628",
-  "hisse": "BFREN",
-  "baslik": "Finansal Rapor (2026 9 Aylık)",
-  "t": "2026-11-16T15:34:33+00:00",
-  "mod": "golge",
-  "puan": 84,
-  "alt": {
-   "fin": 26,
-   "yenilik": 14,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "Finansal sonuç (9 aylık bilanço)",
-  "gerekce": "Finansal sonuç açıklaması editör kuralı gereği en az 80 puan alır; hasılat %5,7 ve brüt kâr %40,0 düşerken net kâr %102,6 artarak 183,8 milyon TL'ye ulaştı, özkaynaklar %25,6 yükseldi.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1698629",
-  "hisse": "BFREN",
-  "baslik": "Faaliyet Raporu (Konsolide Olmayan) (2026 9 Aylık)",
-  "t": "2026-11-16T15:34:40+00:00",
-  "mod": "golge",
-  "durum": "fr_atlandi",
-  "sebep": "finansal rapor: XBRL kalemleri çıkarılamadı (banka/sigorta vb. olabilir)"
- },
- {
-  "id": "kap-1698632",
-  "hisse": "BFREN",
-  "baslik": "Sorumluluk Beyanı (Konsolide Olmayan) (2026 9 Aylık)",
-  "t": "2026-11-16T15:34:42+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "rutin bildirim"
- },
- {
   "id": "kap-1698633",
   "hisse": "AHGAZ",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12349,5 +12312,61 @@
   "tur": "Kurumsal Yönetim Bilgi Formu güncellemesi",
   "gerekce": "Sabancı Holding'in Kurumsal Yönetim Bilgi Formu'ndaki komite üyeleri bilgisinin güncellenmesi usulî bir bildirimdir; finansal etkisi yoktur ve editörün her zaman önemli saydığı türlerden hiçbirine girmez.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700878",
+  "hisse": "SAHOL",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-20T16:54:53+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 0,
+   "yenilik": 6,
+   "kapsam": 12,
+   "kesinlik": 8,
+   "ilgi": 9
+  },
+  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu bilgisi güncellemesi)",
+  "gerekce": "Bildirim, yönetim kurulu bilgilerini içeren usulî bir Genel Bilgi Formu güncellemesidir ve yeni bir YK üyesinin (Ferda Besli, 20.11.2026) seçildiğine işaret eder; finansal etkisi yoktur, ancak SAHOL BIST 30 üyesi büyük bir holding olduğundan sınırlı ilgi görür ve editörün her zaman önemli saydığı türlerden biri değildir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1700865",
+  "hisse": "MAVI",
+  "baslik": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-20T16:54:57+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700872",
+  "hisse": "TTKOM",
+  "baslik": "XS2820499619 ISIN Kodlu Sürdürülebilir Tahvilin Kupon Ödemesi",
+  "t": "2026-11-20T16:54:58+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
