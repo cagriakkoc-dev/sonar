@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1697754",
-  "hisse": "ISMEN",
-  "baslik": "İhraç Tavanına İlişkin Bildirim",
-  "t": "2026-11-12T15:22:47+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
   "id": "kap-1697756",
   "hisse": "TTKOM",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12449,5 +12440,53 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "rutin bildirim"
+ },
+ {
+  "id": "ozet-1700609",
+  "hisse": "ZOREN",
+  "baslik": "TRSZORN32718 ISIN Kodlu Tahvilin 3. Kupon Dönemine İlişkin Faiz Ödemesi Hakkında",
+  "t": "2026-11-20T08:55:39+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ZOREN (Zorlu Enerji) TRSZORN32718 tahvilinin 3. kupon faizini ödedi: 4.124.214,82 TL.\n\nNitelikli yatırımcılara satılan 38.470.000 TL nominalli, 392 gün vadeli tahvilin sıradaki kuponu 25.03.2027'de.\n\nPiyasa değeri 9,3 milyar TL, PD/DD 0,14x.",
+  "kart": {
+   "baslik": "Tahvil kupon faizi ödendi",
+   "satirlar": [
+    [
+     "Kupon dönemi",
+     "3"
+    ],
+    [
+     "Faiz tutarı",
+     "4.124.214,82 TL"
+    ],
+    [
+     "Nominal değer",
+     "38.470.000 TL"
+    ],
+    [
+     "Vade",
+     "392 gün"
+    ],
+    [
+     "Sonraki kupon",
+     "25.03.2027"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123702248354021503",
+  "x_gorsel_hata": null
  }
 ]
