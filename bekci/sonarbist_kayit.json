@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1697747",
-  "hisse": "VESTL",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-12T15:22:34+00:00",
-  "mod": "golge",
-  "puan": 62,
-  "alt": {
-   "fin": 8,
-   "yenilik": 16,
-   "kapsam": 18,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "Yönetim Kurulu Başkanı ataması",
-  "gerekce": "Vefat eden YK Başkanı Ahmet Nazif Zorlu'nun yerine Olgun Zorlu'nun atanması, doğrudan finansal etkisi olmayan ama şirketin üst yönetimini ilgilendiren kesinleşmiş bir yönetim değişikliğidir; metindeki stratejik hedef cümleleri ise yeni bir rehberlik içermeyen genel ifadelerdir.",
-  "durum": "dusuk_bildirildi"
- },
- {
   "id": "kap-1697748",
   "hisse": "KARCL",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12428,5 +12410,53 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "ozet-1700588",
+  "hisse": "ATATP",
+  "baslik": "Yeni Pay Geri Alım Programı Başlatılması Hk.",
+  "t": "2026-11-20T08:21:57+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ATATP (ATP Yazılım ve Teknoloji) 20 Kasım tarihli yönetim kurulu kararıyla yeni pay geri alım programı başlattı.\n\n• En fazla 300.000 lot\n• Fon: 75.000.000 TL\n• Süre: en fazla 1 yıl\n\nAmaç pay fiyatı istikrarını desteklemek. Piyasa değeri 20,6 milyar TL.",
+  "kart": {
+   "baslik": "Yeni pay geri alım programı",
+   "satirlar": [
+    [
+     "Karar tarihi",
+     "20.11.2026"
+    ],
+    [
+     "Azami pay",
+     "300.000 lot"
+    ],
+    [
+     "Ayrılan fon",
+     "75.000.000 TL"
+    ],
+    [
+     "Program süresi",
+     "en fazla 1 yıl"
+    ],
+    [
+     "Piyasa değeri",
+     "20,6 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123693757371384075",
+  "x_gorsel_hata": null
  }
 ]
