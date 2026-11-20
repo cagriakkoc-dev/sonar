@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1698707",
-  "hisse": "ISMEN",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-17T06:08:48+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 0,
-   "yenilik": 3,
-   "kapsam": 4,
-   "kesinlik": 3,
-   "ilgi": 2
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu bilgisi güncellemesi)",
-  "gerekce": "Yönetim kurulu üyelerinin bilgilerini içeren rutin bir genel bilgi formu güncellemesidir; yeni bir karar, tutar veya yönetim değişikliği içermediği için finansal etkisi yoktur ve önemi düşüktür.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1698774",
   "hisse": "ISMEN",
   "baslik": "Yatırım Kuruluşu Varant - Sertifika - Senetlerine İlişkin Bildirim",
@@ -12320,6 +12302,25 @@
   },
   "tur": "pay geri alımı",
   "gerekce": "20.11.2026'da ağırlıklı ortalama 15,87 TL fiyatla 200.000 adet (yaklaşık 3,2 milyon TL) pay geri alınmış, şirketin elindeki toplam pay 3.186.247 adete (sermayenin %1,59'u) ulaşmış; tutar piyasa değerine göre küçük olsa da pay geri alımı bildirimleri editör kararıyla en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700896",
+  "hisse": "KZGYO",
+  "baslik": "20.11.2026 tarihli pay geri alım işlemleri",
+  "t": "2026-11-20T21:09:45+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
