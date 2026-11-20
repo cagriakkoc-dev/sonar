@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1697665",
-  "hisse": "CELHA",
-  "baslik": "Haber ve Söylentilere İlişkin Açıklama",
-  "t": "2026-11-12T13:42:50+00:00",
-  "mod": "golge",
-  "puan": 32,
-  "alt": {
-   "fin": 3,
-   "yenilik": 9,
-   "kapsam": 8,
-   "kesinlik": 7,
-   "ilgi": 5
-  },
-  "tur": "Haber ve söylentilere ilişkin açıklama (soruşturma yalanlaması)",
-  "gerekce": "Şirket, basında geçen soruşturma iddialarına karşı Başsavcılığın 'soruşturma kaydı yok' yanıtını duyuruyor; doğrudan finansal etkisi yok, itibar ve algı riskini gideren bir yalanlama olduğu için orta-düşük puan aldı, editörün zorunlu önemli türlerinden hiçbirine girmiyor.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1697720",
   "hisse": "LXGYO",
   "baslik": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Değerlendirme Raporu",
@@ -12355,5 +12337,53 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700463",
+  "hisse": "ATAKP",
+  "baslik": "19.11.2026 tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-20T04:54:45+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ATAKP (Atakey Patates) 19 Kasım'da 38,62-38,90 TL aralığından, ağırlıklı ortalama 38,77 TL ile 50.000 TL nominal pay geri aldı. İşlem sermayenin %0,03603'üne denk geliyor.\n\nGeri alınan paylar sermayenin %1,43'üne ulaştı. Piyasa değeri 4,5 milyar TL, PD/DD 0,61x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "19.11.2026"
+    ],
+    [
+     "Geri alınan pay",
+     "50.000 TL nominal"
+    ],
+    [
+     "Ağırlıklı ortalama",
+     "38,77 TL"
+    ],
+    [
+     "Fiyat aralığı",
+     "38,62-38,90 TL"
+    ],
+    [
+     "Toplam sermaye oranı",
+     "%1,43"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2123641619446411281",
+  "x_gorsel_hata": null
  }
 ]
