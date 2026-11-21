@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1698789",
-  "hisse": "MPARK",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-17T07:32:30+00:00",
-  "mod": "golge",
-  "puan": 14,
-  "alt": {
-   "fin": 0,
-   "yenilik": 3,
-   "kapsam": 5,
-   "kesinlik": 2,
-   "ilgi": 4
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
-  "gerekce": "MPARK'ın yönetimde söz sahibi personel listesini içeren rutin bir genel bilgi formu güncellemesi olup parasal etkisi, yeni bir karar veya kadro değişikliği bildirimi yoktur.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1698887",
   "hisse": "GLBMD",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12366,6 +12348,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2124051803067318395",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1700898",
+  "hisse": "ATAKP",
+  "baslik": "20.11.2026 tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-21T11:12:48+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ATAKP (Atakey Patates) geri alımını 20 Kasım'da sürdürdü. 33,12-34,38 TL aralığından, 33,76 TL ağırlıklı ortalamayla 50.000 TL nominal pay aldı.\n\nGeri alınan paylar 2.032.519 TL nominale, sermayenin %1,46'sına ulaştı. Piyasa değeri 4,5 milyar TL, PD/DD 0,61x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "20.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "50.000 TL nominal"
+    ],
+    [
+     "Fiyat aralığı",
+     "33,12-34,38 TL"
+    ],
+    [
+     "Ağırlıklı ortalama",
+     "33,76 TL"
+    ],
+    [
+     "Toplam sermaye oranı",
+     "%1,46"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2124099192633389445",
   "x_gorsel_hata": null
  }
 ]
