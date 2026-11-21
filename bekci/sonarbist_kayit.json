@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1698788",
-  "hisse": "ISMEN",
-  "baslik": "Yatırım Kuruluşu Varant - Sertifika - Senetlerine İlişkin Bildirim",
-  "t": "2026-11-17T07:22:00+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
   "id": "kap-1698789",
   "hisse": "MPARK",
   "baslik": "Şirket Genel Bilgi Formu",
@@ -12332,5 +12323,49 @@
   "tur": "Borçlanma aracı kupon faiz oranı bildirimi",
   "gerekce": "Daha önce ihraç edilen değişken faizli tahvilin 2. kupon oranının (%9,8335) belirlenmesi rutin ve usulî bir bildirimdir; tutar, şirketin 124,5 milyar TL piyasa değerine göre küçüktür ve yeni bir finansal gelişme içermez.",
   "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1700897",
+  "hisse": "ENJSA",
+  "baslik": "TRSENSA52916 ISIN kodlu tahvilin 2.kupon oranı belirlenmesi.",
+  "t": "2026-11-21T08:04:49+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ENJSA (Enerjisa Enerji) 25.05.2026'da ihraç ettiği TRSENSA52916 ISIN kodlu tahvilin 2. kupon faiz oranını %9,8335 olarak belirledi.\n\nTahvilin vadesi 23.05.2029. Şirketin uzun vadeli ulusal notu JCR-Eurasia Rating'den AA (Tr).\n\nPiyasa değeri 124,5 milyar TL, PD/DD 1,04x.",
+  "kart": {
+   "baslik": "Tahvil 2. kupon faiz oranı",
+   "satirlar": [
+    [
+     "2. kupon faizi",
+     "%9,8335"
+    ],
+    [
+     "İhraç tarihi",
+     "25.05.2026"
+    ],
+    [
+     "Vade tarihi",
+     "23.05.2029"
+    ],
+    [
+     "JCR-Eurasia notu",
+     "AA (Tr)"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2124051803067318395",
+  "x_gorsel_hata": null
  }
 ]
