@@ -1,62 +1,5 @@
 [
  {
-  "id": "ozet-1699093",
-  "hisse": "ANSGR",
-  "baslik": "İcra Başkanı / Genel Müdürün Adı",
-  "t": "2026-11-17T15:40:53+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1697808",
-  "hisse": "ARCLK",
-  "baslik": "S&P Kredi Derecelendirmesi",
-  "t": "2026-11-17T15:40:54+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1699187",
-  "hisse": "ATAKP",
-  "baslik": "17.11.2026 tarihli Pay Geri Alım İşlemleri",
-  "t": "2026-11-17T15:40:55+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1699198",
   "hisse": "BINHO",
   "baslik": "Yatırımlarımızdan Meta Mobilite Enerji A.Ş. Hakkında Bilgilendirme",
@@ -12605,6 +12548,61 @@
   },
   "tur": "Yeni iş ilişkisi (ihracat sözleşmesi)",
   "gerekce": "Bağlı ortaklık CW Energy USA'nın imzaladığı yaklaşık 84,8 milyon TL'lik güneş paneli ihracat sözleşmesi, 19 milyar TL hasılata oranla yaklaşık %0,45 ile küçük olsa da yeni iş ilişkisi türü editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1701395",
+  "hisse": "ENJSA",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-23T14:16:25+00:00",
+  "mod": "golge",
+  "puan": 19,
+  "alt": {
+   "fin": 2,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 8,
+   "ilgi": 6
+  },
+  "tur": "Tahvil kupon faiz ödemesi",
+  "gerekce": "196,67 milyon TL'lik rutin kupon ödemesi piyasa değerinin yaklaşık %0,16'sı olup önceden belirlenmiş takvime göre yapılan, sürpriz içermeyen usulî bir ödeme bildirimidir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1701396",
+  "hisse": "VAKBN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-23T14:16:28+00:00",
+  "mod": "golge",
+  "puan": 33,
+  "alt": {
+   "fin": 8,
+   "yenilik": 4,
+   "kapsam": 4,
+   "kesinlik": 9,
+   "ilgi": 8
+  },
+  "tur": "Borçlanma aracı ihracı (GMTN, GBP)",
+  "gerekce": "Mevcut GMTN programı kapsamında SPK onaylı GBP cinsi tahvil ihracının vade ve kupon bilgileri veriliyor; tutar belirtilmediği ve bankalar için bu tür ihraçlar rutin olduğu için etki sınırlı, ilgi ise Vakıfbank'ın büyüklüğü nedeniyle orta düzeyde.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1701392",
+  "hisse": "CWENE",
+  "baslik": "Panel Satışı Hk-Amerika",
+  "t": "2026-11-23T14:16:33+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
