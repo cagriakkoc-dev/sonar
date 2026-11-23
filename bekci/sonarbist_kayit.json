@@ -1,77 +1,5 @@
 [
  {
-  "id": "kap-1699219",
-  "hisse": "KCHOL",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-17T15:28:26+00:00",
-  "mod": "golge",
-  "puan": 14,
-  "alt": {
-   "fin": 0,
-   "yenilik": 3,
-   "kapsam": 5,
-   "kesinlik": 3,
-   "ilgi": 3
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
-  "gerekce": "Koç Holding'in yönetim kurulu üyelerini listeleyen rutin bir genel bilgi formu güncellemesidir; finansal etkisi yoktur, açık bir yönetim değişikliği ya da yeni karar içermez.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1699223",
-  "hisse": "KCHOL",
-  "baslik": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
-  "t": "2026-11-17T15:28:29+00:00",
-  "mod": "golge",
-  "puan": 14,
-  "alt": {
-   "fin": 0,
-   "yenilik": 3,
-   "kapsam": 5,
-   "kesinlik": 3,
-   "ilgi": 3
-  },
-  "tur": "Kurumsal Yönetim Bilgi Formu güncellemesi",
-  "gerekce": "Yönetim kurulu komite üyelerine ilişkin usulî form güncellemesi olup parasal etkisi yoktur ve yeni bir karar ya da sürpriz içermez; BIST 30 şirketi olması puana sınırlı katkı sağlamıştır.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1699224",
-  "hisse": "GARAN",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-17T15:28:32+00:00",
-  "mod": "golge",
-  "puan": 28,
-  "alt": {
-   "fin": 5,
-   "yenilik": 4,
-   "kapsam": 3,
-   "kesinlik": 9,
-   "ilgi": 7
-  },
-  "tur": "Borçlanma aracı ihracı (GMTN, faiz içeren)",
-  "gerekce": "Garanti BBVA'nın GMTN programı kapsamındaki 50 milyon USD'lik (yaklaşık 2 milyar TL) kesinleşmiş ihracı, 516 milyar TL'lik piyasa değerinin %0,5'inden azdır ve bankanın rutin fonlama işlemi sayıldığı için düşük puan aldı.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1699226",
-  "hisse": "ERCB",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-17T15:28:36+00:00",
-  "mod": "golge",
-  "puan": 22,
-  "alt": {
-   "fin": 0,
-   "yenilik": 5,
-   "kapsam": 8,
-   "kesinlik": 4,
-   "ilgi": 5
-  },
-  "tur": "Bağımsız yönetim kurulu üyesi adaylığı",
-  "gerekce": "İstifa eden bağımsız üyenin yerine aday belirlenip SPK'ya görüş için başvuruldu; süreç henüz kesinleşmediğinden ve doğrudan finansal etkisi olmadığından düşük-orta puan aldı.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1699231",
   "hisse": "ISMEN",
   "baslik": "Yatırım Kuruluşu Varant - Sertifika - Senetlerine İlişkin Bildirim",
@@ -12506,5 +12434,106 @@
   "goruntu_hata": null,
   "tweet_id": "2124786073788207188",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1701085",
+  "hisse": "GESAN",
+  "baslik": "İhale Sonucu Hakkında",
+  "t": "2026-11-23T08:54:50+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "GESAN (Girişim Elektrik) TEİAŞ'ın 154 kV Velimeşe TM Tevsiat Yapım İşi için sözleşmeye davet edildi. Baz bedel 203.666.324 TL, imza 10 gün içinde.\n\nŞirket 26 Ekim'de ihalede birinci olmuştu. Piyasa değeri 18,3 milyar TL, son 4 çeyrek hasılat 23,8 milyar TL.",
+  "kart": {
+   "baslik": "Trafo merkezi sözleşme daveti",
+   "satirlar": [
+    [
+     "İhale baz bedeli",
+     "203.666.324 TL"
+    ],
+    [
+     "İmza süresi",
+     "10 gün içinde"
+    ],
+    [
+     "Birincilik bildirimi",
+     "26/10/2026"
+    ],
+    [
+     "İş",
+     "Velimeşe TM Tevsiat"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2124789208434794700",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1701093",
+  "hisse": "YKBNK",
+  "baslik": "Nitelikli yatırımcılara ihraç edilen borçlanma araçlarının itfası",
+  "t": "2026-11-23T08:56:39+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1701078",
+  "hisse": "ZOREN",
+  "baslik": "TRSZORN92720 ISIN Kodlu Tahvilin 2. Kupon Dönemine İlişkin Faiz Ödemesi Hakkında",
+  "t": "2026-11-23T08:56:40+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1701079",
+  "hisse": "ZOREN",
+  "baslik": "TRSZORN82713 ISIN Kodlu Tahvilin 4. Kupon Dönemine İlişkin Faiz Ödemesi Hakkında",
+  "t": "2026-11-23T08:56:40+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
