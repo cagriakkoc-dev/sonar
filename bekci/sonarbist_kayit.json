@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1696604",
-  "hisse": "ARCLK",
-  "baslik": "TRFARCLK2629 ISIN kodlu Finansman Bonosunun Kupon Ödemesi ve İtfası",
-  "t": "2026-11-17T17:20:47+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1699260",
   "hisse": "ARENA",
   "baslik": "1 Nisan 2025 ? 31 Mart 2026 tarihli hesap dönemi kar dağıtımı yapılmaması önerisinin Genel Kurul?ca onaylanması",
@@ -12473,5 +12454,23 @@
   "gerekce": "Şirket 23.11.2026'da ağırlıklı ortalama 16,03 TL fiyatla 150.000 adet (yaklaşık 2,4 milyon TL) kendi payını geri aldı ve toplam payı 3.336.247 adete (sermayenin %1,67'si) çıktı; pay geri alımı editör kararıyla her zaman önemli türlerden olduğu için taban 80 puan uygulandı.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1701582",
+  "hisse": "OZKGY",
+  "baslik": "Değerleme Raporu ",
+  "t": "2026-11-23T17:53:52+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 10,
+   "yenilik": 6,
+   "kapsam": 5,
+   "kesinlik": 6,
+   "ilgi": 3
+  },
+  "tur": "Değerleme raporu",
+  "gerekce": "Şirketin Antalya Kemer'deki bir arsası için hazırlanan rutin gayrimenkul değerleme raporu bildirilmiş; metinde değer tutarı yer almadığından finansal etki belirsiz, ancak PD/DD 0,21x olan bir GYO için portföy değerine dair sınırlı bir ipucu sunuyor.",
+  "durum": "dusuk"
  }
 ]
