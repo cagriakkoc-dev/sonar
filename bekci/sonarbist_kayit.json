@@ -1,41 +1,5 @@
 [
  {
-  "id": "kap-1698946",
-  "hisse": "MPARK",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-17T08:59:27+00:00",
-  "mod": "golge",
-  "puan": 14,
-  "alt": {
-   "fin": 0,
-   "yenilik": 3,
-   "kapsam": 4,
-   "kesinlik": 3,
-   "ilgi": 4
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
-  "gerekce": "MPARK, yönetimde söz sahibi personelin görev ve meslek bilgilerini içeren rutin bir Şirket Genel Bilgi Formu güncellemesi yayımladı; yeni bir atama, ayrılık veya parasal etki bildirilmediği için önemi düşüktür.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1698957",
-  "hisse": "EYGYO",
-  "baslik": "Genel Kurul İşlemlerine İlişkin Bildirim",
-  "t": "2026-11-17T09:20:27+00:00",
-  "mod": "golge",
-  "puan": 20,
-  "alt": {
-   "fin": 2,
-   "yenilik": 3,
-   "kapsam": 5,
-   "kesinlik": 8,
-   "ilgi": 2
-  },
-  "tur": "Genel kurul sonuç ve tescil bildirimi",
-  "gerekce": "Olağan genel kurulun yapıldığı ve kararların tescil edildiği bildiriliyor; kâr payı maddesi yalnızca 'görüşüldü' olarak geçiyor, dağıtım kararı veya tutarı yok (şirket son 4 çeyrekte zararda), bu yüzden usulî bildirim sayılıp düşük puan aldı.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1698995",
   "hisse": "TCKRC",
   "baslik": "İhale Süreci / Sonucu",
@@ -12487,5 +12451,43 @@
   "goruntu_hata": null,
   "tweet_id": "2124751674170380780",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1700926",
+  "hisse": "ARDYZ",
+  "baslik": "20.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+  "t": "2026-11-23T06:38:09+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1700924",
+  "hisse": "OZYSR",
+  "baslik": "20 Kasım 2026 Tarihli Geri Alım İşlemi",
+  "t": "2026-11-23T06:38:10+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
