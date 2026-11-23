@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1698635",
-  "hisse": "ENERY",
-  "baslik": "16.11.2026 Tarihli Pay Geri Alım İşlemleri",
-  "t": "2026-11-17T15:40:56+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1698605",
   "hisse": "EUREN",
   "baslik": "16.11.2026 Pay geri alım işlemleri",
@@ -12605,5 +12586,23 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1701431",
+  "hisse": "VAKBN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-23T14:48:24+00:00",
+  "mod": "golge",
+  "puan": 42,
+  "alt": {
+   "fin": 12,
+   "yenilik": 7,
+   "kapsam": 8,
+   "kesinlik": 7,
+   "ilgi": 8
+  },
+  "tur": "Borçlanma aracı ihracı / GMTN program bildirimi",
+  "gerekce": "Vadesi 01.12.2027 olan USD tek kuponlu borçlanma aracı için SPK onaylı işlem detayları bildirilmiş ve GMTN programının sözleşmesel boyutu 15 milyar USD'ye çıkarılmış, ancak ihraç tutarı verilmemiş, program limiti artışı da rutin bir finansman adımı olduğundan etki orta düzeyde kalmıştır.",
+  "durum": "dusuk"
  }
 ]
