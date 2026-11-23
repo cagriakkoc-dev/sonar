@@ -1,43 +1,5 @@
 [
  {
-  "id": "ozet-1696440",
-  "hisse": "ANSGR",
-  "baslik": "Kurumsal Yönetim Derecelendirme Notu",
-  "t": "2026-11-17T17:20:42+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1691894",
-  "hisse": "ARCLK",
-  "baslik": "Fitch Ratings Kredi Derecelendirme Notu",
-  "t": "2026-11-17T17:20:43+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1692865",
   "hisse": "ARCLK",
   "baslik": "Borçlanma Aracı İhracı Talep Toplama",
@@ -12473,6 +12435,43 @@
   },
   "tur": "pay geri alımı",
   "gerekce": "Pegasus, 3 milyar TL fon ayırdığı ve azami %3 sermaye payını kapsayan geri alım programını başlattı; ilk gün 48,7 milyon TL'lik (%0,064) alım yapıldı, bu tür editör kararıyla en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1701570",
+  "hisse": "ZOREN",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-23T17:00:07+00:00",
+  "mod": "golge",
+  "puan": 29,
+  "alt": {
+   "fin": 5,
+   "yenilik": 8,
+   "kapsam": 5,
+   "kesinlik": 7,
+   "ilgi": 4
+  },
+  "tur": "Lisans tadili onayı (EPDK, depolama ünitesi)",
+  "gerekce": "Alaşehir JES üretim lisansına 10 MW/10 MWh batarya depolama ünitesi eklenmesi EPDK tarafından onaylandı; ancak ünite küçük ölçekli ve yatırım tutarı açıklanmadığından etkisi 9,3 milyar TL'lik piyasa değerine göre sınırlı, bildirim yeni sözleşme veya sipariş niteliğinde de değil.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1701568",
+  "hisse": "PGSUS",
+  "baslik": "Günlük Pay Geri Alım İşlemleri",
+  "t": "2026-11-23T17:00:13+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
