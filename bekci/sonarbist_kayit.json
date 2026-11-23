@@ -1,59 +1,5 @@
 [
  {
-  "id": "kap-1699090",
-  "hisse": "ANSGR",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-17T13:23:12+00:00",
-  "mod": "golge",
-  "puan": 50,
-  "alt": {
-   "fin": 5,
-   "yenilik": 10,
-   "kapsam": 16,
-   "kesinlik": 10,
-   "ilgi": 9
-  },
-  "tur": "Genel müdür ataması / yönetim değişikliği",
-  "gerekce": "Anadolu Sigorta'da (ANSGR) boşalan Genel Müdürlük görevine Serkan Uğraş Kaygalak'ın atanması ve kendisinin doğal yönetim kurulu üyesi olması, doğrudan finansal tutar içermeyen ama şirket yönetimini etkileyen kesinleşmiş bir üst düzey atamadır.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1699091",
-  "hisse": "ANSGR",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-17T13:23:14+00:00",
-  "mod": "golge",
-  "puan": 30,
-  "alt": {
-   "fin": 2,
-   "yenilik": 8,
-   "kapsam": 10,
-   "kesinlik": 8,
-   "ilgi": 2
-  },
-  "tur": "Şirket Genel Bilgi Formu (yönetim kurulu üyesi güncellemesi)",
-  "gerekce": "Form, yönetim kurulunda 17.11.2026 tarihinde icrada görevli yeni bir üyenin (Serkan Uğraş Kaygalak) seçildiğini gösteren rutin bir bilgi güncellemesidir; finansal etkisi yoktur ve editörün zorunlu önemli saydığı türlerden biri değildir.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1699093",
-  "hisse": "ANSGR",
-  "baslik": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-1",
-  "t": "2026-11-17T13:33:51+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 0,
-   "yenilik": 2,
-   "kapsam": 4,
-   "kesinlik": 3,
-   "ilgi": 3
-  },
-  "tur": "Kurumsal Yönetim Bilgi Formu güncellemesi",
-  "gerekce": "Yönetim kurulu faaliyet esaslarına ilişkin usulî form güncellemesidir; CEO adı dışında yeni bir karar, tutar veya yönetim değişikliği içermez, finansal etkisi yoktur ve editörün zorunlu önemli türlerinden hiçbirine girmez.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1699094",
   "hisse": "BURCE",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12459,5 +12405,80 @@
   "tur": "Haber ve söylentilere ilişkin açıklama",
   "gerekce": "Hâkim ortak ve YK Başkanı'nın şahsi malvarlığına yönelik kısıtlama soruşturması şirketin yönetimi ve hisse algısı açısından dikkat çekicidir; ancak şirket tüzel kişiliğine veya malvarlığına yönelik bir tedbir olmadığı belirtilmiştir ve doğrudan finansal etki yoktur.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1700942",
+  "hisse": "ISMEN",
+  "baslik": "Yatırım Kuruluşu Varant - Sertifika - Senetlerine İlişkin Bildirim",
+  "t": "2026-11-23T07:10:04+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1700949",
+  "hisse": "INFO",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-23T07:10:04+00:00",
+  "mod": "golge",
+  "puan": 43,
+  "alt": {
+   "fin": 18,
+   "yenilik": 6,
+   "kapsam": 6,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Finansman bonosu erken itfa",
+  "gerekce": "Şirket 349,2 milyon TL bedelle 321,1 milyon TL nominal bonoyu vadesinden önce itfa etti; tutar piyasa değerinin yaklaşık %23'üne denk geliyor ve işlem tamamlandı, ancak bu rutin bir borç yönetimi işlemi olduğundan kâr veya kapsam etkisi sınırlı kalıyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1700939",
+  "hisse": "MCARD",
+  "baslik": "Tasfiye Kapsamındaki Yatırım Fonlarından Şirketimiz Paylarının Borsa Dışında Geri Alınması Hk.",
+  "t": "2026-11-23T07:10:09+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "MCARD (Metropal Kart) tasfiye kapsamındaki yatırım fonlarından 1.880.865 adet payı Borsa dışında 107,20 TL'den geri aldı. Tutar 201.628.728 TL, sermaye oranı %2,03117.\n\nToplam geri alınan pay 3.682.781 adet, %3,977. Piyasa değeri 7,7 milyar TL, PD/DD 2,51x.",
+  "kart": {
+   "baslik": "Borsa Dışı Pay Geri Alımı",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "1.880.865 adet"
+    ],
+    [
+     "Pay başı fiyat",
+     "107,20 TL"
+    ],
+    [
+     "Toplam bedel",
+     "201.628.728 TL"
+    ],
+    [
+     "İşlemin sermaye oranı",
+     "%2,03117"
+    ],
+    [
+     "Toplam geri alınan oran",
+     "%3,977"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2124762859196326179",
+  "x_gorsel_hata": null
  }
 ]
