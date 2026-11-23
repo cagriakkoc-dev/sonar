@@ -1,52 +1,5 @@
 [
  {
-  "id": "kap-1699247",
-  "hisse": "OYYAT",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-17T15:40:44+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1699250",
-  "hisse": "VAKBN",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-17T15:40:44+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 15,
-   "yenilik": 12,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "Kredi/finansman anlaşması (ADB, 500 milyon USD)",
-  "gerekce": "VakıfBank'ın Asya Kalkınma Bankası ile imzaladığı 500 milyon USD'lik (yaklaşık 20 milyar TL, piyasa değerinin yaklaşık %6'sı) yeni sözleşme imzalanmış ve kesinleşmiş olduğundan, bileşen toplamı 55 olsa da yeni sözleşme kuralı gereği taban puan olan 80 verildi.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1699202",
-  "hisse": "AKFIS",
-  "baslik": "17.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-  "t": "2026-11-17T15:40:51+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1698989",
   "hisse": "ALKLC",
   "baslik": "TRFALTKK2619 ISIN Kodlu Finansman Bonosunun İtfası",
@@ -12628,5 +12581,41 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "rutin bildirim"
+ },
+ {
+  "id": "kap-1701375",
+  "hisse": "ZOREN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-23T13:44:16+00:00",
+  "mod": "golge",
+  "puan": 17,
+  "alt": {
+   "fin": 3,
+   "yenilik": 2,
+   "kapsam": 2,
+   "kesinlik": 8,
+   "ilgi": 2
+  },
+  "tur": "Borç aracı kupon faiz oranı bildirimi",
+  "gerekce": "234,33 milyon TL nominal tutarlı (piyasa değerinin yaklaşık %2,5'i) tahvilin 8. kupon faiz oranının (%4,0274) kesinleşmesine dair rutin bir bildirim olduğundan, şirket açısından etkisi düşüktür.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1701379",
+  "hisse": "ISMEN",
+  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
+  "t": "2026-11-23T13:44:19+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1701380",
+  "hisse": "ISMEN",
+  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
+  "t": "2026-11-23T13:44:19+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
  }
 ]
