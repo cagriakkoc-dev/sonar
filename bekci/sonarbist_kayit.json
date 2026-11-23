@@ -1,43 +1,5 @@
 [
  {
-  "id": "kap-1699241",
-  "hisse": "AHGAZ",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-17T15:40:30+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 8,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 5
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "AHGAZ, 17.11.2026'da 20.000 adet pay geri aldı (ortalama 46,61 TL, yaklaşık 0,93 milyon TL); toplam elindeki pay 89,67 milyon adede (%3,449) ulaştı. Tutar piyasa değerine göre küçük olsa da pay geri alımı bildirimleri editör kararıyla en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1699242",
-  "hisse": "ENERY",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-17T15:40:32+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 8,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 5
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "Şirket 17.11.2026'da ortalama 14,85 TL'den 225.000 adet (yaklaşık 3,3 milyon TL) pay geri aldı ve toplam elindeki payı 429,56 milyon adede (%4,77) çıkardı; tutar piyasa değerine göre küçük olsa da pay geri alımı bildirimleri editör kararıyla en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1699246",
   "hisse": "VAKBN",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12613,5 +12575,68 @@
   "goruntu_hata": null,
   "tweet_id": "2124819465674146191",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1701270",
+  "hisse": "GESAN",
+  "baslik": "İhale Sonucu hakkında",
+  "t": "2026-11-23T12:31:54+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "GESAN (Girişim Elektrik) TEİAŞ'ın İTM 572 154 kV Evrensekiz TM Yapımı ihalesinde sözleşmeye çağrıldı. Baz bedel 454.442.845,88 TL, imza 10 gün içinde.\n\nŞalt ekipmanları bağlı ortaklık Europower Enerji'den gelecek. Son 4 çeyrek hasılat 23,8 milyar TL.",
+  "kart": {
+   "baslik": "Evrensekiz TM sözleşme daveti",
+   "satirlar": [
+    [
+     "İhale baz bedeli",
+     "454.442.845,88 TL"
+    ],
+    [
+     "İmza süresi",
+     "10 gün"
+    ],
+    [
+     "Birincilik tarihi",
+     "27.10.2026"
+    ],
+    [
+     "Son 4 çeyrek hasılat",
+     "23,8 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2124843845997224309",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1701274",
+  "hisse": "OZYSR",
+  "baslik": "Yeni İş İlişkisi",
+  "t": "2026-11-23T12:33:46+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
