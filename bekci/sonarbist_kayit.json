@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1699239",
-  "hisse": "TUKAS",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-17T15:28:46+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 12,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "17.11.2026'da yaklaşık 1,9 TL'den 9 milyon adet (yaklaşık 17 milyon TL) pay geri alınmış ve toplam elde tutulan pay 283 milyon adede (yaklaşık 540 milyon TL, piyasa değerinin yaklaşık %6'sı) ulaşmıştır; günlük tutar küçük olsa da pay geri alımı bildirimleri için editör kuralı gereği taban puan olan 80 verilmiştir.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1699241",
   "hisse": "AHGAZ",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12583,6 +12564,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2124811034611368393",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1701186",
+  "hisse": "GESAN",
+  "baslik": "İhale Sonucu Hakkında",
+  "t": "2026-11-23T10:55:07+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "GESAN (Girişim Elektrik) TEİAŞ'tan H.895 referanslı 154 kV hat işi için sözleşme daveti aldı. Baz bedel 284.700.000 TL, imza 10 gün içinde.\n\nYaklaşık 43,2 km'lik işte şirket 22 Ekim'de birinci olmuştu. Son 4 çeyrek hasılat 23,8 milyar TL.",
+  "kart": {
+   "baslik": "TEİAŞ sözleşme daveti",
+   "satirlar": [
+    [
+     "İhale baz bedeli",
+     "284.700.000 TL"
+    ],
+    [
+     "Hat gerilimi",
+     "154 kV"
+    ],
+    [
+     "Hat uzunluğu",
+     "~43,2 km"
+    ],
+    [
+     "Birincilik tarihi",
+     "22 Ekim 2026"
+    ],
+    [
+     "İmza süresi",
+     "10 gün içinde"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2124819465674146191",
   "x_gorsel_hata": null
  }
 ]
