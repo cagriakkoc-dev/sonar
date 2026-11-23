@@ -1,0 +1,30 @@
+name: Render toplu yayın
+# Otomatik commit'ler (bekçi verisi, otomatik özet yayını) "[skip render]" ile gelir; bu iş saatte bir,
+# canlıya alınmamış public/ değişikliği varsa boş bir commit atıp Render'ın tek seferde yayınlamasını sağlar.
+# Elle yapılan site düzenlemeleri (yayin.yml, skip'siz) beklemeden yayınlanır.
+on:
+  schedule:
+    - cron: '5 4-21 * * *'   # 07:05–00:05 TR, saatte bir
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: render-toplu
+  cancel-in-progress: false
+jobs:
+  toplu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 300
+          filter: blob:none
+          sparse-checkout: .github
+      - name: Bekleyen yayın var mı
+        run: |
+          git config user.name "Sonar Yayın"; git config user.email "yayin@users.noreply.github.com"
+          SON=$(git log -n 300 --format='%H%x09%s' | grep -v '\[skip render\]' | head -1 | cut -f1)
+          if [ -z "$SON" ]; then BEK=1; else BEK=$(git log "${SON}..HEAD" --format=%H -- public | head -1); fi
+          if [ -z "$BEK" ]; then echo "Canlıya alınmamış değişiklik yok"; exit 0; fi
+          date -u +%FT%TZ > .github/render_toplu_son; git add .github/render_toplu_son; git commit -q -m "Render: toplu yayın"
+          for n in 1 2 3 4 5; do git push -q origin HEAD:main && echo "tetiklendi" && break; git pull -q --rebase origin main; sleep 5; done

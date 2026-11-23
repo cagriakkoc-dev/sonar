@@ -30,6 +30,6 @@ jobs:
           ADDED=$(git diff --cached --numstat | awk '{s+=$1} END {print s+0}')
           FILES=$(git diff --cached --name-only | grep -v '^bekci/state.json$' | wc -l)
           if [ "$FILES" -gt 0 ] || [ "$ADDED" -gt 2 ]; then
-            if git diff --cached --name-only | grep -q "^public/veri/"; then git commit -q -m "Bekçi durumu · site verisi"; else git commit -q -m "Bekçi durumu [skip render]"; fi
+            if git diff --cached --name-only | grep -q "^public/veri/"; then git commit -q -m "Bekçi durumu · site verisi [skip render]"; else git commit -q -m "Bekçi durumu [skip render]"; fi
             for n in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
           fi
