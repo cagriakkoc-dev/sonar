@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1699094",
-  "hisse": "BURCE",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-17T13:33:54+00:00",
-  "mod": "golge",
-  "puan": 22,
-  "alt": {
-   "fin": 6,
-   "yenilik": 7,
-   "kapsam": 4,
-   "kesinlik": 10,
-   "ilgi": 1
-  },
-  "tur": "Ar-Ge merkezi kapatılması",
-  "gerekce": "Ar-Ge merkezinin Bakanlıkça kapatılması kesinleşti, ancak şirket finansal tablolara önemli etki beklemiyor; teşvik kaybı sınırlı, ürün geliştirme başka birimde sürecek ve şirket BIST 30/100 dışında küçük ölçekli.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1699130",
   "hisse": "GLRMK",
   "baslik": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
@@ -12479,6 +12461,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2124762859196326179",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1700949",
+  "hisse": "INFO",
+  "baslik": "Finansman Bonosunun Erken İtfası Hakkında",
+  "t": "2026-11-23T07:22:38+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "INFO (İnfo Yatırım) TRFINFM12712 kodlu finansman bonosunun 321.100.000 TL nominal kısmını 20 Kasım'da vadesinden önce itfa etti.\n\nÖdeme 349.158.820 TL oldu, katsayı 1,08738. Bonoda 378.900.000 TL nominal kalıyor.\n\nPiyasa değeri 1,5 milyar TL, PD/DD 0,39x.",
+  "kart": {
+   "baslik": "Finansman bonosu erken itfa",
+   "satirlar": [
+    [
+     "İtfa edilen nominal",
+     "321.100.000 TL"
+    ],
+    [
+     "Ödenen tutar",
+     "349.158.820 TL"
+    ],
+    [
+     "Ödeme katsayısı",
+     "1,08738"
+    ],
+    [
+     "Kalan nominal",
+     "378.900.000 TL"
+    ],
+    [
+     "İtfa tarihi",
+     "20.11.2026"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2124765995218714927",
   "x_gorsel_hata": null
  }
 ]
