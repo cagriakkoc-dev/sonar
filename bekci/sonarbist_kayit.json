@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1698904",
-  "hisse": "GLBMD",
-  "baslik": "Şirket Genel Bilgi Formu",
-  "t": "2026-11-17T08:14:31+00:00",
-  "mod": "golge",
-  "puan": 6,
-  "alt": {
-   "fin": 0,
-   "yenilik": 1,
-   "kapsam": 2,
-   "kesinlik": 2,
-   "ilgi": 1
-  },
-  "tur": "Şirket Genel Bilgi Formu (usulî güncelleme)",
-  "gerekce": "Bildirim yalnızca şube iletişim bilgilerini içeren rutin bir genel bilgi formu güncellemesidir; finansal etkisi, yeniliği veya editörün zorunlu önemli saydığı türlerden biri yoktur.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1698936",
   "hisse": "ENJSA",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -12426,6 +12408,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2124745744514945379",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1700909",
+  "hisse": "GENTS",
+  "baslik": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-23T06:14:40+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "GENTS (Gentaş Dekoratif Yüzeyler) 5 Ekim kararıyla başlayan geri alım programında alıma devam etti.\n\n• 20 Kasım: 600.000 lot\n• Fiyat: 2,91-2,95 TL, ortalama 2,94 TL\n• Program toplamı: 4.672.208 lot, %0,6230\n\nPiyasa değeri 3,0 milyar TL, PD/DD 0,75x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "20.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "600.000 lot"
+    ],
+    [
+     "Fiyat aralığı",
+     "2,91-2,95 TL"
+    ],
+    [
+     "Toplam geri alınan",
+     "4.672.208 lot"
+    ],
+    [
+     "Sermaye oranı",
+     "%0,6230"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2124748948447412588",
   "x_gorsel_hata": null
  }
 ]
