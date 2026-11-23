@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1698887",
-  "hisse": "GLBMD",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-17T08:03:54+00:00",
-  "mod": "golge",
-  "puan": 18,
-  "alt": {
-   "fin": 4,
-   "yenilik": 4,
-   "kapsam": 4,
-   "kesinlik": 5,
-   "ilgi": 1
-  },
-  "tur": "Şube kapatılması",
-  "gerekce": "Adana şubesinin 17.11.2026 itibarıyla kapatılması ve yatırımcıların merkez, internet ve çağrı merkezine yönlendirilmesi kesin bir karardır, ancak tek bir şubeyi ilgilendiren operasyonel bir değişikliktir ve şirketin mali yapısına belirgin bir etkisi beklenmez.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1698904",
   "hisse": "GLBMD",
   "baslik": "Şirket Genel Bilgi Formu",
@@ -12396,6 +12378,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2124099192633389445",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1700902",
+  "hisse": "ODINE",
+  "baslik": "Yatırımcı Sunumu (9A 2026)",
+  "t": "2026-11-23T06:02:01+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ODINE (Odine Solutions) finansal sonuçlarını değerlendiren 9A 2026 yatırımcı sunumunu yayımladı.\n\nSunum, dokuz aylık performansı şirketin kendi anlatımıyla ortaya koyuyor. Son 4 çeyrekte hasılat 2,3 milyar TL, net kâr -115,5 milyon TL.\n\nPiyasa değeri 22,0 milyar TL, PD/DD 10,32x.",
+  "kart": {
+   "baslik": "Dokuz aylık yatırımcı sunumu",
+   "satirlar": [
+    [
+     "Dönem",
+     "9A 2026"
+    ],
+    [
+     "Son 4 çeyrek hasılat",
+     "2,3 milyar TL"
+    ],
+    [
+     "Son 4 çeyrek net kâr",
+     "-115,5 milyon TL"
+    ],
+    [
+     "Piyasa değeri",
+     "22,0 milyar TL"
+    ],
+    [
+     "PD/DD",
+     "10,32x"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2124745744514945379",
   "x_gorsel_hata": null
  }
 ]
