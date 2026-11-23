@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1698936",
-  "hisse": "ENJSA",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-17T08:59:22+00:00",
-  "mod": "golge",
-  "puan": 33,
-  "alt": {
-   "fin": 7,
-   "yenilik": 4,
-   "kapsam": 5,
-   "kesinlik": 9,
-   "ilgi": 8
-  },
-  "tur": "Borçlanma aracı ihracı (tahvil, faizli)",
-  "gerekce": "1,7 milyar TL'lik 728 gün vadeli tahvil ihracı tamamlanmış ve kesinleşmiş, ancak tutar piyasa değerinin yaklaşık %1,4'ü olduğu için rutin bir finansman işlemi sayılır ve etkisi sınırlıdır.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1698946",
   "hisse": "MPARK",
   "baslik": "Şirket Genel Bilgi Formu",
@@ -12456,6 +12438,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2124748948447412588",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1700925",
+  "hisse": "AYES",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-23T06:27:15+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 14,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Pay geri alım programı kapsamında 20.11.2026'da 80.974 adet pay yaklaşık 502 bin TL'ye alındı (toplam geri alım sermayenin yaklaşık %2,54'ü, program fonu 130 milyon TL); günlük tutar küçük olsa da pay geri alımı editör kararıyla en az 80 puan alan türdür.",
+  "durum": "paylasildi",
+  "tweet": "AYES (Çelik Hasır ve Çit) 20 Kasım'da 6,20 TL fiyattan 80.974 lot pay geri aldı. Tutar 502.038,80 TL, sermaye oranı %0,01619.\n\n14 Ekim kararlı programda toplam 12.706.533 lot, yaklaşık %2,54131. Piyasa değeri 5,6 milyar TL, PD/DD 1,34x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "20.11.2026"
+    ],
+    [
+     "Geri alınan pay",
+     "80.974 lot"
+    ],
+    [
+     "Fiyat",
+     "6,20 TL"
+    ],
+    [
+     "İşlem tutarı",
+     "502.038,80 TL"
+    ],
+    [
+     "Program toplamı",
+     "12.706.533 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2124751674170380780",
   "x_gorsel_hata": null
  }
 ]
