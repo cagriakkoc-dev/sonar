@@ -1,14 +1,5 @@
 [
  {
-  "id": "kap-1699232",
-  "hisse": "ISMEN",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-17T15:28:40+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
   "id": "kap-1699233",
   "hisse": "ISMEN",
   "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
@@ -12543,6 +12534,25 @@
   },
   "tur": "Kredi anlaşması / yeni sözleşme",
   "gerekce": "İmzalanmış 151,5 milyon Euro'luk EBRD kredi anlaşması piyasa değerinin yaklaşık %2'si kadar olduğundan finansal etkisi sınırlıdır, ancak yeni sözleşme türü olduğu için editör kuralı gereği taban puan 80 verilmiştir.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1701110",
+  "hisse": "ISCTR",
+  "baslik": "Avrupa İmar ve Kalkınma Bankası ile İmzalanan Kredi Sözleşmeleri Hk.",
+  "t": "2026-11-23T09:17:59+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
