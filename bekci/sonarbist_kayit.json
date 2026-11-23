@@ -1,62 +1,5 @@
 [
  {
-  "id": "ozet-1699271",
-  "hisse": "ATATP",
-  "baslik": "Pay Geri Alım İşlemleri",
-  "t": "2026-11-17T17:20:49+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1694272",
-  "hisse": "AYGAZ",
-  "baslik": "1 Ocak-30 Eylül 2026 Finansal Sonuçları ve 2026 yılı beklentilerimiz",
-  "t": "2026-11-17T17:20:50+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1691959",
-  "hisse": "BASGZ",
-  "baslik": "Pay Geri Alım Programı Başlatılması hk",
-  "t": "2026-11-17T17:20:51+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1697294",
   "hisse": "BASGZ",
   "baslik": "11.11.2026 Tarihli Günlük  Pay Geri Alım İşlemleri",
@@ -12472,5 +12415,59 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1701584",
+  "hisse": "TABGD",
+  "baslik": "Genel Kurul İşlemlerine İlişkin Bildirim",
+  "t": "2026-11-23T18:43:14+00:00",
+  "mod": "golge",
+  "puan": 18,
+  "alt": {
+   "fin": 0,
+   "yenilik": 4,
+   "kapsam": 5,
+   "kesinlik": 6,
+   "ilgi": 3
+  },
+  "tur": "Genel kurul sonuç bildirimi (usulî)",
+  "gerekce": "Bildirim olağanüstü genel kurulun yapıldığını ve tutanak ile hazır bulunanlar listesinin eklendiğini duyuruyor, metinde alınan kararların içeriği veya tutarı yer almadığı için usulî bir bildirim olarak düşük puan aldı.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1701585",
+  "hisse": "TABGD",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-23T18:43:19+00:00",
+  "mod": "golge",
+  "puan": 45,
+  "alt": {
+   "fin": 3,
+   "yenilik": 10,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Yönetim kurulu görev dağılımı",
+  "gerekce": "Olağanüstü genel kurulda seçilen yönetim kurulunda Erhan Kurdoğlu'nun başkan, Korhan Kurdoğlu'nun başkan yardımcısı olarak belirlenmesi kesinleşmiş bir yönetim değişikliğidir, ancak doğrudan finansal tutar içermez ve editörün zorunlu önemli sayılan türlerinden biri değildir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1701586",
+  "hisse": "TABGD",
+  "baslik": "Yönetim Kurulu Komiteleri",
+  "t": "2026-11-23T18:43:23+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 0,
+   "yenilik": 4,
+   "kapsam": 8,
+   "kesinlik": 8,
+   "ilgi": 2
+  },
+  "tur": "Yönetim kurulu komiteleri ataması",
+  "gerekce": "Olağanüstü genel kurulda yönetim kurulunun yeniden seçilmesinin ardından üç komitenin başkan ve üyeleri yeniden belirlendi; finansal etkisi olmayan, kesinleşmiş ve büyük ölçüde usulî bir görev dağılımı bildirimi.",
+  "durum": "dusuk"
  }
 ]
