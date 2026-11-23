@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1699090",
-  "hisse": "ANSGR",
-  "baslik": "Şirketimiz Genel Müdürlük Görevi Hakkında",
-  "t": "2026-11-17T15:40:52+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1699093",
   "hisse": "ANSGR",
   "baslik": "İcra Başkanı / Genel Müdürün Adı",
@@ -12607,5 +12588,24 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1701392",
+  "hisse": "CWENE",
+  "baslik": "Yeni İş İlişkisi",
+  "t": "2026-11-23T14:05:33+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 4,
+   "yenilik": 8,
+   "kapsam": 5,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Yeni iş ilişkisi (ihracat sözleşmesi)",
+  "gerekce": "Bağlı ortaklık CW Energy USA'nın imzaladığı yaklaşık 84,8 milyon TL'lik güneş paneli ihracat sözleşmesi, 19 milyar TL hasılata oranla yaklaşık %0,45 ile küçük olsa da yeni iş ilişkisi türü editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
