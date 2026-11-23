@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1699130",
-  "hisse": "GLRMK",
-  "baslik": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
-  "t": "2026-11-17T14:20:36+00:00",
-  "mod": "golge",
-  "puan": 55,
-  "alt": {
-   "fin": 20,
-   "yenilik": 10,
-   "kapsam": 13,
-   "kesinlik": 7,
-   "ilgi": 5
-  },
-  "tur": "Sermaye artırımı fon kullanım raporu",
-  "gerekce": "Tahsisli sermaye artırımından elde edilecek fonun kullanımına ilişkin SPK Pay Tebliği kapsamındaki rapor, daha önce duyurulan karara bağlı usulî bir takip bildirimi olup tutar metinde yer almıyor, ancak sermaye yapısını etkileyen bir süreç olduğu için orta puan aldı.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1699145",
   "hisse": "AKSGY",
   "baslik": "Herhangi Bir Otoriteye Mali Tablo Verilmesi",
@@ -12509,6 +12491,50 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2124765995218714927",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1700986",
+  "hisse": "GESAN",
+  "baslik": "İhale Sonucu Hakkında",
+  "t": "2026-11-23T07:35:05+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "GESAN (Girişim Elektrik) Konya Selçuklu Belediyesi ile Selçuklu GES Projesi Tasarımı için sözleşme imzaladı. İhale baz bedeli 1.600.000 USD.\n\nŞalt ekipmanları Europower Enerji'den, paneller Peak PV'den temin edilecek. Son 4 çeyrek hasılat 23,8 milyar TL.",
+  "kart": {
+   "baslik": "Selçuklu GES tasarım sözleşmesi",
+   "satirlar": [
+    [
+     "İhale baz bedeli",
+     "1.600.000 USD"
+    ],
+    [
+     "İdare",
+     "Selçuklu Belediyesi"
+    ],
+    [
+     "Proje",
+     "2.2MW GES"
+    ],
+    [
+     "Durum",
+     "Sözleşme yürürlükte"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2124769136853020794",
   "x_gorsel_hata": null
  }
 ]
