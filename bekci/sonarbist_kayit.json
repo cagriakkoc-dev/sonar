@@ -1,43 +1,5 @@
 [
  {
-  "id": "ozet-1694594",
-  "hisse": "ARCLK",
-  "baslik": "TRFARCLK2611 ISIN Kodlu Finansman Bonosu'nun 2. Kupon Faiz Oranının Belirlenmesi",
-  "t": "2026-11-17T17:20:45+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1695287",
-  "hisse": "ARCLK",
-  "baslik": "TRFARCLK2611 ISIN kodlu Finansman Bonosunun Kupon ve Anapara Ödemesi ile İtfası",
-  "t": "2026-11-17T17:20:46+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1696604",
   "hisse": "ARCLK",
   "baslik": "TRFARCLK2629 ISIN kodlu Finansman Bonosunun Kupon Ödemesi ve İtfası",
@@ -12472,6 +12434,43 @@
   },
   "tur": "yayınlanan özet",
   "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1701575",
+  "hisse": "ULKER",
+  "baslik": "Kredi Derecelendirmesi",
+  "t": "2026-11-23T17:32:36+00:00",
+  "mod": "golge",
+  "puan": 52,
+  "alt": {
+   "fin": 8,
+   "yenilik": 14,
+   "kapsam": 14,
+   "kesinlik": 8,
+   "ilgi": 8
+  },
+  "tur": "Kredi derecelendirme",
+  "gerekce": "S&P, Ülker'in uzun vadeli kredi notunu BB'de teyit etti ancak görünümü 'Negatif'e çevirdi; doğrudan parasal etki yok, ancak şirketin finansman koşulları açısından olumsuz bir sinyal ve büyük bir BIST şirketi için orta düzeyde önem taşıyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1701580",
+  "hisse": "KZGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-23T17:32:39+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Şirket 23.11.2026'da ağırlıklı ortalama 16,03 TL fiyatla 150.000 adet (yaklaşık 2,4 milyon TL) kendi payını geri aldı ve toplam payı 3.336.247 adete (sermayenin %1,67'si) çıktı; pay geri alımı editör kararıyla her zaman önemli türlerden olduğu için taban 80 puan uygulandı.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
