@@ -1,62 +1,5 @@
 [
  {
-  "id": "ozet-1691205",
-  "hisse": "EKDMR",
-  "baslik": "02.11.2026 tarihli geri alım işlemleri",
-  "t": "2026-11-17T17:21:03+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1694036",
-  "hisse": "EKDMR",
-  "baslik": "Halka Arzdan Elde Edilen Fonun Kullanımına İlişkin Rapor",
-  "t": "2026-11-17T17:21:04+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1695937",
-  "hisse": "EKDMR",
-  "baslik": "09.11.2026 tarihli geri alım işlemleri",
-  "t": "2026-11-17T17:21:04+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1696751",
   "hisse": "EKDMR",
   "baslik": "10.11.2026 tarihli geri alım işlemleri",
@@ -12729,5 +12672,119 @@
   "tur": "Borçlanma aracı ihracı (USD, GMTN programı)",
   "gerekce": "SPK onaylı, 3 yıl vadeli ve yıllık kuponlu USD ihracı ile GMTN programının 15 milyar USD'ye çıkarıldığı duyuruluyor; ihraç tutarı metinde görünmüyor, bir bankanın rutin fonlama işlemi olduğundan ve BIST 30 şirketi olması nedeniyle orta puan aldı.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1702019",
+  "hisse": "ZRGYO",
+  "baslik": "Değerleme Raporu ",
+  "t": "2026-11-24T14:43:08+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 10,
+   "yenilik": 5,
+   "kapsam": 5,
+   "kesinlik": 6,
+   "ilgi": 4
+  },
+  "tur": "Gayrimenkul değerleme raporu",
+  "gerekce": "ZRGYO'nun Erenköy dükkânları için yıl sonu değerleme raporu yayımlandı; bildirimde değer tutarı yer almıyor, rapor ekte sunulduğundan etki sınırlı ve rutin nitelikte, bu yüzden düşük puan verildi.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1701993",
+  "hisse": "VAKBN",
+  "baslik": "GMTN Programı Çerçevesinde Türkiye Dışında Sürdürülebilir Borçlanma Aracı İhracı SPK Onayı",
+  "t": "2026-11-24T14:43:12+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "VAKBN (VakıfBank) GMTN programı kapsamında yurt dışında sürdürülebilir borçlanma aracı ihracı için SPK onayı aldı. Euro cinsi araç 2 Aralık 2027'de vadeye gelecek.\n\nProgramın yurt dışı boyutu 10 milyar dolardan 15 milyar dolara çıkarıldı. PD/DD 0,85x.",
+  "kart": {
+   "baslik": "Sürdürülebilir borçlanma aracı onayı",
+   "satirlar": [
+    [
+     "Para birimi",
+     "EUR"
+    ],
+    [
+     "Vade",
+     "02.12.2027"
+    ],
+    [
+     "Kupon",
+     "Tek kupon"
+    ],
+    [
+     "Önceki program boyutu",
+     "10 milyar ABD Doları"
+    ],
+    [
+     "Yeni program boyutu",
+     "15 milyar ABD Doları"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125239249632973250",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1702017",
+  "hisse": "VAKBN",
+  "baslik": "GMTN Programı Çerçevesinde Türkiye Dışında Sürdürülebilir Borçlanma Aracı İhracı SPK Onayı",
+  "t": "2026-11-24T14:44:57+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "VAKBN (VakıfBank) için SPK, GMTN programı çerçevesinde yurt dışında dolar cinsi sürdürülebilir borçlanma aracı ihracını onayladı.\n\n• Vade: 4 Aralık 2029\n• Kupon: yılda bir, toplam 3 ödeme\n\nProgramın yurt dışı boyutu 15 milyar dolara çıkarıldı. PD/DD 0,85x.",
+  "kart": {
+   "baslik": "Sürdürülebilir borçlanma aracı onayı",
+   "satirlar": [
+    [
+     "Para birimi",
+     "USD"
+    ],
+    [
+     "Vade",
+     "4 Aralık 2029"
+    ],
+    [
+     "Kupon sıklığı",
+     "Yılda bir"
+    ],
+    [
+     "Kupon sayısı",
+     "3"
+    ],
+    [
+     "Program yurt dışı boyutu",
+     "15 milyar dolar"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125239748566376534",
+  "x_gorsel_hata": null
  }
 ]
