@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1695190",
-  "hisse": "HALKB",
-  "baslik": "Yurtiçinde Nitelikli Yatırımcılara Sermaye Benzeri Tahvil Kupon Oranı",
-  "t": "2026-11-17T17:21:32+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1696352",
   "hisse": "HALKB",
   "baslik": "Yurtiçinde Nitelikli Yatırımcılara Sermaye Benzeri Tahvil Kupon İtfası",
@@ -12729,6 +12710,25 @@
   },
   "tur": "yayınlanan özet",
   "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1702127",
+  "hisse": "AKSGY",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-24T18:34:22+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 4,
+   "yenilik": 4,
+   "kapsam": 6,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "Şirket 24.11.2026'da yaklaşık 15,6 milyon TL tutarında 1.804.000 TL nominal B grubu payını geri aldı (program kapsamında toplam elde tutulan 23.203.131 TL nominal, sermayenin %0,9608'i); tutar piyasa değerine göre küçük olsa da pay geri alımı bildirimleri editör kuralı gereği en az 80 puan alır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
