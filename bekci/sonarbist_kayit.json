@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1695731",
-  "hisse": "BIMAS",
-  "baslik": "30 Eylül 2026 Yatırımcı Sunumu",
-  "t": "2026-11-17T17:20:52+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1697329",
   "hisse": "BKRGY",
   "baslik": "3Ç 2026 Halka Arz Gelirinden Elde Edilen Fonun Kullanım Yerlerine İlişkin Rapor",
@@ -12469,5 +12450,53 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1701619",
+  "hisse": "AZTEK",
+  "baslik": "23.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-24T05:17:18+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "AZTEK (Aztek Teknoloji) 23 Kasım'da 2,23-2,29 TL aralığından, ortalama 2,27 TL ile 1.418.623 lot pay geri aldı. İşlem sermayenin %0,14186'sı.\n\n13 Ekim programında toplam 4.410.619 lot, sermayenin %0,44106'sı. Piyasa değeri 3,1 milyar TL, PD/DD 1,72x.",
+  "kart": {
+   "baslik": "Pay geri alımı, 23 Kasım",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "1.418.623 lot"
+    ],
+    [
+     "Fiyat aralığı",
+     "2,23-2,29 TL"
+    ],
+    [
+     "Ortalama fiyat",
+     "2,27 TL"
+    ],
+    [
+     "Günlük sermaye oranı",
+     "%0,14186"
+    ],
+    [
+     "Toplam pay",
+     "4.410.619 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125096484404109593",
+  "x_gorsel_hata": null
  }
 ]
