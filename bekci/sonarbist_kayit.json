@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1699258",
-  "hisse": "DAGI",
-  "baslik": "17 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
-  "t": "2026-11-17T17:21:00+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1693366",
   "hisse": "DOAS",
   "baslik": "Skoda Markalı Binek Otomobillerin Irak Cumhuriyeti'ndeki Satış ve Satış Sonrası Servis Hizmetlerinin Şirketimiz Tarafından Yerine Getirilmesi Amacıyla",
@@ -12684,5 +12665,53 @@
   "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
   "gerekce": "Bildirim yalnızca yönetimde söz sahibi personelin listesini içeren rutin bir bilgi formu güncellemesidir; finansal etkisi yoktur ve açık bir atama veya ayrılık bilgisi içermez.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1701914",
+  "hisse": "MSGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-24T13:05:27+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 22,
+   "yenilik": 12,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "Pay geri alımı (program sonu)",
+  "gerekce": "Pay geri alım programı sona erdi; toplam 48,2 milyon TL maliyetle 11,6 milyon nominal TL pay (sermayenin %2,478'i) geri alındı, bu tutar 2,3 milyar TL piyasa değerinin yaklaşık %2'sine denk gelir ve geri alım bildirimleri editör kararıyla en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "MSGYO (Mistral GYO) 22 Kasım 2023 kararıyla başlayan pay geri alım programı, 3 yıllık süre dolduğu için sona erdi.\n\n• Toplam 11.639.873,5 TL nominal, sermayenin %2,478'i\n• Ortalama 4,142 TL, maliyet 48.247.439,93 TL\n\nPiyasa değeri 2,3 milyar TL, PD/DD 0,41x.",
+  "kart": {
+   "baslik": "Geri alım programı sona erdi",
+   "satirlar": [
+    [
+     "Program dönemi",
+     "22.11.2023-22.11.2026"
+    ],
+    [
+     "Geri alınan nominal",
+     "11.639.873,5 TL"
+    ],
+    [
+     "Sermaye oranı",
+     "%2,478"
+    ],
+    [
+     "Ortalama bedel",
+     "4,142 TL"
+    ],
+    [
+     "Maliyet",
+     "48.247.439,93 TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125214272351277467",
+  "x_gorsel_hata": null
  }
 ]
