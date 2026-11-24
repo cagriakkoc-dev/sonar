@@ -1,43 +1,5 @@
 [
  {
-  "id": "ozet-1694562",
-  "hisse": "CVKMD",
-  "baslik": "Pay Geri Alım Programının Tamamlanması",
-  "t": "2026-11-17T17:20:56+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1696052",
-  "hisse": "CVKMD",
-  "baslik": "Pay Geri Alım Programının Tamamlanması",
-  "t": "2026-11-17T17:20:57+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1692850",
   "hisse": "CWENE",
   "baslik": "ABD'de Güneş Paneli Üretim Tesisi Yatırımına İlişkin Gelişmeler",
@@ -12628,5 +12590,71 @@
   "goruntu_hata": null,
   "tweet_id": "2125197889425031228",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1701829",
+  "hisse": "FROTO",
+  "baslik": "Genel Kurul İşlemlerine İlişkin Bildirim",
+  "t": "2026-11-24T12:11:14+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 28,
+   "yenilik": 14,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "Kâr payı dağıtım kararı (Olağanüstü Genel Kurul)",
+  "gerekce": "Başlık usulî görünse de Olağanüstü Genel Kurul 10,77 milyar TL (hisse başı brüt 3,07 TL) temettü dağıtımını onayladı ve ödeme 26 Kasım 2026'da başlayacak; tutar piyasa değerinin yaklaşık %4,2'si ve son 4 çeyrek net kârının yaklaşık %37'si olduğundan editör kuralı gereği en az 80 puan alır.",
+  "durum": "paylasildi",
+  "tweet": "FROTO (Ford Otosan) Olağanüstü Genel Kurulu'nda 10.772.937.000 TL kâr payı dağıtımı görüşüldü.\n\n• Brüt 3,07 TL (%307), net 2,6095 TL (%260,95), 1 TL nominal pay başına\n• Ödeme 26 Kasım 2026'dan itibaren\n\nPiyasa değeri 258,1 milyar TL.",
+  "kart": {
+   "baslik": "Kâr payı dağıtımı",
+   "satirlar": [
+    [
+     "Toplam dağıtım",
+     "10.772.937.000 TL"
+    ],
+    [
+     "Brüt pay başına",
+     "3,0700 TL (%307,00)"
+    ],
+    [
+     "Net pay başına",
+     "2,6095 TL (%260,95)"
+    ],
+    [
+     "Genel Kurul tarihi",
+     "24 Kasım 2026"
+    ],
+    [
+     "Ödeme başlangıcı",
+     "26 Kasım 2026"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125200668575072284",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1701833",
+  "hisse": "GLYHO",
+  "baslik": "Kurumsal Yönetim İlkelerine Uyum Derecelendirmesi",
+  "t": "2026-11-24T12:11:39+00:00",
+  "mod": "golge",
+  "puan": 27,
+  "alt": {
+   "fin": 0,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 7,
+   "ilgi": 6
+  },
+  "tur": "Kurumsal yönetim derecelendirme notu",
+  "gerekce": "Kurumsal yönetim derecelendirme notu yıllık güncellemeyle 9,41'den 9,51'e çıktı; bu rutin ve küçük bir iyileşmedir, doğrudan finansal etkisi yoktur ve editörün zorunlu önemli saydığı türlerden birine girmez.",
+  "durum": "dusuk"
  }
 ]
