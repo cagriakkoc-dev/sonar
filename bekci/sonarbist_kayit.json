@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1694468",
-  "hisse": "BRSAN",
-  "baslik": "3Ç26 Yatırımcı Sunumu, Finansal Sonuç Duyurusu ve 2026 Yılı Beklentileri",
-  "t": "2026-11-17T17:20:53+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1699254",
   "hisse": "CATES",
   "baslik": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
@@ -12497,5 +12478,53 @@
   "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
   "gerekce": "Yönetim kurulu üyelerinin mevcut bilgilerini içeren usulî bir form güncellemesidir; yeni bir atama, ayrılık veya finansal etki içermediği için önemi düşüktür.",
   "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1701622",
+  "hisse": "ARDYZ",
+  "baslik": "23.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+  "t": "2026-11-24T06:07:10+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ARDYZ (Ard Grup Bilişim) 23 Kasım'da 44,22-45,30 TL aralığından, ortalama 44,72 TL ile 10.000 lot pay geri aldı. İşlem sermayenin %0,0031'i.\n\n30 Eylül kararlı programda toplam 317.204 lot, sermayenin %0,098'i. Piyasa değeri 18,1 milyar TL, PD/DD 2,39x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "23.11.2026"
+    ],
+    [
+     "Geri alınan pay",
+     "10.000 lot"
+    ],
+    [
+     "Ağırlıklı ortalama",
+     "44,72 TL"
+    ],
+    [
+     "Program toplamı",
+     "317.204 lot"
+    ],
+    [
+     "Toplam sermaye oranı",
+     "%0,098"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125109400629358726",
+  "x_gorsel_hata": null
  }
 ]
