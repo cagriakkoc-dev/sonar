@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1695900",
-  "hisse": "CWENE",
-  "baslik": "2026 Yılı 3.Çeyrek Yatırımcı Sunumu Hk.",
-  "t": "2026-11-17T17:20:59+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1699258",
   "hisse": "DAGI",
   "baslik": "17 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
@@ -12685,5 +12666,23 @@
   "gerekce": "Genel Kurul'un onayladığı 200 milyon TL brüt nakit kâr payı (hisse başına %8,72 net), piyasa değerinin yaklaşık %0,65'i ve net dönem kârının çok küçük bir bölümü olsa da, kâr payı dağıtımı editör kuralı gereği en az 80 puan alır; ödeme en geç 31.12.2026'ya kadar yapılacak.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1701912",
+  "hisse": "TTKOM",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-24T12:54:50+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 0,
+   "yenilik": 3,
+   "kapsam": 4,
+   "kesinlik": 2,
+   "ilgi": 3
+  },
+  "tur": "Şirket Genel Bilgi Formu (yönetim bilgisi güncellemesi)",
+  "gerekce": "Bildirim yalnızca yönetimde söz sahibi personelin listesini içeren rutin bir bilgi formu güncellemesidir; finansal etkisi yoktur ve açık bir atama veya ayrılık bilgisi içermez.",
+  "durum": "dusuk"
  }
 ]
