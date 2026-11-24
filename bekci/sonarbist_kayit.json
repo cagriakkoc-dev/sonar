@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1695543",
-  "hisse": "DOAS",
-  "baslik": "Kar Payı Avansı 2026-3. Çeyrek",
-  "t": "2026-11-17T17:21:01+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1693345",
   "hisse": "DOHOL",
   "baslik": "2026 yılına ilişkin revize beklentiler",
@@ -12703,5 +12684,53 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "rutin bildirim"
+ },
+ {
+  "id": "ozet-1701948",
+  "hisse": "BLCYT",
+  "baslik": "24.11..2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-24T13:48:17+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "BLCYT (Bilici Yatırım) 23 Eylül kararlı programda 24 Kasım'da 948.928 lot pay geri aldı. İşlem sermayenin %0,09489'u.\n\n• Fiyat: 1,41-1,45 TL, ortalama 1,426 TL\n• Eldeki toplam pay: 14.534.989 lot, %1,4534\n\nPiyasa değeri 1,8 milyar TL, PD/DD 0,34x.",
+  "kart": {
+   "baslik": "Pay Geri Alım İşlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "24.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "948.928 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "1,426 TL"
+    ],
+    [
+     "İşlemin sermaye oranı",
+     "%0,09489"
+    ],
+    [
+     "Toplam pay oranı",
+     "%1,4534"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125225419410374790",
+  "x_gorsel_hata": null
  }
 ]
