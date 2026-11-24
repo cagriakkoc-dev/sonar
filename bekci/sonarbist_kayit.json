@@ -1,43 +1,5 @@
 [
  {
-  "id": "ozet-1690882",
-  "hisse": "CEMTS",
-  "baslik": "\"Hassas Ölçü Haddeleme Sistemi\" yatırımı devreye alınması için duruş hakkında",
-  "t": "2026-11-17T17:20:55+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1691254",
-  "hisse": "CVKMD",
-  "baslik": "Pay Geri Alım İşlemleri",
-  "t": "2026-11-17T17:20:55+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1694450",
   "hisse": "CVKMD",
   "baslik": "Bedelli Sermaye Artırımından Elde Edilen Fonun Kullanım Yerlerine İlişkin Rapor",
@@ -12574,6 +12536,68 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2125123771883573600",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1701748",
+  "hisse": "ZOREN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-24T08:41:24+00:00",
+  "mod": "golge",
+  "puan": 17,
+  "alt": {
+   "fin": 2,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 9,
+   "ilgi": 3
+  },
+  "tur": "Tahvil kupon faiz ödemesi",
+  "gerekce": "234,33 milyon TL nominalli tahvilin 10,07 milyon TL'lik 7. kupon faizi ödenmiştir; tutar 9,3 milyar TL piyasa değerinin binde birkaçı olduğundan rutin ve düşük etkili bir bildirimdir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1701743",
+  "hisse": "DCTTR",
+  "baslik": "Pamuk Satış Sözleşmesi İmzalanması Hakkında",
+  "t": "2026-11-24T08:41:28+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "DCTTR (DCT Trading) yurt içi bir alıcıyla 1.421.200 USD tutarında pamuk satış sözleşmesi imzaladı.\n\nBrezilya menşeli pamuk alıcı opsiyonlu alınmıştı. Fiyat New York vadeli kontratlarına bağlı.\n\nSon 4 çeyrek hasılat 1,2 milyar TL, piyasa değeri 1,3 milyar TL.",
+  "kart": {
+   "baslik": "Pamuk satış sözleşmesi imzalandı",
+   "satirlar": [
+    [
+     "Sözleşme tutarı",
+     "1.421.200 USD"
+    ],
+    [
+     "Alıcı",
+     "Yurt içi"
+    ],
+    [
+     "Pamuk menşei",
+     "Brezilya"
+    ],
+    [
+     "Fiyat referansı",
+     "New York vadeli"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125148230703063123",
   "x_gorsel_hata": null
  }
 ]
