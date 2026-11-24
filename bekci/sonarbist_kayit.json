@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1694450",
-  "hisse": "CVKMD",
-  "baslik": "Bedelli Sermaye Artırımından Elde Edilen Fonun Kullanım Yerlerine İlişkin Rapor",
-  "t": "2026-11-17T17:20:56+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1694562",
   "hisse": "CVKMD",
   "baslik": "Pay Geri Alım Programının Tamamlanması",
@@ -12598,6 +12579,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2125148230703063123",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1701819",
+  "hisse": "LIDER",
+  "baslik": "Pay Geri Alım Programının Sonlandırılması",
+  "t": "2026-11-24T11:58:47+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "LIDER (Lider Faktoring) geri alım programını 24 Kasım'da sonlandırdı. 39.200.138,37 lot ortalama 11,498 TL'den alındı, maliyet 450.743.568,41 TL, sermaye oranı %4,752.\n\nÖnceki programlarla toplam 49.200.138,37 lot, %5,9637. Kullanılmayan limit iptal edildi.",
+  "kart": {
+   "baslik": "Geri alım programı sonlandı",
+   "satirlar": [
+    [
+     "Geri alınan pay",
+     "39.200.138,37 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "11,498 TL"
+    ],
+    [
+     "Maliyet",
+     "450.743.568,41 TL"
+    ],
+    [
+     "Program sermaye oranı",
+     "%4,752"
+    ],
+    [
+     "Önceki dâhil toplam oran",
+     "%5,9637"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125197889425031228",
   "x_gorsel_hata": null
  }
 ]
