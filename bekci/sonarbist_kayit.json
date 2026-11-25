@@ -1,52 +1,5 @@
 [
  {
-  "id": "kap-1699993",
-  "hisse": "AHGAZ",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-18T15:36:14+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 8,
-   "yenilik": 8,
-   "kapsam": 10,
-   "kesinlik": 10,
-   "ilgi": 6
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "18.11.2026'da yaklaşık 21,1 milyon TL'ye karşılık gelen 460.000 adet pay geri alındı (ağırlıklı ortalama 45,977 TL) ve toplam geri alınan pay 90,13 milyon adede (%3,4667) ulaştı; tutar piyasa değerinin yaklaşık %0,02'si olduğu için bileşen puanları düşük, ancak pay geri alımı her zaman önemli türlerden olduğundan alt sınır olan 80 verildi.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1699994",
-  "hisse": "ENERY",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-18T15:36:21+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 2,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 5
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "Günlük 450.000 adetlik (yaklaşık 6,6 milyon TL) geri alım piyasa değerine göre çok küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır; şirketin elindeki paylar toplam %4,78'e ulaşmıştır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1699995",
-  "hisse": "OYYAT",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-18T15:36:27+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
   "id": "ozet-1699973",
   "hisse": "SANKO",
   "baslik": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
@@ -12541,5 +12494,61 @@
   "tur": "Borçlanma aracı ihracı (kira sertifikası programı)",
   "gerekce": "Yönetim kurulu, 80 milyar TL'ye kadar kira sertifikası ihracı için Halk VKŞ ve Halk Yatırım'ı yetkilendirdi; tutar piyasa değerinin üzerinde olduğundan finansal etkisi yüksek, ancak bu bir üst limit, ihraç SPK onayına bağlı ve konu 03.04.2026 tarihli açıklamada daha önce duyurulmuştu.",
   "durum": "dusuk_bildirildi"
+ },
+ {
+  "id": "kap-1702782",
+  "hisse": "TTRAK",
+  "baslik": "Kredi Derecelendirmesi",
+  "t": "2026-11-25T17:21:13+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 2,
+   "yenilik": 4,
+   "kapsam": 6,
+   "kesinlik": 8,
+   "ilgi": 2
+  },
+  "tur": "Kredi derecelendirme teyidi",
+  "gerekce": "JCR-ER mevcut notları (AA (tr), J1+ (tr), uluslararası BB) stabil görünümle teyit etti; not değişikliği olmadığı için yeni bir sürpriz içermeyen rutin bir bildirimdir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1702783",
+  "hisse": "OZGYO",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-25T17:21:15+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 14,
+   "yenilik": 8,
+   "kapsam": 10,
+   "kesinlik": 10,
+   "ilgi": 3
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "OZGYO 25.11.2026'da 1,44 TL fiyatla 500.000 TL nominal pay geri aldı; kümülatif geri alım 12,2 milyon TL nominale ve sermayenin %1,22'sine ulaştı, pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1702781",
+  "hisse": "KLSYN",
+  "baslik": "JCR Avrasya Kredi Derecelendirme Notu",
+  "t": "2026-11-25T17:21:17+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
