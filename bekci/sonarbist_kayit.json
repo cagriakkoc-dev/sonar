@@ -1,53 +1,5 @@
 [
  {
-  "id": "ozet-1699337",
-  "hisse": "MNDRS",
-  "baslik": "17 Kasım 2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-  "t": "2026-11-18T07:37:08+00:00",
-  "mod": "canli",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "paylasildi",
-  "tweet": "MNDRS (Menderes Tekstil) programın ikinci alım gününde, 17 Kasım'da ortalama 9,13 TL'den 205.000 lot pay aldı (sermayenin %0,07393'ü).\n\n12 Kasım kararıyla başlayan programda toplam 393.222 lot, yani %0,14181.\n\nPiyasa değeri 2,5 milyar TL, PD/DD 0,13x.",
-  "kart": {
-   "baslik": "Pay geri alım işlemi",
-   "satirlar": [
-    [
-     "İşlem tarihi",
-     "17.11.2026"
-    ],
-    [
-     "Alınan pay",
-     "205.000 lot"
-    ],
-    [
-     "Ortalama fiyat",
-     "9,13 TL"
-    ],
-    [
-     "Sermayeye oranı",
-     "%0,07393"
-    ],
-    [
-     "Toplam geri alınan",
-     "393.222 lot"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2122957748941857110",
-  "x_gorsel_hata": null
- },
- {
   "id": "ozet-1699438",
   "hisse": "HTTBT",
   "baslik": "Kurumsal Yönetim Derecelendirme Sözleşmesinin Yenilenmesi",
@@ -12752,6 +12704,25 @@
   },
   "tur": "yayınlanan özet",
   "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1702736",
+  "hisse": "TURSG",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-25T16:27:33+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 27,
+   "yenilik": 15,
+   "kapsam": 18,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "Pay geri alımı",
+  "gerekce": "TURSG'nin 25.11.2026'da yaklaşık 48 milyon TL tutarında (17 milyon TL nominal, sermayenin %0,085'i) pay geri aldığı, programda toplamın 206,1 milyon TL nominale (%1,03) ulaştığı ve azami 4 milyar TL'lik limitin piyasa değerinin yaklaşık %3,7'sine denk geldiği bildirildi; günlük tutar küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
