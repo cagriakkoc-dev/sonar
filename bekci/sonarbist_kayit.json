@@ -1,60 +1,5 @@
 [
  {
-  "id": "kap-1700010",
-  "hisse": "AGHOL",
-  "baslik": "Kredi Derecelendirmesi",
-  "t": "2026-11-18T15:58:43+00:00",
-  "mod": "golge",
-  "puan": 30,
-  "alt": {
-   "fin": 3,
-   "yenilik": 4,
-   "kapsam": 10,
-   "kesinlik": 8,
-   "ilgi": 5
-  },
-  "tur": "Kredi derecelendirmesi (teyit)",
-  "gerekce": "JCR Eurasia Rating mevcut notları (ulusal AAA (tr) stabil, uluslararası BB+ negatif) değiştirmeden teyit etti; yeni bir sürpriz içermeyen, doğrudan finansal etkisi olmayan rutin bir not güncellemesi.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1700011",
-  "hisse": "AYGAZ",
-  "baslik": "Özel Durum Açıklaması (Genel)",
-  "t": "2026-11-18T15:58:45+00:00",
-  "mod": "golge",
-  "puan": 55,
-  "alt": {
-   "fin": 24,
-   "yenilik": 10,
-   "kapsam": 8,
-   "kesinlik": 9,
-   "ilgi": 4
-  },
-  "tur": "İştirak sermaye artırımına katılım",
-  "gerekce": "Aygaz, zarar eden iştiraki Kolay Gelsin'in sermaye artırımına 412,5 milyon TL nakit koyacak; bu tutar piyasa değerinin yaklaşık %0,65'i ve yıllık net kârın yaklaşık %3'ü olduğundan etki orta düzeydedir, karar kesinleşmiştir ancak yalnızca iştiraki ilgilendirdiği için kapsamı sınırlıdır.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1700012",
-  "hisse": "MAVI",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-18T15:58:48+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 10,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 7
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "18.11.2026'da ortalama 35,43 TL'den 298.123 lot (yaklaşık 10,6 milyon TL) geri alınmış, program başından beri toplam 23,04 milyon lot (sermayenin yaklaşık %2,90'ı) alınmıştır; günlük tutar 29,9 milyar TL piyasa değerine göre küçük olsa da pay geri alımı her zaman önemli türlerden olduğundan en az 80 puan almıştır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1700013",
   "hisse": "GLRMK",
   "baslik": "İhale Süreci / Sonucu",
@@ -12537,6 +12482,61 @@
   "hisse": "MERKO",
   "baslik": "Pay Geri Alım Hk.",
   "t": "2026-11-25T20:10:22+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1702817",
+  "hisse": "TTKOM",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-25T20:31:32+00:00",
+  "mod": "golge",
+  "puan": 25,
+  "alt": {
+   "fin": 2,
+   "yenilik": 3,
+   "kapsam": 2,
+   "kesinlik": 9,
+   "ilgi": 9
+  },
+  "tur": "Borçlanma aracı geri alımı (Eurobond)",
+  "gerekce": "Şirket kendi ihraç ettiği 2029 vadeli Eurobond'dan yaklaşık 5,05 milyon ABD Doları tutarında alım yaptı; bu tutar 180 milyar TL piyasa değerinin binde birkaçı kadar olduğundan etkisi sınırlıdır, işlem kesinleşmiştir ancak pay geri alımı olmayıp rutin borç yönetimi niteliğindedir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1702818",
+  "hisse": "TTKOM",
+  "baslik": "Şirket Genel Bilgi Formu",
+  "t": "2026-11-25T20:31:37+00:00",
+  "mod": "golge",
+  "puan": 12,
+  "alt": {
+   "fin": 2,
+   "yenilik": 1,
+   "kapsam": 3,
+   "kesinlik": 3,
+   "ilgi": 3
+  },
+  "tur": "Şirket Genel Bilgi Formu güncellemesi",
+  "gerekce": "Bağlı ortaklık ve finansal yatırım listesini içeren rutin, usulî bir genel bilgi formu güncellemesi olup yeni bir işlem, tutar veya editör tarafından zorunlu önemli sayılan bir tür içermiyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1702816",
+  "hisse": "ARDYZ",
+  "baslik": "Kayıtlı Sermaye Tavan Artışı ve Süre Uzatımı",
+  "t": "2026-11-25T20:31:40+00:00",
   "mod": "golge",
   "puan": 100,
   "alt": {
