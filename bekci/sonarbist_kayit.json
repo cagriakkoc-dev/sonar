@@ -1,81 +1,5 @@
 [
  {
-  "id": "ozet-1691624",
-  "hisse": "HEKTS",
-  "baslik": "TRFHEKTK2611 ISIN Kodlu Finansman Bonosu İtfası",
-  "t": "2026-11-17T17:21:35+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1698194",
-  "hisse": "HEKTS",
-  "baslik": "Tahsisli Sermaye Artırımından Elde Edilen Fonun Kullanım Yerine İlişkin Rapor",
-  "t": "2026-11-17T17:21:35+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1697326",
-  "hisse": "INFO",
-  "baslik": "Finansman Bonosu Geri Alımı Hakkında Yönetim Kurulu Kararı",
-  "t": "2026-11-17T17:21:36+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1692569",
-  "hisse": "ISCTR",
-  "baslik": "İzahname (Sermaye Piyasası Aracı Notu-SPK Onayına Sunulan)",
-  "t": "2026-11-17T17:21:36+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1692581",
   "hisse": "ISCTR",
   "baslik": "Yurt İçinde Sermaye Benzeri Tahvil İhracına İlişkin SPK Başvurusu",
@@ -12760,5 +12684,134 @@
   "goruntu_hata": null,
   "tweet_id": "2125465698650722505",
   "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1702153",
+  "hisse": "OTKAR",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-25T06:16:43+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 7,
+   "yenilik": 2,
+   "kapsam": 3,
+   "kesinlik": 8,
+   "ilgi": 2
+  },
+  "tur": "Borçlanma aracı kupon bildirimi",
+  "gerekce": "25.08.2026'da satışı tamamlanan 2 milyar TL'lik değişken faizli finansman bonosunun 1. kupon oranının (%9,8146) belirlendiği rutin ve usulî bir bildirim olup yeni bir borçlanma veya finansal etki içermiyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1702147",
+  "hisse": "AKHAN",
+  "baslik": "24.11.2026 Tarihinde Gerçekleştirilen Pay Geri Alım İşlemleri Hakkında.",
+  "t": "2026-11-25T06:16:46+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "AKHAN (Akhan Un Fabrikası) 1 Ekim kararlı programda 24 Kasım'da 50.000 lot pay geri aldı. İşlem sermayenin %0,01829'u.\n\n• Fiyat: 23,340-23,500 TL, ortalama 23,44 TL\n• Önceki alım 17 Kasım'da 210.000 lot, 26,75 TL\n\nPiyasa değeri 6,8 milyar TL, PD/DD 1,14x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "24.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "50.000 lot"
+    ],
+    [
+     "Fiyat aralığı",
+     "23,340-23,500 TL"
+    ],
+    [
+     "Ortalama fiyat",
+     "23,44 TL"
+    ],
+    [
+     "Sermaye oranı",
+     "%0,01829"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125474190878978341",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1702146",
+  "hisse": "LIDFA",
+  "baslik": "TRFLDFK62724 ISIN Kodlu Bono İhracı",
+  "t": "2026-11-25T06:18:32+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "LIDFA (Lider Faktoring) 120.000.000 TL nominalli TRFLDFK62724 bonosunun ihracını nitelikli yatırımcıya satışla tamamladı.\n\n• Vadesonu ödeme: 1 Haziran 2027\n• Fitch notu: BBB+(tur)\n\nSon 4 çeyrek net kâr 1,2 milyar TL, piyasa değeri 2,4 milyar TL.",
+  "kart": {
+   "baslik": "Bono ihracı tamamlandı",
+   "satirlar": [
+    [
+     "Nominal tutar",
+     "120.000.000 TL"
+    ],
+    [
+     "Satış yöntemi",
+     "Nitelikli yatırımcı"
+    ],
+    [
+     "Vadesonu ödeme",
+     "01.06.2027"
+    ],
+    [
+     "Fitch notu",
+     "BBB+(tur)"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125474633294233897",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1702148",
+  "hisse": "LIDFA",
+  "baslik": "TRFLDFK62716 ISIN Kodlu Bono İhracı",
+  "t": "2026-11-25T06:20:17+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
