@@ -1,43 +1,5 @@
 [
  {
-  "id": "ozet-1696692",
-  "hisse": "MAVI",
-  "baslik": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
-  "t": "2026-11-17T17:21:54+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1693493",
-  "hisse": "MGROS",
-  "baslik": "Kar Payı Avansı Ödemesi",
-  "t": "2026-11-17T17:21:55+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1691169",
   "hisse": "OSMEN",
   "baslik": "02.11.2026 Pay Geri Alım İşlemleri",
@@ -12945,5 +12907,41 @@
   "gerekce": "2026 3. çeyrek analist toplantısı sunumu; portföy (59 milyar TL), finansal veriler ve geleceğe ilişkin beklentileri içerdiğinden editör kuralı gereği yatırımcı sunumu olarak en az 80 puan alır.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1702432",
+  "hisse": "ENERY",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-25T12:36:49+00:00",
+  "mod": "golge",
+  "puan": 40,
+  "alt": {
+   "fin": 8,
+   "yenilik": 10,
+   "kapsam": 7,
+   "kesinlik": 9,
+   "ilgi": 6
+  },
+  "tur": "Lisans kapsamı genişletme onayı (EPDK)",
+  "gerekce": "Bağlı ortaklığın Çukurkuyu beldesini de kapsayan doğal gaz dağıtım lisansı genişletme başvurusu EPDK kararıyla kesinleşti; ancak küçük bir belde olduğu için şirketin 41,8 milyar TL hasılasına etkisi sınırlı kalır ve açıklama sözleşme veya sipariş değil, düzenleyici onay niteliğindedir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1702433",
+  "hisse": "AHGAZ",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-25T12:36:54+00:00",
+  "mod": "golge",
+  "puan": 33,
+  "alt": {
+   "fin": 8,
+   "yenilik": 7,
+   "kapsam": 6,
+   "kesinlik": 8,
+   "ilgi": 4
+  },
+  "tur": "Lisans kapsamı genişletme (EPDK onayı)",
+  "gerekce": "Dolaylı bağlı ortaklığın Niğde Çukurkuyu beldesini kapsayacak lisans genişletmesi EPDK kararıyla kesinleşti; kesin bir gelişme olsa da küçük bir belde olduğundan 112,6 milyar TL piyasa değerli şirket için finansal etkisi sınırlıdır ve bu, yeni sözleşme/sipariş türünden çok düzenleyici bir onay niteliğindedir.",
+  "durum": "dusuk"
  }
 ]
