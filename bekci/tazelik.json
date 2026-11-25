@@ -1,14 +1,14 @@
 {
- "zaman": "2026-11-24 19:21",
+ "zaman": "2026-11-25 19:00",
  "beklenen_donem": "2026-09",
  "ozet": {
   "sirket": 618,
-  "guncel": 580,
-  "bekleyen_kuyruk": 1,
-  "elle": 43,
+  "guncel": 581,
+  "bekleyen_kuyruk": 0,
+  "elle": 48,
   "sorun": {
    "elle": 1,
-   "rakam": 38
+   "rakam": 37
   }
  },
  "sorunlar": [
@@ -113,12 +113,6 @@
    "tur": "rakam",
    "t": "METRO",
    "metin": "METRO: son dönem 2023-03, beklenen 2026-09"
-  },
-  {
-   "k": "fin:RALYH:2026-09",
-   "tur": "rakam",
-   "t": "RALYH",
-   "metin": "RALYH: son dönem 2026-06, beklenen 2026-09"
   },
   {
    "k": "fin:TEHOL:2026-09",
@@ -241,10 +235,10 @@
    "metin": "KUYAS: son dönem 2026-06, beklenen 2026-09"
   },
   {
-   "k": "elle:43",
+   "k": "elle:48",
    "tur": "elle",
    "t": "-",
-   "metin": "Kuyrukta elle bakılacak 43 kayıt: ENJSA 1698936, KOCMT 1699236, GARAN 1699270, KLYPV 1699289, KOCMT 1699979, YYLGD 1699974"
+   "metin": "Kuyrukta elle bakılacak 48 kayıt: ENJSA 1698936, KOCMT 1699236, GARAN 1699270, KLYPV 1699289, KOCMT 1699979, YYLGD 1699974"
   }
  ],
  "sirketler": [
@@ -3782,9 +3776,9 @@
   {
    "t": "RALYH",
    "grp": "Holding",
-   "son": "2026-06",
-   "oran": "2026-06",
-   "ozet": null,
+   "son": "2026-09",
+   "oran": "2026-09",
+   "ozet": "2026-09",
    "gosterge": {
     "sayi": 0,
     "geride": []
@@ -7048,7 +7042,7 @@
   }
  ],
  "yeni": [
-  "elle:43"
+  "elle:48"
  ],
  "hafta": "2026-48"
 }
