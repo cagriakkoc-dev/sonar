@@ -1,62 +1,5 @@
 [
  {
-  "id": "ozet-1694235",
-  "hisse": "LXGYO",
-  "baslik": "06.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
-  "t": "2026-11-17T17:21:50+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1695549",
-  "hisse": "LXGYO",
-  "baslik": "09.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
-  "t": "2026-11-17T17:21:51+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1697299",
-  "hisse": "LXGYO",
-  "baslik": "11.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
-  "t": "2026-11-17T17:21:51+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1699189",
   "hisse": "MASFN",
   "baslik": "Sermaye Artırımından Elde Edilen Fonun Kullanım Yerlerine İlişkin Rapor",
@@ -12861,6 +12804,60 @@
   },
   "tur": "İzahname / İhraççı Bilgi Dokümanı onayı",
   "gerekce": "SPK'nın VakıfBank finansman bonosu ve tahvil ihracına ilişkin İhraççı Bilgi Dokümanı güncellemesini onayladığını bildiren bu açıklama usulî nitelikte olup tutar içermez, yeni bir ihraç veya finansal etki doğurmaz, 26.08.2026 tarihli açıklamanın devamıdır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1702343",
+  "hisse": "VAKBN",
+  "baslik": "İzahname-Sermaye Piyasası Aracı Notu (SPK Tarafından Onaylanan)",
+  "t": "2026-11-25T11:16:48+00:00",
+  "mod": "golge",
+  "puan": 20,
+  "alt": {
+   "fin": 1,
+   "yenilik": 3,
+   "kapsam": 3,
+   "kesinlik": 8,
+   "ilgi": 5
+  },
+  "tur": "Finansman bonosu ihracı / SPK onaylı sermaye piyasası aracı notu",
+  "gerekce": "200-300 milyon TL'lik rutin bir banka finansman bonosu ihracı, 319,9 milyar TL piyasa değerine oranla çok küçük; SPK onayı kesinlik katsa da şirket genelinde yeni bir etkisi yok ve editörün zorunlu önem verdiği türlerden biri değil.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1702344",
+  "hisse": "VAKBN",
+  "baslik": "İzahname-Özet (SPK Tarafından Onaylanan)",
+  "t": "2026-11-25T11:16:51+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 3,
+   "yenilik": 4,
+   "kapsam": 4,
+   "kesinlik": 6,
+   "ilgi": 5
+  },
+  "tur": "Borçlanma aracı izahname özeti (finansman bonosu)",
+  "gerekce": "200 milyon TL'lik 91 gün vadeli finansman bonosu ihracının SPK onaylı izahname özeti, 319,9 milyar TL piyasa değerine göre çok küçük, rutin bir fonlama işlemi olup 20.11.2026 tarihli önceki açıklamanın usulî devamıdır.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1702346",
+  "hisse": "VAKBN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-25T11:16:54+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 2,
+   "yenilik": 4,
+   "kapsam": 3,
+   "kesinlik": 5,
+   "ilgi": 8
+  },
+  "tur": "Borçlanma aracı ihracı (finansman bonosu)",
+  "gerekce": "Azami 300 milyon TL nominal tutarlı rutin finansman bonosu ihracı, 319,9 milyar TL piyasa değerinin yaklaşık %0,1'i olduğundan etkisi sınırlıdır; bildirim yalnızca faiz oranlarını ve talep toplama takvimini duyurmaktadır ve editörün zorunlu önemli saydığı türlere girmez.",
   "durum": "dusuk"
  }
 ]
