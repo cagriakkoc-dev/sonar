@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1692602",
-  "hisse": "LXGYO",
-  "baslik": "04.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
-  "t": "2026-11-17T17:21:49+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1693356",
   "hisse": "LXGYO",
   "baslik": "05.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
@@ -12863,6 +12844,24 @@
   },
   "tur": "Proje ilerleme bildirimi (yer teslimi)",
   "gerekce": "Mevcut bir altyapı ve yol inşaatı işinin yer teslimi yapıldı; bu yeni bir sözleşme değil, usulî bir ilerleme adımı olduğundan ve tutar belirtilmediğinden finansal etkisi sınırlı kalıyor.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1702333",
+  "hisse": "ZOREN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-25T10:55:29+00:00",
+  "mod": "golge",
+  "puan": 15,
+  "alt": {
+   "fin": 1,
+   "yenilik": 1,
+   "kapsam": 2,
+   "kesinlik": 8,
+   "ilgi": 3
+  },
+  "tur": "Tahvil kupon faiz ödemesi",
+  "gerekce": "Nitelikli yatırımcıya ihraç edilen tahvilin 6. kupon dönemi için yapılan 3,65 milyon TL'lik faiz ödemesi, 9,3 milyar TL piyasa değerine göre çok küçük ve rutin bir ödeme olduğundan düşük puan aldı.",
   "durum": "dusuk"
  }
 ]
