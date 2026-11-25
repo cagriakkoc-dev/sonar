@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1691300",
-  "hisse": "HEKTS",
-  "baslik": "TRFHEKT42715 ISIN Kodlu Finansman Bonosu İhracı",
-  "t": "2026-11-17T17:21:34+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1691624",
   "hisse": "HEKTS",
   "baslik": "TRFHEKTK2611 ISIN Kodlu Finansman Bonosu İtfası",
@@ -12731,5 +12712,53 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1702135",
+  "hisse": "AZTEK",
+  "baslik": "24.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-25T05:43:03+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "AZTEK (Aztek Teknoloji) 13 Ekim kararlı programda 24 Kasım'da 1.866.042 lot pay geri aldı. İşlem sermayenin %0,1866'sı.\n\n• Fiyat: 2,13-2,20 TL, ortalama 2,16 TL\n• Eldeki toplam pay: 6.276.661 lot, %0,62767\n\nPiyasa değeri 3,1 milyar TL, PD/DD 1,72x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "1.866.042 lot"
+    ],
+    [
+     "Fiyat aralığı",
+     "2,13-2,20 TL"
+    ],
+    [
+     "Ortalama fiyat",
+     "2,16 TL"
+    ],
+    [
+     "İşlemin sermaye oranı",
+     "%0,1866"
+    ],
+    [
+     "Toplam pay",
+     "6.276.661 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125465698650722505",
+  "x_gorsel_hata": null
  }
 ]
