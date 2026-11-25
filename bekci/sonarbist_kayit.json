@@ -1,43 +1,5 @@
 [
  {
-  "id": "ozet-1691856",
-  "hisse": "LMKDC",
-  "baslik": "03.11.2026 Tarihli Pay Geri Alım İşlemleri",
-  "t": "2026-11-17T17:21:46+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1692571",
-  "hisse": "LMKDC",
-  "baslik": "04.11.2026 Tarihli Pay Geri Alım İşlemleri",
-  "t": "2026-11-17T17:21:46+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1693303",
   "hisse": "LMKDC",
   "baslik": "05.11.2026 Tarihli Pay Geri Alım İşlemleri",
@@ -12880,5 +12842,58 @@
   "tur": "Finansman bonosu itfası",
   "gerekce": "Vakıfbank'ın 90 gün vadeli 431,6 milyon TL'lik finansman bonosunun vadesinde itfa edildiği bildiriliyor; tutar 319,9 milyar TL piyasa değerinin yüzde 0,2'sinden azdır ve işlem bankacılık faaliyetlerinin rutin bir parçasıdır.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1702309",
+  "hisse": "ISMEN",
+  "baslik": "Yatırım Kuruluşu Varant - Sertifika - Senetlerine İlişkin Bildirim",
+  "t": "2026-11-25T09:37:00+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "ozet-1702307",
+  "hisse": "VAKBN",
+  "baslik": "TRFVKFBK2620 ISIN kodlu T. Vakıflar Bankası T.A.O. Finansman Bonosunun İtfası",
+  "t": "2026-11-25T09:37:00+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "VAKBN (VakıfBank) 27 Ağustos'ta ihraç ettiği 90 gün vadeli finansman bonosunu 25 Kasım'da itfa etti.\n\nAnapara 431.559.981 TL, ödeme aynı gün yatırımcı hesaplarına yapıldı.\n\nKısa vadeli TL fonlama vadesinde kapandı. Son 4 çeyrek net kâr 80,6 milyar TL.",
+  "kart": {
+   "baslik": "Finansman bonosu itfa edildi",
+   "satirlar": [
+    [
+     "İtfa edilen anapara",
+     "431.559.981 TL"
+    ],
+    [
+     "İhraç tarihi",
+     "27.08.2026"
+    ],
+    [
+     "İtfa tarihi",
+     "25.11.2026"
+    ],
+    [
+     "Vade",
+     "90 gün"
+    ]
+   ]
+  },
+  "goruntu": false,
+  "goruntu_hata": "kart doğrulanamadı: kart rakamı kaynakta yok: 27.08.2026",
+  "tweet_id": "2125524592160899346",
+  "x_gorsel_hata": null
  }
 ]
