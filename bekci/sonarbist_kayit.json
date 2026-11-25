@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1700002",
-  "hisse": "OZGYO",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-18T15:47:43+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 12,
-   "yenilik": 8,
-   "kapsam": 10,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "OZGYO 18.11.2026'da 1,45 TL fiyatla 53.772 TL nominal pay geri aldı ve toplam geri alım sermayenin %0,58'i olan 5.752.167 TL'ye ulaştı; günlük tutar küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1700008",
   "hisse": "AYGAZ",
   "baslik": "Genel Kurul İşlemlerine İlişkin Bildirim",
@@ -12548,6 +12529,25 @@
   },
   "tur": "yayınlanan özet",
   "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1702809",
+  "hisse": "BRSAN",
+  "baslik": "Yeni İş İlişkisi",
+  "t": "2026-11-25T18:03:46+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 24,
+   "yenilik": 15,
+   "kapsam": 10,
+   "kesinlik": 9,
+   "ilgi": 8
+  },
+  "tur": "Yeni iş ilişkisi / satış siparişi",
+  "gerekce": "Borusan Berg Pipe'ın ABD'de yaklaşık 127 milyon USD'lik (yaklaşık 5-6 milyar TL, son 4 çeyrek hasılatının yaklaşık %6'sı) yeni sipariş alması, yeni iş ilişkisi türü olduğu için en az 80 puan alır; bileşen toplamı bu alt sınırın altında kaldığından puan taban değere çekilmiştir.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
