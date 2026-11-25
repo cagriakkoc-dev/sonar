@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1699986",
-  "hisse": "ADGYO",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-18T15:35:51+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 2,
-   "yenilik": 6,
-   "kapsam": 10,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "18.11.2026'da yaklaşık 4,95 milyon TL'lik (100.000 lot, ~49,5 TL) alım piyasa değerinin on binde birinden küçük olduğundan bileşen puanları düşüktür, ancak pay geri alımı editör kuralı gereği en az 80 puan alır; program kapsamında toplam alım 1.665.000 lota, şirketin elindeki toplam pay 25,6 milyon lota ulaşmıştır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1699988",
   "hisse": "KARCL",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12541,5 +12522,24 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "rutin bildirim"
+ },
+ {
+  "id": "ozet-1702745",
+  "hisse": "DAGI",
+  "baslik": "25 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-25T16:59:45+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
  }
 ]
