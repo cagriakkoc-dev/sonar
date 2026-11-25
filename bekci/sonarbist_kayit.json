@@ -1,24 +1,5 @@
 [
  {
-  "id": "kap-1700008",
-  "hisse": "AYGAZ",
-  "baslik": "Genel Kurul İşlemlerine İlişkin Bildirim",
-  "t": "2026-11-18T15:47:46+00:00",
-  "mod": "golge",
-  "puan": 80,
-  "alt": {
-   "fin": 30,
-   "yenilik": 15,
-   "kapsam": 18,
-   "kesinlik": 8,
-   "ilgi": 9
-  },
-  "tur": "Olağanüstü genel kurul çağrısı / kâr payı dağıtımı gündemi",
-  "gerekce": "Bildirim bir toplantı çağrısı olsa da toplantının tek esaslı gündemi, 2026'da olağanüstü yedeklerden ve geçmiş yıl kârlarından kâr payı dağıtılmasına ilişkin Yönetim Kurulu önerisinin onaylanmasıdır; tutar metinde görünmediği için taban puan olan 80 verildi.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1700009",
   "hisse": "AYGAZ",
   "baslik": "Kar Payı Dağıtım İşlemlerine İlişkin Bildirim",
@@ -12548,6 +12529,25 @@
   },
   "tur": "Yeni iş ilişkisi / satış siparişi",
   "gerekce": "Borusan Berg Pipe'ın ABD'de yaklaşık 127 milyon USD'lik (yaklaşık 5-6 milyar TL, son 4 çeyrek hasılatının yaklaşık %6'sı) yeni sipariş alması, yeni iş ilişkisi türü olduğu için en az 80 puan alır; bileşen toplamı bu alt sınırın altında kaldığından puan taban değere çekilmiştir.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1702809",
+  "hisse": "BRSAN",
+  "baslik": "Amerika Birleşik Devletleri'nde Yeni Satış Siparişi Alınması",
+  "t": "2026-11-25T18:14:27+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
