@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1691169",
-  "hisse": "OSMEN",
-  "baslik": "02.11.2026 Pay Geri Alım İşlemleri",
-  "t": "2026-11-17T17:21:55+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1691893",
   "hisse": "OSMEN",
   "baslik": "03.11.2026 Pay Geri Alım İşlemleri",
@@ -12942,6 +12923,24 @@
   },
   "tur": "Lisans kapsamı genişletme (EPDK onayı)",
   "gerekce": "Dolaylı bağlı ortaklığın Niğde Çukurkuyu beldesini kapsayacak lisans genişletmesi EPDK kararıyla kesinleşti; kesin bir gelişme olsa da küçük bir belde olduğundan 112,6 milyar TL piyasa değerli şirket için finansal etkisi sınırlıdır ve bu, yeni sözleşme/sipariş türünden çok düzenleyici bir onay niteliğindedir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1702461",
+  "hisse": "VAKBN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-25T12:47:31+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 2,
+   "yenilik": 2,
+   "kapsam": 2,
+   "kesinlik": 8,
+   "ilgi": 8
+  },
+  "tur": "Borçlanma aracı (finansman bonosu) ihracı",
+  "gerekce": "464 milyon TL'lik 91 gün vadeli finansman bonosu ihracı, 319,9 milyar TL piyasa değerine göre yaklaşık %0,15 ile çok küçük; bankanın rutin fonlama işlemi olduğu için düşük puan aldı, editör kararıyla zorunlu önemli sayılan türlerden biri de değil.",
   "durum": "dusuk"
  }
 ]
