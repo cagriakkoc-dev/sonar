@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1699988",
-  "hisse": "KARCL",
-  "baslik": "Sermaye Piyasası Kurulu Bülteninde Yer Alan KARCL Pay İşlemlerine İlişkin Açıklama",
-  "t": "2026-11-18T15:47:59+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1699996",
   "hisse": "KTSKR",
   "baslik": "18.11.2026 Tarihinde Yapılan Pay Geri Alım İşlemleri",
@@ -12548,6 +12529,25 @@
   },
   "tur": "yayınlanan özet",
   "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1702813",
+  "hisse": "AKSGY",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-25T19:17:42+00:00",
+  "mod": "golge",
+  "puan": 82,
+  "alt": {
+   "fin": 12,
+   "yenilik": 12,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "Şirket 25.11.2026'da Borsa İstanbul'dan 1.379.494 TL nominal (yaklaşık 11-12 milyon TL tutarında) kendi payını geri aldı ve programdaki toplam payı %1,0179'a ulaştı; pay geri alımı bildirimleri editör kararıyla en az 80 puan alır, ancak işlem tutarı piyasa değerine göre küçüktür.",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
