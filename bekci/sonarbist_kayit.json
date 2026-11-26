@@ -19,25 +19,6 @@
   "sebep": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
  },
  {
-  "id": "ozet-1700010",
-  "hisse": "AGHOL",
-  "baslik": "JCR-ER Kredi Derecelendirme Notu",
-  "t": "2026-11-18T16:09:54+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "hata",
-  "sebep": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
- },
- {
   "id": "ozet-1700011",
   "hisse": "AYGAZ",
   "baslik": "İştirakimiz Kolay Gelsin Dağıtım Hizmetleri A.Ş.'nin sermaye artışına katılım",
@@ -12611,5 +12592,53 @@
   "tur": "Borçlanma aracı ihracı (tahvil, nitelikli yatırımcı)",
   "gerekce": "İş Bankası'nın 4,5 milyar TL nominal, 369 gün vadeli tahvil satışı tamamlandı; tutar 305 milyar TL piyasa değerine göre küçük (~%1,5) ve bankalar için rutin fonlama işlemi olduğundan etkisi sınırlıdır, ancak satış kesinleşmiştir.",
   "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1702878",
+  "hisse": "ISCTR",
+  "baslik": "Nitelikli Yatırımcılara Özel Sektör Tahvili Satışının Tamamlanması",
+  "t": "2026-11-26T07:32:16+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ISCTR (İş Bankası) 369 gün vadeli 4.500.000.000 TL nominalli tahvilin nitelikli yatırımcılara satışını tamamladı. Takas 26 Kasım'da.\n\n• Vadesonu ödeme: 30 Kasım 2027\n• Fitch notu: AA-(tur)\n\nSon 4 çeyrek net kâr 64,2 milyar TL, PD/DD 0,67x.",
+  "kart": {
+   "baslik": "Nitelikli yatırımcıya tahvil satışı",
+   "satirlar": [
+    [
+     "Nominal tutar",
+     "4.500.000.000 TL"
+    ],
+    [
+     "Vade",
+     "369 gün"
+    ],
+    [
+     "Takas tarihi",
+     "26.11.2026"
+    ],
+    [
+     "Vadesonu ödeme",
+     "30.11.2027"
+    ],
+    [
+     "Fitch notu",
+     "AA-(tur)"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125855589137866789",
+  "x_gorsel_hata": null
  }
 ]
