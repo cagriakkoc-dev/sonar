@@ -1,43 +1,5 @@
 [
  {
-  "id": "ozet-1700010",
-  "hisse": "AGHOL",
-  "baslik": "JCR-ER Kredi Derecelendirme Notu",
-  "t": "2026-11-18T16:09:54+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "hata",
-  "sebep": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
- },
- {
-  "id": "ozet-1700011",
-  "hisse": "AYGAZ",
-  "baslik": "İştirakimiz Kolay Gelsin Dağıtım Hizmetleri A.Ş.'nin sermaye artışına katılım",
-  "t": "2026-11-18T16:09:55+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1700013",
   "hisse": "GLRMK",
   "baslik": "Lodz Demiryolu İhalesi",
@@ -12639,6 +12601,63 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2125855589137866789",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "kap-1702920",
+  "hisse": "INFO",
+  "baslik": "Yatırım Kuruluşu Varant - Sertifika - Senetlerine İlişkin Bildirim",
+  "t": "2026-11-26T09:10:51+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "ozet-1702911",
+  "hisse": "GESAN",
+  "baslik": "İlave Sipariş Alınması Hakkında",
+  "t": "2026-11-26T09:10:51+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "GESAN (Girişim Elektrik) TEİAŞ'tan 29.540.000 TL bedelli 70.000 adetlik ilave sipariş aldı.\n\nSipariş, 9 Şubat 2026'da duyurulan 350.000 adetlik izolatör sözleşmesine ek.\n\nŞirket hasılat ve kârlılığa olumlu etki bekliyor.\n\nSon 4 çeyrek hasılat 23,8 milyar TL.",
+  "kart": {
+   "baslik": "İlave izolatör siparişi",
+   "satirlar": [
+    [
+     "İlave sipariş",
+     "70.000 adet"
+    ],
+    [
+     "Sipariş bedeli",
+     "29.540.000 TL"
+    ],
+    [
+     "Ana sözleşme",
+     "350.000 adet"
+    ],
+    [
+     "Ana sözleşme tarihi",
+     "9 Şubat 2026"
+    ],
+    [
+     "Son 4 çeyrek hasılat",
+     "23,8 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": false,
+  "goruntu_hata": "kart doğrulanamadı: kart rakamı kaynakta yok: 9",
+  "tweet_id": "2125880392918167742",
   "x_gorsel_hata": null
  }
 ]
