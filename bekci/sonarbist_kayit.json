@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1700044",
-  "hisse": "IZENR",
-  "baslik": "18.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
-  "t": "2026-11-18T16:42:01+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1700024",
   "hisse": "SOKE",
   "baslik": "18.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
@@ -12706,6 +12687,24 @@
   },
   "tur": "Borçlanma aracı ihracı (EUR, GMTN programı)",
   "gerekce": "Tutarı belirtilmeyen, GMTN programı kapsamında vadesi 2027 olan tek kuponlu bir EUR ihracı olup bankanın olağan fonlama faaliyetidir; programın sözleşmesel boyutunun 15 milyar ABD Dolarına çıkarılması kısmen yeni bilgi olsa da bu bir üst limit artışıdır, ihraç tutarı değildir.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1703030",
+  "hisse": "VAKBN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-26T14:52:31+00:00",
+  "mod": "golge",
+  "puan": 44,
+  "alt": {
+   "fin": 12,
+   "yenilik": 8,
+   "kapsam": 6,
+   "kesinlik": 9,
+   "ilgi": 9
+  },
+  "tur": "Borçlanma aracı ihracı (GMTN/MTN, USD tek kuponlu)",
+  "gerekce": "SPK onaylı, vadesi 06.12.2027 olan USD kuponlu borçlanma aracı ihracı bankanın olağan fonlama faaliyetidir; ihraç tutarı metinde görünmüyor, GMTN programının 15 milyar USD'ye çıkarılması notu ise ek bilgi sağlıyor, ancak bildirim bir editör-öncelikli türe girmiyor.",
   "durum": "dusuk"
  }
 ]
