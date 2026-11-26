@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1700024",
-  "hisse": "SOKE",
-  "baslik": "18.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-  "t": "2026-11-18T16:42:01+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "kap-1700053",
   "hisse": "GUBRF",
   "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
@@ -12706,5 +12687,53 @@
   "tur": "Borçlanma aracı ihracı (GMTN/MTN, USD tek kuponlu)",
   "gerekce": "SPK onaylı, vadesi 06.12.2027 olan USD kuponlu borçlanma aracı ihracı bankanın olağan fonlama faaliyetidir; ihraç tutarı metinde görünmüyor, GMTN programının 15 milyar USD'ye çıkarılması notu ise ek bilgi sağlıyor, ancak bildirim bir editör-öncelikli türe girmiyor.",
   "durum": "dusuk"
+ },
+ {
+  "id": "kap-1703038",
+  "hisse": "TCKRC",
+  "baslik": "Yeni İş İlişkisi",
+  "t": "2026-11-26T15:03:21+00:00",
+  "mod": "canli",
+  "puan": 80,
+  "alt": {
+   "fin": 36,
+   "yenilik": 16,
+   "kapsam": 12,
+   "kesinlik": 10,
+   "ilgi": 6
+  },
+  "tur": "Yeni iş ilişkisi (yurt dışı sözleşme)",
+  "gerekce": "KDV hariç 32,125 milyon EUR'luk imzalı Bulgaristan yol güvenliği sözleşmesi, yaklaşık kur varsayımıyla son 4 çeyrek hasılatının beşte biri kadar olup piyasa değerinin de belirgin bir kısmına denk geldiği için yüksek etkilidir; yeni iş ilişkisi türü de en az 80 puan kuralına girer.",
+  "durum": "paylasildi",
+  "tweet": "TCKRC Bulgaristan'daki konsorsiyumuyla KDV hariç 32.125.000 EUR bedelli yol güvenliği sözleşmesi imzaladı.\n\n• Kuzeybatı ve Güneybatı bölgelerinde bakım ve onarım\n• Süre 1 yıl, başlangıç 1 Aralık 2026\n\nCiroya olumlu katkı bekleniyor. Son 4 çeyrek hasılat 7,0 milyar TL.",
+  "kart": {
+   "baslik": "Bulgaristan yol güvenliği sözleşmesi",
+   "satirlar": [
+    [
+     "Sözleşme bedeli",
+     "32.125.000 EUR"
+    ],
+    [
+     "İmza tarihi",
+     "26 Kasım 2026"
+    ],
+    [
+     "Süre",
+     "1 yıl"
+    ],
+    [
+     "Başlangıç",
+     "1 Aralık 2026"
+    ],
+    [
+     "Son 4 çeyrek hasılat",
+     "7,0 milyar TL"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125968759655678339",
+  "x_gorsel_hata": null
  }
 ]
