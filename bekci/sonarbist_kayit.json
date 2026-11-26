@@ -1,43 +1,5 @@
 [
  {
-  "id": "ozet-1700002",
-  "hisse": "OZGYO",
-  "baslik": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
-  "t": "2026-11-18T15:59:02+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1700017",
-  "hisse": "GARAN",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-18T16:09:52+00:00",
-  "mod": "golge",
-  "puan": 82,
-  "alt": {
-   "fin": 12,
-   "yenilik": 12,
-   "kapsam": 14,
-   "kesinlik": 10,
-   "ilgi": 10
-  },
-  "tur": "Pay geri alımı",
-  "gerekce": "GARAN (BIST 30) pay geri alım programı kapsamında 18.11.2026'da 2.159.499 TL nominal pay yaklaşık 319,6 milyon TL bedelle alındı, program toplamı sermayenin %0,4115'ine ulaştı; geri alım bildirimleri editör kararıyla en az 80 puan alır.",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1700010",
   "hisse": "AGHOL",
   "baslik": "JCR-ER Kredi Derecelendirme Notu",
@@ -12622,5 +12584,32 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1702868",
+  "hisse": "ISMEN",
+  "baslik": "Yatırım Kuruluşu Varant - Sertifika - Senetlerine İlişkin Bildirim",
+  "t": "2026-11-26T07:21:34+00:00",
+  "mod": "golge",
+  "durum": "elendi",
+  "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1702878",
+  "hisse": "ISCTR",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-26T07:21:34+00:00",
+  "mod": "golge",
+  "puan": 30,
+  "alt": {
+   "fin": 8,
+   "yenilik": 4,
+   "kapsam": 5,
+   "kesinlik": 9,
+   "ilgi": 4
+  },
+  "tur": "Borçlanma aracı ihracı (tahvil, nitelikli yatırımcı)",
+  "gerekce": "İş Bankası'nın 4,5 milyar TL nominal, 369 gün vadeli tahvil satışı tamamlandı; tutar 305 milyar TL piyasa değerine göre küçük (~%1,5) ve bankalar için rutin fonlama işlemi olduğundan etkisi sınırlıdır, ancak satış kesinleşmiştir.",
+  "durum": "dusuk"
  }
 ]
