@@ -1,24 +1,5 @@
 [
  {
-  "id": "ozet-1700045",
-  "hisse": "HEKTS",
-  "baslik": "Paylarda İmtiyaz Oluşturulması İşleminin Gerçekleştirilmemesi Nedeniyle Esas Sözleşme Tadilinin İptali",
-  "t": "2026-11-18T16:42:01+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1700044",
   "hisse": "IZENR",
   "baslik": "18.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
@@ -12708,5 +12689,23 @@
   "mod": "golge",
   "durum": "elendi",
   "sebep": "aracı kurum rutin işlemi"
+ },
+ {
+  "id": "kap-1702986",
+  "hisse": "VAKBN",
+  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+  "t": "2026-11-26T13:43:55+00:00",
+  "mod": "golge",
+  "puan": 43,
+  "alt": {
+   "fin": 10,
+   "yenilik": 8,
+   "kapsam": 8,
+   "kesinlik": 8,
+   "ilgi": 9
+  },
+  "tur": "Borçlanma aracı ihracı (EUR, GMTN programı)",
+  "gerekce": "Tutarı belirtilmeyen, GMTN programı kapsamında vadesi 2027 olan tek kuponlu bir EUR ihracı olup bankanın olağan fonlama faaliyetidir; programın sözleşmesel boyutunun 15 milyar ABD Dolarına çıkarılması kısmen yeni bilgi olsa da bu bir üst limit artışıdır, ihraç tutarı değildir.",
+  "durum": "dusuk"
  }
 ]
