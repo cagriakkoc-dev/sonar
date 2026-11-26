@@ -1,61 +1,5 @@
 [
  {
-  "id": "ozet-1700258",
-  "hisse": "MEKAG",
-  "baslik": "Bayilik(Distribütörlük) Sözleşmesi",
-  "t": "2026-11-19T12:17:51+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "kap-1700266",
-  "hisse": "LXGYO",
-  "baslik": "Değerleme Raporu ",
-  "t": "2026-11-19T12:29:33+00:00",
-  "mod": "golge",
-  "puan": 30,
-  "alt": {
-   "fin": 10,
-   "yenilik": 5,
-   "kapsam": 6,
-   "kesinlik": 6,
-   "ilgi": 3
-  },
-  "tur": "Değerleme raporu (GYO portföy)",
-  "gerekce": "Luxera Towers projesindeki bağımsız bölümlerin bir kısmı için hazırlanan rutin değerleme raporu bildirimi; değer tutarı metinde yer almıyor, editör tarafından zorunlu önemli sayılan türlerden biri değil, GYO için periyodik bir bildirim.",
-  "durum": "dusuk"
- },
- {
-  "id": "ozet-1700260",
-  "hisse": "OYAKC",
-  "baslik": "Kurumsal Yönetim Derecelendirme Not Bildirimi",
-  "t": "2026-11-19T12:29:37+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1700262",
   "hisse": "TARKM",
   "baslik": "Turgutlu Yeni Fabrika Yatırımı Hakkında",
@@ -12561,6 +12505,63 @@
   },
   "tur": "pay geri alımı",
   "gerekce": "AYES'in 14/10/2026 tarihli program kapsamında 26/11/2026'da 112.117 adet pay 6,30 TL'den (toplam 706.337,10 TL) geri alınmış, program toplamı 13.166.019 adede (sermayenin yaklaşık %2,63'ü) ulaşmıştır; tutar piyasa değerine göre küçük olsa da pay geri alımı bildirimleri editör kararıyla en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1703095",
+  "hisse": "LMKDC",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-26T17:04:51+00:00",
+  "mod": "golge",
+  "puan": 80,
+  "alt": {
+   "fin": 8,
+   "yenilik": 6,
+   "kapsam": 8,
+   "kesinlik": 10,
+   "ilgi": 4
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "LMKDC 26.11.2026'da ağırlıklı ortalama 20,238 TL'den 49.000 adet (yaklaşık 1 milyon TL) pay geri aldı, toplam geri alınan pay 3.314.486 adede (sermayenin %0,642'si) ulaştı; tutar küçük olsa da pay geri alımı editör kuralı gereği en az 80 puan alır.",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1703092",
+  "hisse": "AYES",
+  "baslik": "26.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-26T17:04:54+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1703090",
+  "hisse": "EKIM",
+  "baslik": "26 Kasım 2026 tarihli pay geri alım işlemleri",
+  "t": "2026-11-26T17:04:55+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
  }
