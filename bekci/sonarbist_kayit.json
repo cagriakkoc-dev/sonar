@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1700046",
-  "hisse": "HEKTS",
-  "baslik": "Hak Kullanım Süreç İptal Bildirimi",
-  "t": "2026-11-18T16:31:17+00:00",
-  "mod": "golge",
-  "puan": 45,
-  "alt": {
-   "fin": 8,
-   "yenilik": 12,
-   "kapsam": 14,
-   "kesinlik": 9,
-   "ilgi": 2
-  },
-  "tur": "Ayrılma hakkı sürecinin iptali (imtiyazlı pay işlemi vazgeçildi)",
-  "gerekce": "Şirket paylarında imtiyaz yaratılması işleminden vazgeçilmesi nedeniyle ayrılma hakkı süreci iptal edildi; doğrudan parasal etkisi yok, ancak sermaye yapısına ilişkin planlanan bir işlemin durması orta düzeyde önem taşıyor ve bu tür editör kuralına girmiyor.",
-  "durum": "dusuk"
- },
- {
   "id": "ozet-1700019",
   "hisse": "NETCD",
   "baslik": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
@@ -12707,6 +12689,54 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2125918739279560870",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1702957",
+  "hisse": "REEDR",
+  "baslik": "Pay Alım Sözleşmesinden Kaynaklanan Hukuki Süreç Hakkında",
+  "t": "2026-11-26T12:27:41+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "REEDR (Reeder) için Samsun 1. Asliye Ticaret Mahkemesi, hakem kararına karşı açılan iptal davasının kesinleşmesini bekletici mesele yaptı. Karar oybirliğiyle alındı.\n\nUyuşmazlık konusu ana para toplam aktiflerin yaklaşık %1,15'i. PD/DD 0,41x.",
+  "kart": {
+   "baslik": "İptal davası bekletici mesele",
+   "satirlar": [
+    [
+     "Duruşma tarihi",
+     "25.11.2026"
+    ],
+    [
+     "Dosya no",
+     "2026/1923 E."
+    ],
+    [
+     "Karar",
+     "Oybirliği"
+    ],
+    [
+     "Ana para / aktif",
+     "yaklaşık %1,15"
+    ],
+    [
+     "Ana para / özkaynak",
+     "yaklaşık %1,54"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125929943536390521",
   "x_gorsel_hata": null
  }
 ]
