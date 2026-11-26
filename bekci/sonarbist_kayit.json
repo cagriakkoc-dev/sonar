@@ -1,43 +1,5 @@
 [
  {
-  "id": "ozet-1700009",
-  "hisse": "AYGAZ",
-  "baslik": "Kar Dağıtımı Önerisi",
-  "t": "2026-11-18T15:59:00+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
-  "id": "ozet-1700007",
-  "hisse": "BORSK",
-  "baslik": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
-  "t": "2026-11-18T15:59:00+00:00",
-  "mod": "golge",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "tavan",
-  "sebep": "saat/gün tavanı"
- },
- {
   "id": "ozet-1699998",
   "hisse": "DAGI",
   "baslik": "18 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
@@ -12549,5 +12511,97 @@
   "tur": "Bağlı ortaklık pay devri - düzenleyici onay güncellemesi",
   "gerekce": "Yapı Kredi Portföy'ün Azimut'a devrine SPK izni verildiği bildirilmiş ve kapanış koşulları sürüyor; devir ile 15 yıllık dağıtım protokolü daha önce duyurulduğundan yenilik sınırlı, tutar da banka büyüklüğüne göre küçük ve belirsiz, yeni bir sözleşme imzası da yok.",
   "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1702821",
+  "hisse": "AZTEK",
+  "baslik": "25.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-26T05:51:14+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "AZTEK (Aztek Teknoloji) 25 Kasım'da 1.458.436 lot pay geri aldı, sermayenin %0,14584'ü.\n\n• Fiyat: 1,99-2,01 TL, ortalama 2,00 TL\n• Toplam pay: 7.735.097 lot, %0,77351\n\nÖnceki alım gününde ortalama 2,16 TL'ydi. Piyasa değeri 3,1 milyar TL.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "Alım tarihi",
+     "25.11.2026"
+    ],
+    [
+     "Alınan pay",
+     "1.458.436 lot"
+    ],
+    [
+     "Ortalama fiyat",
+     "2,00 TL"
+    ],
+    [
+     "Sermaye oranı",
+     "%0,14584"
+    ],
+    [
+     "Toplam pay",
+     "7.735.097 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125830163283816754",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1702823",
+  "hisse": "YKBNK",
+  "baslik": "Yapı Kredi Portföy Yönetimi A.Ş. paylarının devrine ilişkin Sermaye Piyasası Kurulu izni",
+  "t": "2026-11-26T05:53:02+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "YKBNK (Yapı Kredi) bağlı ortaklığı Yapı Kredi Portföy'ün Azimut Group bünyesindeki AZ International Holdings'e devrine SPK izin verdi.\n\n• Devredilen paylar: banka %12,65, Yapı Kredi Yatırım %87,32\n• Dağıtım sözleşmesi 15 yıllık olacak\n\nKapanış koşulları sürüyor.",
+  "kart": {
+   "baslik": "Portföy payları devrine SPK izni",
+   "satirlar": [
+    [
+     "Bankanın devreden payı",
+     "%12,65"
+    ],
+    [
+     "Yatırım Menkul payı",
+     "%87,32"
+    ],
+    [
+     "Dağıtım sözleşmesi",
+     "15 yıl"
+    ],
+    [
+     "SPK bülteni",
+     "25.11.2026"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125830632588587151",
+  "x_gorsel_hata": null
  }
 ]
