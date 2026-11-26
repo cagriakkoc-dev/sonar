@@ -1,50 +1,5 @@
 [
  {
-  "id": "kap-1700214",
-  "hisse": "ISMEN",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-19T09:29:13+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1700245",
-  "hisse": "ZOREN",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-19T11:24:59+00:00",
-  "mod": "golge",
-  "puan": 14,
-  "alt": {
-   "fin": 3,
-   "yenilik": 1,
-   "kapsam": 2,
-   "kesinlik": 6,
-   "ilgi": 2
-  },
-  "tur": "Borçlanma aracı faiz ve anapara ödemesi",
-  "gerekce": "182 gün vadeli 58,46 milyon TL'lik bononun vadesinde yapılan toplam yaklaşık 72,7 milyon TL'lik anapara ve kupon ödemesi, piyasa değerinin yaklaşık %0,8'i kadar olduğundan rutin ve düşük etkili bir bildirimdir.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1700246",
-  "hisse": "ZOREN",
-  "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-  "t": "2026-11-19T11:25:03+00:00",
-  "mod": "golge",
-  "puan": 23,
-  "alt": {
-   "fin": 5,
-   "yenilik": 2,
-   "kapsam": 3,
-   "kesinlik": 10,
-   "ilgi": 3
-  },
-  "tur": "Tahvil kupon ve anapara ödemesi",
-  "gerekce": "378 gün vadeli 162,75 milyon TL'lik tahvilin vadesinde yapılan anapara ve 21,8 milyon TL kupon ödemesi, 9,3 milyar TL piyasa değerinin yaklaşık %2'si tutarında ve rutin bir borç servisi olduğundan düşük önemlidir; ödeme gerçekleşmiş olduğu için kesinlik puanı tamdır.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1700247",
   "hisse": "ZOREN",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -12596,6 +12551,92 @@
   "hisse": "AZTEK",
   "baslik": "26.11.2026 Tarihli Pay Geri Alım İşlemleri",
   "t": "2026-11-26T15:59:57+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1703087",
+  "hisse": "GARAN",
+  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
+  "t": "2026-11-26T16:10:44+00:00",
+  "mod": "canli",
+  "puan": 82,
+  "alt": {
+   "fin": 22,
+   "yenilik": 12,
+   "kapsam": 14,
+   "kesinlik": 10,
+   "ilgi": 10
+  },
+  "tur": "pay geri alımı",
+  "gerekce": "GARAN, 26.11.2026'da 1.992.335 TL nominal paya karşılık gelen yaklaşık 278,5 milyon TL'lik geri alım yaptı (sermayenin %0,0474'ü) ve programdaki toplam geri alım %0,7594'e ulaştı; pay geri alımı editör kuralı gereği en az 80 puan alır, tutar piyasa değerine göre küçük olsa da BIST 30 üyesi büyük bir banka olduğu için ilgi yüksektir.",
+  "durum": "paylasildi",
+  "tweet": "GARAN (Garanti BBVA) 26 Kasım'daki geri alımda 1.992.335 lot pay topladı, işlemin bedeli 278.471.443,40 TL. Sermayenin %0,0474'ü.\n\n• Ortalama fiyat: 139,7714 TL\n• Program toplamı: 31.892.807 lot, %0,7594\n\nPiyasa değeri 516,2 milyar TL, PD/DD 0,99x.",
+  "kart": {
+   "baslik": "Günlük pay geri alım işlemi",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "1.992.335 lot"
+    ],
+    [
+     "Toplam bedel",
+     "278.471.443,40 TL"
+    ],
+    [
+     "Ortalama fiyat",
+     "139,7714 TL"
+    ],
+    [
+     "Sermayeye oranı",
+     "%0,0474"
+    ],
+    [
+     "Program toplamı",
+     "31.892.807 lot"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2125985717793005890",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1703084",
+  "hisse": "SOKE",
+  "baslik": "26.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+  "t": "2026-11-26T16:11:09+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1703083",
+  "hisse": "ULUUN",
+  "baslik": "26.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+  "t": "2026-11-26T16:11:10+00:00",
   "mod": "golge",
   "puan": 100,
   "alt": {
