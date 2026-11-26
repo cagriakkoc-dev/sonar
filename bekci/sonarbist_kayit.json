@@ -1,71 +1,5 @@
 [
  {
-  "id": "ozet-1700186",
-  "hisse": "MERKO",
-  "baslik": "Pay Geri Alım Hk.",
-  "t": "2026-11-19T09:16:51+00:00",
-  "mod": "canli",
-  "puan": 100,
-  "alt": {
-   "fin": null,
-   "yenilik": null,
-   "kapsam": null,
-   "kesinlik": null,
-   "ilgi": null
-  },
-  "tur": "yayınlanan özet",
-  "gerekce": "Sonar'da yayına alınan özet",
-  "durum": "paylasildi",
-  "tweet": "MERKO (Merko Gıda) 18 Kasım'da 0,90 TL fiyatla 100.000 lot pay geri aldı. İşlem sermayenin %0,01176'sına denk geliyor.\n\n12 Kasım kararıyla başlayan programda geri alınan paylar 4.327.146 lota, sermayenin %0,51'ine ulaştı. Piyasa değeri 2,0 milyar TL, PD/DD 0,79x.",
-  "kart": {
-   "baslik": "Pay geri alım işlemi",
-   "satirlar": [
-    [
-     "İşlem tarihi",
-     "18.11.2026"
-    ],
-    [
-     "Alınan pay",
-     "100.000 lot"
-    ],
-    [
-     "İşlem fiyatı",
-     "0,90 TL"
-    ],
-    [
-     "Toplam geri alınan",
-     "4.327.146 lot"
-    ],
-    [
-     "Toplam sermaye oranı",
-     "%0,51"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2123345179549556880",
-  "x_gorsel_hata": null
- },
- {
-  "id": "kap-1700212",
-  "hisse": "ISMEN",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-19T09:29:13+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
-  "id": "kap-1700213",
-  "hisse": "ISMEN",
-  "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
-  "t": "2026-11-19T09:29:13+00:00",
-  "mod": "golge",
-  "durum": "elendi",
-  "sebep": "aracı kurum rutin işlemi"
- },
- {
   "id": "kap-1700214",
   "hisse": "ISMEN",
   "baslik": "Piyasa Yapıcılığı Kapsamında Gerçekleştirilen İşlemler Bildirimi",
@@ -12607,6 +12541,61 @@
   "hisse": "PCILT",
   "baslik": "26.11.2026 Tarihli Pay Geri Alım İşlemleri",
   "t": "2026-11-26T15:49:03+00:00",
+  "mod": "golge",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "tavan",
+  "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "kap-1703085",
+  "hisse": "BTCIM",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-26T15:59:51+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 1,
+   "yenilik": 5,
+   "kapsam": 8,
+   "kesinlik": 5,
+   "ilgi": 3
+  },
+  "tur": "Bağımsız yönetim kurulu üyesi ataması (SPK olumsuz görüş bildirmedi)",
+  "gerekce": "SPK'nın bağımsız yönetim kurulu üye adayı hakkında olumsuz görüş bildirmemesi, önceki açıklamanın devamı niteliğinde usulî bir adımdır ve atama ilk genel kurulda onaya sunulacağı için finansal etkisi yoktur; bu tür editörün her zaman önemli saydığı gruplara girmez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "kap-1703086",
+  "hisse": "BSOKE",
+  "baslik": "Özel Durum Açıklaması (Genel)",
+  "t": "2026-11-26T15:59:54+00:00",
+  "mod": "golge",
+  "puan": 22,
+  "alt": {
+   "fin": 2,
+   "yenilik": 5,
+   "kapsam": 8,
+   "kesinlik": 5,
+   "ilgi": 2
+  },
+  "tur": "Bağımsız yönetim kurulu üyesi atama (SPK olumsuz görüş bildirmedi)",
+  "gerekce": "Bağımsız yönetim kurulu üye adayı için SPK'nın olumsuz görüş bildirmemesi usulî bir aşamadır; atama ilk genel kurul onayına sunulacak, finansal etkisi yoktur ve editör kararıyla zorunlu önemli türlerden hiçbirine girmez.",
+  "durum": "dusuk"
+ },
+ {
+  "id": "ozet-1703082",
+  "hisse": "AZTEK",
+  "baslik": "26.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-26T15:59:57+00:00",
   "mod": "golge",
   "puan": 100,
   "alt": {
