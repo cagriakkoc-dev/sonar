@@ -1,71 +1,5 @@
 [
  {
-  "id": "kap-1700274",
-  "hisse": "CANTE",
-  "baslik": "Genel Kurul İşlemlerine İlişkin Bildirim",
-  "t": "2026-11-19T13:12:47+00:00",
-  "mod": "golge",
-  "puan": 12,
-  "alt": {
-   "fin": 0,
-   "yenilik": 2,
-   "kapsam": 5,
-   "kesinlik": 3,
-   "ilgi": 2
-  },
-  "tur": "Genel kurul çağrısı",
-  "gerekce": "2025 yılı olağan genel kurul toplantısının çağrısı ve gündemi usulî bir bildirimdir; gündemdeki kâr dağıtımı maddesi yalnızca öneri niteliğindedir, şirket zarar ettiği için somut bir temettü kararı içermemektedir.",
-  "durum": "dusuk"
- },
- {
-  "id": "kap-1700277",
-  "hisse": "AYES",
-  "baslik": "Payların Geri Alınmasına İlişkin Bildirim",
-  "t": "2026-11-19T13:23:31+00:00",
-  "mod": "canli",
-  "puan": 80,
-  "alt": {
-   "fin": 8,
-   "yenilik": 6,
-   "kapsam": 8,
-   "kesinlik": 10,
-   "ilgi": 4
-  },
-  "tur": "pay geri alımı",
-  "gerekce": "Geri alım programı kapsamında 18.11.2026'da 25.559 adet pay yaklaşık 169 bin TL'ye alındı (toplam geri alınan 12,5 milyon nominal, sermayenin yaklaşık %2,5'i); tutar küçük olsa da pay geri alımı editör kararıyla en az 80 puan alan türlerdendir.",
-  "durum": "paylasildi",
-  "tweet": "AYES (Çelik Hasır ve Çit) 18 Kasım'da ortalama 6,61 TL'den 25.559 lot pay geri aldı. İşlemin tutarı 168.944,99 TL, sermaye oranı %0,00511.\n\n14 Ekim kararıyla başlayan programda toplam 12.525.559 lot, yani %2,50511. Piyasa değeri 5,6 milyar TL, PD/DD 1,34x.",
-  "kart": {
-   "baslik": "Pay geri alım işlemi",
-   "satirlar": [
-    [
-     "Alınan pay",
-     "25.559 lot"
-    ],
-    [
-     "Ortalama fiyat",
-     "6,61 TL"
-    ],
-    [
-     "İşlem tutarı",
-     "168.944,99 TL"
-    ],
-    [
-     "Toplam geri alınan",
-     "12.525.559 lot"
-    ],
-    [
-     "Toplam sermaye oranı",
-     "%2,50511"
-    ]
-   ]
-  },
-  "goruntu": true,
-  "goruntu_hata": null,
-  "tweet_id": "2123406874032926914",
-  "x_gorsel_hata": null
- },
- {
   "id": "kap-1700293",
   "hisse": "ZOREN",
   "baslik": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
@@ -12535,5 +12469,101 @@
   "gerekce": "Sonar'da yayına alınan özet",
   "durum": "tavan",
   "sebep": "saat/gün tavanı"
+ },
+ {
+  "id": "ozet-1703105",
+  "hisse": "BETAE",
+  "baslik": "26.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-27T05:16:48+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "BETAE (Beta Enerji) 26 Kasım'da 8.554.637,98 TL'ye 200.000 lot pay geri aldı, sermayenin %0,04938'i.\n\n• Fiyat: 42,06-42,98 TL, ortalama 42,773 TL\n• Toplam pay: %0,20904\n\n20 Kasım'daki alımda ortalama 44,618 TL'ydi. Piyasa değeri 22,4 milyar TL, PD/DD 3,47x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "Alınan pay",
+     "200.000 lot"
+    ],
+    [
+     "Tutar",
+     "8.554.637,98 TL"
+    ],
+    [
+     "Fiyat aralığı",
+     "42,06-42,98 TL"
+    ],
+    [
+     "Ortalama fiyat",
+     "42,773 TL"
+    ],
+    [
+     "Toplam sermaye oranı",
+     "%0,20904"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2126183872324911367",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1703102",
+  "hisse": "SUNTK",
+  "baslik": "26.11.2026 Tarihli Pay Geri Alım İşlemleri",
+  "t": "2026-11-27T05:18:33+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "SUNTK (Sun Tekstil) 26 Kasım'da 50.000 lot pay geri aldı.\n\n• Fiyat: 13,98-13,99 TL, ortalama 13,984 TL\n• Program toplamı: 344.011 TL nominal, sermayenin %0,07'si\n\n16 Kasım tarihli yönetim kurulu kararı kapsamında. Piyasa değeri 11,8 milyar TL, PD/DD 1,33x.",
+  "kart": {
+   "baslik": "Pay geri alım işlemi",
+   "satirlar": [
+    [
+     "İşlem tarihi",
+     "26.11.2026"
+    ],
+    [
+     "Geri alınan pay",
+     "50.000 lot"
+    ],
+    [
+     "Fiyat aralığı",
+     "13,98-13,99 TL"
+    ],
+    [
+     "Ortalama fiyat",
+     "13,984 TL"
+    ],
+    [
+     "Program toplamı",
+     "344.011 TL nominal"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2126184314127671418",
+  "x_gorsel_hata": null
  }
 ]
