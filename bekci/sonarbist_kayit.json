@@ -1,23 +1,5 @@
 [
  {
-  "id": "kap-1700358",
-  "hisse": "ZRGYO",
-  "baslik": "Değerleme Raporu ",
-  "t": "2026-11-19T14:49:38+00:00",
-  "mod": "golge",
-  "puan": 30,
-  "alt": {
-   "fin": 10,
-   "yenilik": 4,
-   "kapsam": 5,
-   "kesinlik": 6,
-   "ilgi": 5
-  },
-  "tur": "Değerleme raporu",
-  "gerekce": "ZRGYO'nun Mecidiyeköy Binası için yıl sonu değerleme raporu ekte sunulmuş, bildirimde değer tutarı belirtilmediğinden etki belirsiz ve rapor rutin yıl sonu değerlemesi niteliğinde.",
-  "durum": "dusuk"
- },
- {
   "id": "kap-1700373",
   "hisse": "A1CAP",
   "baslik": "Özel Durum Açıklaması (Genel)",
@@ -12688,6 +12670,50 @@
   "goruntu": true,
   "goruntu_hata": null,
   "tweet_id": "2126217698468045086",
+  "x_gorsel_hata": null
+ },
+ {
+  "id": "ozet-1703245",
+  "hisse": "ISFIN",
+  "baslik": "TRFISFNK2732 ISIN Kodlu Finansman Bonosu İhracı",
+  "t": "2026-11-27T08:50:00+00:00",
+  "mod": "canli",
+  "puan": 100,
+  "alt": {
+   "fin": null,
+   "yenilik": null,
+   "kapsam": null,
+   "kesinlik": null,
+   "ilgi": null
+  },
+  "tur": "yayınlanan özet",
+  "gerekce": "Sonar'da yayına alınan özet",
+  "durum": "paylasildi",
+  "tweet": "ISFIN (İş Finansal Kiralama) 1 milyar TL nominalli, 364 gün vadeli finansman bonosu ihracını tamamladı.\n\n• Vadesonu: 26 Kasım 2027\n• Fitch ulusal notu: AA-(tur)\n\nİhraç kısa vadeli TL fonlamaya katkı sağlıyor. Son 4 çeyrek net kâr 4,6 milyar TL.",
+  "kart": {
+   "baslik": "Finansman bonosu ihracı tamamlandı",
+   "satirlar": [
+    [
+     "Nominal tutar",
+     "1.000.000.000 TL"
+    ],
+    [
+     "Vade",
+     "364 gün"
+    ],
+    [
+     "Vadesonu ödeme",
+     "26.11.2027"
+    ],
+    [
+     "Fitch ulusal notu",
+     "AA-(tur)"
+    ]
+   ]
+  },
+  "goruntu": true,
+  "goruntu_hata": null,
+  "tweet_id": "2126237547944653310",
   "x_gorsel_hata": null
  }
 ]
